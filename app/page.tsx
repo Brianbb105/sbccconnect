@@ -26,7 +26,7 @@ export default function HomePage() {
                             With a clear UI, it is class planning, completely reimagined for the modern student.
                         </p>
                         <p className="text-slate-500 leading-relaxed">
-                            Please note that THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
+                           THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
                         </p>
                     </div>
 

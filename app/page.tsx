@@ -23,7 +23,11 @@ export default function HomePage() {
                             The unofficial, student-built website to browse classes and see your professors.
                         </p>
                         <p className="text-slate-500 leading-relaxed">
-                            With a clear UI, it is class planning, completely reimagined for the modern student. Please note that THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
+                            With a clear UI, it is class planning, completely reimagined for the modern student.
+
+                        </p>
+                        <p className="text-slate-500 leading-relaxed">
+                            Please note that THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
                         </p>
                     </div>
 

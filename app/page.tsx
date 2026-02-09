@@ -34,6 +34,7 @@ export default function HomePage() {
                     {/* RIGHT COLUMN: Stacked Cards (Browse + Popular) */}
                     <div className="flex flex-col gap-6">
 
+
                         {/* 1. NEW BROWSE ACTIONS CARD (Top Right) */}
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
                             <h2 className={`text-xl font-semibold mb-6 ${darkBlueText}`}>Spring 2026</h2>

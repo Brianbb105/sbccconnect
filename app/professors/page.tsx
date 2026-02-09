@@ -1,10 +1,9 @@
 "use client";
 
-import { Suspense, useState, useMemo } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import professorsData from "@/app/data/202650/professors.json";
-import rmpCacheData from "@/app/data/rmp_cache.json";
 import Header from "@/components/Header";
 
 
@@ -84,7 +83,31 @@ function ProfessorsPageContent() {
     const [selectedLetter, setSelectedLetter] = useState("A");
     const [manualSearchQuery, setManualSearchQuery] = useState<string | null>(null);
     const searchQuery = manualSearchQuery ?? searchQueryFromUrl;
-    const cache = useMemo(() => rmpCacheData as CacheMap, []);
+    const [cache, setCache] = useState<CacheMap>({});
+
+    useEffect(() => {
+        let isActive = true;
+
+        async function loadCache() {
+            try {
+                const response = await fetch("/api/professor-cache", { cache: "no-store" });
+                if (!response.ok) return;
+
+                const data: unknown = await response.json();
+                if (isActive && data && typeof data === "object" && !Array.isArray(data)) {
+                    setCache(data as CacheMap);
+                }
+            } catch {
+                // Keep empty cache fallback if request fails.
+            }
+        }
+
+        loadCache();
+
+        return () => {
+            isActive = false;
+        };
+    }, []);
 
     // 1. Process Data: Add useful formatted names to the raw data
     const processedData = useMemo(() => {

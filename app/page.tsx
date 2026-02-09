@@ -24,7 +24,6 @@ export default function HomePage() {
                         </p>
                         <p className="text-slate-500 leading-relaxed">
                             With a clear UI, it is class planning, completely reimagined for the modern student.
-
                         </p>
                         <p className="text-slate-500 leading-relaxed">
                             Please note that THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
@@ -33,7 +32,6 @@ export default function HomePage() {
 
                     {/* RIGHT COLUMN: Stacked Cards (Browse + Popular) */}
                     <div className="flex flex-col gap-6">
-
 
                         {/* 1. NEW BROWSE ACTIONS CARD (Top Right) */}
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
@@ -116,3 +114,4 @@ function InfoCard({ title, content, href }: { title: string, content: string, hr
 
     return card;
 }
+

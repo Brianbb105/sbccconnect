@@ -300,3 +300,44 @@ html.theme-dark .focus\:ring-\[\#0f172a\]:focus,
 html.theme-dark .focus\:ring-slate-300:focus {
   --tw-ring-color: rgba(148, 163, 184, 0.6) !important;
 }
+
+/* Light-mode safety overrides for production caches/forced-dark browsers */
+html[data-theme-resolved="light"] {
+  color-scheme: only light;
+}
+
+html[data-theme-resolved="light"],
+html[data-theme-resolved="light"] body {
+  background: #f9fafb !important;
+  color: #111827 !important;
+}
+
+html[data-theme-resolved="light"] .bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+html[data-theme-resolved="light"] .bg-white {
+  background-color: #ffffff !important;
+}
+
+html[data-theme-resolved="light"] .bg-slate-50,
+html[data-theme-resolved="light"] .bg-gray-100 {
+  background-color: #f8fafc !important;
+}
+
+html[data-theme-resolved="light"] .bg-slate-100 {
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme-resolved="light"] .bg-gray-200 {
+  background-color: #e5e7eb !important;
+}
+
+html[data-theme-resolved="light"] .bg-gray-300,
+html[data-theme-resolved="light"] .bg-slate-300 {
+  background-color: #cbd5e1 !important;
+}
+
+html[data-theme-resolved="light"] .bg-\[\#0f172a\] {
+  background-color: #0f172a !important;
+}

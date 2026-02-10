@@ -16,11 +16,13 @@ function isThemePreference(value: string): value is ThemePreference {
 function applyTheme(theme: ThemePreference) {
     const root = document.documentElement;
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const useDark = theme === "dark" || (theme === "auto" && prefersDark);
+    const resolvedTheme = theme === "dark" || (theme === "auto" && prefersDark) ? "dark" : "light";
+    const useDark = resolvedTheme === "dark";
 
     root.dataset.theme = theme;
+    root.dataset.themeResolved = resolvedTheme;
     root.classList.toggle("theme-dark", useDark);
-    root.style.colorScheme = useDark ? "dark" : "light";
+    root.style.colorScheme = useDark ? "dark" : "only light";
 }
 
 function getInitialTheme(): ThemePreference {

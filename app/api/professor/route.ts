@@ -194,6 +194,12 @@ function normalizeReviewList(input: unknown): Array<{ id: string; className: str
   return deduped;
 }
 
+function roundWouldTakeAgainPercent(value: unknown): number {
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed) || parsed < 0) return -1;
+  return Math.round(parsed);
+}
+
 function scoreCandidate(targetName: string, node: Pick<RmpNode, "firstName" | "lastName" | "numRatings">): number {
   const target = normalizeName(targetName);
   const candFull = normalizeName(`${node.firstName} ${node.lastName}`);
@@ -300,15 +306,8 @@ function findCacheByName(
   return { key: bestKey, entry: bestEntry };
 }
 
-function cacheMatchesName(entry: CachedProfessor, targetName: string): boolean {
-  const entryName = normalizeName(`${entry.firstName || ""} ${entry.lastName || ""}`);
-  const target = normalizeName(targetName);
-  if (!entryName || !target) return false;
-  return scoreCandidate(target, {
-    firstName: entry.firstName || "",
-    lastName: entry.lastName || "",
-    numRatings: Number(entry.numRatings || 0),
-  }) >= MIN_MATCH_SCORE;
+function isCachedProfessor(value: CachedProfessor | null | undefined): value is CachedProfessor {
+  return Boolean(value && typeof value === "object");
 }
 
 async function readJsonFile<T>(filePath: string, fallback: T): Promise<T> {
@@ -399,7 +398,7 @@ function formatApiResponse(
 ) {
   const id = String(raw.id || "");
   const topTags = normalizeTagList((raw as CachedProfessor).topTags ?? (raw as RmpNode).teacherRatingTags);
-  const reviews = normalizeReviewList((raw as CachedProfessor).reviews);
+  const reviews = source === "cache" ? normalizeReviewList((raw as CachedProfessor).reviews) : [];
   const legacyId =
     (raw as CachedProfessor).legacyId?.toString() ||
     decodeLegacyId(id) ||
@@ -413,7 +412,7 @@ function formatApiResponse(
     department: String(raw.department || "").trim(),
     avgRating: Number(raw.avgRating || 0),
     numRatings: Number(raw.numRatings || 0),
-    wouldTakeAgainPercent: Number(raw.wouldTakeAgainPercent ?? -1),
+    wouldTakeAgainPercent: roundWouldTakeAgainPercent(raw.wouldTakeAgainPercent),
     avgDifficulty: Number(raw.avgDifficulty || 0),
     legacyId,
     topTags,
@@ -437,11 +436,16 @@ export async function GET(request: Request) {
       readJsonFile<CacheMap>(CACHE_FILE, {}),
     ]);
 
+    const directExplicitCache = explicitKey ? cache[explicitKey] : null;
+    if (explicitKey && isCachedProfessor(directExplicitCache)) {
+      return NextResponse.json(formatApiResponse(directExplicitCache, "cache", explicitKey));
+    }
+
     const resolvedKey = resolveProfessorKey(name, explicitKey, professors);
     const directCache = resolvedKey ? cache[resolvedKey] : null;
 
-    if (resolvedKey && directCache && cacheMatchesName(directCache as CachedProfessor, name)) {
-      return NextResponse.json(formatApiResponse(directCache as CachedProfessor, "cache", resolvedKey));
+    if (resolvedKey && isCachedProfessor(directCache)) {
+      return NextResponse.json(formatApiResponse(directCache, "cache", resolvedKey));
     }
 
     const cacheByName = findCacheByName(cache, name);
@@ -452,11 +456,6 @@ export async function GET(request: Request) {
     const liveNode = await fetchBestRmpMatch(name);
     if (liveNode) {
       return NextResponse.json(formatApiResponse(liveNode, "live", resolvedKey));
-    }
-
-    // Last fallback: if key exists but score check failed, still return cached record instead of hard fail.
-    if (resolvedKey && directCache) {
-      return NextResponse.json(formatApiResponse(directCache as CachedProfessor, "cache", resolvedKey));
     }
 
     return NextResponse.json({ error: "Professor not found" }, { status: 404 });

@@ -103,7 +103,7 @@ export default function CoursesPage() {
     }, [allSections, subject]);
 
     return (
-        <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+        <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
 
             <main className="max-w-5xl mx-auto px-6 py-12">

@@ -163,7 +163,7 @@ function ProfessorsPageContent() {
     const currentList = isSearching ? searchResults : (groups[selectedLetter] || []);
 
     return (
-        <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+        <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
 
             <main className="max-w-6xl mx-auto px-6 py-12">
@@ -300,7 +300,7 @@ function ProfessorsPageContent() {
 
 function ProfessorsPageFallback() {
     return (
-        <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+        <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
             <main className="max-w-6xl mx-auto px-6 py-12">
                 <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 text-center">

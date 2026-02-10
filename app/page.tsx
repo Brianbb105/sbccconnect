@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 
 export default function HomePage() {
     // Theme Colors
-    const warmBg = "bg-[#FEFDF5]";
+    const warmBg = "bg-gray-50";
     const darkBlueText = "text-[#0f172a]";
 
     return (
@@ -114,4 +114,3 @@ function InfoCard({ title, content, href }: { title: string, content: string, hr
 
     return card;
 }
-

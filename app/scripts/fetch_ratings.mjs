@@ -228,6 +228,12 @@ function normalizeReviews(reviews) {
   return deduped;
 }
 
+function roundWouldTakeAgainPercent(value) {
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed) || parsed < 0) return -1;
+  return Math.round(parsed);
+}
+
 function normalizeNode(node, displayName, score, variant, reviews) {
   const topTags = normalizeTags(node.teacherRatingTags);
   const normalizedReviews = normalizeReviews(reviews);
@@ -239,7 +245,7 @@ function normalizeNode(node, displayName, score, variant, reviews) {
     department: String(node.department || "").trim(),
     avgRating: Number(node.avgRating || 0),
     numRatings: Number(node.numRatings || 0),
-    wouldTakeAgainPercent: Number(node.wouldTakeAgainPercent ?? -1),
+    wouldTakeAgainPercent: roundWouldTakeAgainPercent(node.wouldTakeAgainPercent),
     avgDifficulty: Number(node.avgDifficulty || 0),
     topTags,
     reviews: normalizedReviews,

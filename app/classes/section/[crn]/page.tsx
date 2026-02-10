@@ -111,7 +111,7 @@ export default function SectionDetailsPage() {
 
     if (!section) {
         return (
-            <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+            <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
                 <Header />
                 <main className="mx-auto max-w-4xl px-6 py-12">
                     <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-sm">
@@ -134,7 +134,7 @@ export default function SectionDetailsPage() {
     const description = clean(section.courseDescription) || "Course description not available yet.";
 
     return (
-        <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+        <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
 
             <main className="mx-auto max-w-5xl px-6 py-12">

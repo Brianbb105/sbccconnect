@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 
 export default function PlannerPage() {
     return (
-        <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+        <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
             <main className="max-w-4xl mx-auto px-6 py-12">
                 <div className="bg-white border border-slate-200 rounded-3xl shadow-sm p-8">

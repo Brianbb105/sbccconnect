@@ -40,6 +40,11 @@ function formatReviewDate(rawDate: string) {
     return parsed.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 }
 
+function formatTakeAgainPercent(value: number) {
+    if (value <= -1) return "N/A";
+    return `${Math.round(value)}%`;
+}
+
 export default function ProfessorPage({ params }: { params: Promise<{ name: string }> }) {
     const { name } = use(params);
     const decodedName = decodeURIComponent(name);
@@ -106,7 +111,7 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
         : `https://www.ratemyprofessors.com/search/professors/${SBCC_SCHOOL_ID}?q=${encodeURIComponent(decodedName)}`;
 
     return (
-        <div className="min-h-screen bg-[#FEFDF5] font-sans text-slate-800">
+        <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
 
             <main className="max-w-4xl mx-auto px-6 py-12">
@@ -200,7 +205,7 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
                                     </div>
                                     <div className="bg-slate-50 p-4 rounded-xl text-center border border-slate-100">
                                         <div className={`text-3xl md:text-4xl font-extrabold ${professor.wouldTakeAgainPercent >= 50 ? 'text-green-600' : 'text-slate-600'}`}>
-                                            {professor.wouldTakeAgainPercent > -1 ? `${professor.wouldTakeAgainPercent}%` : 'N/A'}
+                                            {formatTakeAgainPercent(professor.wouldTakeAgainPercent)}
                                         </div>
                                         <div className="text-[10px] md:text-xs font-bold text-slate-400 uppercase mt-1">Take Again</div>
                                     </div>

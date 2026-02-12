@@ -11,6 +11,7 @@ import {
     extractPrerequisites,
     extractTransferInformation,
 } from "@/lib/courseMetadata";
+import { buildSbccGoogleMapsUrl, getDisplayLocation } from "@/lib/locationMapping";
 
 interface Meeting {
     type?: string;
@@ -83,15 +84,6 @@ function getModalityBadge(modality: string) {
         default:
             return { bg: "bg-gray-100", text: "text-gray-700", label: "In Person" };
     }
-}
-
-function buildGoogleMapsUrl(location: string, preferredUrl?: string) {
-    if (clean(preferredUrl)) return clean(preferredUrl);
-    const normalized = clean(location);
-    const upper = normalized.toUpperCase();
-    if (!normalized || upper === "TBA") return "";
-    if (/(ONLINE|ZOOM|WEB|REMOTE)/i.test(upper)) return "";
-    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${normalized} Santa Barbara City College Santa Barbara CA`)}`;
 }
 
 export default function SectionsPage() {
@@ -202,7 +194,8 @@ export default function SectionsPage() {
 
                                         <div className="flex flex-col gap-2 mt-2">
                                             {section.meetings.map((meeting, index) => {
-                                                const mapUrl = buildGoogleMapsUrl(meeting.location, meeting.googleMapsUrl);
+                                                const locationLabel = getDisplayLocation(meeting.location);
+                                                const mapUrl = buildSbccGoogleMapsUrl(meeting.location);
 
                                                 return (
                                                     <div key={index} className="flex flex-wrap items-center gap-2 text-slate-600 bg-slate-50 px-3 py-2 rounded-lg border border-gray-100">
@@ -220,7 +213,7 @@ export default function SectionsPage() {
                                                         )}
                                                         <span className="text-slate-300">|</span>
                                                         <span className="font-medium text-slate-700">
-                                                            {meeting.location || "Location TBA"}
+                                                            {locationLabel || "Location TBA"}
                                                         </span>
                                                         {mapUrl && (
                                                             <a

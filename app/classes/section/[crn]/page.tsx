@@ -11,6 +11,7 @@ import {
     extractPrerequisites,
     extractTransferInformation,
 } from "@/lib/courseMetadata";
+import { buildSbccGoogleMapsUrl, getDisplayLocation } from "@/lib/locationMapping";
 
 interface Meeting {
     type: string;
@@ -85,15 +86,6 @@ function getModalityBadge(modality: string) {
 
 function getSubjectFromCourseCode(courseCode: string) {
     return clean(courseCode).split(/\s+/)[0] || "";
-}
-
-function buildGoogleMapsUrl(location: string, preferredUrl?: string) {
-    if (clean(preferredUrl)) return clean(preferredUrl);
-    const normalized = clean(location);
-    const upper = normalized.toUpperCase();
-    if (!normalized || upper === "TBA") return "";
-    if (/(ONLINE|ZOOM|WEB|REMOTE)/i.test(upper)) return "";
-    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${normalized} Santa Barbara City College Santa Barbara CA`)}`;
 }
 
 export default function SectionDetailsPage() {
@@ -213,7 +205,8 @@ export default function SectionDetailsPage() {
                             <h2 className="mb-3 text-lg font-bold text-slate-800">Meeting Details</h2>
                             <div className="space-y-3">
                                 {section.meetings.map((meeting, index) => {
-                                    const mapUrl = buildGoogleMapsUrl(meeting.location, meeting.googleMapsUrl);
+                                    const locationLabel = getDisplayLocation(meeting.location);
+                                    const mapUrl = buildSbccGoogleMapsUrl(meeting.location);
                                     const showMap = Boolean(mapUrl);
                                     const showInstructor = !isUnknownOrTBA(meeting.instructor);
 
@@ -232,7 +225,7 @@ export default function SectionDetailsPage() {
 
                                             <div className="flex flex-wrap items-center gap-2 text-sm text-slate-700">
                                                 <span className="font-medium">Location:</span>
-                                                <span>{clean(meeting.location) || "Location TBA"}</span>
+                                                <span>{locationLabel || "Location TBA"}</span>
                                                 {showMap ? (
                                                     <a
                                                         href={mapUrl}

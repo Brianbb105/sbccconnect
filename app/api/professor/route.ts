@@ -280,30 +280,89 @@ function resolveProfessorKey(
   return bestScore >= MIN_MATCH_SCORE ? bestKey : null;
 }
 
-function findCacheByName(
+function buildStrictNameAliases(name: string): string[] {
+  const cleaned = String(name || "").replace(/\s+/g, " ").trim();
+  if (!cleaned) return [];
+
+  const aliases = new Set<string>();
+  const add = (value: string) => {
+    const normalized = normalizeName(value);
+    if (normalized) aliases.add(normalized);
+  };
+
+  add(cleaned);
+  add(displayToFirstLast(cleaned));
+  return Array.from(aliases);
+}
+
+function buildSimpleNameAlias(name: string): string | null {
+  const normalized = normalizeName(displayToFirstLast(name));
+  const parts = normalized.split(" ").filter(Boolean);
+  if (parts.length < 2) return null;
+  return `${parts[0]} ${parts[parts.length - 1]}`;
+}
+
+function findCacheByExactName(
   cache: CacheMap,
   name: string,
 ): { key: string; entry: CachedProfessor } | null {
-  let bestKey: string | null = null;
-  let bestEntry: CachedProfessor | null = null;
-  let bestScore = -Infinity;
+  const targetStrictAliases = new Set(buildStrictNameAliases(name));
+  const targetSimpleAlias = buildSimpleNameAlias(name);
+  if (!targetStrictAliases.size && !targetSimpleAlias) return null;
+
+  type CacheCandidate = { key: string; entry: CachedProfessor; score: number };
+  let bestStrictMatch: CacheCandidate | null = null;
+  const simpleMatches: CacheCandidate[] = [];
 
   for (const [key, value] of Object.entries(cache)) {
-    if (!value) continue;
-    const score = scoreCandidate(name, {
-      firstName: value.firstName || "",
-      lastName: value.lastName || "",
-      numRatings: Number(value.numRatings || 0),
-    });
-    if (score > bestScore) {
-      bestScore = score;
-      bestKey = key;
-      bestEntry = value;
+    if (!isCachedProfessor(value)) continue;
+
+    const score =
+      Number(value.numRatings || 0) * 10 +
+      (Array.isArray(value.reviews) ? value.reviews.length : 0);
+    const candidate = { key, entry: value, score };
+
+    const strictAliases = new Set<string>([
+      ...buildStrictNameAliases(key),
+      ...buildStrictNameAliases(displayToFirstLast(key)),
+      ...buildStrictNameAliases(value.queryName || ""),
+      ...buildStrictNameAliases(`${value.firstName || ""} ${value.lastName || ""}`),
+    ]);
+    const hasStrictMatch = Array.from(targetStrictAliases).some((alias) => strictAliases.has(alias));
+
+    if (hasStrictMatch) {
+      if (!bestStrictMatch || candidate.score > bestStrictMatch.score) {
+        bestStrictMatch = candidate;
+      }
+      continue;
+    }
+
+    if (!targetSimpleAlias) continue;
+
+    const simpleAliases = new Set<string>();
+    const addSimpleAlias = (input: string) => {
+      const alias = buildSimpleNameAlias(input);
+      if (alias) simpleAliases.add(alias);
+    };
+    addSimpleAlias(key);
+    addSimpleAlias(displayToFirstLast(key));
+    addSimpleAlias(value.queryName || "");
+    addSimpleAlias(`${value.firstName || ""} ${value.lastName || ""}`);
+
+    if (simpleAliases.has(targetSimpleAlias)) {
+      simpleMatches.push(candidate);
     }
   }
 
-  if (!bestKey || !bestEntry || bestScore < MIN_MATCH_SCORE) return null;
-  return { key: bestKey, entry: bestEntry };
+  if (bestStrictMatch) {
+    return { key: bestStrictMatch.key, entry: bestStrictMatch.entry };
+  }
+
+  if (simpleMatches.length === 1) {
+    return { key: simpleMatches[0].key, entry: simpleMatches[0].entry };
+  }
+
+  return null;
 }
 
 function isCachedProfessor(value: CachedProfessor | null | undefined): value is CachedProfessor {
@@ -448,7 +507,7 @@ export async function GET(request: Request) {
       return NextResponse.json(formatApiResponse(directCache, "cache", resolvedKey));
     }
 
-    const cacheByName = findCacheByName(cache, name);
+    const cacheByName = findCacheByExactName(cache, name);
     if (cacheByName) {
       return NextResponse.json(formatApiResponse(cacheByName.entry, "cache", cacheByName.key));
     }

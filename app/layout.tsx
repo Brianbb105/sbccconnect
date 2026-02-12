@@ -1,4 +1,5 @@
 import './globals.css' // <--- MAKE SURE THIS LINE EXISTS AT THE TOP
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 const themeInitScript = `
 (() => {
@@ -42,7 +43,10 @@ export default function RootLayout({
         <head>
             <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         </head>
-        <body>{children}</body>
+        <body>
+        <AnalyticsTracker />
+        {children}
+        </body>
         </html>
     )
 }

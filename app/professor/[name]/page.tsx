@@ -35,9 +35,42 @@ interface ProfessorData {
 
 function formatReviewDate(rawDate: string) {
     if (!rawDate) return "";
+
+    // RMP often returns: "2024-03-13 04:50:59 +0000 UTC"
+    // We display only date + hour/minute, never seconds/timezone suffixes.
+    const structuredMatch = rawDate
+        .trim()
+        .match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})(?::\d{2})?(?:\s*[+-]\d{2}:?\d{2}|Z)?(?:\s+UTC)?$/i);
+
+    if (structuredMatch) {
+        const [, year, month, day, hour, minute] = structuredMatch;
+        const datePart = new Date(Number(year), Number(month) - 1, Number(day));
+        const formattedDate = datePart.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+        });
+        const hour24 = Number(hour);
+        const hour12 = ((hour24 + 11) % 12) + 1;
+        const ampm = hour24 >= 12 ? "PM" : "AM";
+        return `${formattedDate}, ${hour12}:${minute} ${ampm}`;
+    }
+
     const parsed = new Date(rawDate);
-    if (Number.isNaN(parsed.getTime())) return rawDate;
-    return parsed.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+    if (!Number.isNaN(parsed.getTime())) {
+        return parsed.toLocaleString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+        });
+    }
+
+    const cleaned = rawDate
+        .replace(/\s+UTC\b/i, "")
+        .replace(/:(\d{2})(?=\s*[+-]\d{2}:?\d{2}\b|Z\b|$)/, "");
+    return cleaned.trim();
 }
 
 function formatTakeAgainPercent(value: number) {
@@ -75,7 +108,7 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
         const qs = new URLSearchParams({ name: decodedName });
         if (explicitKey) qs.set("key", explicitKey);
 
-        fetch(`/api/professor?${qs.toString()}`)
+        fetch(`/api/professor?${qs.toString()}`, { cache: "no-store" })
             .then((res) => {
                 if (!res.ok) throw new Error('Professor not found');
                 return res.json();

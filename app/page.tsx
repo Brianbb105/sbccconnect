@@ -41,12 +41,14 @@ export default function HomePage() {
                             <div className="flex flex-col sm:flex-row gap-4 w-full">
                                 <Link
                                     href="/classes?term=spring2026"
+                                    data-track="home_browse_courses"
                                     className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
                                 >
                                     Browse All Courses
                                 </Link>
                                 <Link
                                     href="/professors"
+                                    data-track="home_browse_professors"
                                     className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
                                 >
                                     Browse All Professors
@@ -58,7 +60,11 @@ export default function HomePage() {
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 flex flex-col justify-center items-center text-center hover:shadow-md transition-shadow">
                             <h2 className={`text-lg font-semibold mb-4 ${darkBlueText}`}>Popular Subjects</h2>
                             <div className="flex flex-wrap justify-center items-center gap-2">
-                                <Link href="/classes" className="home-tab px-3 py-1 bg-slate-100 border border-slate-200 text-slate-600 rounded-full text-xs font-bold hover:bg-[#0f172a] hover:text-white transition-colors">
+                                <Link
+                                    href="/classes"
+                                    data-track="home_subject_all"
+                                    className="home-tab px-3 py-1 bg-slate-100 border border-slate-200 text-slate-600 rounded-full text-xs font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
+                                >
                                     ALL
                                 </Link>
                                 <div className="h-4 w-px bg-slate-300 mx-1"></div>
@@ -66,6 +72,7 @@ export default function HomePage() {
                                     <Link
                                         key={subject}
                                         href={`/classes/${subject}`}
+                                        data-track={`home_subject_${subject.toLowerCase()}`}
                                         className="home-tab px-3 py-1 bg-slate-100 border border-slate-200 text-slate-600 rounded-full text-xs font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
                                     >
                                         {subject}
@@ -86,6 +93,7 @@ export default function HomePage() {
                     />
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfzoOHiXmPlOsgrFFCU5DyMayWZOP2TxavUMkZ0jxfCp7b3bA/viewform?usp=dialog"
+                        data-track="home_feedback_form"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border-2 border-slate-100 rounded-2xl p-6 text-center hover:border-[#0f172a] transition-colors cursor-pointer bg-white group"
@@ -109,7 +117,7 @@ function InfoCard({ title, content, href }: { title: string, content: string, hr
     );
 
     if (href) {
-        return <Link href={href} className="block h-full">{card}</Link>;
+        return <Link href={href} data-track={`home_info_${title.toLowerCase()}`} className="block h-full">{card}</Link>;
     }
 
     return card;

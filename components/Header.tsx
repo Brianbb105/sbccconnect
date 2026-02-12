@@ -96,6 +96,7 @@ export default function Header() {
                 <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
                     <Link
                         href="/"
+                        data-track="header_logo"
                         className="text-3xl font-bold tracking-tight hover:opacity-70 transition text-[#0f172a]"
                     >
                         SBCCPlan
@@ -105,10 +106,10 @@ export default function Header() {
 
                     <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5">
                         <nav className="flex items-center gap-4 md:gap-6 font-medium text-sm md:text-base text-slate-600">
-                            <Link href="/classes" className="hover:text-[#0f172a] transition">Classes</Link>
-                            <Link href="/professors" className="hover:text-[#0f172a] transition">Professors</Link>
-                            <Link href="/planner" className="hover:text-[#0f172a] transition">Planner</Link>
-                            <Link href="/about" className="hover:text-[#0f172a] transition">About</Link>
+                            <Link href="/classes" data-track="nav_classes" className="hover:text-[#0f172a] transition">Classes</Link>
+                            <Link href="/professors" data-track="nav_professors" className="hover:text-[#0f172a] transition">Professors</Link>
+                            <Link href="/planner" data-track="nav_planner" className="hover:text-[#0f172a] transition">Planner</Link>
+                            <Link href="/about" data-track="nav_about" className="hover:text-[#0f172a] transition">About</Link>
                         </nav>
 
                         <label className="sr-only" htmlFor="theme-select">Theme</label>
@@ -135,6 +136,7 @@ export default function Header() {
             {pathname !== "/" && (
                 <div className="max-w-6xl mx-auto px-6 py-4">
                     <button
+                        data-track="back_button"
                         onClick={handleBack}
                         className="px-4 h-10 rounded-full font-bold transition-all text-sm bg-white text-slate-600 hover:bg-slate-100 hover:text-[#0f172a] border border-slate-200"
                     >

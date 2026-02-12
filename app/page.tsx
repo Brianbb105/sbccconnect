@@ -20,7 +20,7 @@ export default function HomePage() {
                     <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 flex flex-col justify-center items-start hover:shadow-md transition-shadow h-full">
                         <h2 className={`text-3xl font-bold ${darkBlueText} mb-6`}>Welcome to SBCCPlan</h2>
                         <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                            The unofficial, student-built website to browse classes and see your professors. HI SUBAT AND MOM :)
+                            The unofficial, student-built website to browse classes and see your professors.
                         </p>
                         <p className="text-slate-500 leading-relaxed">
                             With a clear UI, it is class planning, completely reimagined for the modern student.

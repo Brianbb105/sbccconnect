@@ -9,7 +9,6 @@ import Header from "@/components/Header";
 interface Section {
     courseCode: string;
     courseTitle: string;
-    courseDescription?: string;
     prerequisitesText?: string;
     prerequisites?: string[];
     units?: string;
@@ -41,15 +40,9 @@ function extractPrerequisites(section: Section) {
     if (!fallbackText) return [];
 
     return fallbackText
-        .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite|Advisory)))/i)
+        .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite)))/i)
         .map((item) => clean(item))
         .filter(Boolean);
-}
-
-function clipText(text: string, maxLength = 160) {
-    const normalized = clean(text);
-    if (normalized.length <= maxLength) return normalized;
-    return `${normalized.slice(0, maxLength).trimEnd()}...`;
 }
 
 export default function CoursesPage() {
@@ -61,7 +54,6 @@ export default function CoursesPage() {
         const grouped = new Map<string, {
             title: string;
             count: number;
-            description: string;
             prerequisites: string[];
             units: Set<string>;
             modalities: Set<string>;
@@ -75,7 +67,6 @@ export default function CoursesPage() {
                 grouped.set(section.courseCode, {
                     title: section.courseTitle,
                     count: 0,
-                    description: clean(section.courseDescription),
                     prerequisites: extractPrerequisites(section),
                     units: new Set<string>(),
                     modalities: new Set<string>(),
@@ -84,9 +75,6 @@ export default function CoursesPage() {
 
             const entry = grouped.get(section.courseCode)!;
             entry.count += 1;
-            if (!entry.description && clean(section.courseDescription)) {
-                entry.description = clean(section.courseDescription);
-            }
             if (!entry.prerequisites.length) {
                 entry.prerequisites = extractPrerequisites(section);
             }
@@ -132,11 +120,6 @@ export default function CoursesPage() {
                                     <div className="min-w-0">
                                         <div className="text-xl font-bold text-slate-800">{course.courseCode}</div>
                                         <div className="text-slate-600 font-medium">{course.title}</div>
-                                        <p className="mt-2 text-sm text-slate-500">
-                                            {course.description
-                                                ? clipText(course.description)
-                                                : "Course description will appear after extraction completes."}
-                                        </p>
                                         <div className="mt-3 flex flex-wrap gap-2 text-xs">
                                             <span className="rounded-full border border-slate-200 bg-slate-50 px-2 py-1 font-semibold text-slate-600">
                                                 Sections {course.count}

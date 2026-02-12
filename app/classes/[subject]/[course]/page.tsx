@@ -5,6 +5,12 @@ import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import sectionsData from "@/app/data/202650/sections.json";
 import Header from "@/components/Header";
+import CourseCatalogDetails from "@/components/CourseCatalogDetails";
+import {
+    extractAdvisories,
+    extractPrerequisites,
+    extractTransferInformation,
+} from "@/lib/courseMetadata";
 
 interface Meeting {
     type?: string;
@@ -24,8 +30,12 @@ interface Section {
     igetc?: string;
     igetcAreas?: string[];
     courseDescription?: string;
+    advisoriesText?: string;
+    advisories?: string[];
     prerequisitesText?: string;
     prerequisites?: string[];
+    transferInformationText?: string;
+    transferInformation?: string[];
     units: string;
     modality: "OL" | "HY" | "IP";
     meetings: Meeting[];
@@ -45,12 +55,6 @@ function isUnknownOrTBA(value?: string) {
         || normalized === "unknown"
         || normalized === "staff"
         || normalized === "sbff";
-}
-
-function clipText(text: string, maxLength = 220) {
-    const normalized = clean(text);
-    if (normalized.length <= maxLength) return normalized;
-    return `${normalized.slice(0, maxLength).trimEnd()}...`;
 }
 
 function getStatusBadge(status: string) {
@@ -90,21 +94,6 @@ function buildGoogleMapsUrl(location: string, preferredUrl?: string) {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${normalized} Santa Barbara City College Santa Barbara CA`)}`;
 }
 
-function extractPrerequisites(section?: Section) {
-    if (!section) return [];
-    if (Array.isArray(section.prerequisites) && section.prerequisites.length > 0) {
-        return section.prerequisites.map((value) => clean(value)).filter(Boolean);
-    }
-
-    const fallbackText = clean(section.prerequisitesText);
-    if (!fallbackText) return [];
-
-    return fallbackText
-        .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite|Advisory)))/i)
-        .map((value) => clean(value))
-        .filter(Boolean);
-}
-
 export default function SectionsPage() {
     const params = useParams();
     const router = useRouter();
@@ -118,11 +107,17 @@ export default function SectionsPage() {
     }, [allSections, courseCode]);
 
     const courseTitle = sections[0]?.courseTitle || "";
-    const courseDescription = clean(sections.find((section) => clean(section.courseDescription))?.courseDescription);
-    const prerequisites = extractPrerequisites(sections.find((section) => {
-        if (Array.isArray(section.prerequisites) && section.prerequisites.length > 0) return true;
-        return Boolean(clean(section.prerequisitesText));
-    }));
+    const metadataSource = sections.find((section) => {
+        if (clean(section.courseDescription)) return true;
+        if (extractAdvisories(section).length > 0) return true;
+        if (extractPrerequisites(section).length > 0) return true;
+        if (extractTransferInformation(section).length > 0) return true;
+        return false;
+    }) || sections[0];
+    const courseDescription = clean(metadataSource?.courseDescription);
+    const advisories = extractAdvisories(metadataSource);
+    const prerequisites = extractPrerequisites(metadataSource);
+    const transferInformation = extractTransferInformation(metadataSource);
     const igetcAreas = useMemo(() => {
         const areas = new Set<string>();
         sections.forEach((section) => {
@@ -160,30 +155,12 @@ export default function SectionsPage() {
                     <p className="text-slate-500 mt-1">{sections.length} section(s) available</p>
                 </div>
 
-                {(courseDescription || prerequisites.length > 0) && (
-                    <div className="mb-6 rounded-xl border border-gray-200 bg-white p-5">
-                        {courseDescription && (
-                            <div className="mb-4">
-                                <h2 className="text-sm font-bold uppercase tracking-wide text-slate-500">Course Description</h2>
-                                <p className="mt-2 text-sm leading-relaxed text-slate-700">{clipText(courseDescription)}</p>
-                            </div>
-                        )}
-                        <div>
-                            <h2 className="text-sm font-bold uppercase tracking-wide text-slate-500">Prerequisites</h2>
-                            {prerequisites.length > 0 ? (
-                                <div className="mt-2 flex flex-wrap gap-2">
-                                    {prerequisites.map((item, index) => (
-                                        <span key={`${item}-${index}`} className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-600">
-                                            {item}
-                                        </span>
-                                    ))}
-                                </div>
-                            ) : (
-                                <p className="mt-2 text-sm text-slate-500">No prerequisite requirements listed.</p>
-                            )}
-                        </div>
-                    </div>
-                )}
+                <CourseCatalogDetails
+                    description={courseDescription}
+                    advisories={advisories}
+                    prerequisites={prerequisites}
+                    transferInformation={transferInformation}
+                />
 
                 <div className="grid gap-4">
                     {sections.map((section) => {

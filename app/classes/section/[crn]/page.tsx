@@ -5,6 +5,12 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import sectionsData from "@/app/data/202650/sections.json";
 import Header from "@/components/Header";
+import CourseCatalogDetails from "@/components/CourseCatalogDetails";
+import {
+    extractAdvisories,
+    extractPrerequisites,
+    extractTransferInformation,
+} from "@/lib/courseMetadata";
 
 interface Meeting {
     type: string;
@@ -27,8 +33,12 @@ interface Section {
     enrolled: string;
     capacity: string;
     courseDescription?: string;
+    advisoriesText?: string;
+    advisories?: string[];
     prerequisitesText?: string;
     prerequisites?: string[];
+    transferInformationText?: string;
+    transferInformation?: string[];
 }
 
 function clean(value?: string) {
@@ -86,20 +96,6 @@ function buildGoogleMapsUrl(location: string, preferredUrl?: string) {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${normalized} Santa Barbara City College Santa Barbara CA`)}`;
 }
 
-function parsePrerequisites(section: Section) {
-    if (Array.isArray(section.prerequisites) && section.prerequisites.length > 0) {
-        return section.prerequisites.map((value) => clean(value)).filter(Boolean);
-    }
-
-    const fallbackText = clean(section.prerequisitesText);
-    if (!fallbackText) return [];
-
-    return fallbackText
-        .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite|Advisory)))/i)
-        .map((value) => clean(value))
-        .filter(Boolean);
-}
-
 export default function SectionDetailsPage() {
     const params = useParams();
     const crn = decodeURIComponent(params.crn as string);
@@ -129,9 +125,11 @@ export default function SectionDetailsPage() {
     const statusConfig = getStatusBadge(section.status);
     const modalityConfig = getModalityBadge(section.modality);
     const subject = getSubjectFromCourseCode(section.courseCode);
-    const prerequisites = parsePrerequisites(section);
+    const advisories = extractAdvisories(section);
+    const prerequisites = extractPrerequisites(section);
+    const transferInformation = extractTransferInformation(section);
     const primaryInstructor = section.meetings.find((meeting) => !isUnknownOrTBA(meeting.instructor))?.instructor || "TBA";
-    const description = clean(section.courseDescription) || "Course description not available yet.";
+    const description = clean(section.courseDescription);
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
@@ -203,23 +201,13 @@ export default function SectionDetailsPage() {
                             </div>
                         </div>
 
-                        <div className="mb-8 rounded-xl border border-gray-200 bg-slate-50 p-5">
-                            <h2 className="mb-2 text-lg font-bold text-slate-800">Course Description</h2>
-                            <p className="text-sm leading-relaxed text-slate-700">{description}</p>
-                        </div>
-
-                        <div className="mb-8 rounded-xl border border-gray-200 bg-slate-50 p-5">
-                            <h2 className="mb-2 text-lg font-bold text-slate-800">Prerequisites</h2>
-                            {prerequisites.length > 0 ? (
-                                <ul className="space-y-1 text-sm text-slate-700">
-                                    {prerequisites.map((item, index) => (
-                                        <li key={`${item}-${index}`}>• {item}</li>
-                                    ))}
-                                </ul>
-                            ) : (
-                                <p className="text-sm text-slate-500">No prerequisite requirements listed.</p>
-                            )}
-                        </div>
+                        <CourseCatalogDetails
+                            className="mb-8 bg-slate-50"
+                            description={description}
+                            advisories={advisories}
+                            prerequisites={prerequisites}
+                            transferInformation={transferInformation}
+                        />
 
                         <div>
                             <h2 className="mb-3 text-lg font-bold text-slate-800">Meeting Details</h2>

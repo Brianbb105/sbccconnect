@@ -34,8 +34,12 @@ if (!fs.existsSync(OUTPUT_DIR)) {
     let currentCourseTitle = "UNKNOWN";
     let currentIGETCAreas = [];
     let currentCourseDescription = "";
+    let currentAdvisoriesText = "";
+    let currentAdvisories = [];
     let currentPrerequisitesText = "";
     let currentPrerequisites = [];
+    let currentTransferInformationText = "";
+    let currentTransferInformation = [];
     let lastSeenCrn = null;
 
     const DATE_RE = /\b\d{2}\/\d{2}-\d{2}\/\d{2}\b/;
@@ -45,6 +49,11 @@ if (!fs.existsSync(OUTPUT_DIR)) {
     const CRN_RE = /^\d{5}$/;
     const NUMERIC_RE = /^\d+(?:\.\d+)?$/;
     const DAY_TOKEN_RE = /^[MTWRFSU]$/;
+    const PREREQ_LABEL_RE = /^(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)$/i;
+    const ADVISORY_LABEL_RE = /^(?:course advisory|advisory|recommended preparation)$/i;
+    const DESCRIPTION_LABEL_RE = /^(?:course description|catalog description|description)$/i;
+    const TRANSFER_LABEL_RE = /^(?:transfer information|sbcc general education|grading options|hours)$/i;
+    const TRANSFER_KEYWORD_RE = /\b(?:IGETC|C-ID|CSU Transferable|UC Transferable|transfer information|SBCC General Education|Grading Options|Hours)\b/i;
     const HEADER_TOKENS = new Set([
       "TYPE", "DAYS", "TIME", "LOCATION", "INSTRUCTOR", "DATE", "WEEKS",
       "STATUS", "CRN", "CMP", "SEC"
@@ -61,10 +70,58 @@ if (!fs.existsSync(OUTPUT_DIR)) {
       const normalized = normalizeSpacing(text);
       if (!normalized) return [];
       const parts = normalized
-          .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite|Advisory)))/i)
+          .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite)))/i)
           .map((v) => normalizeSpacing(v))
           .filter(Boolean);
       return uniq(parts);
+    };
+
+    const splitAdvisories = (text) => {
+      const normalized = normalizeSpacing(text);
+      if (!normalized) return [];
+      const parts = normalized
+          .split(/(?:\s*;\s*|\s*\|\s*)/i)
+          .map((v) => normalizeSpacing(v))
+          .filter(Boolean);
+      return uniq(parts);
+    };
+
+    const splitTransferInformation = (text) => {
+      const normalized = normalizeSpacing(text);
+      if (!normalized) return [];
+      const withMarkers = normalized.replace(
+          /(course advisory|advisory|recommended preparation|prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?|course description|catalog description|description|transfer information|sbcc general education|grading options|hours)\s*:/ig,
+          '\n$1:'
+      );
+      const parts = withMarkers
+          .split(/\s*\|\s*|\n+/)
+          .map((v) => normalizeSpacing(v))
+          .filter(Boolean);
+      return uniq(parts);
+    };
+
+    const appendDelimitedText = (text, chunk, delimiter = "; ") => {
+      const normalizedText = normalizeSpacing(text);
+      const normalizedChunk = normalizeSpacing(chunk).replace(/^[:\-]\s*/, "");
+      if (!normalizedChunk) return normalizedText;
+      if (!normalizedText) return normalizedChunk;
+      return `${normalizedText}${delimiter}${normalizedChunk}`;
+    };
+
+    const appendSentenceText = (text, chunk) => appendDelimitedText(text, chunk, " ");
+
+    const appendTransferInformation = (label, value) => {
+      const normalizedLabel = normalizeSpacing(String(label || "")).replace(/:$/, "");
+      const normalizedValue = normalizeSpacing(String(value || ""));
+      if (!normalizedLabel && !normalizedValue) return;
+      const entry = normalizedValue
+          ? `${normalizedLabel || "Transfer Information"}: ${normalizedValue}`
+          : normalizedLabel;
+      currentTransferInformation = uniq([
+        ...currentTransferInformation,
+        entry
+      ]);
+      currentTransferInformationText = currentTransferInformation.join(" | ");
     };
 
     const isMeaningfulLocation = (location) => {
@@ -128,71 +185,171 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 
     const applyCourseMetadataToExistingSections = () => {
       const normalizedDescription = normalizeSpacing(currentCourseDescription);
+      const normalizedAdvisoriesText = normalizeSpacing(currentAdvisoriesText);
+      const normalizedAdvisories = splitAdvisories(normalizedAdvisoriesText);
       const normalizedPrereqText = normalizeSpacing(currentPrerequisitesText);
       const normalizedPrerequisites = splitPrerequisites(normalizedPrereqText);
+      const normalizedTransferInformation = uniq(
+          splitTransferInformation(currentTransferInformationText)
+              .map((value) => normalizeSpacing(value))
+              .filter(Boolean)
+      );
+      const normalizedTransferInformationText = normalizeSpacing(
+          currentTransferInformationText || normalizedTransferInformation.join(" | ")
+      );
 
       Object.values(resultMap).forEach((entry) => {
         if (entry.courseCode !== currentCourseCode) return;
         entry.courseDescription = normalizedDescription;
+        entry.advisoriesText = normalizedAdvisoriesText;
+        entry.advisories = normalizedAdvisories;
         entry.prerequisitesText = normalizedPrereqText;
         entry.prerequisites = normalizedPrerequisites;
+        entry.transferInformationText = normalizedTransferInformationText;
+        entry.transferInformation = normalizedTransferInformation;
       });
     };
 
     const updateCourseMetadataFromText = (text) => {
       const normalized = normalizeSpacing(text);
       if (!normalized) return false;
-      if (/transfer information/i.test(normalized) || /end of report/i.test(normalized)) return false;
+      if (/end of report/i.test(normalized)) return false;
 
       let updated = false;
 
-      const prereqMatch = normalized.match(
-          /(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?|advisory|recommended preparation)\s*:?\s*(.+)$/i
-      );
-      if (prereqMatch?.[1]) {
-        const chunk = normalizeSpacing(prereqMatch[1]).replace(/^[:\-]\s*/, "");
-        if (chunk) {
-          currentPrerequisitesText = currentPrerequisitesText
-              ? `${currentPrerequisitesText}; ${chunk}`
-              : chunk;
-          updated = true;
-        }
-      }
-
-      const descriptionMatch = normalized.match(
-          /(?:course description|catalog description|description)\s*:?\s*(.+)$/i
-      );
-      if (descriptionMatch?.[1]) {
-        const chunk = normalizeSpacing(descriptionMatch[1]).replace(/^[:\-]\s*/, "");
-        if (chunk) {
-          currentCourseDescription = currentCourseDescription
-              ? `${currentCourseDescription} ${chunk}`
-              : chunk;
-          updated = true;
-        }
-      }
-
       const looksLikeMeetingRow = CRN_RE.test(normalized) || TIME_RE.test(normalized) || DATE_RE.test(normalized);
-      const looksLikeMetaHeader = /^(prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?|advisory|recommended preparation|course description|catalog description|description)\s*:?\s*$/i.test(normalized);
+      const looksLikeMetaHeader = /^(prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?|course advisory|advisory|recommended preparation|course description|catalog description|description|transfer information|sbcc general education|grading options|hours)\s*:?\s*$/i.test(normalized);
+      if (looksLikeColumnHeader([normalized], normalized)) return false;
+
+      const withMarkers = normalized.replace(
+          /(course advisory|advisory|recommended preparation|prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?|course description|catalog description|description|transfer information|sbcc general education|grading options|hours)\s*:/ig,
+          '\n$1:'
+      );
+      const lines = withMarkers
+          .split(/\n+/)
+          .map((value) => normalizeSpacing(value))
+          .filter(Boolean);
+
+      const addPrereq = (value) => {
+        const chunk = normalizeSpacing(value).replace(/^[:\-]\s*/, "");
+        if (!chunk) return;
+        currentPrerequisitesText = appendDelimitedText(currentPrerequisitesText, chunk, "; ");
+        updated = true;
+      };
+
+      const addAdvisory = (value) => {
+        const chunk = normalizeSpacing(value).replace(/^[:\-]\s*/, "");
+        if (!chunk) return;
+        currentAdvisoriesText = appendDelimitedText(currentAdvisoriesText, chunk, "; ");
+        updated = true;
+      };
+
+      const addDescription = (value) => {
+        const chunk = normalizeSpacing(value).replace(/^[:\-]\s*/, "");
+        if (!chunk) return;
+        currentCourseDescription = appendSentenceText(currentCourseDescription, chunk);
+        updated = true;
+      };
+
+      lines.forEach((line) => {
+        const labelMatch = line.match(/^([A-Za-z][A-Za-z0-9\s/&()\-]{1,40})\s*:\s*(.+)$/);
+        if (labelMatch) {
+          const label = normalizeSpacing(labelMatch[1]);
+          const value = normalizeSpacing(labelMatch[2]);
+
+          if (PREREQ_LABEL_RE.test(label)) {
+            addPrereq(value);
+            return;
+          }
+
+          if (ADVISORY_LABEL_RE.test(label)) {
+            // Banner often puts the first sentence advisory + unlabeled description in one line.
+            const sentenceSplit = value.match(/^(.+?[.!?])\s+(.+)$/);
+            if (sentenceSplit && sentenceSplit[2] && sentenceSplit[2].length > 35 && !PREREQ_LABEL_RE.test(sentenceSplit[2])) {
+              addAdvisory(sentenceSplit[1]);
+              addDescription(sentenceSplit[2]);
+            } else {
+              addAdvisory(value);
+            }
+            return;
+          }
+
+          if (DESCRIPTION_LABEL_RE.test(label)) {
+            addDescription(value);
+            return;
+          }
+
+          if (TRANSFER_LABEL_RE.test(label) || TRANSFER_KEYWORD_RE.test(value)) {
+            appendTransferInformation(label, value);
+            const extractedAreas = extractIgetcAreas(`${label}: ${value}`);
+            if (extractedAreas.length) {
+              currentIGETCAreas = uniq([...currentIGETCAreas, ...extractedAreas]);
+            }
+            updated = true;
+            return;
+          }
+        }
+
+        if (looksLikeMeetingRow || looksLikeMetaHeader || looksLikeColumnHeader([line], line)) return;
+
+        if (/^(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)\b/i.test(line)) {
+          addPrereq(line.replace(/^(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)\s*:?\s*/i, ""));
+          return;
+        }
+
+        if (/^(?:course advisory|advisory|recommended preparation)\b/i.test(line)) {
+          const advisoryChunk = line.replace(/^(?:course advisory|advisory|recommended preparation)\s*:?\s*/i, "");
+          addAdvisory(advisoryChunk);
+          return;
+        }
+
+        if (TRANSFER_KEYWORD_RE.test(line)) {
+          appendTransferInformation("Transfer Information", line);
+          const extractedAreas = extractIgetcAreas(line);
+          if (extractedAreas.length) {
+            currentIGETCAreas = uniq([...currentIGETCAreas, ...extractedAreas]);
+          }
+          updated = true;
+          return;
+        }
+
+        if (line.length > 45) {
+          addDescription(line);
+        }
+      });
 
       if (!updated && !looksLikeMeetingRow && !looksLikeMetaHeader && !looksLikeColumnHeader([normalized], normalized)) {
-        if (/(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?|advisory|recommended preparation)/i.test(normalized)) {
-          currentPrerequisitesText = currentPrerequisitesText
-              ? `${currentPrerequisitesText}; ${normalized}`
-              : normalized;
+        if (/(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)/i.test(normalized)) {
+          currentPrerequisitesText = appendDelimitedText(currentPrerequisitesText, normalized, "; ");
+          updated = true;
+        } else if (/(?:course advisory|advisory|recommended preparation)/i.test(normalized)) {
+          currentAdvisoriesText = appendDelimitedText(currentAdvisoriesText, normalized, "; ");
+          updated = true;
+        } else if (TRANSFER_KEYWORD_RE.test(normalized)) {
+          appendTransferInformation("Transfer Information", normalized);
+          const extractedAreas = extractIgetcAreas(normalized);
+          if (extractedAreas.length) {
+            currentIGETCAreas = uniq([...currentIGETCAreas, ...extractedAreas]);
+          }
           updated = true;
         } else if (normalized.length > 45) {
-          currentCourseDescription = currentCourseDescription
-              ? `${currentCourseDescription} ${normalized}`
-              : normalized;
+          currentCourseDescription = appendSentenceText(currentCourseDescription, normalized);
           updated = true;
         }
       }
 
       if (!updated) return false;
       currentCourseDescription = normalizeSpacing(currentCourseDescription);
+      currentAdvisoriesText = normalizeSpacing(currentAdvisoriesText);
+      currentAdvisories = splitAdvisories(currentAdvisoriesText);
       currentPrerequisitesText = normalizeSpacing(currentPrerequisitesText);
       currentPrerequisites = splitPrerequisites(currentPrerequisitesText);
+      currentTransferInformation = uniq(
+          splitTransferInformation(currentTransferInformationText)
+              .map((value) => normalizeSpacing(value))
+              .filter(Boolean)
+      );
+      currentTransferInformationText = currentTransferInformation.join(" | ");
       applyCourseMetadataToExistingSections();
       return true;
     };
@@ -364,8 +521,12 @@ if (!fs.existsSync(OUTPUT_DIR)) {
       if (headerMatch && cells.length < 8 && !/^\d{5}/.test(text)) {
         currentIGETCAreas = [];
         currentCourseDescription = "";
+        currentAdvisoriesText = "";
+        currentAdvisories = [];
         currentPrerequisitesText = "";
         currentPrerequisites = [];
+        currentTransferInformationText = "";
+        currentTransferInformation = [];
         lastSeenCrn = null;
         activeDateIndex = -1;
 
@@ -392,7 +553,6 @@ if (!fs.existsSync(OUTPUT_DIR)) {
         if (areas.length) {
           currentIGETCAreas = uniq([...currentIGETCAreas, ...areas]);
         }
-        return;
       }
 
       // --- 3. COURSE META EXTRACTION (Description + Prerequisites) ---
@@ -526,8 +686,12 @@ if (!fs.existsSync(OUTPUT_DIR)) {
             igetc: currentIGETCAreas[0] || null,
             igetcAreas: [...currentIGETCAreas],
             courseDescription: currentCourseDescription,
+            advisoriesText: currentAdvisoriesText,
+            advisories: [...currentAdvisories],
             prerequisitesText: currentPrerequisitesText,
             prerequisites: [...currentPrerequisites],
+            transferInformationText: currentTransferInformationText,
+            transferInformation: [...currentTransferInformation],
             units: getText(3),
             capacity,
             enrolled,
@@ -610,6 +774,17 @@ if (!fs.existsSync(OUTPUT_DIR)) {
       else modality = "IP";
 
       const igetcAreas = uniq((cls.igetcAreas || []).filter(Boolean));
+      const normalizedAdvisories = uniq(
+          (Array.isArray(cls.advisories) && cls.advisories.length
+              ? cls.advisories
+              : splitAdvisories(cls.advisoriesText || "")
+          )
+              .map((value) => normalizeSpacing(value))
+              .filter(Boolean)
+      );
+      const normalizedAdvisoriesText = normalizeSpacing(
+          cls.advisoriesText || normalizedAdvisories.join("; ")
+      );
       const normalizedPrerequisites = uniq(
           (Array.isArray(cls.prerequisites) && cls.prerequisites.length
               ? cls.prerequisites
@@ -621,6 +796,17 @@ if (!fs.existsSync(OUTPUT_DIR)) {
       const normalizedPrerequisitesText = normalizeSpacing(
           cls.prerequisitesText || normalizedPrerequisites.join("; ")
       );
+      const normalizedTransferInformation = uniq(
+          (Array.isArray(cls.transferInformation) && cls.transferInformation.length
+              ? cls.transferInformation
+              : splitTransferInformation(cls.transferInformationText || "")
+          )
+              .map((value) => normalizeSpacing(value))
+              .filter(Boolean)
+      );
+      const normalizedTransferInformationText = normalizeSpacing(
+          cls.transferInformationText || normalizedTransferInformation.join(" | ")
+      );
       const normalizedDescription = normalizeSpacing(cls.courseDescription || "");
 
       return {
@@ -628,8 +814,12 @@ if (!fs.existsSync(OUTPUT_DIR)) {
         igetc: cls.igetc || igetcAreas[0] || null,
         igetcAreas,
         courseDescription: normalizedDescription,
+        advisoriesText: normalizedAdvisoriesText,
+        advisories: normalizedAdvisories,
         prerequisitesText: normalizedPrerequisitesText,
         prerequisites: normalizedPrerequisites,
+        transferInformationText: normalizedTransferInformationText,
+        transferInformation: normalizedTransferInformation,
         meetings: dedupedMeetings,
         hasLab,
         hasOnlineLab,

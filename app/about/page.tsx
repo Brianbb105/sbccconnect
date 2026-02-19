@@ -8,15 +8,19 @@ export default function AboutPage() {
             <main className="max-w-5xl mx-auto px-6 py-12">
                 <div className="bg-white border border-slate-200 rounded-3xl shadow-sm p-8 md:p-10">
                     <div className="grid md:grid-cols-[280px,1fr] gap-8 items-start">
-                        <div className="mx-auto md:mx-0 w-full max-w-[280px] rounded-2xl overflow-hidden border-2 border-slate-100 shadow-sm">
-                            <Image
-                                src="/brian-profile.svg"
-                                alt="Brian profile photo"
-                                width={280}
-                                height={280}
-                                className="w-full h-auto block"
-                                priority
-                            />
+                        <div className="mx-auto md:mx-0 w-full max-w-[280px]">
+                            <div className="relative mx-auto h-[280px] w-[280px] rounded-full bg-gradient-to-br from-sky-200 via-blue-100 to-indigo-200 p-1 shadow-lg">
+                                <div className="relative h-full w-full overflow-hidden rounded-full border border-white/80 bg-white">
+                                    <Image
+                                        src="/brian-personal.png"
+                                        alt="Brian profile photo"
+                                        fill
+                                        sizes="280px"
+                                        className="object-cover object-[center_30%]"
+                                        priority
+                                    />
+                                </div>
+                            </div>
                         </div>
 
                         <div>

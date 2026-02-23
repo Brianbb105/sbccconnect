@@ -37,10 +37,9 @@ export default function HomePage() {
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
                             <h2 className={`text-xl font-semibold mb-6 ${darkBlueText}`}>Spring 2026</h2>
 
-                            {/* The "Two sub-sub tags" as big buttons */}
                             <div className="flex flex-col sm:flex-row gap-4 w-full">
                                 <Link
-                                    href="/classes?term=spring2026"
+                                    href="/classes"
                                     data-track="home_browse_courses"
                                     className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
                                 >

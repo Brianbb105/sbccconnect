@@ -4,6 +4,7 @@ import { useState, useEffect, use } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from "next/link";
 import Header from "@/components/Header";
+import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 interface ProfessorTag {
     tagName: string;
@@ -82,12 +83,13 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
     const { name } = use(params);
     const decodedName = decodeURIComponent(name);
     const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
     const explicitKey = (searchParams.get("key") || "").trim();
 
     // SBCC's specific ID on RMP, used for fallback search URL.
     const SBCC_SCHOOL_ID = "2783";
 
-    const requestKey = `${decodedName}::${explicitKey}`;
+    const requestKey = `${decodedName}::${explicitKey}::${currentTerm.slug}`;
     const [result, setResult] = useState<{
         requestKey: string;
         professor: ProfessorData | null;
@@ -107,6 +109,7 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
 
         const qs = new URLSearchParams({ name: decodedName });
         if (explicitKey) qs.set("key", explicitKey);
+        qs.set("term", currentTerm.slug);
 
         fetch(`/api/professor?${qs.toString()}`, { cache: "no-store" })
             .then((res) => {
@@ -134,7 +137,7 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
         return () => {
             cancelled = true;
         };
-    }, [decodedName, explicitKey, requestKey]);
+    }, [decodedName, explicitKey, currentTerm.slug, requestKey]);
 
     // --- THE FIX IS HERE ---
     // 1. If we have a direct ID, go to their specific page.
@@ -151,7 +154,7 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
 
                 {/* Navigation Breadcrumb */}
                 <div className="mb-6 text-sm text-slate-500">
-                    <Link href="/professors" className="hover:underline hover:text-[#0f172a]">
+                    <Link href={appendTermToHref("/professors", currentTerm.slug)} className="hover:underline hover:text-[#0f172a]">
                         Professors
                     </Link>
                     <span className="mx-2">&gt;</span>
@@ -322,10 +325,10 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
                 </div>
 
                 <div className="mt-8 flex gap-6">
-                    <Link href="/professors" className="text-slate-500 hover:text-[#0f172a] font-medium transition-colors">
+                    <Link href={appendTermToHref("/professors", currentTerm.slug)} className="text-slate-500 hover:text-[#0f172a] font-medium transition-colors">
                         ← Back to Professors
                     </Link>
-                    <Link href="/classes" className="text-slate-500 hover:text-[#0f172a] font-medium transition-colors">
+                    <Link href={appendTermToHref("/classes", currentTerm.slug)} className="text-slate-500 hover:text-[#0f172a] font-medium transition-colors">
                         View all Classes
                     </Link>
                 </div>

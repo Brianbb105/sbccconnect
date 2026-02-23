@@ -3,8 +3,9 @@
 import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import professorsData from "@/app/data/202650/professors.json";
 import Header from "@/components/Header";
+import { useTermProfessors } from "@/lib/termDataClient";
+import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 
 
@@ -76,6 +77,8 @@ function formatRating(value?: number) {
 
 function ProfessorsPageContent() {
     const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
+    const { data: professors, loading: professorsLoading, error: professorsError } = useTermProfessors<Professor>(currentTerm.slug);
     const searchQueryFromUrl = useMemo(() => {
         return (searchParams.get("search") || "").trim();
     }, [searchParams]);
@@ -111,7 +114,7 @@ function ProfessorsPageContent() {
 
     // 1. Process Data: Add useful formatted names to the raw data
     const processedData = useMemo(() => {
-        return (professorsData as Professor[]).map(p => {
+        return (professors ?? []).map(p => {
             const { lastName, fullName } = processName(p.displayName);
             const rmp = getCacheEntry(cache, p.key, p.displayName);
             return {
@@ -121,7 +124,7 @@ function ProfessorsPageContent() {
                 rmp,
             };
         });
-    }, [cache]);
+    }, [cache, professors]);
 
     // 2. Filter & Group Logic
     const { groups, alphabet, searchResults } = useMemo(() => {
@@ -160,6 +163,7 @@ function ProfessorsPageContent() {
 
     // Determine what to show
     const isSearching = searchQuery.trim() !== "";
+    const isInitialLoad = professorsLoading && !professors;
     const currentList = isSearching ? searchResults : (groups[selectedLetter] || []);
 
     return (
@@ -173,7 +177,7 @@ function ProfessorsPageContent() {
                     <div>
                         <h1 className="text-3xl font-bold text-[#0f172a]">Professors</h1>
                         <p className="text-slate-500 mt-2">
-                            Spring 2026 • {professorsData.length} instructors
+                            {currentTerm.label} • {(professors ?? []).length} instructors
                         </p>
                     </div>
 
@@ -193,7 +197,17 @@ function ProfessorsPageContent() {
                 </div>
 
                 {/* Alphabet Filter Bar (Hidden when searching) */}
-                {!isSearching && (
+                {isInitialLoad ? (
+                    <div className="mb-10 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+                        <p className="text-slate-500">Loading {currentTerm.label} professors...</p>
+                    </div>
+                ) : professorsError ? (
+                    <div className="mb-10 rounded-2xl border border-red-200 bg-white p-8 text-center shadow-sm">
+                        <p className="text-red-700 font-medium">Failed to load {currentTerm.label} data.</p>
+                    </div>
+                ) : null}
+
+                {!isSearching && !isInitialLoad && (
                     <div className="flex flex-wrap gap-2 mb-10 p-4 bg-white rounded-2xl border border-gray-200 shadow-sm">
                         {alphabet.map((letter) => {
                             const isActive = selectedLetter === letter;
@@ -215,6 +229,7 @@ function ProfessorsPageContent() {
                 )}
 
                 {/* Results Section */}
+                {!isInitialLoad && (
                 <div>
                     <h2 className="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3">
                         <span className={`px-3 py-1 rounded-lg ${isSearching ? 'bg-slate-100 text-slate-700' : 'bg-slate-200 text-[#0f172a]'}`}>
@@ -231,7 +246,7 @@ function ProfessorsPageContent() {
                                 <Link
                                     key={p.key}
                                     // Use 'formattedName' ("Stephen Strenn") instead of 'displayName' ("Strenn, Stephen")
-                                    href={`/professor/${encodeURIComponent(p.formattedName)}?key=${encodeURIComponent(p.key)}`}
+                                    href={appendTermToHref(`/professor/${encodeURIComponent(p.formattedName)}?key=${encodeURIComponent(p.key)}`, currentTerm.slug)}
                                     className="block group"
                                 >
                                     <div className="bg-white border border-gray-200 rounded-xl p-5 flex items-center justify-between hover:border-[#0f172a] hover:shadow-md transition-all">
@@ -293,6 +308,7 @@ function ProfessorsPageContent() {
                         </div>
                     )}
                 </div>
+                )}
             </main>
         </div>
     );

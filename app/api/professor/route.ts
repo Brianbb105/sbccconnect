@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { NextResponse } from "next/server";
+import { getTermBySlug, normalizeTermSlug } from "@/lib/terms";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -8,7 +9,6 @@ export const dynamic = "force-dynamic";
 const RMP_URL = "https://www.ratemyprofessors.com/graphql";
 const SBCC_SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]; // School-2783 + School-4665
 const MIN_MATCH_SCORE = 50;
-const PROFESSORS_FILE = path.resolve(process.cwd(), "app/data/202650/professors.json");
 const CACHE_FILE = path.resolve(process.cwd(), "app/data/rmp_cache.json");
 
 const HEADERS = {
@@ -484,6 +484,8 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const name = String(searchParams.get("name") || "").trim();
   const explicitKey = String(searchParams.get("key") || "").trim() || null;
+  const term = getTermBySlug(normalizeTermSlug(searchParams.get("term")));
+  const professorsFile = path.resolve(process.cwd(), `app/data/${term.code}/professors.json`);
 
   if (!name) {
     return NextResponse.json({ error: "Missing name" }, { status: 400 });
@@ -491,7 +493,7 @@ export async function GET(request: Request) {
 
   try {
     const [professors, cache] = await Promise.all([
-      readJsonFile<ProfessorListItem[]>(PROFESSORS_FILE, []),
+      readJsonFile<ProfessorListItem[]>(professorsFile, []),
       readJsonFile<CacheMap>(CACHE_FILE, {}),
     ]);
 

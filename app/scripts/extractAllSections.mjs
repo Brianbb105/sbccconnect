@@ -2,18 +2,22 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 
-const OUTPUT_DIR = path.resolve(process.cwd(), 'app/data/202650');
+const TERM = (process.argv[2] || "202650").trim();
+const TERM_DESC = (process.argv.slice(3).join(" ").trim() || "Spring 2026");
+const OUTPUT_DIR = path.resolve(process.cwd(), `app/data/${TERM}`);
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
+const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=dummy&sel_ism=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&level=CR&sel_attr=dummy&sel_subj=%25&sel_crse=&sel_crn=&sel_title=&sel_ptrm=%25&sel_ism=%25&sel_instr=%25&sel_attr=%25&begin_hh=5&begin_mi=0&begin_ap=a&end_hh=11&end_mi=0&end_ap=p&aa=N&bb=N&sel_late_start=N&dd=N&ee=N&gg=N';
+
 (async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: process.env.HEADLESS !== 'false' });
   const page = await browser.newPage();
 
   await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
-  const ALL_CLASSES_URL = 'https://banner.sbcc.edu/ords/ssb/pw_pub_sched.p_listthislist?TERM=202650&TERM_DESC=Spring+2026&sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=dummy&sel_ism=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&level=CR&sel_attr=dummy&sel_subj=%25&sel_crse=&sel_crn=&sel_title=&sel_ptrm=%25&sel_ism=%25&sel_instr=%25&sel_attr=%25&begin_hh=5&begin_mi=0&begin_ap=a&end_hh=11&end_mi=0&end_ap=p&aa=N&bb=N&sel_late_start=N&dd=N&ee=N&gg=N';
+  const ALL_CLASSES_URL = `https://banner.sbcc.edu/ords/ssb/pw_pub_sched.p_listthislist?TERM=${encodeURIComponent(TERM)}&TERM_DESC=${encodeURIComponent(TERM_DESC)}&${LIST_QUERY_SUFFIX}`;
 
   console.log('🔗 Accessing SBCC Banner...');
   await page.goto(ALL_CLASSES_URL, { waitUntil: 'networkidle2', timeout: 60000 });

@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SBCCPlan
 
-## Getting Started
+SBCC course browsing site (classes + professors) built with Next.js.
 
-First, run the development server:
+## Run the app
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data files (important)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Each term is stored in its own folder:
 
-## Learn More
+```bash
+app/data/<TERM_CODE>/
+```
 
-To learn more about Next.js, take a look at the following resources:
+Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+app/data/202650/sections.json
+app/data/202650/professors.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## How the extract scripts work now (simple)
 
-## Deploy on Vercel
+They do **one term at a time**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `extractProfessors.mjs` = saves `professors.json` for one term
+- `extractAllSections.mjs` = saves `sections.json` for one term
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+They do **not** extract all terms automatically.
+
+## Commands to extract a term
+
+### 1) Extract professors for a term
+
+```bash
+node app/scripts/extractProfessors.mjs <TERM_CODE>
+```
+
+Example (Spring 2026):
+
+```bash
+node app/scripts/extractProfessors.mjs 202650
+```
+
+### 2) Extract all sections for a term
+
+```bash
+node app/scripts/extractAllSections.mjs <TERM_CODE> "<TERM LABEL>"
+```
+
+Example (Spring 2026):
+
+```bash
+node app/scripts/extractAllSections.mjs 202650 "Spring 2026"
+```
+
+This creates/updates:
+
+- `app/data/<TERM_CODE>/professors.json`
+- `app/data/<TERM_CODE>/sections.json`
+
+## Future terms (Summer 2026 / Fall 2026)
+
+When you get the new schedule, run both scripts for that term.
+
+### Summer 2026 (likely `202710`)
+
+```bash
+node app/scripts/extractProfessors.mjs 202710
+node app/scripts/extractAllSections.mjs 202710 "Summer 2026"
+```
+
+### Fall 2026 (likely `202730`)
+
+```bash
+node app/scripts/extractProfessors.mjs 202730
+node app/scripts/extractAllSections.mjs 202730 "Fall 2026"
+```
+
+Important:
+
+- The term code must match SBCC Banner.
+- If you are not sure, verify the code from the SBCC Banner term selector first.
+- If the code is wrong, the script may return an empty page / empty data.
+
+## After extracting a new term (to show it in the website)
+
+You also need to add the term to:
+
+- `lib/terms.ts`
+
+Add a new item to `SUPPORTED_TERMS` with:
+
+- `slug` (example: `summer2026`)
+- `code` (example: `202710`)
+- `label` (example: `Summer 2026`)
+
+## Helpful notes
+
+- `extractAllSections.mjs` now runs headless by default (no visible browser window).
+- If you want to see the browser while scraping:
+
+```bash
+HEADLESS=false node app/scripts/extractAllSections.mjs 202650 "Spring 2026"
+```
+
+## Build check
+
+```bash
+npm run build
+```
+

@@ -3,7 +3,7 @@ import * as path from "node:path";
 import * as cheerio from "cheerio";
 
 
-const TERM = "202650";
+const TERM = (process.argv[2] || "202650").trim();
 const url = `https://banner.sbcc.edu/ords/ssb/pw_pub_sched.p_search?term=${TERM}`;
 
 console.log("Fetching:", url);
@@ -36,7 +36,7 @@ const names = Array.from(
     )
 ).sort((a, b) => a.localeCompare(b));
 
-// IMPORTANT: write into your existing folder app/data/202650
+// IMPORTANT: writes into app/data/<TERM>
 const outDir = path.join("app", "data", TERM);
 mkdirSync(outDir, { recursive: true });
 

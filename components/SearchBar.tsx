@@ -1,9 +1,9 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { useRouter } from 'next/navigation'
-import sectionsData from "@/app/data/202650/sections.json";
-import professorsData from "@/app/data/202650/professors.json";
+import { useRouter, useSearchParams } from 'next/navigation'
+import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
+import { useTermProfessors, useTermSections } from "@/lib/termDataClient";
 
 interface Section {
     courseCode: string;
@@ -14,6 +14,7 @@ interface Section {
 
 interface Professor {
     displayName: string;
+    key: string;
 }
 
 function normalizeWhitespace(value: string) {
@@ -40,14 +41,25 @@ function toFullName(displayName: string) {
 
 export default function SearchBar() {
     const router = useRouter()
+    const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
     const [query, setQuery] = useState('')
+
+    const {
+        data: sections,
+        loading: sectionsLoading,
+    } = useTermSections<Section>(currentTerm.slug);
+    const {
+        data: professors,
+        loading: professorsLoading,
+    } = useTermProfessors<Professor>(currentTerm.slug);
 
     const { subjects, coursesByCode, orderedCourses, igetcAreas } = useMemo(() => {
         const subjectSet = new Set<string>();
         const courseMap = new Map<string, { subject: string; title: string }>();
         const igetcSet = new Set<string>();
 
-        (sectionsData as Section[]).forEach((section) => {
+        (sections ?? []).forEach((section) => {
             const courseCode = normalizeWhitespace(section.courseCode).toUpperCase();
             if (!courseCode) return;
 
@@ -94,20 +106,25 @@ export default function SearchBar() {
             orderedCourses: courseList,
             igetcAreas: igetcSet,
         };
-    }, []);
+    }, [sections]);
 
     const professorList = useMemo(() => {
-        return (professorsData as Professor[]).map((professor) => {
+        return (professors ?? []).map((professor) => {
             const fullName = toFullName(professor.displayName);
             const tokens = fullName.split(/\s+/).filter(Boolean);
             return {
+                key: professor.key,
                 fullName,
                 displayNameLower: normalizeWhitespace(professor.displayName).toLowerCase(),
                 lower: fullName.toLowerCase(),
                 lastNameLower: tokens[tokens.length - 1]?.toLowerCase() || "",
             };
         });
-    }, []);
+    }, [professors]);
+
+    const pushWithTerm = (href: string) => {
+        router.push(appendTermToHref(href, currentTerm.slug));
+    };
 
     const handleSearch = (e: React.FormEvent) => {
         e.preventDefault()
@@ -115,23 +132,28 @@ export default function SearchBar() {
         const term = normalizeWhitespace(query)
         if (!term) return
 
+        if ((sectionsLoading && !sections) || (professorsLoading && !professors)) {
+            pushWithTerm("/classes");
+            return;
+        }
+
         const termUpper = term.toUpperCase();
         const termLower = term.toLowerCase();
 
         const igetcTerm = normalizeIgetc(term);
         if (igetcTerm && igetcAreas.has(igetcTerm)) {
-            router.push(`/classes?igetc=${encodeURIComponent(igetcTerm)}`);
+            pushWithTerm(`/classes?igetc=${encodeURIComponent(igetcTerm)}`);
             return;
         }
 
         if (subjects.has(termUpper)) {
-            router.push(`/classes/${encodeURIComponent(termUpper)}`);
+            pushWithTerm(`/classes/${encodeURIComponent(termUpper)}`);
             return;
         }
 
         if (coursesByCode.has(termUpper)) {
             const course = coursesByCode.get(termUpper)!;
-            router.push(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.code)}`);
+            pushWithTerm(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.code)}`);
             return;
         }
 
@@ -140,13 +162,13 @@ export default function SearchBar() {
             const normalizedCourseCode = `${compactCourseMatch[1]} ${compactCourseMatch[2]}`;
             if (coursesByCode.has(normalizedCourseCode)) {
                 const course = coursesByCode.get(normalizedCourseCode)!;
-                router.push(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.code)}`);
+                pushWithTerm(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.code)}`);
                 return;
             }
         }
 
-        let professorMatch: { fullName: string; score: number } | null = null;
-        const professorMatches: { fullName: string; score: number }[] = [];
+        let professorMatch: { fullName: string; score: number; key: string } | null = null;
+        const professorMatches: { fullName: string; score: number; key: string }[] = [];
         for (const professor of professorList) {
             let score = -1;
             if (professor.lower === termLower) score = 0;
@@ -158,9 +180,9 @@ export default function SearchBar() {
             else if (professor.displayNameLower.includes(termLower)) score = 3;
 
             if (score < 0) continue;
-            professorMatches.push({ fullName: professor.fullName, score });
+            professorMatches.push({ fullName: professor.fullName, score, key: professor.key });
             if (!professorMatch || score < professorMatch.score) {
-                professorMatch = { fullName: professor.fullName, score };
+                professorMatch = { fullName: professor.fullName, score, key: professor.key };
             }
         }
 
@@ -169,16 +191,16 @@ export default function SearchBar() {
             const bestScoreMatches = professorMatches.filter((match) => match.score === bestScore);
 
             if (bestScore === 0 && bestScoreMatches.length === 1) {
-                router.push(`/professor/${encodeURIComponent(professorMatch.fullName)}`);
+                pushWithTerm(`/professor/${encodeURIComponent(professorMatch.fullName)}?key=${encodeURIComponent(professorMatch.key)}`);
                 return;
             }
 
             if (professorMatches.length === 1) {
-                router.push(`/professor/${encodeURIComponent(professorMatch.fullName)}`);
+                pushWithTerm(`/professor/${encodeURIComponent(professorMatch.fullName)}?key=${encodeURIComponent(professorMatch.key)}`);
                 return;
             }
 
-            router.push(`/professors?search=${encodeURIComponent(term)}`);
+            pushWithTerm(`/professors?search=${encodeURIComponent(term)}`);
             return;
         }
 
@@ -186,18 +208,20 @@ export default function SearchBar() {
             return course.searchable.includes(termLower);
         });
         if (courseByTitleMatch) {
-            router.push(`/classes/${encodeURIComponent(courseByTitleMatch.subject)}/${encodeURIComponent(courseByTitleMatch.code)}`);
+            pushWithTerm(`/classes/${encodeURIComponent(courseByTitleMatch.subject)}/${encodeURIComponent(courseByTitleMatch.code)}`);
             return;
         }
 
         const subjectPrefixMatch = Array.from(subjects).sort().find((subject) => subject.startsWith(termUpper));
         if (subjectPrefixMatch) {
-            router.push(`/classes/${encodeURIComponent(subjectPrefixMatch)}`);
+            pushWithTerm(`/classes/${encodeURIComponent(subjectPrefixMatch)}`);
             return;
         }
 
-        router.push(`/classes`);
+        pushWithTerm(`/classes`);
     }
+
+    const isLoading = (sectionsLoading && !sections) || (professorsLoading && !professors);
 
     return (
         <form onSubmit={handleSearch} className="flex-1 max-w-xl w-full relative group">
@@ -208,9 +232,10 @@ export default function SearchBar() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search classes, professors, or IGETC..."
+                placeholder={isLoading ? `Loading ${currentTerm.label}...` : `Search ${currentTerm.label} classes, professors, or IGETC...`}
                 className="w-full pl-10 pr-4 py-2 rounded-full border border-slate-300 bg-white outline-none text-slate-800 focus:border-slate-400 focus:ring-2 focus:ring-slate-300 transition shadow-sm"
             />
         </form>
     )
 }
+

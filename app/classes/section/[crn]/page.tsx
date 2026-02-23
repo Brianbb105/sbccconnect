@@ -2,8 +2,7 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
-import sectionsData from "@/app/data/202650/sections.json";
+import { useParams, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import CourseCatalogDetails from "@/components/CourseCatalogDetails";
 import {
@@ -12,6 +11,8 @@ import {
     extractTransferInformation,
 } from "@/lib/courseMetadata";
 import { buildSbccGoogleMapsUrl, getDisplayLocation } from "@/lib/locationMapping";
+import { useTermSections } from "@/lib/termDataClient";
+import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 interface Meeting {
     type: string;
@@ -90,12 +91,44 @@ function getSubjectFromCourseCode(courseCode: string) {
 
 export default function SectionDetailsPage() {
     const params = useParams();
+    const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
     const crn = decodeURIComponent(params.crn as string);
-    const allSections = useMemo(() => sectionsData as Section[], []);
+    const { data: sectionsData, loading, error } = useTermSections<Section>(currentTerm.slug);
+    const allSections = useMemo(() => (sectionsData ?? []) as Section[], [sectionsData]);
 
     const section = useMemo(() => {
         return allSections.find((entry) => entry.crn === crn) || null;
     }, [allSections, crn]);
+
+    if (loading && !sectionsData) {
+        return (
+            <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
+                <Header />
+                <main className="mx-auto max-w-4xl px-6 py-12">
+                    <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+                        <p className="text-slate-500">Loading {currentTerm.label} section...</p>
+                    </div>
+                </main>
+            </div>
+        );
+    }
+
+    if (error && !section) {
+        return (
+            <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
+                <Header />
+                <main className="mx-auto max-w-4xl px-6 py-12">
+                    <div className="rounded-2xl border border-red-200 bg-white p-8 text-center shadow-sm">
+                        <p className="text-red-700 font-medium">Failed to load {currentTerm.label} data.</p>
+                        <Link href={appendTermToHref("/classes", currentTerm.slug)} className="mt-4 inline-block font-semibold text-[#0f172a] hover:underline">
+                            ← Back to Classes
+                        </Link>
+                    </div>
+                </main>
+            </div>
+        );
+    }
 
     if (!section) {
         return (
@@ -104,8 +137,8 @@ export default function SectionDetailsPage() {
                 <main className="mx-auto max-w-4xl px-6 py-12">
                     <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-sm">
                         <h1 className="mb-2 text-2xl font-bold text-slate-900">Class Not Found</h1>
-                        <p className="mb-6 text-slate-600">No section was found for CRN {crn}.</p>
-                        <Link href="/classes" className="font-semibold text-[#0f172a] hover:underline">
+                        <p className="mb-6 text-slate-600">No section was found for CRN {crn} in {currentTerm.label}.</p>
+                        <Link href={appendTermToHref("/classes", currentTerm.slug)} className="font-semibold text-[#0f172a] hover:underline">
                             ← Back to Classes
                         </Link>
                     </div>
@@ -129,14 +162,14 @@ export default function SectionDetailsPage() {
 
             <main className="mx-auto max-w-5xl px-6 py-12">
                 <div className="mb-6 text-sm text-slate-500">
-                    <Link href="/classes" className="hover:underline">Departments</Link>
+                    <Link href={appendTermToHref("/classes", currentTerm.slug)} className="hover:underline">Departments</Link>
                     <span className="mx-2">&gt;</span>
                     {subject ? (
                         <>
-                            <Link href={`/classes/${encodeURIComponent(subject)}`} className="hover:underline">{subject}</Link>
+                            <Link href={appendTermToHref(`/classes/${encodeURIComponent(subject)}`, currentTerm.slug)} className="hover:underline">{subject}</Link>
                             <span className="mx-2">&gt;</span>
                             <Link
-                                href={`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(section.courseCode)}`}
+                                href={appendTermToHref(`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(section.courseCode)}`, currentTerm.slug)}
                                 className="hover:underline"
                             >
                                 {section.courseCode}
@@ -165,7 +198,7 @@ export default function SectionDetailsPage() {
                     <div className="px-8 pb-8 pt-14">
                         <h1 className="text-3xl font-bold text-slate-900">{section.courseTitle}</h1>
                         <p className="mt-2 text-sm font-medium text-slate-500">
-                            {section.courseCode} • CRN {section.crn}
+                            {currentTerm.label} • {section.courseCode} • CRN {section.crn}
                         </p>
 
                         <div className="mb-8 mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -183,7 +216,7 @@ export default function SectionDetailsPage() {
                             </div>
                             <div className="rounded-xl border border-slate-100 bg-slate-50 p-4 text-center">
                                 {primaryInstructor !== "TBA" ? (
-                                    <Link href={`/professor/${encodeURIComponent(primaryInstructor)}`} className="text-lg font-bold text-[#0f172a] hover:underline">
+                                    <Link href={appendTermToHref(`/professor/${encodeURIComponent(primaryInstructor)}`, currentTerm.slug)} className="text-lg font-bold text-[#0f172a] hover:underline">
                                         {primaryInstructor}
                                     </Link>
                                 ) : (
@@ -241,7 +274,7 @@ export default function SectionDetailsPage() {
                                             <div className="mt-1 text-sm text-slate-700">
                                                 <span className="font-medium">Instructor:</span>{" "}
                                                 {showInstructor ? (
-                                                    <Link href={`/professor/${encodeURIComponent(meeting.instructor)}`} className="text-[#0f172a] hover:underline">
+                                                    <Link href={appendTermToHref(`/professor/${encodeURIComponent(meeting.instructor)}`, currentTerm.slug)} className="text-[#0f172a] hover:underline">
                                                         {meeting.instructor}
                                                     </Link>
                                                 ) : (
@@ -259,13 +292,13 @@ export default function SectionDetailsPage() {
                 <div className="mt-8 flex flex-wrap gap-6">
                     {subject ? (
                         <Link
-                            href={`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(section.courseCode)}`}
+                            href={appendTermToHref(`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(section.courseCode)}`, currentTerm.slug)}
                             className="font-medium text-slate-500 transition-colors hover:text-[#0f172a]"
                         >
                             ← Back to {section.courseCode}
                         </Link>
                     ) : null}
-                    <Link href="/classes" className="font-medium text-slate-500 transition-colors hover:text-[#0f172a]">
+                    <Link href={appendTermToHref("/classes", currentTerm.slug)} className="font-medium text-slate-500 transition-colors hover:text-[#0f172a]">
                         View all Classes
                     </Link>
                 </div>

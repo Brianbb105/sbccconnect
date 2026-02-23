@@ -1,9 +1,10 @@
 'use client'
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
 import SearchBar from "@/components/SearchBar";
+import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 const THEME_STORAGE_KEY = "sbcc-theme-preference";
 
@@ -102,15 +103,14 @@ export default function Header() {
                         SBCCPlan
                     </Link>
 
-                    <SearchBar />
+                    <Suspense fallback={<div className="flex-1 max-w-xl w-full" />}>
+                        <SearchBar />
+                    </Suspense>
 
                     <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5">
-                        <nav className="flex items-center gap-4 md:gap-6 font-medium text-sm md:text-base text-slate-600">
-                            <Link href="/classes" data-track="nav_classes" className="hover:text-[#0f172a] transition">Classes</Link>
-                            <Link href="/professors" data-track="nav_professors" className="hover:text-[#0f172a] transition">Professors</Link>
-                            <Link href="/planner" data-track="nav_planner" className="hover:text-[#0f172a] transition">Planner</Link>
-                            <Link href="/about" data-track="nav_about" className="hover:text-[#0f172a] transition">About</Link>
-                        </nav>
+                        <Suspense fallback={<HeaderNavLinksFallback />}>
+                            <HeaderNavLinks />
+                        </Suspense>
 
                         <label className="sr-only" htmlFor="theme-select">Theme</label>
                         <div className="relative">
@@ -145,5 +145,30 @@ export default function Header() {
                 </div>
             )}
         </>
+    );
+}
+
+function HeaderNavLinks() {
+    const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
+
+    return (
+        <nav className="flex items-center gap-4 md:gap-6 font-medium text-sm md:text-base text-slate-600">
+            <Link href={appendTermToHref("/classes", currentTerm.slug)} data-track="nav_classes" className="hover:text-[#0f172a] transition">Classes</Link>
+            <Link href={appendTermToHref("/professors", currentTerm.slug)} data-track="nav_professors" className="hover:text-[#0f172a] transition">Professors</Link>
+            <Link href="/planner" data-track="nav_planner" className="hover:text-[#0f172a] transition">Planner</Link>
+            <Link href="/about" data-track="nav_about" className="hover:text-[#0f172a] transition">About</Link>
+        </nav>
+    );
+}
+
+function HeaderNavLinksFallback() {
+    return (
+        <nav className="flex items-center gap-4 md:gap-6 font-medium text-sm md:text-base text-slate-600">
+            <Link href="/classes" data-track="nav_classes" className="hover:text-[#0f172a] transition">Classes</Link>
+            <Link href="/professors" data-track="nav_professors" className="hover:text-[#0f172a] transition">Professors</Link>
+            <Link href="/planner" data-track="nav_planner" className="hover:text-[#0f172a] transition">Planner</Link>
+            <Link href="/about" data-track="nav_about" className="hover:text-[#0f172a] transition">About</Link>
+        </nav>
     );
 }

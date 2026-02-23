@@ -2,9 +2,10 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
-import sectionsData from "@/app/data/202650/sections.json";
+import { useParams, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
+import { useTermSections } from "@/lib/termDataClient";
+import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 interface Section {
     courseCode: string;
@@ -47,8 +48,11 @@ function extractPrerequisites(section: Section) {
 
 export default function CoursesPage() {
     const params = useParams();
+    const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
     const subject = decodeURIComponent(params.subject as string);
-    const allSections = useMemo(() => sectionsData as Section[], []);
+    const { data: sections, loading, error } = useTermSections<Section>(currentTerm.slug);
+    const allSections = useMemo(() => (sections ?? []) as Section[], [sections]);
 
     const courses = useMemo(() => {
         const grouped = new Map<string, {
@@ -97,14 +101,23 @@ export default function CoursesPage() {
             <main className="max-w-5xl mx-auto px-6 py-12">
                 <div className="mb-8">
                     <div className="text-sm text-slate-500 mb-2">
-                        <Link href="/classes" className="hover:underline">Departments</Link> &gt; {subject}
+                        <Link href={appendTermToHref("/classes", currentTerm.slug)} className="hover:underline">Departments</Link> &gt; {subject}
                     </div>
                     <h1 className="text-3xl font-bold text-[#0f172a]">{subject} Courses</h1>
                     <p className="text-slate-500 mt-1">
-                        Found {courses.length} courses in {subject}.
+                        {currentTerm.label} • Found {courses.length} courses in {subject}.
                     </p>
                 </div>
 
+                {(loading && !sections) ? (
+                    <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+                        <p className="text-slate-500">Loading {currentTerm.label} courses...</p>
+                    </div>
+                ) : error ? (
+                    <div className="rounded-2xl border border-red-200 bg-white p-8 text-center shadow-sm">
+                        <p className="text-red-700 font-medium">Failed to load {currentTerm.label} data.</p>
+                    </div>
+                ) : (
                 <div className="grid gap-4">
                     {courses.map((course) => {
                         const prerequisiteCount = course.prerequisites.length;
@@ -137,7 +150,7 @@ export default function CoursesPage() {
                                     </div>
 
                                     <Link
-                                        href={`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(course.courseCode)}`}
+                                        href={appendTermToHref(`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(course.courseCode)}`, currentTerm.slug)}
                                         className="px-5 py-2 rounded-lg bg-slate-100 text-[#0f172a] font-semibold hover:bg-[#0f172a] hover:text-white transition-colors text-sm whitespace-nowrap"
                                     >
                                         View Sections →
@@ -147,9 +160,10 @@ export default function CoursesPage() {
                         );
                     })}
                 </div>
+                )}
 
                 <div className="mt-12">
-                    <Link href="/classes" className="text-[#0f172a] font-semibold hover:underline">
+                    <Link href={appendTermToHref("/classes", currentTerm.slug)} className="text-[#0f172a] font-semibold hover:underline">
                         ← Back to Departments
                     </Link>
                 </div>

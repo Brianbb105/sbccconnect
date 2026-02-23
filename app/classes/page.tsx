@@ -2,9 +2,10 @@
 
 import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import sectionsData from "@/app/data/202650/sections.json";
+import { useRouter, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
+import { useTermSections } from "@/lib/termDataClient";
+import { SUPPORTED_TERMS, appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 interface Section {
     courseCode: string;
@@ -130,7 +131,10 @@ function getDepartmentFullName(code: string) {
 }
 
 function DepartmentsPageContent() {
+    const router = useRouter();
     const searchParams = useSearchParams();
+    const currentTerm = getTermFromSearchParams(searchParams);
+    const { data: sections, loading: sectionsLoading, error: sectionsError } = useTermSections<Section>(currentTerm.slug);
     const [selectedLetter, setSelectedLetter] = useState("ALL");
     const [manualIgetcSelection, setManualIgetcSelection] = useState<string | null>(null);
     const [searchQuery, setSearchQuery] = useState("");
@@ -143,11 +147,17 @@ function DepartmentsPageContent() {
 
     const selectedIgetc = manualIgetcSelection ?? igetcFromUrl;
 
+    const handleTermChange = (nextTerm: string) => {
+        const nextParams = new URLSearchParams(searchParams.toString());
+        nextParams.set("term", nextTerm);
+        router.push(`/classes?${nextParams.toString()}`);
+    };
+
     const { departments, groups, alphabet, igetcAreas, igetcCoursesByArea } = useMemo(() => {
         const departmentMap = new Map<string, number>();
         const igetcCourseMap = new Map<string, Map<string, IgetcCourse>>();
 
-        (sectionsData as Section[]).forEach((section) => {
+        (sections ?? []).forEach((section) => {
             const courseCode = (section.courseCode || "").trim().toUpperCase();
             if (!courseCode) return;
 
@@ -229,7 +239,7 @@ function DepartmentsPageContent() {
             igetcAreas: igetcAreaList,
             igetcCoursesByArea: igetcCourseResults,
         };
-    }, []);
+    }, [sections]);
 
     const { currentDepartments, currentIgetcCourses, isSearching, isIgetcView } = useMemo(() => {
         const searching = searchQuery.trim() !== "";
@@ -270,7 +280,7 @@ function DepartmentsPageContent() {
     const renderDepartmentCard = (dept: Department) => (
         <Link
             key={dept.name}
-            href={`/classes/${dept.name}`}
+            href={appendTermToHref(`/classes/${dept.name}`, currentTerm.slug)}
             className="block group h-full"
         >
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-[#0f172a] hover:shadow-md transition-all cursor-pointer h-full flex flex-col justify-center items-center">
@@ -296,25 +306,56 @@ function DepartmentsPageContent() {
                     <div>
                         <h1 className="text-3xl font-bold text-[#0f172a]">Departments</h1>
                         <p className="text-slate-500 mt-2">
-                            Select a department to view available courses.
+                            {currentTerm.label} • Select a department to view available courses.
                         </p>
                     </div>
 
-                    <div className="w-full md:w-1/3 relative">
-                        <input
-                            type="text"
-                            placeholder="Find a department (e.g. CS)..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-[#0f172a] focus:ring-1 focus:ring-[#0f172a] outline-none shadow-sm transition-all"
-                        />
-                        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <div className="w-full md:w-auto flex flex-col sm:flex-row gap-3 md:items-center">
+                        <div className="relative w-full md:w-80">
+                            <input
+                                type="text"
+                                placeholder="Find a department (e.g. CS)..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-[#0f172a] focus:ring-1 focus:ring-[#0f172a] outline-none shadow-sm transition-all"
+                            />
+                            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <label className="sr-only" htmlFor="term-select">Term</label>
+                            <select
+                                id="term-select"
+                                value={currentTerm.slug}
+                                onChange={(e) => handleTermChange(e.target.value)}
+                                className="px-4 pr-10 h-12 rounded-xl font-bold transition-all text-sm bg-white text-slate-600 hover:bg-slate-100 hover:text-[#0f172a] border border-slate-200 appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-slate-300 min-w-[150px]"
+                            >
+                                {SUPPORTED_TERMS.map((term) => (
+                                    <option key={term.slug} value={term.slug}>
+                                        {term.label}
+                                    </option>
+                                ))}
+                            </select>
+                            <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-slate-500">
+                                ▾
+                            </span>
                         </div>
                     </div>
                 </div>
 
-                {!isSearching && (
+                {(sectionsLoading && !sections) ? (
+                    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 text-center mb-8">
+                        <p className="text-slate-500">Loading {currentTerm.label} departments...</p>
+                    </div>
+                ) : sectionsError ? (
+                    <div className="bg-white rounded-2xl border border-red-200 shadow-sm p-8 text-center mb-8">
+                        <p className="text-red-700 font-medium">Failed to load {currentTerm.label} data.</p>
+                    </div>
+                ) : null}
+
+                {!isSearching && !(sectionsLoading && !sections) && (
                     <>
                         <div className="flex flex-wrap gap-2 mb-4 p-4 bg-white rounded-2xl border border-gray-200 shadow-sm">
                             <button
@@ -414,7 +455,7 @@ function DepartmentsPageContent() {
                                 {currentIgetcCourses.map((course) => (
                                     <Link
                                         key={`${selectedIgetc}-${course.courseCode}`}
-                                        href={`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.courseCode)}`}
+                                        href={appendTermToHref(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.courseCode)}`, currentTerm.slug)}
                                         className="block group h-full"
                                     >
                                         <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-[#0f172a] hover:shadow-md transition-all cursor-pointer h-full flex flex-col justify-center items-center">

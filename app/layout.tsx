@@ -1,5 +1,6 @@
 import './globals.css' // <--- MAKE SURE THIS LINE EXISTS AT THE TOP
 import AnalyticsTracker from "@/components/AnalyticsTracker";
+import { Analytics } from "@vercel/analytics/react"
 
 const themeInitScript = `
 (() => {
@@ -46,6 +47,7 @@ export default function RootLayout({
         <body>
         <AnalyticsTracker />
         {children}
+        <Analytics />
         </body>
         </html>
     )

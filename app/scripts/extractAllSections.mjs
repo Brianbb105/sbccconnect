@@ -9,10 +9,18 @@ if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
+const isCi = process.env.CI === "true";
+const launchArgs = process.env.PUPPETEER_NO_SANDBOX === "false"
+  ? []
+  : (isCi ? ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"] : []);
+
 const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=dummy&sel_ism=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&level=CR&sel_attr=dummy&sel_subj=%25&sel_crse=&sel_crn=&sel_title=&sel_ptrm=%25&sel_ism=%25&sel_instr=%25&sel_attr=%25&begin_hh=5&begin_mi=0&begin_ap=a&end_hh=11&end_mi=0&end_ap=p&aa=N&bb=N&sel_late_start=N&dd=N&ee=N&gg=N';
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: process.env.HEADLESS !== 'false' });
+  const browser = await puppeteer.launch({
+    headless: process.env.HEADLESS !== 'false',
+    args: launchArgs,
+  });
   const page = await browser.newPage();
 
   await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');

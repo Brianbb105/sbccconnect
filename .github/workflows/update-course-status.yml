@@ -11,6 +11,9 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    env:
+      CI: "true"
+      PUPPETEER_NO_SANDBOX: "true"
 
     steps:
       - uses: actions/checkout@v4

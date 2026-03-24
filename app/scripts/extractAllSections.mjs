@@ -58,6 +58,10 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
     const DESCRIPTION_LABEL_RE = /^(?:course description|catalog description|description)$/i;
     const TRANSFER_LABEL_RE = /^(?:transfer information|sbcc general education|grading options|hours)$/i;
     const TRANSFER_KEYWORD_RE = /\b(?:IGETC|C-ID|CSU Transferable|UC Transferable|transfer information|SBCC General Education|Grading Options|Hours)\b/i;
+    const CONNECTOR_ONLY_RE = /^(?:and|or|and\/or|\/|&)\.?$/i;
+    const COURSE_CODE_RE = /\b[A-Z]{2,8}\s*\d{1,4}[A-Z]?\b/;
+    const PREREQ_HINT_RE = /\b(?:eligibility|eligible|placement|qualification|minimum grade|completion|concurrent|corequisite|prerequisite|department approval|consent|recommended preparation)\b/i;
+    const NARRATIVE_START_RE = /(?:Students?|Student|Work|Attend|Learn|Develop|Designed|Focuses|Introduces|Covers|Provides|Explores|Includes|Emphasizes|The course|This course|Second|Basic|Study|Topics|Limitation|Deadlines?)\b/i;
     const HEADER_TOKENS = new Set([
       "TYPE", "DAYS", "TIME", "LOCATION", "INSTRUCTOR", "DATE", "WEEKS",
       "STATUS", "CRN", "CMP", "SEC"
@@ -126,6 +130,67 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
         entry
       ]);
       currentTransferInformationText = currentTransferInformation.join(" | ");
+    };
+
+    const trimConnectorEdges = (value) => normalizeSpacing(value)
+        .replace(/^(?:and|or|and\/or)\b[\s,]*/i, "")
+        .replace(/[\s,;]*(?:and|or|and\/or)\.?$/i, "")
+        .trim();
+
+    const stripNarrativeTail = (value) => {
+      let normalized = normalizeSpacing(value);
+      if (!normalized) return "";
+
+      const firstPeriodIndex = normalized.indexOf(".");
+      if (firstPeriodIndex > 0) {
+        const head = normalizeSpacing(normalized.slice(0, firstPeriodIndex));
+        const tail = normalizeSpacing(normalized.slice(firstPeriodIndex + 1));
+        if (head && tail && COURSE_CODE_RE.test(head) && !COURSE_CODE_RE.test(tail) && !PREREQ_HINT_RE.test(tail)) {
+          normalized = head;
+        }
+      }
+
+      const sentenceNarrativeIndex = normalized.search(new RegExp(`\\.\\s+(?=${NARRATIVE_START_RE.source})`, "i"));
+      if (sentenceNarrativeIndex >= 0) {
+        normalized = normalized.slice(0, sentenceNarrativeIndex + 1);
+      } else {
+        const inlineNarrativeIndex = normalized.search(new RegExp(`\\s+(?=${NARRATIVE_START_RE.source})`, "i"));
+        if (inlineNarrativeIndex > 0) {
+          const head = normalized.slice(0, inlineNarrativeIndex);
+          if (COURSE_CODE_RE.test(head)) {
+            normalized = head;
+          }
+        }
+      }
+
+      return trimConnectorEdges(normalized.replace(/[;,.]\s*$/, ""));
+    };
+
+    const normalizePrerequisiteChunk = (value) => {
+      const normalized = stripNarrativeTail(
+          normalizeSpacing(value)
+              .replace(/^(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)\s*:?\s*/i, "")
+              .replace(/^[:\-]\s*/, "")
+      );
+      if (!normalized || CONNECTOR_ONLY_RE.test(normalized)) return "";
+      return normalized;
+    };
+
+    const normalizeAdvisoryChunk = (value) => {
+      const normalized = stripNarrativeTail(
+          normalizeSpacing(value)
+              .replace(/^(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)\s*:?\s*/i, "")
+              .replace(/^(?:course advisory|advisory|recommended preparation)\s*:?\s*/i, "")
+              .replace(/^[:\-]\s*/, "")
+      );
+      if (!normalized || CONNECTOR_ONLY_RE.test(normalized)) return "";
+      return normalized;
+    };
+
+    const looksLikePrerequisiteValue = (value) => {
+      const normalized = normalizeSpacing(value);
+      if (!normalized || CONNECTOR_ONLY_RE.test(normalized)) return false;
+      return COURSE_CODE_RE.test(normalized) || PREREQ_HINT_RE.test(normalized);
     };
 
     const isMeaningfulLocation = (location) => {
@@ -235,14 +300,14 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
           .filter(Boolean);
 
       const addPrereq = (value) => {
-        const chunk = normalizeSpacing(value).replace(/^[:\-]\s*/, "");
-        if (!chunk) return;
+        const chunk = normalizePrerequisiteChunk(value);
+        if (!chunk || !looksLikePrerequisiteValue(chunk)) return;
         currentPrerequisitesText = appendDelimitedText(currentPrerequisitesText, chunk, "; ");
         updated = true;
       };
 
       const addAdvisory = (value) => {
-        const chunk = normalizeSpacing(value).replace(/^[:\-]\s*/, "");
+        const chunk = normalizeAdvisoryChunk(value);
         if (!chunk) return;
         currentAdvisoriesText = appendDelimitedText(currentAdvisoriesText, chunk, "; ");
         updated = true;
@@ -269,7 +334,7 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
           if (ADVISORY_LABEL_RE.test(label)) {
             // Banner often puts the first sentence advisory + unlabeled description in one line.
             const sentenceSplit = value.match(/^(.+?[.!?])\s+(.+)$/);
-            if (sentenceSplit && sentenceSplit[2] && sentenceSplit[2].length > 35 && !PREREQ_LABEL_RE.test(sentenceSplit[2])) {
+            if (sentenceSplit && sentenceSplit[2] && sentenceSplit[2].length > 35 && !PREREQ_LABEL_RE.test(sentenceSplit[2]) && NARRATIVE_START_RE.test(sentenceSplit[2])) {
               addAdvisory(sentenceSplit[1]);
               addDescription(sentenceSplit[2]);
             } else {
@@ -324,11 +389,9 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
 
       if (!updated && !looksLikeMeetingRow && !looksLikeMetaHeader && !looksLikeColumnHeader([normalized], normalized)) {
         if (/(?:prerequisite(?:s)?|pre-?req(?:uisite)?(?:s)?|corequisite(?:s)?|co-?req(?:uisite)?(?:s)?)/i.test(normalized)) {
-          currentPrerequisitesText = appendDelimitedText(currentPrerequisitesText, normalized, "; ");
-          updated = true;
+          addPrereq(normalized);
         } else if (/(?:course advisory|advisory|recommended preparation)/i.test(normalized)) {
-          currentAdvisoriesText = appendDelimitedText(currentAdvisoriesText, normalized, "; ");
-          updated = true;
+          addAdvisory(normalized);
         } else if (TRANSFER_KEYWORD_RE.test(normalized)) {
           appendTransferInformation("Transfer Information", normalized);
           const extractedAreas = extractIgetcAreas(normalized);

@@ -37,7 +37,12 @@ export default function HomePage() {
 
                         {/* 1. NEW BROWSE ACTIONS CARD (Top Right) */}
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
-                            <h2 className={`text-xl font-semibold mb-6 ${darkBlueText}`}>{featuredTerm.label}</h2>
+                            <div className="mb-6 flex flex-wrap items-center gap-3">
+                                <h2 className={`text-xl font-semibold ${darkBlueText}`}>{featuredTerm.label}</h2>
+                                <span className="term-new-pill rounded-full border px-3 py-1 text-xs font-bold uppercase">
+                                    New
+                                </span>
+                            </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 w-full">
                                 <Link

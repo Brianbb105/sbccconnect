@@ -47,9 +47,9 @@ export default function CourseCatalogDetails({
         <section className={`mb-6 rounded-xl border border-gray-200 bg-white p-5 ${className}`.trim()}>
             <h2 className="text-sm font-bold uppercase tracking-wide text-slate-500">Course Details</h2>
 
-            <div className="mt-4 grid gap-5 md:grid-cols-2">
+            <div className="mt-4 space-y-5">
                 {cleanDescription && (
-                    <div className="md:col-span-2">
+                    <div>
                         <h3 className="text-xs font-bold uppercase tracking-wide text-slate-500">Description</h3>
                         <p className="mt-2 text-sm leading-relaxed text-slate-700">{cleanDescription}</p>
                     </div>
@@ -82,7 +82,7 @@ export default function CourseCatalogDetails({
                 </div>
 
                 {cleanTransferInformation.length > 0 && (
-                    <div className="md:col-span-2">
+                    <div>
                         <h3 className="text-xs font-bold uppercase tracking-wide text-slate-500">Transfer Information</h3>
                         <ul className="mt-2 space-y-1 text-sm text-slate-700">
                             {cleanTransferInformation.map((item, index) => {

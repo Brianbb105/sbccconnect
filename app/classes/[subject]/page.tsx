@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import { useTermSections } from "@/lib/termDataClient";
+import { extractPrerequisites as extractPrerequisitesFromMetadata } from "@/lib/courseMetadata";
 import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 interface Section {
@@ -33,17 +34,7 @@ function summarizeModalities(modalities: string[]) {
 }
 
 function extractPrerequisites(section: Section) {
-    if (Array.isArray(section.prerequisites) && section.prerequisites.length > 0) {
-        return section.prerequisites.map((item) => clean(item)).filter(Boolean);
-    }
-
-    const fallbackText = clean(section.prerequisitesText);
-    if (!fallbackText) return [];
-
-    return fallbackText
-        .split(/(?:\s*;\s*|\s*\|\s*|\.\s+(?=(?:[A-Z]{2,6}\s*\d{1,3}[A-Z]?|Prereq|Prerequisite|Corequisite)))/i)
-        .map((item) => clean(item))
-        .filter(Boolean);
+    return extractPrerequisitesFromMetadata(section);
 }
 
 export default function CoursesPage() {

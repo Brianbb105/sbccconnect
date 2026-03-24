@@ -5,7 +5,8 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const INPUT_FILE = path.join(__dirname, "../data/202650/professors.json");
+const INPUT_TERM = String(process.argv[2] || process.env.RMP_TERM || "202710").trim();
+const INPUT_FILE = path.join(__dirname, `../data/${INPUT_TERM}/professors.json`);
 const OUTPUT_FILE = path.join(__dirname, "../data/rmp_cache.json");
 
 const SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]; // School-2783 + School-4665

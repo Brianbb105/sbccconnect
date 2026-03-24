@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import { DEFAULT_TERM_SLUG, getTermBySlug } from "@/lib/terms";
 
 export default function HomePage() {
     // Theme Colors
     const warmBg = "bg-gray-50";
     const darkBlueText = "text-[#0f172a]";
+    const featuredTerm = getTermBySlug(DEFAULT_TERM_SLUG);
 
     return (
         <div className={`min-h-screen ${warmBg} flex flex-col font-sans text-slate-800`}>
@@ -35,7 +37,7 @@ export default function HomePage() {
 
                         {/* 1. NEW BROWSE ACTIONS CARD (Top Right) */}
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
-                            <h2 className={`text-xl font-semibold mb-6 ${darkBlueText}`}>Spring 2026</h2>
+                            <h2 className={`text-xl font-semibold mb-6 ${darkBlueText}`}>{featuredTerm.label}</h2>
 
                             <div className="flex flex-col sm:flex-row gap-4 w-full">
                                 <Link

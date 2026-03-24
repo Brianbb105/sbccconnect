@@ -13,6 +13,7 @@ const SECTION_LOADERS: LoaderMap = {
     summer2025: () => import("@/app/data/202610/sections.json"),
     fall2025: () => import("@/app/data/202630/sections.json"),
     spring2026: () => import("@/app/data/202650/sections.json"),
+    summer2026: () => import("@/app/data/202710/sections.json"),
 };
 
 const PROFESSOR_LOADERS: LoaderMap = {
@@ -21,6 +22,7 @@ const PROFESSOR_LOADERS: LoaderMap = {
     summer2025: () => import("@/app/data/202610/professors.json"),
     fall2025: () => import("@/app/data/202630/professors.json"),
     spring2026: () => import("@/app/data/202650/professors.json"),
+    summer2026: () => import("@/app/data/202710/professors.json"),
 };
 
 const sectionPromiseCache = new Map<TermSlug, Promise<unknown[]>>();

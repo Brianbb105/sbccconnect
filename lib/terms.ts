@@ -3,14 +3,16 @@ export type TermSlug =
     | "spring2025"
     | "summer2025"
     | "fall2025"
-    | "spring2026";
+    | "spring2026"
+    | "summer2026";
 
 export type TermCode =
     | "202530"
     | "202550"
     | "202610"
     | "202630"
-    | "202650";
+    | "202650"
+    | "202710";
 
 export type TermDefinition = {
     slug: TermSlug;
@@ -19,6 +21,7 @@ export type TermDefinition = {
 };
 
 export const SUPPORTED_TERMS: TermDefinition[] = [
+    { slug: "summer2026", code: "202710", label: "Summer 2026" },
     { slug: "spring2026", code: "202650", label: "Spring 2026" },
     { slug: "fall2025", code: "202630", label: "Fall 2025" },
     { slug: "summer2025", code: "202610", label: "Summer 2025" },
@@ -26,7 +29,7 @@ export const SUPPORTED_TERMS: TermDefinition[] = [
     { slug: "fall2024", code: "202530", label: "Fall 2024" },
 ];
 
-export const DEFAULT_TERM_SLUG: TermSlug = "spring2026";
+export const DEFAULT_TERM_SLUG: TermSlug = "summer2026";
 
 const TERMS_BY_SLUG = new Map<TermSlug, TermDefinition>(
     SUPPORTED_TERMS.map((term) => [term.slug, term]),
@@ -67,4 +70,3 @@ export function appendTermToHref(href: string, term: TermSlug): string {
     url.searchParams.set("term", term);
     return `${url.pathname}${url.search}${url.hash}`;
 }
-

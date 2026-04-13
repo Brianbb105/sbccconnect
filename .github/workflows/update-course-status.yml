@@ -8,15 +8,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-course-status
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       CI: "true"
       PUPPETEER_NO_SANDBOX: "true"
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -25,3 +32,18 @@ jobs:
 
       - run: npm ci
       - run: node app/scripts/extractAllSections.mjs 202710 "Summer 2026"
+
+      - name: Validate sections output
+        run: |
+          test -f app/data/202710/sections.json
+          node -e "const fs=require('fs'); const data=JSON.parse(fs.readFileSync('app/data/202710/sections.json','utf8')); if(!Array.isArray(data)) throw new Error('sections.json is not an array'); if(data.length < 100) throw new Error('sections.json has too few rows: ' + data.length); console.log('Validated sections:', data.length);"
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/data/202710/sections.json
+          git diff --cached --quiet || git commit -m "chore: update Summer 2026 course status"
+
+      - name: Push changes
+        run: git push

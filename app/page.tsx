@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Header from "@/components/Header";
-import { DEFAULT_TERM_SLUG, getTermBySlug } from "@/lib/terms";
+import { DEFAULT_TERM_SLUG, appendTermToHref, getTermBySlug, type TermDefinition } from "@/lib/terms";
 
 export default function HomePage() {
     // Theme Colors
     const warmBg = "bg-gray-50";
     const darkBlueText = "text-[#0f172a]";
     const featuredTerm = getTermBySlug(DEFAULT_TERM_SLUG);
+    const summerTerm = getTermBySlug("summer2026");
 
     return (
         <div className={`min-h-screen ${warmBg} flex flex-col font-sans text-slate-800`}>
@@ -20,47 +21,24 @@ export default function HomePage() {
 
                     {/* LEFT COLUMN: Welcome Card (Anchors the layout) */}
                     <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 flex flex-col justify-center items-start hover:shadow-md transition-shadow h-full">
-                        <h2 className={`text-3xl font-bold ${darkBlueText} mb-6`}>Welcome to SBCCPlan</h2>
-                        <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                            The unofficial, student-built website to browse classes and see your professors.
-                        </p>
-                        <p className="text-slate-500 leading-relaxed">
-                            With a clear UI, it is class planning, completely reimagined for the modern student.
-                        </p>
-                        <p className="text-slate-500 leading-relaxed">
-                           THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
-                        </p>
+                        <div className="w-full md:max-w-[52ch]">
+                            <h2 className={`text-3xl font-bold ${darkBlueText} leading-tight mb-7`}>Welcome to SBCCPlan</h2>
+                            <p className="text-slate-600 text-lg leading-relaxed mb-5">
+                                The unofficial, student-built website to browse classes and see your professors.
+                            </p>
+                            <p className="text-slate-500 leading-relaxed md:leading-7 mb-6">
+                                This website helps students browse classes, track course status, check registration dates, and read professor reviews and comments through integrated Rate My Professor data. Course data is sourced from the official SBCC website. Grade distribution features are currently in development. All professor review data is sourced from Rate My Professor.
+                            </p>
+                            <p className="text-slate-500 leading-relaxed md:leading-7">
+                               THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
+                            </p>
+                        </div>
                     </div>
 
                     {/* RIGHT COLUMN: Stacked Cards (Browse + Popular) */}
                     <div className="flex flex-col gap-6">
-
-                        {/* 1. NEW BROWSE ACTIONS CARD (Top Right) */}
-                        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
-                            <div className="mb-6 flex flex-wrap items-center gap-3">
-                                <h2 className={`text-xl font-semibold ${darkBlueText}`}>{featuredTerm.label}</h2>
-                                <span className="term-new-pill rounded-full border px-3 py-1 text-xs font-bold uppercase">
-                                    New
-                                </span>
-                            </div>
-
-                            <div className="flex flex-col sm:flex-row gap-4 w-full">
-                                <Link
-                                    href="/classes"
-                                    data-track="home_browse_courses"
-                                    className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
-                                >
-                                    Browse All Courses
-                                </Link>
-                                <Link
-                                    href="/professors"
-                                    data-track="home_browse_professors"
-                                    className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
-                                >
-                                    Browse All Professors
-                                </Link>
-                            </div>
-                        </div>
+                        <TermBrowseCard term={featuredTerm} isNew />
+                        <TermBrowseCard term={summerTerm} />
 
                         {/* 2. POPULAR SUBJECTS (Moved Down) */}
                         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 flex flex-col justify-center items-center text-center hover:shadow-md transition-shadow">
@@ -102,7 +80,7 @@ export default function HomePage() {
                         data-track="home_feedback_form"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border-2 border-slate-100 rounded-2xl p-6 text-center hover:border-[#0f172a] transition-colors cursor-pointer bg-white group"
+                        className="block border-2 border-slate-100 rounded-2xl p-6 text-center hover:border-[#0f172a] transition-colors cursor-pointer bg-white group"
                     >
                         <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-[#0f172a] transition-colors">Give me feedback</h3>
                         <p className="text-slate-500">Help me make this website better. Click here to put your feedback.</p>
@@ -110,6 +88,38 @@ export default function HomePage() {
                 </section>
 
             </main>
+        </div>
+    );
+}
+
+function TermBrowseCard({ term, isNew = false }: { term: TermDefinition; isNew?: boolean }) {
+    return (
+        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
+            <div className="mb-6 flex flex-wrap items-center gap-3">
+                <h2 className="text-xl font-semibold text-[#0f172a]">{term.label}</h2>
+                {isNew ? (
+                    <span className="term-new-pill rounded-full border px-3 py-1 text-xs font-bold uppercase">
+                        New
+                    </span>
+                ) : null}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 w-full">
+                <Link
+                    href={appendTermToHref("/classes", term.slug)}
+                    data-track={`home_browse_courses_${term.slug}`}
+                    className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
+                >
+                    Browse All Courses
+                </Link>
+                <Link
+                    href={appendTermToHref("/professors", term.slug)}
+                    data-track={`home_browse_professors_${term.slug}`}
+                    className="home-tab flex-1 bg-white border-2 border-[#0f172a] text-[#0f172a] py-4 px-6 rounded-2xl font-bold text-center hover:bg-[#0f172a] hover:text-white transition-all hover:-translate-y-1"
+                >
+                    Browse All Professors
+                </Link>
+            </div>
         </div>
     );
 }

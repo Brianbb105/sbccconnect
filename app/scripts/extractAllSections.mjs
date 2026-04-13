@@ -2,8 +2,8 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 
-const TERM = (process.argv[2] || "202710").trim();
-const TERM_DESC = (process.argv.slice(3).join(" ").trim() || "Summer 2026");
+const TERM = (process.argv[2] || "202730").trim();
+const TERM_DESC = (process.argv.slice(3).join(" ").trim() || "Fall 2026");
 const OUTPUT_DIR = path.resolve(process.cwd(), `app/data/${TERM}`);
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });

@@ -3,7 +3,7 @@ import * as path from "node:path";
 import * as cheerio from "cheerio";
 
 
-const TERM = (process.argv[2] || "202710").trim();
+const TERM = (process.argv[2] || "202730").trim();
 const url = `https://banner.sbcc.edu/ords/ssb/pw_pub_sched.p_search?term=${TERM}`;
 
 console.log("Fetching:", url);

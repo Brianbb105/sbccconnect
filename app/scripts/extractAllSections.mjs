@@ -57,6 +57,7 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
     const DATE_RE = /\b\d{2}\/\d{2}-\d{2}\/\d{2}\b/;
     const TIME_RE = /\b\d{1,2}:\d{2}\s*(?:am|pm)\s*-\s*\d{1,2}:\d{2}\s*(?:am|pm)\b/i;
     const HOURS_RE = /[\d.]+\s*hours\/week/i;
+    const HOURS_LOCATION_RE = /\bhours\/week\b/i;
     const ONLINE_RE = /\b(ONLINE|ZOOM|WEB|REMOTE)\b/i;
     const CRN_RE = /^\d{5}$/;
     const NUMERIC_RE = /^\d+(?:\.\d+)?$/;
@@ -205,6 +206,7 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
       const loc = normalizeSpacing(location).toUpperCase();
       if (!loc || loc === "TBA") return false;
       if (HEADER_TOKENS.has(loc)) return false;
+      if (HOURS_LOCATION_RE.test(loc)) return false;
       return true;
     };
 
@@ -212,20 +214,24 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
       const normalizedLocation = normalizeSpacing(location);
       const upper = normalizedLocation.toUpperCase();
       if (!normalizedLocation || upper === "TBA") return "";
+      if (HOURS_LOCATION_RE.test(upper)) return "";
       if (ONLINE_RE.test(upper)) return "";
       return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${normalizedLocation} ${CAMPUS_MAP_SUFFIX}`)}`;
-    };
-
-    const isOnlineMeeting = (meeting) => {
-      const loc = normalizeSpacing(meeting.location).toUpperCase();
-      const time = normalizeSpacing(meeting.time).toLowerCase();
-      return ONLINE_RE.test(loc) || time.includes("hours/week");
     };
 
     const isInPersonMeeting = (meeting) => {
       const loc = normalizeSpacing(meeting.location).toUpperCase();
       if (!loc || loc === "TBA") return false;
+      if (HOURS_LOCATION_RE.test(loc)) return false;
       return !ONLINE_RE.test(loc);
+    };
+
+    const isOnlineMeeting = (meeting) => {
+      const loc = normalizeSpacing(meeting.location).toUpperCase();
+      const time = normalizeSpacing(meeting.time).toLowerCase();
+      if (ONLINE_RE.test(loc)) return true;
+      if (!time.includes("hours/week")) return false;
+      return !isInPersonMeeting(meeting);
     };
 
     const extractIgetcAreas = (text) => {
@@ -834,17 +840,16 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
         });
       }
 
-      const lecMeetings = dedupedMeetings.filter((m) => m.type === "Lec");
       const labMeetings = dedupedMeetings.filter((m) => m.type === "Lab");
-      const hasHybridLecturePattern = lecMeetings.length >= 2;
       const hasLab = labMeetings.length > 0;
       const hasOnlineLab = labMeetings.some((m) => isOnlineMeeting(m));
 
       const hasOnline = dedupedMeetings.some((m) => isOnlineMeeting(m));
       const hasInPerson = dedupedMeetings.some((m) => isInPersonMeeting(m));
+      const hasHybridLecturePattern = hasOnline && hasInPerson;
 
       let modality = "IP";
-      if (hasHybridLecturePattern || (hasOnline && hasInPerson)) modality = "HY";
+      if (hasHybridLecturePattern) modality = "HY";
       else if (hasOnline) modality = "OL";
       else modality = "IP";
 

@@ -32,6 +32,7 @@ They do **one term at a time**.
 
 - `extractProfessors.mjs` = saves `professors.json` for one term
 - `extractAllSections.mjs` = saves `sections.json` for one term
+- `importAssistAgreements.mjs` = caches and normalizes SBCC transfer agreements from ASSIST.org
 
 They do **not** extract all terms automatically.
 
@@ -117,3 +118,40 @@ HEADLESS=false node app/scripts/extractAllSections.mjs 202650 "Spring 2026"
 npm run build
 ```
 
+## ASSIST transfer agreement importer
+
+The ASSIST importer uses the public JSON endpoints used by ASSIST.org's app. It keeps raw API responses separate from normalized SBCCPlan data and is designed to resume from cached files.
+
+Data locations:
+
+- Raw cache: `app/data/assist/raw/`
+- Normalized agreements: `app/data/assist/normalized/`
+- Cache manifest: `app/data/assist/cache-manifest.json`
+- Run reports: `app/data/assist/reports/`
+
+Command examples:
+
+```bash
+# List available SBCC UC/CSU receiving institutions for one ASSIST year.
+node app/scripts/importAssistAgreements.mjs partners --year-id 76
+
+# List UCSB major agreements for one ASSIST year.
+node app/scripts/importAssistAgreements.mjs list --receiving-id 128 --year-id 76 --category major
+
+# Fetch and normalize one full agreement by key.
+node app/scripts/importAssistAgreements.mjs fetch-one --key "76/92/to/128/Major/9b98e159-1754-4eb0-33c4-08ddf001012b"
+
+# Dry-run all SBCC -> UC/CSU current major imports before downloading full agreements.
+node app/scripts/importAssistAgreements.mjs fetch-all --year-id 76 --segments UC,CSU --dry-run
+
+# Fetch all SBCC -> UC/CSU major agreements for one year.
+node app/scripts/importAssistAgreements.mjs fetch-all --year-id 76 --segments UC,CSU --full-categories major --concurrency 1
+```
+
+Operational notes:
+
+- Default full-agreement concurrency is `1` and is capped at `3`.
+- Default request delay is `1250ms`; override with `--delay-ms`.
+- `fetch-all` caches `major`, `breadth`, `dept`, and `prefix` agreement lists by default, but only downloads full `major` agreements unless `--full-categories` is changed.
+- Use `--force` to re-fetch cached API responses.
+- Use `--renormalize` to rebuild normalized files from cached raw agreements without re-downloading unchanged keys.

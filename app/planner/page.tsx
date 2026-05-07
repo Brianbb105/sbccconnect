@@ -1,4 +1,6 @@
 import Header from "@/components/Header";
+import { getAssistPlannerData } from "@/lib/assistPlanner";
+import AssistPlannerClient from "./AssistPlannerClient";
 
 const registrationSchedule = [
     {
@@ -133,18 +135,19 @@ const registrationSchedule = [
 ] as const;
 
 export default function PlannerPage() {
+    const assistPlannerData = getAssistPlannerData();
+
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
             <Header />
-            <main className="max-w-5xl mx-auto px-6 py-12">
-                <section className="bg-white border border-slate-200 rounded-3xl shadow-sm px-6 py-7 md:px-8">
-                    <div>
-                        <h1 className="text-3xl font-bold text-[#0f172a]">Planner</h1>
-                        <p className="mt-3 max-w-3xl text-slate-600 leading-relaxed">
-                            Registration dates for Summer 2026 and Fall 2026 by student group.
-                        </p>
-                        <p className="mt-2 text-sm text-slate-500">All times shown in Pacific Time.</p>
-                    </div>
+            <main className="max-w-6xl mx-auto px-6 py-12">
+                <AssistPlannerClient data={assistPlannerData} />
+
+                <section className="mt-10 rounded-3xl border border-slate-200 bg-white px-6 py-7 shadow-sm md:px-8">
+                    <h2 className="text-2xl font-bold text-[#0f172a]">Registration Dates</h2>
+                    <p className="mt-3 max-w-3xl text-slate-600 leading-relaxed">
+                        Summer 2026 and Fall 2026 registration windows by student group. All times shown in Pacific Time.
+                    </p>
                 </section>
 
                 <div className="mt-6 space-y-6">

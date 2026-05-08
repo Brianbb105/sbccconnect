@@ -9,7 +9,7 @@ const RAW_ROOT = path.join(DATA_ROOT, "raw");
 const NORMALIZED_ROOT = path.join(DATA_ROOT, "normalized");
 const REPORTS_ROOT = path.join(DATA_ROOT, "reports");
 const MANIFEST_PATH = path.join(DATA_ROOT, "cache-manifest.json");
-const DEFAULT_DELAY_MS = 1250;
+const DEFAULT_DELAY_MS = 6500;
 const DEFAULT_RETRIES = 4;
 const DEFAULT_LIST_CATEGORIES = ["major", "breadth", "dept", "prefix"];
 const DEFAULT_FULL_CATEGORIES = ["major"];
@@ -213,6 +213,18 @@ function parseSetCookieHeader(headerValue) {
   return headerValue.split(/,(?=\s*[^;,=\s]+=[^;,]+)/g).map((value) => value.trim()).filter(Boolean);
 }
 
+function retryWaitMs(response, responseText, attempt) {
+  const retryAfter = Number(response.headers.get("retry-after"));
+  if (Number.isFinite(retryAfter) && retryAfter > 0) return retryAfter * 1000;
+
+  const quotaMatch = responseText.match(/maximum admitted\s+\d+\s+per\s+(\d+)\s*m/i);
+  if (response.status === 429 && quotaMatch) {
+    return Number(quotaMatch[1]) * 60 * 1000;
+  }
+
+  return Math.min(30000, 800 * 2 ** (attempt - 1));
+}
+
 function setCookiesFromHeaders(headers, jar) {
   const setCookieHeaders = typeof headers.getSetCookie === "function"
     ? headers.getSetCookie()
@@ -339,11 +351,7 @@ class AssistClient {
           throw new Error(`HTTP ${response.status} for ${url}: ${text.slice(0, 300)}`);
         }
 
-        const retryAfter = Number(response.headers.get("retry-after"));
-        const waitMs = Number.isFinite(retryAfter)
-          ? retryAfter * 1000
-          : Math.min(30000, 800 * 2 ** (attempt - 1));
-        await sleep(waitMs);
+        await sleep(retryWaitMs(response, text, attempt));
       } catch (error) {
         lastError = error;
         if (attempt > this.maxRetries) break;
@@ -1038,6 +1046,7 @@ async function fetchAndNormalizeAgreement(client, manifest, task, options = {}) 
     contentHash: result.hash,
     lastCheckedAt: normalized.lastCheckedAt,
   };
+  writeManifest(manifest);
 
   return {
     status: result.fromCache ? "normalized-from-cache" : "fetched",

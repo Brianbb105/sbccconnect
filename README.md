@@ -151,7 +151,7 @@ node app/scripts/importAssistAgreements.mjs fetch-all --year-id 76 --segments UC
 Operational notes:
 
 - Default full-agreement concurrency is `1` and is capped at `3`.
-- Default request delay is `1250ms`; override with `--delay-ms`.
+- Default request delay is `6500ms`; override with `--delay-ms`.
 - `fetch-all` caches `major`, `breadth`, `dept`, and `prefix` agreement lists by default, but only downloads full `major` agreements unless `--full-categories` is changed.
 - Use `--force` to re-fetch cached API responses.
 - Use `--renormalize` to rebuild normalized files from cached raw agreements without re-downloading unchanged keys.

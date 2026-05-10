@@ -1,0 +1,2584 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 89,
+    "name": "University of California, Davis",
+    "code": "UCD",
+    "segment": "UC"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/89/Major/e16ebc5d-34f1-4b08-346c-08ddb349963e",
+    "type": "Major",
+    "name": "Psychology A.B.",
+    "publishDate": "2026-01-07T00:20:29.9490701",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "95ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "PSYCHOLOGY",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Required for admission"
+        }
+      ],
+      "sections": [
+        {
+          "id": "95ea6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 292125,
+              "prefix": "PSC",
+              "courseNumber": "001",
+              "title": "General Psychology",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11296,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4683,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": [
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 7,
+                  "pathwayName": "Communication",
+                  "pathwayCode": "Communication",
+                  "expectationId": 33,
+                  "expectationName": "C4-Choose 3 Courses From List",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                },
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 20,
+                  "pathwayName": "Psychology",
+                  "pathwayCode": "Psychology",
+                  "expectationId": 100,
+                  "expectationName": "C1-Intro to Psych",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                }
+              ]
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ad66fa42-d26d-4b90-3c5d-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 292125,
+                  "prefix": "PSC",
+                  "courseNumber": "001",
+                  "title": "General Psychology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11296,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4683,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": [
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 7,
+                      "pathwayName": "Communication",
+                      "pathwayCode": "Communication",
+                      "expectationId": 33,
+                      "expectationName": "C4-Choose 3 Courses From List",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    },
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 20,
+                      "pathwayName": "Psychology",
+                      "pathwayCode": "Psychology",
+                      "expectationId": 100,
+                      "expectationName": "C1-Intro to Psych",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    }
+                  ]
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "ad66fa42-d26d-4b90-3c5d-08ddb3499771",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156537,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 279543,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000H",
+                  "title": "Introduction to Psychology - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156537,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156537,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 279543,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000H",
+                      "title": "Introduction to Psychology - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 279543,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000H",
+                          "title": "Introduction to Psychology - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "72a70690-ec81-43c6-bed3-08ddb349d5ca",
+                  "sendingArticulationId": "79439954-5996-4367-d880-08ddb349be3e",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ad66fa42-d26d-4b90-3c5d-08ddb3499771"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "STATISTICS",
+      "position": 5,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "90ea6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 305689,
+              "prefix": "PSC",
+              "courseNumber": "012Y",
+              "title": "Data Visualization in the Social Sciences",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11296,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4683,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 354134,
+              "prefix": "STA",
+              "courseNumber": "013",
+              "title": "Elementary Statistics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Statistics",
+              "departmentParentId": 12558,
+              "prefixDescription": "Statistics",
+              "prefixParentId": 3368,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Required for admission"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": [
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 7,
+                  "pathwayName": "Communication",
+                  "pathwayCode": "Communication",
+                  "expectationId": 30,
+                  "expectationName": "C1-Statistics",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                },
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 4,
+                  "pathwayName": "Business Administration",
+                  "pathwayCode": "Business-Administration",
+                  "expectationId": 15,
+                  "expectationName": "C4-Statistics",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                },
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 20,
+                  "pathwayName": "Psychology",
+                  "pathwayCode": "Psychology",
+                  "expectationId": 101,
+                  "expectationName": "C2-Statistics",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                }
+              ]
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "0f79acf3-4058-4b08-3c5b-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 305689,
+                  "prefix": "PSC",
+                  "courseNumber": "012Y",
+                  "title": "Data Visualization in the Social Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11296,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4683,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "67d30f17-c4d3-4f35-3c5c-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 354134,
+                  "prefix": "STA",
+                  "courseNumber": "013",
+                  "title": "Elementary Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Statistics",
+                  "departmentParentId": 12558,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 3368,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Required for admission"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": [
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 7,
+                      "pathwayName": "Communication",
+                      "pathwayCode": "Communication",
+                      "expectationId": 30,
+                      "expectationName": "C1-Statistics",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    },
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 4,
+                      "pathwayName": "Business Administration",
+                      "pathwayCode": "Business-Administration",
+                      "expectationId": 15,
+                      "expectationName": "C4-Statistics",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    },
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 20,
+                      "pathwayName": "Psychology",
+                      "pathwayCode": "Psychology",
+                      "expectationId": 101,
+                      "expectationName": "C2-Statistics",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    }
+                  ]
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Required for admission"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "0f79acf3-4058-4b08-3c5b-08ddb3499771",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "67d30f17-c4d3-4f35-3c5c-08ddb3499771",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 360940,
+                  "prefix": "SOC",
+                  "courseNumber": "125",
+                  "title": "Introduction to Statistics in Sociology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 360940,
+                      "prefix": "SOC",
+                      "courseNumber": "125",
+                      "title": "Introduction to Statistics in Sociology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2017",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 360940,
+                          "prefix": "SOC",
+                          "courseNumber": "125",
+                          "title": "Introduction to Statistics in Sociology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2017",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "7f819007-144b-4655-bec9-08ddb349d5ca",
+                  "sendingArticulationId": "6a40433a-2c57-4337-d859-08ddb349be3e",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                },
+                {
+                  "id": "39a173a6-8476-4f89-43b9-08de0f50a466",
+                  "sendingArticulationId": "6a40433a-2c57-4337-d859-08ddb349be3e",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 1,
+                  "sendingCourseGroupEndPosition": 2
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "0f79acf3-4058-4b08-3c5b-08ddb3499771",
+            "67d30f17-c4d3-4f35-3c5c-08ddb3499771"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "97ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "BIOLOGY",
+      "position": 7,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Required for admission"
+        }
+      ],
+      "sections": [
+        {
+          "id": "97ea6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 270568,
+              "prefix": "BIS",
+              "courseNumber": "002A",
+              "title": "Introduction to Biology: Essentials of Life on Earth",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Biological Sciences",
+              "departmentParentId": 1645,
+              "prefixDescription": "Biological Sciences",
+              "prefixParentId": 9256,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": [
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 3,
+                  "pathwayName": "Biology",
+                  "pathwayCode": "Biology",
+                  "expectationId": 8,
+                  "expectationName": "C1-Intro Biology Seq.",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                },
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 20,
+                  "pathwayName": "Psychology",
+                  "pathwayCode": "Psychology",
+                  "expectationId": 103,
+                  "expectationName": "C4-Biology I",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                }
+              ]
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e5fd374d-5e00-4ba2-3c62-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 270568,
+                  "prefix": "BIS",
+                  "courseNumber": "002A",
+                  "title": "Introduction to Biology: Essentials of Life on Earth",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Biological Sciences",
+                  "departmentParentId": 1645,
+                  "prefixDescription": "Biological Sciences",
+                  "prefixParentId": 9256,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Please refer to additional important General Information section above"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": [
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 3,
+                      "pathwayName": "Biology",
+                      "pathwayCode": "Biology",
+                      "expectationId": 8,
+                      "expectationName": "C1-Intro Biology Seq.",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    },
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 20,
+                      "pathwayName": "Psychology",
+                      "pathwayCode": "Psychology",
+                      "expectationId": 103,
+                      "expectationName": "C4-Biology I",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    }
+                  ]
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "e5fd374d-5e00-4ba2-3c62-08ddb3499771",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "e5fd374d-5e00-4ba2-3c62-08ddb3499771"
+          ]
+        },
+        {
+          "id": "97ea6f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 354178,
+              "prefix": "BIS",
+              "courseNumber": "010",
+              "title": "Everyday Biology",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Biological Sciences",
+              "departmentParentId": 1645,
+              "prefixDescription": "Biological Sciences",
+              "prefixParentId": 9256,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 284811,
+              "prefix": "ANT",
+              "courseNumber": "001",
+              "title": "Human Evolutionary Biology",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Anthropology",
+              "departmentParentId": 805,
+              "prefixDescription": "Anthropology",
+              "prefixParentId": 10772,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": [
+                {
+                  "begin": null,
+                  "beginDate": null,
+                  "beginTermId": null,
+                  "end": null,
+                  "endDate": null,
+                  "endTermId": null,
+                  "pathwayId": 1,
+                  "pathwayName": "Anthropology",
+                  "pathwayCode": "Anthropology",
+                  "expectationId": 1,
+                  "expectationName": "C1-Physical/Biological Anthro",
+                  "subexpectationId": 0,
+                  "subexpectationName": null
+                }
+              ]
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "b28f5816-ca09-4217-3c5f-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 354178,
+                  "prefix": "BIS",
+                  "courseNumber": "010",
+                  "title": "Everyday Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Biological Sciences",
+                  "departmentParentId": 1645,
+                  "prefixDescription": "Biological Sciences",
+                  "prefixParentId": 9256,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "7ba38c3a-b5ea-484f-3c5e-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 284811,
+                  "prefix": "ANT",
+                  "courseNumber": "001",
+                  "title": "Human Evolutionary Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 805,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10772,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": [
+                    {
+                      "begin": null,
+                      "beginDate": null,
+                      "beginTermId": null,
+                      "end": null,
+                      "endDate": null,
+                      "endTermId": null,
+                      "pathwayId": 1,
+                      "pathwayName": "Anthropology",
+                      "pathwayCode": "Anthropology",
+                      "expectationId": 1,
+                      "expectationName": "C1-Physical/Biological Anthro",
+                      "subexpectationId": 0,
+                      "subexpectationName": null
+                    }
+                  ]
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "b28f5816-ca09-4217-3c5f-08ddb3499771",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 226331,
+                  "prefix": "BIOL",
+                  "courseNumber": "140",
+                  "title": "Principles of Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 226331,
+                      "prefix": "BIOL",
+                      "courseNumber": "140",
+                      "title": "Principles of Biology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 226331,
+                          "prefix": "BIOL",
+                          "courseNumber": "140",
+                          "title": "Principles of Biology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "7ba38c3a-b5ea-484f-3c5e-08ddb3499771",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330297,
+                  "prefix": "ANTH",
+                  "courseNumber": "101",
+                  "title": "Physical Anthropology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 273750,
+                  "prefix": "ANTH",
+                  "courseNumber": "101H",
+                  "title": "Physical Anthropology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330297,
+                      "prefix": "ANTH",
+                      "courseNumber": "101",
+                      "title": "Physical Anthropology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330297,
+                          "prefix": "ANTH",
+                          "courseNumber": "101",
+                          "title": "Physical Anthropology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 273750,
+                      "prefix": "ANTH",
+                      "courseNumber": "101H",
+                      "title": "Physical Anthropology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 273750,
+                          "prefix": "ANTH",
+                          "courseNumber": "101H",
+                          "title": "Physical Anthropology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "926a6db9-c75d-4df0-bed9-08ddb349d5ca",
+                  "sendingArticulationId": "abde0991-884c-4f65-d8ac-08ddb349be3e",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "b28f5816-ca09-4217-3c5f-08ddb3499771",
+            "7ba38c3a-b5ea-484f-3c5e-08ddb3499771"
+          ]
+        },
+        {
+          "id": "97ea6f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 354178,
+              "prefix": "BIS",
+              "courseNumber": "010",
+              "title": "Everyday Biology",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Biological Sciences",
+              "departmentParentId": 1645,
+              "prefixDescription": "Biological Sciences",
+              "prefixParentId": 9256,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 354051,
+              "prefix": "MCB",
+              "courseNumber": "010",
+              "title": "Introduction to Human Heredity",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Molecular and Cellular Biology",
+              "departmentParentId": 9334,
+              "prefixDescription": "Molecular and Cellular Biology",
+              "prefixParentId": 9891,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ae9db349-8355-4e0f-3c61-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 354178,
+                  "prefix": "BIS",
+                  "courseNumber": "010",
+                  "title": "Everyday Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Biological Sciences",
+                  "departmentParentId": 1645,
+                  "prefixDescription": "Biological Sciences",
+                  "prefixParentId": 9256,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "e1246704-f994-44a1-3c60-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 354051,
+                  "prefix": "MCB",
+                  "courseNumber": "010",
+                  "title": "Introduction to Human Heredity",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Molecular and Cellular Biology",
+                  "departmentParentId": 9334,
+                  "prefixDescription": "Molecular and Cellular Biology",
+                  "prefixParentId": 9891,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "ae9db349-8355-4e0f-3c61-08ddb3499771",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 226331,
+                  "prefix": "BIOL",
+                  "courseNumber": "140",
+                  "title": "Principles of Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 226331,
+                      "prefix": "BIOL",
+                      "courseNumber": "140",
+                      "title": "Principles of Biology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 226331,
+                          "prefix": "BIOL",
+                          "courseNumber": "140",
+                          "title": "Principles of Biology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "e1246704-f994-44a1-3c60-08ddb3499771",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ae9db349-8355-4e0f-3c61-08ddb3499771",
+            "e1246704-f994-44a1-3c60-08ddb3499771"
+          ]
+        },
+        {
+          "id": "97ea6f45-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 354178,
+              "prefix": "BIS",
+              "courseNumber": "010",
+              "title": "Everyday Biology",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Biological Sciences",
+              "departmentParentId": 1645,
+              "prefixDescription": "Biological Sciences",
+              "prefixParentId": 9256,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 257339,
+              "prefix": "NPB",
+              "courseNumber": "010",
+              "title": "Elementary Human Physiology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Neurobiology, Physiology and Behavior",
+              "departmentParentId": 9640,
+              "prefixDescription": "Neurobiology, Physiology and Behavior",
+              "prefixParentId": 8737,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "6a623bda-6668-4b18-3c64-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 354178,
+                  "prefix": "BIS",
+                  "courseNumber": "010",
+                  "title": "Everyday Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Biological Sciences",
+                  "departmentParentId": 1645,
+                  "prefixDescription": "Biological Sciences",
+                  "prefixParentId": 9256,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "874bcd54-8a28-4593-3c63-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 257339,
+                  "prefix": "NPB",
+                  "courseNumber": "010",
+                  "title": "Elementary Human Physiology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Neurobiology, Physiology and Behavior",
+                  "departmentParentId": 9640,
+                  "prefixDescription": "Neurobiology, Physiology and Behavior",
+                  "prefixParentId": 8737,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "6a623bda-6668-4b18-3c64-08ddb3499771",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 226331,
+                  "prefix": "BIOL",
+                  "courseNumber": "140",
+                  "title": "Principles of Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 226331,
+                      "prefix": "BIOL",
+                      "courseNumber": "140",
+                      "title": "Principles of Biology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 226331,
+                          "prefix": "BIOL",
+                          "courseNumber": "140",
+                          "title": "Principles of Biology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "874bcd54-8a28-4593-3c63-08ddb3499771",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 275913,
+                  "prefix": "BMS",
+                  "courseNumber": "100",
+                  "title": "The Human Body",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282159,
+                  "prefix": "BMS",
+                  "courseNumber": "108",
+                  "title": "Human Physiology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 275913,
+                      "prefix": "BMS",
+                      "courseNumber": "100",
+                      "title": "The Human Body",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 275913,
+                          "prefix": "BMS",
+                          "courseNumber": "100",
+                          "title": "The Human Body",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 282159,
+                      "prefix": "BMS",
+                      "courseNumber": "108",
+                      "title": "Human Physiology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 282159,
+                          "prefix": "BMS",
+                          "courseNumber": "108",
+                          "title": "Human Physiology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "cc4448e7-d3c1-4180-beda-08ddb349d5ca",
+                  "sendingArticulationId": "c96ec039-368a-4282-d8b8-08ddb349be3e",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "6a623bda-6668-4b18-3c64-08ddb3499771",
+            "874bcd54-8a28-4593-3c63-08ddb3499771"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8fea6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "RESEARCH METHODS",
+      "position": 10,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "8fea6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 292084,
+              "prefix": "PSC",
+              "courseNumber": "041",
+              "title": "Research Methods in Psychology",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11296,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4683,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "2d4b931b-46d0-4115-3c5a-08ddb3499771",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 292084,
+                  "prefix": "PSC",
+                  "courseNumber": "041",
+                  "title": "Research Methods in Psychology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11296,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4683,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "2d4b931b-46d0-4115-3c5a-08ddb3499771",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 283034,
+                  "prefix": "PSY",
+                  "courseNumber": "200",
+                  "title": "Research Methods and Experimental Design in Psychology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 283034,
+                      "prefix": "PSY",
+                      "courseNumber": "200",
+                      "title": "Research Methods and Experimental Design in Psychology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 283034,
+                          "prefix": "PSY",
+                          "courseNumber": "200",
+                          "title": "Research Methods and Experimental Design in Psychology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "2d4b931b-46d0-4115-3c5a-08ddb3499771"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "91ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "THE MAJOR PROGRAM",
+      "contentHtml": null
+    },
+    {
+      "id": "92ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "The psychology program at UC Davis is broad and includes students and faculty with a variety of interests. The department has developed around five core areas of psychology: Perception, Cognition, &amp; Cognitive Neuroscience (PCCN) involves the study of awareness and thought, and includes such topics as perception, learning, memory, language and cognition. Biological Psychology covers a broad spectrum of topics including evolutionary, neurobiological, and molecular mechanisms of behavior. Social-Personality Psychology involves the study of the individual in their social environment and includes such topics as personality &amp; individual differences, emotions, stereotyping &amp; prejudice, intergroup relations, the psychology of religion and psychological health &amp; dysfunction. Developmental Psychology involves the study of changes in behavioral, cognitive, emotional, and social abilities that occur throughout the lifespan. Typical and atypical development is examined using a variety of methods including behavioral, neuroimaging, and physiological assessments. Quantitative Psychology involves the study of linear &amp; nonlinear models, psychometrics, mixed-effects models, and dynamic models, including experimental design, analysis of variance, regression, multivariate analysis, latent growth models, time series models, and factor analytic models. The department offers the Bachelor of Arts (A.B.) program for students interested in the liberal arts and the Bachelor of Science (B.S.) program geared for students with an interest in either biology or mathematics. The main objective of both programs is a broad introduction to the scope of contemporary psychology. In addition to completing a number of common core courses for their degree, students may take approved elective courses from a wide range of topics including Educational Psychology, Interpersonal Communication, and Psychological Anthropology, to name a few. The department strongly encourages students to become involved in individual research projects under the direction of faculty members and to participate in our internship program to broaden experience and understanding of the field of psychology.",
+      "contentHtml": "<p>The <a href=\"https://local-resources.ucdavis.edu/local_resources/docs/catalog/GenCat20252026.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">psychology</a> program at UC Davis is broad and includes students and faculty with a variety of interests. The department has developed around five core areas of psychology:</p><p><br></p><p>Perception, Cognition, &amp; Cognitive Neuroscience (PCCN) involves the study of awareness and thought, and includes such topics as perception, learning, memory, language and cognition.</p><p><br></p><p>Biological Psychology covers a broad spectrum of topics including evolutionary, neurobiological, and molecular mechanisms of behavior.</p><p><br></p><p>Social-Personality Psychology involves the study of the individual in their social environment and includes such topics as personality &amp; individual differences, emotions, stereotyping &amp; prejudice, intergroup relations, the psychology of religion and psychological health &amp; dysfunction.</p><p><br></p><p>Developmental Psychology involves the study of changes in behavioral, cognitive, emotional, and social abilities that occur throughout the lifespan. Typical and atypical development is examined using a variety of methods including behavioral, neuroimaging, and physiological assessments.</p><p><br></p><p>Quantitative Psychology involves the study of linear &amp; nonlinear models, psychometrics, mixed-effects models, and dynamic models, including experimental design, analysis of variance, regression, multivariate analysis, latent growth models, time series models, and factor analytic models.</p><p><br></p><p>The department offers the Bachelor of Arts (A.B.) program for students interested in the liberal arts and the Bachelor of Science (B.S.) program geared for students with an interest in either biology or mathematics. The main objective of both programs is a broad introduction to the scope of contemporary psychology. In addition to completing a number of common core courses for their degree, students may take approved elective courses from a wide range of topics including Educational Psychology, Interpersonal Communication, and Psychological Anthropology, to name a few. The department strongly encourages students to become involved in individual research projects under the direction of faculty members and to participate in our internship program to broaden experience and understanding of the field of psychology.</p>"
+    },
+    {
+      "id": "96ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "CAREER ALTERNATIVES",
+      "contentHtml": null
+    },
+    {
+      "id": "98ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "A degree in psychology provides broad intellectual foundations which are useful to the graduate for the development of careers in a variety of areas, including social work, teaching, business, management and counseling. An undergraduate education in psychology also provides excellent preparation for graduate study. Individuals with degrees in psychology may enter graduate programs to prepare for teaching, research, or clinical/counseling careers in psychology, or may go on to professional schools for training in veterinary and human medicine, law, and many other professions.",
+      "contentHtml": "<p>A degree in psychology provides broad intellectual foundations which are useful to the graduate for the development of careers in a variety of areas, including social work, teaching, business, management and counseling. An undergraduate education in psychology also provides excellent preparation for graduate study. Individuals with degrees in psychology may enter graduate programs to prepare for teaching, research, or clinical/counseling careers in psychology, or may go on to professional schools for training in veterinary and human medicine, law, and many other professions.</p>"
+    },
+    {
+      "id": "94ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "SELECTIVE MAJOR REQUIREMENTS ADMISSIONS INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "a8ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "This is a competitive major and is subject to the Selective Major Review process. Students need to take all courses for a letter grade with no grade less than C and complete all major preparatory course requirements by the end of spring term prior to their fall enrollment. All students must meet a 2.8 GPA cumulative GPA for admission. Important Information: Complete the courses below and maintain a 2.90 GPA across the entire group: ● Psychology (PSY) 001 ● Statistics (STA) 013 ● Biological Science (BIS) 002A or Biological Science (BIS) 010 and one courses below: Anthropology (ANT) 001 Molecular and Cellular Biology (MCB) 010 Neurobiology, Physiology and Behavior (NPB) 010 Visit Department agreements as needed Contact your UC Davis Advisor for questions ( Find my advisor ) Note: Advanced Placement (AP) and International Baccalaureate (IB) Examination: AP and IB examination credit policies are detailed in the UC Davis General Catalog . Quick reference charts for AP and IB .",
+      "contentHtml": "<p>This is a competitive major and is subject to the <a href=\"https://www.ucdavis.edu/admissions/undergraduate/transfer/selective-major-requirements\" rel=\"noopener noreferrer\" target=\"_blank\">Selective Major Review</a> process.&nbsp;Students need to take all courses for a letter grade with no grade less than C and complete all major preparatory course requirements by the end of spring term prior to their fall enrollment. All students must meet a 2.8 GPA cumulative GPA for admission.</p><p><br></p><p>Important Information:</p><p><br></p><p>Complete the courses below and maintain a<strong> 2.90 GPA</strong> across the entire group:</p><p>●&nbsp;&nbsp;&nbsp;&nbsp;Psychology (PSY) 001</p><p>●&nbsp;&nbsp;&nbsp;&nbsp;Statistics (STA) 013</p><p>●&nbsp;&nbsp;&nbsp;&nbsp;Biological Science (BIS) 002A or Biological Science (BIS) 010 and one courses below:</p><ul><li>\tAnthropology (ANT) 001</li><li>Molecular and Cellular Biology (MCB) 010</li><li>Neurobiology, Physiology and Behavior (NPB) 010</li></ul><p>  </p><p>Visit Department agreements as needed</p><p><br></p><p>Contact your UC Davis Advisor for questions (<a href=\"https://ua.ucdavis.edu/portal/find-my-advisor\" rel=\"noopener noreferrer\" target=\"_blank\">Find my advisor</a>)</p><p><br></p><p>Note:</p><p><strong>Advanced Placement (AP) and International Baccalaureate (IB) Examination:</strong></p><p>AP and IB examination credit policies are detailed in the UC Davis <a href=\"https://local-resources.ucdavis.edu/local_resources/docs/catalog/GenCat20252026.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">General Catalog</a>. Quick reference charts for <a href=\"https://local-resources.ucdavis.edu/local_resources/docs/APIBCharts/APCurrent.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">AP</a> and <a href=\"https://local-resources.ucdavis.edu/local_resources/docs/APIBCharts/IBCurrent.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">IB</a>.</p>"
+    },
+    {
+      "id": "89ea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 6,
+      "content": "TRANSFER ADMISSIONS GUARANTEE (TAG)",
+      "contentHtml": null
+    },
+    {
+      "id": "9bea6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 7,
+      "content": "At the time of TAG submission, Psychology requires a minimum 3.20 cumulative GPA and at least a 2.90 GPA across the entire group of courses with no grades less than a C to receive a Transfer Admission Guarantee.",
+      "contentHtml": "<p>At the time of TAG submission, Psychology requires a minimum <strong>3.20 </strong>cumulative GPA and at least a <strong>2.90 </strong>GPA across the entire group of courses with no grades less than a C to receive a Transfer Admission Guarantee.</p>"
+    },
+    {
+      "id": "855f6d02-b09b-44d0-b83c-019adc2eb498",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 8,
+      "content": "general information",
+      "contentHtml": null
+    },
+    {
+      "id": "2389503e-34eb-4217-b7e9-019adb5a1b2f",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 9,
+      "content": "Group 3 : Please see the Biological Sciences department agreements for a possible applicable BIS 002ABC series articulation agreement, if needed.",
+      "contentHtml": "<p><strong style=\"color: rgb(78, 14, 80);\">Group 3</strong>: Please see the Biological Sciences department agreements for a possible applicable BIS 002ABC series articulation agreement, if needed.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-05-08T18:35:04.908Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=89&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F89%2FMajor%2Fe16ebc5d-34f1-4b08-346c-08ddb349963e",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F89%2FMajor%2Fe16ebc5d-34f1-4b08-346c-08ddb349963e",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-89/major/f9666023fdc5aecd.json",
+    "templateAssetCount": 21,
+    "articulationCount": 9
+  }
+}

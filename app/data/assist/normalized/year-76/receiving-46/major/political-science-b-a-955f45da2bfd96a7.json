@@ -1,0 +1,823 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 46,
+    "name": "University of California, Riverside",
+    "code": "UCR",
+    "segment": "UC"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/46/Major/cbc3ec0c-6574-4e1a-4ed7-08de050a3a5e",
+    "type": "Major",
+    "name": "Political Science, B.A.",
+    "publishDate": "2025-11-18T19:08:43.2911845",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "e1ee7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "STRONGLY RECOMMENDED COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "e1ee7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 255905,
+              "prefix": "POSC",
+              "courseNumber": "10",
+              "title": "American Politics",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2007",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11066,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1936,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "An AP exam may be used to satisfy this course requirement"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 283485,
+              "prefix": "POSC",
+              "courseNumber": "20",
+              "title": "World Politics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F1995",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11066,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1936,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "9bc6cdb1-4c91-44d6-becc-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 255905,
+                  "prefix": "POSC",
+                  "courseNumber": "10",
+                  "title": "American Politics",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11066,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1936,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "An AP exam may be used to satisfy this course requirement"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "An AP exam may be used to satisfy this course requirement"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "c693f002-cad8-49f7-becd-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 283485,
+                  "prefix": "POSC",
+                  "courseNumber": "20",
+                  "title": "World Politics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11066,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1936,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "9bc6cdb1-4c91-44d6-becc-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330292,
+                  "prefix": "POLS",
+                  "courseNumber": "C1000",
+                  "title": "American Government and Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330292,
+                      "prefix": "POLS",
+                      "courseNumber": "C1000",
+                      "title": "American Government and Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330292,
+                          "prefix": "POLS",
+                          "courseNumber": "C1000",
+                          "title": "American Government and Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "c693f002-cad8-49f7-becd-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 216326,
+                  "prefix": "POLS",
+                  "courseNumber": "121",
+                  "title": "International Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 216326,
+                      "prefix": "POLS",
+                      "courseNumber": "121",
+                      "title": "International Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 216326,
+                          "prefix": "POLS",
+                          "courseNumber": "121",
+                          "title": "International Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "9bc6cdb1-4c91-44d6-becc-08de050a3a69",
+            "c693f002-cad8-49f7-becd-08de050a3a69"
+          ]
+        },
+        {
+          "id": "e1ee7145-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 291342,
+              "prefix": "POSC",
+              "courseNumber": "5",
+              "title": "Modern Political Ideologies",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11066,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1936,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 309110,
+              "prefix": "POSC",
+              "courseNumber": "7",
+              "title": "Intro to Political Theory",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2007",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11066,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1936,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "5388f345-3fbe-42f4-becf-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 291342,
+                  "prefix": "POSC",
+                  "courseNumber": "5",
+                  "title": "Modern Political Ideologies",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11066,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1936,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "c8f4cf03-554e-4295-bece-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 309110,
+                  "prefix": "POSC",
+                  "courseNumber": "7",
+                  "title": "Intro to Political Theory",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11066,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1936,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "5388f345-3fbe-42f4-becf-08de050a3a69",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "c8f4cf03-554e-4295-bece-08de050a3a69",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "id": null,
+              "position": 0,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "5388f345-3fbe-42f4-becf-08de050a3a69",
+            "c8f4cf03-554e-4295-bece-08de050a3a69"
+          ]
+        },
+        {
+          "id": "e1ee7145-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 251663,
+              "prefix": "POSC",
+              "courseNumber": "15",
+              "title": "Comparative Politics",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2006",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11066,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1936,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "An AP exam may be used to satisfy this course requirement"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 309040,
+              "prefix": "POSC",
+              "courseNumber": "17",
+              "title": "Politics of the Underdeveloped World",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2006",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11066,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1936,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "5a242e3e-c79d-48d5-becb-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 251663,
+                  "prefix": "POSC",
+                  "courseNumber": "15",
+                  "title": "Comparative Politics",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2006",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11066,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1936,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "An AP exam may be used to satisfy this course requirement"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "An AP exam may be used to satisfy this course requirement"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "ca5dd19f-9808-41a2-beca-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 309040,
+                  "prefix": "POSC",
+                  "courseNumber": "17",
+                  "title": "Politics of the Underdeveloped World",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2006",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11066,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1936,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "5a242e3e-c79d-48d5-becb-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 281821,
+                  "prefix": "POLS",
+                  "courseNumber": "131",
+                  "title": "Comparative Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 281821,
+                      "prefix": "POLS",
+                      "courseNumber": "131",
+                      "title": "Comparative Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 281821,
+                          "prefix": "POLS",
+                          "courseNumber": "131",
+                          "title": "Comparative Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "ca5dd19f-9808-41a2-beca-08de050a3a69",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "id": null,
+              "position": 0,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "5a242e3e-c79d-48d5-becb-08de050a3a69",
+            "ca5dd19f-9808-41a2-beca-08de050a3a69"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "8d3d7445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General Requirements",
+      "contentHtml": null
+    },
+    {
+      "id": "43ac7645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Admission to majors housed in the College of Humanities, Arts and Social Sciences is selective based on GPA in all transferrable coursework, with a minimum GPA of 2.40 (this is a baseline GPA for consideration and not a guarantee of admission). Applicants with 80 semester/120 quarter units or more (e.g. a combination of 4-year and community college course work) are subject to additional screening. Although completion of the course work listed below is not mandatory prior to admission, students are advised to complete as much lower division course preparation as possible prior to transfer. Completion of lower division course work prepares students for upper division work at UCR and helps students move more efficiently towards graduation. If sending institution offers honors/enhanced/support courses , the articulation for the same course number will be used. IGETC/CAL-GETC and General Education/Breadth Information In addition to the lower division requirements listed below, students are also encouraged to complete the IGETC or CAL-GETC while attending community college. Students completing CAL-GETC may have an additional \"Language other than English\" requirement, which can be met with coursework completed at UCR or with applicable transfer credit. Although completion of the IGETC/CAL-GETC is not a UCR admission requirement, it is a good program for students planning to transfer into majors housed in the College of Humanities, Arts and Social Sciences. Information about completing IGETC/CAL-GETC is available at each community college. Students also have the option of completing the UCR CHASS breadth pattern, you may view the breath requirements for by visiting the 2025-26 Catalog , pages 86-87.",
+      "contentHtml": "<p>Admission to majors housed in the College of Humanities, Arts and Social Sciences is selective based on GPA in all transferrable coursework, with a minimum GPA of 2.40 (this is a baseline GPA for consideration and not a guarantee of admission). Applicants with 80 semester/120 quarter units or more (e.g. a combination of 4-year and community college course work) are subject to additional screening. Although completion of the course work listed below is not mandatory prior to admission, students are advised to complete as much lower division course preparation as possible prior to transfer. Completion of lower division course work prepares students for upper division work at UCR and helps students move more efficiently towards graduation.</p><p><br></p><p>If sending institution offers <strong><u>honors/enhanced/support courses</u></strong>, the articulation for the same course number will be used.</p><p><br></p><p><strong>IGETC/CAL-GETC and General Education/Breadth Information </strong></p><p>In addition to the lower division requirements listed below, students are also encouraged to complete the IGETC or CAL-GETC while attending community college. Students completing CAL-GETC may have an additional \"Language other than English\" requirement, which can be met with coursework completed at UCR or with applicable transfer credit. Although completion of the IGETC/CAL-GETC is not a UCR admission requirement, it is a good program for students planning to transfer into majors housed in the College of Humanities, Arts and Social Sciences. Information about completing IGETC/CAL-GETC is available at each community college. Students also have the option of completing the UCR CHASS breadth pattern, you may view the breath requirements for by visiting the <a href=\"https://documents.ucr.edu/registrar/UCR%20Catalog%202025-2026.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">2025-26 Catalog</a>, pages 86-87.</p>"
+    },
+    {
+      "id": "9b2c6645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "AP Exam - Satisfy Course Requirement Section Government and Politics: U.S. Government Exam Minimum score of 3 satisfies POSC 10 Government and Politics: Comparative Government Exam Minimum score of 3 satisfies POSC 15 For additional information about this major, please visit Political Science . For information about the UC Transfer Admission Guarantee (TAG) program, please visit Transfer Admission Guarantee .",
+      "contentHtml": "<p><strong><u>AP Exam - Satisfy Course Requirement Section</u></strong></p><p><strong>Government and Politics: U.S. Government Exam </strong></p><p>Minimum score of 3 satisfies</p><p><strong>POSC 10 Government and Politics: Comparative Government Exam </strong></p><p>Minimum score of 3 satisfies POSC 15</p><p><br></p><p>For additional information about this major, please visit <a href=\"https://chassstudentaffairs.ucr.edu/dept/posc#political-science\" rel=\"noopener noreferrer\" target=\"_blank\">Political Science</a>.</p><p>For information about the UC Transfer Admission Guarantee (TAG) program, please visit <a href=\"https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/uc-transfer-programs/transfer-admission-guarantee-tag.html\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admission Guarantee</a>.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-05-08T19:46:53.440Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=46&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F46%2FMajor%2Fcbc3ec0c-6574-4e1a-4ed7-08de050a3a5e",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F46%2FMajor%2Fcbc3ec0c-6574-4e1a-4ed7-08de050a3a5e",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-46/major/955f45da2bfd96a7.json",
+    "templateAssetCount": 5,
+    "articulationCount": 3
+  }
+}

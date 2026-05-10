@@ -1,0 +1,2371 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 132,
+    "name": "University of California, Santa Cruz",
+    "code": "UCSC",
+    "segment": "UC"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/132/Major/52af51cf-26e9-47d8-2025-08ddcb96df9e",
+    "type": "Major",
+    "name": "Theater Arts B.A.",
+    "publishDate": "2025-10-28T05:35:44.3880259",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "d8734e8c-80ac-415d-9277-0193dc715baa",
+      "title": "RECOMMENDED PREPARATION",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "d8734e8c-80ac-415d-9277-0193dc715baa:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 358528,
+              "prefix": "THEA",
+              "courseNumber": "20",
+              "title": "Introductory Studies in Acting",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 373836,
+              "prefix": "THEA",
+              "courseNumber": "21",
+              "title": "Acting Studio I: Psychological Realism",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "cc97f24f-bc87-4a53-eeba-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 358528,
+                  "prefix": "THEA",
+                  "courseNumber": "20",
+                  "title": "Introductory Studies in Acting",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "d6e67d31-ccdd-42e2-eebb-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 373836,
+                  "prefix": "THEA",
+                  "courseNumber": "21",
+                  "title": "Acting Studio I: Psychological Realism",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "cc97f24f-bc87-4a53-eeba-08ddcb96dfae",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 195896,
+                  "prefix": "TA",
+                  "courseNumber": "111",
+                  "title": "Beginning Acting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 166717,
+                  "prefix": "TA",
+                  "courseNumber": "112",
+                  "title": "Intermediate Acting A",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 202267,
+                  "prefix": "TA",
+                  "courseNumber": "213",
+                  "title": "Intermediate Acting B",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 203595,
+                  "prefix": "TA",
+                  "courseNumber": "214",
+                  "title": "Advanced Acting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 205499,
+                  "prefix": "TA",
+                  "courseNumber": "215",
+                  "title": "Fundamentals of Directing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 195896,
+                      "prefix": "TA",
+                      "courseNumber": "111",
+                      "title": "Beginning Acting",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 195896,
+                          "prefix": "TA",
+                          "courseNumber": "111",
+                          "title": "Beginning Acting",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 166717,
+                      "prefix": "TA",
+                      "courseNumber": "112",
+                      "title": "Intermediate Acting A",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 166717,
+                          "prefix": "TA",
+                          "courseNumber": "112",
+                          "title": "Intermediate Acting A",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 202267,
+                      "prefix": "TA",
+                      "courseNumber": "213",
+                      "title": "Intermediate Acting B",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 202267,
+                          "prefix": "TA",
+                          "courseNumber": "213",
+                          "title": "Intermediate Acting B",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 3,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 203595,
+                      "prefix": "TA",
+                      "courseNumber": "214",
+                      "title": "Advanced Acting",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 203595,
+                          "prefix": "TA",
+                          "courseNumber": "214",
+                          "title": "Advanced Acting",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 4,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 205499,
+                      "prefix": "TA",
+                      "courseNumber": "215",
+                      "title": "Fundamentals of Directing",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 205499,
+                          "prefix": "TA",
+                          "courseNumber": "215",
+                          "title": "Fundamentals of Directing",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "977e4305-18df-4d6d-ee41-08ddcb9717a5",
+                  "sendingArticulationId": "cc863528-fb99-4cb0-1a37-08ddcb97173b",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                },
+                {
+                  "id": "768aeb92-a654-4510-ee42-08ddcb9717a5",
+                  "sendingArticulationId": "cc863528-fb99-4cb0-1a37-08ddcb97173b",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 1,
+                  "sendingCourseGroupEndPosition": 2
+                },
+                {
+                  "id": "a539c97f-3119-4527-ee43-08ddcb9717a5",
+                  "sendingArticulationId": "cc863528-fb99-4cb0-1a37-08ddcb97173b",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 2,
+                  "sendingCourseGroupEndPosition": 3
+                },
+                {
+                  "id": "5e561048-1e91-4c47-ee44-08ddcb9717a5",
+                  "sendingArticulationId": "cc863528-fb99-4cb0-1a37-08ddcb97173b",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 3,
+                  "sendingCourseGroupEndPosition": 4
+                }
+              ]
+            },
+            {
+              "receivingCellId": "d6e67d31-ccdd-42e2-eebb-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "cc97f24f-bc87-4a53-eeba-08ddcb96dfae",
+            "d6e67d31-ccdd-42e2-eebb-08ddcb96dfae"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2562d76b-1980-4312-8db4-0193dc75d943",
+      "title": "RECOMMENDED PREPARATION",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "2562d76b-1980-4312-8db4-0193dc75d943:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 283740,
+              "prefix": "THEA",
+              "courseNumber": "10",
+              "title": "Introduction to Theater Design and Technology",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2000",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 108988,
+              "prefix": "THEA",
+              "courseNumber": "50",
+              "title": "Fundamentals of Theater Production",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Course must be taken for at least 6 units"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 286508,
+              "prefix": "THEA",
+              "courseNumber": "61A",
+              "title": "Ancient and Medieval Drama",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2012",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 359911,
+              "prefix": "THEA",
+              "courseNumber": "61B",
+              "title": "Drama from the Renaissance to the Modern Age",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2012",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 304857,
+              "prefix": "THEA",
+              "courseNumber": "61C",
+              "title": "The Birth of the Modern: Drama and Performance After the Renaissance",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2010",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "56bda771-b9f7-4ea4-eebc-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 283740,
+                  "prefix": "THEA",
+                  "courseNumber": "10",
+                  "title": "Introduction to Theater Design and Technology",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2000",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "4e0ddfbf-dd9a-4217-eebd-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 108988,
+                  "prefix": "THEA",
+                  "courseNumber": "50",
+                  "title": "Fundamentals of Theater Production",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Course must be taken for at least 6 units"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Course must be taken for at least 6 units"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "b2a674d6-7e39-4ba5-eebe-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 286508,
+                  "prefix": "THEA",
+                  "courseNumber": "61A",
+                  "title": "Ancient and Medieval Drama",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2012",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "49a9e66f-d855-4cf4-eebf-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 359911,
+                  "prefix": "THEA",
+                  "courseNumber": "61B",
+                  "title": "Drama from the Renaissance to the Modern Age",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2012",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "de8a24c0-109b-46ea-eec0-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 304857,
+                  "prefix": "THEA",
+                  "courseNumber": "61C",
+                  "title": "The Birth of the Modern: Drama and Performance After the Renaissance",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "56bda771-b9f7-4ea4-eebc-08ddcb96dfae",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135839,
+                  "prefix": "TA",
+                  "courseNumber": "120",
+                  "title": "Understanding Scenography",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 340149,
+                  "prefix": "TA",
+                  "courseNumber": "121",
+                  "title": "Introduction to Stagecraft",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 161401,
+                  "prefix": "TA",
+                  "courseNumber": "227",
+                  "title": "Scenic Design",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135839,
+                      "prefix": "TA",
+                      "courseNumber": "120",
+                      "title": "Understanding Scenography",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135839,
+                          "prefix": "TA",
+                          "courseNumber": "120",
+                          "title": "Understanding Scenography",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 340149,
+                      "prefix": "TA",
+                      "courseNumber": "121",
+                      "title": "Introduction to Stagecraft",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 340149,
+                          "prefix": "TA",
+                          "courseNumber": "121",
+                          "title": "Introduction to Stagecraft",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 161401,
+                      "prefix": "TA",
+                      "courseNumber": "227",
+                      "title": "Scenic Design",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 161401,
+                          "prefix": "TA",
+                          "courseNumber": "227",
+                          "title": "Scenic Design",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "a54e6173-a663-4631-f3b2-08ddcb9717a5",
+                  "sendingArticulationId": "4a3bf6d6-5ec4-44ed-3351-08ddcb97173b",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                },
+                {
+                  "id": "28c8ced9-1aa1-4aa6-f3b3-08ddcb9717a5",
+                  "sendingArticulationId": "4a3bf6d6-5ec4-44ed-3351-08ddcb97173b",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 1,
+                  "sendingCourseGroupEndPosition": 2
+                }
+              ]
+            },
+            {
+              "receivingCellId": "4e0ddfbf-dd9a-4217-eebd-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "This course must be taken at the university after transfer",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "b2a674d6-7e39-4ba5-eebe-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "49a9e66f-d855-4cf4-eebf-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "de8a24c0-109b-46ea-eec0-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "56bda771-b9f7-4ea4-eebc-08ddcb96dfae",
+            "4e0ddfbf-dd9a-4217-eebd-08ddcb96dfae",
+            "b2a674d6-7e39-4ba5-eebe-08ddcb96dfae",
+            "49a9e66f-d855-4cf4-eebf-08ddcb96dfae",
+            "de8a24c0-109b-46ea-eec0-08ddcb96dfae"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e3756f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "RECOMMENDED PREPARATION",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "e3756f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 283742,
+              "prefix": "THEA",
+              "courseNumber": "30",
+              "title": "Introduction to Dance Theory and Technique",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2010",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 376817,
+              "prefix": "THEA",
+              "courseNumber": "31A",
+              "title": "Dance Studio I: Asian or Asian Diasporic Practice",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 376818,
+              "prefix": "THEA",
+              "courseNumber": "31B",
+              "title": "Dance Studio I: Ballet",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 373837,
+              "prefix": "THEA",
+              "courseNumber": "31C",
+              "title": "Dance Studio I: Contemporary Dance Theory and Technique",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 304709,
+              "prefix": "THEA",
+              "courseNumber": "36",
+              "title": "Introduction to Dance Making",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 305029,
+              "prefix": "THEA",
+              "courseNumber": "37",
+              "title": "African Dance",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2011",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 305030,
+              "prefix": "THEA",
+              "courseNumber": "80Z",
+              "title": "Indian Dance",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2011",
+              "endTerm": "",
+              "department": "Theater Arts",
+              "departmentParentId": 12813,
+              "prefixDescription": "Theater Arts",
+              "prefixParentId": 2439,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "7812d52e-4b19-43c4-eeb1-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 283742,
+                  "prefix": "THEA",
+                  "courseNumber": "30",
+                  "title": "Introduction to Dance Theory and Technique",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "a42e78f0-1355-469a-eeb2-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 376817,
+                  "prefix": "THEA",
+                  "courseNumber": "31A",
+                  "title": "Dance Studio I: Asian or Asian Diasporic Practice",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "17034919-4f24-463c-eeb3-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 376818,
+                  "prefix": "THEA",
+                  "courseNumber": "31B",
+                  "title": "Dance Studio I: Ballet",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "50c8153e-2055-4152-eeb4-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 373837,
+                  "prefix": "THEA",
+                  "courseNumber": "31C",
+                  "title": "Dance Studio I: Contemporary Dance Theory and Technique",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "ff374185-6ae9-4abf-eeb6-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 304709,
+                  "prefix": "THEA",
+                  "courseNumber": "36",
+                  "title": "Introduction to Dance Making",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            },
+            {
+              "id": "57faa440-010d-4c48-eeb7-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 305029,
+                  "prefix": "THEA",
+                  "courseNumber": "37",
+                  "title": "African Dance",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2011",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 5,
+              "rowAttributes": []
+            },
+            {
+              "id": "3c98ad87-84a6-4d1d-eeb8-08ddcb96dfae",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 305030,
+                  "prefix": "THEA",
+                  "courseNumber": "80Z",
+                  "title": "Indian Dance",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2011",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12813,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2439,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 6,
+              "rowAttributes": []
+            },
+            {
+              "id": "0b45ad9b-c7d7-426c-eeb9-08ddcb96dfae",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 7,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "7812d52e-4b19-43c4-eeb1-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "a42e78f0-1355-469a-eeb2-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "17034919-4f24-463c-eeb3-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "50c8153e-2055-4152-eeb4-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "ff374185-6ae9-4abf-eeb6-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "57faa440-010d-4c48-eeb7-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "3c98ad87-84a6-4d1d-eeb8-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "0b45ad9b-c7d7-426c-eeb9-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "7812d52e-4b19-43c4-eeb1-08ddcb96dfae",
+            "a42e78f0-1355-469a-eeb2-08ddcb96dfae",
+            "17034919-4f24-463c-eeb3-08ddcb96dfae",
+            "50c8153e-2055-4152-eeb4-08ddcb96dfae",
+            "ff374185-6ae9-4abf-eeb6-08ddcb96dfae",
+            "57faa440-010d-4c48-eeb7-08ddcb96dfae",
+            "3c98ad87-84a6-4d1d-eeb8-08ddcb96dfae",
+            "0b45ad9b-c7d7-426c-eeb9-08ddcb96dfae"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d259360f-8ae1-4b58-8d8f-0193dc75d943",
+      "title": "RECOMMENDED PREPARATION",
+      "position": 4,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "d259360f-8ae1-4b58-8d8f-0193dc75d943:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "d7057be2-a799-4109-eec1-08ddcb96dfae",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "d7057be2-a799-4109-eec1-08ddcb96dfae",
+              "logic": "UNKNOWN",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 337899,
+                  "prefix": "TA",
+                  "courseNumber": "114",
+                  "title": "Voice and Diction",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 203201,
+                  "prefix": "TA",
+                  "courseNumber": "123",
+                  "title": "Stage Lighting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 212875,
+                  "prefix": "TA",
+                  "courseNumber": "131",
+                  "title": "Costume Technology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 209164,
+                  "prefix": "TA",
+                  "courseNumber": "134",
+                  "title": "Costume Design",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 200517,
+                  "prefix": "TA",
+                  "courseNumber": "136",
+                  "title": "Theatrical Makeup Techniques",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 337899,
+                      "prefix": "TA",
+                      "courseNumber": "114",
+                      "title": "Voice and Diction",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 337899,
+                          "prefix": "TA",
+                          "courseNumber": "114",
+                          "title": "Voice and Diction",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 203201,
+                      "prefix": "TA",
+                      "courseNumber": "123",
+                      "title": "Stage Lighting",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 203201,
+                          "prefix": "TA",
+                          "courseNumber": "123",
+                          "title": "Stage Lighting",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 212875,
+                      "prefix": "TA",
+                      "courseNumber": "131",
+                      "title": "Costume Technology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2019",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 212875,
+                          "prefix": "TA",
+                          "courseNumber": "131",
+                          "title": "Costume Technology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2019",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 3,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 209164,
+                      "prefix": "TA",
+                      "courseNumber": "134",
+                      "title": "Costume Design",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2019",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 209164,
+                          "prefix": "TA",
+                          "courseNumber": "134",
+                          "title": "Costume Design",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2019",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 4,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 200517,
+                      "prefix": "TA",
+                      "courseNumber": "136",
+                      "title": "Theatrical Makeup Techniques",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 200517,
+                          "prefix": "TA",
+                          "courseNumber": "136",
+                          "title": "Theatrical Makeup Techniques",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d7057be2-a799-4109-eec1-08ddcb96dfae"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "df756f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "ADMISSIONS INFORMATION FOR ALL MAJORS",
+      "contentHtml": null
+    },
+    {
+      "id": "a2936f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "All transfer applicants must meet the University of California admissions eligibility requirements and the campus’s admission selection criteria. All requirements must be completed by the end of the spring term prior to transfer. For more information on UC admissions eligibility and admission to UC Santa Cruz, visit the Admissions website . The UC Santa Cruz Transfer Admission Guarantee (TAG) is a formal agreement that guarantees your fall admission to your chosen major, provided you are transferring from a California Community College and meet specific requirements. Visit the UC Santa Cruz TAG webpage for more information.",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">All transfer applicants must meet the University of California admissions eligibility requirements and the campus’s admission selection criteria. All requirements must be completed by the end of the spring term prior to transfer. For more information on UC admissions eligibility and admission to UC Santa Cruz, visit the </span><a href=\"https://admissions.ucsc.edu/attend-ucsc/transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">Admissions website</a><span style=\"font-size: 14px;\">.</span></p><p><br></p><p><strong style=\"font-size: 14px;\">The UC Santa Cruz Transfer Admission Guarantee (TAG)</strong><span style=\"font-size: 14px;\"> is a formal agreement that guarantees your fall admission to your chosen major, provided you are transferring from a California Community College and meet specific requirements. Visit the </span><a href=\"https://admissions.ucsc.edu/transfer-admission-guarantee-tag\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">UC Santa Cruz TAG webpage</a><span style=\"font-size: 14px;\"> for more information.</span></p>"
+    },
+    {
+      "id": "9fe7329e-f754-499e-af38-0192afe74990",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "IMPORTANT MAJOR PREPARATION",
+      "contentHtml": null
+    },
+    {
+      "id": "399a6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "This is a non-screening major: completion of specific major coursework is not required for admission. However, students are strongly encouraged to complete as many lower-division courses as possible from the \" Recommended Preparation \" section below to support timely degree completion. Students applying to non-screening majors are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or all UC Santa Cruz general education requirements prior to transfer. For guidance on incorporating Cal-GETC into your academic plan, consult your community college counselor.",
+      "contentHtml": "<p><strong style=\"font-size: 14px;\">This is a non-screening major: </strong><span style=\"font-size: 14px;\">completion of specific major coursework is not required for admission. However, students are strongly encouraged to complete as many lower-division courses as possible from the \"</span><strong style=\"font-size: 14px;\">Recommended Preparation</strong><span style=\"font-size: 14px;\">\" section below to support timely degree completion.</span></p><p><br></p><p><span style=\"font-size: 14px;\">Students applying to </span><a href=\"https://admissions.ucsc.edu/posts/non-screening-majors\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">non-screening majors</a><span style=\"font-size: 14px;\"> are also encouraged to complete the </span><a href=\"https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/preparing-to-transfer/general-education-igetc/cal-getc/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\"><strong>California General Education Transfer Curriculum (Cal-GETC)</strong></a><span style=\"font-size: 14px;\"> or all UC Santa Cruz general education requirements prior to transfer. For guidance on incorporating Cal-GETC into your academic plan, consult your community college counselor.</span></p>"
+    },
+    {
+      "id": "79e4be47-1225-42ae-9231-0192afe74990",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "EXAM CREDIT",
+      "contentHtml": null
+    },
+    {
+      "id": "d7996f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "Some Advanced Placement (AP), International Baccalaureate Higher Level (IBH), and Advanced Level (A-level) exams satisfy UCSC course requirements. UCSC's exam credit policies may be found on the Degree Progress Unit website .",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">Some Advanced Placement (AP), International Baccalaureate Higher Level&nbsp;(IBH), and Advanced Level (A-level) exams satisfy UCSC course requirements. UCSC's exam credit policies may be found on the </span><a href=\"https://degreeprogress.ucsc.edu/transfer-exam-credit/exam-credit/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">Degree Progress Unit website</a><span style=\"font-size: 14px;\">.</span></p>"
+    },
+    {
+      "id": "e6756f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 6,
+      "content": "THEATER ARTS B.A.",
+      "contentHtml": null
+    },
+    {
+      "id": "e1756f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 7,
+      "content": "PREPARATION FOR THE MAJOR Students planning to pursue the Theater Arts major are not required to audition, submit a portfolio, or complete specific major preparation courses for consideration of admission to UC Santa Cruz. Although not required for admission, transfer students are encouraged to complete courses that articulate specifically to UC Santa Cruz lower-division theater arts courses prior to transferring. Refer to the \"Recommended Preparation\" section below for lists of courses approved to fulfill these requirements. Students are also encouraged to complete the California General Education Transfer Curriculum (Cal-GETC) or all UC Santa Cruz general education requirements before transferring. For guidance on incorporating Cal-GETC into your academic plan, consult your community college counselor. Please visit the Performance, Play &amp; Design website to learn more about this major. UC Santa Cruz General Catalog: Theater Arts B.A. Program Statement",
+      "contentHtml": "<h2><strong>PREPARATION FOR THE MAJOR</strong></h2><p><br></p><p><span style=\"font-size: 14px;\">Students planning to pursue the Theater Arts major are not required to audition, submit a portfolio, or complete specific major preparation courses for consideration of admission to UC Santa Cruz. Although not required for admission,&nbsp;transfer students are encouraged to complete courses that articulate specifically to UC Santa Cruz lower-division theater arts courses prior to transferring.&nbsp;Refer to the \"Recommended Preparation\" section below for lists of courses approved to fulfill these requirements.</span></p><p><br></p><p><span style=\"font-size: 14px;\">Students are also encouraged to complete the&nbsp;</span><a href=\"https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/preparing-to-transfer/general-education-igetc/cal-getc/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\"><strong>California General Education Transfer Curriculum (Cal-GETC)</strong></a><span style=\"font-size: 14px;\">&nbsp;or all UC Santa Cruz general education requirements before transferring. For guidance on incorporating Cal-GETC into your academic plan, consult your community college counselor.</span></p><p><br></p><p><br></p><p><span style=\"font-size: 14px;\">Please visit the </span><a href=\"https://play.ucsc.edu/academics/undergraduate/theater-arts-and-dance-undergraduate-degrees/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">Performance, Play &amp; Design website</a><span style=\"font-size: 14px;\"> to learn more about this major.</span></p><p><a href=\"https://catalog.ucsc.edu/en/current/general-catalog/academic-units/arts-division/performance-play-and-design/theater-arts-ba/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">UC Santa Cruz General Catalog: Theater Arts B.A. Program Statement</a></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-05-08T20:30:06.176Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=132&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F132%2FMajor%2F52af51cf-26e9-47d8-2025-08ddcb96df9e",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F132%2FMajor%2F52af51cf-26e9-47d8-2025-08ddcb96df9e",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-132/major/75bf92ed4d738a5c.json",
+    "templateAssetCount": 13,
+    "articulationCount": 4
+  }
+}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import SearchBar from "@/components/SearchBar";
+import SBCCPlanLogo from "@/components/SBCCPlanLogo";
 import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 const THEME_STORAGE_KEY = "sbcc-theme-preference";
@@ -94,18 +95,28 @@ export default function Header() {
     return (
         <>
             <header className="bg-white text-slate-800 shadow-sm border-b border-slate-200">
-                <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-4">
                     <Link
                         href="/"
                         data-track="header_logo"
-                        className="text-3xl font-bold tracking-tight hover:opacity-70 transition text-[#0f172a]"
+                        className="hidden md:block text-3xl font-bold tracking-tight hover:opacity-70 transition text-[#0f172a]"
                     >
                         SBCCPlan
                     </Link>
 
-                    <Suspense fallback={<div className="flex-1 max-w-xl w-full" />}>
-                        <SearchBar />
-                    </Suspense>
+                    <div className="flex w-full items-center gap-3 md:flex-1 md:max-w-xl">
+                        <Link
+                            href="/"
+                            data-track="header_mobile_logo"
+                            aria-label="SBCCPlan home"
+                            className="md:hidden rounded-2xl transition hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-slate-300"
+                        >
+                            <SBCCPlanLogo iconClassName="h-11 w-11" />
+                        </Link>
+                        <Suspense fallback={<div className="flex-1 max-w-xl w-full" />}>
+                            <SearchBar />
+                        </Suspense>
+                    </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5">
                         <Suspense fallback={<HeaderNavLinksFallback />}>

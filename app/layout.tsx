@@ -32,6 +32,15 @@ const themeInitScript = `
 export const metadata = {
     title: 'SBCCPlan',
     description: 'SBCC Student Dashboard',
+    icons: {
+        icon: [
+            { url: '/sbccplan-logo.svg', type: 'image/svg+xml' },
+        ],
+        shortcut: ['/sbccplan-logo.svg'],
+        apple: [
+            { url: '/sbccplan-logo.svg', type: 'image/svg+xml' },
+        ],
+    },
 }
 
 export default function RootLayout({

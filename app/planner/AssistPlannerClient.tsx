@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import type {
     PlannerAgreement,
     PlannerCourse,
@@ -10,38 +11,67 @@ import type {
     PlannerRequirement,
     PlannerSchool,
 } from "@/lib/assistPlanner";
+import { appendTermToHref, DEFAULT_TERM_SLUG } from "@/lib/terms";
 
-type RequirementView = "all" | "admission" | "missing";
+type RequirementView = "all" | "required" | "recommended" | "missing";
+type PlannerStep = "school" | "major" | "agreement";
 
 export default function AssistPlannerClient({ data }: { data: PlannerData }) {
     const { agreements, majors, schools, summary } = data;
-    const defaultSchoolId = useMemo(() => defaultSchool(schools)?.id ?? "", [schools]);
-    const [selectedSchoolId, setSelectedSchoolId] = useState(defaultSchoolId);
+    const [selectedSchoolId, setSelectedSchoolId] = useState("");
+    const [selectedMajorId, setSelectedMajorId] = useState("");
+    const [schoolSearch, setSchoolSearch] = useState("");
+    const [majorSearch, setMajorSearch] = useState("");
+    const [step, setStep] = useState<PlannerStep>("school");
+    const [requirementView, setRequirementView] = useState<RequirementView>("all");
+
+    const visibleSchools = useMemo(() => {
+        const query = schoolSearch.trim().toLowerCase();
+        if (!query) return schools;
+        return schools.filter((school) => `${school.name} ${school.code} ${school.segment}`.toLowerCase().includes(query));
+    }, [schoolSearch, schools]);
+
     const majorOptions = useMemo(
         () => majors.filter((major) => major.schoolId === selectedSchoolId),
         [majors, selectedSchoolId],
     );
-    const defaultMajorId = useMemo(() => defaultMajor(majorOptions)?.id ?? "", [majorOptions]);
-    const [selectedMajorId, setSelectedMajorId] = useState(defaultMajorId);
-    const [requirementView, setRequirementView] = useState<RequirementView>("all");
+    const visibleMajors = useMemo(() => {
+        const query = majorSearch.trim().toLowerCase();
+        if (!query) return majorOptions;
+        return majorOptions.filter((major) => `${major.label} ${major.schoolCode}`.toLowerCase().includes(query));
+    }, [majorOptions, majorSearch]);
 
     const selectedSchool = schools.find((school) => school.id === selectedSchoolId) ?? null;
-    const selectedMajor =
-        majorOptions.find((major) => major.id === selectedMajorId) ?? defaultMajor(majorOptions) ?? null;
+    const selectedMajor = majorOptions.find((major) => major.id === selectedMajorId) ?? null;
     const selectedAgreement =
         agreements.find((agreement) => agreement.id === selectedMajor?.agreementId) ??
         agreements.find((agreement) => agreement.schoolId === selectedSchoolId && agreement.key === selectedMajor?.key) ??
         null;
 
-    const handleSchoolChange = (schoolId: string) => {
-        const nextMajors = majors.filter((major) => major.schoolId === schoolId);
+    const handleSchoolClick = (schoolId: string) => {
         setSelectedSchoolId(schoolId);
-        setSelectedMajorId(defaultMajor(nextMajors)?.id ?? "");
+        setSelectedMajorId("");
+        setMajorSearch("");
         setRequirementView("all");
+        setStep("major");
     };
 
-    const handleMajorChange = (majorId: string) => {
+    const handleMajorClick = (majorId: string) => {
         setSelectedMajorId(majorId);
+        setRequirementView("all");
+        setStep("agreement");
+    };
+
+    const goToSchools = () => {
+        setStep("school");
+        setSelectedSchoolId("");
+        setSelectedMajorId("");
+        setMajorSearch("");
+    };
+
+    const goToMajors = () => {
+        setStep("major");
+        setSelectedMajorId("");
         setRequirementView("all");
     };
 
@@ -75,138 +105,217 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
                         </span>
                     </div>
                     <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-                        Choose a transfer school, choose a major, then review the SBCC courses that satisfy the ASSIST
-                        agreement.
+                        Choose a school, choose a major, then open the agreement map for that path. All transfer
+                        agreement data shown here is from{" "}
+                        <a
+                            href="https://www.assist.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-bold text-[#0f172a] underline decoration-slate-300 underline-offset-4 hover:decoration-[#0f172a]"
+                        >
+                            ASSIST.org
+                        </a>
+                        . For accuracy and safety, please verify final requirements on ASSIST.org before planning or
+                        submitting transfer coursework.
                     </p>
                 </div>
 
                 <div className="border-t border-slate-200 bg-slate-50 px-6 py-5 md:px-8">
-                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                        <MetricTile label="Schools" value={summary.schoolCount.toString()} />
-                        <MetricTile label="Cached majors" value={summary.cachedMajorCount.toString()} />
-                        <MetricTile label="Detailed agreements" value={summary.detailedAgreementCount.toString()} />
-                        <MetricTile label="Requirements ready" value={summary.requirementCount.toString()} />
+                    <div className="flex flex-wrap gap-2">
+                        <SummaryPill value={summary.schoolCount} label="schools" />
+                        <SummaryPill value={summary.cachedMajorCount} label="cached majors" />
+                        <SummaryPill value={summary.detailedAgreementCount} label="agreements ready" />
                     </div>
                 </div>
 
-                <div className="grid gap-4 border-t border-slate-200 p-6 md:grid-cols-2 md:p-8">
-                    <SelectField
-                        label="1. Transfer school"
-                        value={selectedSchoolId}
-                        onChange={handleSchoolChange}
-                        helpText={schoolHelpText(selectedSchool)}
-                    >
-                        {schools.map((school) => (
-                            <option key={school.id} value={school.id}>
-                                {school.name}
-                                {school.code ? ` (${school.code})` : ""}
-                            </option>
-                        ))}
-                    </SelectField>
-
-                    <SelectField
-                        label="2. Major"
-                        value={selectedMajor?.id ?? ""}
-                        onChange={handleMajorChange}
-                        helpText={majorHelpText(selectedSchool, majorOptions, selectedMajor)}
-                        disabled={majorOptions.length === 0}
-                    >
-                        {majorOptions.length > 0 ? (
-                            majorOptions.map((major) => (
-                                <option key={major.id} value={major.id}>
-                                    {major.label}
-                                    {major.hasDetails ? "" : " (requirements not imported)"}
-                                </option>
-                            ))
-                        ) : (
-                            <option value="">No cached majors for this school</option>
-                        )}
-                    </SelectField>
-                </div>
             </section>
 
-            {selectedAgreement ? (
-                <AgreementCard
-                    agreement={selectedAgreement}
-                    requirementView={requirementView}
-                    onRequirementViewChange={setRequirementView}
-                />
-            ) : (
-                <MissingAgreementPanel school={selectedSchool} major={selectedMajor} />
-            )}
+            {step === "school" ? (
+                <ChoicePanel
+                    title="Choose A Transfer School"
+                    description="Start with one school. The major list opens after you pick a destination."
+                    searchValue={schoolSearch}
+                    searchPlaceholder="Search schools"
+                    onSearchChange={setSchoolSearch}
+                >
+                    <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                        {visibleSchools.map((school) => (
+                            <SchoolCard key={school.id} school={school} onClick={() => handleSchoolClick(school.id)} />
+                        ))}
+                    </div>
+                    {visibleSchools.length === 0 ? <EmptyState text="No schools match that search." /> : null}
+                </ChoicePanel>
+            ) : null}
+
+            {step === "major" && selectedSchool ? (
+                <ChoicePanel
+                    title={selectedSchool.name}
+                    description={
+                        selectedSchool.hasMajorList
+                            ? "Choose a major to open its agreement."
+                            : "This school is available in the partner cache, but its major list is not downloaded yet."
+                    }
+                    searchValue={majorSearch}
+                    searchPlaceholder="Search majors"
+                    onSearchChange={setMajorSearch}
+                    backLabel="Back To Schools"
+                    onBack={goToSchools}
+                >
+                    {selectedSchool.hasMajorList ? (
+                        <>
+                            <div className="grid gap-3 md:grid-cols-2">
+                                {visibleMajors.map((major) => (
+                                    <MajorCard key={major.id} major={major} onClick={() => handleMajorClick(major.id)} />
+                                ))}
+                            </div>
+                            {visibleMajors.length === 0 ? <EmptyState text="No majors match that search." /> : null}
+                        </>
+                    ) : (
+                        <MissingAgreementPanel school={selectedSchool} major={null} />
+                    )}
+                </ChoicePanel>
+            ) : null}
+
+            {step === "agreement" && selectedSchool ? (
+                <div className="space-y-4">
+                    <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 shadow-sm md:px-6">
+                        <button
+                            type="button"
+                            onClick={goToMajors}
+                            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50"
+                        >
+                            Back To Majors
+                        </button>
+                    </div>
+                    {selectedAgreement ? (
+                        <AgreementCard
+                            agreement={selectedAgreement}
+                            requirementView={requirementView}
+                            onRequirementViewChange={setRequirementView}
+                        />
+                    ) : (
+                        <MissingAgreementPanel school={selectedSchool} major={selectedMajor} />
+                    )}
+                </div>
+            ) : null}
         </div>
     );
 }
 
-function defaultSchool(schools: PlannerSchool[]): PlannerSchool | null {
-    return (
-        schools.find((school) => school.detailedMajorCount > 0) ??
-        schools.find((school) => school.hasMajorList) ??
-        schools[0] ??
-        null
-    );
-}
-
-function defaultMajor(majors: PlannerMajor[]): PlannerMajor | null {
-    return majors.find((major) => major.hasDetails) ?? majors[0] ?? null;
-}
-
-function schoolHelpText(school: PlannerSchool | null): string {
-    if (!school) return "Select a school to continue.";
-    if (school.hasMajorList) {
-        return `${school.majorCount ?? 0} cached majors. ${school.detailedMajorCount} have full requirements ready.`;
-    }
-    return "This school is in the ASSIST partner cache, but its major list has not been downloaded yet.";
-}
-
-function majorHelpText(
-    school: PlannerSchool | null,
-    majors: PlannerMajor[],
-    selectedMajor: PlannerMajor | null,
-): string {
-    if (!school) return "Select a school first.";
-    if (majors.length === 0) return "No local major list for this school yet.";
-    if (!selectedMajor) return "Select a major to see requirements.";
-    if (selectedMajor.hasDetails) return "Full ASSIST requirements are ready below.";
-    return "This major label is cached, but its full requirement agreement has not been imported yet.";
-}
-
-function SelectField({
+function ChoicePanel({
     children,
-    disabled = false,
-    helpText,
-    label,
-    onChange,
-    value,
+    backLabel,
+    description,
+    onBack,
+    onSearchChange,
+    searchPlaceholder,
+    searchValue,
+    title,
 }: {
     children: React.ReactNode;
-    disabled?: boolean;
-    helpText: string;
-    label: string;
-    onChange: (value: string) => void;
-    value: string;
+    backLabel?: string;
+    description: string;
+    onBack?: () => void;
+    onSearchChange: (value: string) => void;
+    searchPlaceholder: string;
+    searchValue: string;
+    title: string;
 }) {
     return (
-        <label className="min-w-0">
-            <span className="block text-sm font-bold text-[#0f172a]">{label}</span>
-            <select
-                value={value}
-                disabled={disabled}
-                onChange={(event) => onChange(event.target.value)}
-                className="mt-2 h-12 w-full rounded-2xl border border-slate-200 bg-white px-4 text-sm font-semibold text-slate-800 outline-none transition focus:border-[#0f172a] focus:ring-2 focus:ring-slate-200 disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-500"
-            >
-                {children}
-            </select>
-            <span className="mt-2 block text-sm leading-6 text-slate-500">{helpText}</span>
-        </label>
+        <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+                <div className="min-w-0">
+                    {onBack ? (
+                        <button
+                            type="button"
+                            onClick={onBack}
+                            className="mb-4 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50"
+                        >
+                            {backLabel ?? "Back"}
+                        </button>
+                    ) : null}
+                    <h2 className="text-2xl font-bold text-[#0f172a]">{title}</h2>
+                    <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">{description}</p>
+                </div>
+                <label className="min-w-0 lg:w-80">
+                    <span className="sr-only">{searchPlaceholder}</span>
+                    <input
+                        value={searchValue}
+                        onChange={(event) => onSearchChange(event.target.value)}
+                        placeholder={searchPlaceholder}
+                        className="h-11 w-full rounded-2xl border border-slate-200 px-4 text-sm font-semibold text-slate-800 outline-none transition focus:border-[#0f172a] focus:ring-2 focus:ring-slate-200"
+                    />
+                </label>
+            </div>
+            <div className="mt-5">{children}</div>
+        </section>
     );
 }
 
-function MetricTile({ label, value }: { label: string; value: string }) {
+function SummaryPill({ label, value }: { label: string; value: number }) {
     return (
-        <div className="rounded-2xl border border-slate-200 bg-white p-4">
-            <div className="text-2xl font-bold text-[#0f172a]">{value}</div>
-            <div className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">{label}</div>
+        <span className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-700">
+            {value} {label}
+        </span>
+    );
+}
+
+function SchoolCard({ onClick, school }: { onClick: () => void; school: PlannerSchool }) {
+    return (
+        <button
+            type="button"
+            onClick={onClick}
+            className="min-h-32 rounded-2xl border border-slate-200 bg-slate-50 p-5 text-left transition hover:-translate-y-0.5 hover:border-[#0f172a] hover:bg-white hover:shadow-sm"
+        >
+            <span className="block text-lg font-bold leading-snug text-[#0f172a]">{school.name}</span>
+            <span className="mt-2 block text-sm font-semibold text-slate-500">
+                {[school.code, school.segment].filter(Boolean).join(" / ") || "Transfer school"}
+            </span>
+            <span className="mt-4 flex flex-wrap gap-2">
+                {school.hasMajorList ? (
+                    <span className="rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">
+                        {school.majorCount ?? 0} majors
+                    </span>
+                ) : (
+                    <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-bold text-slate-500">
+                        Major list pending
+                    </span>
+                )}
+                {school.detailedMajorCount > 0 ? (
+                    <span className="rounded-full border border-green-200 bg-green-100 px-3 py-1 text-xs font-bold text-green-700">
+                        {school.detailedMajorCount} ready
+                    </span>
+                ) : null}
+            </span>
+        </button>
+    );
+}
+
+function MajorCard({ major, onClick }: { major: PlannerMajor; onClick: () => void }) {
+    return (
+        <button
+            type="button"
+            onClick={onClick}
+            className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-left transition hover:-translate-y-0.5 hover:border-[#0f172a] hover:bg-white hover:shadow-sm"
+        >
+            <span className="block text-base font-bold leading-snug text-[#0f172a]">{major.label}</span>
+            <span
+                className={`mt-4 inline-flex rounded-full border px-3 py-1 text-xs font-bold ${
+                    major.hasDetails
+                        ? "border-green-200 bg-green-100 text-green-700"
+                        : "border-slate-200 bg-white text-slate-500"
+                }`}
+            >
+                {major.hasDetails ? "Requirements ready" : "Agreement not imported"}
+            </span>
+        </button>
+    );
+}
+
+function EmptyState({ text }: { text: string }) {
+    return (
+        <div className="rounded-2xl border border-dashed border-slate-300 px-5 py-8 text-center text-sm font-semibold text-slate-500">
+            {text}
         </div>
     );
 }
@@ -275,8 +384,14 @@ function AgreementCard({
                     <ViewButton active={requirementView === "all"} onClick={() => onRequirementViewChange("all")}>
                         All rows
                     </ViewButton>
-                    <ViewButton active={requirementView === "admission"} onClick={() => onRequirementViewChange("admission")}>
-                        Admission
+                    <ViewButton active={requirementView === "required"} onClick={() => onRequirementViewChange("required")}>
+                        Required
+                    </ViewButton>
+                    <ViewButton
+                        active={requirementView === "recommended"}
+                        onClick={() => onRequirementViewChange("recommended")}
+                    >
+                        Recommended
                     </ViewButton>
                     <ViewButton active={requirementView === "missing"} onClick={() => onRequirementViewChange("missing")}>
                         No articulation
@@ -324,7 +439,8 @@ function AgreementCard({
 }
 
 function requirementMatchesView(requirement: PlannerRequirement, requirementView: RequirementView): boolean {
-    if (requirementView === "admission") return requirement.category === "Required for admission";
+    if (requirementView === "required") return requirement.category === "Required";
+    if (requirementView === "recommended") return requirement.category.toLowerCase().includes("recommended");
     if (requirementView === "missing") return !requirement.isArticulated;
     return true;
 }
@@ -363,8 +479,13 @@ function CompactStat({ label, value }: { label: string; value: number }) {
 }
 
 function RequirementRow({ requirement }: { requirement: PlannerRequirement }) {
+    const hasAlternativeOptions = requirement.options.some((option) => option.optionSetLogic === "OR");
+
     return (
-        <div className="grid gap-4 px-5 py-5 md:px-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.25fr)]">
+        <div
+            data-requirement-row
+            className="grid gap-4 px-5 py-5 md:grid-cols-[minmax(0,0.95fr)_3rem_minmax(0,1.15fr)] md:items-start md:px-8"
+        >
             <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
                     <span className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Receiving course</span>
@@ -374,12 +495,20 @@ function RequirementRow({ requirement }: { requirement: PlannerRequirement }) {
                     {requirement.ucCourses.length > 0 ? (
                         requirement.ucCourses.map((course) => <CoursePill key={course.id} course={course} tone="uc" />)
                     ) : (
-                        <p className="text-sm text-slate-500">{requirement.label}</p>
+                        <AreaRequirementCard label={requirement.label} />
                     )}
                 </div>
                 {requirement.notes.length > 0 ? (
                     <p className="mt-3 text-sm leading-6 text-slate-500">{requirement.notes.join(" / ")}</p>
                 ) : null}
+            </div>
+
+            <div
+                aria-hidden="true"
+                className="flex h-10 w-10 items-center justify-center justify-self-start rounded-full border border-slate-200 bg-white text-lg font-bold text-slate-500 md:mt-10 md:justify-self-center"
+            >
+                <span className="hidden md:inline">→</span>
+                <span className="md:hidden">↓</span>
             </div>
 
             <div className="min-w-0">
@@ -394,6 +523,11 @@ function RequirementRow({ requirement }: { requirement: PlannerRequirement }) {
                     >
                         {requirement.isArticulated ? "Articulated" : "No articulation"}
                     </span>
+                    {hasAlternativeOptions ? (
+                        <span className="rounded-full border border-blue-200 bg-blue-100 px-2 py-1 text-xs font-bold uppercase tracking-[0.14em] text-blue-700">
+                            Choose one option below
+                        </span>
+                    ) : null}
                 </div>
                 <div className="space-y-3">
                     {requirement.options.length > 0 ? (
@@ -440,7 +574,7 @@ function ArticulationOption({
                 ) : null}
                 {option.logic ? (
                     <span className="rounded-full border border-blue-200 bg-blue-100 px-2 py-1 text-xs font-bold uppercase tracking-[0.14em] text-blue-700">
-                        {option.logic === "AND" ? "Complete all" : "Choose one"}
+                        {option.logic === "AND" ? "Complete all courses" : "Choose one course"}
                     </span>
                 ) : null}
             </div>
@@ -453,14 +587,32 @@ function ArticulationOption({
     );
 }
 
+function AreaRequirementCard({ label }: { label: string }) {
+    const displayLabel = label === "Requirement" ? "Area requirement" : label;
+
+    return (
+        <div className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-700">
+            <div className="font-bold text-slate-800">{displayLabel}</div>
+            <div className="mt-1 text-sm leading-5 text-slate-500">
+                ASSIST does not list a specific receiving-school course for this row.
+            </div>
+        </div>
+    );
+}
+
 function CoursePill({ course, tone }: { course: PlannerCourse; tone: "uc" | "sbcc" }) {
     const toneClass =
         tone === "uc"
             ? "border-orange-200 bg-orange-100 text-orange-700"
             : "border-slate-200 bg-white text-slate-800";
-
-    return (
-        <div className={`min-w-0 max-w-full rounded-2xl border px-3 py-2 ${toneClass}`}>
+    const href = tone === "sbcc" ? getSbccCourseHref(course) : null;
+    const className = `min-w-0 max-w-full rounded-2xl border px-3 py-2 ${toneClass} ${
+        href
+            ? "block transition hover:-translate-y-0.5 hover:border-[#0f172a] hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300"
+            : ""
+    }`;
+    const content = (
+        <>
             <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                 <span className="font-bold">{course.code}</span>
                 {course.units ? <span className="text-xs font-semibold opacity-80">{course.units}</span> : null}
@@ -471,8 +623,30 @@ function CoursePill({ course, tone }: { course: PlannerCourse; tone: "uc" | "sbc
                     Cross-listed: {course.crossListedCodes.join(", ")}
                 </div>
             ) : null}
+        </>
+    );
+
+    if (href) {
+        return (
+            <Link href={href} className={className} aria-label={`Open ${course.code} sections and CRNs`}>
+                {content}
+            </Link>
+        );
+    }
+
+    return (
+        <div className={className}>
+            {content}
         </div>
     );
+}
+
+function getSbccCourseHref(course: PlannerCourse): string | null {
+    const code = course.code.trim();
+    const subject = code.split(/\s+/)[0];
+    if (!subject || !code.includes(" ")) return null;
+
+    return appendTermToHref(`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(code)}`, DEFAULT_TERM_SLUG);
 }
 
 function CategoryBadge({ category, compact = false }: { category: string; compact?: boolean }) {
@@ -490,7 +664,7 @@ function CategoryBadge({ category, compact = false }: { category: string; compac
 }
 
 function categoryClass(category: string): string {
-    if (category === "Required for admission") return "border-red-200 bg-red-50 text-red-700";
+    if (category === "Required") return "border-red-200 bg-red-50 text-red-700";
     if (category === "Strongly recommended") return "border-indigo-200 bg-indigo-50 text-indigo-700";
     if (category === "Upper division") return "border-purple-200 bg-purple-100 text-purple-700";
     if (category === "Recommended") return "border-green-200 bg-green-100 text-green-700";

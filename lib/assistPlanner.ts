@@ -129,6 +129,7 @@ export type PlannerCourse = {
 export type PlannerOption = {
     id: string;
     logic: string;
+    optionSetLogic?: string;
     courses: PlannerCourse[];
     noArticulationReason?: string;
 };
@@ -139,6 +140,7 @@ export type PlannerRequirement = {
     label: string;
     logic: string;
     category: string;
+    receivingType: string;
     ucCourses: PlannerCourse[];
     options: PlannerOption[];
     notes: string[];
@@ -344,8 +346,10 @@ function attributeTexts(...collections: Array<AssistAttribute[] | null | undefin
 function categoryFrom(title: string, notes: string[]): string {
     const text = `${title} ${notes.join(" ")}`.toLowerCase();
 
-    if (text.includes("required for admission")) return "Required for admission";
     if (text.includes("strongly recommended")) return "Strongly recommended";
+    if (text.includes("required for admission") || text.includes("required courses") || text.includes("required")) {
+        return "Required";
+    }
     if (text.includes("upper division") || text.includes("not articulated")) return "Upper division";
     if (text.includes("additional")) return "Additional preparation";
     if (text.includes("recommended")) return "Recommended";
@@ -357,9 +361,12 @@ function normalizeOptions(articulation: AssistArticulation, requirementId: strin
     const courseGroups = (articulation.courseGroups ?? []).filter((group) => (group.courses ?? []).length > 0);
 
     if (courseGroups.length > 0) {
+        const optionSetLogic = courseGroups.length > 1 ? normalizeLogic(articulation.logic) : "";
+
         return courseGroups.map((courseGroup, groupIndex) => ({
             id: `${requirementId}-articulation-${articulationIndex}-group-${groupIndex}`,
             logic: normalizeLogic(courseGroup.logic),
+            optionSetLogic,
             courses: normalizeCourses(courseGroup.courses, `${requirementId}-group-${groupIndex}`),
         }));
     }
@@ -367,14 +374,6 @@ function normalizeOptions(articulation: AssistArticulation, requirementId: strin
     const courses = normalizeCourses(articulation.courses, `${requirementId}-articulation-${articulationIndex}`);
 
     if (courses.length > 0) {
-        if (normalizeLogic(articulation.logic) === "OR") {
-            return courses.map((course, courseIndex) => ({
-                id: `${requirementId}-articulation-${articulationIndex}-course-${courseIndex}`,
-                logic: "",
-                courses: [course],
-            }));
-        }
-
         return [
             {
                 id: `${requirementId}-articulation-${articulationIndex}`,
@@ -433,13 +432,16 @@ function buildRequirements(group: AssistRequirementGroup, groupIndex: number): P
                 ...matchedArticulations.map((articulation) => articulation.attributes),
             );
             const groupTitle = cleanText(group.title) || "Agreement section";
+            const receivingType = cleanText(item.type);
+            const fallbackLabel = receivingType === "Requirement" ? "Area requirement" : receivingType || "Requirement";
 
             return {
                 id: requirementId,
                 groupTitle,
-                label: ucCourses.map((course) => course.code).join(" / ") || cleanText(item.name) || "Requirement",
+                label: ucCourses.map((course) => course.code).join(" / ") || cleanText(item.name) || fallbackLabel,
                 logic: normalizeLogic(section.logic),
                 category: categoryFrom(groupTitle, notes),
+                receivingType,
                 ucCourses,
                 options,
                 notes,

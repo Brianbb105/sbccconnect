@@ -260,7 +260,12 @@ export default function SectionsPage() {
                     })}
                 </div>
 
-                <div className="mt-12">
+                <p className="mt-4 px-1 text-sm text-slate-600">
+                    <span className="font-semibold text-slate-800">Class schedule may be up to 10 minutes old.</span>{" "}
+                    Seat counts and class status can change while registration is active.
+                </p>
+
+                <div className="mt-8">
                     <Link href={appendTermToHref(`/classes/${subject}`, currentTerm.slug)} className="text-[#0f172a] font-semibold hover:underline">
                         ← Back to {subject}
                     </Link>

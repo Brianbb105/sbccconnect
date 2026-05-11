@@ -56,6 +56,9 @@ export default function RootLayout({
         <body>
         <AnalyticsTracker />
         {children}
+        <footer className="bg-gray-50 px-6 pb-8 pt-2 text-center text-xs font-semibold uppercase tracking-wide text-slate-500">
+            THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
+        </footer>
         <Analytics />
         </body>
         </html>

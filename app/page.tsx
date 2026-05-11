@@ -29,9 +29,6 @@ export default function HomePage() {
                             <p className="text-slate-500 leading-relaxed md:leading-7 mb-6">
                                 This website helps students browse classes, track course status, check registration dates, and read professor reviews and comments through integrated Rate My Professor data. Course data is sourced from the official SBCC website. Grade distribution features are currently in development. All professor review data is sourced from Rate My Professor.
                             </p>
-                            <p className="text-slate-500 leading-relaxed md:leading-7">
-                               THIS WEBSITE IS NOT AFFILIATED WITH SBCC.
-                            </p>
                         </div>
                     </div>
 

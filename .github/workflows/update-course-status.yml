@@ -3,7 +3,7 @@ name: Update Course Status
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
@@ -16,10 +16,11 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       CI: "true"
       PUPPETEER_NO_SANDBOX: "true"
+      TARGET_BRANCH: ${{ github.ref_name }}
 
     steps:
       - uses: actions/checkout@v4
@@ -32,19 +33,45 @@ jobs:
           cache: npm
 
       - run: npm ci
+      - run: node app/scripts/extractAllSections.mjs 202710 "Summer 2026"
       - run: node app/scripts/extractAllSections.mjs 202730 "Fall 2026"
 
       - name: Validate sections output
         run: |
+          test -f app/data/202710/sections.json
           test -f app/data/202730/sections.json
-          node -e "const fs=require('fs'); const data=JSON.parse(fs.readFileSync('app/data/202730/sections.json','utf8')); if(!Array.isArray(data)) throw new Error('sections.json is not an array'); if(data.length < 500) throw new Error('sections.json has too few rows: ' + data.length); console.log('Validated sections:', data.length);"
+          node -e 'const fs=require("fs"); const checks=[["202710",100],["202730",500]]; for (const [term,minRows] of checks) { const file=`app/data/${term}/sections.json`; const data=JSON.parse(fs.readFileSync(file,"utf8")); if(!Array.isArray(data)) throw new Error(`${file} is not an array`); if(data.length < minRows) throw new Error(`${file} has too few rows: ${data.length}`); console.log(`Validated ${file}: ${data.length}`); }'
 
-      - name: Commit changes if any
+      - name: Commit and push changes if any
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/data/202730/sections.json
-          git diff --cached --quiet || git commit -m "chore: update Fall 2026 course status"
 
-      - name: Push changes
-        run: git push
+          mkdir -p /tmp/course-status
+          cp app/data/202710/sections.json /tmp/course-status/202710-sections.json
+          cp app/data/202730/sections.json /tmp/course-status/202730-sections.json
+
+          for attempt in 1 2 3; do
+            git add app/data/202710/sections.json app/data/202730/sections.json
+
+            if git diff --cached --quiet; then
+              echo "No course status changes to commit."
+              exit 0
+            fi
+
+            git commit -m "chore: update Summer and Fall 2026 course status"
+
+            if git push origin "HEAD:${TARGET_BRANCH}"; then
+              exit 0
+            fi
+
+            echo "Push failed on attempt ${attempt}; refreshing ${TARGET_BRANCH} and retrying."
+            git fetch origin "${TARGET_BRANCH}"
+            git reset --hard "origin/${TARGET_BRANCH}"
+            cp /tmp/course-status/202710-sections.json app/data/202710/sections.json
+            cp /tmp/course-status/202730-sections.json app/data/202730/sections.json
+          done
+
+          git add app/data/202710/sections.json app/data/202730/sections.json
+          git diff --cached --quiet || git commit -m "chore: update Summer and Fall 2026 course status"
+          git push origin "HEAD:${TARGET_BRANCH}"

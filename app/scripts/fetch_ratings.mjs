@@ -5,15 +5,18 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const INPUT_TERM = String(process.argv[2] || process.env.RMP_TERM || "202730").trim();
-const INPUT_FILE = path.join(__dirname, `../data/${INPUT_TERM}/professors.json`);
+const INPUT_TERMS = String(process.argv[2] || process.env.RMP_TERM || "all").trim();
+const DATA_DIR = path.join(__dirname, "../data");
 const OUTPUT_FILE = path.join(__dirname, "../data/rmp_cache.json");
 
 const SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]; // School-2783 + School-4665
+const TERM_ORDER = ["202530", "202550", "202610", "202630", "202650", "202710", "202730"];
 const MIN_MATCH_SCORE = 50;
 const FORCE_REFRESH = process.env.FORCE_REFRESH === "1";
 const LIMIT = Number(process.env.LIMIT || 0);
 const SKIP_IF_HAS_TAGS = process.env.SKIP_IF_HAS_TAGS !== "0";
+const ONLY_UNCACHED = process.env.ONLY_UNCACHED === "1";
+const SKIP_NULLS = process.env.SKIP_NULLS === "1";
 const ONLY_KEY = String(process.env.ONLY_KEY || "").trim().toLowerCase();
 const REVIEWS_LIMIT = Number(process.env.REVIEWS_LIMIT || 30);
 
@@ -31,6 +34,10 @@ const TEACHER_QUERY = `
             numRatings
             wouldTakeAgainPercent
             avgDifficulty
+            school {
+              id
+              name
+            }
             teacherRatingTags {
               tagName
               tagCount
@@ -56,6 +63,10 @@ const TEACHER_QUERY_GLOBAL = `
             numRatings
             wouldTakeAgainPercent
             avgDifficulty
+            school {
+              id
+              name
+            }
             teacherRatingTags {
               tagName
               tagCount
@@ -117,7 +128,8 @@ function normalizeForCompare(name) {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/['’.]/g, "")
-    .replace(/[^a-z0-9\s-]/g, " ")
+    .replace(/[-_/]+/g, " ")
+    .replace(/[^a-z0-9\s]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -142,6 +154,10 @@ function decodeLegacyId(globalId) {
 function buildQueryVariants(displayName) {
   const firstLast = toFirstLast(displayName);
   const cleaned = stripJunk(firstLast);
+  const raw = stripJunk(displayName);
+  const [rawLast = "", ...rawRest] = raw.includes(",") ? raw.split(",") : [];
+  const rawFirst = rawRest.join(",").trim();
+  const lastPhrase = rawLast.trim();
   const normalized = normalizeForCompare(cleaned);
   const parts = normalized.split(" ").filter(Boolean);
   const first = parts[0] || "";
@@ -149,6 +165,11 @@ function buildQueryVariants(displayName) {
 
   const variants = [
     cleaned,
+    cleaned.replace(/[-_/]+/g, " "),
+    rawFirst && lastPhrase ? `${rawFirst} ${lastPhrase}` : "",
+    rawFirst && lastPhrase ? `${lastPhrase} ${rawFirst}` : "",
+    lastPhrase,
+    lastPhrase.replace(/[-_/]+/g, " "),
     firstLastOnly(cleaned),
     `${first} ${last}`.trim(),
     last,
@@ -174,9 +195,23 @@ function scoreCandidate(targetDisplayName, node) {
   if (cand === target) score += 100;
   if (candFull === normalizeForCompare(toFirstLast(targetDisplayName))) score += 20;
   if (tLast && cLast && tLast === cLast) score += 30;
-  if (tFirst && cFirst && (tFirst.startsWith(cFirst) || cFirst.startsWith(tFirst))) score += 10;
+  if (tFirst && cFirst && (tFirst.startsWith(cFirst) || cFirst.startsWith(tFirst))) {
+    score += 10;
+  } else if (tFirst && cFirst) {
+    score -= 70;
+  }
   if (tLast && cLast && tLast !== cLast) score -= 40;
   score += Math.min(node.numRatings ?? 0, 50) * 0.25;
+
+  const schoolId = String(node.school?.id || "");
+  const schoolName = normalizeForCompare(node.school?.name || "");
+  if (SCHOOL_IDS.includes(schoolId)) {
+    score += 60;
+  } else if (schoolName.includes("santa barbara city college")) {
+    score += 50;
+  } else if (schoolId || schoolName) {
+    score -= 20;
+  }
 
   return score;
 }
@@ -405,37 +440,113 @@ function shouldSkipCached(cacheEntry) {
   return hasTags && hasReviewsField;
 }
 
+function discoverInputTerms(input) {
+  const normalized = String(input || "").trim().toLowerCase();
+  if (!normalized || normalized === "all" || normalized === "*") {
+    const discovered = fs
+      .readdirSync(DATA_DIR, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name)
+      .filter((name) => fs.existsSync(path.join(DATA_DIR, name, "professors.json")));
+
+    return discovered.sort((a, b) => {
+      const aIndex = TERM_ORDER.indexOf(a);
+      const bIndex = TERM_ORDER.indexOf(b);
+      if (aIndex !== -1 || bIndex !== -1) {
+        if (aIndex === -1) return 1;
+        if (bIndex === -1) return -1;
+        return aIndex - bIndex;
+      }
+      return a.localeCompare(b, undefined, { numeric: true });
+    });
+  }
+
+  return normalized
+    .split(",")
+    .map((term) => term.trim())
+    .filter(Boolean);
+}
+
+function normalizeProfessorKey(prof, index) {
+  const displayName = prof.displayName ?? prof.name ?? "";
+  return String(prof.key || normalizeForCompare(toFirstLast(displayName)) || `idx_${index}`)
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+}
+
+function loadInputProfessors(inputTerms) {
+  const byKey = new Map();
+
+  for (const term of inputTerms) {
+    const inputFile = path.join(DATA_DIR, term, "professors.json");
+    if (!fs.existsSync(inputFile)) {
+      throw new Error(`INPUT_FILE not found: ${inputFile}`);
+    }
+
+    const rows = JSON.parse(fs.readFileSync(inputFile, "utf8"));
+    for (const [index, prof] of rows.entries()) {
+      const key = normalizeProfessorKey(prof, index);
+      const existing = byKey.get(key);
+      if (existing) {
+        existing.terms.push(term);
+        continue;
+      }
+
+      byKey.set(key, {
+        ...prof,
+        key,
+        terms: [term],
+      });
+    }
+  }
+
+  return Array.from(byKey.values()).sort((a, b) =>
+    String(a.displayName || a.key || "").localeCompare(String(b.displayName || b.key || ""), undefined, {
+      sensitivity: "base",
+    }),
+  );
+}
+
 (async () => {
   console.log("🚀 Starting RMP bulk fetch (ratings + tags + reviews)...");
   console.log(`📁 Output: ${OUTPUT_FILE}`);
   console.log(`🏫 School IDs: ${SCHOOL_IDS.join(", ")}`);
 
-  if (!fs.existsSync(INPUT_FILE)) {
-    console.error(`❌ INPUT_FILE not found: ${INPUT_FILE}`);
+  const inputTerms = discoverInputTerms(INPUT_TERMS);
+  if (!inputTerms.length) {
+    console.error(`❌ No input professor files found for: ${INPUT_TERMS}`);
     process.exit(1);
   }
 
-  const allProfessors = JSON.parse(fs.readFileSync(INPUT_FILE, "utf8"));
-  const filteredByKey = ONLY_KEY
-    ? allProfessors.filter((p) => String(p.key || "").toLowerCase() === ONLY_KEY)
-    : allProfessors;
-  const professors = LIMIT > 0 ? filteredByKey.slice(0, LIMIT) : filteredByKey;
-
+  const allProfessors = loadInputProfessors(inputTerms);
   const cache = fs.existsSync(OUTPUT_FILE)
     ? JSON.parse(fs.readFileSync(OUTPUT_FILE, "utf8"))
     : {};
+  const filteredByKey = ONLY_KEY
+    ? allProfessors.filter((p) => String(p.key || "").toLowerCase() === ONLY_KEY)
+    : allProfessors;
+  const filteredByCacheState = ONLY_UNCACHED
+    ? filteredByKey.filter((p, index) => {
+        const key = normalizeProfessorKey(p, index);
+        if (!Object.prototype.hasOwnProperty.call(cache, key)) return true;
+        return cache[key] === null && !SKIP_NULLS;
+      })
+    : filteredByKey;
+  const professors = LIMIT > 0 ? filteredByCacheState.slice(0, LIMIT) : filteredByCacheState;
 
   console.log(`📦 Loaded cache keys: ${Object.keys(cache).length}`);
+  console.log(`📚 Input terms: ${inputTerms.join(", ")}`);
+  console.log(`🧹 Unique instructors discovered: ${allProfessors.length}`);
   console.log(`👩‍🏫 Professors queued: ${professors.length}${LIMIT > 0 ? ` (LIMIT=${LIMIT})` : ""}`);
-  console.log(`⚙️ FORCE_REFRESH=${FORCE_REFRESH ? "1" : "0"} SKIP_IF_HAS_TAGS=${SKIP_IF_HAS_TAGS ? "1" : "0"} REVIEWS_LIMIT=${REVIEWS_LIMIT}`);
+  console.log(`⚙️ FORCE_REFRESH=${FORCE_REFRESH ? "1" : "0"} SKIP_IF_HAS_TAGS=${SKIP_IF_HAS_TAGS ? "1" : "0"} ONLY_UNCACHED=${ONLY_UNCACHED ? "1" : "0"} SKIP_NULLS=${SKIP_NULLS ? "1" : "0"} REVIEWS_LIMIT=${REVIEWS_LIMIT}`);
   if (ONLY_KEY) console.log(`🔎 ONLY_KEY=${ONLY_KEY}`);
 
   for (const [index, prof] of professors.entries()) {
     const displayName = prof.displayName ?? prof.name ?? "";
-    const fallbackKey = normalizeForCompare(toFirstLast(displayName)) || `idx_${index}`;
-    const key = prof.key ?? fallbackKey;
+    const key = normalizeProfessorKey(prof, index);
 
-    process.stdout.write(`[${index + 1}/${professors.length}] ${displayName} ... `);
+    process.stdout.write(`[${index + 1}/${professors.length}] ${displayName} (${prof.terms?.join(", ") || "term unknown"}) ... `);
 
     const alreadyCached = Object.prototype.hasOwnProperty.call(cache, key);
     const cacheEntry = alreadyCached ? cache[key] : undefined;
@@ -468,7 +579,9 @@ function shouldSkipCached(cacheEntry) {
       );
     } catch (err) {
       console.log(`⚠️ Error: ${err?.message || String(err)}`);
-      cache[key] = null;
+      if (!alreadyCached) {
+        delete cache[key];
+      }
     }
 
     await sleep(260);

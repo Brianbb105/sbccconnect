@@ -4,7 +4,7 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
-import { useTermProfessors } from "@/lib/termDataClient";
+import { useAllProfessors } from "@/lib/termDataClient";
 import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 
@@ -13,6 +13,7 @@ import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 type Professor = {
     displayName: string; // Format: "Ali, Muhammad"
     key: string;         // ID: "MALI"
+    terms?: string[];
 };
 
 type ProfessorTag = {
@@ -78,7 +79,7 @@ function formatRating(value?: number) {
 function ProfessorsPageContent() {
     const searchParams = useSearchParams();
     const currentTerm = getTermFromSearchParams(searchParams);
-    const { data: professors, loading: professorsLoading, error: professorsError } = useTermProfessors<Professor>(currentTerm.slug);
+    const { data: professors, loading: professorsLoading, error: professorsError } = useAllProfessors<Professor>();
     const searchQueryFromUrl = useMemo(() => {
         return (searchParams.get("search") || "").trim();
     }, [searchParams]);
@@ -177,7 +178,7 @@ function ProfessorsPageContent() {
                     <div>
                         <h1 className="text-3xl font-bold text-[#0f172a]">Professors</h1>
                         <p className="text-slate-500 mt-2">
-                            {currentTerm.label} • {(professors ?? []).length} instructors
+                            All available terms • {(professors ?? []).length} instructors
                         </p>
                     </div>
 
@@ -199,11 +200,11 @@ function ProfessorsPageContent() {
                 {/* Alphabet Filter Bar (Hidden when searching) */}
                 {isInitialLoad ? (
                     <div className="mb-10 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
-                        <p className="text-slate-500">Loading {currentTerm.label} professors...</p>
+                        <p className="text-slate-500">Loading professors...</p>
                     </div>
                 ) : professorsError ? (
                     <div className="mb-10 rounded-2xl border border-red-200 bg-white p-8 text-center shadow-sm">
-                        <p className="text-red-700 font-medium">Failed to load {currentTerm.label} data.</p>
+                        <p className="text-red-700 font-medium">Failed to load professor data.</p>
                     </div>
                 ) : null}
 

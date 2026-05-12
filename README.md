@@ -28,13 +28,14 @@ app/data/202650/professors.json
 
 ## How the extract scripts work now (simple)
 
-They do **one term at a time**.
+The SBCC extraction scripts do **one term at a time**.
 
 - `extractProfessors.mjs` = saves `professors.json` for one term
 - `extractAllSections.mjs` = saves `sections.json` for one term
+- `fetch_ratings.mjs` = refreshes `rmp_cache.json` from all local professor term files by default
 - `importAssistAgreements.mjs` = caches and normalizes SBCC transfer agreements from ASSIST.org
 
-They do **not** extract all terms automatically.
+The SBCC extraction scripts do **not** extract all terms automatically.
 
 ## Commands to extract a term
 
@@ -66,6 +67,32 @@ This creates/updates:
 
 - `app/data/<TERM_CODE>/professors.json`
 - `app/data/<TERM_CODE>/sections.json`
+
+### 3) Refresh RateMyProfessors cache
+
+By default this scans every local `app/data/<TERM_CODE>/professors.json`, dedupes instructors, and writes `app/data/rmp_cache.json`.
+
+```bash
+node app/scripts/fetch_ratings.mjs
+```
+
+To refresh one term only:
+
+```bash
+node app/scripts/fetch_ratings.mjs 202730
+```
+
+To work through only missing or previously unfound RMP entries in batches:
+
+```bash
+ONLY_UNCACHED=1 LIMIT=50 node app/scripts/fetch_ratings.mjs
+```
+
+To batch through only professors that have never been attempted, skipping known `null` misses:
+
+```bash
+ONLY_UNCACHED=1 SKIP_NULLS=1 LIMIT=50 node app/scripts/fetch_ratings.mjs
+```
 
 ## Future terms (Summer 2026 / Fall 2026)
 

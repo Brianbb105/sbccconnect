@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { NextResponse } from "next/server";
-import { getTermBySlug, normalizeTermSlug } from "@/lib/terms";
+import { SUPPORTED_TERMS, getTermBySlug, normalizeTermSlug } from "@/lib/terms";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -9,6 +9,7 @@ export const dynamic = "force-dynamic";
 const RMP_URL = "https://www.ratemyprofessors.com/graphql";
 const SBCC_SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]; // School-2783 + School-4665
 const MIN_MATCH_SCORE = 50;
+const REVIEWS_LIMIT = 30;
 const CACHE_FILE = path.resolve(process.cwd(), "app/data/rmp_cache.json");
 
 const HEADERS = {
@@ -32,6 +33,10 @@ const TEACHER_QUERY = `
             numRatings
             wouldTakeAgainPercent
             avgDifficulty
+            school {
+              id
+              name
+            }
             teacherRatingTags {
               tagName
               tagCount
@@ -57,10 +62,38 @@ const TEACHER_QUERY_GLOBAL = `
             numRatings
             wouldTakeAgainPercent
             avgDifficulty
+            school {
+              id
+              name
+            }
             teacherRatingTags {
               tagName
               tagCount
             }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const TEACHER_RATINGS_QUERY = `
+  query TeacherRatings($id: ID!, $first: Int!, $after: String) {
+    node(id: $id) {
+      ... on Teacher {
+        ratings(first: $first, after: $after) {
+          edges {
+            cursor
+            node {
+              id
+              class
+              comment
+              date
+            }
+          }
+          pageInfo {
+            hasNextPage
+            endCursor
           }
         }
       }
@@ -96,6 +129,10 @@ type RmpNode = {
   wouldTakeAgainPercent: number;
   avgDifficulty: number;
   teacherRatingTags?: RmpTag[];
+  school?: {
+    id?: string;
+    name?: string;
+  };
 };
 
 type CachedProfessor = {
@@ -113,9 +150,39 @@ type CachedProfessor = {
   reviews?: RmpReview[];
   fetchedAt?: string;
   queryName?: string;
+  matchedBy?: string;
+  matchScore?: number;
 };
 
 type CacheMap = Record<string, CachedProfessor | null>;
+
+type TeacherSearchResponse = {
+  data?: {
+    newSearch?: {
+      teachers?: {
+        edges?: Array<{ node?: RmpNode }>;
+      };
+    };
+  };
+};
+
+type TeacherRatingEdge = {
+  node?: { id?: string; class?: string; comment?: string; date?: string };
+};
+
+type TeacherRatingsPage = {
+  edges?: TeacherRatingEdge[];
+  pageInfo?: { hasNextPage?: boolean; endCursor?: string | null };
+};
+
+type TeacherRatingsResponse = {
+  data?: {
+    node?: {
+      ratings?: TeacherRatingsPage;
+    };
+  };
+  errors?: Array<{ message?: string }>;
+};
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -125,13 +192,23 @@ function normalizeName(value: string): string {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/['’.]/g, "")
-    .replace(/[^a-z0-9\s-]/g, " ")
+    .replace(/[-_/]+/g, " ")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function stripNameJunk(value: string): string {
+  return String(value || "")
+    .replace(/\(.*?\)/g, "")
+    .replace(/\[.*?\]/g, "")
+    .replace(/\b(dr|prof|professor)\.?\b/gi, "")
     .replace(/\s+/g, " ")
     .trim();
 }
 
 function displayToFirstLast(displayName: string): string {
-  const cleaned = String(displayName || "").replace(/\s+/g, " ").trim();
+  const cleaned = stripNameJunk(displayName);
   if (!cleaned.includes(",")) return cleaned;
   const [last, ...rest] = cleaned.split(",");
   return `${rest.join(" ").trim()} ${last.trim()}`.replace(/\s+/g, " ").trim();
@@ -194,14 +271,24 @@ function normalizeReviewList(input: unknown): Array<{ id: string; className: str
   return deduped;
 }
 
+function normalizeCacheKey(value: string): string {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+}
+
 function roundWouldTakeAgainPercent(value: unknown): number {
   const parsed = Number(value);
   if (!Number.isFinite(parsed) || parsed < 0) return -1;
   return Math.round(parsed);
 }
 
-function scoreCandidate(targetName: string, node: Pick<RmpNode, "firstName" | "lastName" | "numRatings">): number {
-  const target = normalizeName(targetName);
+function scoreCandidate(
+  targetName: string,
+  node: Pick<RmpNode, "firstName" | "lastName" | "numRatings" | "school">,
+): number {
+  const target = normalizeName(displayToFirstLast(targetName));
   const candFull = normalizeName(`${node.firstName} ${node.lastName}`);
 
   const tParts = target.split(" ").filter(Boolean);
@@ -214,15 +301,34 @@ function scoreCandidate(targetName: string, node: Pick<RmpNode, "firstName" | "l
   let score = 0;
   if (candFull === target) score += 100;
   if (tLast && cLast && tLast === cLast) score += 30;
-  if (tFirst && cFirst && (tFirst.startsWith(cFirst) || cFirst.startsWith(tFirst))) score += 10;
+  if (tFirst && cFirst && (tFirst.startsWith(cFirst) || cFirst.startsWith(tFirst))) {
+    score += 10;
+  } else if (tFirst && cFirst) {
+    score -= 70;
+  }
   if (tLast && cLast && tLast !== cLast) score -= 40;
   score += Math.min(Number(node.numRatings || 0), 50) * 0.25;
+
+  const school = node.school;
+  const schoolId = String(school?.id || "");
+  const schoolName = normalizeName(String(school?.name || ""));
+  if (SBCC_SCHOOL_IDS.includes(schoolId)) {
+    score += 60;
+  } else if (schoolName.includes("santa barbara city college")) {
+    score += 50;
+  } else if (schoolId || schoolName) {
+    score -= 20;
+  }
 
   return score;
 }
 
 function buildQueryVariants(name: string): string[] {
   const base = displayToFirstLast(name);
+  const raw = stripNameJunk(name);
+  const [rawLast = "", ...rawRest] = raw.includes(",") ? raw.split(",") : [];
+  const rawFirst = rawRest.join(",").trim();
+  const lastPhrase = rawLast.trim();
   const normalized = normalizeName(base);
   const parts = normalized.split(" ").filter(Boolean);
   const first = parts[0] || "";
@@ -230,6 +336,11 @@ function buildQueryVariants(name: string): string[] {
 
   const variants = [
     base,
+    base.replace(/[-_/]+/g, " "),
+    rawFirst && lastPhrase ? `${rawFirst} ${lastPhrase}` : "",
+    rawFirst && lastPhrase ? `${lastPhrase} ${rawFirst}` : "",
+    lastPhrase,
+    lastPhrase.replace(/[-_/]+/g, " "),
     `${first} ${last}`.trim(),
     last,
     `${last} ${first}`.trim(),
@@ -378,21 +489,42 @@ async function readJsonFile<T>(filePath: string, fallback: T): Promise<T> {
   }
 }
 
-async function graphqlTeachersSearch(text: string, schoolID?: string): Promise<RmpNode[]> {
+async function readAllProfessorFiles(primaryTermCode: string): Promise<ProfessorListItem[]> {
+  const orderedTerms = [
+    primaryTermCode,
+    ...SUPPORTED_TERMS.map((term) => term.code).filter((code) => code !== primaryTermCode),
+  ];
+  const byKey = new Map<string, ProfessorListItem>();
+
+  await Promise.all(
+    orderedTerms.map(async (termCode) => {
+      const filePath = path.resolve(process.cwd(), `app/data/${termCode}/professors.json`);
+      const rows = await readJsonFile<ProfessorListItem[]>(filePath, []);
+      for (const professor of rows) {
+        const identity = String(professor.key || professor.displayName || "")
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, " ");
+        if (!identity || byKey.has(identity)) continue;
+        byKey.set(identity, professor);
+      }
+    }),
+  );
+
+  return Array.from(byKey.values());
+}
+
+async function graphqlRequest<T>(query: string, variables: Record<string, unknown>): Promise<T | null> {
   let attempt = 0;
   let backoff = 600;
 
   while (attempt < 4) {
     attempt += 1;
-    const useSchoolScopedQuery = Boolean(schoolID);
     const res = await fetch(RMP_URL, {
       method: "POST",
       headers: HEADERS,
       cache: "no-store",
-      body: JSON.stringify({
-        query: useSchoolScopedQuery ? TEACHER_QUERY : TEACHER_QUERY_GLOBAL,
-        variables: useSchoolScopedQuery ? { text, schoolID } : { text },
-      }),
+      body: JSON.stringify({ query, variables }),
     });
 
     if (res.status === 429) {
@@ -402,12 +534,121 @@ async function graphqlTeachersSearch(text: string, schoolID?: string): Promise<R
     }
 
     const json = await res.json();
-    const edges = json?.data?.newSearch?.teachers?.edges ?? [];
-    return edges.map((edge: { node?: RmpNode }) => edge.node).filter(Boolean);
+    return json as T;
   }
 
-  return [];
+  return null;
 }
+
+async function graphqlTeachersSearch(text: string, schoolID?: string): Promise<RmpNode[]> {
+  const useSchoolScopedQuery = Boolean(schoolID);
+  const json = await graphqlRequest<TeacherSearchResponse>(
+    useSchoolScopedQuery ? TEACHER_QUERY : TEACHER_QUERY_GLOBAL,
+    useSchoolScopedQuery ? { text, schoolID } : { text },
+  );
+  const edges = json?.data?.newSearch?.teachers?.edges ?? [];
+  return edges
+    .map((edge) => edge.node)
+    .filter((node): node is RmpNode => Boolean(node));
+}
+
+async function fetchTeacherReviews(teacherId: string, limit = REVIEWS_LIMIT): Promise<RmpReview[]> {
+  if (!teacherId || limit <= 0) return [];
+
+  const reviews: RmpReview[] = [];
+  let after: string | null = null;
+  let hasNextPage = true;
+
+  while (hasNextPage && reviews.length < limit) {
+    const first = Math.min(20, limit - reviews.length);
+    const json: TeacherRatingsResponse | null = await graphqlRequest<TeacherRatingsResponse>(
+      TEACHER_RATINGS_QUERY,
+      { id: teacherId, first, after },
+    );
+
+    if (!json || Array.isArray(json.errors)) break;
+
+    const ratings: TeacherRatingsPage | undefined = json.data?.node?.ratings;
+    const edges: TeacherRatingEdge[] = Array.isArray(ratings?.edges) ? ratings.edges : [];
+    if (!edges.length) break;
+
+    for (const edge of edges) {
+      if (!edge.node) continue;
+      reviews.push({
+        id: edge.node.id || "",
+        className: String(edge.node.class || "").trim(),
+        comment: edge.node.comment || "",
+        date: edge.node.date || "",
+      });
+      if (reviews.length >= limit) break;
+    }
+
+    hasNextPage = Boolean(ratings?.pageInfo?.hasNextPage);
+    after = ratings?.pageInfo?.endCursor || null;
+
+    if (hasNextPage) await sleep(120);
+  }
+
+  return normalizeReviewList(reviews).slice(0, limit);
+}
+
+function normalizeLiveNodeForCache(
+  node: RmpNode,
+  queryName: string,
+  matchedBy: string,
+  matchScore: number,
+  reviews: RmpReview[],
+): CachedProfessor {
+  return {
+    id: String(node.id || ""),
+    legacyId: decodeLegacyId(node.id) || "",
+    firstName: String(node.firstName || "").trim(),
+    lastName: String(node.lastName || "").trim(),
+    department: String(node.department || "").trim(),
+    avgRating: Number(node.avgRating || 0),
+    numRatings: Number(node.numRatings || 0),
+    wouldTakeAgainPercent: roundWouldTakeAgainPercent(node.wouldTakeAgainPercent),
+    avgDifficulty: Number(node.avgDifficulty || 0),
+    topTags: normalizeTagList(node.teacherRatingTags).slice(0, 10),
+    reviews: normalizeReviewList(reviews),
+    fetchedAt: new Date().toISOString(),
+    queryName,
+    matchedBy,
+    matchScore: Number(matchScore.toFixed(2)),
+  };
+}
+
+async function writeCacheEntry(key: string, entry: CachedProfessor): Promise<void> {
+  const normalizedKey = normalizeCacheKey(key);
+  if (!normalizedKey) return;
+
+  try {
+    const cache = await readJsonFile<CacheMap>(CACHE_FILE, {});
+    cache[normalizedKey] = entry;
+    await fs.writeFile(CACHE_FILE, `${JSON.stringify(cache, null, 2)}\n`);
+  } catch {
+    // Some deployment environments are read-only; live data should still render.
+  }
+}
+
+async function cacheLiveNode(
+  key: string | null,
+  queryName: string,
+  node: RmpNode,
+  matchedBy: string,
+  matchScore: number,
+): Promise<CachedProfessor> {
+  const reviews = await fetchTeacherReviews(node.id, REVIEWS_LIMIT);
+  const entry = normalizeLiveNodeForCache(node, queryName, matchedBy, matchScore, reviews);
+  await writeCacheEntry(key || queryName, entry);
+  return entry;
+}
+
+type RmpMatch = {
+  node: RmpNode;
+  variant: string;
+  score: number;
+};
 
 function dedupeNodes(nodes: RmpNode[]): RmpNode[] {
   const map = new Map<string, RmpNode>();
@@ -419,10 +660,9 @@ function dedupeNodes(nodes: RmpNode[]): RmpNode[] {
   return Array.from(map.values());
 }
 
-async function fetchBestRmpMatch(name: string): Promise<RmpNode | null> {
+async function fetchBestRmpMatch(name: string): Promise<RmpMatch | null> {
   const variants = buildQueryVariants(name);
-  let bestNode: RmpNode | null = null;
-  let bestScore = -Infinity;
+  let best: RmpMatch | null = null;
 
   for (const variant of variants) {
     const candidates: RmpNode[] = [];
@@ -439,15 +679,14 @@ async function fetchBestRmpMatch(name: string): Promise<RmpNode | null> {
     const dedupedCandidates = dedupeNodes(candidates);
     for (const node of dedupedCandidates) {
       const score = scoreCandidate(name, node);
-      if (score > bestScore) {
-        bestScore = score;
-        bestNode = node;
+      if (!best || score > best.score) {
+        best = { node, variant, score };
       }
     }
     await sleep(120);
   }
 
-  return bestScore >= MIN_MATCH_SCORE ? bestNode : null;
+  return best && best.score >= MIN_MATCH_SCORE ? best : null;
 }
 
 function formatApiResponse(
@@ -485,15 +724,13 @@ export async function GET(request: Request) {
   const name = String(searchParams.get("name") || "").trim();
   const explicitKey = String(searchParams.get("key") || "").trim() || null;
   const term = getTermBySlug(normalizeTermSlug(searchParams.get("term")));
-  const professorsFile = path.resolve(process.cwd(), `app/data/${term.code}/professors.json`);
-
   if (!name) {
     return NextResponse.json({ error: "Missing name" }, { status: 400 });
   }
 
   try {
     const [professors, cache] = await Promise.all([
-      readJsonFile<ProfessorListItem[]>(professorsFile, []),
+      readAllProfessorFiles(term.code),
       readJsonFile<CacheMap>(CACHE_FILE, {}),
     ]);
 
@@ -514,9 +751,16 @@ export async function GET(request: Request) {
       return NextResponse.json(formatApiResponse(cacheByName.entry, "cache", cacheByName.key));
     }
 
-    const liveNode = await fetchBestRmpMatch(name);
-    if (liveNode) {
-      return NextResponse.json(formatApiResponse(liveNode, "live", resolvedKey));
+    const liveMatch = await fetchBestRmpMatch(name);
+    if (liveMatch) {
+      const cachedEntry = await cacheLiveNode(
+        resolvedKey || explicitKey,
+        name,
+        liveMatch.node,
+        liveMatch.variant,
+        liveMatch.score,
+      );
+      return NextResponse.json(formatApiResponse(cachedEntry, "cache", resolvedKey || explicitKey));
     }
 
     return NextResponse.json({ error: "Professor not found" }, { status: 404 });

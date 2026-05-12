@@ -1,5 +1,3 @@
-import { fileURLToPath } from 'url';
-
 // CONFIG
 const TEST_NAME = "Minkova, Kira"; // We know she exists!
 const AUTH_HEADER = 'Basic dGVzdDp0ZXN0';

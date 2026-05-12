@@ -111,7 +111,7 @@ export default function Header() {
                             aria-label="SBCCPlan home"
                             className="md:hidden rounded-2xl transition hover:opacity-85 focus:outline-none focus:ring-2 focus:ring-slate-300"
                         >
-                            <SBCCPlanLogo iconClassName="h-11 w-11" />
+                            <SBCCPlanLogo iconClassName="h-12 w-12" />
                         </Link>
                         <Suspense fallback={<div className="flex-1 max-w-xl w-full" />}>
                             <SearchBar />

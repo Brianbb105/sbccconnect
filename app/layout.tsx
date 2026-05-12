@@ -34,11 +34,11 @@ export const metadata = {
     description: 'SBCC Student Dashboard',
     icons: {
         icon: [
-            { url: '/sbccplan-logo.svg', type: 'image/svg+xml' },
+            { url: '/sbccplan-logo.png', type: 'image/png' },
         ],
-        shortcut: ['/sbccplan-logo.svg'],
+        shortcut: ['/sbccplan-logo.png'],
         apple: [
-            { url: '/sbccplan-logo.svg', type: 'image/svg+xml' },
+            { url: '/sbccplan-logo.png', type: 'image/png' },
         ],
     },
 }

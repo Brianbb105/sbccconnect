@@ -174,8 +174,8 @@ function ProfessorsPageContent() {
             <main className="max-w-6xl mx-auto px-6 py-12">
 
                 {/* Header & Search */}
-                <div className="flex flex-col md:flex-row justify-between items-end gap-4 mb-8">
-                    <div>
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-8">
+                    <div className="w-full md:w-auto">
                         <h1 className="text-3xl font-bold text-[#0f172a]">Professors</h1>
                         <p className="text-slate-500 mt-2">
                             All available terms • {(professors ?? []).length} instructors

@@ -1,7 +1,8 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
+import { getSearchSuggestions, type SearchSuggestion } from "@/lib/searchSuggestions";
 import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 import { useTermProfessors, useTermSections } from "@/lib/termDataClient";
 
@@ -44,6 +45,12 @@ export default function SearchBar() {
     const searchParams = useSearchParams();
     const currentTerm = getTermFromSearchParams(searchParams);
     const [query, setQuery] = useState('')
+    const [debouncedQuery, setDebouncedQuery] = useState('')
+    const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false)
+    const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1)
+    const activeSuggestionIndexRef = useRef(-1)
+    const formRef = useRef<HTMLFormElement>(null)
+    const listboxId = useId()
 
     const {
         data: sections,
@@ -122,8 +129,57 @@ export default function SearchBar() {
         });
     }, [professors]);
 
+    useEffect(() => {
+        const timeoutId = window.setTimeout(() => {
+            setDebouncedQuery(query);
+        }, 180);
+
+        return () => {
+            window.clearTimeout(timeoutId);
+        };
+    }, [query]);
+
+    useEffect(() => {
+        const handlePointerDown = (event: PointerEvent) => {
+            if (!formRef.current?.contains(event.target as Node)) {
+                setIsSuggestionsOpen(false);
+                activeSuggestionIndexRef.current = -1;
+                setActiveSuggestionIndex(-1);
+            }
+        };
+
+        document.addEventListener("pointerdown", handlePointerDown);
+        return () => {
+            document.removeEventListener("pointerdown", handlePointerDown);
+        };
+    }, []);
+
+    const suggestions = useMemo(() => {
+        return getSearchSuggestions(debouncedQuery, {
+            sections,
+            professors,
+            limit: 8,
+        });
+    }, [debouncedQuery, professors, sections]);
+
     const pushWithTerm = (href: string) => {
         router.push(appendTermToHref(href, currentTerm.slug));
+    };
+
+    const setActiveSuggestion = (index: number) => {
+        activeSuggestionIndexRef.current = index;
+        setActiveSuggestionIndex(index);
+    };
+
+    const resetActiveSuggestion = () => {
+        setActiveSuggestion(-1);
+    };
+
+    const selectSuggestion = (suggestion: SearchSuggestion) => {
+        setQuery(suggestion.value);
+        setIsSuggestionsOpen(false);
+        resetActiveSuggestion();
+        pushWithTerm(suggestion.href);
     };
 
     const handleSearch = (e: React.FormEvent) => {
@@ -131,6 +187,9 @@ export default function SearchBar() {
 
         const term = normalizeWhitespace(query)
         if (!term) return
+
+        setIsSuggestionsOpen(false);
+        resetActiveSuggestion();
 
         if ((sectionsLoading && !sections) || (professorsLoading && !professors)) {
             pushWithTerm("/classes");
@@ -222,20 +281,125 @@ export default function SearchBar() {
     }
 
     const isLoading = (sectionsLoading && !sections) || (professorsLoading && !professors);
+    const hasSearchText = normalizeWhitespace(query).length > 0;
+    const showSuggestions = isSuggestionsOpen && hasSearchText && suggestions.length > 0;
+
+    const handleInputChange = (value: string) => {
+        setQuery(value);
+        setIsSuggestionsOpen(normalizeWhitespace(value).length > 0);
+        resetActiveSuggestion();
+    };
+
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+        const canUseSuggestions = hasSearchText && suggestions.length > 0;
+
+        if (event.key === "Escape") {
+            if (isSuggestionsOpen) {
+                event.preventDefault();
+                setIsSuggestionsOpen(false);
+                resetActiveSuggestion();
+            }
+            return;
+        }
+
+        if (event.key === "ArrowDown" && canUseSuggestions) {
+            event.preventDefault();
+            setIsSuggestionsOpen(true);
+            const currentIndex = activeSuggestionIndexRef.current;
+            setActiveSuggestion(currentIndex >= suggestions.length - 1 ? 0 : currentIndex + 1);
+            return;
+        }
+
+        if (event.key === "ArrowUp" && canUseSuggestions) {
+            event.preventDefault();
+            setIsSuggestionsOpen(true);
+            const currentIndex = activeSuggestionIndexRef.current;
+            setActiveSuggestion(currentIndex <= 0 ? suggestions.length - 1 : currentIndex - 1);
+            return;
+        }
+
+        if (event.key === "Enter") {
+            const selectedIndex = activeSuggestionIndexRef.current;
+            const selectedSuggestion = suggestions[selectedIndex];
+            event.preventDefault();
+
+            if (showSuggestions && selectedSuggestion) {
+                selectSuggestion(selectedSuggestion);
+                return;
+            }
+
+            setIsSuggestionsOpen(false);
+            resetActiveSuggestion();
+            formRef.current?.requestSubmit();
+        }
+    };
 
     return (
-        <form onSubmit={handleSearch} className="flex-1 max-w-xl w-full relative group">
+        <form ref={formRef} onSubmit={handleSearch} className="flex-1 max-w-xl w-full relative group">
             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             </div>
             <input
                 type="text"
                 value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                onChange={(e) => handleInputChange(e.target.value)}
+                onFocus={() => {
+                    if (hasSearchText) setIsSuggestionsOpen(true);
+                }}
+                onKeyDown={handleKeyDown}
                 placeholder={isLoading ? `Loading ${currentTerm.label}...` : `Search ${currentTerm.label} classes, professors, or IGETC...`}
+                aria-label={`Search ${currentTerm.label} classes, professors, or IGETC`}
+                role="combobox"
+                aria-autocomplete="list"
+                aria-haspopup="listbox"
+                aria-expanded={showSuggestions}
+                aria-controls={showSuggestions ? listboxId : undefined}
+                aria-activedescendant={activeSuggestionIndex >= 0 ? `${listboxId}-${activeSuggestionIndex}` : undefined}
+                autoComplete="off"
+                spellCheck={false}
+                data-testid="global-search-input"
                 className="w-full pl-10 pr-4 py-2 rounded-full border border-slate-300 bg-white outline-none text-slate-800 focus:border-slate-400 focus:ring-2 focus:ring-slate-300 transition shadow-sm"
             />
+            {showSuggestions && (
+                <div
+                    className="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl"
+                    data-testid="global-search-suggestions"
+                >
+                    <ul id={listboxId} role="listbox" className="max-h-80 overflow-y-auto py-2">
+                        {suggestions.map((suggestion, index) => {
+                            const isActive = index === activeSuggestionIndex;
+
+                            return (
+                                <li
+                                    key={suggestion.id}
+                                    id={`${listboxId}-${index}`}
+                                    role="option"
+                                    aria-selected={isActive}
+                                >
+                                    <button
+                                        type="button"
+                                        tabIndex={-1}
+                                        onMouseDown={(event) => event.preventDefault()}
+                                        onClick={() => selectSuggestion(suggestion)}
+                                        className={`flex w-full items-center gap-3 px-4 py-3 text-left transition ${
+                                            isActive ? "bg-slate-100" : "hover:bg-slate-50"
+                                        }`}
+                                    >
+                                        <span className="min-w-0 flex-1">
+                                            <span className="block truncate text-sm font-semibold text-slate-900">
+                                                {suggestion.label}
+                                            </span>
+                                        </span>
+                                        <span className="shrink-0 rounded-full border border-slate-200 bg-slate-50 px-2 py-1 text-[11px] font-semibold text-slate-500">
+                                            {suggestion.typeLabel}
+                                        </span>
+                                    </button>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            )}
         </form>
     )
 }
-

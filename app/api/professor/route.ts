@@ -148,6 +148,10 @@ type CachedProfessor = {
   topTags?: RmpTag[];
   teacherRatingTags?: RmpTag[];
   reviews?: RmpReview[];
+  school?: {
+    id?: string;
+    name?: string;
+  };
   fetchedAt?: string;
   queryName?: string;
   matchedBy?: string;
@@ -323,6 +327,17 @@ function scoreCandidate(
   return score;
 }
 
+function isSbccSchool(school: RmpNode["school"] | CachedProfessor["school"]): boolean {
+  const schoolId = String(school?.id || "");
+  const schoolName = normalizeName(String(school?.name || ""));
+  return SBCC_SCHOOL_IDS.includes(schoolId) || schoolName.includes("santa barbara city college");
+}
+
+function isAcceptableCachedProfessor(value: CachedProfessor | null | undefined): value is CachedProfessor {
+  if (!isCachedProfessor(value)) return false;
+  return !value.school || isSbccSchool(value.school);
+}
+
 function buildQueryVariants(name: string): string[] {
   const base = displayToFirstLast(name);
   const raw = stripNameJunk(name);
@@ -426,7 +441,7 @@ function findCacheByExactName(
   const simpleMatches: CacheCandidate[] = [];
 
   for (const [key, value] of Object.entries(cache)) {
-    if (!isCachedProfessor(value)) continue;
+    if (!isAcceptableCachedProfessor(value)) continue;
 
     const score =
       Number(value.numRatings || 0) * 10 +
@@ -611,6 +626,10 @@ function normalizeLiveNodeForCache(
     avgDifficulty: Number(node.avgDifficulty || 0),
     topTags: normalizeTagList(node.teacherRatingTags).slice(0, 10),
     reviews: normalizeReviewList(reviews),
+    school: {
+      id: String(node.school?.id || ""),
+      name: String(node.school?.name || ""),
+    },
     fetchedAt: new Date().toISOString(),
     queryName,
     matchedBy,
@@ -676,7 +695,7 @@ async function fetchBestRmpMatch(name: string): Promise<RmpMatch | null> {
     const global = await graphqlTeachersSearch(variant);
     candidates.push(...global);
 
-    const dedupedCandidates = dedupeNodes(candidates);
+    const dedupedCandidates = dedupeNodes(candidates).filter((node) => isSbccSchool(node.school));
     for (const node of dedupedCandidates) {
       const score = scoreCandidate(name, node);
       if (!best || score > best.score) {
@@ -735,14 +754,14 @@ export async function GET(request: Request) {
     ]);
 
     const directExplicitCache = explicitKey ? cache[explicitKey] : null;
-    if (explicitKey && isCachedProfessor(directExplicitCache)) {
+    if (explicitKey && isAcceptableCachedProfessor(directExplicitCache)) {
       return NextResponse.json(formatApiResponse(directExplicitCache, "cache", explicitKey));
     }
 
     const resolvedKey = resolveProfessorKey(name, explicitKey, professors);
     const directCache = resolvedKey ? cache[resolvedKey] : null;
 
-    if (resolvedKey && isCachedProfessor(directCache)) {
+    if (resolvedKey && isAcceptableCachedProfessor(directCache)) {
       return NextResponse.json(formatApiResponse(directCache, "cache", resolvedKey));
     }
 

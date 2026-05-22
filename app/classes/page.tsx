@@ -4,6 +4,7 @@ import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
+import { getDepartmentFullName } from "@/lib/departments";
 import { useTermSections } from "@/lib/termDataClient";
 import { SUPPORTED_TERMS, appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
@@ -26,108 +27,12 @@ type IgetcCourse = {
     count: number;
 };
 
-const DEPARTMENT_FULL_NAMES: Record<string, string> = {
-    ACCT: "Accounting",
-    ADC: "Addictions Counseling",
-    AH: "Allied Health",
-    AJ: "Administration of Justice",
-    ANTH: "Anthropology",
-    ART: "Art",
-    ASAM: "Asian American Studies",
-    ASL: "American Sign Language",
-    AUTO: "Automotive Service and Technology",
-    BIOL: "Biology",
-    BLAW: "Business Law",
-    BLST: "Black Studies",
-    BMS: "Biomedical Sciences",
-    BOT: "Botany",
-    BUS: "Business Administration",
-    CA: "Culinary Arts",
-    CHEM: "Chemistry",
-    CHIN: "Chinese",
-    CHST: "Chicana/o Studies",
-    CIM: "Cancer Information Management",
-    CIS: "Computer Information Systems",
-    CNEE: "Computer Network Engineering and Electronics",
-    COMM: "Communication",
-    COMP: "Computer Applications",
-    CS: "Computer Science",
-    CSMT: "Cosmetology",
-    CT: "Construction Technology",
-    DRFT: "Drafting",
-    ECE: "Early Childhood Education",
-    ECON: "Economics",
-    ED: "Education",
-    EH: "Environmental Horticulture",
-    EMT: "Emergency Medical Technician",
-    ENG: "English",
-    ENGL: "English",
-    ENGR: "Engineering",
-    ENT: "Entrepreneurship",
-    ENVS: "Environmental Studies",
-    ERTH: "Earth Science",
-    ESL: "English as a Second Language",
-    ETHS: "Ethnic Studies",
-    FIN: "Finance",
-    FP: "Film Production",
-    FR: "French",
-    FS: "Film Studies",
-    GDP: "Graphic Design and Photography",
-    GEOG: "Geography",
-    GER: "German",
-    GLST: "Global Studies",
-    HE: "Health Education",
-    HIST: "History",
-    HIT: "Health Information Technology",
-    HM: "Hospitality Management",
-    HNRS: "Honors",
-    IBUS: "International Business",
-    ID: "Interior Design",
-    ITAL: "Italian",
-    JAPN: "Japanese",
-    JOUR: "Journalism",
-    LIBR: "Library",
-    MAT: "Multimedia Arts and Technologies",
-    MATH: "Mathematics",
-    MDT: "Marine Diving Technology",
-    MGMT: "Management",
-    MKT: "Marketing",
-    MUS: "Music",
-    NATA: "Native American Studies",
-    NURS: "Nursing",
-    PD: "Personal Development",
-    PE: "Physical Education",
-    PHIL: "Philosophy",
-    PHOT: "Photography",
-    PHSC: "Physical Science",
-    PHYS: "Physics",
-    POLS: "Political Science",
-    PRO: "Professional Development",
-    PSY: "Psychology",
-    PSYC: "Psychology",
-    RE: "Real Estate",
-    RT: "Radiographic Technology",
-    SOC: "Sociology",
-    SPAN: "Spanish",
-    SS: "Social Sciences",
-    STAT: "Statistics",
-    TA: "Theatre Arts",
-    TIS: "Translation and Interpretation Studies",
-    VN: "Vocational Nursing",
-    WEXP: "Work Experience",
-    ZOOL: "Zoology",
-};
-
 function getSubject(courseStr: string) {
     return (courseStr || "").trim().split(/\s+/)[0]?.toUpperCase() || "";
 }
 
 function normalizeIgetc(value: string) {
     return value.trim().toUpperCase().replace(/^IGETC\s*/, "").replace(/\s+/g, "");
-}
-
-function getDepartmentFullName(code: string) {
-    return DEPARTMENT_FULL_NAMES[code] || code;
 }
 
 function DepartmentsPageContent() {

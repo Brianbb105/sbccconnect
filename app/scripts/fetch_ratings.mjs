@@ -216,11 +216,18 @@ function scoreCandidate(targetDisplayName, node) {
   return score;
 }
 
+function isSbccSchool(school) {
+  const schoolId = String(school?.id || "");
+  const schoolName = normalizeForCompare(school?.name || "");
+  return SCHOOL_IDS.includes(schoolId) || schoolName.includes("santa barbara city college");
+}
+
 function pickBestMatch(displayName, edges) {
   if (!edges?.length) return null;
   const scored = edges
     .map((e) => e.node)
     .filter(Boolean)
+    .filter((node) => isSbccSchool(node.school))
     .map((node) => ({ node, score: scoreCandidate(displayName, node) }))
     .sort((a, b) => b.score - a.score);
 
@@ -285,6 +292,10 @@ function normalizeNode(node, displayName, score, variant, reviews) {
     avgDifficulty: Number(node.avgDifficulty || 0),
     topTags,
     reviews: normalizedReviews,
+    school: {
+      id: String(node.school?.id || ""),
+      name: String(node.school?.name || ""),
+    },
     fetchedAt: new Date().toISOString(),
     queryName: displayName,
     matchedBy: variant,

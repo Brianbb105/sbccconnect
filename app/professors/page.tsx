@@ -29,6 +29,11 @@ type ProfessorReview = {
 };
 
 type CachedProfessor = {
+    id?: string;
+    legacyId?: string | number;
+    firstName?: string;
+    lastName?: string;
+    queryName?: string;
     department?: string;
     avgRating?: number;
     numRatings?: number;
@@ -36,9 +41,17 @@ type CachedProfessor = {
     wouldTakeAgainPercent?: number;
     topTags?: ProfessorTag[];
     reviews?: ProfessorReview[];
+    school?: {
+        id?: string;
+        name?: string;
+    };
 } | null;
 
 type CacheMap = Record<string, CachedProfessor>;
+type CachedProfessorRecord = Exclude<CachedProfessor, null>;
+type CacheIndex = Map<string, CachedProfessor>;
+
+const SBCC_SCHOOL_IDS = new Set(["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]);
 
 // --- Helper: Name Processing ---
 function processName(rawName: string) {
@@ -61,14 +74,128 @@ function processName(rawName: string) {
     };
 }
 
+function normalizeCacheKey(value: string) {
+    return String(value || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+}
+
+function normalizeNameForCompare(value: string) {
+    return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/['’.]/g, "")
+        .replace(/[-_/]+/g, " ")
+        .replace(/[^a-z0-9\s]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function displayToFirstLast(displayName: string) {
+    const cleaned = String(displayName || "").replace(/\s+/g, " ").trim();
+    if (!cleaned.includes(",")) return cleaned;
+    const [last, ...rest] = cleaned.split(",");
+    return `${rest.join(" ").trim()} ${last.trim()}`.replace(/\s+/g, " ").trim();
+}
+
+function getFirstLastParts(name: string) {
+    const normalized = normalizeNameForCompare(displayToFirstLast(name));
+    const parts = normalized.split(" ").filter(Boolean);
+    return {
+        first: parts[0] || "",
+        last: parts[parts.length - 1] || "",
+    };
+}
+
+function isCachedProfessor(value: CachedProfessor): value is CachedProfessorRecord {
+    return Boolean(value && typeof value === "object");
+}
+
+function isFirstCompatible(targetFirst: string, cachedFirst: string) {
+    if (!targetFirst || !cachedFirst) return true;
+    return targetFirst.startsWith(cachedFirst) || cachedFirst.startsWith(targetFirst);
+}
+
+function isProfessorNameCompatible(displayName: string, entry: CachedProfessorRecord) {
+    const target = getFirstLastParts(displayName);
+    const cached = getFirstLastParts(`${entry.firstName || ""} ${entry.lastName || ""}`);
+    if (!target.first || !target.last || !cached.first || !cached.last) return true;
+    return target.last === cached.last && isFirstCompatible(target.first, cached.first);
+}
+
+function isSbccSchool(school: CachedProfessorRecord["school"]) {
+    if (!school) return true;
+    const schoolId = String(school.id || "");
+    const schoolName = normalizeNameForCompare(String(school.name || ""));
+    return SBCC_SCHOOL_IDS.has(schoolId) || schoolName.includes("santa barbara city college");
+}
+
+function addCacheIndexAlias(index: CacheIndex, alias: string | undefined, value: CachedProfessor) {
+    if (!alias) return;
+    const normalizedAliases = new Set([
+        normalizeCacheKey(alias),
+        normalizeNameForCompare(alias),
+    ]);
+
+    for (const normalized of normalizedAliases) {
+        if (!normalized || index.has(normalized)) continue;
+        index.set(normalized, value);
+    }
+}
+
+function buildCacheIndex(cache: CacheMap): CacheIndex {
+    const index: CacheIndex = new Map();
+
+    for (const [rawKey, value] of Object.entries(cache)) {
+        addCacheIndexAlias(index, rawKey, value);
+
+        if (!isCachedProfessor(value)) continue;
+
+        addCacheIndexAlias(index, value.queryName, value);
+        addCacheIndexAlias(index, `${value.firstName || ""} ${value.lastName || ""}`, value);
+        addCacheIndexAlias(index, `${value.lastName || ""}, ${value.firstName || ""}`, value);
+    }
+
+    return index;
+}
+
+function getIndexedCacheValue(index: CacheIndex, alias: string): CachedProfessor | undefined {
+    const normalizedAliases = [
+        normalizeCacheKey(alias),
+        normalizeNameForCompare(alias),
+    ];
+
+    for (const normalized of normalizedAliases) {
+        if (!normalized || !index.has(normalized)) continue;
+        return index.get(normalized) ?? null;
+    }
+
+    return undefined;
+}
+
 function getCacheEntry(
-    cache: CacheMap,
+    cacheIndex: CacheIndex,
     key: string,
     displayName: string,
-): CachedProfessor {
-    const byKey = cache[key];
-    if (byKey !== undefined) return byKey;
-    return cache[displayName.toLowerCase()] ?? null;
+): CachedProfessorRecord | null {
+    const aliases = [
+        key,
+        displayName,
+        displayToFirstLast(displayName),
+    ];
+
+    for (const alias of aliases) {
+        const entry = getIndexedCacheValue(cacheIndex, alias);
+        if (entry === undefined) continue;
+        if (entry === null) return null;
+        if (!isSbccSchool(entry.school)) return null;
+        if (!isProfessorNameCompatible(displayName, entry)) return null;
+        return entry;
+    }
+
+    return null;
 }
 
 function formatRating(value?: number) {
@@ -88,6 +215,7 @@ function ProfessorsPageContent() {
     const [manualSearchQuery, setManualSearchQuery] = useState<string | null>(null);
     const searchQuery = manualSearchQuery ?? searchQueryFromUrl;
     const [cache, setCache] = useState<CacheMap>({});
+    const cacheIndex = useMemo(() => buildCacheIndex(cache), [cache]);
 
     useEffect(() => {
         let isActive = true;
@@ -117,7 +245,7 @@ function ProfessorsPageContent() {
     const processedData = useMemo(() => {
         return (professors ?? []).map(p => {
             const { lastName, fullName } = processName(p.displayName);
-            const rmp = getCacheEntry(cache, p.key, p.displayName);
+            const rmp = getCacheEntry(cacheIndex, p.key, p.displayName);
             return {
                 ...p,
                 lastName,  // Used for sorting/grouping
@@ -125,7 +253,7 @@ function ProfessorsPageContent() {
                 rmp,
             };
         });
-    }, [cache, professors]);
+    }, [cacheIndex, professors]);
 
     // 2. Filter & Group Logic
     const { groups, alphabet, searchResults } = useMemo(() => {

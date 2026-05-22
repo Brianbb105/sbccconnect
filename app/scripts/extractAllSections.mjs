@@ -5,6 +5,19 @@ import path from 'path';
 const TERM = (process.argv[2] || "202730").trim();
 const TERM_DESC = (process.argv.slice(3).join(" ").trim() || "Fall 2026");
 const OUTPUT_DIR = path.resolve(process.cwd(), `app/data/${TERM}`);
+const OUTPUT_FILE_NAME = 'sections.json';
+const OUTPUT_FILE_PATH = path.join(OUTPUT_DIR, OUTPUT_FILE_NAME);
+const ABSOLUTE_MIN_SECTION_COUNT = 100;
+const MIN_EXISTING_COUNT_RATIO = 0.75;
+const MAX_VALIDATION_ERRORS = 25;
+const VALID_STATUSES = new Set([
+  'OPEN',
+  'CLOSED',
+  'Waitlisted',
+  'STANDBY',
+  'OPEN With Add Code',
+]);
+
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
@@ -16,29 +29,224 @@ const launchArgs = process.env.PUPPETEER_NO_SANDBOX === "false"
 
 const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=dummy&sel_ism=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&level=CR&sel_attr=dummy&sel_subj=%25&sel_crse=&sel_crn=&sel_title=&sel_ptrm=%25&sel_ism=%25&sel_instr=%25&sel_attr=%25&begin_hh=5&begin_mi=0&begin_ap=a&end_hh=11&end_mi=0&end_ap=p&aa=N&bb=N&sel_late_start=N&dd=N&ee=N&gg=N';
 
-(async () => {
-  const browser = await puppeteer.launch({
-    headless: process.env.HEADLESS !== 'false',
-    args: launchArgs,
-  });
-  const page = await browser.newPage();
+const cleanString = (value) => (typeof value === 'string' ? value.trim() : '');
 
-  await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+const formatStatusDistribution = (statusCounts) => {
+  const entries = [...statusCounts.entries()].sort(([a], [b]) => a.localeCompare(b));
+  return entries.map(([status, count]) => `${status}: ${count}`).join(', ');
+};
 
-  const ALL_CLASSES_URL = `https://banner.sbcc.edu/ords/ssb/pw_pub_sched.p_listthislist?TERM=${encodeURIComponent(TERM)}&TERM_DESC=${encodeURIComponent(TERM_DESC)}&${LIST_QUERY_SUFFIX}`;
-
-  console.log('🔗 Accessing SBCC Banner...');
-  await page.goto(ALL_CLASSES_URL, { waitUntil: 'networkidle2', timeout: 60000 });
-
-  try {
-    await page.waitForSelector('tr', { timeout: 10000 });
-  } catch {
-    console.log("⚠️ Warning: Timeout waiting for 'tr'. Page might be empty.");
+const validateTermConfig = () => {
+  if (!/^\d{6}$/.test(TERM)) {
+    throw new Error(`Invalid TERM "${TERM}". Expected a six-digit Banner term.`);
   }
 
-  console.log('✅ Page loaded. Starting Extraction with "Missing Date" Fix...');
+  if (!TERM_DESC) {
+    throw new Error('TERM_DESC is empty. Pass a term description after the term code.');
+  }
+};
 
-  const { data: classesData } = await page.evaluate(() => {
+const readExistingSectionCount = (filePath) => {
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
+  const existingData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  return Array.isArray(existingData) ? existingData.length : null;
+};
+
+const getMinimumSectionCount = (finalFilePath) => {
+  let existingSectionCount = null;
+
+  try {
+    existingSectionCount = readExistingSectionCount(finalFilePath);
+  } catch (error) {
+    console.log(`⚠️ Could not read existing ${OUTPUT_FILE_NAME} for threshold comparison: ${error.message}`);
+  }
+
+  const minimumFromExisting = existingSectionCount === null
+    ? ABSOLUTE_MIN_SECTION_COUNT
+    : Math.floor(existingSectionCount * MIN_EXISTING_COUNT_RATIO);
+
+  return {
+    existingSectionCount,
+    minSectionCount: Math.max(ABSOLUTE_MIN_SECTION_COUNT, minimumFromExisting),
+  };
+};
+
+const validateCourseCode = (courseCode) => {
+  const [subject, ...courseParts] = courseCode.split(/\s+/);
+  const course = courseParts.join(' ');
+
+  return Boolean(
+    /^[A-Z&]{2,8}$/.test(subject || '')
+    && /^[A-Z0-9][A-Z0-9-]*[A-Z0-9]?$/.test(course || '')
+  );
+};
+
+const validateSectionsFile = (tempFilePath, finalFilePath) => {
+  const errors = [];
+  let omittedErrors = 0;
+  let sectionsData;
+
+  const addError = (message) => {
+    if (errors.length < MAX_VALIDATION_ERRORS) {
+      errors.push(message);
+      return;
+    }
+
+    omittedErrors += 1;
+  };
+
+  try {
+    sectionsData = JSON.parse(fs.readFileSync(tempFilePath, 'utf8'));
+  } catch (error) {
+    return {
+      ok: false,
+      errors: [`Temp file is not valid JSON: ${error.message}`],
+      omittedErrors: 0,
+      sectionCount: 0,
+      statusCounts: new Map(),
+      minSectionCount: ABSOLUTE_MIN_SECTION_COUNT,
+      existingSectionCount: null,
+    };
+  }
+
+  const { existingSectionCount, minSectionCount } = getMinimumSectionCount(finalFilePath);
+  const statusCounts = new Map();
+
+  if (!Array.isArray(sectionsData)) {
+    return {
+      ok: false,
+      errors: ['Temp file JSON must be an array of section records.'],
+      omittedErrors: 0,
+      sectionCount: 0,
+      statusCounts,
+      minSectionCount,
+      existingSectionCount,
+    };
+  }
+
+  if (sectionsData.length === 0) {
+    addError('Scrape returned zero section rows.');
+  }
+
+  if (sectionsData.length < minSectionCount) {
+    addError(`Section count ${sectionsData.length} is below required minimum ${minSectionCount}.`);
+  }
+
+  const seenCrns = new Set();
+
+  sectionsData.forEach((section, index) => {
+    const rowLabel = `row ${index + 1}`;
+
+    if (!section || typeof section !== 'object' || Array.isArray(section)) {
+      addError(`${rowLabel}: section record must be an object.`);
+      return;
+    }
+
+    const crn = cleanString(section.crn);
+    const status = cleanString(section.status);
+    const courseCode = cleanString(section.courseCode);
+    const courseTitle = cleanString(section.courseTitle);
+    const units = cleanString(section.units);
+
+    if (!/^\d{5}$/.test(crn)) {
+      addError(`${rowLabel}: missing or invalid CRN.`);
+    } else if (seenCrns.has(crn)) {
+      addError(`${rowLabel}: duplicate CRN ${crn}.`);
+    } else {
+      seenCrns.add(crn);
+    }
+
+    if (!status) {
+      addError(`${rowLabel}: missing status.`);
+    } else {
+      statusCounts.set(status, (statusCounts.get(status) || 0) + 1);
+    }
+
+    if (!courseCode) {
+      addError(`${rowLabel}: missing courseCode.`);
+    } else if (!validateCourseCode(courseCode)) {
+      addError(`${rowLabel}: courseCode "${courseCode}" does not contain a valid subject and course.`);
+    }
+
+    if (!courseTitle) {
+      addError(`${rowLabel}: missing courseTitle.`);
+    }
+
+    if (!/^\d+(?:\.\d+)?$/.test(units)) {
+      addError(`${rowLabel}: missing or invalid units.`);
+    }
+
+    if (!Array.isArray(section.meetings) || section.meetings.length === 0) {
+      addError(`${rowLabel}: meetings must be a non-empty array.`);
+    } else {
+      section.meetings.forEach((meeting, meetingIndex) => {
+        const meetingLabel = `${rowLabel} meeting ${meetingIndex + 1}`;
+
+        if (!meeting || typeof meeting !== 'object' || Array.isArray(meeting)) {
+          addError(`${meetingLabel}: meeting must be an object.`);
+          return;
+        }
+
+        ['type', 'time', 'location', 'instructor', 'dateRange'].forEach((field) => {
+          if (!cleanString(meeting[field])) {
+            addError(`${meetingLabel}: missing ${field}.`);
+          }
+        });
+      });
+    }
+  });
+
+  if (statusCounts.size === 0) {
+    addError('Status distribution is empty.');
+  }
+
+  const unknownStatuses = [...statusCounts.keys()].filter((status) => !VALID_STATUSES.has(status));
+  if (unknownStatuses.length > 0) {
+    addError(`Unknown status values found: ${unknownStatuses.join(', ')}.`);
+  }
+
+  return {
+    ok: errors.length === 0 && omittedErrors === 0,
+    errors,
+    omittedErrors,
+    sectionCount: sectionsData.length,
+    statusCounts,
+    minSectionCount,
+    existingSectionCount,
+  };
+};
+
+const writeTempSectionsFile = (sectionsData) => {
+  const tempFilePath = path.join(OUTPUT_DIR, `${OUTPUT_FILE_NAME}.tmp-${process.pid}-${Date.now()}`);
+  fs.writeFileSync(tempFilePath, JSON.stringify(sectionsData, null, 2));
+  return tempFilePath;
+};
+
+const scrapeSections = async () => {
+  let browser;
+
+  try {
+    browser = await puppeteer.launch({
+      headless: process.env.HEADLESS !== 'false',
+      args: launchArgs,
+    });
+    const page = await browser.newPage();
+
+    await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+
+    const ALL_CLASSES_URL = `https://banner.sbcc.edu/ords/ssb/pw_pub_sched.p_listthislist?TERM=${encodeURIComponent(TERM)}&TERM_DESC=${encodeURIComponent(TERM_DESC)}&${LIST_QUERY_SUFFIX}`;
+
+    console.log(`🔗 Accessing SBCC Banner for ${TERM} (${TERM_DESC})...`);
+    await page.goto(ALL_CLASSES_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+    await page.waitForSelector('tr', { timeout: 10000 });
+    console.log('✅ Banner table rows detected.');
+
+    console.log('✅ Page loaded. Starting Extraction with "Missing Date" Fix...');
+
+    const { data: classesData } = await page.evaluate(() => {
     const rows = Array.from(document.querySelectorAll('tr'));
 
     const resultMap = {};
@@ -911,11 +1119,68 @@ const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=
     return { data: finalData };
   });
 
-  console.log(`🎉 Scraping Complete. Found ${classesData.length} classes.`);
+    if (!Array.isArray(classesData)) {
+      throw new Error('Extraction did not return an array.');
+    }
 
-  const filePath = path.join(OUTPUT_DIR, 'sections.json');
-  fs.writeFileSync(filePath, JSON.stringify(classesData, null, 2));
-  console.log(`💾 JSON saved to ${filePath}`);
+    if (classesData.length === 0) {
+      throw new Error('Extraction returned zero section rows.');
+    }
 
-  await browser.close();
-})();
+    console.log(`🎉 Scraping complete. Extracted ${classesData.length} section rows.`);
+    return classesData;
+  } finally {
+    if (browser) {
+      await browser.close();
+      console.log('✅ Browser closed.');
+    }
+  }
+};
+
+const main = async () => {
+  let tempFilePath = null;
+
+  try {
+    validateTermConfig();
+
+    const classesData = await scrapeSections();
+
+    tempFilePath = writeTempSectionsFile(classesData);
+    console.log(`💾 Wrote scrape output to temp file: ${tempFilePath}`);
+
+    console.log('🧪 Validating scraped sections before replacing production JSON...');
+    const validation = validateSectionsFile(tempFilePath, OUTPUT_FILE_PATH);
+
+    console.log(`📊 Existing section count: ${validation.existingSectionCount ?? 'none'}`);
+    console.log(`📊 Required minimum section count: ${validation.minSectionCount}`);
+    console.log(`📊 Scraped section count: ${validation.sectionCount}`);
+    console.log(`📊 Status distribution: ${formatStatusDistribution(validation.statusCounts) || 'empty'}`);
+
+    if (!validation.ok) {
+      console.error(`❌ Validation failed. Keeping existing ${OUTPUT_FILE_PATH} untouched.`);
+      validation.errors.forEach((error) => console.error(`   - ${error}`));
+
+      if (validation.omittedErrors > 0) {
+        console.error(`   - ${validation.omittedErrors} additional validation errors omitted.`);
+      }
+
+      throw new Error('Validation failed; production JSON was not replaced.');
+    }
+
+    console.log('✅ Validation passed.');
+    fs.renameSync(tempFilePath, OUTPUT_FILE_PATH);
+    tempFilePath = null;
+    console.log(`🔁 Atomically replaced production JSON: ${OUTPUT_FILE_PATH}`);
+  } catch (error) {
+    console.error(`❌ ${error.message}`);
+
+    if (tempFilePath && fs.existsSync(tempFilePath)) {
+      fs.unlinkSync(tempFilePath);
+      console.error(`🧹 Removed temp file: ${tempFilePath}`);
+    }
+
+    process.exitCode = 1;
+  }
+};
+
+main();

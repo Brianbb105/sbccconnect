@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type {
     PlannerAgreement,
@@ -24,6 +24,8 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
     const [majorSearch, setMajorSearch] = useState("");
     const [step, setStep] = useState<PlannerStep>("school");
     const [requirementView, setRequirementView] = useState<RequirementView>("all");
+    const activePanelRef = useRef<HTMLDivElement>(null);
+    const shouldScrollToActivePanelRef = useRef(false);
 
     const visibleSchools = useMemo(() => {
         const query = schoolSearch.trim().toLowerCase();
@@ -48,7 +50,15 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
         agreements.find((agreement) => agreement.schoolId === selectedSchoolId && agreement.key === selectedMajor?.key) ??
         null;
 
+    useEffect(() => {
+        if (!shouldScrollToActivePanelRef.current) return;
+
+        shouldScrollToActivePanelRef.current = false;
+        activePanelRef.current?.scrollIntoView({ block: "start", behavior: "auto" });
+    }, [selectedMajorId, selectedSchoolId, step]);
+
     const handleSchoolClick = (schoolId: string) => {
+        shouldScrollToActivePanelRef.current = true;
         setSelectedSchoolId(schoolId);
         setSelectedMajorId("");
         setMajorSearch("");
@@ -57,12 +67,14 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
     };
 
     const handleMajorClick = (majorId: string) => {
+        shouldScrollToActivePanelRef.current = true;
         setSelectedMajorId(majorId);
         setRequirementView("all");
         setStep("agreement");
     };
 
     const goToSchools = () => {
+        shouldScrollToActivePanelRef.current = true;
         setStep("school");
         setSelectedSchoolId("");
         setSelectedMajorId("");
@@ -70,6 +82,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
     };
 
     const goToMajors = () => {
+        shouldScrollToActivePanelRef.current = true;
         setStep("major");
         setSelectedMajorId("");
         setRequirementView("all");
@@ -131,53 +144,57 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
             </section>
 
             {step === "school" ? (
-                <ChoicePanel
-                    title="Choose A Transfer School"
-                    description="Start with one school. The major list opens after you pick a destination."
-                    searchValue={schoolSearch}
-                    searchPlaceholder="Search schools"
-                    onSearchChange={setSchoolSearch}
-                >
-                    <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-                        {visibleSchools.map((school) => (
-                            <SchoolCard key={school.id} school={school} onClick={() => handleSchoolClick(school.id)} />
-                        ))}
-                    </div>
-                    {visibleSchools.length === 0 ? <EmptyState text="No schools match that search." /> : null}
-                </ChoicePanel>
+                <div ref={activePanelRef} className="scroll-mt-6">
+                    <ChoicePanel
+                        title="Choose A Transfer School"
+                        description="Start with one school. The major list opens after you pick a destination."
+                        searchValue={schoolSearch}
+                        searchPlaceholder="Search schools"
+                        onSearchChange={setSchoolSearch}
+                    >
+                        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                            {visibleSchools.map((school) => (
+                                <SchoolCard key={school.id} school={school} onClick={() => handleSchoolClick(school.id)} />
+                            ))}
+                        </div>
+                        {visibleSchools.length === 0 ? <EmptyState text="No schools match that search." /> : null}
+                    </ChoicePanel>
+                </div>
             ) : null}
 
             {step === "major" && selectedSchool ? (
-                <ChoicePanel
-                    title={selectedSchool.name}
-                    description={
-                        selectedSchool.hasMajorList
-                            ? "Choose a major to open its agreement."
-                            : "This school is available in the partner cache, but its major list is not downloaded yet."
-                    }
-                    searchValue={majorSearch}
-                    searchPlaceholder="Search majors"
-                    onSearchChange={setMajorSearch}
-                    backLabel="Back To Schools"
-                    onBack={goToSchools}
-                >
-                    {selectedSchool.hasMajorList ? (
-                        <>
-                            <div className="grid gap-3 md:grid-cols-2">
-                                {visibleMajors.map((major) => (
-                                    <MajorCard key={major.id} major={major} onClick={() => handleMajorClick(major.id)} />
-                                ))}
-                            </div>
-                            {visibleMajors.length === 0 ? <EmptyState text="No majors match that search." /> : null}
-                        </>
-                    ) : (
-                        <MissingAgreementPanel school={selectedSchool} major={null} />
-                    )}
-                </ChoicePanel>
+                <div ref={activePanelRef} className="scroll-mt-6">
+                    <ChoicePanel
+                        title={selectedSchool.name}
+                        description={
+                            selectedSchool.hasMajorList
+                                ? "Choose a major to open its agreement."
+                                : "This school is available in the partner cache, but its major list is not downloaded yet."
+                        }
+                        searchValue={majorSearch}
+                        searchPlaceholder="Search majors"
+                        onSearchChange={setMajorSearch}
+                        backLabel="Back To Schools"
+                        onBack={goToSchools}
+                    >
+                        {selectedSchool.hasMajorList ? (
+                            <>
+                                <div className="grid gap-3 md:grid-cols-2">
+                                    {visibleMajors.map((major) => (
+                                        <MajorCard key={major.id} major={major} onClick={() => handleMajorClick(major.id)} />
+                                    ))}
+                                </div>
+                                {visibleMajors.length === 0 ? <EmptyState text="No majors match that search." /> : null}
+                            </>
+                        ) : (
+                            <MissingAgreementPanel school={selectedSchool} major={null} />
+                        )}
+                    </ChoicePanel>
+                </div>
             ) : null}
 
             {step === "agreement" && selectedSchool ? (
-                <div className="space-y-4">
+                <div ref={activePanelRef} className="scroll-mt-6 space-y-4">
                     <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 shadow-sm md:px-6">
                         <button
                             type="button"

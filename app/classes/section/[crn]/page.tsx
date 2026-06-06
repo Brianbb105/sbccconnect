@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import CourseCatalogDetails from "@/components/CourseCatalogDetails";
+import SectionGradeDistribution from "@/components/SectionGradeDistribution";
 import {
     extractAdvisories,
     extractPrerequisites,
@@ -233,6 +234,14 @@ export default function SectionDetailsPage() {
                             prerequisites={prerequisites}
                             transferInformation={transferInformation}
                         />
+
+                        {primaryInstructor !== "TBA" ? (
+                            <SectionGradeDistribution
+                                courseCode={section.courseCode}
+                                currentTermCode={currentTerm.code}
+                                instructorName={primaryInstructor}
+                            />
+                        ) : null}
 
                         <div>
                             <h2 className="mb-3 text-lg font-bold text-slate-800">Meeting Details</h2>

@@ -5,6 +5,15 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
 import { getDepartmentFullName } from "@/lib/departments";
+import {
+    EASY_GE_MIN_A_RATE_PERCENT,
+    EASY_GE_MIN_EXACT_A_ENROLLMENT,
+    EASY_GE_MIN_EXACT_A_SECTIONS,
+    formatAForRate,
+    getCourseGradeSummary,
+    isEasyGeCourse,
+    type CourseGradeSummary,
+} from "@/lib/gradeDistribution";
 import { useTermSections } from "@/lib/termDataClient";
 import { SUPPORTED_TERMS, appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
@@ -25,6 +34,8 @@ type IgetcCourse = {
     courseTitle: string;
     subject: string;
     count: number;
+    areas: string[];
+    gradeSummary: CourseGradeSummary | null;
 };
 
 function getSubject(courseStr: string) {
@@ -42,6 +53,7 @@ function DepartmentsPageContent() {
     const { data: sections, loading: sectionsLoading, error: sectionsError } = useTermSections<Section>(currentTerm.slug);
     const [selectedLetter, setSelectedLetter] = useState("ALL");
     const [manualIgetcSelection, setManualIgetcSelection] = useState<string | null>(null);
+    const [showEasyOnly, setShowEasyOnly] = useState(searchParams.get("easy") === "1");
     const [searchQuery, setSearchQuery] = useState("");
 
     const igetcFromUrl = useMemo(() => {
@@ -58,9 +70,10 @@ function DepartmentsPageContent() {
         router.push(`/classes?${nextParams.toString()}`);
     };
 
-    const { departments, groups, alphabet, igetcAreas, igetcCoursesByArea } = useMemo(() => {
+    const { departments, groups, alphabet, igetcAreas, igetcCoursesByArea, allIgetcCourses } = useMemo(() => {
         const departmentMap = new Map<string, number>();
         const igetcCourseMap = new Map<string, Map<string, IgetcCourse>>();
+        const allIgetcCourseMap = new Map<string, IgetcCourse>();
 
         (sections ?? []).forEach((section) => {
             const courseCode = (section.courseCode || "").trim().toUpperCase();
@@ -101,15 +114,44 @@ function DepartmentsPageContent() {
                         courseTitle: title,
                         subject,
                         count: 0,
+                        areas: [],
+                        gradeSummary: getCourseGradeSummary(courseCode),
                     });
                 }
 
-                const entry = courseMapForArea.get(courseCode)!;
-                entry.count += 1;
-                if (!entry.courseTitle && title) {
-                    entry.courseTitle = title;
+                const areaEntry = courseMapForArea.get(courseCode)!;
+                areaEntry.count += 1;
+                if (!areaEntry.courseTitle && title) {
+                    areaEntry.courseTitle = title;
+                }
+                if (!areaEntry.areas.includes(area)) {
+                    areaEntry.areas.push(area);
                 }
             });
+
+            if (sectionIgetcAreas.size > 0) {
+                if (!allIgetcCourseMap.has(courseCode)) {
+                    allIgetcCourseMap.set(courseCode, {
+                        courseCode,
+                        courseTitle: title,
+                        subject,
+                        count: 0,
+                        areas: [],
+                        gradeSummary: getCourseGradeSummary(courseCode),
+                    });
+                }
+
+                const allEntry = allIgetcCourseMap.get(courseCode)!;
+                allEntry.count += 1;
+                if (!allEntry.courseTitle && title) {
+                    allEntry.courseTitle = title;
+                }
+                sectionIgetcAreas.forEach((area) => {
+                    if (!allEntry.areas.includes(area)) {
+                        allEntry.areas.push(area);
+                    }
+                });
+            }
         });
 
         const sortedDepartments: Department[] = Array.from(departmentMap.entries())
@@ -143,12 +185,15 @@ function DepartmentsPageContent() {
             alphabet: Object.keys(groupedDepartments).sort(),
             igetcAreas: igetcAreaList,
             igetcCoursesByArea: igetcCourseResults,
+            allIgetcCourses: Array.from(allIgetcCourseMap.values()).sort((a, b) =>
+                a.courseCode.localeCompare(b.courseCode, undefined, { numeric: true })
+            ),
         };
     }, [sections]);
 
     const { currentDepartments, currentIgetcCourses, isSearching, isIgetcView } = useMemo(() => {
         const searching = searchQuery.trim() !== "";
-        const igetcView = !searching && selectedIgetc !== "ALL";
+        const igetcView = !searching && (selectedIgetc !== "ALL" || showEasyOnly);
 
         const departmentSearchResults = searching
             ? departments.filter((department) =>
@@ -162,7 +207,23 @@ function DepartmentsPageContent() {
                 ? departments
                 : (groups[selectedLetter] || []);
 
-        const filteredIgetcCourses = igetcView ? (igetcCoursesByArea[selectedIgetc] || []) : [];
+        const sourceIgetcCourses = selectedIgetc === "ALL"
+            ? allIgetcCourses
+            : (igetcCoursesByArea[selectedIgetc] || []);
+        const filteredIgetcCourses = igetcView
+            ? sourceIgetcCourses
+                .filter((course) => !showEasyOnly || isEasyGeCourse(course.gradeSummary))
+                .sort((a, b) => {
+                    if (!showEasyOnly) {
+                        return a.courseCode.localeCompare(b.courseCode, undefined, { numeric: true });
+                    }
+
+                    const aRate = a.gradeSummary?.aRate.percent ?? -1;
+                    const bRate = b.gradeSummary?.aRate.percent ?? -1;
+                    if (aRate !== bRate) return bRate - aRate;
+                    return a.courseCode.localeCompare(b.courseCode, undefined, { numeric: true });
+                })
+            : [];
 
         return {
             currentDepartments: filteredDepartments,
@@ -170,7 +231,7 @@ function DepartmentsPageContent() {
             isSearching: searching,
             isIgetcView: igetcView,
         };
-    }, [searchQuery, selectedIgetc, selectedLetter, departments, groups, igetcCoursesByArea]);
+    }, [searchQuery, selectedIgetc, showEasyOnly, selectedLetter, departments, groups, igetcCoursesByArea, allIgetcCourses]);
 
     const resultCount = isIgetcView ? currentIgetcCourses.length : currentDepartments.length;
     const showAlphabetGroups = !isSearching && !isIgetcView && selectedLetter === "ALL";
@@ -181,6 +242,18 @@ function DepartmentsPageContent() {
             .map((letter) => ({ letter, items: groups[letter] || [] }))
             .filter((group) => group.items.length > 0);
     }, [showAlphabetGroups, alphabet, groups]);
+
+    const resultHeadingLabel = isSearching
+        ? `Search: "${searchQuery}"`
+        : isIgetcView
+            ? showEasyOnly
+                ? selectedIgetc === "ALL"
+                    ? "Easy GEs"
+                    : `Easy IGETC ${selectedIgetc}`
+                : `IGETC ${selectedIgetc}`
+            : selectedLetter === "ALL"
+                ? "All Departments"
+                : selectedLetter;
 
     const renderDepartmentCard = (dept: Department) => (
         <Link
@@ -201,6 +274,65 @@ function DepartmentsPageContent() {
             </div>
         </Link>
     );
+
+    const renderIgetcCourseCard = (course: IgetcCourse) => {
+        const gradeSummary = course.gradeSummary;
+        const aRatePercent = gradeSummary?.aRate.exact && typeof gradeSummary.aRate.percent === "number"
+            ? gradeSummary.aRate.percent
+            : null;
+        const easyCourse = isEasyGeCourse(gradeSummary);
+        const areasLabel = course.areas.length > 0
+            ? `IGETC ${course.areas.slice(0, 4).join(", ")}${course.areas.length > 4 ? ` +${course.areas.length - 4}` : ""}`
+            : "";
+
+        return (
+            <Link
+                key={`${selectedIgetc}-${course.courseCode}`}
+                href={appendTermToHref(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.courseCode)}`, currentTerm.slug)}
+                className="block group h-full"
+            >
+                <div className="bg-white border border-gray-200 rounded-xl p-5 text-center hover:border-[#0f172a] hover:shadow-md transition-all cursor-pointer h-full flex flex-col justify-center items-center">
+                    <div className="text-xl font-bold text-slate-800 group-hover:text-[#0f172a] mb-1">
+                        {course.courseCode}
+                    </div>
+                    <div className="text-xs text-slate-500 mb-2 line-clamp-2">
+                        {course.courseTitle || "Course title unavailable"}
+                    </div>
+
+                    {showEasyOnly && selectedIgetc === "ALL" && areasLabel ? (
+                        <div className="mb-2 text-[11px] font-semibold leading-tight text-indigo-700">
+                            {areasLabel}
+                        </div>
+                    ) : null}
+
+                    <div className="flex flex-col items-center gap-2">
+                        <div className="text-sm text-slate-500 font-medium bg-gray-100 px-3 py-1 rounded-full group-hover:bg-slate-100 group-hover:text-[#0f172a] transition-colors">
+                            {course.count} section{course.count !== 1 && "s"}
+                        </div>
+
+                        {aRatePercent !== null && gradeSummary ? (
+                            <>
+                                <div className={`text-sm font-bold px-3 py-1 rounded-full border ${
+                                    easyCourse
+                                        ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+                                        : "border-slate-200 bg-slate-50 text-slate-600"
+                                }`}>
+                                    {formatAForRate(aRatePercent)} A rate
+                                </div>
+                                <div className="text-[11px] font-medium leading-tight text-slate-500">
+                                    {gradeSummary.exactASectionCount} grade section{gradeSummary.exactASectionCount !== 1 && "s"} | {gradeSummary.exactAEnrollment} students
+                                </div>
+                            </>
+                        ) : (
+                            <div className="text-[11px] font-semibold leading-tight text-slate-400">
+                                A rate masked
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </Link>
+        );
+    };
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-slate-800">
@@ -267,9 +399,10 @@ function DepartmentsPageContent() {
                                 onClick={() => {
                                     setSelectedLetter("ALL");
                                     setManualIgetcSelection("ALL");
+                                    setShowEasyOnly(false);
                                 }}
                                 className={`px-4 h-10 rounded-full font-bold transition-all text-sm ${
-                                    selectedLetter === "ALL" && selectedIgetc === "ALL"
+                                    selectedLetter === "ALL" && selectedIgetc === "ALL" && !showEasyOnly
                                         ? "bg-[#0f172a] text-white shadow-md scale-105"
                                         : "bg-gray-50 text-slate-600 hover:bg-slate-100 hover:text-[#0f172a]"
                                 }`}
@@ -287,6 +420,7 @@ function DepartmentsPageContent() {
                                         onClick={() => {
                                             setSelectedLetter(letter);
                                             setManualIgetcSelection("ALL");
+                                            setShowEasyOnly(false);
                                         }}
                                         className={`w-10 h-10 rounded-full font-bold transition-all ${
                                             isActive
@@ -304,12 +438,27 @@ function DepartmentsPageContent() {
                             <button
                                 onClick={() => setManualIgetcSelection("ALL")}
                                 className={`px-4 h-10 rounded-full font-bold transition-all text-sm ${
-                                    selectedIgetc === "ALL"
+                                    selectedIgetc === "ALL" && !showEasyOnly
                                         ? "bg-[#0f172a] text-white shadow-md scale-105"
                                         : "bg-gray-50 text-slate-600 hover:bg-slate-100 hover:text-[#0f172a]"
                                 }`}
                             >
                                 All
+                            </button>
+
+                            <button
+                                onClick={() => {
+                                    setSelectedLetter("ALL");
+                                    setShowEasyOnly((value) => !value);
+                                }}
+                                title={`Easy GEs require ${EASY_GE_MIN_A_RATE_PERCENT}%+ exact A rate, ${EASY_GE_MIN_EXACT_A_SECTIONS}+ exact grade sections, and ${EASY_GE_MIN_EXACT_A_ENROLLMENT}+ exact enrolled students.`}
+                                className={`px-4 h-10 rounded-full font-bold transition-all text-sm ${
+                                    showEasyOnly
+                                        ? "bg-emerald-700 text-white shadow-md scale-105"
+                                        : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
+                                }`}
+                            >
+                                Easy GEs
                             </button>
 
                             <div className="w-px bg-gray-300 mx-1 h-6 self-center"></div>
@@ -341,13 +490,7 @@ function DepartmentsPageContent() {
                                 ? "bg-slate-100 text-slate-700"
                                 : "bg-slate-200 text-[#0f172a]"
                         }`}>
-                            {isSearching
-                                ? `Search: "${searchQuery}"`
-                                : isIgetcView
-                                    ? `IGETC ${selectedIgetc}`
-                                    : selectedLetter === "ALL"
-                                        ? "All Departments"
-                                        : selectedLetter}
+                            {resultHeadingLabel}
                         </span>
                         <span className="text-slate-500 font-normal text-base">
                             {resultCount} Result{resultCount !== 1 && "s"}
@@ -357,25 +500,7 @@ function DepartmentsPageContent() {
                     {resultCount > 0 ? (
                         isIgetcView ? (
                             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                                {currentIgetcCourses.map((course) => (
-                                    <Link
-                                        key={`${selectedIgetc}-${course.courseCode}`}
-                                        href={appendTermToHref(`/classes/${encodeURIComponent(course.subject)}/${encodeURIComponent(course.courseCode)}`, currentTerm.slug)}
-                                        className="block group h-full"
-                                    >
-                                        <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:border-[#0f172a] hover:shadow-md transition-all cursor-pointer h-full flex flex-col justify-center items-center">
-                                            <div className="text-xl font-bold text-slate-800 group-hover:text-[#0f172a] mb-1">
-                                                {course.courseCode}
-                                            </div>
-                                            <div className="text-xs text-slate-500 mb-2 line-clamp-2">
-                                                {course.courseTitle || "Course title unavailable"}
-                                            </div>
-                                            <div className="text-sm text-slate-500 font-medium bg-gray-100 px-3 py-1 rounded-full group-hover:bg-slate-100 group-hover:text-[#0f172a] transition-colors">
-                                                {course.count} section{course.count !== 1 && "s"}
-                                            </div>
-                                        </div>
-                                    </Link>
-                                ))}
+                                {currentIgetcCourses.map(renderIgetcCourseCard)}
                             </div>
                         ) : (
                             showAlphabetGroups ? (
@@ -400,7 +525,11 @@ function DepartmentsPageContent() {
                     ) : (
                         <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
                             <p className="text-slate-400 text-lg">
-                                {isIgetcView ? "No classes found for this IGETC area." : "No departments found."}
+                                {isIgetcView
+                                    ? showEasyOnly
+                                        ? "No easy GE classes match this selection."
+                                        : "No classes found for this IGETC area."
+                                    : "No departments found."}
                             </p>
                             {isSearching && (
                                 <button

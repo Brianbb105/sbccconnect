@@ -33,6 +33,7 @@ const DEFAULT_INPUT = 'app/data/grade-distributions/raw/20260506_grade_distribut
 const DEFAULT_JSON_OUTPUT = 'app/data/grade-distributions/sbcc-grade-distributions-2025.json';
 const DEFAULT_CSV_OUTPUT = 'app/data/grade-distributions/sbcc-grade-distributions-2025.csv';
 const DEFAULT_INSTRUCTOR_SUMMARY_OUTPUT = 'app/data/grade-distributions/sbcc-grade-distribution-instructor-course-summaries-2025.json';
+const DEFAULT_COURSE_SUMMARY_OUTPUT = 'app/data/grade-distributions/sbcc-grade-distribution-course-summaries-2025.json';
 
 function parseArgs(argv) {
   return argv.reduce(
@@ -45,6 +46,8 @@ function parseArgs(argv) {
         options.outCsv = arg.slice('--out-csv='.length);
       } else if (arg.startsWith('--out-instructor-summary=')) {
         options.outInstructorSummary = arg.slice('--out-instructor-summary='.length);
+      } else if (arg.startsWith('--out-course-summary=')) {
+        options.outCourseSummary = arg.slice('--out-course-summary='.length);
       } else {
         throw new Error(`Unknown argument: ${arg}`);
       }
@@ -56,6 +59,7 @@ function parseArgs(argv) {
       outJson: DEFAULT_JSON_OUTPUT,
       outCsv: DEFAULT_CSV_OUTPUT,
       outInstructorSummary: DEFAULT_INSTRUCTOR_SUMMARY_OUTPUT,
+      outCourseSummary: DEFAULT_COURSE_SUMMARY_OUTPUT,
     },
   );
 }
@@ -485,6 +489,95 @@ function buildInstructorSummaryPayload(records, source) {
   };
 }
 
+function buildCourseSummaryPayload(records, source) {
+  const summariesByCourse = new Map();
+
+  records.forEach((record) => {
+    if (!summariesByCourse.has(record.courseCode)) {
+      summariesByCourse.set(record.courseCode, {
+        courseCode: record.courseCode,
+        subject: record.subject,
+        courseNumber: record.courseNumber,
+        courseTitle: record.courseTitle,
+        recordCount: 0,
+        exactASectionCount: 0,
+        maskedASectionCount: 0,
+        exactAEnrollment: 0,
+        exactACount: 0,
+        terms: new Map(),
+        instructors: new Set(),
+      });
+    }
+
+    const summary = summariesByCourse.get(record.courseCode);
+    const enrolled = record.section?.enrolled ?? 0;
+    const hasExactA = typeof record.grades.A === 'number' && enrolled > 0;
+
+    summary.recordCount += 1;
+    if (!summary.courseTitle && record.courseTitle) {
+      summary.courseTitle = record.courseTitle;
+    }
+
+    if (!summary.terms.has(record.termCode)) {
+      summary.terms.set(record.termCode, {
+        termCode: record.termCode,
+        termSlug: record.termSlug,
+        termLabel: record.termLabel,
+      });
+    }
+
+    if (record.primaryInstructor) {
+      summary.instructors.add(record.primaryInstructor);
+    }
+
+    if (hasExactA) {
+      summary.exactASectionCount += 1;
+      summary.exactAEnrollment += enrolled;
+      summary.exactACount += record.grades.A;
+    } else if (record.suppressedGrades.includes('A')) {
+      summary.maskedASectionCount += 1;
+    }
+  });
+
+  const summaries = Array.from(summariesByCourse.values())
+    .map((summary) => ({
+      courseCode: summary.courseCode,
+      subject: summary.subject,
+      courseNumber: summary.courseNumber,
+      courseTitle: summary.courseTitle,
+      recordCount: summary.recordCount,
+      exactASectionCount: summary.exactASectionCount,
+      maskedASectionCount: summary.maskedASectionCount,
+      exactAEnrollment: summary.exactAEnrollment,
+      exactACount: summary.exactACount,
+      aRate: summary.exactAEnrollment > 0
+        ? {
+            exact: true,
+            percent: (summary.exactACount / summary.exactAEnrollment) * 100,
+            method: 'weighted-exact-a-counts',
+          }
+        : {
+            exact: false,
+            percent: null,
+            method: 'masked',
+          },
+      termCount: summary.terms.size,
+      instructorCount: summary.instructors.size,
+      terms: Array.from(summary.terms.values()).sort((a, b) => a.termCode.localeCompare(b.termCode)),
+    }))
+    .sort((a, b) => a.courseCode.localeCompare(b.courseCode, undefined, { numeric: true }));
+
+  return {
+    schemaVersion: 1,
+    source: {
+      ...source,
+      summary: 'Course-level historical A-rate summaries for GE discovery. A-rate uses only exact visible A counts and excludes masked A buckets.',
+      gradeColumns: ['A'],
+    },
+    summaries,
+  };
+}
+
 function csvEscape(value) {
   if (value === null || value === undefined) return '';
 
@@ -582,6 +675,7 @@ function main() {
   const outputJsonPath = path.resolve(process.cwd(), options.outJson);
   const outputCsvPath = path.resolve(process.cwd(), options.outCsv);
   const outputInstructorSummaryPath = path.resolve(process.cwd(), options.outInstructorSummary);
+  const outputCourseSummaryPath = path.resolve(process.cwd(), options.outCourseSummary);
   const rawText = fs.readFileSync(inputPath, 'utf8');
   const rawRecords = parseRawRows(rawText);
   const records = sortRecords(buildRecords(rawRecords, loadSectionsByTerm()));
@@ -609,19 +703,23 @@ function main() {
     records,
   };
   const instructorSummaryPayload = buildInstructorSummaryPayload(records, source);
+  const courseSummaryPayload = buildCourseSummaryPayload(records, source);
 
   ensureParentDirectory(outputJsonPath);
   ensureParentDirectory(outputCsvPath);
   ensureParentDirectory(outputInstructorSummaryPath);
+  ensureParentDirectory(outputCourseSummaryPath);
 
   fs.writeFileSync(outputJsonPath, `${JSON.stringify(payload, null, 2)}\n`);
   fs.writeFileSync(outputCsvPath, buildCsv(records));
   fs.writeFileSync(outputInstructorSummaryPath, `${JSON.stringify(instructorSummaryPayload, null, 2)}\n`);
+  fs.writeFileSync(outputCourseSummaryPath, `${JSON.stringify(courseSummaryPayload, null, 2)}\n`);
 
   console.log(`Parsed ${records.length} grade distribution records.`);
   console.log(`Wrote ${path.relative(process.cwd(), outputJsonPath)}`);
   console.log(`Wrote ${path.relative(process.cwd(), outputCsvPath)}`);
   console.log(`Wrote ${path.relative(process.cwd(), outputInstructorSummaryPath)}`);
+  console.log(`Wrote ${path.relative(process.cwd(), outputCourseSummaryPath)}`);
   console.log(`Matched enrollment for ${payload.stats.matchedEnrollmentCount}/${payload.stats.recordCount} records.`);
 }
 

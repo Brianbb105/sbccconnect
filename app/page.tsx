@@ -27,49 +27,24 @@ export default function HomePage() {
                                 The unofficial, student-built website to browse classes and see your professors.
                             </p>
                             <p className="text-slate-500 leading-relaxed md:leading-7 mb-6">
-                                This website helps students browse classes, track course status, check registration dates, and read professor reviews and comments through integrated Rate My Professor data. Course data is sourced from the official SBCC website. Grade distribution features are currently in development. All professor review data is sourced from Rate My Professor.
+                                This website helps students browse classes, track course status, check registration dates, find easier GE options, and read professor reviews and comments through integrated Rate My Professor data. Course data is sourced from the official SBCC website. All professor review data is sourced from Rate My Professor.
                             </p>
                         </div>
                     </div>
 
-                    {/* RIGHT COLUMN: Stacked Cards (Browse + Popular) */}
+                    {/* RIGHT COLUMN: Stacked Cards */}
                     <div className="flex flex-col gap-6">
                         <TermBrowseCard term={featuredTerm} isNew />
                         <TermBrowseCard term={summerTerm} />
-
-                        {/* 2. POPULAR SUBJECTS (Moved Down) */}
-                        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 flex flex-col justify-center items-center text-center hover:shadow-md transition-shadow">
-                            <h2 className={`text-lg font-semibold mb-4 ${darkBlueText}`}>Popular Subjects</h2>
-                            <div className="flex flex-wrap justify-center items-center gap-2">
-                                <Link
-                                    href="/classes"
-                                    data-track="home_subject_all"
-                                    className="home-tab px-3 py-1 bg-slate-100 border border-slate-200 text-slate-600 rounded-full text-xs font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
-                                >
-                                    ALL
-                                </Link>
-                                <div className="h-4 w-px bg-slate-300 mx-1"></div>
-                                {['CS', 'MATH', 'ENG', 'PHYS','ART','COMM','BIOL','CHEM','ECON','ACCT'].map((subject) => (
-                                    <Link
-                                        key={subject}
-                                        href={`/classes/${subject}`}
-                                        data-track={`home_subject_${subject.toLowerCase()}`}
-                                        className="home-tab px-3 py-1 bg-slate-100 border border-slate-200 text-slate-600 rounded-full text-xs font-bold hover:bg-[#0f172a] hover:text-white transition-colors"
-                                    >
-                                        {subject}
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-
+                        <EasyGesCard term={featuredTerm} isNew />
                     </div>
                 </section>
 
                 {/* Bottom Section: Developer & Feedback */}
                 <section className="grid md:grid-cols-2 gap-6">
                     <InfoCard
-                        title="Developer"
-                        content="Built by a CS Student. Click to see more about the developer and the story of building the website."
+                        title="About SBCCPlan"
+                        content="Read more about Grade Distribution, Planner, and Course Schedule."
                         href="/about"
                     />
                     <a
@@ -89,16 +64,20 @@ export default function HomePage() {
     );
 }
 
+function NewPill() {
+    return (
+        <span className="term-new-pill rounded-full border px-3 py-1 text-xs font-bold uppercase">
+            New
+        </span>
+    );
+}
+
 function TermBrowseCard({ term, isNew = false }: { term: TermDefinition; isNew?: boolean }) {
     return (
         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
             <div className="mb-6 flex flex-wrap items-center gap-3">
                 <h2 className="text-xl font-semibold text-[#0f172a]">{term.label}</h2>
-                {isNew ? (
-                    <span className="term-new-pill rounded-full border px-3 py-1 text-xs font-bold uppercase">
-                        New
-                    </span>
-                ) : null}
+                {isNew ? <NewPill /> : null}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full">
@@ -117,6 +96,29 @@ function TermBrowseCard({ term, isNew = false }: { term: TermDefinition; isNew?:
                     Browse All Professors
                 </Link>
             </div>
+        </div>
+    );
+}
+
+function EasyGesCard({ term, isNew = false }: { term: TermDefinition; isNew?: boolean }) {
+    return (
+        <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-8 hover:shadow-md transition-shadow flex flex-col justify-center">
+            <div className="mb-4 flex flex-wrap items-center gap-3">
+                <h2 className="text-xl font-semibold text-[#0f172a]">Easy GEs</h2>
+                {isNew ? <NewPill /> : null}
+            </div>
+
+            <p className="mb-5 text-sm leading-relaxed text-slate-500">
+                Browse GE classes with high historical A rates, then filter by IGETC area.
+            </p>
+
+            <Link
+                href={appendTermToHref("/classes?easy=1", term.slug)}
+                data-track={`home_easy_ges_${term.slug}`}
+                className="home-tab easy-ge-tab bg-white border-2 border-emerald-700 text-emerald-700 py-4 px-6 rounded-2xl font-bold text-center hover:bg-emerald-50 hover:border-emerald-600 hover:text-emerald-700 transition-all hover:-translate-y-1"
+            >
+                Browse Easy GEs
+            </Link>
         </div>
     );
 }

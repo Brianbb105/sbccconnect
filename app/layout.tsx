@@ -1,5 +1,6 @@
 import './globals.css' // <--- MAKE SURE THIS LINE EXISTS AT THE TOP
 import AnalyticsTracker from "@/components/AnalyticsTracker";
+import AnnouncementModal from "@/components/AnnouncementModal";
 import { Analytics } from "@vercel/analytics/react"
 
 const themeInitScript = `
@@ -57,6 +58,7 @@ export default function RootLayout({
         </head>
         <body>
         <AnalyticsTracker />
+        <AnnouncementModal />
         {children}
         <footer className="bg-gray-50 px-6 pb-8 pt-2 text-center text-xs font-semibold uppercase tracking-wide text-slate-500">
             THIS WEBSITE IS NOT AFFILIATED WITH SBCC.

@@ -4,7 +4,8 @@ import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import Header from "@/components/Header";
-import { useAllProfessors } from "@/lib/termDataClient";
+import { getDepartmentFullName } from "@/lib/departments";
+import { useAllProfessors, useTermSections } from "@/lib/termDataClient";
 import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
 
 
@@ -14,6 +15,15 @@ type Professor = {
     displayName: string; // Format: "Ali, Muhammad"
     key: string;         // ID: "MALI"
     terms?: string[];
+};
+
+type SectionMeeting = {
+    instructor?: string;
+};
+
+type Section = {
+    courseCode?: string;
+    meetings?: SectionMeeting[];
 };
 
 type ProfessorTag = {
@@ -110,7 +120,8 @@ function getFirstLastParts(name: string) {
 }
 
 function isCachedProfessor(value: CachedProfessor): value is CachedProfessorRecord {
-    return Boolean(value && typeof value === "object");
+    // Exclude negative-cache "not found" markers — they aren't real rating records.
+    return Boolean(value && typeof value === "object" && (value as { notFound?: boolean }).notFound !== true);
 }
 
 function isFirstCompatible(targetFirst: string, cachedFirst: string) {
@@ -189,7 +200,7 @@ function getCacheEntry(
     for (const alias of aliases) {
         const entry = getIndexedCacheValue(cacheIndex, alias);
         if (entry === undefined) continue;
-        if (entry === null) return null;
+        if (!isCachedProfessor(entry)) return null;
         if (!isSbccSchool(entry.school)) return null;
         if (!isProfessorNameCompatible(displayName, entry)) return null;
         return entry;
@@ -203,10 +214,98 @@ function formatRating(value?: number) {
     return safe > 0 ? safe.toFixed(1) : "N/A";
 }
 
+function formatCount(value?: number) {
+    const safe = Number(value ?? 0);
+    return safe > 0 ? String(safe) : "N/A";
+}
+
+function getCourseSubject(courseCode?: string) {
+    return String(courseCode || "").trim().split(/\s+/)[0]?.toUpperCase() || "";
+}
+
+function addProfessorDepartment(
+    map: Map<string, string[]>,
+    instructor: string | undefined,
+    department: string,
+) {
+    const normalized = normalizeNameForCompare(instructor || "");
+    if (!normalized || !department) return;
+
+    const departments = map.get(normalized) ?? [];
+    if (!departments.includes(department)) {
+        departments.push(department);
+    }
+    map.set(normalized, departments);
+}
+
+function buildCurrentTermDepartmentIndex(sections: Section[] | null) {
+    const index = new Map<string, string[]>();
+
+    (sections ?? []).forEach((section) => {
+        const subject = getCourseSubject(section.courseCode);
+        if (!subject) return;
+
+        const department = getDepartmentFullName(subject);
+        (section.meetings ?? []).forEach((meeting) => {
+            addProfessorDepartment(index, meeting.instructor, department);
+        });
+    });
+
+    return index;
+}
+
+function formatDepartmentLabel(departments: string[] | undefined) {
+    if (!departments || departments.length === 0) {
+        return "SBCC Instructor";
+    }
+
+    if (departments.length <= 2) {
+        return departments.join(", ");
+    }
+
+    return `${departments.slice(0, 2).join(", ")} +${departments.length - 2}`;
+}
+
+function MetricPill({
+    children,
+    emphasis = false,
+}: {
+    children: React.ReactNode;
+    emphasis?: boolean;
+}) {
+    return (
+        <span className={`rounded-full border border-slate-200 px-2 py-1 font-semibold ${
+            emphasis ? "bg-slate-100 text-[#0f172a]" : "bg-slate-50 text-slate-600"
+        }`}>
+            {children}
+        </span>
+    );
+}
+
+function ProfessorMetricPills({ rmp }: { rmp: CachedProfessorRecord | null }) {
+    const reviewCount = Array.isArray(rmp?.reviews) ? rmp.reviews.length : 0;
+    const topTag = Array.isArray(rmp?.topTags) ? rmp.topTags[0]?.tagName : "";
+
+    return (
+        <div className="mt-3 flex flex-wrap gap-2 text-xs">
+            <MetricPill emphasis>Quality {rmp ? formatRating(rmp.avgRating) : "N/A"}</MetricPill>
+            <MetricPill>Difficulty {rmp ? formatRating(rmp.avgDifficulty) : "N/A"}</MetricPill>
+            <MetricPill>Ratings {rmp ? formatCount(rmp.numRatings) : "N/A"}</MetricPill>
+            <MetricPill>Comments {rmp ? formatCount(reviewCount) : "N/A"}</MetricPill>
+            {topTag ? (
+                <MetricPill>
+                    <span className="inline-block max-w-40 truncate align-bottom">{topTag}</span>
+                </MetricPill>
+            ) : null}
+        </div>
+    );
+}
+
 function ProfessorsPageContent() {
     const searchParams = useSearchParams();
     const currentTerm = getTermFromSearchParams(searchParams);
     const { data: professors, loading: professorsLoading, error: professorsError } = useAllProfessors<Professor>();
+    const { data: currentTermSections } = useTermSections<Section>(currentTerm.slug);
     const searchQueryFromUrl = useMemo(() => {
         return (searchParams.get("search") || "").trim();
     }, [searchParams]);
@@ -216,6 +315,10 @@ function ProfessorsPageContent() {
     const searchQuery = manualSearchQuery ?? searchQueryFromUrl;
     const [cache, setCache] = useState<CacheMap>({});
     const cacheIndex = useMemo(() => buildCacheIndex(cache), [cache]);
+    const currentTermDepartmentIndex = useMemo(
+        () => buildCurrentTermDepartmentIndex(currentTermSections),
+        [currentTermSections],
+    );
 
     useEffect(() => {
         let isActive = true;
@@ -246,14 +349,16 @@ function ProfessorsPageContent() {
         return (professors ?? []).map(p => {
             const { lastName, fullName } = processName(p.displayName);
             const rmp = getCacheEntry(cacheIndex, p.key, p.displayName);
+            const inferredDepartments = currentTermDepartmentIndex.get(normalizeNameForCompare(fullName));
             return {
                 ...p,
                 lastName,  // Used for sorting/grouping
                 formattedName: fullName, // Used for display
+                departmentLabel: rmp?.department || formatDepartmentLabel(inferredDepartments),
                 rmp,
             };
         });
-    }, [cacheIndex, professors]);
+    }, [cacheIndex, currentTermDepartmentIndex, professors]);
 
     // 2. Filter & Group Logic
     const { groups, alphabet, searchResults } = useMemo(() => {
@@ -384,35 +489,9 @@ function ProfessorsPageContent() {
                                                 {p.formattedName}
                                             </div>
                                             <div className="mt-1 text-sm text-slate-500">
-                                                {p.rmp?.department || "SBCC Instructor"}
+                                                {p.departmentLabel}
                                             </div>
-                                            {p.rmp ? (
-                                                <div className="mt-3 flex flex-wrap gap-2 text-xs">
-                                                    <span className="rounded-full border border-slate-200 bg-slate-100 px-2 py-1 font-semibold text-[#0f172a]">
-                                                        Quality {formatRating(p.rmp.avgRating)}
-                                                    </span>
-                                                    <span className="rounded-full border border-slate-200 bg-slate-50 px-2 py-1 font-semibold text-slate-600">
-                                                        Difficulty {formatRating(p.rmp.avgDifficulty)}
-                                                    </span>
-                                                    <span className="rounded-full border border-slate-200 bg-slate-50 px-2 py-1 font-semibold text-slate-600">
-                                                        Ratings {Number(p.rmp.numRatings || 0)}
-                                                    </span>
-                                                    {Array.isArray(p.rmp.reviews) && p.rmp.reviews.length > 0 && (
-                                                        <span className="rounded-full border border-slate-200 bg-slate-50 px-2 py-1 font-semibold text-slate-600">
-                                                            Comments {p.rmp.reviews.length}
-                                                        </span>
-                                                    )}
-                                                    {Array.isArray(p.rmp.topTags) && p.rmp.topTags[0]?.tagName && (
-                                                        <span className="truncate rounded-full border border-slate-200 bg-slate-50 px-2 py-1 font-semibold text-slate-600">
-                                                            {p.rmp.topTags[0].tagName}
-                                                        </span>
-                                                    )}
-                                                </div>
-                                            ) : (
-                                                <div className="mt-3 text-xs text-slate-400">
-                                                    No cached rating data yet.
-                                                </div>
-                                            )}
+                                            <ProfessorMetricPills rmp={p.rmp} />
                                         </div>
                                         <div className="ml-4 text-[#0f172a] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all font-bold">
                                             →

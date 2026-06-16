@@ -11,6 +11,8 @@ const SBCC_SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]; // School-2783
 const MIN_MATCH_SCORE = 50;
 const REVIEWS_LIMIT = 30;
 const CACHE_FILE = path.resolve(process.cwd(), "app/data/rmp_cache.json");
+// How long a "not found" result stays trusted before we re-attempt a live lookup.
+const NEGATIVE_TTL_MS = 1000 * 60 * 60 * 24 * 30; // 30 days
 
 const HEADERS = {
   Authorization: "Basic dGVzdDp0ZXN0",
@@ -158,7 +160,18 @@ type CachedProfessor = {
   matchScore?: number;
 };
 
-type CacheMap = Record<string, CachedProfessor | null>;
+// Negative-cache marker: a professor we searched for but found no valid SBCC match.
+// Stored instead of leaving the key absent so we don't re-run the slow live search
+// on every page view.
+type NotFoundMarker = {
+  notFound: true;
+  fetchedAt?: string;
+  queryName?: string;
+};
+
+type CacheValue = CachedProfessor | NotFoundMarker | null;
+
+type CacheMap = Record<string, CacheValue>;
 
 type TeacherSearchResponse = {
   data?: {
@@ -333,9 +346,23 @@ function isSbccSchool(school: RmpNode["school"] | CachedProfessor["school"]): bo
   return SBCC_SCHOOL_IDS.includes(schoolId) || schoolName.includes("santa barbara city college");
 }
 
-function isAcceptableCachedProfessor(value: CachedProfessor | null | undefined): value is CachedProfessor {
+function isAcceptableCachedProfessor(value: CacheValue | undefined): value is CachedProfessor {
   if (!isCachedProfessor(value)) return false;
   return !value.school || isSbccSchool(value.school);
+}
+
+function isNotFoundMarker(value: CacheValue | undefined): value is NotFoundMarker {
+  return Boolean(value && typeof value === "object" && (value as NotFoundMarker).notFound === true);
+}
+
+// A negative-cache hit we still trust: a "not found" marker fetched within the TTL.
+// Untimestamped legacy `null` entries are treated as stale so they get re-checked once
+// (and upgraded to a fresh marker on miss).
+function isFreshNegativeCache(value: CacheValue | undefined): boolean {
+  if (!isNotFoundMarker(value)) return false;
+  const fetchedAt = Date.parse(String(value.fetchedAt || ""));
+  if (!Number.isFinite(fetchedAt)) return false;
+  return Date.now() - fetchedAt < NEGATIVE_TTL_MS;
 }
 
 function buildQueryVariants(name: string): string[] {
@@ -491,8 +518,8 @@ function findCacheByExactName(
   return null;
 }
 
-function isCachedProfessor(value: CachedProfessor | null | undefined): value is CachedProfessor {
-  return Boolean(value && typeof value === "object");
+function isCachedProfessor(value: CacheValue | undefined): value is CachedProfessor {
+  return Boolean(value && typeof value === "object" && (value as NotFoundMarker).notFound !== true);
 }
 
 async function readJsonFile<T>(filePath: string, fallback: T): Promise<T> {
@@ -637,17 +664,74 @@ function normalizeLiveNodeForCache(
   };
 }
 
+// Serializes cache mutations within this process. The cache lives in a single JSON
+// file, so concurrent requests doing read-modify-write would otherwise race and lose
+// each other's updates (or, worse, read a half-written file and clobber everything).
+let cacheWriteQueue: Promise<void> = Promise.resolve();
+
+// Strict read for the write path: a genuinely missing file is fine (start fresh), but
+// any other read/parse failure means we must NOT proceed — overwriting good data with a
+// fallback {} would wipe the entire cache. Returns null to signal "abort the write".
+async function readCacheForWrite(): Promise<CacheMap | null> {
+  try {
+    const raw = await fs.readFile(CACHE_FILE, "utf8");
+    return JSON.parse(raw) as CacheMap;
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return {};
+    return null;
+  }
+}
+
+// Atomic write: serialize to a temp file in the same directory, then rename over the
+// target. rename(2) is atomic on a single filesystem, so concurrent readers always see
+// either the old or the new complete file — never a truncated one.
+async function atomicWriteCache(cache: CacheMap): Promise<void> {
+  const tmpFile = `${CACHE_FILE}.${process.pid}.${Date.now()}.tmp`;
+  await fs.writeFile(tmpFile, `${JSON.stringify(cache, null, 2)}\n`);
+  await fs.rename(tmpFile, CACHE_FILE);
+}
+
+// Runs `mutate` against the current cache under the write queue. `mutate` returns true
+// if it changed something and a write should happen.
+async function mutateCache(mutate: (cache: CacheMap) => boolean): Promise<void> {
+  const run = cacheWriteQueue.then(async () => {
+    try {
+      const cache = await readCacheForWrite();
+      if (!cache) return; // existing file unreadable: refuse to clobber it
+      if (!mutate(cache)) return;
+      await atomicWriteCache(cache);
+    } catch {
+      // Some deployment environments are read-only; serving still works without persistence.
+    }
+  });
+  cacheWriteQueue = run.catch(() => {});
+  return run;
+}
+
 async function writeCacheEntry(key: string, entry: CachedProfessor): Promise<void> {
   const normalizedKey = normalizeCacheKey(key);
   if (!normalizedKey) return;
 
-  try {
-    const cache = await readJsonFile<CacheMap>(CACHE_FILE, {});
+  await mutateCache((cache) => {
     cache[normalizedKey] = entry;
-    await fs.writeFile(CACHE_FILE, `${JSON.stringify(cache, null, 2)}\n`);
-  } catch {
-    // Some deployment environments are read-only; live data should still render.
-  }
+    return true;
+  });
+}
+
+async function writeNotFoundMarker(key: string | null, queryName: string): Promise<void> {
+  const normalizedKey = normalizeCacheKey(key || queryName);
+  if (!normalizedKey) return;
+
+  await mutateCache((cache) => {
+    // Never clobber a real hit that may have landed in the meantime.
+    if (isCachedProfessor(cache[normalizedKey])) return false;
+    cache[normalizedKey] = {
+      notFound: true,
+      fetchedAt: new Date().toISOString(),
+      queryName,
+    };
+    return true;
+  });
 }
 
 async function cacheLiveNode(
@@ -757,12 +841,18 @@ export async function GET(request: Request) {
     if (explicitKey && isAcceptableCachedProfessor(directExplicitCache)) {
       return NextResponse.json(formatApiResponse(directExplicitCache, "cache", explicitKey));
     }
+    if (explicitKey && isFreshNegativeCache(directExplicitCache)) {
+      return NextResponse.json({ error: "Professor not found", source: "cache" }, { status: 404 });
+    }
 
     const resolvedKey = resolveProfessorKey(name, explicitKey, professors);
     const directCache = resolvedKey ? cache[resolvedKey] : null;
 
     if (resolvedKey && isAcceptableCachedProfessor(directCache)) {
       return NextResponse.json(formatApiResponse(directCache, "cache", resolvedKey));
+    }
+    if (resolvedKey && isFreshNegativeCache(directCache)) {
+      return NextResponse.json({ error: "Professor not found", source: "cache" }, { status: 404 });
     }
 
     const cacheByName = findCacheByExactName(cache, name);
@@ -782,6 +872,9 @@ export async function GET(request: Request) {
       return NextResponse.json(formatApiResponse(cachedEntry, "cache", resolvedKey || explicitKey));
     }
 
+    // No live match: record a negative-cache marker so we don't re-run this slow
+    // search on the next page view (TTL-gated by isFreshNegativeCache above).
+    await writeNotFoundMarker(resolvedKey || explicitKey, name);
     return NextResponse.json({ error: "Professor not found" }, { status: 404 });
   } catch (error) {
     const details = error instanceof Error ? error.message : "Unknown error";

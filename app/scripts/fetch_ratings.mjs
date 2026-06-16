@@ -104,6 +104,14 @@ const TEACHER_RATINGS_QUERY = `
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// Atomic write: temp file + rename, so a reader (e.g. the running dev server) never
+// sees a truncated cache file mid-write.
+function atomicWriteCache(cache) {
+  const tmpFile = `${OUTPUT_FILE}.${process.pid}.${Date.now()}.tmp`;
+  fs.writeFileSync(tmpFile, `${JSON.stringify(cache, null, 2)}\n`);
+  fs.renameSync(tmpFile, OUTPUT_FILE);
+}
+
 function stripJunk(s) {
   return String(s || "")
     .replace(/\(.*?\)/g, "")
@@ -442,9 +450,16 @@ async function fetchProfessorBestMatch(displayName) {
   return { node: bestNode, score: bestScore, variant: bestVariant };
 }
 
+// Negative-cache marker: searched but no valid SBCC match. Mirrors the API route so
+// the runtime can short-circuit "not found" professors instead of re-running the slow
+// live search on every page view.
+function isNegativeEntry(value) {
+  return value === null || (value && typeof value === "object" && value.notFound === true);
+}
+
 function shouldSkipCached(cacheEntry) {
   if (!cacheEntry) return false;
-  if (cacheEntry === null) return false;
+  if (isNegativeEntry(cacheEntry)) return false;
   if (!SKIP_IF_HAS_TAGS) return false;
   const hasTags = Array.isArray(cacheEntry.topTags) && cacheEntry.topTags.length > 0;
   const hasReviewsField = Array.isArray(cacheEntry.reviews);
@@ -541,7 +556,7 @@ function loadInputProfessors(inputTerms) {
     ? filteredByKey.filter((p, index) => {
         const key = normalizeProfessorKey(p, index);
         if (!Object.prototype.hasOwnProperty.call(cache, key)) return true;
-        return cache[key] === null && !SKIP_NULLS;
+        return isNegativeEntry(cache[key]) && !SKIP_NULLS;
       })
     : filteredByKey;
   const professors = LIMIT > 0 ? filteredByCacheState.slice(0, LIMIT) : filteredByCacheState;
@@ -572,7 +587,7 @@ function loadInputProfessors(inputTerms) {
 
       if (!best) {
         console.log("❌ Not Found");
-        cache[key] = null;
+        cache[key] = { notFound: true, fetchedAt: new Date().toISOString(), queryName: displayName };
         await sleep(220);
         continue;
       }
@@ -598,7 +613,7 @@ function loadInputProfessors(inputTerms) {
     await sleep(260);
 
     if ((index + 1) % 20 === 0) {
-      fs.writeFileSync(OUTPUT_FILE, JSON.stringify(cache, null, 2));
+      atomicWriteCache(cache);
       console.log(`💾 Autosaved at ${index + 1}/${professors.length}`);
     }
   }

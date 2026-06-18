@@ -202,13 +202,17 @@ export default function ProfessorPage({ params }: { params: Promise<{ name: stri
                                 <p className="text-slate-500 mb-6">Instructor • Santa Barbara City College</p>
 
                                 <div className="p-6 bg-slate-100 rounded-xl border border-slate-200 mb-6">
-                                    <p className="text-[#0f172a] font-medium mb-3">Live ratings currently unavailable</p>
+                                    <p className="text-[#0f172a] font-medium mb-1">No RateMyProfessors rating found</p>
+                                    <p className="text-sm text-slate-500 mb-4">
+                                        This instructor may not have a profile on RateMyProfessors. The link below searches the site by name &mdash; it doesn&apos;t guarantee a match.
+                                    </p>
                                     <a
                                         href={rmpUrl}
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="inline-flex items-center gap-2 px-5 py-2 bg-[#0f172a] text-white rounded-lg font-bold hover:bg-[#1e293b] transition-colors"
                                     >
-                                        Find on RateMyProfessors →
+                                        Search RateMyProfessors →
                                     </a>
                                 </div>
                             </div>

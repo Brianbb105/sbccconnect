@@ -28,6 +28,7 @@ const aboutSections: readonly AboutSection[] = [
             "This feature is currently in beta — some information may be incomplete, outdated, or inaccurate. Always verify important transfer requirements through ASSIST.org, official college resources, and an academic counselor before making final decisions. The Planner is meant to make planning easier, not to replace official advising.",
         ],
     },
+
     {
         title: "About Class Schedule",
         paragraphs: [

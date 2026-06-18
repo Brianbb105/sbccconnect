@@ -61,6 +61,12 @@ function getTermSeason(termCode: string): TermSeason | null {
     return null;
 }
 
+function shouldIncludeHistoricalTerm(currentSeason: TermSeason | null, historicalSeason: TermSeason | null) {
+    if (!currentSeason || !historicalSeason) return false;
+    if (currentSeason === "summer") return historicalSeason === "summer";
+    return historicalSeason === "spring" || historicalSeason === "fall";
+}
+
 function formatCountValue(aggregate: GradeAggregate) {
     if (aggregate.exact) return String(aggregate.min);
     return "Masked";
@@ -195,7 +201,7 @@ function getTermDisplaySummaries(
     const currentSeason = getTermSeason(currentTermCode);
     const terms = summarySource?.terms.filter((term) => (
         term.termCode < currentTermCode
-        && getTermSeason(term.termCode) === currentSeason
+        && shouldIncludeHistoricalTerm(currentSeason, getTermSeason(term.termCode))
         && term.totalEnrollment > 0
     )) ?? [];
 
@@ -228,7 +234,9 @@ export default function SectionGradeDistribution({
     if (termSummaries.length === 0) return null;
     const termGridClass = termSummaries.length === 1
         ? "mt-5 grid gap-4 md:grid-cols-[minmax(0,28rem)] md:justify-center"
-        : "mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3";
+        : termSummaries.length === 2
+            ? "mt-5 grid gap-4 md:grid-cols-2"
+            : "mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3";
     const hasMultipleSectionSelection = termSummaries.some((term) => term.sectionCount > 1);
     const hasMaskedValues = termSummaries.some((term) => (
         !term.aRateDisplay.exact || GRADE_KEYS.some((key) => !term.grades[key].exact)
@@ -241,7 +249,7 @@ export default function SectionGradeDistribution({
                     Instructor Grade Distribution From Previous Terms
                 </h2>
                 <p className="mt-1 text-sm text-slate-600">
-                    {instructorName} | same course and term season | exact rates use enrolled students
+                    {instructorName} | same course, comparable prior terms | exact rates use enrolled students
                 </p>
             </div>
 

@@ -50,6 +50,10 @@ export function isSupportedTermSlug(value: string): value is TermSlug {
     return TERMS_BY_SLUG.has(value as TermSlug);
 }
 
+export function getDefaultTermSlug(): TermSlug {
+    return DEFAULT_TERM_SLUG;
+}
+
 export function normalizeTermSlug(value?: string | null): TermSlug {
     if (!value) return DEFAULT_TERM_SLUG;
     const normalized = String(value).trim().toLowerCase();

@@ -138,6 +138,7 @@ Current terms:
 Default term:
 
 - `DEFAULT_TERM_SLUG = "fall2026"`
+- `getDefaultTermSlug()` returns `fall2026`.
 
 Term URLs:
 
@@ -944,13 +945,13 @@ Current term data counts:
 | `202610` | Summer 2025 | 390 | 268 |
 | `202630` | Fall 2025 | 1,521 | 615 |
 | `202650` | Spring 2026 | 1,536 | 615 |
-| `202710` | Summer 2026 | 447 | 267 |
-| `202730` | Fall 2026 | 1,561 | 579 |
+| `202710` | Summer 2026 | 446 | 276 |
+| `202730` | Fall 2026 | 1,559 | 592 |
 
 Totals:
 
-- Section rows across all supported terms: 8,442
-- Professor rows across all term files before cross-term dedupe: 3,575
+- Section rows across all supported terms: 8,439
+- Professor rows across all term files before cross-term dedupe: 3,597
 
 RateMyProfessors cache:
 

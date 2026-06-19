@@ -11,7 +11,7 @@ import type {
     PlannerRequirement,
     PlannerSchool,
 } from "@/lib/assistPlanner";
-import { appendTermToHref, DEFAULT_TERM_SLUG } from "@/lib/terms";
+import { appendTermToHref, getDefaultTermSlug } from "@/lib/terms";
 
 type RequirementView = "all" | "required" | "recommended" | "missing";
 type PlannerStep = "school" | "major" | "agreement";
@@ -663,7 +663,7 @@ function getSbccCourseHref(course: PlannerCourse): string | null {
     const subject = code.split(/\s+/)[0];
     if (!subject || !code.includes(" ")) return null;
 
-    return appendTermToHref(`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(code)}`, DEFAULT_TERM_SLUG);
+    return appendTermToHref(`/classes/${encodeURIComponent(subject)}/${encodeURIComponent(code)}`, getDefaultTermSlug());
 }
 
 function CategoryBadge({ category, compact = false }: { category: string; compact?: boolean }) {

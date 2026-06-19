@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useSyncExternalStore } from "react";
-import { DEFAULT_TERM_SLUG, appendTermToHref } from "@/lib/terms";
+import { appendTermToHref, getDefaultTermSlug } from "@/lib/terms";
 
 const ANNOUNCEMENT_STORAGE_KEY = "sbccplan-announcement-grade-distribution-assist-v1";
 const ANNOUNCEMENT_CHANGE_EVENT = "sbccplan-announcement-change";
@@ -131,7 +131,7 @@ export default function AnnouncementModal() {
                     <Link
                         className="flex-1 rounded-2xl border-2 border-[#0f172a] bg-[#0f172a] px-5 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
                         data-track="announcement_browse_classes"
-                        href={appendTermToHref("/classes", DEFAULT_TERM_SLUG)}
+                        href={appendTermToHref("/classes", getDefaultTermSlug())}
                         onClick={dismissAnnouncement}
                     >
                         Browse classes

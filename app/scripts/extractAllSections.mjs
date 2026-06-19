@@ -30,6 +30,7 @@ const launchArgs = process.env.PUPPETEER_NO_SANDBOX === "false"
 const LIST_QUERY_SUFFIX = 'sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_camp=dummy&sel_ism=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&level=CR&sel_attr=dummy&sel_subj=%25&sel_crse=&sel_crn=&sel_title=&sel_ptrm=%25&sel_ism=%25&sel_instr=%25&sel_attr=%25&begin_hh=5&begin_mi=0&begin_ap=a&end_hh=11&end_mi=0&end_ap=p&aa=N&bb=N&sel_late_start=N&dd=N&ee=N&gg=N';
 
 const cleanString = (value) => (typeof value === 'string' ? value.trim() : '');
+const UNIT_VALUE_RE = /^\d+(?:\.\d+)?(?:\s*-\s*\d+(?:\.\d+)?)?$/;
 
 const formatStatusDistribution = (statusCounts) => {
   const entries = [...statusCounts.entries()].sort(([a], [b]) => a.localeCompare(b));
@@ -175,8 +176,8 @@ const validateSectionsFile = (tempFilePath, finalFilePath) => {
       addError(`${rowLabel}: missing courseTitle.`);
     }
 
-    if (!/^\d+(?:\.\d+)?$/.test(units)) {
-      addError(`${rowLabel}: missing or invalid units.`);
+    if (!UNIT_VALUE_RE.test(units)) {
+      addError(`${rowLabel}: missing or invalid units "${units || '<empty>'}" for ${courseCode || 'unknown course'} CRN ${crn || 'unknown'}.`);
     }
 
     if (!Array.isArray(section.meetings) || section.meetings.length === 0) {
@@ -260,6 +261,7 @@ const scrapeSections = async () => {
     let currentPrerequisites = [];
     let currentTransferInformationText = "";
     let currentTransferInformation = [];
+    let currentCourseUnits = "";
     let lastSeenCrn = null;
 
     const DATE_RE = /\b\d{2}\/\d{2}-\d{2}\/\d{2}\b/;
@@ -277,6 +279,8 @@ const scrapeSections = async () => {
     const TRANSFER_KEYWORD_RE = /\b(?:IGETC|C-ID|CSU Transferable|UC Transferable|transfer information|SBCC General Education|Grading Options|Hours)\b/i;
     const CONNECTOR_ONLY_RE = /^(?:and|or|and\/or|\/|&)\.?$/i;
     const COURSE_CODE_RE = /\b[A-Z]{2,8}\s*\d{1,4}[A-Z]?\b/;
+    const UNITS_RE = /^\d+(?:\.\d+)?(?:\s*-\s*\d+(?:\.\d+)?)?$/;
+    const UNITS_TEXT_RE = /(\d+(?:\.\d+)?(?:\s*-\s*\d+(?:\.\d+)?)?)\s+Units?\b/i;
     const PREREQ_HINT_RE = /\b(?:eligibility|eligible|placement|qualification|minimum grade|completion|concurrent|corequisite|prerequisite|department approval|consent|recommended preparation)\b/i;
     const NARRATIVE_START_RE = /(?:Students?|Student|Work|Attend|Learn|Develop|Designed|Focuses|Introduces|Covers|Provides|Explores|Includes|Emphasizes|The course|This course|Second|Basic|Study|Topics|Limitation|Deadlines?)\b/i;
     const HEADER_TOKENS = new Set([
@@ -289,6 +293,12 @@ const scrapeSections = async () => {
     const normalizeSpacing = (s) => getClean(s).replace(/\s+/g, " ");
     const normalizeStatus = (s) => normalizeSpacing(s)
         .replace(/(OPEN|CLOSED|Waitlisted|STANDBY)(With Add Code)/i, '$1 $2');
+    const normalizeUnits = (s) => normalizeSpacing(s).replace(/\s*-\s*/g, "-");
+    const pickUnits = (rowValue, fallbackValue = "") => {
+      const normalizedRowValue = normalizeUnits(rowValue);
+      if (UNITS_RE.test(normalizedRowValue)) return normalizedRowValue;
+      return normalizeUnits(fallbackValue);
+    };
     const CAMPUS_MAP_SUFFIX = "Santa Barbara City College Santa Barbara CA";
 
     const splitPrerequisites = (text) => {
@@ -816,10 +826,13 @@ const scrapeSections = async () => {
         currentPrerequisites = [];
         currentTransferInformationText = "";
         currentTransferInformation = [];
+        currentCourseUnits = "";
         lastSeenCrn = null;
         activeDateIndex = -1;
 
         const rawCode = headerMatch[0];
+        const unitsMatch = text.match(UNITS_TEXT_RE);
+        currentCourseUnits = unitsMatch ? normalizeUnits(unitsMatch[1]) : "";
         let titlePart = "";
         if (text.includes(' - ')) {
           const parts = text.split(' - ');
@@ -831,7 +844,7 @@ const scrapeSections = async () => {
         currentCourseCode = rawCode.trim();
         currentCourseTitle = titlePart
             .replace(/\(.*\)/g, '')
-            .replace(/[\d.]+\s+Units.*/i, '')
+            .replace(/\d+(?:\.\d+)?(?:\s*-\s*\d+(?:\.\d+)?)?\s+Units?.*/i, '')
             .trim();
         return;
       }
@@ -945,7 +958,7 @@ const scrapeSections = async () => {
         location: location,
         googleMapsUrl: buildGoogleMapsUrl(location),
         instructor: instructor || "TBA",
-        dateRange: safeDateIndex >= 0 ? cellValues[safeDateIndex] : fallbackDate
+        dateRange: (safeDateIndex >= 0 ? cellValues[safeDateIndex] : fallbackDate) || fallbackDate || "TBA"
       };
 
       // --- VALID ROW CHECK ---
@@ -981,7 +994,7 @@ const scrapeSections = async () => {
             prerequisites: [...currentPrerequisites],
             transferInformationText: currentTransferInformationText,
             transferInformation: [...currentTransferInformation],
-            units: getText(3),
+            units: pickUnits(getText(3), currentCourseUnits),
             capacity,
             enrolled,
             meetings: []
@@ -1044,7 +1057,7 @@ const scrapeSections = async () => {
           location: "TBA",
           googleMapsUrl: "",
           instructor: "TBA",
-          dateRange: ""
+          dateRange: "TBA"
         });
       }
 

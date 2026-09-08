@@ -1,0 +1,1867 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 42,
+    "name": "California State University, Northridge",
+    "code": "CSUN",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/42/Major/fd00dde9-c4d4-46b0-4224-08dda831fbe0",
+    "type": "Major",
+    "name": "DANCE, B.A.",
+    "publishDate": "2026-04-23T04:11:45.7483424",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "3fb46845-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR PREPARATION COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "07ad53fa-adae-485d-b522-08dda831f292",
+              "courseIdentifierParentId": 330993,
+              "prefix": "BIOL",
+              "courseNumber": "101",
+              "title": "General Biology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "db172042-c813-4b37-b523-08dda831f292",
+              "courseIdentifierParentId": 47899,
+              "prefix": "BIOL",
+              "courseNumber": "101L",
+              "title": "General Biology Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "377a4432-3068-40dc-b4a3-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "BIOL 101, BIOL 101L",
+              "courses": [
+                {
+                  "id": "07ad53fa-adae-485d-b522-08dda831f292",
+                  "courseIdentifierParentId": 330993,
+                  "prefix": "BIOL",
+                  "courseNumber": "101",
+                  "title": "General Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "db172042-c813-4b37-b523-08dda831f292",
+                  "courseIdentifierParentId": 47899,
+                  "prefix": "BIOL",
+                  "courseNumber": "101L",
+                  "title": "General Biology Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "377a4432-3068-40dc-b4a3-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245700,
+                  "prefix": "BIOL",
+                  "courseNumber": "100",
+                  "title": "Concepts of Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 226331,
+                  "prefix": "BIOL",
+                  "courseNumber": "140",
+                  "title": "Principles of Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 127044,
+                  "prefix": "BIOL",
+                  "courseNumber": "141",
+                  "title": "Biology Laboratory",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245700,
+                      "prefix": "BIOL",
+                      "courseNumber": "100",
+                      "title": "Concepts of Biology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245700,
+                          "prefix": "BIOL",
+                          "courseNumber": "100",
+                          "title": "Concepts of Biology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 226331,
+                      "prefix": "BIOL",
+                      "courseNumber": "140",
+                      "title": "Principles of Biology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 127044,
+                      "prefix": "BIOL",
+                      "courseNumber": "141",
+                      "title": "Biology Laboratory",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2005",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 226331,
+                          "prefix": "BIOL",
+                          "courseNumber": "140",
+                          "title": "Principles of Biology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 127044,
+                          "prefix": "BIOL",
+                          "courseNumber": "141",
+                          "title": "Biology Laboratory",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2005",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "dce073b1-daab-40f1-6504-08dda83225b1",
+                  "sendingArticulationId": "f56ab81d-0df7-42f8-7275-08dda8322596",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "377a4432-3068-40dc-b4a3-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "0a01a251-4f09-4086-b514-08dda831f292",
+              "courseIdentifierParentId": 121280,
+              "prefix": "BIOL",
+              "courseNumber": "211",
+              "title": "Human Anatomy",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "61eb9143-c693-49ae-b515-08dda831f292",
+              "courseIdentifierParentId": 48182,
+              "prefix": "BIOL",
+              "courseNumber": "212",
+              "title": "Laboratory Studies in Human Anatomy",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ece69840-4933-4507-b4a4-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "BIOL 211, BIOL 212",
+              "courses": [
+                {
+                  "id": "0a01a251-4f09-4086-b514-08dda831f292",
+                  "courseIdentifierParentId": 121280,
+                  "prefix": "BIOL",
+                  "courseNumber": "211",
+                  "title": "Human Anatomy",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "61eb9143-c693-49ae-b515-08dda831f292",
+                  "courseIdentifierParentId": 48182,
+                  "prefix": "BIOL",
+                  "courseNumber": "212",
+                  "title": "Laboratory Studies in Human Anatomy",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ece69840-4933-4507-b4a4-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245732,
+                  "prefix": "BMS",
+                  "courseNumber": "107",
+                  "title": "Human Anatomy",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245732,
+                      "prefix": "BMS",
+                      "courseNumber": "107",
+                      "title": "Human Anatomy",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245732,
+                          "prefix": "BMS",
+                          "courseNumber": "107",
+                          "title": "Human Anatomy",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ece69840-4933-4507-b4a4-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 388462,
+              "prefix": "DANC",
+              "courseNumber": "139B",
+              "title": "Ballet II",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Kinesiology",
+              "departmentParentId": 8063,
+              "prefixDescription": "Dance",
+              "prefixParentId": 17321,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "b93dd424-0201-4f0c-b4a5-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 388462,
+                  "prefix": "DANC",
+                  "courseNumber": "139B",
+                  "title": "Ballet II",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Kinesiology",
+                  "departmentParentId": 8063,
+                  "prefixDescription": "Dance",
+                  "prefixParentId": 17321,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "b93dd424-0201-4f0c-b4a5-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "b93dd424-0201-4f0c-b4a5-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 388464,
+              "prefix": "DANC",
+              "courseNumber": "141B",
+              "title": "Jazz Dance II",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Kinesiology",
+              "departmentParentId": 8063,
+              "prefixDescription": "Dance",
+              "prefixParentId": 17321,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ea27db31-5023-4213-b4a6-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 388464,
+                  "prefix": "DANC",
+                  "courseNumber": "141B",
+                  "title": "Jazz Dance II",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Kinesiology",
+                  "departmentParentId": 8063,
+                  "prefixDescription": "Dance",
+                  "prefixParentId": 17321,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "ea27db31-5023-4213-b4a6-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ea27db31-5023-4213-b4a6-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-4",
+          "position": 4,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 388433,
+              "prefix": "DANC",
+              "courseNumber": "143B",
+              "title": "Hip Hop Dance Culture II",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Kinesiology",
+              "departmentParentId": 8063,
+              "prefixDescription": "Dance",
+              "prefixParentId": 17321,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "10f09fd1-4795-4a35-b4a7-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 388433,
+                  "prefix": "DANC",
+                  "courseNumber": "143B",
+                  "title": "Hip Hop Dance Culture II",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Kinesiology",
+                  "departmentParentId": 8063,
+                  "prefixDescription": "Dance",
+                  "prefixParentId": 17321,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "10f09fd1-4795-4a35-b4a7-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "10f09fd1-4795-4a35-b4a7-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-5",
+          "position": 5,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 388446,
+              "prefix": "DANC",
+              "courseNumber": "148",
+              "title": "Dance Conditioning And Somatic Practices",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Kinesiology",
+              "departmentParentId": 8063,
+              "prefixDescription": "Dance",
+              "prefixParentId": 17321,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "2bb055e0-6293-46f7-b4a8-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 388446,
+                  "prefix": "DANC",
+                  "courseNumber": "148",
+                  "title": "Dance Conditioning And Somatic Practices",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Kinesiology",
+                  "departmentParentId": 8063,
+                  "prefixDescription": "Dance",
+                  "prefixParentId": 17321,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "2bb055e0-6293-46f7-b4a8-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "2bb055e0-6293-46f7-b4a8-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-6",
+          "position": 6,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "1501f5e0-f919-4852-b544-08dda831f292",
+              "courseIdentifierParentId": 388430,
+              "prefix": "DANC",
+              "courseNumber": "236",
+              "title": "Introduction To Choreography",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Kinesiology",
+              "departmentParentId": 8063,
+              "prefixDescription": "Dance",
+              "prefixParentId": 17321,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "79485e8e-5e83-459b-b545-08dda831f292",
+              "courseIdentifierParentId": 388431,
+              "prefix": "DANC",
+              "courseNumber": "236L",
+              "title": "Introduction To Choreography Lab",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Kinesiology",
+              "departmentParentId": 8063,
+              "prefixDescription": "Dance",
+              "prefixParentId": 17321,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ca6b336d-8ab0-48d3-b4ab-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "DANC 236, DANC 236L",
+              "courses": [
+                {
+                  "id": "1501f5e0-f919-4852-b544-08dda831f292",
+                  "courseIdentifierParentId": 388430,
+                  "prefix": "DANC",
+                  "courseNumber": "236",
+                  "title": "Introduction To Choreography",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Kinesiology",
+                  "departmentParentId": 8063,
+                  "prefixDescription": "Dance",
+                  "prefixParentId": 17321,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "79485e8e-5e83-459b-b545-08dda831f292",
+                  "courseIdentifierParentId": 388431,
+                  "prefix": "DANC",
+                  "courseNumber": "236L",
+                  "title": "Introduction To Choreography Lab",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Kinesiology",
+                  "departmentParentId": 8063,
+                  "prefixDescription": "Dance",
+                  "prefixParentId": 17321,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "ca6b336d-8ab0-48d3-b4ab-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ca6b336d-8ab0-48d3-b4ab-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-7",
+          "position": 7,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 172126,
+              "prefix": "MUS",
+              "courseNumber": "105",
+              "title": "Understanding Music",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Music",
+              "departmentParentId": 9406,
+              "prefixDescription": "Music",
+              "prefixParentId": 6549,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ba983e8a-93ec-438c-b4aa-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 172126,
+                  "prefix": "MUS",
+                  "courseNumber": "105",
+                  "title": "Understanding Music",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Music",
+                  "departmentParentId": 9406,
+                  "prefixDescription": "Music",
+                  "prefixParentId": 6549,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ba983e8a-93ec-438c-b4aa-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156528,
+                  "prefix": "MUS",
+                  "courseNumber": "110",
+                  "title": "Music Appreciation",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1997",
+                  "endTerm": "",
+                  "department": "Music",
+                  "departmentParentId": 9431,
+                  "prefixDescription": "Music",
+                  "prefixParentId": 6602,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156528,
+                      "prefix": "MUS",
+                      "courseNumber": "110",
+                      "title": "Music Appreciation",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1997",
+                      "endTerm": "",
+                      "department": "Music",
+                      "departmentParentId": 9431,
+                      "prefixDescription": "Music",
+                      "prefixParentId": 6602,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156528,
+                          "prefix": "MUS",
+                          "courseNumber": "110",
+                          "title": "Music Appreciation",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1997",
+                          "endTerm": "",
+                          "department": "Music",
+                          "departmentParentId": 9431,
+                          "prefixDescription": "Music",
+                          "prefixParentId": 6602,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ba983e8a-93ec-438c-b4aa-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "3fb46845-6887-ef11-8474-000d3a37e3b6:section-8",
+          "position": 8,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "c8a66ec4-d459-49cb-b53c-08dda831f292",
+              "courseIdentifierParentId": 136551,
+              "prefix": "TH",
+              "courseNumber": "263",
+              "title": "Fundamentals of Lighting and Sound Technology",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Theatre",
+              "departmentParentId": 12829,
+              "prefixDescription": "Theatre",
+              "prefixParentId": 604,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "92a54a51-4ef0-4efa-b53d-08dda831f292",
+              "courseIdentifierParentId": 57358,
+              "prefix": "TH",
+              "courseNumber": "263P",
+              "title": "Lighting and Sound Technology Production Participation",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2021",
+              "endTerm": "",
+              "department": "Theatre",
+              "departmentParentId": 12829,
+              "prefixDescription": "Theatre",
+              "prefixParentId": 604,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "4f6e06cf-f932-44a2-b4a9-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "TH 263, TH 263P",
+              "courses": [
+                {
+                  "id": "c8a66ec4-d459-49cb-b53c-08dda831f292",
+                  "courseIdentifierParentId": 136551,
+                  "prefix": "TH",
+                  "courseNumber": "263",
+                  "title": "Fundamentals of Lighting and Sound Technology",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Theatre",
+                  "departmentParentId": 12829,
+                  "prefixDescription": "Theatre",
+                  "prefixParentId": 604,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "92a54a51-4ef0-4efa-b53d-08dda831f292",
+                  "courseIdentifierParentId": 57358,
+                  "prefix": "TH",
+                  "courseNumber": "263P",
+                  "title": "Lighting and Sound Technology Production Participation",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "Theatre",
+                  "departmentParentId": 12829,
+                  "prefixDescription": "Theatre",
+                  "prefixParentId": 604,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4f6e06cf-f932-44a2-b4a9-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 203201,
+                  "prefix": "TA",
+                  "courseNumber": "123",
+                  "title": "Stage Lighting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 203201,
+                      "prefix": "TA",
+                      "courseNumber": "123",
+                      "title": "Stage Lighting",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 203201,
+                          "prefix": "TA",
+                          "courseNumber": "123",
+                          "title": "Stage Lighting",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "4f6e06cf-f932-44a2-b4a9-08dda831fbfa"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "3eb46845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "c9a86f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "This agreement displays all lower-division courses required in the major: CSU Northridge courses on the left, approved (articulated) transfer courses to the right. General education (Cal-GETC or CSU Northridge GE) and upper-division courses are also required to complete the bachelor's degree. Completion of all coursework listed in this agreement is not mandatory prior to admission. For CSU Northridge Undergraduate Admission Requirements , refer to Upper Division Transfer . Some coursework may be satisfied by Advanced Placement exams completed in high school. Visit AP Credit for information. Additional information about the major is available in the CSUN University Catalog . Questions regarding this agreement may be directed to: articulation@csun.edu .",
+      "contentHtml": "<p><strong>This agreement displays all lower-division courses required in the major:</strong> CSU Northridge courses on the left, approved (articulated) transfer courses to the right. General education (Cal-GETC or CSU Northridge GE) and upper-division courses are also required to complete the bachelor's degree.</p><p><br></p><p>Completion of all coursework listed in this agreement is not mandatory prior to admission. For CSU Northridge Undergraduate <strong>Admission Requirements</strong>, refer to <a href=\"http://www.csun.edu/admissions-records/apply-upper-division-transfer-student#eligible\" rel=\"noopener noreferrer\" target=\"_blank\">Upper Division Transfer</a>.</p><p><br></p><p>Some coursework may be satisfied by Advanced Placement exams completed in high school. Visit <a href=\"http://catalog.csun.edu/policies/advanced-placement-ap-credit/\" rel=\"noopener noreferrer\" target=\"_blank\">AP Credit</a> for information. Additional information about the major is available in the <a href=\"http://catalog.csun.edu/programs/major/\" rel=\"noopener noreferrer\" target=\"_blank\">CSUN University Catalog</a>.</p><p><br></p><p>Questions regarding this agreement may be directed to: <a href=\"mailto:articulation@csun.edu\" rel=\"noopener noreferrer\" target=\"_blank\">articulation@csun.edu</a>.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:58.480Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=42&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F42%2FMajor%2Ffd00dde9-c4d4-46b0-4224-08dda831fbe0&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F42%2FMajor%2Ffd00dde9-c4d4-46b0-4224-08dda831fbe0",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F42%2FMajor%2Ffd00dde9-c4d4-46b0-4224-08dda831fbe0",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-42/major/65b178b86ef95a08.json",
+    "templateAssetCount": 4,
+    "articulationCount": 4
+  }
+}

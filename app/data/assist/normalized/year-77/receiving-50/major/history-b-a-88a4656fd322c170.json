@@ -1,0 +1,421 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 50,
+    "name": "California State University, Dominguez Hills",
+    "code": "CSUDH",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/50/Major/07e0b0db-3954-4954-401c-08dec89fcc4a",
+    "type": "Major",
+    "name": "History B.A.",
+    "publishDate": "2026-08-18T13:13:04.193606",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "54037745-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION REQUIREMENTS",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Minimum grade required: C or better"
+        }
+      ],
+      "sections": [
+        {
+          "id": "54037745-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 148736,
+              "prefix": "HIS",
+              "courseNumber": "120",
+              "title": "World History I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2011",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6914,
+              "prefixDescription": "History",
+              "prefixParentId": 2949,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 135214,
+              "prefix": "HIS",
+              "courseNumber": "121",
+              "title": "World History II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2011",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6914,
+              "prefixDescription": "History",
+              "prefixParentId": 2949,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "1b92501f-f10e-42b3-9daf-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 148736,
+                  "prefix": "HIS",
+                  "courseNumber": "120",
+                  "title": "World History I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2011",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6914,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2949,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "4b9bf8c4-7613-40ba-9db0-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135214,
+                  "prefix": "HIS",
+                  "courseNumber": "121",
+                  "title": "World History II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2011",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6914,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2949,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "1b92501f-f10e-42b3-9daf-08dec89fcd17",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236344,
+                  "prefix": "HIST",
+                  "courseNumber": "107",
+                  "title": "World Civilization, Beginnings to 1550",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236344,
+                      "prefix": "HIST",
+                      "courseNumber": "107",
+                      "title": "World Civilization, Beginnings to 1550",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236344,
+                          "prefix": "HIST",
+                          "courseNumber": "107",
+                          "title": "World Civilization, Beginnings to 1550",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4b9bf8c4-7613-40ba-9db0-08dec89fcd17",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 246581,
+                  "prefix": "HIST",
+                  "courseNumber": "108",
+                  "title": "World Civilization, 1550 to Present",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 246581,
+                      "prefix": "HIST",
+                      "courseNumber": "108",
+                      "title": "World Civilization, 1550 to Present",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 246581,
+                          "prefix": "HIST",
+                          "courseNumber": "108",
+                          "title": "World Civilization, 1550 to Present",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "1b92501f-f10e-42b3-9daf-08dec89fcd17",
+            "4b9bf8c4-7613-40ba-9db0-08dec89fcd17"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "8d307445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General information",
+      "contentHtml": null
+    },
+    {
+      "id": "35f57845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Thank you for your interest in CSU Dominguez Hills! This articulation agreement displays lower-division course requirements specific to this major. Students are advised to meet with an academic counselor when planning to transfer to CSU Dominguez Hills and refer to the University Catalog to learn more about this major and its features. Detailed admissions requirements for transfer students are available on the CSUDH campus website . Completion of Statutory Requirements (United States History, Constitution and American Ideals) is a baccalaureate degree requirement for the California State University system and may be met prior to transfer with eligible California Community College (CCC) courses designated as US-1, US-2, and US-3. Completion of Statutory Requirements prior to transfer is most advantageous and strongly encouraged as a number of CCC courses that meet this requirement might also double-count for General Education.",
+      "contentHtml": "<p><strong style=\"color: rgb(78, 14, 80); font-size: 16px;\">Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;interest&nbsp;in&nbsp;CSU&nbsp;Dominguez&nbsp;Hills!&nbsp;</strong><span style=\"font-size: 16px;\">This&nbsp;articulation&nbsp;agreement&nbsp;displays&nbsp;lower-division&nbsp;course&nbsp;requirements&nbsp;specific&nbsp;to&nbsp;this&nbsp;major.&nbsp;Students&nbsp;are&nbsp;advised&nbsp;to&nbsp;meet&nbsp;with&nbsp;an&nbsp;academic&nbsp;counselor&nbsp;when&nbsp;planning&nbsp;to&nbsp;transfer&nbsp;to&nbsp;CSU&nbsp;Dominguez&nbsp;Hills&nbsp;and&nbsp;refer&nbsp;to&nbsp;the&nbsp;</span><a href=\"https://catalog.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University&nbsp;Catalog</a><span style=\"font-size: 16px;\">&nbsp;to&nbsp;learn&nbsp;more&nbsp;about&nbsp;this&nbsp;major&nbsp;and&nbsp;its&nbsp;features.&nbsp;Detailed&nbsp;</span><a href=\"https://www.csudh.edu/future-students/transfer/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">admissions&nbsp;requirements&nbsp;for&nbsp;transfer&nbsp;students</a><span style=\"font-size: 16px;\">&nbsp;are&nbsp;available&nbsp;on&nbsp;the&nbsp;CSUDH&nbsp;</span><a href=\"https://www.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">campus&nbsp;website</a><span style=\"font-size: 16px;\">.&nbsp;Completion&nbsp;of&nbsp;</span><a href=\"https://catalog.csudh.edu/general-information/baccalaureate-degrees-undergraduate-studies/university-graduation-requirements/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Statutory&nbsp;Requirements&nbsp;</a><span style=\"font-size: 16px;\">(United&nbsp;States&nbsp;History,&nbsp;Constitution&nbsp;and&nbsp;American&nbsp;Ideals)&nbsp;is&nbsp;a&nbsp;baccalaureate&nbsp;degree&nbsp;requirement&nbsp;for&nbsp;the&nbsp;California&nbsp;State&nbsp;University&nbsp;system&nbsp;and&nbsp;may&nbsp;be&nbsp;met&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;with&nbsp;eligible&nbsp;California&nbsp;Community&nbsp;College&nbsp;(CCC)&nbsp;courses&nbsp;designated&nbsp;as&nbsp;US-1,&nbsp;US-2,&nbsp;and&nbsp;US-3.&nbsp;</span><strong style=\"font-size: 16px;\">Completion&nbsp;of&nbsp;Statutory&nbsp;Requirements&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;is&nbsp;most&nbsp;advantageous&nbsp;and&nbsp;strongly&nbsp;encouraged&nbsp;</strong><span style=\"font-size: 16px;\">as&nbsp;a&nbsp;number&nbsp;of&nbsp;CCC&nbsp;courses&nbsp;that&nbsp;meet&nbsp;this&nbsp;requirement&nbsp;might&nbsp;also&nbsp;double-count&nbsp;for&nbsp;General&nbsp;Education.&nbsp;</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:39.398Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=50&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F50%2FMajor%2F07e0b0db-3954-4954-401c-08dec89fcc4a&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F50%2FMajor%2F07e0b0db-3954-4954-401c-08dec89fcc4a",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F50%2FMajor%2F07e0b0db-3954-4954-401c-08dec89fcc4a",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-50/major/88a4656fd322c170.json",
+    "templateAssetCount": 4,
+    "articulationCount": 2
+  }
+}

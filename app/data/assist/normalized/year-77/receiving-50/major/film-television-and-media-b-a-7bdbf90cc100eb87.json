@@ -1,0 +1,838 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 50,
+    "name": "California State University, Dominguez Hills",
+    "code": "CSUDH",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/50/Major/72f0fda7-8306-4d39-3fec-08dec89fcc4a",
+    "type": "Major",
+    "name": "Film, Television and Media, B.A",
+    "publishDate": "2026-08-18T13:13:30.3469125",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "a2f97645-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION REQUIRED COURSES",
+      "position": 1,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Minimum grade required: C or better"
+        }
+      ],
+      "sections": [
+        {
+          "id": "a2f97645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330004,
+              "prefix": "COM",
+              "courseNumber": "100",
+              "title": "Media and Society",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2010",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "92c4056b-9899-44b3-9c8c-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330004,
+                  "prefix": "COM",
+                  "courseNumber": "100",
+                  "title": "Media and Society",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "92c4056b-9899-44b3-9c8c-08dec89fcd17",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 206297,
+                  "prefix": "COMM",
+                  "courseNumber": "171",
+                  "title": "Mass Media and Society",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1996",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 206297,
+                      "prefix": "COMM",
+                      "courseNumber": "171",
+                      "title": "Mass Media and Society",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1996",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 206297,
+                          "prefix": "COMM",
+                          "courseNumber": "171",
+                          "title": "Mass Media and Society",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1996",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "92c4056b-9899-44b3-9c8c-08dec89fcd17"
+          ]
+        },
+        {
+          "id": "a2f97645-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 369206,
+              "prefix": "COM",
+              "courseNumber": "105",
+              "title": "Introduction to Media Criticism",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "S2018",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "673ad9a4-2f02-479c-9c8d-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 369206,
+                  "prefix": "COM",
+                  "courseNumber": "105",
+                  "title": "Introduction to Media Criticism",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2018",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "673ad9a4-2f02-479c-9c8d-08dec89fcd17",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "673ad9a4-2f02-479c-9c8d-08dec89fcd17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d01d6645-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION REQUIRED COURSES",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Minimum grade required: C or better"
+        }
+      ],
+      "sections": [
+        {
+          "id": "d01d6645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": "cb096452-eeb8-4331-c168-08dec89fba92",
+              "courseIdentifierParentId": 369207,
+              "prefix": "COM",
+              "courseNumber": "106",
+              "title": "Digital Tool Kit",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "S2018",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "7386e127-09d6-4fdd-c169-08dec89fba92",
+              "courseIdentifierParentId": 369208,
+              "prefix": "COM",
+              "courseNumber": "107",
+              "title": "Digital Took Kit Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "S2018",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "9cdb25a8-4026-49aa-c16c-08dec89fba92",
+              "courseIdentifierParentId": 224473,
+              "prefix": "COM",
+              "courseNumber": "110",
+              "title": "Introduction to Digital Media Production",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F2021",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "d107391c-0205-4230-c16d-08dec89fba92",
+              "courseIdentifierParentId": 369209,
+              "prefix": "COM",
+              "courseNumber": "111",
+              "title": "Introduction to Digital Media Production Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "Su2018",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 330018,
+              "prefix": "COM",
+              "courseNumber": "130",
+              "title": "Introduction to Film",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2010",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 369210,
+              "prefix": "COM",
+              "courseNumber": "200",
+              "title": "Genre Analysis",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 2876,
+              "prefixDescription": "Communications",
+              "prefixParentId": 12234,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "fbf9f42f-2cb9-4a76-9c88-08dec89fcd17",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "COM 106, COM 107",
+              "courses": [
+                {
+                  "id": "cb096452-eeb8-4331-c168-08dec89fba92",
+                  "courseIdentifierParentId": 369207,
+                  "prefix": "COM",
+                  "courseNumber": "106",
+                  "title": "Digital Tool Kit",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "S2018",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "7386e127-09d6-4fdd-c169-08dec89fba92",
+                  "courseIdentifierParentId": 369208,
+                  "prefix": "COM",
+                  "courseNumber": "107",
+                  "title": "Digital Took Kit Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "S2018",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "b10cb721-496b-48da-9c89-08dec89fcd17",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "COM 110, COM 111",
+              "courses": [
+                {
+                  "id": "9cdb25a8-4026-49aa-c16c-08dec89fba92",
+                  "courseIdentifierParentId": 224473,
+                  "prefix": "COM",
+                  "courseNumber": "110",
+                  "title": "Introduction to Digital Media Production",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "d107391c-0205-4230-c16d-08dec89fba92",
+                  "courseIdentifierParentId": 369209,
+                  "prefix": "COM",
+                  "courseNumber": "111",
+                  "title": "Introduction to Digital Media Production Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "Su2018",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "e6375f25-4fc0-43b3-9c8a-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330018,
+                  "prefix": "COM",
+                  "courseNumber": "130",
+                  "title": "Introduction to Film",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "c09d49a8-1fbc-4aac-9c8b-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 369210,
+                  "prefix": "COM",
+                  "courseNumber": "200",
+                  "title": "Genre Analysis",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 2876,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 12234,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "fbf9f42f-2cb9-4a76-9c88-08dec89fcd17",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "b10cb721-496b-48da-9c89-08dec89fcd17",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e6375f25-4fc0-43b3-9c8a-08dec89fcd17",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 223019,
+                  "prefix": "FS",
+                  "courseNumber": "104",
+                  "title": "American Film to the 1960s",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Film and Media Studies",
+                  "departmentParentId": 5621,
+                  "prefixDescription": "Film and Media Studies",
+                  "prefixParentId": 10429,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 223019,
+                      "prefix": "FS",
+                      "courseNumber": "104",
+                      "title": "American Film to the 1960s",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Film and Media Studies",
+                      "departmentParentId": 5621,
+                      "prefixDescription": "Film and Media Studies",
+                      "prefixParentId": 10429,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 223019,
+                          "prefix": "FS",
+                          "courseNumber": "104",
+                          "title": "American Film to the 1960s",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Film and Media Studies",
+                          "departmentParentId": 5621,
+                          "prefixDescription": "Film and Media Studies",
+                          "prefixParentId": 10429,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "c09d49a8-1fbc-4aac-9c8b-08dec89fcd17",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "fbf9f42f-2cb9-4a76-9c88-08dec89fcd17",
+            "b10cb721-496b-48da-9c89-08dec89fcd17",
+            "e6375f25-4fc0-43b3-9c8a-08dec89fcd17",
+            "c09d49a8-1fbc-4aac-9c8b-08dec89fcd17"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "fb007045-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General information",
+      "contentHtml": null
+    },
+    {
+      "id": "35f57845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Thank you for your interest in CSU Dominguez Hills! This articulation agreement displays lower-division course requirements specific to this major. Students are advised to meet with an academic counselor when planning to transfer to CSU Dominguez Hills and refer to the University Catalog to learn more about this major and its features. Detailed admissions requirements for transfer students are available on the CSUDH campus website . Completion of Statutory Requirements (United States History, Constitution and American Ideals) is a baccalaureate degree requirement for the California State University system and may be met prior to transfer with eligible California Community College (CCC) courses designated as US-1, US-2, and US-3. Completion of Statutory Requirements prior to transfer is most advantageous and strongly encouraged as a number of CCC courses that meet this requirement might also double-count for General Education.",
+      "contentHtml": "<p><strong style=\"color: rgb(78, 14, 80); font-size: 16px;\">Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;interest&nbsp;in&nbsp;CSU&nbsp;Dominguez&nbsp;Hills!&nbsp;</strong><span style=\"font-size: 16px;\">This&nbsp;articulation&nbsp;agreement&nbsp;displays&nbsp;lower-division&nbsp;course&nbsp;requirements&nbsp;specific&nbsp;to&nbsp;this&nbsp;major.&nbsp;Students&nbsp;are&nbsp;advised&nbsp;to&nbsp;meet&nbsp;with&nbsp;an&nbsp;academic&nbsp;counselor&nbsp;when&nbsp;planning&nbsp;to&nbsp;transfer&nbsp;to&nbsp;CSU&nbsp;Dominguez&nbsp;Hills&nbsp;and&nbsp;refer&nbsp;to&nbsp;the&nbsp;</span><a href=\"https://catalog.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University&nbsp;Catalog</a><span style=\"font-size: 16px;\">&nbsp;to&nbsp;learn&nbsp;more&nbsp;about&nbsp;this&nbsp;major&nbsp;and&nbsp;its&nbsp;features.&nbsp;Detailed&nbsp;</span><a href=\"https://www.csudh.edu/future-students/transfer/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">admissions&nbsp;requirements&nbsp;for&nbsp;transfer&nbsp;students</a><span style=\"font-size: 16px;\">&nbsp;are&nbsp;available&nbsp;on&nbsp;the&nbsp;CSUDH&nbsp;</span><a href=\"https://www.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">campus&nbsp;website</a><span style=\"font-size: 16px;\">.&nbsp;Completion&nbsp;of&nbsp;</span><a href=\"https://catalog.csudh.edu/general-information/baccalaureate-degrees-undergraduate-studies/university-graduation-requirements/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Statutory&nbsp;Requirements&nbsp;</a><span style=\"font-size: 16px;\">(United&nbsp;States&nbsp;History,&nbsp;Constitution&nbsp;and&nbsp;American&nbsp;Ideals)&nbsp;is&nbsp;a&nbsp;baccalaureate&nbsp;degree&nbsp;requirement&nbsp;for&nbsp;the&nbsp;California&nbsp;State&nbsp;University&nbsp;system&nbsp;and&nbsp;may&nbsp;be&nbsp;met&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;with&nbsp;eligible&nbsp;California&nbsp;Community&nbsp;College&nbsp;(CCC)&nbsp;courses&nbsp;designated&nbsp;as&nbsp;US-1,&nbsp;US-2,&nbsp;and&nbsp;US-3.&nbsp;</span><strong style=\"font-size: 16px;\">Completion&nbsp;of&nbsp;Statutory&nbsp;Requirements&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;is&nbsp;most&nbsp;advantageous&nbsp;and&nbsp;strongly&nbsp;encouraged&nbsp;</strong><span style=\"font-size: 16px;\">as&nbsp;a&nbsp;number&nbsp;of&nbsp;CCC&nbsp;courses&nbsp;that&nbsp;meet&nbsp;this&nbsp;requirement&nbsp;might&nbsp;also&nbsp;double-count&nbsp;for&nbsp;General&nbsp;Education.&nbsp;</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:40.390Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=50&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F50%2FMajor%2F72f0fda7-8306-4d39-3fec-08dec89fcc4a&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F50%2FMajor%2F72f0fda7-8306-4d39-3fec-08dec89fcc4a",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F50%2FMajor%2F72f0fda7-8306-4d39-3fec-08dec89fcc4a",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-50/major/7bdbf90cc100eb87.json",
+    "templateAssetCount": 5,
+    "articulationCount": 2
+  }
+}

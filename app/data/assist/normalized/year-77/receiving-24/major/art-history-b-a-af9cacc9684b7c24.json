@@ -1,0 +1,2771 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 24,
+    "name": "California State University, Stanislaus",
+    "code": "CSUSTAN",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/24/Major/a846ac9a-b909-4a0c-d877-08ded63e51e8",
+    "type": "Major",
+    "name": "Art History B.A.",
+    "publishDate": "2026-08-10T21:34:07.7759798",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "826c7445-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "826c7445-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330630,
+              "prefix": "ART",
+              "courseNumber": "2515",
+              "title": "Art History Survey-Ancient",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136396,
+              "prefix": "ART",
+              "courseNumber": "2520",
+              "title": "Art History Survey-Modern",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1998",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "352911aa-c097-4c33-61f9-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330630,
+                  "prefix": "ART",
+                  "courseNumber": "2515",
+                  "title": "Art History Survey-Ancient",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "35b80249-be03-4b70-61fa-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136396,
+                  "prefix": "ART",
+                  "courseNumber": "2520",
+                  "title": "Art History Survey-Modern",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "352911aa-c097-4c33-61f9-08ded63e52af",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 206615,
+                  "prefix": "ARTH",
+                  "courseNumber": "C1100",
+                  "title": "Survey of Art from Prehistory to the Medieval Era",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art History",
+                  "prefixParentId": 19554,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236707,
+                  "prefix": "ARTH",
+                  "courseNumber": "C1100H",
+                  "title": "Survey of Art from Prehistory to the Medieval Era - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art History",
+                  "prefixParentId": 19554,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 206615,
+                      "prefix": "ARTH",
+                      "courseNumber": "C1100",
+                      "title": "Survey of Art from Prehistory to the Medieval Era",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art History",
+                      "prefixParentId": 19554,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 206615,
+                          "prefix": "ARTH",
+                          "courseNumber": "C1100",
+                          "title": "Survey of Art from Prehistory to the Medieval Era",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art History",
+                          "prefixParentId": 19554,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236707,
+                      "prefix": "ARTH",
+                      "courseNumber": "C1100H",
+                      "title": "Survey of Art from Prehistory to the Medieval Era - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art History",
+                      "prefixParentId": 19554,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236707,
+                          "prefix": "ARTH",
+                          "courseNumber": "C1100H",
+                          "title": "Survey of Art from Prehistory to the Medieval Era - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art History",
+                          "prefixParentId": 19554,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "041b9ab2-d600-4091-d4bf-08ded63eb1fe",
+                  "sendingArticulationId": "a12025c3-dd5f-412b-b709-08ded63ea000",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "35b80249-be03-4b70-61fa-08ded63e52af",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 202984,
+                  "prefix": "ARTH",
+                  "courseNumber": "C1200",
+                  "title": "Survey of Art from the Renaissance to Contemporary",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art History",
+                  "prefixParentId": 19554,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 237275,
+                  "prefix": "ARTH",
+                  "courseNumber": "C1200H",
+                  "title": "Survey of Art from the Renaissance to Contemporary - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art History",
+                  "prefixParentId": 19554,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 202984,
+                      "prefix": "ARTH",
+                      "courseNumber": "C1200",
+                      "title": "Survey of Art from the Renaissance to Contemporary",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art History",
+                      "prefixParentId": 19554,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 202984,
+                          "prefix": "ARTH",
+                          "courseNumber": "C1200",
+                          "title": "Survey of Art from the Renaissance to Contemporary",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art History",
+                          "prefixParentId": 19554,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 237275,
+                      "prefix": "ARTH",
+                      "courseNumber": "C1200H",
+                      "title": "Survey of Art from the Renaissance to Contemporary - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art History",
+                      "prefixParentId": 19554,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 237275,
+                          "prefix": "ARTH",
+                          "courseNumber": "C1200H",
+                          "title": "Survey of Art from the Renaissance to Contemporary - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art History",
+                          "prefixParentId": 19554,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "3ce49886-b59f-4ebf-d4c5-08ded63eb1fe",
+                  "sendingArticulationId": "feb88f8c-6030-422d-b723-08ded63ea000",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "352911aa-c097-4c33-61f9-08ded63e52af",
+            "35b80249-be03-4b70-61fa-08ded63e52af"
+          ]
+        },
+        {
+          "id": "826c7445-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 157931,
+              "prefix": "ART",
+              "courseNumber": "2525",
+              "title": "Art History Survey-Non-Western",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 236410,
+              "prefix": "ART",
+              "courseNumber": "2526",
+              "title": "Art History Survey-Islamic",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2015",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 218887,
+              "prefix": "ART",
+              "courseNumber": "2527",
+              "title": "Art History Survey-Asian",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2008",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 387269,
+              "prefix": "ART",
+              "courseNumber": "2528",
+              "title": "Art History Survey-Latin American",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "59c8cd6f-c710-4153-61f6-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 157931,
+                  "prefix": "ART",
+                  "courseNumber": "2525",
+                  "title": "Art History Survey-Non-Western",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "eb141e91-d24c-4487-61f7-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236410,
+                  "prefix": "ART",
+                  "courseNumber": "2526",
+                  "title": "Art History Survey-Islamic",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "f163939e-8aea-4256-61f8-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 218887,
+                  "prefix": "ART",
+                  "courseNumber": "2527",
+                  "title": "Art History Survey-Asian",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2008",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "ad444006-802b-44be-61f5-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 387269,
+                  "prefix": "ART",
+                  "courseNumber": "2528",
+                  "title": "Art History Survey-Latin American",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "59c8cd6f-c710-4153-61f6-08ded63e52af",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 159738,
+                  "prefix": "ART",
+                  "courseNumber": "112",
+                  "title": "Survey of Ancient American Art",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 239466,
+                  "prefix": "ART",
+                  "courseNumber": "215",
+                  "title": "Survey of Non-Western Art",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 159738,
+                      "prefix": "ART",
+                      "courseNumber": "112",
+                      "title": "Survey of Ancient American Art",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 159738,
+                          "prefix": "ART",
+                          "courseNumber": "112",
+                          "title": "Survey of Ancient American Art",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 239466,
+                      "prefix": "ART",
+                      "courseNumber": "215",
+                      "title": "Survey of Non-Western Art",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 239466,
+                          "prefix": "ART",
+                          "courseNumber": "215",
+                          "title": "Survey of Non-Western Art",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "dfdbc93f-fd7d-4bf1-d4b9-08ded63eb1fe",
+                  "sendingArticulationId": "bc9ae9c7-904f-459b-b6f2-08ded63ea000",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "eb141e91-d24c-4487-61f7-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 250308,
+                  "prefix": "ART",
+                  "courseNumber": "216",
+                  "title": "Survey of Islamic Art and Architecture",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 250308,
+                      "prefix": "ART",
+                      "courseNumber": "216",
+                      "title": "Survey of Islamic Art and Architecture",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2005",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 250308,
+                          "prefix": "ART",
+                          "courseNumber": "216",
+                          "title": "Survey of Islamic Art and Architecture",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2005",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "f163939e-8aea-4256-61f8-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 202983,
+                  "prefix": "ART",
+                  "courseNumber": "108",
+                  "title": "History of Asian Art",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 202983,
+                      "prefix": "ART",
+                      "courseNumber": "108",
+                      "title": "History of Asian Art",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 202983,
+                          "prefix": "ART",
+                          "courseNumber": "108",
+                          "title": "History of Asian Art",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "ad444006-802b-44be-61f5-08ded63e52af",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "59c8cd6f-c710-4153-61f6-08ded63e52af",
+            "eb141e91-d24c-4487-61f7-08ded63e52af",
+            "f163939e-8aea-4256-61f8-08ded63e52af",
+            "ad444006-802b-44be-61f5-08ded63e52af"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6c347445-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 2,
+        "amountUnitType": "OrMoreCourses",
+        "amountQuantifier": "None",
+        "toAmount": 1,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Recommended; Not required for the major"
+        }
+      ],
+      "sections": [
+        {
+          "id": "6c347445-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 2,
+            "amountUnitType": "OrMoreCourses",
+            "amountQuantifier": "None",
+            "toAmount": 1,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330651,
+              "prefix": "ANTH",
+              "courseNumber": "2090",
+              "title": "Introduction to Archaeology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Anthropology",
+              "departmentParentId": 704,
+              "prefixDescription": "Anthropology",
+              "prefixParentId": 10701,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136408,
+              "prefix": "HIST",
+              "courseNumber": "1010",
+              "title": "World Civilizations I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6939,
+              "prefixDescription": "History",
+              "prefixParentId": 2923,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 330656,
+              "prefix": "HIST",
+              "courseNumber": "1020",
+              "title": "World Civilizations II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6939,
+              "prefixDescription": "History",
+              "prefixParentId": 2923,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "7760e84f-3a8f-42a8-6203-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330651,
+                  "prefix": "ANTH",
+                  "courseNumber": "2090",
+                  "title": "Introduction to Archaeology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 704,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10701,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "a2c6d66d-6323-44d9-6201-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136408,
+                  "prefix": "HIST",
+                  "courseNumber": "1010",
+                  "title": "World Civilizations I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6939,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2923,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "bb4501df-6380-4236-6202-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330656,
+                  "prefix": "HIST",
+                  "courseNumber": "1020",
+                  "title": "World Civilizations II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6939,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2923,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "7760e84f-3a8f-42a8-6203-08ded63e52af",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "a2c6d66d-6323-44d9-6201-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236344,
+                  "prefix": "HIST",
+                  "courseNumber": "107",
+                  "title": "World Civilization, Beginnings to 1550",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236344,
+                      "prefix": "HIST",
+                      "courseNumber": "107",
+                      "title": "World Civilization, Beginnings to 1550",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236344,
+                          "prefix": "HIST",
+                          "courseNumber": "107",
+                          "title": "World Civilization, Beginnings to 1550",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "bb4501df-6380-4236-6202-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 246581,
+                  "prefix": "HIST",
+                  "courseNumber": "108",
+                  "title": "World Civilization, 1550 to Present",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 246581,
+                      "prefix": "HIST",
+                      "courseNumber": "108",
+                      "title": "World Civilization, 1550 to Present",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 246581,
+                          "prefix": "HIST",
+                          "courseNumber": "108",
+                          "title": "World Civilization, 1550 to Present",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "7760e84f-3a8f-42a8-6203-08ded63e52af",
+            "a2c6d66d-6323-44d9-6201-08ded63e52af",
+            "bb4501df-6380-4236-6202-08ded63e52af"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7afd6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 1,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "7afd6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 1,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330669,
+              "prefix": "ART",
+              "courseNumber": "1010",
+              "title": "Foundation Drawing",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2007",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 215039,
+              "prefix": "ART",
+              "courseNumber": "1030",
+              "title": "Foundation Printmaking, Option A",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2007",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 347062,
+              "prefix": "ART",
+              "courseNumber": "1035",
+              "title": "Foundation Printmaking, Option B",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2008",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 248099,
+              "prefix": "ART",
+              "courseNumber": "1040",
+              "title": "Foundation Digital Media",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "S2008",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136388,
+              "prefix": "ART",
+              "courseNumber": "1100",
+              "title": "Foundation Painting",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2008",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 171209,
+              "prefix": "ART",
+              "courseNumber": "1200",
+              "title": "Foundation Sculpture",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2008",
+              "endTerm": "",
+              "department": "Art",
+              "departmentParentId": 1046,
+              "prefixDescription": "Art",
+              "prefixParentId": 4446,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "5be023ff-7138-41ad-61ff-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330669,
+                  "prefix": "ART",
+                  "courseNumber": "1010",
+                  "title": "Foundation Drawing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "7e8ed2a6-8136-4b9f-61fb-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 215039,
+                  "prefix": "ART",
+                  "courseNumber": "1030",
+                  "title": "Foundation Printmaking, Option A",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "68074622-8309-4902-61fe-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 347062,
+                  "prefix": "ART",
+                  "courseNumber": "1035",
+                  "title": "Foundation Printmaking, Option B",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2008",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "3cf690c0-79a6-4668-61fd-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 248099,
+                  "prefix": "ART",
+                  "courseNumber": "1040",
+                  "title": "Foundation Digital Media",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2008",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "46d6a218-3a34-4a32-61fc-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136388,
+                  "prefix": "ART",
+                  "courseNumber": "1100",
+                  "title": "Foundation Painting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2008",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            },
+            {
+              "id": "e1d318a1-1f0b-4f4c-6200-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171209,
+                  "prefix": "ART",
+                  "courseNumber": "1200",
+                  "title": "Foundation Sculpture",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2008",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1046,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4446,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 5,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "5be023ff-7138-41ad-61ff-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 269850,
+                  "prefix": "ART",
+                  "courseNumber": "120",
+                  "title": "Fundamentals of Drawing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2013",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 269850,
+                      "prefix": "ART",
+                      "courseNumber": "120",
+                      "title": "Fundamentals of Drawing",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2013",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 269850,
+                          "prefix": "ART",
+                          "courseNumber": "120",
+                          "title": "Fundamentals of Drawing",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2013",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "7e8ed2a6-8136-4b9f-61fb-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 257440,
+                  "prefix": "ART",
+                  "courseNumber": "190",
+                  "title": "Introduction to Printmaking",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2013",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 257440,
+                      "prefix": "ART",
+                      "courseNumber": "190",
+                      "title": "Introduction to Printmaking",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2013",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 257440,
+                          "prefix": "ART",
+                          "courseNumber": "190",
+                          "title": "Introduction to Printmaking",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2013",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "68074622-8309-4902-61fe-08ded63e52af",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3cf690c0-79a6-4668-61fd-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 269559,
+                  "prefix": "MAT",
+                  "courseNumber": "131",
+                  "title": "Digital Imaging I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Multimedia Arts and Technology",
+                  "departmentParentId": 9372,
+                  "prefixDescription": "Multimedia Arts and Technology",
+                  "prefixParentId": 11042,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 269559,
+                      "prefix": "MAT",
+                      "courseNumber": "131",
+                      "title": "Digital Imaging I",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Multimedia Arts and Technology",
+                      "departmentParentId": 9372,
+                      "prefixDescription": "Multimedia Arts and Technology",
+                      "prefixParentId": 11042,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 269559,
+                          "prefix": "MAT",
+                          "courseNumber": "131",
+                          "title": "Digital Imaging I",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Multimedia Arts and Technology",
+                          "departmentParentId": 9372,
+                          "prefixDescription": "Multimedia Arts and Technology",
+                          "prefixParentId": 11042,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "46d6a218-3a34-4a32-61fc-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 229935,
+                  "prefix": "ART",
+                  "courseNumber": "132",
+                  "title": "Fundamentals of Painting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2013",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 229935,
+                      "prefix": "ART",
+                      "courseNumber": "132",
+                      "title": "Fundamentals of Painting",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2013",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 229935,
+                          "prefix": "ART",
+                          "courseNumber": "132",
+                          "title": "Fundamentals of Painting",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2013",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e1d318a1-1f0b-4f4c-6200-08ded63e52af",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 240249,
+                  "prefix": "ART",
+                  "courseNumber": "141",
+                  "title": "Studio Art Foundations 3D",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 229933,
+                  "prefix": "ART",
+                  "courseNumber": "170",
+                  "title": "Introduction to Sculpture",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2013",
+                  "endTerm": "",
+                  "department": "Art",
+                  "departmentParentId": 1103,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 4516,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 240249,
+                      "prefix": "ART",
+                      "courseNumber": "141",
+                      "title": "Studio Art Foundations 3D",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2018",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 240249,
+                          "prefix": "ART",
+                          "courseNumber": "141",
+                          "title": "Studio Art Foundations 3D",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2018",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 229933,
+                      "prefix": "ART",
+                      "courseNumber": "170",
+                      "title": "Introduction to Sculpture",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2013",
+                      "endTerm": "",
+                      "department": "Art",
+                      "departmentParentId": 1103,
+                      "prefixDescription": "Art",
+                      "prefixParentId": 4516,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 229933,
+                          "prefix": "ART",
+                          "courseNumber": "170",
+                          "title": "Introduction to Sculpture",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2013",
+                          "endTerm": "",
+                          "department": "Art",
+                          "departmentParentId": 1103,
+                          "prefixDescription": "Art",
+                          "prefixParentId": 4516,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "bcaecef6-17b9-407f-d4c2-08ded63eb1fe",
+                  "sendingArticulationId": "d17fb151-08b2-4947-b70f-08ded63ea000",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "5be023ff-7138-41ad-61ff-08ded63e52af",
+            "7e8ed2a6-8136-4b9f-61fb-08ded63e52af",
+            "68074622-8309-4902-61fe-08ded63e52af",
+            "3cf690c0-79a6-4668-61fd-08ded63e52af",
+            "46d6a218-3a34-4a32-61fc-08ded63e52af",
+            "e1d318a1-1f0b-4f4c-6200-08ded63e52af"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66ce7645-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 4,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 6,
+        "amountUnitType": "Unit",
+        "amountQuantifier": "None",
+        "toAmount": 1,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "66ce7645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 6,
+            "amountUnitType": "Unit",
+            "amountQuantifier": "None",
+            "toAmount": 1,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "a55bde16-e36b-4079-6204-08ded63e52af",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "Foreign/World Language",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "a55bde16-e36b-4079-6204-08ded63e52af",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "a55bde16-e36b-4079-6204-08ded63e52af"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "e4f07645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "97046645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "This agreement displays all lower-division courses required in the major : Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right. Helpful resources: Academic Catalog Transfer Admissions Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the Stanislaus State Articulation Website for contact information.",
+      "contentHtml": "<p>This agreement displays all<strong> lower-division courses required in the major</strong>: Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right.</p><p><br></p><p><strong>Helpful resources: </strong></p><p><a href=\"https://catalog.csustan.edu/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">Academic Catalog</a></p><p><a href=\"https://www.csustan.edu/undergrad/transfer-admission\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admissions</a></p><p><br></p><p>Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the <a href=\"https://www.csustan.edu/articulation\" rel=\"noopener noreferrer\" target=\"_blank\">Stanislaus State Articulation Website</a> for contact information.</p>"
+    },
+    {
+      "id": "73f76545-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "About the Major",
+      "contentHtml": null
+    },
+    {
+      "id": "74f76545-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "The Art History B.A. program provides students with a multicultural and global awareness of art and culture, as well as the useful daily skill of visual literacy–not just of artwork, but also of advertising, architectural structures, and popular culture. Course offerings cover a wide range of subjects within global contexts, encouraging students to become responsible citizens through an understanding of the aesthetic, cultural, and ethical issues present in our complex contemporary world. The B.A. in Art History offers a platform for students to examine, to identify, and to appreciate the visual arts and cultural production from prehistory to the present in multiple regions and contexts. Students gain exposure to a broad, global spectrum of interconnected approaches to the critical study of the history of art, architecture, visual culture, and museums. The faculty members are dedicated scholars who bring a diverse range of experience and expertise to the classroom. Students benefit from close interaction and mentoring. Art History majors not only engage rigorous art historical scholarship and theoretical texts, producing their own creative research in the process, but also participate in courses and practicums that can help prepare them for gallery and museum careers, as well as many other disciplines, such as law school. The skills earned from studying Art History include critical thinking, aesthetics, interpersonal skills, non-verbal communication, analytical depth, visual literacy, and memory and pattern recognition, as well as a better understanding of human cultures and the creative expressions of humanity’s experiences, from prehistory to the contemporary. Students must meet the general admission requirements of the university. View information for the Department of Art , including Learning Objectives for the department and its programs.",
+      "contentHtml": "<p>The Art History B.A. program provides students with a multicultural and global awareness of art and culture, as well as the useful daily skill of visual literacy–not just of artwork, but also of advertising, architectural structures, and popular culture. Course offerings cover a wide range of subjects within global contexts, encouraging students to become responsible citizens through an understanding of the aesthetic, cultural, and ethical issues present in our complex contemporary world. The B.A. in Art History offers a platform for students to examine, to identify, and to appreciate the visual arts and cultural production from prehistory to the present in multiple regions and contexts.</p><p><br></p><p>Students gain exposure to a broad, global spectrum of interconnected approaches to the critical study of the history of art, architecture, visual culture, and museums. The faculty members are dedicated scholars who bring a diverse range of experience and expertise to the classroom. Students benefit from close interaction and mentoring. Art History majors not only engage rigorous art historical scholarship and theoretical texts, producing their own creative research in the process, but also participate in courses and practicums that can help prepare them for gallery and museum careers, as well as many other disciplines, such as law school. The skills earned from studying Art History include critical thinking, aesthetics, interpersonal skills, non-verbal communication, analytical depth, visual literacy, and memory and pattern recognition, as well as a better understanding of human cultures and the creative expressions of humanity’s experiences, from prehistory to the contemporary. Students must meet the general admission requirements of the university.&nbsp;</p><p><br></p><p>View information for the <a href=\"https://catalog.csustan.edu/preview_program.php?catoid=35&amp;poid=7802&amp;returnto=6777\" rel=\"noopener noreferrer\" target=\"_blank\">Department of Art</a>, including Learning Objectives for the department and its programs.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:46.952Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=24&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F24%2FMajor%2Fa846ac9a-b909-4a0c-d877-08ded63e51e8&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F24%2FMajor%2Fa846ac9a-b909-4a0c-d877-08ded63e51e8",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F24%2FMajor%2Fa846ac9a-b909-4a0c-d877-08ded63e51e8",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-24/major/af9cacc9684b7c24.json",
+    "templateAssetCount": 9,
+    "articulationCount": 12
+  }
+}

@@ -1,0 +1,3055 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 26,
+    "name": "San Diego State University",
+    "code": "SDSU",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/26/Major/2e45f832-17db-4a49-f423-08ddd3b241a4",
+    "type": "Major",
+    "name": "Geological Sciences - Emphasis in Geophysics",
+    "publishDate": "2025-10-06T22:46:14.5441924",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "ab747445-6887-ef11-8474-000d3a37e3b6",
+      "title": "Requirement Group",
+      "position": 0,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "ab747445-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 296140,
+              "prefix": "OCEAN",
+              "courseNumber": "100",
+              "title": "The Ocean Planet",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2005",
+              "endTerm": "",
+              "department": "Ocean",
+              "departmentParentId": 9838,
+              "prefixDescription": "Oceanography",
+              "prefixParentId": 13909,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ec52395b-f289-4ecd-177d-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 296140,
+                  "prefix": "OCEAN",
+                  "courseNumber": "100",
+                  "title": "The Ocean Planet",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Ocean",
+                  "departmentParentId": 9838,
+                  "prefixDescription": "Oceanography",
+                  "prefixParentId": 13909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ec52395b-f289-4ecd-177d-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330278,
+                  "prefix": "ERTH",
+                  "courseNumber": "151",
+                  "title": "Introductory Physical Oceanography",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Earth and Planetary Sciences",
+                  "departmentParentId": 4132,
+                  "prefixDescription": "Earth and Planetary Sciences",
+                  "prefixParentId": 343,
+                  "attributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Articulates as a sequence only"
+                    }
+                  ],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 26117,
+                  "prefix": "ERTH",
+                  "courseNumber": "151L",
+                  "title": "Introductory Physical Oceanography Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Earth and Planetary Sciences",
+                  "departmentParentId": 4132,
+                  "prefixDescription": "Earth and Planetary Sciences",
+                  "prefixParentId": 343,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330278,
+                      "prefix": "ERTH",
+                      "courseNumber": "151",
+                      "title": "Introductory Physical Oceanography",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Earth and Planetary Sciences",
+                      "departmentParentId": 4132,
+                      "prefixDescription": "Earth and Planetary Sciences",
+                      "prefixParentId": 343,
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Articulates as a sequence only"
+                        }
+                      ],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 26117,
+                      "prefix": "ERTH",
+                      "courseNumber": "151L",
+                      "title": "Introductory Physical Oceanography Laboratory",
+                      "minUnits": 1,
+                      "maxUnits": 1,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Earth and Planetary Sciences",
+                      "departmentParentId": 4132,
+                      "prefixDescription": "Earth and Planetary Sciences",
+                      "prefixParentId": 343,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330278,
+                          "prefix": "ERTH",
+                          "courseNumber": "151",
+                          "title": "Introductory Physical Oceanography",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Earth and Planetary Sciences",
+                          "departmentParentId": 4132,
+                          "prefixDescription": "Earth and Planetary Sciences",
+                          "prefixParentId": 343,
+                          "attributes": [
+                            {
+                              "id": null,
+                              "position": 0,
+                              "content": "Articulates as a sequence only"
+                            }
+                          ],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Articulates as a sequence only"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 26117,
+                          "prefix": "ERTH",
+                          "courseNumber": "151L",
+                          "title": "Introductory Physical Oceanography Laboratory",
+                          "minUnits": 1,
+                          "maxUnits": 1,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Earth and Planetary Sciences",
+                          "departmentParentId": 4132,
+                          "prefixDescription": "Earth and Planetary Sciences",
+                          "prefixParentId": 343,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ec52395b-f289-4ecd-177d-08ddd3b241bf"
+          ]
+        },
+        {
+          "id": "ab747445-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": "68786b51-2977-4fb9-dd66-08ddd3b23ad5",
+              "courseIdentifierParentId": 172123,
+              "prefix": "GEOL",
+              "courseNumber": "100",
+              "title": "Planet Earth",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2001",
+              "endTerm": "",
+              "department": "Geology",
+              "departmentParentId": 6294,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "64c4d7f5-dee0-4b44-dd67-08ddd3b23ad5",
+              "courseIdentifierParentId": 27785,
+              "prefix": "GEOL",
+              "courseNumber": "101",
+              "title": "Dynamics of the Earth Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Geology",
+              "departmentParentId": 6294,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "c89b1668-e126-4b88-177e-08ddd3b241bf",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "GEOL 100, GEOL 101",
+              "courses": [
+                {
+                  "id": "68786b51-2977-4fb9-dd66-08ddd3b23ad5",
+                  "courseIdentifierParentId": 172123,
+                  "prefix": "GEOL",
+                  "courseNumber": "100",
+                  "title": "Planet Earth",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2001",
+                  "endTerm": "",
+                  "department": "Geology",
+                  "departmentParentId": 6294,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "64c4d7f5-dee0-4b44-dd67-08ddd3b23ad5",
+                  "courseIdentifierParentId": 27785,
+                  "prefix": "GEOL",
+                  "courseNumber": "101",
+                  "title": "Dynamics of the Earth Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Geology",
+                  "departmentParentId": 6294,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c89b1668-e126-4b88-177e-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "c89b1668-e126-4b88-177e-08ddd3b241bf"
+          ]
+        },
+        {
+          "id": "ab747445-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": "83d16004-04d3-4000-dd45-08ddd3b23ad5",
+              "courseIdentifierParentId": 27785,
+              "prefix": "GEOL",
+              "courseNumber": "101",
+              "title": "Dynamics of the Earth Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Geology",
+              "departmentParentId": 6294,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "ce0f0017-cd69-4808-dd46-08ddd3b23ad5",
+              "courseIdentifierParentId": 236739,
+              "prefix": "GEOL",
+              "courseNumber": "104",
+              "title": "Earth Science",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "Geology",
+              "departmentParentId": 6294,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "214963f5-606d-4a26-177f-08ddd3b241bf",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "GEOL 101, GEOL 104",
+              "courses": [
+                {
+                  "id": "83d16004-04d3-4000-dd45-08ddd3b23ad5",
+                  "courseIdentifierParentId": 27785,
+                  "prefix": "GEOL",
+                  "courseNumber": "101",
+                  "title": "Dynamics of the Earth Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Geology",
+                  "departmentParentId": 6294,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "ce0f0017-cd69-4808-dd46-08ddd3b23ad5",
+                  "courseIdentifierParentId": 236739,
+                  "prefix": "GEOL",
+                  "courseNumber": "104",
+                  "title": "Earth Science",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Geology",
+                  "departmentParentId": 6294,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "214963f5-606d-4a26-177f-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "214963f5-606d-4a26-177f-08ddd3b241bf"
+          ]
+        },
+        {
+          "id": "ab747445-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": "9fd1504a-0f9c-4143-dd2f-08ddd3b23ad5",
+              "courseIdentifierParentId": 343487,
+              "prefix": "ENV S",
+              "courseNumber": "100",
+              "title": "Environmental Sciences",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "Environmental Science",
+              "departmentParentId": 5271,
+              "prefixDescription": "Environmental Science",
+              "prefixParentId": 3953,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "4d209386-a6dd-4eba-dd30-08ddd3b23ad5",
+              "courseIdentifierParentId": 27785,
+              "prefix": "GEOL",
+              "courseNumber": "101",
+              "title": "Dynamics of the Earth Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Geology",
+              "departmentParentId": 6294,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "83b65708-1705-4595-1780-08ddd3b241bf",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "ENV S 100, GEOL 101",
+              "courses": [
+                {
+                  "id": "9fd1504a-0f9c-4143-dd2f-08ddd3b23ad5",
+                  "courseIdentifierParentId": 343487,
+                  "prefix": "ENV S",
+                  "courseNumber": "100",
+                  "title": "Environmental Sciences",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Environmental Science",
+                  "departmentParentId": 5271,
+                  "prefixDescription": "Environmental Science",
+                  "prefixParentId": 3953,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "4d209386-a6dd-4eba-dd30-08ddd3b23ad5",
+                  "courseIdentifierParentId": 27785,
+                  "prefix": "GEOL",
+                  "courseNumber": "101",
+                  "title": "Dynamics of the Earth Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Geology",
+                  "departmentParentId": 6294,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "83b65708-1705-4595-1780-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "83b65708-1705-4595-1780-08ddd3b241bf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2cdb7645-6887-ef11-8474-000d3a37e3b6",
+      "title": "Requirement Group",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "2cdb7645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 136514,
+              "prefix": "GEOL",
+              "courseNumber": "205",
+              "title": "Earth System History",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Geology",
+              "departmentParentId": 6294,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 277476,
+              "prefix": "CHEM",
+              "courseNumber": "200",
+              "title": "General Chemistry",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Chemistry",
+              "departmentParentId": 2286,
+              "prefixDescription": "Chemistry",
+              "prefixParentId": 3766,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 171484,
+              "prefix": "MATH",
+              "courseNumber": "150",
+              "title": "Calculus I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2005",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8967,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9932,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 352007,
+              "prefix": "MATH",
+              "courseNumber": "151",
+              "title": "Calculus II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8967,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9932,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136819,
+              "prefix": "MATH",
+              "courseNumber": "254",
+              "title": "Introduction to Linear Algebra",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8967,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9932,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "50f40bdb-307f-43b0-6913-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136514,
+                  "prefix": "GEOL",
+                  "courseNumber": "205",
+                  "title": "Earth System History",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Geology",
+                  "departmentParentId": 6294,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "1c88aba8-8e42-4e4e-1779-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 277476,
+                  "prefix": "CHEM",
+                  "courseNumber": "200",
+                  "title": "General Chemistry",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Chemistry",
+                  "departmentParentId": 2286,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3766,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "d49e662b-9cb4-4172-177a-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171484,
+                  "prefix": "MATH",
+                  "courseNumber": "150",
+                  "title": "Calculus I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8967,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9932,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "aa687af3-9890-4855-177b-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 352007,
+                  "prefix": "MATH",
+                  "courseNumber": "151",
+                  "title": "Calculus II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8967,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9932,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "7dc50b72-7f3d-4d6d-6914-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136819,
+                  "prefix": "MATH",
+                  "courseNumber": "254",
+                  "title": "Introduction to Linear Algebra",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8967,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9932,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "50f40bdb-307f-43b0-6913-08de00ff42ca",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330274,
+                  "prefix": "ERTH",
+                  "courseNumber": "112",
+                  "title": "History of the Earth",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Earth and Planetary Sciences",
+                  "departmentParentId": 4132,
+                  "prefixDescription": "Earth and Planetary Sciences",
+                  "prefixParentId": 343,
+                  "attributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Articulates as a sequence only"
+                    }
+                  ],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 310847,
+                  "prefix": "ERTH",
+                  "courseNumber": "112L",
+                  "title": "Historical Geology Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Earth and Planetary Sciences",
+                  "departmentParentId": 4132,
+                  "prefixDescription": "Earth and Planetary Sciences",
+                  "prefixParentId": 343,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330274,
+                      "prefix": "ERTH",
+                      "courseNumber": "112",
+                      "title": "History of the Earth",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Earth and Planetary Sciences",
+                      "departmentParentId": 4132,
+                      "prefixDescription": "Earth and Planetary Sciences",
+                      "prefixParentId": 343,
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Articulates as a sequence only"
+                        }
+                      ],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 310847,
+                      "prefix": "ERTH",
+                      "courseNumber": "112L",
+                      "title": "Historical Geology Laboratory",
+                      "minUnits": 1,
+                      "maxUnits": 1,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Earth and Planetary Sciences",
+                      "departmentParentId": 4132,
+                      "prefixDescription": "Earth and Planetary Sciences",
+                      "prefixParentId": 343,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330274,
+                          "prefix": "ERTH",
+                          "courseNumber": "112",
+                          "title": "History of the Earth",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Earth and Planetary Sciences",
+                          "departmentParentId": 4132,
+                          "prefixDescription": "Earth and Planetary Sciences",
+                          "prefixParentId": 343,
+                          "attributes": [
+                            {
+                              "id": null,
+                              "position": 0,
+                              "content": "Articulates as a sequence only"
+                            }
+                          ],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Articulates as a sequence only"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 310847,
+                          "prefix": "ERTH",
+                          "courseNumber": "112L",
+                          "title": "Historical Geology Laboratory",
+                          "minUnits": 1,
+                          "maxUnits": 1,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Earth and Planetary Sciences",
+                          "departmentParentId": 4132,
+                          "prefixDescription": "Earth and Planetary Sciences",
+                          "prefixParentId": 343,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "1c88aba8-8e42-4e4e-1779-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 306954,
+                  "prefix": "CHEM",
+                  "courseNumber": "155",
+                  "title": "General Chemistry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Chemistry",
+                  "departmentParentId": 2340,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3832,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 306954,
+                      "prefix": "CHEM",
+                      "courseNumber": "155",
+                      "title": "General Chemistry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Chemistry",
+                      "departmentParentId": 2340,
+                      "prefixDescription": "Chemistry",
+                      "prefixParentId": 3832,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 306954,
+                          "prefix": "CHEM",
+                          "courseNumber": "155",
+                          "title": "General Chemistry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Chemistry",
+                          "departmentParentId": 2340,
+                          "prefixDescription": "Chemistry",
+                          "prefixParentId": 3832,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d49e662b-9cb4-4172-177a-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 358343,
+                  "prefix": "MATH",
+                  "courseNumber": "150",
+                  "title": "Calculus with Analytic Geometry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 358343,
+                      "prefix": "MATH",
+                      "courseNumber": "150",
+                      "title": "Calculus with Analytic Geometry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 358343,
+                          "prefix": "MATH",
+                          "courseNumber": "150",
+                          "title": "Calculus with Analytic Geometry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "aa687af3-9890-4855-177b-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301211,
+                  "prefix": "MATH",
+                  "courseNumber": "160",
+                  "title": "Calculus with Analytic Geometry II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301211,
+                      "prefix": "MATH",
+                      "courseNumber": "160",
+                      "title": "Calculus with Analytic Geometry II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301211,
+                          "prefix": "MATH",
+                          "courseNumber": "160",
+                          "title": "Calculus with Analytic Geometry II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "7dc50b72-7f3d-4d6d-6914-08de00ff42ca",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 296698,
+                  "prefix": "MATH",
+                  "courseNumber": "210",
+                  "title": "Linear Algebra",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 296698,
+                      "prefix": "MATH",
+                      "courseNumber": "210",
+                      "title": "Linear Algebra",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2007",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 296698,
+                          "prefix": "MATH",
+                          "courseNumber": "210",
+                          "title": "Linear Algebra",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2007",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "50f40bdb-307f-43b0-6913-08de00ff42ca",
+            "1c88aba8-8e42-4e4e-1779-08ddd3b241bf",
+            "d49e662b-9cb4-4172-177a-08ddd3b241bf",
+            "aa687af3-9890-4855-177b-08ddd3b241bf",
+            "7dc50b72-7f3d-4d6d-6914-08de00ff42ca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bf1b1967-c894-4b7b-a401-01978fdc049e",
+      "title": "Requirement Group",
+      "position": 2,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "bf1b1967-c894-4b7b-a401-01978fdc049e:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": "aa02889c-3963-40c0-dd1d-08ddd3b23ad5",
+              "courseIdentifierParentId": 158892,
+              "prefix": "PHYS",
+              "courseNumber": "195",
+              "title": "Principles of Physics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "8d921adf-d70d-49dd-dd1e-08ddd3b23ad5",
+              "courseIdentifierParentId": 44006,
+              "prefix": "PHYS",
+              "courseNumber": "195L",
+              "title": "Principles of Physics Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1998",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "f25edf11-aec1-4698-1781-08ddd3b241bf",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHYS 195, PHYS 195L",
+              "courses": [
+                {
+                  "id": "aa02889c-3963-40c0-dd1d-08ddd3b23ad5",
+                  "courseIdentifierParentId": 158892,
+                  "prefix": "PHYS",
+                  "courseNumber": "195",
+                  "title": "Principles of Physics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "8d921adf-d70d-49dd-dd1e-08ddd3b23ad5",
+                  "courseIdentifierParentId": 44006,
+                  "prefix": "PHYS",
+                  "courseNumber": "195L",
+                  "title": "Principles of Physics Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "f25edf11-aec1-4698-1781-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301212,
+                  "prefix": "PHYS",
+                  "courseNumber": "121",
+                  "title": "Mechanics of Solids and Fluids",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301212,
+                      "prefix": "PHYS",
+                      "courseNumber": "121",
+                      "title": "Mechanics of Solids and Fluids",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301212,
+                          "prefix": "PHYS",
+                          "courseNumber": "121",
+                          "title": "Mechanics of Solids and Fluids",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "f25edf11-aec1-4698-1781-08ddd3b241bf"
+          ]
+        },
+        {
+          "id": "bf1b1967-c894-4b7b-a401-01978fdc049e:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 158892,
+              "prefix": "PHYS",
+              "courseNumber": "195",
+              "title": "Principles of Physics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 44006,
+              "prefix": "PHYS",
+              "courseNumber": "195L",
+              "title": "Principles of Physics Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1998",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "b2d1b1e5-77a2-443c-1782-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 158892,
+                  "prefix": "PHYS",
+                  "courseNumber": "195",
+                  "title": "Principles of Physics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "029825c8-dc1e-49ee-1783-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 44006,
+                  "prefix": "PHYS",
+                  "courseNumber": "195L",
+                  "title": "Principles of Physics Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "b2d1b1e5-77a2-443c-1782-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "029825c8-dc1e-49ee-1783-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "b2d1b1e5-77a2-443c-1782-08ddd3b241bf",
+            "029825c8-dc1e-49ee-1783-08ddd3b241bf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "91c4c13d-fa23-4f80-962b-01978fdc049e",
+      "title": "Requirement Group",
+      "position": 3,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "91c4c13d-fa23-4f80-962b-01978fdc049e:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": "68b825cc-57ff-4b65-dd19-08ddd3b23ad5",
+              "courseIdentifierParentId": 331022,
+              "prefix": "PHYS",
+              "courseNumber": "196",
+              "title": "Principles of Physics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "056c2f3b-1c9c-4b59-dd1a-08ddd3b23ad5",
+              "courseIdentifierParentId": 44065,
+              "prefix": "PHYS",
+              "courseNumber": "196L",
+              "title": "Principles of Physics Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1998",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "2db4acc6-dd99-477f-1784-08ddd3b241bf",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHYS 196, PHYS 196L",
+              "courses": [
+                {
+                  "id": "68b825cc-57ff-4b65-dd19-08ddd3b23ad5",
+                  "courseIdentifierParentId": 331022,
+                  "prefix": "PHYS",
+                  "courseNumber": "196",
+                  "title": "Principles of Physics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "056c2f3b-1c9c-4b59-dd1a-08ddd3b23ad5",
+                  "courseIdentifierParentId": 44065,
+                  "prefix": "PHYS",
+                  "courseNumber": "196L",
+                  "title": "Principles of Physics Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "2db4acc6-dd99-477f-1784-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 302824,
+                  "prefix": "PHYS",
+                  "courseNumber": "122",
+                  "title": "Electricity and Magnetism",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 302824,
+                      "prefix": "PHYS",
+                      "courseNumber": "122",
+                      "title": "Electricity and Magnetism",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 302824,
+                          "prefix": "PHYS",
+                          "courseNumber": "122",
+                          "title": "Electricity and Magnetism",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "2db4acc6-dd99-477f-1784-08ddd3b241bf"
+          ]
+        },
+        {
+          "id": "91c4c13d-fa23-4f80-962b-01978fdc049e:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 331022,
+              "prefix": "PHYS",
+              "courseNumber": "196",
+              "title": "Principles of Physics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 44065,
+              "prefix": "PHYS",
+              "courseNumber": "196L",
+              "title": "Principles of Physics Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1998",
+              "endTerm": "",
+              "department": "Physics",
+              "departmentParentId": 10763,
+              "prefixDescription": "Physics",
+              "prefixParentId": 205,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "626d4240-472c-4880-1785-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 331022,
+                  "prefix": "PHYS",
+                  "courseNumber": "196",
+                  "title": "Principles of Physics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "ce772c4d-ad83-4b58-1786-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 44065,
+                  "prefix": "PHYS",
+                  "courseNumber": "196L",
+                  "title": "Principles of Physics Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10763,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 205,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "626d4240-472c-4880-1785-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ce772c4d-ad83-4b58-1786-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "626d4240-472c-4880-1785-08ddd3b241bf",
+            "ce772c4d-ad83-4b58-1786-08ddd3b241bf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1830f295-5c14-4119-99ef-0199b00d287c",
+      "title": "Requirement Group",
+      "position": 4,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "1830f295-5c14-4119-99ef-0199b00d287c:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 213952,
+              "prefix": "STAT",
+              "courseNumber": "250",
+              "title": "Statistical Principles and Practices",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2002",
+              "endTerm": "",
+              "department": "Statistics",
+              "departmentParentId": 12537,
+              "prefixDescription": "Statistics",
+              "prefixParentId": 3353,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "18f32b69-36ef-430e-6911-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 213952,
+                  "prefix": "STAT",
+                  "courseNumber": "250",
+                  "title": "Statistical Principles and Practices",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2002",
+                  "endTerm": "",
+                  "department": "Statistics",
+                  "departmentParentId": 12537,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 3353,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "18f32b69-36ef-430e-6911-08de00ff42ca",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "8c05c62c-8f06-4882-14f2-08ddd3b26d80",
+                  "sendingArticulationId": "46fe073f-3951-44e8-8cc8-08ddd3b26c6a",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "18f32b69-36ef-430e-6911-08de00ff42ca"
+          ]
+        },
+        {
+          "id": "1830f295-5c14-4119-99ef-0199b00d287c:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 136827,
+              "prefix": "BIOL",
+              "courseNumber": "215",
+              "title": "Biostatistics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1994",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1698,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4847,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "f935f479-49ba-46b8-6912-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136827,
+                  "prefix": "BIOL",
+                  "courseNumber": "215",
+                  "title": "Biostatistics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1994",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1698,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4847,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "f935f479-49ba-46b8-6912-08de00ff42ca",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "f935f479-49ba-46b8-6912-08de00ff42ca"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "23c27645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "Due to high demand, admission to SDSU is highly competitive. General admission information is available at: http://arweb.sdsu.edu/es/admissions/transfers/index.html For additional information regarding admission to specific majors, please visit the SDSU Transfer Admission Planner (TAP) site: https://sunspot.sdsu.edu/pubred/!tap.disp",
+      "contentHtml": "Due to high demand, admission to SDSU is highly competitive. General admission information is available at:<a href=\"http://arweb.sdsu.edu/es/admissions/transfers/index.html\">http://arweb.sdsu.edu/es/admissions/transfers/index.html</a>\r\nFor additional information regarding admission to specific majors, please visit the SDSU Transfer Admission Planner (TAP) site:<a href=\"https://sunspot.sdsu.edu/pubred/!tap.disp\">https://sunspot.sdsu.edu/pubred/!tap.disp</a>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:05.213Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=26&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F26%2FMajor%2F2e45f832-17db-4a49-f423-08ddd3b241a4&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F26%2FMajor%2F2e45f832-17db-4a49-f423-08ddd3b241a4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F26%2FMajor%2F2e45f832-17db-4a49-f423-08ddd3b241a4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-26/major/b7635e5e51c19e4e.json",
+    "templateAssetCount": 6,
+    "articulationCount": 17
+  }
+}

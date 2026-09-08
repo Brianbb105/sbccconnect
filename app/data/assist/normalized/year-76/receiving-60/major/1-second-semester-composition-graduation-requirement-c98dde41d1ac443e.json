@@ -1,0 +1,412 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 60,
+    "name": "California State University, Sacramento",
+    "code": "CSUS",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/60/Major/5b943ad6-928a-4d0c-ad03-08ddbf3f4ee7",
+    "type": "Major",
+    "name": "1 - Second Semester Composition Graduation Requirement",
+    "publishDate": "2025-09-17T16:18:35.0978171",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "f596abfa-c6a5-49ca-b093-01979d7c47ab",
+      "title": "Requirement Group",
+      "position": 0,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f596abfa-c6a5-49ca-b093-01979d7c47ab:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "4d933f43-c694-4c0b-623b-08ddbf3f4f04",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "Courses approved for Second Semester Composition Graduation Requirement",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Recommended; Not required for admission"
+                },
+                {
+                  "id": null,
+                  "position": 1,
+                  "content": "Required for graduation"
+                }
+              ],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Requirement",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Requirement",
+                "requirementAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4d933f43-c694-4c0b-623b-08ddbf3f4f04",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 209689,
+                  "prefix": "ENG",
+                  "courseNumber": "111",
+                  "title": "Critical Thinking and Composition Through Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 151083,
+                  "prefix": "ENG",
+                  "courseNumber": "111H",
+                  "title": "Critical Thinking and Composition through Literature, Honors",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 201418,
+                  "prefix": "ENGL",
+                  "courseNumber": "C1001",
+                  "title": "Critical Thinking and Writing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 18787,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 209689,
+                      "prefix": "ENG",
+                      "courseNumber": "111",
+                      "title": "Critical Thinking and Composition Through Literature",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 209689,
+                          "prefix": "ENG",
+                          "courseNumber": "111",
+                          "title": "Critical Thinking and Composition Through Literature",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 151083,
+                      "prefix": "ENG",
+                      "courseNumber": "111H",
+                      "title": "Critical Thinking and Composition through Literature, Honors",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 151083,
+                          "prefix": "ENG",
+                          "courseNumber": "111H",
+                          "title": "Critical Thinking and Composition through Literature, Honors",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 201418,
+                      "prefix": "ENGL",
+                      "courseNumber": "C1001",
+                      "title": "Critical Thinking and Writing",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 18787,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 201418,
+                          "prefix": "ENGL",
+                          "courseNumber": "C1001",
+                          "title": "Critical Thinking and Writing",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 18787,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "69cab93a-111b-4cae-65af-08ddbf3f8663",
+                  "sendingArticulationId": "a351da16-383a-4c95-9349-08ddbf3f85bb",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                },
+                {
+                  "id": "13123087-ffb5-4bbb-37ab-08ddf081b0fb",
+                  "sendingArticulationId": "a351da16-383a-4c95-9349-08ddbf3f85bb",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 1,
+                  "sendingCourseGroupEndPosition": 2
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "4d933f43-c694-4c0b-623b-08ddbf3f4f04"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "e785ba52-8f75-4de0-9d12-01979d7ba844",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "REQUIREMENT INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "bab25d59-1692-4462-989e-01979d7ba845",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Students graduating from Sacramento State are required to complete a second semester composition course. Second semester composition courses (ENGL 20, ENGL 20M, or an approved equivalent) must be completed with a grade of C- or better. Although not required for admission, transfer students are encouraged to complete a course fulfilling this requirement prior to transfer. Please see a counselor for more information.",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">Students graduating from Sacramento State are required to complete a second semester composition course. Second semester composition courses (ENGL 20, ENGL 20M, or an approved equivalent) must be completed with a grade of C- or better.</span></p><p><br></p><p><span style=\"font-size: 14px;\">Although not required for admission, transfer students are encouraged to complete a course fulfilling this requirement prior to transfer. Please see a counselor for more information.</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:00.911Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=60&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F60%2FMajor%2F5b943ad6-928a-4d0c-ad03-08ddbf3f4ee7&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F60%2FMajor%2F5b943ad6-928a-4d0c-ad03-08ddbf3f4ee7",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F60%2FMajor%2F5b943ad6-928a-4d0c-ad03-08ddbf3f4ee7",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-60/major/c98dde41d1ac443e.json",
+    "templateAssetCount": 3,
+    "articulationCount": 1
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 12,
+    "name": "California State University, Monterey Bay",
+    "code": "CSUMB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/12/Major/2f2715d9-f7af-4404-33e0-08dd6d829ab4",
+    "type": "Major",
+    "name": "Global Studies B.A.",
+    "publishDate": "2025-09-08T22:56:15.5729197",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "2bdd7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "PREPARATION COURSES FOR THE MAJOR",
+      "position": 1,
+      "logic": "AND",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "AND",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "2bdd7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 357477,
+              "prefix": "GS",
+              "courseNumber": "206",
+              "title": "Understanding Globalization",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Global Studies",
+              "departmentParentId": 6565,
+              "prefixDescription": "Global Studies",
+              "prefixParentId": 11603,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "3902541a-9bbc-4ef3-d0a4-08dd6d829ad0",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 357477,
+                  "prefix": "GS",
+                  "courseNumber": "206",
+                  "title": "Understanding Globalization",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Global Studies",
+                  "departmentParentId": 6565,
+                  "prefixDescription": "Global Studies",
+                  "prefixParentId": 11603,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3902541a-9bbc-4ef3-d0a4-08dd6d829ad0",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236011,
+                  "prefix": "GLST",
+                  "courseNumber": "101",
+                  "title": "Introduction to Global Studies",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Global Studies",
+                  "departmentParentId": 6561,
+                  "prefixDescription": "Global Studies",
+                  "prefixParentId": 13134,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 246624,
+                  "prefix": "GLST",
+                  "courseNumber": "102",
+                  "title": "Global Problems",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Global Studies",
+                  "departmentParentId": 6561,
+                  "prefixDescription": "Global Studies",
+                  "prefixParentId": 13134,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236011,
+                      "prefix": "GLST",
+                      "courseNumber": "101",
+                      "title": "Introduction to Global Studies",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2017",
+                      "endTerm": "",
+                      "department": "Global Studies",
+                      "departmentParentId": 6561,
+                      "prefixDescription": "Global Studies",
+                      "prefixParentId": 13134,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236011,
+                          "prefix": "GLST",
+                          "courseNumber": "101",
+                          "title": "Introduction to Global Studies",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2017",
+                          "endTerm": "",
+                          "department": "Global Studies",
+                          "departmentParentId": 6561,
+                          "prefixDescription": "Global Studies",
+                          "prefixParentId": 13134,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 246624,
+                      "prefix": "GLST",
+                      "courseNumber": "102",
+                      "title": "Global Problems",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2017",
+                      "endTerm": "",
+                      "department": "Global Studies",
+                      "departmentParentId": 6561,
+                      "prefixDescription": "Global Studies",
+                      "prefixParentId": 13134,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 246624,
+                          "prefix": "GLST",
+                          "courseNumber": "102",
+                          "title": "Global Problems",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2017",
+                          "endTerm": "",
+                          "department": "Global Studies",
+                          "departmentParentId": 6561,
+                          "prefixDescription": "Global Studies",
+                          "prefixParentId": 13134,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "5c329ca7-3b7e-41a9-793c-08dd6d82ac0c",
+                  "sendingArticulationId": "3e22a88f-6827-44f5-a8aa-08dd6d82ab2c",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "3902541a-9bbc-4ef3-d0a4-08dd6d829ad0"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "1a591182-05e9-4563-aa6f-019866f077ba",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "Admissions and Transfer Information",
+      "contentHtml": null
+    },
+    {
+      "id": "d5dc7145-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Transfer Admissions Requirements - To be admitted to CSU Monterey Bay, an Upper Division transfer student must have completed 60 transferable credit units, of which 30 must be applicable to General Education. English Communication (Area 1A), Critical Thinking (Area 1B), Oral Communication (Area 1C) and Mathematical Concepts and Quantitative Reasoning (Area 2) must be completed with a grade of C- or better prior to admission acceptance. General Education (GE) Requirements - Upper Division transfer students are recommended to complete all CSU GE/CAL-GETC requirements prior to transfer. Beginning Fall 2025, all California Community Colleges, CSUs, and UCs use one GE Pattern: CAL-GETC. Students who have completed college work prior to Fall 2025 should work with their community college advisor to determine the GE Pattern and catalog year that is best suited to their transfer needs. Students who have completed all General Education requirements at their community college should request full GE certification and send official documentation to CSUMB displaying GE certification completion (i.e. official transcript or GE certification form). CSU American Institutions Requirement (US 1, 2, 3) - Transfer students are recommended to complete the CSU American Institutions (AI) requirement prior to transfer. You may check with your community college or find a list of approved US 1, 2, 3 courses on Assist. World Culture &amp; Language Requirement (Majors Leading to a BA Degree) - CSU Monterey Bay requires all undergraduate students to satisfy the World Culture &amp; Language Requirement (WCL) for graduation. This requirement is satisfied differently for students pursuing BA degrees than for students pursuing BS/LS degrees. For Majors Leading to a BA Degree, students can satisfy this requirement by completing one of the following: Complete an Intermediate level language course - Students who demonstrate second language proficiency by completing a course (equivalent to a language level 201 course at CSUMB) will satisfy the WCL requirement. Advanced Placement (AP) Exam - Students who score a 4 or 5 on one of the following AP Exams will satisfy the WCL Requirement: Chinese Language &amp; Culture French Language &amp; Culture German Language &amp; Culture Italian Language &amp; Culture Japanese Language &amp; Culture Latin Spanish Language &amp; Culture Spanish Literature &amp; Culture College Level Entrance Program (CLEP) Exam - Students who score above the score threshold listed below on one of the following CLEP Exams will satisfy the WCL Requirement: French Level II (score of 59 or above) German Level II (score 60 or above) Spanish Level II (score 63 or above) Spanish Level II with Writing (score 65 or above) International Baccalaureate (IB) HL Exam - Students who score a 6 or 7 on one of the following IB HL Exams will satisfy the WCL Requirement: IB Language A Literature HL (in language other than English) IB Language A Language &amp; Literature Exam (in language other than English) Please note that the following exams DO NOT meet the WCL requirement: Language B HL exams or any standard level (SL) exams. Students must send official transcripts and/or test scores to CSUMB in order to satisfy the WCL requirement.",
+      "contentHtml": "<p><strong>Transfer Admissions Requirements </strong>- To be admitted to CSU Monterey Bay, an Upper Division transfer student must have completed 60 transferable credit units, of which 30 must be applicable to General Education. English Communication (Area 1A), Critical Thinking (Area 1B), Oral Communication (Area 1C) and Mathematical Concepts and Quantitative Reasoning (Area 2) must be completed with a grade of C- or better prior to admission acceptance.</p><p><br></p><p><strong>General Education (GE) Requirements </strong>- Upper Division transfer students are recommended to complete all CSU GE/CAL-GETC requirements prior to transfer. Beginning Fall 2025, all California Community Colleges, CSUs, and UCs use one GE Pattern: CAL-GETC. Students who have completed college work prior to Fall 2025 should work with their community college advisor to determine the GE Pattern and catalog year that is best suited to their transfer needs. Students who have completed all General Education requirements at their community college should request full GE certification and send official documentation to CSUMB displaying GE certification completion (i.e. official transcript or GE certification form).</p><p><br></p><p><strong>CSU American Institutions Requirement (US 1, 2, 3)</strong> - Transfer students are recommended to complete the CSU American Institutions (AI) requirement prior to transfer. You may check with your community college or find a list of approved US 1, 2, 3 courses on Assist.</p><p><br></p><p><strong>World Culture &amp; Language Requirement (Majors Leading to a BA Degree) </strong>- CSU Monterey Bay requires all undergraduate students to satisfy the World Culture &amp; Language Requirement (WCL) for graduation. <strong><em>This requirement is satisfied differently for students pursuing BA degrees than for students pursuing BS/LS degrees.</em></strong></p><p><br></p><p>For Majors Leading to a BA Degree, students can satisfy this requirement by completing one of the following:</p><p><br></p><ul><li><strong>Complete an Intermediate level language course </strong>- Students who demonstrate second language proficiency by completing a course (equivalent to a language level 201 course at CSUMB) will satisfy the WCL requirement.</li><li><strong>Advanced Placement (AP) Exam </strong>- Students who score a 4 or 5 on one of the following AP Exams will satisfy the WCL Requirement:</li><li class=\"ql-indent-1\">Chinese Language &amp; Culture</li><li class=\"ql-indent-1\">French Language &amp; Culture</li><li class=\"ql-indent-1\">German Language &amp; Culture</li><li class=\"ql-indent-1\">Italian Language &amp; Culture</li><li class=\"ql-indent-1\">Japanese Language &amp; Culture</li><li class=\"ql-indent-1\">Latin</li><li class=\"ql-indent-1\">Spanish Language &amp; Culture</li><li class=\"ql-indent-1\">Spanish Literature &amp; Culture</li><li><strong>College Level Entrance Program (CLEP) Exam</strong> - Students who score above the score threshold listed below on one of the following CLEP Exams will satisfy the WCL Requirement:</li><li class=\"ql-indent-1\">French Level II (score of 59 or above)</li><li class=\"ql-indent-1\">German Level II (score 60 or above)</li><li class=\"ql-indent-1\">Spanish Level II (score 63 or above)</li><li class=\"ql-indent-1\">Spanish Level II with Writing (score 65 or above)</li><li><strong>International Baccalaureate (IB) HL Exam</strong> - Students who score a 6 or 7 on one of the following IB HL Exams will satisfy the WCL Requirement:</li><li class=\"ql-indent-1\">IB Language A Literature HL (in language other than English)</li><li class=\"ql-indent-1\">IB Language A Language &amp; Literature Exam (in language other than English)</li><li class=\"ql-indent-2\"><em>Please note that the following exams DO NOT meet the WCL requirement: Language B HL exams or any standard level (SL) exams.</em></li></ul><p><br></p><p>Students <strong>must </strong>send official transcripts and/or test scores to CSUMB in order to satisfy the WCL requirement.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:56.753Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=12&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F12%2FMajor%2F2f2715d9-f7af-4404-33e0-08dd6d829ab4&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F12%2FMajor%2F2f2715d9-f7af-4404-33e0-08dd6d829ab4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F12%2FMajor%2F2f2715d9-f7af-4404-33e0-08dd6d829ab4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-12/major/8ae4fe07fce87ffd.json",
+    "templateAssetCount": 4,
+    "articulationCount": 1
+  }
+}

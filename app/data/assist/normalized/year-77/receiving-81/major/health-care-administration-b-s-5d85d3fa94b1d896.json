@@ -1,0 +1,2053 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 81,
+    "name": "California State University, Long Beach",
+    "code": "CSULB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/81/Major/4aba1307-48af-4650-5671-08dec02198ed",
+    "type": "Major",
+    "name": "Health Care Administration, B.S.",
+    "publishDate": "2026-08-19T19:15:39.8035085",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "5fb76845-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromConjunction",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [
+        {
+          "type": "NToNFollowing",
+          "fromAmount": 9,
+          "toAmount": 10,
+          "unitType": "SemesterUnit",
+          "position": 0,
+          "selectionType": "Select",
+          "id": null,
+          "content": ""
+        }
+      ],
+      "attributes": [
+        {
+          "id": null,
+          "position": 1,
+          "content": "Please refer to additional important General Information section above"
+        },
+        {
+          "id": null,
+          "position": 0,
+          "content": "Only lower division courses listed"
+        }
+      ],
+      "sections": [
+        {
+          "id": "5fb76845-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 226573,
+              "prefix": "ACCT",
+              "courseNumber": "201",
+              "title": "Elementary Financial Accounting",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1998",
+              "endTerm": "",
+              "department": "Accounting",
+              "departmentParentId": 39,
+              "prefixDescription": "Accounting",
+              "prefixParentId": 5751,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e75ee884-ee23-466d-fe5d-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 226573,
+                  "prefix": "ACCT",
+                  "courseNumber": "201",
+                  "title": "Elementary Financial Accounting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Accounting",
+                  "departmentParentId": 39,
+                  "prefixDescription": "Accounting",
+                  "prefixParentId": 5751,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e75ee884-ee23-466d-fe5d-08dec02198ff",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 275646,
+                  "prefix": "ACCT",
+                  "courseNumber": "230",
+                  "title": "Financial Accounting",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Accounting",
+                  "departmentParentId": 43,
+                  "prefixDescription": "Accounting",
+                  "prefixParentId": 5756,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 275646,
+                      "prefix": "ACCT",
+                      "courseNumber": "230",
+                      "title": "Financial Accounting",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F2010",
+                      "endTerm": "",
+                      "department": "Accounting",
+                      "departmentParentId": 43,
+                      "prefixDescription": "Accounting",
+                      "prefixParentId": 5756,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 275646,
+                          "prefix": "ACCT",
+                          "courseNumber": "230",
+                          "title": "Financial Accounting",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F2010",
+                          "endTerm": "",
+                          "department": "Accounting",
+                          "departmentParentId": 43,
+                          "prefixDescription": "Accounting",
+                          "prefixParentId": 5756,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "e75ee884-ee23-466d-fe5d-08dec02198ff"
+          ]
+        },
+        {
+          "id": "5fb76845-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 174571,
+              "prefix": "ECON",
+              "courseNumber": "101",
+              "title": "Principles of Microeconomics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4282,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "4f132d85-5ba8-42ad-c85f-08dec710569a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 174571,
+                  "prefix": "ECON",
+                  "courseNumber": "101",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4282,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4f132d85-5ba8-42ad-c85f-08dec710569a",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156521,
+                  "prefix": "ECON",
+                  "courseNumber": "C2001",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 370702,
+                  "prefix": "ECON",
+                  "courseNumber": "C2001H",
+                  "title": "Principles of Microeconomics - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "OR",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156521,
+                      "prefix": "ECON",
+                      "courseNumber": "C2001",
+                      "title": "Principles of Microeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 370702,
+                      "prefix": "ECON",
+                      "courseNumber": "C2001H",
+                      "title": "Principles of Microeconomics - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156521,
+                          "prefix": "ECON",
+                          "courseNumber": "C2001",
+                          "title": "Principles of Microeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 370702,
+                          "prefix": "ECON",
+                          "courseNumber": "C2001H",
+                          "title": "Principles of Microeconomics - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "4f132d85-5ba8-42ad-c85f-08dec710569a"
+          ]
+        },
+        {
+          "id": "5fb76845-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 293277,
+              "prefix": "HDEV",
+              "courseNumber": "190",
+              "title": "Elementary Statistics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2026",
+              "endTerm": "",
+              "department": "Human Development",
+              "departmentParentId": 7208,
+              "prefixDescription": "Human Development",
+              "prefixParentId": 2266,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 273792,
+              "prefix": "SOC",
+              "courseNumber": "170",
+              "title": "Elementary Statistics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2026",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12086,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9057,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 294148,
+              "prefix": "PSY",
+              "courseNumber": "110",
+              "title": "Elementary Statistics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2026",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11201,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4673,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 176742,
+              "prefix": "STAT",
+              "courseNumber": "108",
+              "title": "Statistics for Everyday Life",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "S2010",
+              "endTerm": "",
+              "department": "Statistics",
+              "departmentParentId": 12546,
+              "prefixDescription": "Statistics",
+              "prefixParentId": 14697,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 268090,
+              "prefix": "STAT",
+              "courseNumber": "118",
+              "title": "Introductory Business Statistics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2014",
+              "endTerm": "",
+              "department": "Statistics",
+              "departmentParentId": 12546,
+              "prefixDescription": "Statistics",
+              "prefixParentId": 14697,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "cf08c9dc-2d00-4673-c857-08dec710569a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 293277,
+                  "prefix": "HDEV",
+                  "courseNumber": "190",
+                  "title": "Elementary Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Human Development",
+                  "departmentParentId": 7208,
+                  "prefixDescription": "Human Development",
+                  "prefixParentId": 2266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "868d43fd-a16d-4d37-c858-08dec710569a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 273792,
+                  "prefix": "SOC",
+                  "courseNumber": "170",
+                  "title": "Elementary Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12086,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9057,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "cc636032-449e-4b99-c859-08dec710569a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 294148,
+                  "prefix": "PSY",
+                  "courseNumber": "110",
+                  "title": "Elementary Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11201,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4673,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "80f4a4b4-87cd-40aa-c85a-08dec710569a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 176742,
+                  "prefix": "STAT",
+                  "courseNumber": "108",
+                  "title": "Statistics for Everyday Life",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2010",
+                  "endTerm": "",
+                  "department": "Statistics",
+                  "departmentParentId": 12546,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 14697,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "75b5fd36-11a1-4c54-c85b-08dec710569a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 268090,
+                  "prefix": "STAT",
+                  "courseNumber": "118",
+                  "title": "Introductory Business Statistics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2014",
+                  "endTerm": "",
+                  "department": "Statistics",
+                  "departmentParentId": 12546,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 14697,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "cf08c9dc-2d00-4673-c857-08dec710569a",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "e0a3ded0-74bc-44fc-032c-08dec021bb15",
+                  "sendingArticulationId": "fc82e1cc-df92-4bce-bf33-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "868d43fd-a16d-4d37-c858-08dec710569a",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "e0a3ded0-74bc-44fc-032c-08dec021bb15",
+                  "sendingArticulationId": "fc82e1cc-df92-4bce-bf33-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "cc636032-449e-4b99-c859-08dec710569a",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "e0a3ded0-74bc-44fc-032c-08dec021bb15",
+                  "sendingArticulationId": "fc82e1cc-df92-4bce-bf33-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "80f4a4b4-87cd-40aa-c85a-08dec710569a",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "1c7d32a4-a20d-4634-031a-08dec021bb15",
+                  "sendingArticulationId": "fd1f5e0d-7c71-44e5-befb-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "75b5fd36-11a1-4c54-c85b-08dec710569a",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "75f31c6f-fb9b-4773-032d-08dec021bb15",
+                  "sendingArticulationId": "3dd07e8b-d161-4607-bf35-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "cf08c9dc-2d00-4673-c857-08dec710569a",
+            "868d43fd-a16d-4d37-c858-08dec710569a",
+            "cc636032-449e-4b99-c859-08dec710569a",
+            "80f4a4b4-87cd-40aa-c85a-08dec710569a",
+            "75b5fd36-11a1-4c54-c85b-08dec710569a"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "496f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "Agreement Information The information below represents a view of articulated lower-division courses between California State University, Long Beach (CSULB) and the sending institution, aligning with the CSULB Academic Catalog. In the tables below, the left column represents CSULB courses, while any corresponding articulated courses are displayed on the right. It is essential to note that degree requirements may involve various combinations of courses or additional instructions; consequently, a careful review of all relevant information associated with the agreement is advised. Important Admissions Information for Fall 2027 ALL MAJORS ARE IMPACTED at California State University, Long Beach. As a result, incoming students must complete a series of major-specific preparation coursework and meet GPA requirements. Please visit our Major Specific Degree Requirements webpage for more information and to find the correct path and year for your major. Review the following for information related to transfer admissions to CSULB: Transfer Admission Eligibility Overview Transfer Application Process Lower Division Requirements Information for Major Agreements Due to ASSIST text limitations, some information regarding upper-division course options and electives may not be clear below. It is strongly recommended that agreement information along with CSULB Catalog information be reviewed when assessing a degree's requirements. It is crucial to note that the lower-division course requirements may change from year to year. The specific course requirements (catalog rights) will be determined for the student based on the catalog in effect at the time of their first term at CSULB. While effort is expended to mitigate alterations, agreement language can change with little advanced notice.",
+      "contentHtml": "<h2>Agreement Information</h2><p><br></p><p class=\"ql-indent-1\">The information below represents a view of articulated lower-division courses between California State University, Long Beach (CSULB) and the sending institution, aligning with the CSULB Academic Catalog. In the tables below, the left column represents CSULB courses, while any corresponding articulated courses are displayed on the right. It is essential to note that degree requirements may involve various combinations of courses or additional instructions; consequently, a careful review of all relevant information associated with the agreement is advised.</p><p><br></p><h2>Important Admissions Information for Fall 2027</h2><p><br></p><p class=\"ql-indent-1\"><strong>ALL </strong><a href=\"https://www.calstate.edu/attend/impaction-at-the-csu\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MAJORS ARE IMPACTED</strong></a> at California State University, Long Beach. As a result, incoming students <strong>must</strong> complete a series of major-specific preparation coursework and meet GPA requirements. Please visit our <a href=\"https://www.csulb.edu/admissions/major-specific-degree-requirements-for-transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\">Major Specific Degree Requirements</a> webpage for more information and to find the correct path and year for your major.</p><p class=\"ql-indent-1\"><br></p><p class=\"ql-indent-1\">Review the following for information related to transfer admissions to CSULB:</p><ul><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/admissions/transfer-admission-eligibility\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admission Eligibility Overview</a></li><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/admissions/transfer-application-process\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Application Process</a></li><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/academic-affairs/articulation/assist-agreement-information\" rel=\"noopener noreferrer\" target=\"_blank\">Lower Division Requirements Information for Major Agreements</a></li></ul><p><br></p><p class=\"ql-indent-1\">Due to ASSIST text limitations, some information regarding upper-division course options and electives may not be clear below. It is strongly recommended that agreement information <strong>along with</strong> <a href=\"https://csulb.catalog.acalog.com/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">CSULB Catalog information</a> be reviewed when assessing a degree's requirements. It is crucial to note that the lower-division course requirements may change from year to year. The specific course requirements (catalog rights) will be determined for the student based on the catalog in effect at the time of their first term at CSULB. While effort is expended to mitigate alterations, agreement language can change with little advanced notice.</p>"
+    },
+    {
+      "id": "5db76845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "General Information & Degree Notes",
+      "contentHtml": null
+    },
+    {
+      "id": "60b76845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "Three degree options compose the Bachelor of Science in Health Care Administration: Bachelor of Science in Health Care Administration (general) Bachelor of Science in Health Care Administration, Option in Healthcare Data Analytics Bachelor of Science in Health Care Administration, Option in Risk Management and Safety All three options require the same undergraduate coursework (below) for transfer applicants. Additional Information Computer proficiency in word processing, spreadsheet, database, and presentation software is expected. All students must achieve at least a 2.5 grade-point average for entrance into the program. All students must achieve a 'C' or better grade in all courses in the major. Please contact academic advising or the department staff if you have any questions. Consult the CSULB Catalog for additional details.",
+      "contentHtml": "<p>Three degree options compose the Bachelor of Science in Health Care Administration:</p><p><br></p><ul><li>Bachelor of Science in Health Care Administration (general)</li><li>Bachelor of Science in Health Care Administration, Option in Healthcare Data Analytics</li><li>Bachelor of Science in Health Care Administration, Option in Risk Management and Safety</li></ul><p><br></p><p>All three options require the same undergraduate coursework (below) for transfer applicants.</p><p><br></p><p><strong>Additional Information</strong></p><p><br></p><p>Computer proficiency in word processing, spreadsheet, database, and presentation software is expected.</p><p><br></p><ol><li>All students must achieve at least a 2.5 grade-point average for entrance into the program.</li><li>All students must achieve a 'C' or better grade in all courses in the major.</li></ol><p><br></p><p>Please contact academic advising or the department staff if you have any questions.&nbsp;</p><p><br></p><p><strong>Consult </strong>the <a href=\"https://csulb.catalog.acalog.com/preview_program.php?catoid=12&amp;poid=6413\" rel=\"noopener noreferrer\" target=\"_blank\">CSULB Catalog</a> for additional details.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:44.586Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=81&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F81%2FMajor%2F4aba1307-48af-4650-5671-08dec02198ed&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F81%2FMajor%2F4aba1307-48af-4650-5671-08dec02198ed",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F81%2FMajor%2F4aba1307-48af-4650-5671-08dec02198ed",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-81/major/5d85d3fa94b1d896.json",
+    "templateAssetCount": 5,
+    "articulationCount": 7
+  }
+}

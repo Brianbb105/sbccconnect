@@ -1,0 +1,1914 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 76,
+    "name": "California State University, Los Angeles",
+    "code": "CSULA",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/76/Major/20d7dc44-4af9-44b0-d5d6-08deb78f0e22",
+    "type": "Major",
+    "name": "Computer Science, B.S.",
+    "publishDate": "2026-07-14T17:47:42.653318",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "f61ac391-8743-4b7a-bca5-019f1fb3118c",
+      "title": "LOWER DIVISION CORE COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromConjunction",
+        "logic": "UNKNOWN",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f61ac391-8743-4b7a-bca5-019f1fb3118c:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": "58ab2a74-0a76-497b-9dc7-08debdb93ec1",
+              "courseIdentifierParentId": 421062,
+              "prefix": "CS",
+              "courseNumber": "1011",
+              "title": "Explorations in Computer Science: Foundations",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2026",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "1da23f01-b1af-459f-9dc8-08debdb93ec1",
+              "courseIdentifierParentId": 421063,
+              "prefix": "CS",
+              "courseNumber": "1012",
+              "title": "Explorations in Computer Science: Applications",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2026",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "50174397-cb50-44b4-a0c9-08ded7172fac",
+              "type": "Series",
+              "position": 0,
+              "logic": "OR",
+              "name": "CS 1011, CS 1012",
+              "courses": [
+                {
+                  "id": "58ab2a74-0a76-497b-9dc7-08debdb93ec1",
+                  "courseIdentifierParentId": 421062,
+                  "prefix": "CS",
+                  "courseNumber": "1011",
+                  "title": "Explorations in Computer Science: Foundations",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "1da23f01-b1af-459f-9dc8-08debdb93ec1",
+                  "courseIdentifierParentId": 421063,
+                  "prefix": "CS",
+                  "courseNumber": "1012",
+                  "title": "Explorations in Computer Science: Applications",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "50174397-cb50-44b4-a0c9-08ded7172fac",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "50174397-cb50-44b4-a0c9-08ded7172fac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7cda6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE COURSES",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "7cda6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 274438,
+              "prefix": "CS",
+              "courseNumber": "1222",
+              "title": "Introduction to Relational Databases",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 245425,
+              "prefix": "CS",
+              "courseNumber": "2011",
+              "title": "Introduction to Programming I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 183005,
+              "prefix": "CS",
+              "courseNumber": "2012",
+              "title": "Introduction to Programming II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 237320,
+              "prefix": "CS",
+              "courseNumber": "2013",
+              "title": "Programming with Data Structures",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 238296,
+              "prefix": "CS",
+              "courseNumber": "2148",
+              "title": "Discrete Structures",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 246001,
+              "prefix": "CS",
+              "courseNumber": "2445",
+              "title": "Introduction to Computer Systems",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 380143,
+              "prefix": "CS",
+              "courseNumber": "2470",
+              "title": "Fundamentals of Network Systems and Cybersecurity",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2021",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3234,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 519,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 265403,
+              "prefix": "ENGL",
+              "courseNumber": "2030",
+              "title": "Introduction to Technical Writing",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5000,
+              "prefixDescription": "English",
+              "prefixParentId": 2698,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 291084,
+              "prefix": "MATH",
+              "courseNumber": "2110",
+              "title": "Calculus I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 9008,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9984,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 165064,
+              "prefix": "MATH",
+              "courseNumber": "2120",
+              "title": "Calculus II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 9008,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9984,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 237168,
+              "prefix": "MATH",
+              "courseNumber": "2740",
+              "title": "Introduction to Statistics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 9008,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9984,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 309033,
+              "prefix": "PHYS",
+              "courseNumber": "2100",
+              "title": "General Physics I: Mechanics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10867,
+              "prefixDescription": "Physics",
+              "prefixParentId": 257,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "f24bac28-ba88-4bf3-a0ca-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 274438,
+                  "prefix": "CS",
+                  "courseNumber": "1222",
+                  "title": "Introduction to Relational Databases",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "67975a10-d694-467c-a0cb-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245425,
+                  "prefix": "CS",
+                  "courseNumber": "2011",
+                  "title": "Introduction to Programming I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "d3ae9115-8c4a-4313-a0cc-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 183005,
+                  "prefix": "CS",
+                  "courseNumber": "2012",
+                  "title": "Introduction to Programming II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "fc770e7a-3adc-4068-a0cd-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 237320,
+                  "prefix": "CS",
+                  "courseNumber": "2013",
+                  "title": "Programming with Data Structures",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "4baacf68-4944-4a1a-a0ce-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 238296,
+                  "prefix": "CS",
+                  "courseNumber": "2148",
+                  "title": "Discrete Structures",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            },
+            {
+              "id": "c947a434-c405-4f31-a0cf-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 246001,
+                  "prefix": "CS",
+                  "courseNumber": "2445",
+                  "title": "Introduction to Computer Systems",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 5,
+              "rowAttributes": []
+            },
+            {
+              "id": "8e8d799d-2245-4b2e-a0d0-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 380143,
+                  "prefix": "CS",
+                  "courseNumber": "2470",
+                  "title": "Fundamentals of Network Systems and Cybersecurity",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3234,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 519,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 6,
+              "rowAttributes": []
+            },
+            {
+              "id": "83b68b9e-b75d-4036-a0d1-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 265403,
+                  "prefix": "ENGL",
+                  "courseNumber": "2030",
+                  "title": "Introduction to Technical Writing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5000,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2698,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 7,
+              "rowAttributes": []
+            },
+            {
+              "id": "f3611b1a-7e9f-4824-a0d2-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 291084,
+                  "prefix": "MATH",
+                  "courseNumber": "2110",
+                  "title": "Calculus I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9008,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9984,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 8,
+              "rowAttributes": []
+            },
+            {
+              "id": "be5c568e-dd57-4463-a0d3-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 165064,
+                  "prefix": "MATH",
+                  "courseNumber": "2120",
+                  "title": "Calculus II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9008,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9984,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 9,
+              "rowAttributes": []
+            },
+            {
+              "id": "248de734-2eae-4944-a0d4-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 237168,
+                  "prefix": "MATH",
+                  "courseNumber": "2740",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9008,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9984,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 10,
+              "rowAttributes": []
+            },
+            {
+              "id": "cef03e87-9b23-4867-a0d5-08ded7172fac",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 309033,
+                  "prefix": "PHYS",
+                  "courseNumber": "2100",
+                  "title": "General Physics I: Mechanics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10867,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 257,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 11,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "f24bac28-ba88-4bf3-a0ca-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 262550,
+                  "prefix": "CIS",
+                  "courseNumber": "231",
+                  "title": "SQL Server Design and Programming",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2014",
+                  "endTerm": "",
+                  "department": "Computer Information Systems",
+                  "departmentParentId": 3117,
+                  "prefixDescription": "Computer Information Systems",
+                  "prefixParentId": 2227,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 262550,
+                      "prefix": "CIS",
+                      "courseNumber": "231",
+                      "title": "SQL Server Design and Programming",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2014",
+                      "endTerm": "",
+                      "department": "Computer Information Systems",
+                      "departmentParentId": 3117,
+                      "prefixDescription": "Computer Information Systems",
+                      "prefixParentId": 2227,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 262550,
+                          "prefix": "CIS",
+                          "courseNumber": "231",
+                          "title": "SQL Server Design and Programming",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2014",
+                          "endTerm": "",
+                          "department": "Computer Information Systems",
+                          "departmentParentId": 3117,
+                          "prefixDescription": "Computer Information Systems",
+                          "prefixParentId": 2227,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "67975a10-d694-467c-a0cb-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 202354,
+                  "prefix": "CS",
+                  "courseNumber": "105",
+                  "title": "Theory and Practice I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3216,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 529,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 202354,
+                      "prefix": "CS",
+                      "courseNumber": "105",
+                      "title": "Theory and Practice I",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Computer Science",
+                      "departmentParentId": 3216,
+                      "prefixDescription": "Computer Science",
+                      "prefixParentId": 529,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 202354,
+                          "prefix": "CS",
+                          "courseNumber": "105",
+                          "title": "Theory and Practice I",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Computer Science",
+                          "departmentParentId": 3216,
+                          "prefixDescription": "Computer Science",
+                          "prefixParentId": 529,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d3ae9115-8c4a-4313-a0cc-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 353445,
+                  "prefix": "CS",
+                  "courseNumber": "140",
+                  "title": "Object-Oriented Programming Using C++",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3216,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 529,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 353445,
+                      "prefix": "CS",
+                      "courseNumber": "140",
+                      "title": "Object-Oriented Programming Using C++",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Computer Science",
+                      "departmentParentId": 3216,
+                      "prefixDescription": "Computer Science",
+                      "prefixParentId": 529,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 353445,
+                          "prefix": "CS",
+                          "courseNumber": "140",
+                          "title": "Object-Oriented Programming Using C++",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Computer Science",
+                          "departmentParentId": 3216,
+                          "prefixDescription": "Computer Science",
+                          "prefixParentId": 529,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "fc770e7a-3adc-4068-a0cd-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 225800,
+                  "prefix": "CS",
+                  "courseNumber": "106",
+                  "title": "Theory and Practice II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3216,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 529,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 225800,
+                      "prefix": "CS",
+                      "courseNumber": "106",
+                      "title": "Theory and Practice II",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Computer Science",
+                      "departmentParentId": 3216,
+                      "prefixDescription": "Computer Science",
+                      "prefixParentId": 529,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 225800,
+                          "prefix": "CS",
+                          "courseNumber": "106",
+                          "title": "Theory and Practice II",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Computer Science",
+                          "departmentParentId": 3216,
+                          "prefixDescription": "Computer Science",
+                          "prefixParentId": 529,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "4baacf68-4944-4a1a-a0ce-08ded7172fac",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c947a434-c405-4f31-a0cf-08ded7172fac",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 355207,
+                  "prefix": "CIS",
+                  "courseNumber": "206",
+                  "title": "MS Windows Server System Administration",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2008",
+                  "endTerm": "",
+                  "department": "Computer Information Systems",
+                  "departmentParentId": 3117,
+                  "prefixDescription": "Computer Information Systems",
+                  "prefixParentId": 2227,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 235212,
+                  "prefix": "CS",
+                  "courseNumber": "107",
+                  "title": "Computer Architecture & Organization",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3216,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 529,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 355207,
+                      "prefix": "CIS",
+                      "courseNumber": "206",
+                      "title": "MS Windows Server System Administration",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2008",
+                      "endTerm": "",
+                      "department": "Computer Information Systems",
+                      "departmentParentId": 3117,
+                      "prefixDescription": "Computer Information Systems",
+                      "prefixParentId": 2227,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 355207,
+                          "prefix": "CIS",
+                          "courseNumber": "206",
+                          "title": "MS Windows Server System Administration",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2008",
+                          "endTerm": "",
+                          "department": "Computer Information Systems",
+                          "departmentParentId": 3117,
+                          "prefixDescription": "Computer Information Systems",
+                          "prefixParentId": 2227,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 235212,
+                      "prefix": "CS",
+                      "courseNumber": "107",
+                      "title": "Computer Architecture & Organization",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Computer Science",
+                      "departmentParentId": 3216,
+                      "prefixDescription": "Computer Science",
+                      "prefixParentId": 529,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 235212,
+                          "prefix": "CS",
+                          "courseNumber": "107",
+                          "title": "Computer Architecture & Organization",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Computer Science",
+                          "departmentParentId": 3216,
+                          "prefixDescription": "Computer Science",
+                          "prefixParentId": 529,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "3d113310-0e3a-4828-3d62-08deb78f291e",
+                  "sendingArticulationId": "7f14e698-8e08-4343-2906-08deb78f20ac",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "receivingCellId": "8e8d799d-2245-4b2e-a0d0-08ded7172fac",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "83b68b9e-b75d-4036-a0d1-08ded7172fac",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "f3611b1a-7e9f-4824-a0d2-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 358343,
+                  "prefix": "MATH",
+                  "courseNumber": "150",
+                  "title": "Calculus with Analytic Geometry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 358343,
+                      "prefix": "MATH",
+                      "courseNumber": "150",
+                      "title": "Calculus with Analytic Geometry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 358343,
+                          "prefix": "MATH",
+                          "courseNumber": "150",
+                          "title": "Calculus with Analytic Geometry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "be5c568e-dd57-4463-a0d3-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301211,
+                  "prefix": "MATH",
+                  "courseNumber": "160",
+                  "title": "Calculus with Analytic Geometry II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301211,
+                      "prefix": "MATH",
+                      "courseNumber": "160",
+                      "title": "Calculus with Analytic Geometry II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301211,
+                          "prefix": "MATH",
+                          "courseNumber": "160",
+                          "title": "Calculus with Analytic Geometry II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "248de734-2eae-4944-a0d4-08ded7172fac",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "cef03e87-9b23-4867-a0d5-08ded7172fac",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301212,
+                  "prefix": "PHYS",
+                  "courseNumber": "121",
+                  "title": "Mechanics of Solids and Fluids",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301212,
+                      "prefix": "PHYS",
+                      "courseNumber": "121",
+                      "title": "Mechanics of Solids and Fluids",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301212,
+                          "prefix": "PHYS",
+                          "courseNumber": "121",
+                          "title": "Mechanics of Solids and Fluids",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "f24bac28-ba88-4bf3-a0ca-08ded7172fac",
+            "67975a10-d694-467c-a0cb-08ded7172fac",
+            "d3ae9115-8c4a-4313-a0cc-08ded7172fac",
+            "fc770e7a-3adc-4068-a0cd-08ded7172fac",
+            "4baacf68-4944-4a1a-a0ce-08ded7172fac",
+            "c947a434-c405-4f31-a0cf-08ded7172fac",
+            "8e8d799d-2245-4b2e-a0d0-08ded7172fac",
+            "83b68b9e-b75d-4036-a0d1-08ded7172fac",
+            "f3611b1a-7e9f-4824-a0d2-08ded7172fac",
+            "be5c568e-dd57-4463-a0d3-08ded7172fac",
+            "248de734-2eae-4944-a0d4-08ded7172fac",
+            "cef03e87-9b23-4867-a0d5-08ded7172fac"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "7dda6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "GENERAL INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "97138479-0706-4ac2-97eb-0194667bdd5a",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Major Specific Criteria This articulation agreement displays lower-division course requirements specific to the major. Cal State LA lower-division course numbers range from 1000 - 2999. Students are advised to seek advisement from a counselor when planning to transfer to CSU Los Angeles and refer to the University Catalog to learn more about this major and its features. Additional admissions criteria for the major can be found on the Major Specific Criteria campus website. Please note that admissions requirements can vary by term so check back to see if there are any changes.",
+      "contentHtml": "<p><strong style=\"font-size: 24px; color: rgb(169, 62, 58);\">Major Specific Criteria</strong></p><p><br></p><p><span style=\"font-size: 16px;\">This articulation agreement displays lower-division course requirements specific to the major. Cal State LA lower-division course numbers range from 1000 - 2999. Students are advised to seek advisement from a counselor when planning to transfer to CSU Los Angeles and refer to the </span><a href=\"https://ecatalog.calstatela.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University Catalog</a><span style=\"font-size: 16px;\"> to learn more about this major and its features. Additional admissions criteria for the major can be found on the </span><a href=\"https://www.calstatela.edu/admissions/major-specific-criteria\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Major Specific Criteria</a><span style=\"font-size: 16px;\"> campus website.</span><strong style=\"font-size: 16px; color: rgb(43, 134, 24);\"><em>&nbsp;</em></strong><strong style=\"font-size: 16px; color: rgb(137, 58, 171);\"><em>Please note that admissions requirements can vary by term so check back to see if there are any changes.&nbsp;</em></strong></p>"
+    },
+    {
+      "id": "84da6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "RESOURCES FOR TRANSFER STUDENTS",
+      "contentHtml": null
+    },
+    {
+      "id": "7eda6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "Cal State Apply Cal State LA College of Engineering, Computer Science, and Technology College of Engineering, Computer Science and Technology Academic Advising Degree with a Guarantee Department of Computer Science General Education Lower Division Courses University Catalog",
+      "contentHtml": "<p><a href=\"https://www.calstate.edu/apply\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Cal State Apply</a></p><p><a href=\"http://www.calstatela.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Cal State LA</a><a href=\"https://ecatalog.calstatela.edu/preview_program.php?catoid=70&amp;poid=31599\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\"> </a></p><p><a href=\"https://www.calstatela.edu/ecst\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">College of Engineering, Computer Science, and Technology</a></p><p><a href=\"https://www.calstatela.edu/ecst/success/advising-center\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">College of Engineering, Computer Science and Technology Academic Advising</a></p><p><a href=\"http://adegreewithaguarantee.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Degree with a Guarantee</a></p><p><a href=\"http://www.calstatela.edu/ecst/cs\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Department of Computer Science</a></p><p><a href=\"https://ecatalog.calstatela.edu/content.php?catoid=77&amp;navoid=11897\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">General Education Lower Division Courses </a></p><p><a href=\"http://ecatalog.calstatela.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University Catalog</a></p>"
+    },
+    {
+      "id": "7bda6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "DIVERSITY REQUIREMENT FOR CAL STATE LA GRADUATION",
+      "contentHtml": null
+    },
+    {
+      "id": "afdd7145-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "The articulation information in Assist.org not only shows a link to the admission requirements (aka our Major Specific Criteria webpage) but also Cal State LA graduation requirements that may be completed at the lower-division level, prior to transferring to the University. The diversity requirement is a graduation requirement , not an admission requirement. The diversity requirement may be completed prior to, or after, transferring to the University. For the Cal State LA degree, students will be required to complete two courses (six units) certified as diversity courses, at least one focusing on issues of race and ethnicity and their intersectionality with other social categories that structure inequality in society. These courses can be completed either at the lower-division or upper-division level from among courses satisfying GE requirements. Please view the General Education agreements on Assist.org for the lower-division courses that will meet the Diversity (d) and Race &amp; Ethnicity (re) Requirements.",
+      "contentHtml": "<p><span style=\"font-size: 16px;\">The articulation information in Assist.org not only shows a link to the admission requirements (aka our </span><a href=\"http://www.calstatela.edu/admissions/major-specific-criteria\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Major Specific Criteria </a><span style=\"font-size: 16px;\">webpage) but also Cal State LA graduation requirements that may be completed at the lower-division level, prior to transferring to the University. The diversity requirement is a </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">graduation requirement</strong><span style=\"font-size: 16px;\">, not an admission requirement. The diversity requirement may be completed prior to, or after, transferring to the University. </span></p><p><br></p><p><span style=\"font-size: 16px;\">For the Cal State LA degree, students will be required to </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">complete two courses (six units)</strong><span style=\"font-size: 16px;\"> certified as diversity courses, at least one focusing on issues of race and ethnicity and their intersectionality with other social categories that structure inequality in society. These courses can be completed either at the lower-division or upper-division level from among courses satisfying GE requirements.</span></p><p><br></p><p><span style=\"font-size: 16px;\">Please view the </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">General Education </strong><span style=\"font-size: 16px;\">agreements on Assist.org for the lower-division courses that will meet the </span><strong style=\"font-size: 16px;\">Diversity (d)</strong><span style=\"font-size: 16px;\"> and </span><strong style=\"font-size: 16px;\">Race &amp; Ethnicity (re)</strong><span style=\"font-size: 16px;\"> Requirements.</span></p>"
+    },
+    {
+      "id": "80da6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 6,
+      "content": "Computer Science, B.S.",
+      "contentHtml": null
+    },
+    {
+      "id": "82da6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 7,
+      "content": "Overview The objective of the Bachelor of Science degree in Computer Science is to prepare qualified students for careers involving the design of computer systems and their applications to science and industry. The program provides an excellent foundation in all core areas of computer science with the opportunity to choose electives in a variety of specialized fields. Requirements for the Major The total number of units required for the Bachelor of Science degree in Computer Science is 120 units, of which 94 units are in the major. Computer Science students are required to take 43 units of General Education (GE) of which 21 units are met by courses in the major. Consult with an advisor in the department for the specific number of units required in all areas of the degree, including GE and free electives.",
+      "contentHtml": "<p><strong style=\"font-size: 16px;\">Overview</strong></p><p><br></p><p><span style=\"font-size: 16px;\">The objective of the Bachelor of Science degree in Computer Science is to prepare qualified students for careers involving the design of computer systems and their applications to science and industry.&nbsp;The program provides an excellent foundation in all core areas of computer science with the opportunity to choose electives in a variety of specialized fields.&nbsp;&nbsp;</span></p><p><br></p><p><strong style=\"font-size: 16px;\">Requirements for the Major</strong></p><p><br></p><ul><li><span style=\"font-size: 16px;\">The total number of units required for the Bachelor of Science degree in Computer Science is 120 units, of which 94 units are in the major.&nbsp;</span></li><li><span style=\"font-size: 16px;\">Computer Science students are required to take 43 units of </span><strong style=\"font-size: 16px; color: rgb(43, 134, 24);\">General Education (GE) </strong><span style=\"font-size: 16px;\">of which 21 units are met by courses in the major. </span></li></ul><p><br></p><p><span style=\"font-size: 16px;\">Consult with an advisor in the department for the specific number of units required in all areas of the degree, including GE and free electives.</span></p><p><br></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:46.547Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=76&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F76%2FMajor%2F20d7dc44-4af9-44b0-d5d6-08deb78f0e22&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F76%2FMajor%2F20d7dc44-4af9-44b0-d5d6-08deb78f0e22",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F76%2FMajor%2F20d7dc44-4af9-44b0-d5d6-08deb78f0e22",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-76/major/a2dfaca2da75a940.json",
+    "templateAssetCount": 11,
+    "articulationCount": 8
+  }
+}

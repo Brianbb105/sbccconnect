@@ -1,0 +1,810 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 81,
+    "name": "California State University, Long Beach",
+    "code": "CSULB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/81/Major/a07a494f-9354-4494-5698-08dec02198ed",
+    "type": "Major",
+    "name": "Political Science, B.A.",
+    "publishDate": "2026-08-19T19:15:00.7115627",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "796e6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 6,
+        "amountUnitType": "Unit",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Only lower division courses listed"
+        }
+      ],
+      "sections": [
+        {
+          "id": "796e6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 6,
+            "amountUnitType": "Unit",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 157922,
+              "prefix": "POSC",
+              "courseNumber": "100",
+              "title": "Introduction to American Govt",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11069,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1974,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "383b9a48-5b70-4994-00c7-08dec0219900",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 157922,
+                  "prefix": "POSC",
+                  "courseNumber": "100",
+                  "title": "Introduction to American Govt",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11069,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1974,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                },
+                {
+                  "id": null,
+                  "position": 1,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "383b9a48-5b70-4994-00c7-08dec0219900",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330292,
+                  "prefix": "POLS",
+                  "courseNumber": "C1000",
+                  "title": "American Government and Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330292,
+                      "prefix": "POLS",
+                      "courseNumber": "C1000",
+                      "title": "American Government and Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330292,
+                          "prefix": "POLS",
+                          "courseNumber": "C1000",
+                          "title": "American Government and Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "383b9a48-5b70-4994-00c7-08dec0219900"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "686e6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "CONCENTRATION REQUIREMENTS",
+      "position": 3,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [
+        {
+          "type": "NFollowing",
+          "amount": 3,
+          "amountUnitType": "Unit",
+          "position": 0,
+          "selectionType": "Select",
+          "id": null,
+          "content": ""
+        }
+      ],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Only lower division courses listed"
+        }
+      ],
+      "sections": [
+        {
+          "id": "686e6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 214698,
+              "prefix": "POSC",
+              "courseNumber": "212",
+              "title": "How Democratic is the United States?",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2007",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11069,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1974,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "631dacdb-7dc6-48d9-00c3-08dec0219900",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 214698,
+                  "prefix": "POSC",
+                  "courseNumber": "212",
+                  "title": "How Democratic is the United States?",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11069,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1974,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                },
+                {
+                  "id": null,
+                  "position": 1,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "631dacdb-7dc6-48d9-00c3-08dec0219900",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "631dacdb-7dc6-48d9-00c3-08dec0219900"
+          ]
+        },
+        {
+          "id": "686e6f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 188873,
+              "prefix": "POSC",
+              "courseNumber": "225",
+              "title": "Issues in Political Theory",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11069,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1974,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "37902f71-4be3-4668-00c4-08dec0219900",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 188873,
+                  "prefix": "POSC",
+                  "courseNumber": "225",
+                  "title": "Issues in Political Theory",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11069,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1974,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                },
+                {
+                  "id": null,
+                  "position": 1,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "37902f71-4be3-4668-00c4-08dec0219900",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 28442,
+                  "prefix": "POLS",
+                  "courseNumber": "132",
+                  "title": "Political Thinking",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 28442,
+                      "prefix": "POLS",
+                      "courseNumber": "132",
+                      "title": "Political Thinking",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 28442,
+                          "prefix": "POLS",
+                          "courseNumber": "132",
+                          "title": "Political Thinking",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "37902f71-4be3-4668-00c4-08dec0219900"
+          ]
+        },
+        {
+          "id": "686e6f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 245500,
+              "prefix": "POSC",
+              "courseNumber": "218",
+              "title": "Global Politics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2007",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11069,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1974,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "7d2f0ce6-2e8e-43f0-00c5-08dec0219900",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245500,
+                  "prefix": "POSC",
+                  "courseNumber": "218",
+                  "title": "Global Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11069,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1974,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                },
+                {
+                  "id": null,
+                  "position": 1,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "7d2f0ce6-2e8e-43f0-00c5-08dec0219900",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "7d2f0ce6-2e8e-43f0-00c5-08dec0219900"
+          ]
+        },
+        {
+          "id": "686e6f45-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 56967,
+              "prefix": "POSC",
+              "courseNumber": "199",
+              "title": "Introduction to California Government",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2010",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11069,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1974,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "a42734bb-f6b1-47da-00c6-08dec0219900",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 56967,
+                  "prefix": "POSC",
+                  "courseNumber": "199",
+                  "title": "Introduction to California Government",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11069,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1974,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                },
+                {
+                  "id": null,
+                  "position": 1,
+                  "content": "Please refer to additional important General Information section above"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "a42734bb-f6b1-47da-00c6-08dec0219900",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "a42734bb-f6b1-47da-00c6-08dec0219900"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "496f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "Agreement Information The information below represents a view of articulated lower-division courses between California State University, Long Beach (CSULB) and the sending institution, aligning with the CSULB Academic Catalog. In the tables below, the left column represents CSULB courses, while any corresponding articulated courses are displayed on the right. It is essential to note that degree requirements may involve various combinations of courses or additional instructions; consequently, a careful review of all relevant information associated with the agreement is advised. Important Admissions Information for Fall 2027 ALL MAJORS ARE IMPACTED at California State University, Long Beach. As a result, incoming students must complete a series of major-specific preparation coursework and meet GPA requirements. Please visit our Major Specific Degree Requirements webpage for more information and to find the correct path and year for your major. Review the following for information related to transfer admissions to CSULB: Transfer Admission Eligibility Overview Transfer Application Process Lower Division Requirements Information for Major Agreements Due to ASSIST text limitations, some information regarding upper-division course options and electives may not be clear below. It is strongly recommended that agreement information along with CSULB Catalog information be reviewed when assessing a degree's requirements. It is crucial to note that the lower-division course requirements may change from year to year. The specific course requirements (catalog rights) will be determined for the student based on the catalog in effect at the time of their first term at CSULB. While effort is expended to mitigate alterations, agreement language can change with little advanced notice.",
+      "contentHtml": "<h2>Agreement Information</h2><p><br></p><p class=\"ql-indent-1\">The information below represents a view of articulated lower-division courses between California State University, Long Beach (CSULB) and the sending institution, aligning with the CSULB Academic Catalog. In the tables below, the left column represents CSULB courses, while any corresponding articulated courses are displayed on the right. It is essential to note that degree requirements may involve various combinations of courses or additional instructions; consequently, a careful review of all relevant information associated with the agreement is advised.</p><p><br></p><h2>Important Admissions Information for Fall 2027</h2><p><br></p><p class=\"ql-indent-1\"><strong>ALL </strong><a href=\"https://www.calstate.edu/attend/impaction-at-the-csu\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MAJORS ARE IMPACTED</strong></a> at California State University, Long Beach. As a result, incoming students <strong>must</strong> complete a series of major-specific preparation coursework and meet GPA requirements. Please visit our <a href=\"https://www.csulb.edu/admissions/major-specific-degree-requirements-for-transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\">Major Specific Degree Requirements</a> webpage for more information and to find the correct path and year for your major.</p><p class=\"ql-indent-1\"><br></p><p class=\"ql-indent-1\">Review the following for information related to transfer admissions to CSULB:</p><ul><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/admissions/transfer-admission-eligibility\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admission Eligibility Overview</a></li><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/admissions/transfer-application-process\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Application Process</a></li><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/academic-affairs/articulation/assist-agreement-information\" rel=\"noopener noreferrer\" target=\"_blank\">Lower Division Requirements Information for Major Agreements</a></li></ul><p><br></p><p class=\"ql-indent-1\">Due to ASSIST text limitations, some information regarding upper-division course options and electives may not be clear below. It is strongly recommended that agreement information <strong>along with</strong> <a href=\"https://csulb.catalog.acalog.com/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">CSULB Catalog information</a> be reviewed when assessing a degree's requirements. It is crucial to note that the lower-division course requirements may change from year to year. The specific course requirements (catalog rights) will be determined for the student based on the catalog in effect at the time of their first term at CSULB. While effort is expended to mitigate alterations, agreement language can change with little advanced notice.</p>"
+    },
+    {
+      "id": "6b6e6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "General Information & Degree Notes",
+      "contentHtml": null
+    },
+    {
+      "id": "766e6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "This program must include at least three units of a practicum. POSC 100, the 200-level concentration requirement, and POSC 300 must be completed by the end of the junior year. POSC 100 and one 200-level POSC course must be completed with a grade of 'C' or better. With the exception of internships, all courses used toward the POSC major must be taken for a letter grade. Concentration Requirements - Take three lower-division units and 15 upper-division units in the chosen area of concentration, including the senior seminar in that area. Law, Politics, and Policy concentration: Take POSC 212 or Political Theory concentration: Take POSC 225 or Global Politics concentration: Take POSC 218 or General concentration: Take POSC 199 Consult the CSULB catalog for additional details.",
+      "contentHtml": "<p>This program must include at least three units of a practicum.</p><p><br></p><p>POSC 100, the 200-level concentration requirement, and POSC 300 must be completed by the end of the junior year.</p><p><br></p><p>POSC 100 and one 200-level POSC course must be completed with a grade of 'C' or better.</p><p><br></p><p>With the exception of internships, all courses used toward the POSC major must be taken for a letter grade.</p><p><br></p><p>Concentration Requirements - Take three lower-division units and 15 upper-division units in the chosen area of concentration, including the senior seminar in that area.</p><ul><li>Law, Politics, and Policy concentration: Take POSC 212 or</li><li>Political Theory concentration: Take POSC 225 or</li><li>Global Politics concentration: Take POSC 218 or</li><li>General concentration: Take POSC 199</li></ul><p><br></p><p>Consult the <a href=\"https://csulb.catalog.acalog.com/preview_program.php?catoid=12&amp;poid=6492\" rel=\"noopener noreferrer\" target=\"_blank\">CSULB catalog</a> for additional details.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:45.510Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=81&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F81%2FMajor%2Fa07a494f-9354-4494-5698-08dec02198ed&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F81%2FMajor%2Fa07a494f-9354-4494-5698-08dec02198ed",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F81%2FMajor%2Fa07a494f-9354-4494-5698-08dec02198ed",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-81/major/2584c5aeb3c2e780.json",
+    "templateAssetCount": 7,
+    "articulationCount": 2
+  }
+}

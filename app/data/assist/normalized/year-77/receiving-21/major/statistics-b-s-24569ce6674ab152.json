@@ -1,0 +1,900 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 21,
+    "name": "California State University, East Bay",
+    "code": "CSUHAY",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/21/Major/1eea8fc5-551a-4e2a-85be-08dee527a9e4",
+    "type": "Major",
+    "name": "Statistics, B.S.",
+    "publishDate": "2026-07-29T22:29:12.0566648",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "0ead6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE",
+      "position": 1,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "0ead6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 284876,
+              "prefix": "CS",
+              "courseNumber": "100",
+              "title": "Programming for Everyone",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 14107,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 483,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "00b5a3c5-6392-4095-e513-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 284876,
+                  "prefix": "CS",
+                  "courseNumber": "100",
+                  "title": "Programming for Everyone",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 14107,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 483,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "00b5a3c5-6392-4095-e513-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 353445,
+                  "prefix": "CS",
+                  "courseNumber": "140",
+                  "title": "Object-Oriented Programming Using C++",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3216,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 529,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 353445,
+                      "prefix": "CS",
+                      "courseNumber": "140",
+                      "title": "Object-Oriented Programming Using C++",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Computer Science",
+                      "departmentParentId": 3216,
+                      "prefixDescription": "Computer Science",
+                      "prefixParentId": 529,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 353445,
+                          "prefix": "CS",
+                          "courseNumber": "140",
+                          "title": "Object-Oriented Programming Using C++",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Computer Science",
+                          "departmentParentId": 3216,
+                          "prefixDescription": "Computer Science",
+                          "prefixParentId": 529,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "00b5a3c5-6392-4095-e513-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "0ead6f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 256819,
+              "prefix": "MATH",
+              "courseNumber": "130",
+              "title": "CALCULUS I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 14106,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9927,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "536097c9-9dc1-4ec8-e512-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 256819,
+                  "prefix": "MATH",
+                  "courseNumber": "130",
+                  "title": "CALCULUS I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 14106,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9927,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "536097c9-9dc1-4ec8-e512-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 358343,
+                  "prefix": "MATH",
+                  "courseNumber": "150",
+                  "title": "Calculus with Analytic Geometry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 358343,
+                      "prefix": "MATH",
+                      "courseNumber": "150",
+                      "title": "Calculus with Analytic Geometry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 358343,
+                          "prefix": "MATH",
+                          "courseNumber": "150",
+                          "title": "Calculus with Analytic Geometry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "536097c9-9dc1-4ec8-e512-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feac6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "feac6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 365343,
+              "prefix": "CS",
+              "courseNumber": "200",
+              "title": "Advanced Programming for Everyone",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 14107,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 483,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 284363,
+              "prefix": "MATH",
+              "courseNumber": "131",
+              "title": "CALCULUS II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 14106,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9927,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "f6de76da-b078-4b87-e50f-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 365343,
+                  "prefix": "CS",
+                  "courseNumber": "200",
+                  "title": "Advanced Programming for Everyone",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 14107,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 483,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "062a05d5-2507-4281-e510-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 284363,
+                  "prefix": "MATH",
+                  "courseNumber": "131",
+                  "title": "CALCULUS II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 14106,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9927,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "f6de76da-b078-4b87-e50f-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "062a05d5-2507-4281-e510-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301211,
+                  "prefix": "MATH",
+                  "courseNumber": "160",
+                  "title": "Calculus with Analytic Geometry II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301211,
+                      "prefix": "MATH",
+                      "courseNumber": "160",
+                      "title": "Calculus with Analytic Geometry II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301211,
+                          "prefix": "MATH",
+                          "courseNumber": "160",
+                          "title": "Calculus with Analytic Geometry II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "f6de76da-b078-4b87-e50f-08dee527a9f5",
+            "062a05d5-2507-4281-e510-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02ad6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "ADDITIONAL APPROVED COURSES FOR THE MAJOR",
+      "position": 4,
+      "logic": "AND",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "AND",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "02ad6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 256842,
+              "prefix": "MATH",
+              "courseNumber": "230",
+              "title": "CALCULUS III",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 14106,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9927,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "521c5e24-e009-4a4d-e511-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 256842,
+                  "prefix": "MATH",
+                  "courseNumber": "230",
+                  "title": "CALCULUS III",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 14106,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9927,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "521c5e24-e009-4a4d-e511-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 356808,
+                  "prefix": "MATH",
+                  "courseNumber": "200",
+                  "title": "Multivariable Calculus",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 356808,
+                      "prefix": "MATH",
+                      "courseNumber": "200",
+                      "title": "Multivariable Calculus",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2007",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 356808,
+                          "prefix": "MATH",
+                          "courseNumber": "200",
+                          "title": "Multivariable Calculus",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2007",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "521c5e24-e009-4a4d-e511-08dee527a9f5"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "0bad6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "PLEASE NOTE: ASSIST does not replace the assistance of meeting with an adviser. Please contact CSU East Bay at (510) 885-2556 for an advising appointment. The most accurate and up to date transfer information for transfer courses accepted by CSU East Bay is available at this link: CSUEB Equivalencies All California Community College transfer students are encouraged to complete their CSU General Education Breadth or CALGETC pattern at their Community College prior to enrollment at CSU, East Bay. ASSOCIATE DEGREE FOR TRANSFER similarity matches with CSUEB DEGREES can be found here: ASSOCIATE DEGREES FOR TRANSFER CHART",
+      "contentHtml": "<p>PLEASE NOTE: ASSIST does not replace the assistance of meeting with an adviser. Please contact CSU East Bay at (510) 885-2556 for an advising appointment. The most accurate and up to date transfer information for transfer courses accepted by CSU East Bay is available at this link: <a href=\"https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=b75e02ac-0916-413d-8adf-f8011538371f&amp;aid=c79a2650-be66-45fb-9aff-c6f976fd20ff\" rel=\"noopener noreferrer\" target=\"_blank\">CSUEB Equivalencies </a>All California Community College transfer students are encouraged to complete their CSU General Education Breadth or CALGETC pattern at their Community College prior to enrollment at CSU, East Bay.  ASSOCIATE DEGREE FOR TRANSFER similarity matches with CSUEB DEGREES can be found here:  <a href=\"https://www.csueastbay.edu/aps/academic-services/articulation-and-transfer/associate-degrees-for-transfer.html\" rel=\"noopener noreferrer\" target=\"_blank\">ASSOCIATE DEGREES FOR TRANSFER CHART</a></p>"
+    },
+    {
+      "id": "fbac6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "Statistics (B.S.) 120 units",
+      "contentHtml": null
+    },
+    {
+      "id": "05ad6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "Program Description Statistics is the science of learning from data. Majors study collecting and analyzing all kinds of data, and reporting the results of the analysis. Designs of Experiments are used to plan data collection in experimental settings, such as in medical research. Surveys are used to collect opinions from samples in populations, such as in political polling. Observational data is collected commonly by business as part of standard business processes,such as in website analytics. Statistical methods are used to process data into easily read visual displays, and into summary statistics for interpretation, decision making, and reporting. Statistics has been a rapidly growing science for many years and has many uses in other fields, such as Econometrics, Business Analytics, Machine Learning, and Visualization. Statistics is widely used by businesses and government organizations to understand changes in the economy and to make forecasts about future events based on past patterns in their data. Statistics is used to model relationships between variables and to predict future values of output variables from input variables. Statistical methods draw accurate inferences about large groups on the basis of a representative same from the group or population. Descriptive Statistics are used to summarize and visualize the collected data. The methodology of statistics can be adapted to many types of problems. Due to the extensive development of computers and the collection of large databases, the need for statistical techniques has greatly expanded in recent years. A society like ours, which has become increasingly dependent on its data, has a growing need for statisticians.",
+      "contentHtml": "<p>Program Description</p><p>Statistics is the science of learning from data. Majors study collecting and analyzing all kinds of data, and reporting the results of the analysis.&nbsp;Designs of Experiments are used to plan data collection in experimental settings, such as in medical research.&nbsp;Surveys are used to collect opinions from samples in populations, such as in political polling.&nbsp;Observational data is collected commonly by business as part of standard business processes,such as in website analytics.&nbsp;Statistical methods are used to process data into easily read visual displays, and into summary statistics for interpretation, decision making, and reporting.</p><p><br></p><p>Statistics has been a rapidly growing science for many years and has many uses in other fields, such as Econometrics, Business Analytics, Machine Learning, and Visualization.&nbsp;Statistics is widely used by businesses and government organizations to understand changes in the economy and to make forecasts about future events based on past patterns in their data. Statistics is used to model relationships between variables and to predict future values of output variables from input variables.&nbsp;Statistical methods draw accurate inferences about large groups on the basis of a representative same from the group or population.&nbsp;Descriptive Statistics are used to summarize and visualize the collected data.</p><p><br></p><p>The methodology of statistics can be adapted to many types of problems. Due to the extensive development of computers and the collection of large databases, the need for statistical techniques has greatly expanded in recent years.&nbsp;A society like ours, which has become increasingly dependent on its data, has a growing need for statisticians.</p><p><br></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:41.533Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=21&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F21%2FMajor%2F1eea8fc5-551a-4e2a-85be-08dee527a9e4&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F21%2FMajor%2F1eea8fc5-551a-4e2a-85be-08dee527a9e4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F21%2FMajor%2F1eea8fc5-551a-4e2a-85be-08dee527a9e4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-21/major/24569ce6674ab152.json",
+    "templateAssetCount": 8,
+    "articulationCount": 4
+  }
+}

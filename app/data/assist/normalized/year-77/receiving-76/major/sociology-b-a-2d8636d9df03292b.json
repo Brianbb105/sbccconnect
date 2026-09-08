@@ -1,0 +1,804 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 76,
+    "name": "California State University, Los Angeles",
+    "code": "CSULA",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/76/Major/8da93727-0918-4afa-d5a5-08deb78f0e22",
+    "type": "Major",
+    "name": "Sociology, B.A.",
+    "publishDate": "2026-07-14T17:34:20.1937948",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "39c96f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "39c96f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 181833,
+              "prefix": "SOC",
+              "courseNumber": "2010",
+              "title": "Introduction to Sociology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12082,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9051,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "4cec3ede-f93f-41b1-d3d8-08deb78f0e34",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 181833,
+                  "prefix": "SOC",
+                  "courseNumber": "2010",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12082,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9051,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4cec3ede-f93f-41b1-d3d8-08deb78f0e34",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135841,
+                  "prefix": "SOC",
+                  "courseNumber": "101",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 244266,
+                  "prefix": "SOC",
+                  "courseNumber": "101H",
+                  "title": "Introduction to Sociology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135841,
+                      "prefix": "SOC",
+                      "courseNumber": "101",
+                      "title": "Introduction to Sociology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135841,
+                          "prefix": "SOC",
+                          "courseNumber": "101",
+                          "title": "Introduction to Sociology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 244266,
+                      "prefix": "SOC",
+                      "courseNumber": "101H",
+                      "title": "Introduction to Sociology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 244266,
+                          "prefix": "SOC",
+                          "courseNumber": "101H",
+                          "title": "Introduction to Sociology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "00f79a82-786a-4cf5-40a0-08deb78f291e",
+                  "sendingArticulationId": "ddf2f36a-ba47-43a9-4079-08deb78f20ac",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "4cec3ede-f93f-41b1-d3d8-08deb78f0e34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "262312dd-913d-4c9f-babc-0196cf5a6909",
+      "title": "LOWER DIVISION CORE COURSES",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "262312dd-913d-4c9f-babc-0196cf5a6909:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 413107,
+              "prefix": "SOC",
+              "courseNumber": "1090",
+              "title": "Introduction to Statistics For The Social Science, with Lab",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12082,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9051,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 413108,
+              "prefix": "SOC",
+              "courseNumber": "1092",
+              "title": "Introduction to Statistics For The Social Science",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12082,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9051,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "39518512-e241-456e-d3de-08deb78f0e34",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 413107,
+                  "prefix": "SOC",
+                  "courseNumber": "1090",
+                  "title": "Introduction to Statistics For The Social Science, with Lab",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12082,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9051,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "c4636b08-c0e6-460f-d3df-08deb78f0e34",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 413108,
+                  "prefix": "SOC",
+                  "courseNumber": "1092",
+                  "title": "Introduction to Statistics For The Social Science",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12082,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9051,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "39518512-e241-456e-d3de-08deb78f0e34",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "c4636b08-c0e6-460f-d3df-08deb78f0e34",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "39518512-e241-456e-d3de-08deb78f0e34",
+            "c4636b08-c0e6-460f-d3df-08deb78f0e34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f0dd7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "GENERAL OPTION",
+      "position": 4,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f0dd7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "48322343-68aa-48db-d3d9-08deb78f0e34",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "UPPER DIVISION EMPHASIS",
+              "courses": [],
+              "attributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "**REFER TO CATALOG**"
+                }
+              ],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "48322343-68aa-48db-d3d9-08deb78f0e34",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "48322343-68aa-48db-d3d9-08deb78f0e34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f1dd7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "DIVERSITY",
+      "position": 6,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f1dd7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "248dcfa8-4d20-4d07-d3da-08deb78f0e34",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "UPPER DIVISION EMPHASIS",
+              "courses": [],
+              "attributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "**REFER TO CATALOG**"
+                }
+              ],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "248dcfa8-4d20-4d07-d3da-08deb78f0e34",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "248dcfa8-4d20-4d07-d3da-08deb78f0e34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f2dd7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "LAW AND SOCIETY EMPHASIS",
+      "position": 8,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f2dd7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "8bba5a8f-c4eb-4db3-d3db-08deb78f0e34",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "UPPER DIVISION EMPHASIS",
+              "courses": [],
+              "attributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "**REFER TO CATALOG**"
+                }
+              ],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "8bba5a8f-c4eb-4db3-d3db-08deb78f0e34",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "8bba5a8f-c4eb-4db3-d3db-08deb78f0e34"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f3dd7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "GERONTOLOGY OPTION",
+      "position": 10,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f3dd7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "07186a1a-0f01-4646-d3dc-08deb78f0e34",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "UPPER DIVISION EMPHASIS",
+              "courses": [],
+              "attributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "**REFER TO CATALOG**"
+                }
+              ],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "07186a1a-0f01-4646-d3dc-08deb78f0e34",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "07186a1a-0f01-4646-d3dc-08deb78f0e34"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "37c96f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "GENERAL INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "a9b72752-c1e8-46ee-bf46-01946664bd0b",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Major Specific Criteria This articulation agreement displays lower-division course requirements specific to the major. Cal State LA lower-division course numbers range from 1000 - 2999. Students are advised to seek advisement from a counselor when planning to transfer to CSU Los Angeles and refer to the University Catalog to learn more about this major and its features. Additional admissions criteria for the major can be found on the Major Specific Criteria campus website. Please note that admissions requirements can vary by term so check back to see if there are any changes.",
+      "contentHtml": "<p><strong style=\"font-size: 24px; color: rgb(169, 62, 58);\">Major Specific Criteria</strong></p><p><br></p><p><span style=\"font-size: 16px;\">This articulation agreement displays lower-division course requirements specific to the major. Cal State LA lower-division course numbers range from 1000 - 2999. Students are advised to seek advisement from a counselor when planning to transfer to CSU Los Angeles and refer to the </span><a href=\"https://ecatalog.calstatela.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University Catalog</a><span style=\"font-size: 16px;\"> to learn more about this major and its features. Additional admissions criteria for the major can be found on the </span><a href=\"https://www.calstatela.edu/admissions/major-specific-criteria\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Major Specific Criteria</a><span style=\"font-size: 16px;\"> campus website.&nbsp;</span><strong style=\"font-size: 16px; color: rgb(137, 58, 171);\"><em>Please note that admissions requirements can vary by term so check back to see if there are any changes.</em>&nbsp; </strong></p>"
+    },
+    {
+      "id": "38c96f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "RESOURCES FOR TRANSFER STUDENTS",
+      "contentHtml": null
+    },
+    {
+      "id": "3ac96f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "Cal State Apply Cal State LA Rongxiang Xu College of Health and Human Services Rongxiang Xu College of Health and Human Services Advising Center Degree with a Guarantee Department of Sociology General Education Lower Division Courses University Catalog",
+      "contentHtml": "<p><a href=\"https://www.calstate.edu/apply\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Cal&nbsp;State&nbsp;Apply</a></p><p><a href=\"http://www.calstatela.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Cal&nbsp;State&nbsp;LA</a></p><p><a href=\"http://www.calstatela.edu/hhs\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Rongxiang&nbsp;Xu&nbsp;College&nbsp;of&nbsp;Health&nbsp;and&nbsp;Human&nbsp;Services</a></p><p><a href=\"https://www.calstatela.edu/hhs/ac\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Rongxiang&nbsp;Xu&nbsp;College&nbsp;of&nbsp;Health&nbsp;and&nbsp;Human&nbsp;Services&nbsp;Advising&nbsp;Center</a></p><p><a href=\"http://adegreewithaguarantee.com/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Degree&nbsp;with&nbsp;a&nbsp;Guarantee</a></p><p><a href=\"https://www.calstatela.edu/nss/sociology\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Department&nbsp;of&nbsp;Sociology</a></p><p><a href=\"https://ecatalog.calstatela.edu/content.php?catoid=77&amp;navoid=11897\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">General&nbsp;Education&nbsp;Lower&nbsp;Division&nbsp;Courses</a></p><p><a href=\"http://ecatalog.calstatela.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University&nbsp;Catalog</a></p>"
+    },
+    {
+      "id": "36c96f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "DIVERSITY REQUIREMENT FOR CAL STATE LA GRADUATION",
+      "contentHtml": null
+    },
+    {
+      "id": "afdd7145-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "The articulation information in Assist.org not only shows a link to the admission requirements (aka our Major Specific Criteria webpage) but also Cal State LA graduation requirements that may be completed at the lower-division level, prior to transferring to the University. The diversity requirement is a graduation requirement , not an admission requirement. The diversity requirement may be completed prior to, or after, transferring to the University. For the Cal State LA degree, students will be required to complete two courses (six units) certified as diversity courses, at least one focusing on issues of race and ethnicity and their intersectionality with other social categories that structure inequality in society. These courses can be completed either at the lower-division or upper-division level from among courses satisfying GE requirements. Please view the General Education agreements on Assist.org for the lower-division courses that will meet the Diversity (d) and Race &amp; Ethnicity (re) Requirements.",
+      "contentHtml": "<p><span style=\"font-size: 16px;\">The articulation information in Assist.org not only shows a link to the admission requirements (aka our </span><a href=\"http://www.calstatela.edu/admissions/major-specific-criteria\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Major Specific Criteria </a><span style=\"font-size: 16px;\">webpage) but also Cal State LA graduation requirements that may be completed at the lower-division level, prior to transferring to the University. The diversity requirement is a </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">graduation requirement</strong><span style=\"font-size: 16px;\">, not an admission requirement. The diversity requirement may be completed prior to, or after, transferring to the University. </span></p><p><br></p><p><span style=\"font-size: 16px;\">For the Cal State LA degree, students will be required to </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">complete two courses (six units)</strong><span style=\"font-size: 16px;\"> certified as diversity courses, at least one focusing on issues of race and ethnicity and their intersectionality with other social categories that structure inequality in society. These courses can be completed either at the lower-division or upper-division level from among courses satisfying GE requirements.</span></p><p><br></p><p><span style=\"font-size: 16px;\">Please view the </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">General Education </strong><span style=\"font-size: 16px;\">agreements on Assist.org for the lower-division courses that will meet the </span><strong style=\"font-size: 16px;\">Diversity (d)</strong><span style=\"font-size: 16px;\"> and </span><strong style=\"font-size: 16px;\">Race &amp; Ethnicity (re)</strong><span style=\"font-size: 16px;\"> Requirements.</span></p>"
+    },
+    {
+      "id": "3bc96f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 6,
+      "content": "Sociology, B.A.",
+      "contentHtml": null
+    },
+    {
+      "id": "2fc96f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 7,
+      "content": "Sociology is the study of social behavior, social institutions, and social structure. Students enrolled in the B.A. program cultivate research and writing skills, engage with local communities, and promote solutions for pressing social problems. They are prepared for graduate and professional school, as well as a variety of careers in research, public policy, education, social work, counseling, urban planning, community organizing, and more. The Department of Sociology offers a Bachelor of Arts degree in Sociology with four options: I. General Sociology Option - Sociology explores a broad range of critical social and scientific issues concerning multiple facets of society. It prepares students for a wide variety of careers and professional programs and informs them about how social forces influence individuals, groups, and institutions. It provides the basis for those who wish to do applied research and those who wish to gain an overall understanding of society before seeking careers related to social agency, public policy, public administration, urban planning, counseling, and other service occupations. The General Sociology Option is designed for students who wish to pursue these ideas broadly without focusing on one particular area. II. Inequalities and Diversity Option The Inequalities and Diversity Option builds on the strength of Cal State LA as a diverse, urban institution situated in a major global city. The option-specific courses provide students with concentrated study on topics relevant to various types of social inequalities, including race and ethnicity, socioeconomic and immigration status, and gender and sexuality. Students also examine the ways the state and institutions like the family, education, medical, and carceral systems, perpetuate inequalities of various forms. Students consider why and how inequalities are socially embedded, as well as the multitude of ways individuals, networks, and groups collectively organize to bring about visions of social and environmental justice. Students enrolled in the Inequalities and Diversity option are prepared for advanced studies in the social sciences and humanities, professional programs like medicine and law, and careers involving engagement with diverse and multicultural populations. They are empowered to advocate for the rights and needs of marginalized populations. III. Law and Society Option The Law and Society Option explores a broad range of critical social and scientific issues concerning multiple facets of the law, including crime, deviance, human rights, and legal institutions from a sociological perspective. It prepares students for a wide variety of careers and professional programs and informs them about how social forces influence the legal system and how the law affects society, definitions of deviance and crime, and explanations for why individuals engage in these activities. It is designed for students who wish to pursue advanced study in areas such as sociology, law, graduate law and society programs, public health, criminology, social welfare, education, and business administration; those who wish to do applied research on law-related issues; and those who wish to gain a sociological understanding of law and society before seeking careers in health professions, criminal justice, social work, politics, public policy or policy analysis, public administration, urban and environmental planning, counseling, and other service occupations. IV. Social Gerontology Option - The Social Gerontology Option provides students with the theoretical and research background in the sociology of aging needed to develop social programs for the elderly and evaluate the effectiveness of those programs. This option is particularly timely because aging baby boomers have created the largest cohort of senior citizens in U.S. history leading to many new career opportunities in a variety of related fields. Because Social Gerontology is inherently multidisciplinary, it examines not only the social aspects of aging but also the biological, socio-cultural, developmental, and policy aspects. As such, students gain an understanding of how aging influences all spheres of self and society across the life course. Requirements for the Degree 120 units are required for the Bachelor of Arts in Sociology, 51-52 of which are in the major. The 51-52 major program units are distributed as follows: 27-28 units of core courses 24 units of option courses Consult with an adviser for the specific number of units required in all other areas of the degree, including GE and free electives. Directed Study Experience Sociology majors can earn up to 1-3 units per semester up to a maximum of 6 units through Undergraduate Directed Study, SOC 4990 , which allows students to expand on their special interests in an area that is more specialized than the department's normal course offerings. Students meet regularly with their faculty supervisor. Individual research projects may involve library research, case studies, or field research. Directed Study Criteria for all Options: 2.75 GPA Junior or senior standing. Students must have approval from the supervising sociology professor, the Department Chair, and NSS. Honors Program in the Sociology Major The Sociology Department sponsors an Honors Program for our top sociology majors. Toward the end of their undergraduate experience, sociology honors program students conduct an independent research project under the supervision of a Sociology Department faculty member and write an honors thesis. Those who successfully complete the Honors Program will receive the following statement on their diplomas and transcripts: Graduated with Departmental Honors in the [Option] in Sociology. Honors Program Eligibility Criteria Minimum GPA of 3.5 Completion of option-specific required course: SOC 4600 for Inequalities and Diversity ; SOC 4880 for Law and Society ; SOC 4500 for Social Gerontology . Registration in the option-specific honors thesis course (after obtaining permission to enroll, typically the semester prior to enrollment): SOC 4960 for Law and Society ; SOC 4930 for all other options.",
+      "contentHtml": "<p><span style=\"font-size: 16px;\">Sociology is the study of social behavior, social institutions, and social structure. Students enrolled in the B.A. program cultivate research and writing skills, engage with local communities, and promote&nbsp;solutions for pressing social problems. They are prepared for graduate and&nbsp;professional school, as well as a variety of careers&nbsp;in&nbsp;research, public policy, education, social work, counseling, urban planning, community organizing, and more.</span></p><p><br></p><p><span style=\"font-size: 16px;\">The Department of Sociology offers a Bachelor of Arts degree in Sociology with four options:</span></p><p><br></p><ul><li><strong style=\"font-size: 16px;\">I.</strong><span style=\"font-size: 16px;\">&nbsp;</span><strong style=\"font-size: 16px;\">General Sociology Option</strong><span style=\"font-size: 16px;\">&nbsp;- Sociology explores a broad range of critical social and scientific issues concerning multiple facets of society. It prepares students for a wide variety of careers and professional programs and informs them about how social forces influence individuals, groups, and institutions. It provides the basis for those who wish to do applied research and those who wish to gain an overall understanding of society before seeking careers related to social agency, public policy, public administration, urban planning, counseling, and other service occupations. The General Sociology Option is designed for students who wish to pursue these ideas broadly without focusing on one particular area.</span></li></ul><p><br></p><ul><li><strong style=\"font-size: 16px;\">II.&nbsp;Inequalities and Diversity Option&nbsp;</strong><span style=\"font-size: 16px;\">The Inequalities and Diversity Option builds on the strength of Cal State LA as a diverse, urban institution situated in a major global city. The option-specific courses provide students with concentrated study on topics relevant to various types of social inequalities, including race and ethnicity, socioeconomic and immigration status, and gender and sexuality. Students also examine the ways the state and institutions like the family, education, medical, and carceral systems, perpetuate inequalities of various forms. Students consider why and how inequalities are socially embedded, as well as the multitude of ways individuals, networks, and groups collectively organize to bring about visions of social and environmental justice. Students enrolled in the Inequalities and Diversity option are prepared for advanced studies in the social sciences and humanities, professional programs like medicine and law, and careers involving engagement with diverse and multicultural populations.</span><strong style=\"font-size: 16px;\"> </strong><span style=\"font-size: 16px;\">They are&nbsp;empowered&nbsp;to advocate for the rights and needs of marginalized populations.</span></li></ul><p><br></p><ul><li><strong style=\"font-size: 16px;\">III.&nbsp;Law and Society Option</strong><a href=\"#core_270057\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\"><strong>&nbsp;</strong></a><strong style=\"font-size: 16px;\">&nbsp;</strong><span style=\"font-size: 16px;\">The Law and Society Option explores a broad range of critical social and scientific issues concerning multiple facets of the law, including crime, deviance, human rights, and legal institutions from a sociological perspective. It prepares students for a wide variety of careers and professional programs and informs them about how social forces influence the legal system and how the law affects society, definitions of deviance and crime, and explanations for why individuals engage in these activities. It is designed for students who wish to pursue advanced study in areas such as sociology, law, graduate law and society programs, public health, criminology, social welfare, education, and business administration; those who wish to do applied research on law-related issues; and those who wish to gain a sociological understanding of law and society before seeking careers in health professions, criminal justice, social work, politics, public policy or policy analysis, public administration, urban and environmental planning, counseling, and other service occupations.</span><strong style=\"font-size: 16px;\">&nbsp;</strong></li></ul><p><br></p><ul><li><strong style=\"font-size: 16px;\">IV.&nbsp;Social Gerontology Option&nbsp;-&nbsp;</strong><span style=\"font-size: 16px;\">The Social Gerontology Option provides students with the theoretical and research background in the sociology of aging needed to develop social programs for the elderly and evaluate the effectiveness of those programs. This option is particularly timely because aging baby boomers have created the largest cohort of senior citizens in U.S. history leading to many new career opportunities in a variety of related fields.&nbsp;Because Social Gerontology is inherently multidisciplinary, it examines not only the social aspects of aging but also the biological, socio-cultural, developmental, and policy aspects.&nbsp;As such, students gain an understanding of how aging influences all spheres of self and society across the life course.</span></li></ul><p><br></p><p><br></p><p><strong style=\"font-size: 16px;\">Requirements for the Degree</strong></p><p><br></p><p><span style=\"font-size: 16px;\">120 units are required for the Bachelor of Arts in Sociology, 51-52 of which are in the major. The 51-52 major program units are distributed as follows:</span></p><p><br></p><p><span style=\"font-size: 16px;\">27-28 units of core courses</span></p><p><span style=\"font-size: 16px;\">24 units of option courses</span></p><p><br></p><p><span style=\"font-size: 16px;\">Consult with an adviser for the specific number of units required in all other areas of the degree, including GE and free electives.</span></p><p><br></p><p><strong style=\"font-size: 16px;\">Directed Study Experience</strong></p><p><br></p><p><span style=\"font-size: 16px;\">Sociology majors can earn up to 1-3 units per semester up to a maximum of 6 units through Undergraduate Directed Study, </span><strong style=\"font-size: 16px;\">SOC 4990</strong><span style=\"font-size: 16px;\">, which allows students to expand on their special interests in an area that is more specialized than the department's normal course offerings. Students meet regularly with their faculty supervisor. Individual research projects may involve library research, case studies, or field research.</span></p><p><br></p><p><span style=\"font-size: 16px;\">Directed&nbsp;Study Criteria for all Options:</span></p><p><br></p><ul><li><span style=\"font-size: 16px;\">2.75 GPA</span></li><li><span style=\"font-size: 16px;\">Junior or senior standing.</span><strong style=\"font-size: 16px;\"><span class=\"ql-cursor\">﻿</span></strong></li><li><span style=\"font-size: 16px;\">Students must have approval from the supervising sociology professor, the Department Chair, and NSS.&nbsp;</span></li></ul><p><br></p><p><br></p><p><strong style=\"font-size: 16px;\">Honors Program in the Sociology Major</strong></p><p><br></p><p><span style=\"font-size: 16px;\">The Sociology Department sponsors an&nbsp;Honors Program for our top sociology majors. Toward the end of their undergraduate experience, sociology honors program students conduct an independent research project under the supervision of a Sociology Department faculty member and write an honors thesis.</span></p><p><br></p><p><span style=\"font-size: 16px;\">Those who successfully complete the Honors Program will receive the following statement on their diplomas and transcripts: Graduated with Departmental Honors in the [Option] in Sociology.</span></p><p><br></p><p><strong style=\"font-size: 16px;\">Honors Program Eligibility Criteria</strong></p><p><br></p><ul><li><span style=\"font-size: 16px;\">Minimum GPA of 3.5</span></li><li><span style=\"font-size: 16px;\">Completion of option-specific required course:&nbsp;</span><strong style=\"font-size: 16px;\">SOC 4600</strong><span style=\"font-size: 16px;\">&nbsp;for&nbsp;</span><em style=\"font-size: 16px;\">Inequalities and Diversity</em><span style=\"font-size: 16px;\">;&nbsp;</span><strong style=\"font-size: 16px;\">SOC 4880</strong><span style=\"font-size: 16px;\">&nbsp;for&nbsp;</span><em style=\"font-size: 16px;\">Law and Society</em><span style=\"font-size: 16px;\">;&nbsp;</span><strong style=\"font-size: 16px;\">SOC 4500</strong><span style=\"font-size: 16px;\">&nbsp;for&nbsp;</span><em style=\"font-size: 16px;\">Social Gerontology</em><span style=\"font-size: 16px;\">.</span></li><li><span style=\"font-size: 16px;\">Registration in the option-specific honors thesis course (after obtaining permission to enroll, typically the semester prior to enrollment):&nbsp;</span><strong style=\"font-size: 16px;\">SOC 4960</strong><span style=\"font-size: 16px;\">&nbsp;for&nbsp;</span><em style=\"font-size: 16px;\">Law and Society</em><span style=\"font-size: 16px;\">;&nbsp;</span><strong style=\"font-size: 16px;\">SOC 4930</strong><span style=\"font-size: 16px;\">&nbsp;for all other options.</span></li></ul><p><span style=\"font-size: 16px;\">&nbsp;</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:46.373Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=76&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F76%2FMajor%2F8da93727-0918-4afa-d5a5-08deb78f0e22&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F76%2FMajor%2F8da93727-0918-4afa-d5a5-08deb78f0e22",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F76%2FMajor%2F8da93727-0918-4afa-d5a5-08deb78f0e22",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-76/major/2d8636d9df03292b.json",
+    "templateAssetCount": 19,
+    "articulationCount": 1
+  }
+}

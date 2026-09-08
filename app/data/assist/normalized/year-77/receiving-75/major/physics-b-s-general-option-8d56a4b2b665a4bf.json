@@ -1,0 +1,2218 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 75,
+    "name": "California Polytechnic University, Pomona",
+    "code": "CPP",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/75/Major/980884f1-06dd-46f4-8c6e-08deaabd5f92",
+    "type": "Major",
+    "name": "Physics, B.S. - General Option",
+    "publishDate": "2026-09-02T17:57:47.2840416",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "f8876f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "MAJOR REQUIRED",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f8876f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "b28fd99d-f0cd-4699-015a-08deaabca348",
+              "courseIdentifierParentId": 209437,
+              "prefix": "CHM",
+              "courseNumber": "1210",
+              "title": "General Chemistry I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Chemistry and Biochemistry",
+              "departmentParentId": 2399,
+              "prefixDescription": "Chemistry",
+              "prefixParentId": 3814,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "72f82766-bb6a-4222-015b-08deaabca348",
+              "courseIdentifierParentId": 40967,
+              "prefix": "CHM",
+              "courseNumber": "1210L",
+              "title": "General Chemistry Laboratory I",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Chemistry and Biochemistry",
+              "departmentParentId": 2399,
+              "prefixDescription": "Chemistry",
+              "prefixParentId": 3814,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "c4812cf6-69fd-4c68-07bf-08deaabd5fa1",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "CHM 1210, CHM 1210L",
+              "courses": [
+                {
+                  "id": "b28fd99d-f0cd-4699-015a-08deaabca348",
+                  "courseIdentifierParentId": 209437,
+                  "prefix": "CHM",
+                  "courseNumber": "1210",
+                  "title": "General Chemistry I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Chemistry and Biochemistry",
+                  "departmentParentId": 2399,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3814,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "72f82766-bb6a-4222-015b-08deaabca348",
+                  "courseIdentifierParentId": 40967,
+                  "prefix": "CHM",
+                  "courseNumber": "1210L",
+                  "title": "General Chemistry Laboratory I",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Chemistry and Biochemistry",
+                  "departmentParentId": 2399,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3814,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c4812cf6-69fd-4c68-07bf-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 306954,
+                  "prefix": "CHEM",
+                  "courseNumber": "155",
+                  "title": "General Chemistry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Chemistry",
+                  "departmentParentId": 2340,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3832,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 306954,
+                      "prefix": "CHEM",
+                      "courseNumber": "155",
+                      "title": "General Chemistry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Chemistry",
+                      "departmentParentId": 2340,
+                      "prefixDescription": "Chemistry",
+                      "prefixParentId": 3832,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 306954,
+                          "prefix": "CHEM",
+                          "courseNumber": "155",
+                          "title": "General Chemistry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Chemistry",
+                          "departmentParentId": 2340,
+                          "prefixDescription": "Chemistry",
+                          "prefixParentId": 3832,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "c4812cf6-69fd-4c68-07bf-08deaabd5fa1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "00886f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "MAJOR REQUIRED: CALCULUS I, II & III",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "00886f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 275919,
+              "prefix": "MAT",
+              "courseNumber": "1140",
+              "title": "Calculus I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 9086,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9982,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 275934,
+              "prefix": "MAT",
+              "courseNumber": "1150",
+              "title": "Calculus II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 9086,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9982,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 156009,
+              "prefix": "MAT",
+              "courseNumber": "2140",
+              "title": "Calculus III",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 9086,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9982,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "fe01bdf9-8744-41d4-07c6-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 275919,
+                  "prefix": "MAT",
+                  "courseNumber": "1140",
+                  "title": "Calculus I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 9086,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9982,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "0a26215d-f92d-4fbe-07c5-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 275934,
+                  "prefix": "MAT",
+                  "courseNumber": "1150",
+                  "title": "Calculus II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 9086,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9982,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "50725b44-40c0-43a2-07c4-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156009,
+                  "prefix": "MAT",
+                  "courseNumber": "2140",
+                  "title": "Calculus III",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 9086,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9982,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "fe01bdf9-8744-41d4-07c6-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 358343,
+                  "prefix": "MATH",
+                  "courseNumber": "150",
+                  "title": "Calculus with Analytic Geometry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 358343,
+                      "prefix": "MATH",
+                      "courseNumber": "150",
+                      "title": "Calculus with Analytic Geometry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 358343,
+                          "prefix": "MATH",
+                          "courseNumber": "150",
+                          "title": "Calculus with Analytic Geometry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "0a26215d-f92d-4fbe-07c5-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301211,
+                  "prefix": "MATH",
+                  "courseNumber": "160",
+                  "title": "Calculus with Analytic Geometry II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301211,
+                      "prefix": "MATH",
+                      "courseNumber": "160",
+                      "title": "Calculus with Analytic Geometry II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301211,
+                          "prefix": "MATH",
+                          "courseNumber": "160",
+                          "title": "Calculus with Analytic Geometry II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "50725b44-40c0-43a2-07c4-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 356808,
+                  "prefix": "MATH",
+                  "courseNumber": "200",
+                  "title": "Multivariable Calculus",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 356808,
+                      "prefix": "MATH",
+                      "courseNumber": "200",
+                      "title": "Multivariable Calculus",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2007",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 356808,
+                          "prefix": "MATH",
+                          "courseNumber": "200",
+                          "title": "Multivariable Calculus",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2007",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "fe01bdf9-8744-41d4-07c6-08deaabd5fa1",
+            "0a26215d-f92d-4fbe-07c5-08deaabd5fa1",
+            "50725b44-40c0-43a2-07c4-08deaabd5fa1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f0876f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "MAJOR REQUIRED: LINEAR ALGEBRA - APPLICATIONS TO DIFFERENTIAL EQUATIONS",
+      "position": 5,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f0876f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 281281,
+              "prefix": "MAT",
+              "courseNumber": "2250",
+              "title": "Linear Algebra with Applications to Differential Equations",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 9086,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9982,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "46811d7c-ee8b-4fa8-07be-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 281281,
+                  "prefix": "MAT",
+                  "courseNumber": "2250",
+                  "title": "Linear Algebra with Applications to Differential Equations",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 9086,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9982,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "46811d7c-ee8b-4fa8-07be-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 296698,
+                  "prefix": "MATH",
+                  "courseNumber": "210",
+                  "title": "Linear Algebra",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 299993,
+                  "prefix": "MATH",
+                  "courseNumber": "220",
+                  "title": "Differential Equations",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 296698,
+                      "prefix": "MATH",
+                      "courseNumber": "210",
+                      "title": "Linear Algebra",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2007",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 299993,
+                      "prefix": "MATH",
+                      "courseNumber": "220",
+                      "title": "Differential Equations",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2007",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 296698,
+                          "prefix": "MATH",
+                          "courseNumber": "210",
+                          "title": "Linear Algebra",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2007",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 299993,
+                          "prefix": "MATH",
+                          "courseNumber": "220",
+                          "title": "Differential Equations",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2007",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "46811d7c-ee8b-4fa8-07be-08deaabd5fa1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fc876f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "MAJOR REQUIRED: CALCULUS-BASED PHYSICS",
+      "position": 7,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "fc876f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "e8591c73-cdfb-4a4d-01b2-08deaabca348",
+              "courseIdentifierParentId": 330151,
+              "prefix": "PHY",
+              "courseNumber": "1510",
+              "title": "Introduction to Newtonian Mechanics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "bb0e551d-b019-4edd-01b3-08deaabca348",
+              "courseIdentifierParentId": 27031,
+              "prefix": "PHY",
+              "courseNumber": "1510L",
+              "title": "Newtonian Mechanics Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "3757e77f-2f6f-4ee9-010b-08deaabca348",
+              "courseIdentifierParentId": 135523,
+              "prefix": "PHY",
+              "courseNumber": "1520",
+              "title": "Introduction to Electromagnetism and Circuits",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "3b3bc33d-7682-4957-010c-08deaabca348",
+              "courseIdentifierParentId": 29074,
+              "prefix": "PHY",
+              "courseNumber": "1520L",
+              "title": "Introductory Laboratory on Electromagnetism and Circuits",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "25f62297-4a2d-4f6a-00a4-08deaabca348",
+              "courseIdentifierParentId": 155997,
+              "prefix": "PHY",
+              "courseNumber": "2530",
+              "title": "Introduction to Electromagnetic Radiation and Special Relativity",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F2021",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "6fbdb74b-5451-4e96-00a5-08deaabca348",
+              "courseIdentifierParentId": 66527,
+              "prefix": "PHY",
+              "courseNumber": "2530A",
+              "title": "Electromagnetic Radiation and Special Relativity Recitation",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "315f7817-4f81-4272-00a6-08deaabca348",
+              "courseIdentifierParentId": 47543,
+              "prefix": "PHY",
+              "courseNumber": "2530L",
+              "title": "Introductory Laboratory on Electromagnetic Radiation and Special Relativity",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "a870cadf-9d50-489c-014c-08deaabca348",
+              "courseIdentifierParentId": 330149,
+              "prefix": "PHY",
+              "courseNumber": "2540",
+              "title": "Introduction to Thermal and Quantum Physics",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F2021",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "6abac939-55d1-4750-014d-08deaabca348",
+              "courseIdentifierParentId": 317160,
+              "prefix": "PHY",
+              "courseNumber": "2540A",
+              "title": "Thermal and Quantum Physics Recitation",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "769d5736-3ea6-49a7-014e-08deaabca348",
+              "courseIdentifierParentId": 50081,
+              "prefix": "PHY",
+              "courseNumber": "2540L",
+              "title": "Introductory Laboratory on Quantum Physics",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Physics and Astronomy",
+              "departmentParentId": 10868,
+              "prefixDescription": "Physics",
+              "prefixParentId": 255,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "b6a9959a-2a7d-442e-07c3-08deaabd5fa1",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHY 1510, PHY 1510L",
+              "courses": [
+                {
+                  "id": "e8591c73-cdfb-4a4d-01b2-08deaabca348",
+                  "courseIdentifierParentId": 330151,
+                  "prefix": "PHY",
+                  "courseNumber": "1510",
+                  "title": "Introduction to Newtonian Mechanics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "bb0e551d-b019-4edd-01b3-08deaabca348",
+                  "courseIdentifierParentId": 27031,
+                  "prefix": "PHY",
+                  "courseNumber": "1510L",
+                  "title": "Newtonian Mechanics Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "d80ccb46-1d60-45dc-07c1-08deaabd5fa1",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHY 1520, PHY 1520L",
+              "courses": [
+                {
+                  "id": "3757e77f-2f6f-4ee9-010b-08deaabca348",
+                  "courseIdentifierParentId": 135523,
+                  "prefix": "PHY",
+                  "courseNumber": "1520",
+                  "title": "Introduction to Electromagnetism and Circuits",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "3b3bc33d-7682-4957-010c-08deaabca348",
+                  "courseIdentifierParentId": 29074,
+                  "prefix": "PHY",
+                  "courseNumber": "1520L",
+                  "title": "Introductory Laboratory on Electromagnetism and Circuits",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "faf22598-5528-4a8b-07c2-08deaabd5fa1",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHY 2530, PHY 2530A, PHY 2530L",
+              "courses": [
+                {
+                  "id": "25f62297-4a2d-4f6a-00a4-08deaabca348",
+                  "courseIdentifierParentId": 155997,
+                  "prefix": "PHY",
+                  "courseNumber": "2530",
+                  "title": "Introduction to Electromagnetic Radiation and Special Relativity",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "6fbdb74b-5451-4e96-00a5-08deaabca348",
+                  "courseIdentifierParentId": 66527,
+                  "prefix": "PHY",
+                  "courseNumber": "2530A",
+                  "title": "Electromagnetic Radiation and Special Relativity Recitation",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "315f7817-4f81-4272-00a6-08deaabca348",
+                  "courseIdentifierParentId": 47543,
+                  "prefix": "PHY",
+                  "courseNumber": "2530L",
+                  "title": "Introductory Laboratory on Electromagnetic Radiation and Special Relativity",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "c9e84a2a-6ee9-4f15-07c0-08deaabd5fa1",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHY 2540, PHY 2540A, PHY 2540L",
+              "courses": [
+                {
+                  "id": "a870cadf-9d50-489c-014c-08deaabca348",
+                  "courseIdentifierParentId": 330149,
+                  "prefix": "PHY",
+                  "courseNumber": "2540",
+                  "title": "Introduction to Thermal and Quantum Physics",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "6abac939-55d1-4750-014d-08deaabca348",
+                  "courseIdentifierParentId": 317160,
+                  "prefix": "PHY",
+                  "courseNumber": "2540A",
+                  "title": "Thermal and Quantum Physics Recitation",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "769d5736-3ea6-49a7-014e-08deaabca348",
+                  "courseIdentifierParentId": 50081,
+                  "prefix": "PHY",
+                  "courseNumber": "2540L",
+                  "title": "Introductory Laboratory on Quantum Physics",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Physics and Astronomy",
+                  "departmentParentId": 10868,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 255,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "b6a9959a-2a7d-442e-07c3-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301212,
+                  "prefix": "PHYS",
+                  "courseNumber": "121",
+                  "title": "Mechanics of Solids and Fluids",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301212,
+                      "prefix": "PHYS",
+                      "courseNumber": "121",
+                      "title": "Mechanics of Solids and Fluids",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301212,
+                          "prefix": "PHYS",
+                          "courseNumber": "121",
+                          "title": "Mechanics of Solids and Fluids",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d80ccb46-1d60-45dc-07c1-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 302824,
+                  "prefix": "PHYS",
+                  "courseNumber": "122",
+                  "title": "Electricity and Magnetism",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 302824,
+                      "prefix": "PHYS",
+                      "courseNumber": "122",
+                      "title": "Electricity and Magnetism",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 302824,
+                          "prefix": "PHYS",
+                          "courseNumber": "122",
+                          "title": "Electricity and Magnetism",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "faf22598-5528-4a8b-07c2-08deaabd5fa1",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c9e84a2a-6ee9-4f15-07c0-08deaabd5fa1",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 276931,
+                  "prefix": "PHYS",
+                  "courseNumber": "123",
+                  "title": "Heat, Light and Modern Physics",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 276931,
+                      "prefix": "PHYS",
+                      "courseNumber": "123",
+                      "title": "Heat, Light and Modern Physics",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 276931,
+                          "prefix": "PHYS",
+                          "courseNumber": "123",
+                          "title": "Heat, Light and Modern Physics",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "b6a9959a-2a7d-442e-07c3-08deaabd5fa1",
+            "d80ccb46-1d60-45dc-07c1-08deaabd5fa1",
+            "faf22598-5528-4a8b-07c2-08deaabd5fa1",
+            "c9e84a2a-6ee9-4f15-07c0-08deaabd5fa1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee876f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "OPTION REQUIRED ELECTIVES/EMPHASIS",
+      "position": 9,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "ee876f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 373025,
+              "prefix": "CS",
+              "courseNumber": "1260",
+              "title": "Python for Beginners",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 3233,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 518,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 280198,
+              "prefix": "MAT",
+              "courseNumber": "2010",
+              "title": "Introduction to Computational Methods in Mathematics",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 9086,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9982,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 363855,
+              "prefix": "MAT",
+              "courseNumber": "2010L",
+              "title": "Introduction to Computational Methods in Mathematics Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 9086,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9982,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "8650f5d8-aa67-4635-07bc-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 373025,
+                  "prefix": "CS",
+                  "courseNumber": "1260",
+                  "title": "Python for Beginners",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3233,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 518,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "066c7bee-d220-471f-07bd-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 280198,
+                  "prefix": "MAT",
+                  "courseNumber": "2010",
+                  "title": "Introduction to Computational Methods in Mathematics",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 9086,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9982,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "074e7583-269d-43eb-07bb-08deaabd5fa1",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 363855,
+                  "prefix": "MAT",
+                  "courseNumber": "2010L",
+                  "title": "Introduction to Computational Methods in Mathematics Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 9086,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9982,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "8650f5d8-aa67-4635-07bc-08deaabd5fa1",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "066c7bee-d220-471f-07bd-08deaabd5fa1",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "074e7583-269d-43eb-07bb-08deaabd5fa1",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 3,
+              "amountUnitType": "Unit",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "8650f5d8-aa67-4635-07bc-08deaabd5fa1",
+            "066c7bee-d220-471f-07bd-08deaabd5fa1",
+            "074e7583-269d-43eb-07bb-08deaabd5fa1"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "f6876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "THIS MAJOR ACCEPTS THE ASSOCIATE DEGREE FOR TRANSFER (ADT)",
+      "contentHtml": null
+    },
+    {
+      "id": "9f9e6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "A California Community College student who has earned the ADT (AA-T or AS-T) is granted priority admission to the CSU into a “similar” baccalaureate degree program with a guarantee of junior standing, as long as the student meets all prescribed admission requirements. ADT students will only be required to complete 60 additional semester units to complete the requirements for the “similar” baccalaureate degree. ADT 2-year roadmaps: https://www.cpp.edu/academic-programs/academic-advising/tools/sheets-roadmaps/index.shtml ADT accepted by Cal Poly Pomona: https://www.cpp.edu/admissions/transfer/associate-degree-for-transfer.shtml ADT Major &amp; Campus Search: https://www.calstate.edu/apply/transfer/Pages/associate-degree-for-transfer-major-and-campus- search.aspx",
+      "contentHtml": "<p>A California Community College student who has earned the ADT (AA-T or AS-T) is granted priority admission to the CSU into a “similar” baccalaureate degree program with a guarantee of junior standing, as long as the student meets all prescribed admission requirements. ADT students <strong>will only be required to complete 60 additional semester units</strong> to complete the requirements for the “similar” baccalaureate degree.</p><p><br></p><p>ADT 2-year roadmaps: <a href=\"https://www.cpp.edu/academic-programs/academic-advising/tools/sheets-roadmaps/index.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.cpp.edu/academic-programs/academic-advising/tools/sheets-roadmaps/index.shtml</a></p><p><br></p><p>ADT accepted by Cal Poly Pomona: <a href=\"https://www.cpp.edu/admissions/transfer/associate-degree-for-transfer.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.cpp.edu/admissions/transfer/associate-degree-for-transfer.shtml</a></p><p><br></p><p>ADT Major &amp; Campus Search: <a href=\"https://www.calstate.edu/apply/transfer/Pages/associate-degree-for-transfer-major-and-campus-search.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.calstate.edu/apply/transfer/Pages/associate-degree-for-transfer-major-and-campus-</a></p><p><a href=\"https://www.calstate.edu/apply/transfer/Pages/associate-degree-for-transfer-major-and-campus-search.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">search.aspx</a></p>"
+    },
+    {
+      "id": "f2876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "TMC: PHYSICS (2-YEAR ROADMAP)",
+      "contentHtml": null
+    },
+    {
+      "id": "02886f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "Physics, B.S. - General Subplan/Option: Roadmap 2-year AS-T with Physics (60 units)",
+      "contentHtml": "<p></p><p></p><p><a href=\"https://catalog.cpp.edu/preview_program.php?catoid=78&amp;poid=24507&amp;print\" rel=\"noopener noreferrer\" target=\"_blank\">Physics,&nbsp;B.S.&nbsp;-&nbsp;General&nbsp;Subplan/Option:&nbsp;Roadmap&nbsp;2-year&nbsp;AS-T&nbsp;with&nbsp;Physics&nbsp;(60&nbsp;units)</a></p>"
+    },
+    {
+      "id": "191fbea4-79a6-4581-b5d0-019eb7dc4d55",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "TMC: PHYSICS 2.0 (2-YEAR ROADMAP)",
+      "contentHtml": null
+    },
+    {
+      "id": "9977bfda-c55b-4184-b879-019eb7dc4d55",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "[insert 26-27 2-year roadmap link]",
+      "contentHtml": "<p>[insert 26-27 2-year roadmap link]</p>"
+    },
+    {
+      "id": "fa876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 6,
+      "content": "TRANSFER AND ADMISSION REQUIREMENTS",
+      "contentHtml": null
+    },
+    {
+      "id": "a79e6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 7,
+      "content": "CPP Eligibility Transfers must meet the minimum California State University eligibility requirements listed below as the first step in being considered for admission. In addition to these requirements, Cal Poly Pomona (CPP) has implemented a multifactor admissions (MFA) evaluation process to evaluate transfer applicants. Fall applicants must have requirements completed by the end of the Spring term and Spring applicants must have requirements completed by the end of the Summer term. Please note, the following requirements and preferred coursework are effective starting the 2023-2024 academic year. CSU Minimum Admission Requirements Cal Poly Pomona requires all transfers to complete the following: Be in good academic standing at the last institutions attended Have a minimum 2.00 GPA in transferable coursework Have a minimum of 60 transferable semester (90 quarter) units 30 (45 quarter) of the 60 semester units must be in General Education Completion of the \"Golden Four\" Impacted majors may have required coursework that must completed with a \"C\" or higher. Fall applicants must have requirements completed by the end of the Spring term and Spring applicants must have requirements completed by the end of the Summer term. Please note, Cal Poly Pomona does not accept applicants who are seeking a 2nd Bachelor's degree. We encourage applicants to consider a Graduate degree . Non-local Applicants All applicants must meet CSU minimum requirements to be reviewed for admission. Non-local applicants applying to high demand and impacted majors will be held to a higher admission standard as CPP admits applicants based on space available in each major and therefore, should maintain a high GPA and complete all required, recommended and/or preferred coursework. Please note, an applicant is considered local if the majority of their units come from one of our local area schools or if their AD-T is being awarded by one of our local schools . Golden Four 1A: English Composition An English composition course that emphasizes essay writing or reading and writing concurrently. Must be completed with a \"C-\" or higher. 1B: Critical Thinking and Composition A second semester composition or writing course, or a course in reasoning and effective argumentative writing. Must be completed with a \"C-\" or higher. 1C: Oral Communication A basic public speaking course or other communication course. Must be completed with a \"C-\" or higher. 2: Mathematical Concepts and Quantitative Reasoning A mathematics course above the intermediate algebra level. Must be completed with a \"C-\" or higher. Multi-factor Admission Model Cal Poly Pomona's MFA model for transfer applicants is made up of academic and non-academic factors with a majority of the weight coming from academic criteria. To be considered for admissions to Cal Poly Pomona, all applicants must meet the minimum CSU eligibility requirements. Once an applicant’s CSU eligibility has been determined, they will then be assessed based on a combination of GPA in all transferable coursework and additional Cal Poly Pomona selection criteria that creates and CPP Eligibility Index for each applicant. Additional Criteria The following Cal Poly Pomona selection criteria is taken into admission consideration: Academic grade point average in all transferable coursework. Priority to students from our local area. Your experiences and special circumstances such as military status, first generation to attend college, work experience, foster youth, extra-curricular activities, leadership positions, work related to major and approved campus partnerships. Completion of preferred, recommended, or required coursework with a \"C\" or higher Please note, while local applicants will have an eligibility index, they will be admissible to a non-impacted program if they meet all of the minimum CSU requirements.",
+      "contentHtml": "<p><strong>CPP Eligibility</strong></p><p><br></p><p>Transfers must meet the minimum <a href=\"https://www.calstate.edu/apply/transfer/Pages/upper-division-transfer.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">California State University</a> eligibility requirements listed below as the first step in being considered for admission. In addition to these requirements, Cal Poly Pomona (CPP) has implemented a multifactor admissions (MFA) evaluation process to evaluate transfer applicants. Fall applicants must have requirements completed by the end of the Spring term and Spring applicants must have requirements completed by the end of the Summer term.</p><p><br></p><p>Please note, the following requirements and preferred coursework are effective starting the 2023-2024 academic year.</p><p><br></p><p><strong>CSU Minimum Admission Requirements</strong></p><p><br></p><p>Cal Poly Pomona requires all transfers to complete the following:</p><p><br></p><ul><li>Be in good academic standing at the last institutions attended</li><li>Have a minimum 2.00 GPA in transferable coursework</li><li>Have a minimum of 60 transferable semester (90 quarter) units</li><li class=\"ql-indent-1\">30 (45 quarter) of the 60 semester units must be in General Education</li><li class=\"ql-indent-1\">Completion of the \"Golden Four\"</li></ul><p><br></p><p>Impacted majors may have required coursework that must completed with a \"C\" or higher.</p><p><br></p><p>Fall applicants must have requirements completed by the end of the <strong>Spring</strong> term and Spring applicants must have requirements completed by the end of the <strong>Summer</strong> term.</p><p><br></p><p><em>Please note, Cal Poly Pomona does not accept applicants who are seeking a 2nd Bachelor's degree. We encourage applicants to consider a </em><a href=\"https://www.cpp.edu/admissions/graduate/masters-explore.shtml\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Graduate degree</em></a><em>.</em></p><p><br></p><p><strong>Non-local Applicants</strong></p><p><br></p><p>All applicants must meet CSU minimum requirements to be reviewed for admission. Non-local applicants applying to high demand and impacted majors will be held to a higher admission standard as CPP admits applicants based on space available in each major and therefore, should maintain a high GPA and complete all <a href=\"https://www.cpp.edu/admissions/transfer/impacted-majors.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">required, recommended</a> and/or preferred coursework.</p><p><br></p><p><em>Please note, an applicant is considered local if the majority of their units come from one of our </em><a href=\"https://www.cpp.edu/admissions/transfer/local-area.shtml\" rel=\"noopener noreferrer\" target=\"_blank\"><em>local area schools</em></a><em> or if their AD-T is being awarded by one of our local schools</em>.</p><p><br></p><p><strong>Golden Four</strong></p><p><br></p><p><strong>1A: English Composition</strong></p><p>An English composition course that emphasizes essay writing or reading and writing concurrently. Must be completed with a \"C-\" or higher.</p><p><br></p><p><strong>1B: Critical Thinking and Composition</strong></p><p>A second semester composition or writing course, or a course in reasoning and effective argumentative writing. Must be completed with a \"C-\" or higher.</p><p><br></p><p><strong>1C: Oral Communication</strong></p><p>A basic public speaking course or other communication course. Must be completed with a \"C-\" or higher.</p><p><br></p><p><strong>2: Mathematical Concepts and Quantitative Reasoning</strong></p><p>A mathematics course above the intermediate algebra level. Must be completed with a \"C-\" or higher.</p><p><br></p><p><strong>Multi-factor Admission Model</strong></p><p><br></p><p>Cal Poly Pomona's MFA model for transfer applicants is made up of academic and non-academic factors with a majority of the weight coming from academic criteria.</p><p><br></p><p>To be considered for admissions to Cal Poly Pomona, all applicants must meet the minimum CSU eligibility requirements. Once an applicant’s CSU eligibility has been determined, they will then be assessed based on a combination of GPA in all transferable coursework and additional Cal Poly Pomona selection criteria that creates and CPP Eligibility Index for each applicant.</p><p><br></p><p><strong>Additional Criteria</strong></p><p>The following Cal Poly Pomona selection criteria is taken into admission consideration:</p><p><br></p><ul><li>Academic grade point average in all transferable coursework.</li><li>Priority to students from our local area.</li><li>Your experiences and special circumstances such as military status, first generation to attend college, work experience, foster youth, extra-curricular activities, leadership positions, work related to major and approved campus partnerships.</li><li>Completion of preferred, recommended, or required coursework with a \"C\" or higher</li></ul><p><br></p><p><em>Please note, while local applicants will have an eligibility index, they will be admissible to a non-impacted program if they meet all of the minimum CSU requirements.</em></p>"
+    },
+    {
+      "id": "e4876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 8,
+      "content": "THIS IS AN IMPACTED MAJOR",
+      "contentHtml": null
+    },
+    {
+      "id": "e4896f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 9,
+      "content": "Campus Impaction \"Campus Impaction\" means that a campus has reached its enrollment capacity for instructional resources and physical support and cannot accommodate all the eligible undergraduate applications it receives. Cal Poly Pomona has established a local admission area for upper-division transfers. In general, applicants from outside the designated local area will be held to a higher admission standard than those received from applicants inside the local area. Local Area Admission Preference Transfer applications applying to an impacted major will receive \"Local Preference\" for admission consideration if the majority of their units are coming from one of our local area schools. As a campus, Cal Poly Pomona provides a varying transfer GPA bump, based on major, to ensure a local area admission preference. In addition, as a part of our commitment to provide access to veterans, Cal Poly Pomona gives \"Local Preference\" to all veterans regardless of transferring institution. Supplemental Required and Recommended Courses Cal Poly Pomona has implemented a multifactor admission (MFA) model to evaluate all incoming transfer applicants. Many of our majors have required or recommended supplemental courses that will help prepare prospective applicants for further studies in their major. Required supplemental courses must be completed with a grade of \"C\" or higher to be considered for admission Recommended supplemental coursework will earn additional consideration based on how many of the recommended courses are completed with a \"C\" or higher Local area applicants must complete any required coursework to be admissible and will receive a local preference bump Local area applicants will receive additional points for any recommended coursework and will receive a local preference bump Please note, supplemental coursework is waived for Chemistry, Biology, and Sociology (starting 2022-2023) by completion of an associate degree for transfer (ADT) in a similar major. ADT recipients will receive additional points.",
+      "contentHtml": "<p><strong>Campus Impaction</strong></p><p><br></p><p>\"Campus Impaction\" means that a campus has reached its enrollment capacity for instructional resources and physical support and cannot accommodate all the eligible undergraduate applications it receives. Cal Poly Pomona has established a <a href=\"https://www.cpp.edu/admissions/transfer/local-area.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">local admission area</a> for upper-division transfers. In general, applicants from outside the designated local area will be held to a higher admission standard than those received from applicants inside the local area.</p><p><br></p><p><strong>Local Area Admission Preference</strong></p><p><br></p><p>Transfer applications applying to an impacted major will receive \"Local Preference\" for admission consideration if the majority of their units are coming from one of our <a href=\"https://www.cpp.edu/admissions/transfer/local-area.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">local area</a> schools. As a campus, Cal Poly Pomona provides a varying transfer GPA bump, based on major, to ensure a local area admission preference. In addition, as a part of our commitment to provide access to veterans, Cal Poly Pomona gives \"Local Preference\" to all veterans regardless of transferring institution.</p><p><br></p><p><strong>Supplemental Required and Recommended Courses</strong></p><p><br></p><p>Cal Poly Pomona has implemented a multifactor admission (MFA) model to evaluate all incoming transfer applicants. Many of our majors have required <strong>or</strong> recommended supplemental courses that will help prepare prospective applicants for further studies in their major.</p><p><br></p><ul><li><strong><em>Required</em></strong> supplemental courses must be completed with a grade of \"C\" or higher to be considered for admission</li><li><strong><em>Recommended</em></strong> supplemental coursework will earn additional consideration based on how many of the recommended courses are completed with a \"C\" or higher</li><li>Local area applicants must complete any <u>required</u> coursework to be admissible and will receive a local preference bump</li><li>Local area applicants will receive additional points for any <u>recommended</u> coursework and will receive a local preference bump</li></ul><p><br></p><p><em>Please note, supplemental coursework is waived for Chemistry, Biology, and Sociology (starting 2022-2023) by completion of an </em><a href=\"https://www.cpp.edu/admissions/transfer/associate-degree-for-transfer.shtml\" rel=\"noopener noreferrer\" target=\"_blank\"><em>associate degree for transfer (ADT)</em></a><em> in a similar major. ADT recipients will receive additional points.</em></p>"
+    },
+    {
+      "id": "ec876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 10,
+      "content": "SUPPLEMENTAL COURSEWORK FOR ADMISSION",
+      "contentHtml": null
+    },
+    {
+      "id": "f4876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 11,
+      "content": "Recommended: MAT 1140 MAT 1150 PHY 1510/L PHY 1520/L https://www.cpp.edu/~admissions/transfer/impacted-majors.shtml",
+      "contentHtml": "<p><strong>Recommended:</strong></p><p><br></p><ul><li>MAT 1140</li><li>MAT 1150</li><li>PHY 1510/L</li><li>PHY 1520/L</li></ul><p><br></p><p><a href=\"https://www.cpp.edu/~admissions/transfer/impacted-majors.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.cpp.edu/~admissions/transfer/impacted-majors.shtml</a></p>"
+    },
+    {
+      "id": "e8876f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 12,
+      "content": "GENERAL EDUCATION REQUIREMENTS",
+      "contentHtml": null
+    },
+    {
+      "id": "f4896f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 13,
+      "content": "Transfer students may satisfy General Education requirements by completing the California General Education Transfer Curriculum (Cal-GETC), or by completing an Associate Degree for Transfer (AA-T/AS-T) . Transfer students are advised to take courses required for their major as part General Education, as specified by each major, to achieve the minimum units to degree. Major courses and campus-wide required courses that are approved for GE credit shall also fulfill (double count for) the GE requirement. [ EO 1100 ] For more information regarding Associate Degree for Transfer, please see your California community college counselor or visit: www.adegreewithaguarantee.com/",
+      "contentHtml": "<p>Transfer students may satisfy General Education requirements by completing the California General Education Transfer Curriculum (Cal-GETC), or by completing an <a href=\"https://www.calstate.edu/apply/transfer/Pages/ccc-associate-degree-for-transfer.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">Associate Degree for Transfer (AA-T/AS-T)</a>.</p><p><br></p><p><strong>Transfer students are advised to take courses required for their major as part General Education, as specified by each major, to achieve the minimum units to degree.</strong></p><p><br></p><p>Major courses and campus-wide required courses that are approved for GE credit shall also fulfill (double count for) the GE requirement. [<a href=\"https://calstate.policystat.com/policy/6741976/latest/\" rel=\"noopener noreferrer\" target=\"_blank\">EO 1100</a>]</p><p><br></p><p>For more information regarding Associate Degree for Transfer, please see your California community college counselor or visit: <a href=\"http://www.adegreewithaguarantee.com/\" rel=\"noopener noreferrer\" target=\"_blank\">www.adegreewithaguarantee.com/</a></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:35.671Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=75&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F75%2FMajor%2F980884f1-06dd-46f4-8c6e-08deaabd5f92&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F75%2FMajor%2F980884f1-06dd-46f4-8c6e-08deaabd5f92",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F75%2FMajor%2F980884f1-06dd-46f4-8c6e-08deaabd5f92",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-75/major/8d56a4b2b665a4bf.json",
+    "templateAssetCount": 24,
+    "articulationCount": 8
+  }
+}

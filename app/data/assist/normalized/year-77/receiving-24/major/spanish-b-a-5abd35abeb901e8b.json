@@ -1,0 +1,1154 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 24,
+    "name": "California State University, Stanislaus",
+    "code": "CSUSTAN",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/24/Major/89499c83-53d5-468b-d882-08ded63e51e8",
+    "type": "Major",
+    "name": "Spanish B.A.",
+    "publishDate": "2026-08-10T21:27:29.2421118",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "90ee7145-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "90ee7145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 269554,
+              "prefix": "SPAN",
+              "courseNumber": "1010",
+              "title": "Elementary Spanish I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2015",
+              "endTerm": "",
+              "department": "Spanish",
+              "departmentParentId": 12229,
+              "prefixDescription": "Spanish",
+              "prefixParentId": 3110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 263097,
+              "prefix": "SPAN",
+              "courseNumber": "1020",
+              "title": "Elementary Spanish II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2015",
+              "endTerm": "",
+              "department": "Spanish",
+              "departmentParentId": 12229,
+              "prefixDescription": "Spanish",
+              "prefixParentId": 3110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "d5f69c55-41e9-4d18-6259-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 269554,
+                  "prefix": "SPAN",
+                  "courseNumber": "1010",
+                  "title": "Elementary Spanish I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12229,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "da0aea0f-554d-4218-625a-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 263097,
+                  "prefix": "SPAN",
+                  "courseNumber": "1020",
+                  "title": "Elementary Spanish II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12229,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d5f69c55-41e9-4d18-6259-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 309426,
+                  "prefix": "SPAN",
+                  "courseNumber": "101",
+                  "title": "Beginning Spanish I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "Su2014",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12272,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3183,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 309426,
+                      "prefix": "SPAN",
+                      "courseNumber": "101",
+                      "title": "Beginning Spanish I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "Su2014",
+                      "endTerm": "",
+                      "department": "Spanish",
+                      "departmentParentId": 12272,
+                      "prefixDescription": "Spanish",
+                      "prefixParentId": 3183,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 309426,
+                          "prefix": "SPAN",
+                          "courseNumber": "101",
+                          "title": "Beginning Spanish I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "Su2014",
+                          "endTerm": "",
+                          "department": "Spanish",
+                          "departmentParentId": 12272,
+                          "prefixDescription": "Spanish",
+                          "prefixParentId": 3183,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "da0aea0f-554d-4218-625a-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 281860,
+                  "prefix": "SPAN",
+                  "courseNumber": "102",
+                  "title": "Beginning Spanish II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "Su2014",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12272,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3183,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 281860,
+                      "prefix": "SPAN",
+                      "courseNumber": "102",
+                      "title": "Beginning Spanish II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "Su2014",
+                      "endTerm": "",
+                      "department": "Spanish",
+                      "departmentParentId": 12272,
+                      "prefixDescription": "Spanish",
+                      "prefixParentId": 3183,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 281860,
+                          "prefix": "SPAN",
+                          "courseNumber": "102",
+                          "title": "Beginning Spanish II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "Su2014",
+                          "endTerm": "",
+                          "department": "Spanish",
+                          "departmentParentId": 12272,
+                          "prefixDescription": "Spanish",
+                          "prefixParentId": 3183,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d5f69c55-41e9-4d18-6259-08ded63e52af",
+            "da0aea0f-554d-4218-625a-08ded63e52af"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31166645-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Sequence",
+        "amountQuantifier": "None",
+        "toAmount": 1,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "31166645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Sequence",
+            "amountQuantifier": "None",
+            "toAmount": 1,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 299736,
+              "prefix": "SPAN",
+              "courseNumber": "2010",
+              "title": "Intermediate Spanish I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2015",
+              "endTerm": "",
+              "department": "Spanish",
+              "departmentParentId": 12229,
+              "prefixDescription": "Spanish",
+              "prefixParentId": 3110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 171058,
+              "prefix": "SPAN",
+              "courseNumber": "2020",
+              "title": "Intermediate Spanish II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2015",
+              "endTerm": "",
+              "department": "Spanish",
+              "departmentParentId": 12229,
+              "prefixDescription": "Spanish",
+              "prefixParentId": 3110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "68d47023-1d26-4c50-6255-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 299736,
+                  "prefix": "SPAN",
+                  "courseNumber": "2010",
+                  "title": "Intermediate Spanish I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12229,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "a2ed03ec-876b-4792-6256-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171058,
+                  "prefix": "SPAN",
+                  "courseNumber": "2020",
+                  "title": "Intermediate Spanish II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12229,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "68d47023-1d26-4c50-6255-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 281853,
+                  "prefix": "SPAN",
+                  "courseNumber": "103",
+                  "title": "Intermediate Spanish I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "Su2014",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12272,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3183,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 281853,
+                      "prefix": "SPAN",
+                      "courseNumber": "103",
+                      "title": "Intermediate Spanish I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "Su2014",
+                      "endTerm": "",
+                      "department": "Spanish",
+                      "departmentParentId": 12272,
+                      "prefixDescription": "Spanish",
+                      "prefixParentId": 3183,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 281853,
+                          "prefix": "SPAN",
+                          "courseNumber": "103",
+                          "title": "Intermediate Spanish I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "Su2014",
+                          "endTerm": "",
+                          "department": "Spanish",
+                          "departmentParentId": 12272,
+                          "prefixDescription": "Spanish",
+                          "prefixParentId": 3183,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "a2ed03ec-876b-4792-6256-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245662,
+                  "prefix": "SPAN",
+                  "courseNumber": "104",
+                  "title": "Intermediate Spanish II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "Su2014",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12272,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3183,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245662,
+                      "prefix": "SPAN",
+                      "courseNumber": "104",
+                      "title": "Intermediate Spanish II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "Su2014",
+                      "endTerm": "",
+                      "department": "Spanish",
+                      "departmentParentId": 12272,
+                      "prefixDescription": "Spanish",
+                      "prefixParentId": 3183,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245662,
+                          "prefix": "SPAN",
+                          "courseNumber": "104",
+                          "title": "Intermediate Spanish II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "Su2014",
+                          "endTerm": "",
+                          "department": "Spanish",
+                          "departmentParentId": 12272,
+                          "prefixDescription": "Spanish",
+                          "prefixParentId": 3183,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "68d47023-1d26-4c50-6255-08ded63e52af",
+            "a2ed03ec-876b-4792-6256-08ded63e52af"
+          ]
+        },
+        {
+          "id": "31166645-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Sequence",
+            "amountQuantifier": "None",
+            "toAmount": 1,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330677,
+              "prefix": "SPAN",
+              "courseNumber": "2011",
+              "title": "Spanish for Native Speakers I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Spanish",
+              "departmentParentId": 12229,
+              "prefixDescription": "Spanish",
+              "prefixParentId": 3110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136432,
+              "prefix": "SPAN",
+              "courseNumber": "2015",
+              "title": "Spanish for Native Speakers II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Spanish",
+              "departmentParentId": 12229,
+              "prefixDescription": "Spanish",
+              "prefixParentId": 3110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "93944830-e8f2-4393-6257-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330677,
+                  "prefix": "SPAN",
+                  "courseNumber": "2011",
+                  "title": "Spanish for Native Speakers I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12229,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "acca63e3-ec1d-443d-6258-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136432,
+                  "prefix": "SPAN",
+                  "courseNumber": "2015",
+                  "title": "Spanish for Native Speakers II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12229,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "93944830-e8f2-4393-6257-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 305178,
+                  "prefix": "SPAN",
+                  "courseNumber": "146",
+                  "title": "Intermediate Spanish for Native Speakers I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2014",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12272,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3183,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 305178,
+                      "prefix": "SPAN",
+                      "courseNumber": "146",
+                      "title": "Intermediate Spanish for Native Speakers I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F2014",
+                      "endTerm": "",
+                      "department": "Spanish",
+                      "departmentParentId": 12272,
+                      "prefixDescription": "Spanish",
+                      "prefixParentId": 3183,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 305178,
+                          "prefix": "SPAN",
+                          "courseNumber": "146",
+                          "title": "Intermediate Spanish for Native Speakers I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F2014",
+                          "endTerm": "",
+                          "department": "Spanish",
+                          "departmentParentId": 12272,
+                          "prefixDescription": "Spanish",
+                          "prefixParentId": 3183,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "acca63e3-ec1d-443d-6258-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 287905,
+                  "prefix": "SPAN",
+                  "courseNumber": "147",
+                  "title": "Intermediate Spanish for Native Speakers II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2014",
+                  "endTerm": "",
+                  "department": "Spanish",
+                  "departmentParentId": 12272,
+                  "prefixDescription": "Spanish",
+                  "prefixParentId": 3183,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 287905,
+                      "prefix": "SPAN",
+                      "courseNumber": "147",
+                      "title": "Intermediate Spanish for Native Speakers II",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F2014",
+                      "endTerm": "",
+                      "department": "Spanish",
+                      "departmentParentId": 12272,
+                      "prefixDescription": "Spanish",
+                      "prefixParentId": 3183,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 287905,
+                          "prefix": "SPAN",
+                          "courseNumber": "147",
+                          "title": "Intermediate Spanish for Native Speakers II",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F2014",
+                          "endTerm": "",
+                          "department": "Spanish",
+                          "departmentParentId": 12272,
+                          "prefixDescription": "Spanish",
+                          "prefixParentId": 3183,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "93944830-e8f2-4393-6257-08ded63e52af",
+            "acca63e3-ec1d-443d-6258-08ded63e52af"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "556b7445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "97046645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "This agreement displays all lower-division courses required in the major : Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right. Helpful resources: Academic Catalog Transfer Admissions Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the Stanislaus State Articulation Website for contact information.",
+      "contentHtml": "<p>This agreement displays all<strong> lower-division courses required in the major</strong>: Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right.</p><p><br></p><p><strong>Helpful resources: </strong></p><p><a href=\"https://catalog.csustan.edu/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">Academic Catalog</a></p><p><a href=\"https://www.csustan.edu/undergrad/transfer-admission\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admissions</a></p><p><br></p><p>Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the <a href=\"https://www.csustan.edu/articulation\" rel=\"noopener noreferrer\" target=\"_blank\">Stanislaus State Articulation Website</a> for contact information.</p>"
+    },
+    {
+      "id": "202e7445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "About the Major",
+      "contentHtml": null
+    },
+    {
+      "id": "ebc77645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "Majors and/or minors in Modern Languages are designed to assist students as they plan careers. Some students anticipate teaching at the elementary or secondary level, while others are training to meet the challenges of advanced studies in language and literature. A growing number will discover that foreign language ability and sensitivity to other cultures are important assets, especially in career choices such as social sciences, the foreign service, international finance and banking, and international business. As today’s students gain knowledge and understanding of other languages and cultures, they inevitably develop greater appreciation of their own. In the process, they find themselves better equipped to succeed in our modern society where multilingual and multinational interests are becoming swiftly and inexorably part of our daily lives. View information for the Department of Philosophy and Modern Languages , including Learning Objectives for the department and its programs.",
+      "contentHtml": "<p>Majors and/or minors in Modern Languages are designed to assist students as they plan careers. Some students anticipate teaching at the elementary or secondary level, while others are training to meet the challenges of advanced studies in language and literature. A growing number will discover that foreign language ability and sensitivity to other cultures are important assets, especially in career choices such as social sciences, the foreign service, international finance and banking, and international business.</p><p><br></p><p>As today’s students gain knowledge and understanding of other languages and cultures, they inevitably develop greater appreciation of their own. In the process, they find themselves better equipped to succeed in our modern society where multilingual and multinational interests are becoming swiftly and inexorably part of our daily lives.</p><p><br></p><p>View information for the <a href=\"https://catalog.csustan.edu/preview_entity.php?catoid=35&amp;ent_oid=1724\" rel=\"noopener noreferrer\" target=\"_blank\">Department of Philosophy and Modern Languages</a>, including Learning Objectives for the department and its programs.</p>"
+    },
+    {
+      "id": "f4e27145-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "About Lower Division Major Requirements",
+      "contentHtml": null
+    },
+    {
+      "id": "b1b67645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "No more than 8 units of Credit/No Credit-graded course work in courses graded exclusively Credit/No Credit may apply toward the major. A student who can demonstrate equivalent preparation may be exempt from 4 to 14 units of the lower-division requirement. Two years of college-level Spanish or the equivalent is required for admission to upper-division courses. Completion of an academic minor in a related discipline is not required, but is strongly recommended for single subject credential candidates.",
+      "contentHtml": "<p>No more than 8 units of Credit/No Credit-graded course work in courses graded exclusively Credit/No Credit may apply toward the major.</p><p><br></p><p>A student who can demonstrate equivalent preparation may be exempt from 4 to 14 units of the lower-division requirement. Two years of college-level Spanish or the equivalent is required for admission to upper-division courses.</p><p><br></p><p>Completion of an academic minor in a related discipline is not required, but is strongly recommended for single subject credential candidates.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:47.306Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=24&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F24%2FMajor%2F89499c83-53d5-468b-d882-08ded63e51e8&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F24%2FMajor%2F89499c83-53d5-468b-d882-08ded63e51e8",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F24%2FMajor%2F89499c83-53d5-468b-d882-08ded63e51e8",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-24/major/5abd35abeb901e8b.json",
+    "templateAssetCount": 9,
+    "articulationCount": 6
+  }
+}

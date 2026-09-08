@@ -1,0 +1,997 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 85,
+    "name": "California State University, San Bernardino",
+    "code": "CSUSB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/85/Major/e1070898-f657-47ce-4f4a-08de050a3a5e",
+    "type": "Major",
+    "name": "Anthropology, B.A.",
+    "publishDate": "2026-06-16T19:08:55.2213879",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "d9e97145-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION REQUIREMENTS",
+      "position": 1,
+      "logic": "AND",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "AND",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "d9e97145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374390,
+              "prefix": "ANTH",
+              "courseNumber": "1001",
+              "title": "Humans, Apes, and Monkeys: Introduction to Biological Anthropology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Anthropology",
+              "departmentParentId": 733,
+              "prefixDescription": "Anthropology",
+              "prefixParentId": 10768,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "63d9ebf3-d8e4-4ea5-c627-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374390,
+                  "prefix": "ANTH",
+                  "courseNumber": "1001",
+                  "title": "Humans, Apes, and Monkeys: Introduction to Biological Anthropology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 733,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10768,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "63d9ebf3-d8e4-4ea5-c627-08de050a3a69",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330297,
+                  "prefix": "ANTH",
+                  "courseNumber": "101",
+                  "title": "Physical Anthropology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 273750,
+                  "prefix": "ANTH",
+                  "courseNumber": "101H",
+                  "title": "Physical Anthropology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330297,
+                      "prefix": "ANTH",
+                      "courseNumber": "101",
+                      "title": "Physical Anthropology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330297,
+                          "prefix": "ANTH",
+                          "courseNumber": "101",
+                          "title": "Physical Anthropology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 273750,
+                      "prefix": "ANTH",
+                      "courseNumber": "101H",
+                      "title": "Physical Anthropology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 273750,
+                          "prefix": "ANTH",
+                          "courseNumber": "101H",
+                          "title": "Physical Anthropology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "28ae3251-4539-46d7-d9a4-08de050a4b58",
+                  "sendingArticulationId": "7a82a9e2-43fd-484f-d0f5-08de050a461c",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "63d9ebf3-d8e4-4ea5-c627-08de050a3a69"
+          ]
+        },
+        {
+          "id": "d9e97145-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374391,
+              "prefix": "ANTH",
+              "courseNumber": "1002",
+              "title": "Understanding Cultural Diversity",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Anthropology",
+              "departmentParentId": 733,
+              "prefixDescription": "Anthropology",
+              "prefixParentId": 10768,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "4c37a420-a74f-4a90-c624-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374391,
+                  "prefix": "ANTH",
+                  "courseNumber": "1002",
+                  "title": "Understanding Cultural Diversity",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 733,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10768,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4c37a420-a74f-4a90-c624-08de050a3a69",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135834,
+                  "prefix": "ANTH",
+                  "courseNumber": "103",
+                  "title": "Introduction to Cultural Anthropology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 413313,
+                  "prefix": "ANTH",
+                  "courseNumber": "103H",
+                  "title": "Introduction to Cultural Anthropology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135834,
+                      "prefix": "ANTH",
+                      "courseNumber": "103",
+                      "title": "Introduction to Cultural Anthropology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135834,
+                          "prefix": "ANTH",
+                          "courseNumber": "103",
+                          "title": "Introduction to Cultural Anthropology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 413313,
+                      "prefix": "ANTH",
+                      "courseNumber": "103H",
+                      "title": "Introduction to Cultural Anthropology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 413313,
+                          "prefix": "ANTH",
+                          "courseNumber": "103H",
+                          "title": "Introduction to Cultural Anthropology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "dc9caabc-7ec6-4a95-a205-08de1c74ee2c",
+                  "sendingArticulationId": "b0bc4b28-850e-409b-d0f6-08de050a461c",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "4c37a420-a74f-4a90-c624-08de050a3a69"
+          ]
+        },
+        {
+          "id": "d9e97145-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374392,
+              "prefix": "ANTH",
+              "courseNumber": "1400",
+              "title": "World History to c. 1500",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Anthropology",
+              "departmentParentId": 733,
+              "prefixDescription": "Anthropology",
+              "prefixParentId": 10768,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 374393,
+              "prefix": "HIST",
+              "courseNumber": "1400",
+              "title": "World History to c. 1500",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6986,
+              "prefixDescription": "History",
+              "prefixParentId": 2983,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "07d25a7a-accc-4812-c625-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374392,
+                  "prefix": "ANTH",
+                  "courseNumber": "1400",
+                  "title": "World History to c. 1500",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 733,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10768,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "fe80245f-7e09-4078-c626-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374393,
+                  "prefix": "HIST",
+                  "courseNumber": "1400",
+                  "title": "World History to c. 1500",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6986,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2983,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "07d25a7a-accc-4812-c625-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236344,
+                  "prefix": "HIST",
+                  "courseNumber": "107",
+                  "title": "World Civilization, Beginnings to 1550",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Acceptable substitute"
+                    }
+                  ],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236344,
+                      "prefix": "HIST",
+                      "courseNumber": "107",
+                      "title": "World Civilization, Beginnings to 1550",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Acceptable substitute"
+                        }
+                      ],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236344,
+                          "prefix": "HIST",
+                          "courseNumber": "107",
+                          "title": "World Civilization, Beginnings to 1550",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [
+                            {
+                              "id": null,
+                              "position": 0,
+                              "content": "Acceptable substitute"
+                            }
+                          ],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Acceptable substitute"
+                        }
+                      ]
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "fe80245f-7e09-4078-c626-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236344,
+                  "prefix": "HIST",
+                  "courseNumber": "107",
+                  "title": "World Civilization, Beginnings to 1550",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236344,
+                      "prefix": "HIST",
+                      "courseNumber": "107",
+                      "title": "World Civilization, Beginnings to 1550",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236344,
+                          "prefix": "HIST",
+                          "courseNumber": "107",
+                          "title": "World Civilization, Beginnings to 1550",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "07d25a7a-accc-4812-c625-08de050a3a69",
+            "fe80245f-7e09-4078-c626-08de050a3a69"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "182f7445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General CSUSB information",
+      "contentHtml": null
+    },
+    {
+      "id": "63fe6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "This agreement displays only the lower-division courses required in the major. Although completion of the coursework listed below is not necessarily mandatory prior to admission, students are strongly advised to complete as much lower-division course preparation as possible prior to transfer. This agreement does not contain upper-division (junior-senior) major requirements, general education, or all-university requirements necessary for completion of this degree. In some cases, there may be alternative course options at the upper-division level. Please review the CSUSB catalog for full details. TRANSFER ADMISSION INFORMATION You can find information about admission to CSUSB as a transfer student here: https://www.csusb.edu/admissions/apply-csusb/transfer-students TRANSFER SUCCESS PATHWAY Enrolling in the Transfer Success Pathway provides you with dual admission to a California Community College and a specific CSU campus. The TSP ensures a more streamlined transfer experience since you can choose the specific community college courses that will apply to your intended major at your destination CSU campus. See if you qualify for the Transfer Success Pathway here: https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx FINANCIAL AID Students who plan to transfer directly from a California Community College to a 4-year university can apply for the Cal Grant Transfer Entitlement Award. The application deadline is March 2nd each year, and students must submit a FAFSA or CA Dream Act Application. The minimum GPA is a 2.40. More information is available here: https://www.csac.ca.gov/post/cal-grant-transfer-entitlement-award ASSOCIATE DEGREES FOR TRANSFER (ADTs) A complete list of CSUSB majors/concentrations that are similar to the Associate Degrees for Transfer (ADTs) can be found here: https://www.csusb.edu/registrar/articulation/associate-degree-transfer Students who intend to transfer to CSUSB with the ADT guarantee MUST submit final transcripts with the earned ADT recorded by the final document deadline: https://www.csusb.edu/admissions/apply-csusb/transfer-students/transfer-deadlines Students who submit transcripts after the document deadline are NOT guaranteed to graduate within 60 semester units. EXPLORE MAJORS AND CAREERS The CSUSB Career Center has collected a variety of resources to help students choose or confirm their major and explore different career paths: https://www.csusb.edu/career-center/students/career-resources/major-and-career-exploration TEST CREDIT If you took an AP, IB, or CLEP test, you can look up your CSUSB credit here: https://www.csusb.edu/registrar/articulation/test-credit TRANSFER HELP Do you have questions about your transfer work? Need some guidance? You can talk with one of our Transfer and Graduation Counselors! Email: transferhelp@csusb.edu Phone: 909-537-5200, Option 4 Zoom: Set up an appointment by emailing transferhelp@csusb.edu You are also welcome to visit us in person. We are located in the Office of the Registrar , on the first floor of University Hall ( interactive map link ).",
+      "contentHtml": "<p>This agreement displays only the lower-division courses required in the major. Although completion of the coursework listed below is not necessarily mandatory prior to admission, students are strongly advised to complete as much lower-division course preparation as possible prior to transfer. This agreement does not contain upper-division (junior-senior) major requirements, general education, or all-university requirements necessary for completion of this degree. In some cases, there may be alternative course options at the upper-division level. Please review the <a href=\"https://bulletin.csusb.edu/\" rel=\"noopener noreferrer\" target=\"_blank\">CSUSB catalog</a> for full details.</p><p><br></p><h2>TRANSFER ADMISSION INFORMATION</h2><p>You can find information about admission to CSUSB as a transfer student here:<a href=\"https://www.csusb.edu/admissions/apply-csusb/transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\"> https://www.csusb.edu/admissions/apply-csusb/transfer-students</a></p><p><br></p><h2>TRANSFER SUCCESS PATHWAY</h2><p>Enrolling in the Transfer Success Pathway provides you with dual admission to a California Community College and a specific CSU campus. The TSP ensures a more streamlined transfer experience since you can choose the specific community college courses that will apply to your intended major at your destination CSU campus. See if you qualify for the Transfer Success Pathway here: <a href=\"https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx</a></p><p><br></p><h2>FINANCIAL AID</h2><p>Students who plan to transfer directly from a California Community College to a 4-year university can apply for the Cal Grant Transfer Entitlement Award. The application deadline is March 2nd each year, and students must submit a FAFSA or CA Dream Act Application. The minimum GPA is a 2.40. More information is available here: <a href=\"https://www.csac.ca.gov/post/cal-grant-transfer-entitlement-award\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csac.ca.gov/post/cal-grant-transfer-entitlement-award</a></p><p><br></p><h2>ASSOCIATE DEGREES FOR TRANSFER (ADTs)</h2><p>A complete list of CSUSB majors/concentrations that are similar to the Associate Degrees for Transfer (ADTs) can be found here: <a href=\"https://www.csusb.edu/registrar/articulation/associate-degree-transfer\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/registrar/articulation/associate-degree-transfer</a></p><p class=\"highlight\">Students who intend to transfer to CSUSB with the ADT guarantee <strong>MUST</strong> submit final transcripts with the earned ADT recorded by the final document deadline: <a href=\"https://www.csusb.edu/admissions/apply-csusb/transfer-students/transfer-deadlines\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/admissions/apply-csusb/transfer-students/transfer-deadlines</a></p><p>Students who submit transcripts after the document deadline are <strong>NOT</strong> guaranteed to graduate within 60 semester units.</p><p><br></p><h2>EXPLORE MAJORS AND CAREERS</h2><ul><li>The CSUSB Career Center has collected a variety of resources to help students choose or confirm their major and explore different career paths: <a href=\" https://www.csusb.edu/career-center/students/career-resources/major-and-career-exploration\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/career-center/students/career-resources/major-and-career-exploration</a></li></ul><p><br></p><h2>TEST CREDIT</h2><p>If you took an AP, IB, or CLEP test, you can look up your CSUSB credit here: <a href=\"https://www.csusb.edu/registrar/articulation/test-credit\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/registrar/articulation/test-credit</a></p><p><br></p><h2>TRANSFER HELP</h2><p>Do you have questions about your transfer work? Need some guidance? You can talk with one of our Transfer and Graduation Counselors!</p><ul><li>Email: <a href=\"mailto:transferhelp@csusb.edu\" rel=\"noopener noreferrer\" target=\"_blank\">transferhelp@csusb.edu</a></li><li>Phone: 909-537-5200, Option 4</li><li>Zoom: Set up an appointment by emailing <a href=\"mailto:transferhelp@csusb.edu\" rel=\"noopener noreferrer\" target=\"_blank\">transferhelp@csusb.edu</a></li></ul><p>You are also welcome to visit us in person. We are located in the <a href=\"https://www.csusb.edu/registrar\" rel=\"noopener noreferrer\" target=\"_blank\">Office of the Registrar</a>, on the first floor of University Hall (<a href=\"https://map.csusb.edu/?id=1850#!ce/49354?ct/51385,48449,53905,53906,49354?m/500186?s/\" rel=\"noopener noreferrer\" target=\"_blank\">interactive map link</a>).</p>"
+    },
+    {
+      "id": "57347445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "about this major",
+      "contentHtml": null
+    },
+    {
+      "id": "f8f37645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "MAJOR INFORMATION The study of anthropology promotes an understanding of self and other by exploring the human condition at all times and in all places. In an interconnected world in which societies depend upon one another, failures in understanding and appreciating differences in goals, values and ways of life can lead to fear, discrimination, oppression, and war. The subfields of biological anthropology, archaeology, and sociocultural anthropology explore human evolution and the emergence of culture, cultural differences and similarities, regional history and ecology, and the role of language in culture. Students can earn additional first-hand experience abroad through participation in faculty-led programs , the California State University's International Programs , and independent field schools. ALL MAJOR REQUIREMENTS The complete list of major requirements is available here: http://bulletin.csusb.edu/colleges-schools-departments/social-behavioral-sciences/anthropology/anthropology-ba/ CSUSB ADVISING PODCASTS Find out more about this major here: What is the Anthropology Major? ASSOCIATE DEGREE FOR TRANSFER (ADTs) This major is similar to the Associate Degree for Transfer (ADT) in Anthropology. Completion of the ADT guarantees that students will be able to graduate from a similar-designated major at CSUSB in no more than 60 semester units. The ADT does not guarantee that all lower-division requirements are met. Community college transfer students with a compatible ADT MUST meet with an academic advisor early in their first term and each subsequent term to stay on track for graduation.",
+      "contentHtml": "<h2>MAJOR INFORMATION</h2><p>The study of anthropology promotes an understanding of self and other by exploring the human condition at all times and in all places. In an interconnected world in which societies depend upon one another, failures in understanding and appreciating differences in goals, values and ways of life can lead to fear, discrimination, oppression, and war. The subfields of biological anthropology, archaeology, and sociocultural anthropology explore human evolution and the emergence of culture, cultural differences and similarities, regional history and ecology, and the role of language in culture. Students can earn additional first-hand experience abroad through participation in <a href=\"http://international.csusb.edu/StudyAbroad.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">faculty-led programs</a>, the <a href=\"http://csuip.calstate.edu/\" rel=\"noopener noreferrer\" target=\"_blank\">California State University's International Programs</a>, and independent field schools.</p><p><br></p><h2>ALL MAJOR REQUIREMENTS</h2><p>The complete list of major requirements is available here: <a href=\"http://bulletin.csusb.edu/colleges-schools-departments/social-behavioral-sciences/anthropology/anthropology-ba/\" rel=\"noopener noreferrer\" target=\"_blank\">http://bulletin.csusb.edu/colleges-schools-departments/social-behavioral-sciences/anthropology/anthropology-ba/</a></p><p><br></p><h2>CSUSB ADVISING PODCASTS</h2><p>Find out more about this major here:</p><ul><li><a href=\"https://csusbadvising.buzzsprout.com/1215218/10715826-ep-29-what-is-the-anthropology-major\" rel=\"noopener noreferrer\" target=\"_blank\">What is the Anthropology Major?</a></li></ul><p><br></p><h2>ASSOCIATE DEGREE FOR TRANSFER (ADTs)</h2><p>This major is similar to the Associate Degree for Transfer (ADT) in Anthropology.</p><p><br></p><p>Completion of the ADT guarantees that students will be able to graduate from a similar-designated major at CSUSB in no more than 60 semester units. The ADT does not guarantee that all lower-division requirements are met.</p><p><br></p><p class=\"highlight\"><strong>Community college transfer students with a compatible ADT <u>MUST</u> meet with an academic advisor early in their first term and each subsequent term to stay on track for graduation.</strong></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:02.091Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=85&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F85%2FMajor%2Fe1070898-f657-47ce-4f4a-08de050a3a5e&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F85%2FMajor%2Fe1070898-f657-47ce-4f4a-08de050a3a5e",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F85%2FMajor%2Fe1070898-f657-47ce-4f4a-08de050a3a5e",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-85/major/ba8af02e204334b3.json",
+    "templateAssetCount": 6,
+    "articulationCount": 4
+  }
+}

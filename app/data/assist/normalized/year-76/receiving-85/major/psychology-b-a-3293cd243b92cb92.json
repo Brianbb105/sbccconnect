@@ -1,0 +1,2068 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 85,
+    "name": "California State University, San Bernardino",
+    "code": "CSUSB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/85/Major/e21c06fe-5e92-4be0-4f2a-08de050a3a5e",
+    "type": "Major",
+    "name": "Psychology, B.A.",
+    "publishDate": "2026-06-16T18:32:25.5263945",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "6ebd7645-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE",
+      "position": 1,
+      "logic": "AND",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "AND",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "6ebd7645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374443,
+              "prefix": "PSYC",
+              "courseNumber": "1100",
+              "title": "Introduction to Psychology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11245,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4678,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "5bb8b076-0dc3-4965-c41d-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374443,
+                  "prefix": "PSYC",
+                  "courseNumber": "1100",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11245,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4678,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "5bb8b076-0dc3-4965-c41d-08de050a3a69",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156537,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 279543,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000H",
+                  "title": "Introduction to Psychology - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156537,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156537,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 279543,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000H",
+                      "title": "Introduction to Psychology - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 279543,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000H",
+                          "title": "Introduction to Psychology - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "025c6566-79bf-42a1-d99e-08de050a4b58",
+                  "sendingArticulationId": "ce56a88a-c28d-41a2-d09c-08de050a461c",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "5bb8b076-0dc3-4965-c41d-08de050a3a69"
+          ]
+        },
+        {
+          "id": "6ebd7645-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374444,
+              "prefix": "PSYC",
+              "courseNumber": "1101",
+              "title": "Psychology as a Major",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11245,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4678,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Course(s) must be taken at university"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "4acb3cc4-8a75-4dab-c420-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374444,
+                  "prefix": "PSYC",
+                  "courseNumber": "1101",
+                  "title": "Psychology as a Major",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11245,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4678,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Course(s) must be taken at university"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Course(s) must be taken at university"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "4acb3cc4-8a75-4dab-c420-08de050a3a69",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "This course must be taken at the university after transfer",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "4acb3cc4-8a75-4dab-c420-08de050a3a69"
+          ]
+        },
+        {
+          "id": "6ebd7645-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374449,
+              "prefix": "PSYC",
+              "courseNumber": "2210",
+              "title": "Psychological Statistics",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11245,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4678,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Preferred course"
+                }
+              ],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 374341,
+              "prefix": "MATH",
+              "courseNumber": "1201",
+              "title": "Introduction to Statistical Thinking",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 9015,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9994,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 418878,
+              "prefix": "MATH",
+              "courseNumber": "1204",
+              "title": "Introduction to Statistical Thinking with Support Lab",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 9015,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9994,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "cb750beb-20fc-4fb3-c41c-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374449,
+                  "prefix": "PSYC",
+                  "courseNumber": "2210",
+                  "title": "Psychological Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11245,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4678,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Preferred course"
+                    }
+                  ],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Preferred course"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "11920b64-b9ca-4db5-edac-08de701b95d3",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374341,
+                  "prefix": "MATH",
+                  "courseNumber": "1201",
+                  "title": "Introduction to Statistical Thinking",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9015,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9994,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "c6867127-3fe3-4c62-edad-08de701b95d3",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 418878,
+                  "prefix": "MATH",
+                  "courseNumber": "1204",
+                  "title": "Introduction to Statistical Thinking with Support Lab",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9015,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9994,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "54620eb1-c845-43e7-c41b-08de050a3a69",
+              "type": "Requirement",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "Course(s) approved through C-ID (descriptor MATH 110)",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "requirementAttributes": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "cb750beb-20fc-4fb3-c41c-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "11920b64-b9ca-4db5-edac-08de701b95d3",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383741,
+                  "prefix": "MATH",
+                  "courseNumber": "117A",
+                  "title": "Elementary Statistics A",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383742,
+                  "prefix": "MATH",
+                  "courseNumber": "117B",
+                  "title": "Elementary Statistics B",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 383741,
+                      "prefix": "MATH",
+                      "courseNumber": "117A",
+                      "title": "Elementary Statistics A",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 383742,
+                      "prefix": "MATH",
+                      "courseNumber": "117B",
+                      "title": "Elementary Statistics B",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 383741,
+                          "prefix": "MATH",
+                          "courseNumber": "117A",
+                          "title": "Elementary Statistics A",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 383742,
+                          "prefix": "MATH",
+                          "courseNumber": "117B",
+                          "title": "Elementary Statistics B",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "8db9accc-fae5-4f84-d999-08de050a4b58",
+                  "sendingArticulationId": "bac28c44-7862-45a6-d04d-08de050a461c",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c6867127-3fe3-4c62-edad-08de701b95d3",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Comparable Course",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Requirement",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Requirement",
+                "requirementAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "54620eb1-c845-43e7-c41b-08de050a3a69",
+              "logic": "UNKNOWN",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383741,
+                  "prefix": "MATH",
+                  "courseNumber": "117A",
+                  "title": "Elementary Statistics A",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383742,
+                  "prefix": "MATH",
+                  "courseNumber": "117B",
+                  "title": "Elementary Statistics B",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 360940,
+                  "prefix": "SOC",
+                  "courseNumber": "125",
+                  "title": "Introduction to Statistics in Sociology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 383741,
+                      "prefix": "MATH",
+                      "courseNumber": "117A",
+                      "title": "Elementary Statistics A",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 383742,
+                      "prefix": "MATH",
+                      "courseNumber": "117B",
+                      "title": "Elementary Statistics B",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 383741,
+                          "prefix": "MATH",
+                          "courseNumber": "117A",
+                          "title": "Elementary Statistics A",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 383742,
+                          "prefix": "MATH",
+                          "courseNumber": "117B",
+                          "title": "Elementary Statistics B",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 360940,
+                      "prefix": "SOC",
+                      "courseNumber": "125",
+                      "title": "Introduction to Statistics in Sociology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2017",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 360940,
+                          "prefix": "SOC",
+                          "courseNumber": "125",
+                          "title": "Introduction to Statistics in Sociology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2017",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 3,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Complete",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "cb750beb-20fc-4fb3-c41c-08de050a3a69",
+            "11920b64-b9ca-4db5-edac-08de701b95d3",
+            "c6867127-3fe3-4c62-edad-08de701b95d3",
+            "54620eb1-c845-43e7-c41b-08de050a3a69"
+          ]
+        },
+        {
+          "id": "6ebd7645-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374450,
+              "prefix": "PSYC",
+              "courseNumber": "2211",
+              "title": "Introduction to Psychological Research",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11245,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4678,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "7e2f3840-c1b7-40df-c41f-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374450,
+                  "prefix": "PSYC",
+                  "courseNumber": "2211",
+                  "title": "Introduction to Psychological Research",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11245,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4678,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "7e2f3840-c1b7-40df-c41f-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 283034,
+                  "prefix": "PSY",
+                  "courseNumber": "200",
+                  "title": "Research Methods and Experimental Design in Psychology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 283034,
+                      "prefix": "PSY",
+                      "courseNumber": "200",
+                      "title": "Research Methods and Experimental Design in Psychology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 283034,
+                          "prefix": "PSY",
+                          "courseNumber": "200",
+                          "title": "Research Methods and Experimental Design in Psychology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "7e2f3840-c1b7-40df-c41f-08de050a3a69"
+          ]
+        },
+        {
+          "id": "6ebd7645-6887-ef11-8474-000d3a37e3b6:section-4",
+          "position": 4,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374451,
+              "prefix": "PSYC",
+              "courseNumber": "2220",
+              "title": "Brain and Behavior",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11245,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4678,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "21e4b162-193e-48d5-c41e-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374451,
+                  "prefix": "PSYC",
+                  "courseNumber": "2220",
+                  "title": "Brain and Behavior",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11245,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4678,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "21e4b162-193e-48d5-c41e-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 214105,
+                  "prefix": "PSY",
+                  "courseNumber": "110",
+                  "title": "Introduction to Physiological Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 214105,
+                      "prefix": "PSY",
+                      "courseNumber": "110",
+                      "title": "Introduction to Physiological Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 214105,
+                          "prefix": "PSY",
+                          "courseNumber": "110",
+                          "title": "Introduction to Physiological Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "21e4b162-193e-48d5-c41e-08de050a3a69"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7ce37145-6887-ef11-8474-000d3a37e3b6",
+      "title": "CONCENTRATION REQUIREMENTS",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Only lower division courses listed"
+        }
+      ],
+      "sections": [
+        {
+          "id": "7ce37145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 374448,
+              "prefix": "PSYC",
+              "courseNumber": "2201",
+              "title": "Developmental Psychology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11245,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4678,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "eddbe585-25ff-4067-c41a-08de050a3a69",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 374448,
+                  "prefix": "PSYC",
+                  "courseNumber": "2201",
+                  "title": "Developmental Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11245,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4678,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "eddbe585-25ff-4067-c41a-08de050a3a69",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 204837,
+                  "prefix": "PSY",
+                  "courseNumber": "145",
+                  "title": "Human Development",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 204837,
+                      "prefix": "PSY",
+                      "courseNumber": "145",
+                      "title": "Human Development",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 204837,
+                          "prefix": "PSY",
+                          "courseNumber": "145",
+                          "title": "Human Development",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "eddbe585-25ff-4067-c41a-08de050a3a69"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "13e87645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General CSUSB information",
+      "contentHtml": null
+    },
+    {
+      "id": "63fe6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "This agreement displays only the lower-division courses required in the major. Although completion of the coursework listed below is not necessarily mandatory prior to admission, students are strongly advised to complete as much lower-division course preparation as possible prior to transfer. This agreement does not contain upper-division (junior-senior) major requirements, general education, or all-university requirements necessary for completion of this degree. In some cases, there may be alternative course options at the upper-division level. Please review the CSUSB catalog for full details. TRANSFER ADMISSION INFORMATION You can find information about admission to CSUSB as a transfer student here: https://www.csusb.edu/admissions/apply-csusb/transfer-students TRANSFER SUCCESS PATHWAY Enrolling in the Transfer Success Pathway provides you with dual admission to a California Community College and a specific CSU campus. The TSP ensures a more streamlined transfer experience since you can choose the specific community college courses that will apply to your intended major at your destination CSU campus. See if you qualify for the Transfer Success Pathway here: https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx FINANCIAL AID Students who plan to transfer directly from a California Community College to a 4-year university can apply for the Cal Grant Transfer Entitlement Award. The application deadline is March 2nd each year, and students must submit a FAFSA or CA Dream Act Application. The minimum GPA is a 2.40. More information is available here: https://www.csac.ca.gov/post/cal-grant-transfer-entitlement-award ASSOCIATE DEGREES FOR TRANSFER (ADTs) A complete list of CSUSB majors/concentrations that are similar to the Associate Degrees for Transfer (ADTs) can be found here: https://www.csusb.edu/registrar/articulation/associate-degree-transfer Students who intend to transfer to CSUSB with the ADT guarantee MUST submit final transcripts with the earned ADT recorded by the final document deadline: https://www.csusb.edu/admissions/apply-csusb/transfer-students/transfer-deadlines Students who submit transcripts after the document deadline are NOT guaranteed to graduate within 60 semester units. EXPLORE MAJORS AND CAREERS The CSUSB Career Center has collected a variety of resources to help students choose or confirm their major and explore different career paths: https://www.csusb.edu/career-center/students/career-resources/major-and-career-exploration TEST CREDIT If you took an AP, IB, or CLEP test, you can look up your CSUSB credit here: https://www.csusb.edu/registrar/articulation/test-credit TRANSFER HELP Do you have questions about your transfer work? Need some guidance? You can talk with one of our Transfer and Graduation Counselors! Email: transferhelp@csusb.edu Phone: 909-537-5200, Option 4 Zoom: Set up an appointment by emailing transferhelp@csusb.edu You are also welcome to visit us in person. We are located in the Office of the Registrar , on the first floor of University Hall ( interactive map link ).",
+      "contentHtml": "<p>This agreement displays only the lower-division courses required in the major. Although completion of the coursework listed below is not necessarily mandatory prior to admission, students are strongly advised to complete as much lower-division course preparation as possible prior to transfer. This agreement does not contain upper-division (junior-senior) major requirements, general education, or all-university requirements necessary for completion of this degree. In some cases, there may be alternative course options at the upper-division level. Please review the <a href=\"https://bulletin.csusb.edu/\" rel=\"noopener noreferrer\" target=\"_blank\">CSUSB catalog</a> for full details.</p><p><br></p><h2>TRANSFER ADMISSION INFORMATION</h2><p>You can find information about admission to CSUSB as a transfer student here:<a href=\"https://www.csusb.edu/admissions/apply-csusb/transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\"> https://www.csusb.edu/admissions/apply-csusb/transfer-students</a></p><p><br></p><h2>TRANSFER SUCCESS PATHWAY</h2><p>Enrolling in the Transfer Success Pathway provides you with dual admission to a California Community College and a specific CSU campus. The TSP ensures a more streamlined transfer experience since you can choose the specific community college courses that will apply to your intended major at your destination CSU campus. See if you qualify for the Transfer Success Pathway here: <a href=\"https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx</a></p><p><br></p><h2>FINANCIAL AID</h2><p>Students who plan to transfer directly from a California Community College to a 4-year university can apply for the Cal Grant Transfer Entitlement Award. The application deadline is March 2nd each year, and students must submit a FAFSA or CA Dream Act Application. The minimum GPA is a 2.40. More information is available here: <a href=\"https://www.csac.ca.gov/post/cal-grant-transfer-entitlement-award\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csac.ca.gov/post/cal-grant-transfer-entitlement-award</a></p><p><br></p><h2>ASSOCIATE DEGREES FOR TRANSFER (ADTs)</h2><p>A complete list of CSUSB majors/concentrations that are similar to the Associate Degrees for Transfer (ADTs) can be found here: <a href=\"https://www.csusb.edu/registrar/articulation/associate-degree-transfer\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/registrar/articulation/associate-degree-transfer</a></p><p class=\"highlight\">Students who intend to transfer to CSUSB with the ADT guarantee <strong>MUST</strong> submit final transcripts with the earned ADT recorded by the final document deadline: <a href=\"https://www.csusb.edu/admissions/apply-csusb/transfer-students/transfer-deadlines\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/admissions/apply-csusb/transfer-students/transfer-deadlines</a></p><p>Students who submit transcripts after the document deadline are <strong>NOT</strong> guaranteed to graduate within 60 semester units.</p><p><br></p><h2>EXPLORE MAJORS AND CAREERS</h2><ul><li>The CSUSB Career Center has collected a variety of resources to help students choose or confirm their major and explore different career paths: <a href=\" https://www.csusb.edu/career-center/students/career-resources/major-and-career-exploration\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/career-center/students/career-resources/major-and-career-exploration</a></li></ul><p><br></p><h2>TEST CREDIT</h2><p>If you took an AP, IB, or CLEP test, you can look up your CSUSB credit here: <a href=\"https://www.csusb.edu/registrar/articulation/test-credit\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.csusb.edu/registrar/articulation/test-credit</a></p><p><br></p><h2>TRANSFER HELP</h2><p>Do you have questions about your transfer work? Need some guidance? You can talk with one of our Transfer and Graduation Counselors!</p><ul><li>Email: <a href=\"mailto:transferhelp@csusb.edu\" rel=\"noopener noreferrer\" target=\"_blank\">transferhelp@csusb.edu</a></li><li>Phone: 909-537-5200, Option 4</li><li>Zoom: Set up an appointment by emailing <a href=\"mailto:transferhelp@csusb.edu\" rel=\"noopener noreferrer\" target=\"_blank\">transferhelp@csusb.edu</a></li></ul><p>You are also welcome to visit us in person. We are located in the <a href=\"https://www.csusb.edu/registrar\" rel=\"noopener noreferrer\" target=\"_blank\">Office of the Registrar</a>, on the first floor of University Hall (<a href=\"https://map.csusb.edu/?id=1850#!ce/49354?ct/51385,48449,53905,53906,49354?m/500186?s/\" rel=\"noopener noreferrer\" target=\"_blank\">interactive map link</a>).</p>"
+    },
+    {
+      "id": "3cff6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "about this major",
+      "contentHtml": null
+    },
+    {
+      "id": "c9ba7645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "CONCENTRATIONS Students in this major are required to choose one of the following concentrations: General Psychology Biological Psychology Industrial and Organizational Psychology MAJOR INFORMATION The general objectives of the Bachelor of Arts in Psychology are to present the scientific and professional aspects of psychology to the undergraduate majoring in this field and to provide service courses as electives for students throughout the university. Psychology majors may plan to apply the knowledge and skills provided by a broad psychology background to many diverse employment opportunities which do not require graduate training. The department also offers coursework leading to the Master of Arts or the Master of Science in Psychology. Students intending to enroll in these programs or another graduate school will find that the undergraduate program provides an excellent base for entry into graduate training. There are two formal concentrations within the Psychology B.A. These are Biological Psychology and Industrial-Organizational Psychology. In declaring a major, students have three options. They can select General Psychology (no formal concentration) , Biological Psychology , or Industrial-Organizational Psychology . Through regular advising and the guidance of our faculty, students who opt for the General Psychology degree will be able to create an individualized plan including an informal concentration in any of a number of subareas within psychology such as clinical/counseling psychology, social psychology, developmental psychology, cognitive psychology, and experimental psychology. Biological Psychology represents a course of study focusing on the neurological and physiological bases of human behavior. You will study such things as the brain processes implicated in various psychological disorders, the neurological basis of addiction, and the specific ways in which psychotropic drugs influence the brain and behavior. Industrial/Organizational Psychology concerns the psychology of the workplace. I/O psychologists are concerned with personnel selection, gender equity in work settings, understanding and improving relations between employer and employee, program evaluation, employee mental health, and many other issues regarding the interface between psychology and business. ALL MAJOR REQUIREMENTS The complete list of major requirements is available here: http://bulletin.csusb.edu/colleges-schools-departments/social-behavioral-sciences/psychology/psychology-ba/ CSUSB ADVISING PODCASTS Find out more about this major here: What is the Psychology Major? ASSOCIATE DEGREE FOR TRANSFER (ADTs) This major is similar to the Associate Degree for Transfer (ADT) in Psychology. Completion of the ADT guarantees that students will be able to graduate from a similar-designated major at CSUSB in no more than 60 semester units. The ADT does not guarantee that all lower-division requirements are met. Community college transfer students with a compatible ADT MUST meet with an academic advisor early in their first term and each subsequent term to stay on track for graduation.",
+      "contentHtml": "<h2>CONCENTRATIONS</h2><p>Students in this major are required to choose one of the following concentrations:</p><ul><li>General Psychology</li><li>Biological Psychology</li><li>Industrial and Organizational Psychology</li></ul><p><br></p><h2>MAJOR INFORMATION</h2><p>The general objectives of the Bachelor of Arts in Psychology are to present the scientific and professional aspects of psychology to the undergraduate majoring in this field and to provide service courses as electives for students throughout the university. Psychology majors may plan to apply the knowledge and skills provided by a broad psychology background to many diverse employment opportunities which do not require graduate training. The department also offers coursework leading to the Master of Arts or the Master of Science in Psychology. Students intending to enroll in these programs or another graduate school will find that the undergraduate program provides an excellent base for entry into graduate training.</p><p><br></p><p>There are two formal concentrations within the Psychology B.A.&nbsp;These are Biological Psychology and Industrial-Organizational Psychology. In declaring a major, students have three options. They can select&nbsp;<strong>General Psychology (no formal concentration)</strong>,&nbsp;<strong>Biological Psychology</strong>, or&nbsp;<strong>Industrial-Organizational Psychology</strong>.</p><p><br></p><p>Through regular advising and the guidance of our faculty, students who opt for the&nbsp;<strong>General Psychology&nbsp;</strong>degree will be able to create an individualized plan including an informal concentration in any of a number of subareas within psychology such as clinical/counseling psychology, social psychology, developmental psychology, cognitive psychology, and experimental psychology.</p><p><br></p><p><strong>Biological Psychology</strong>&nbsp;represents a course of study focusing on the neurological and physiological bases of human behavior. You will study such things as the brain processes implicated in various psychological disorders, the neurological basis of addiction, and the specific ways in which psychotropic drugs influence the brain and behavior.</p><p><br></p><p><strong>Industrial/Organizational Psychology</strong>&nbsp;concerns the psychology of the workplace. I/O psychologists are concerned with personnel selection, gender equity in work settings, understanding and improving relations between employer and employee, program evaluation, employee mental health, and many other issues regarding the interface between psychology and business.</p><p><br></p><h2>ALL MAJOR REQUIREMENTS</h2><p>The complete list of major requirements is available here: <a href=\"http://bulletin.csusb.edu/colleges-schools-departments/social-behavioral-sciences/psychology/psychology-ba/\" rel=\"noopener noreferrer\" target=\"_blank\">http://bulletin.csusb.edu/colleges-schools-departments/social-behavioral-sciences/psychology/psychology-ba/</a></p><p><br></p><h2>CSUSB ADVISING PODCASTS</h2><p>Find out more about this major here:</p><ul><li><a href=\"https://csusbadvising.buzzsprout.com/1215218/12291318-ep-41-what-is-the-psychology-major\" rel=\"noopener noreferrer\" target=\"_blank\">What is the Psychology Major?</a></li></ul><p><br></p><h2>ASSOCIATE DEGREE FOR TRANSFER (ADTs)</h2><p>This major is similar to the Associate Degree for Transfer (ADT) in Psychology.</p><p><br></p><p>Completion of the ADT guarantees that students will be able to graduate from a similar-designated major at CSUSB in no more than 60 semester units. The ADT does not guarantee that all lower-division requirements are met.</p><p><br></p><p class=\"highlight\"><strong>Community college transfer students with a compatible ADT <u>MUST</u> meet with an academic advisor early in their first term and each subsequent term to stay on track for graduation.</strong></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:01.668Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=85&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F85%2FMajor%2Fe21c06fe-5e92-4be0-4f2a-08de050a3a5e&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F85%2FMajor%2Fe21c06fe-5e92-4be0-4f2a-08de050a3a5e",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F85%2FMajor%2Fe21c06fe-5e92-4be0-4f2a-08de050a3a5e",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-85/major/3293cd243b92cb92.json",
+    "templateAssetCount": 8,
+    "articulationCount": 9
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 129,
+    "name": "California State University, Fullerton",
+    "code": "CSUFULL",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/129/Major/196c466d-41e4-43cc-cbaa-08de6515a695",
+    "type": "Major",
+    "name": "Sociology, B.A.",
+    "publishDate": "2026-08-01T16:45:45.5351047",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "847f6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "REQUIRED COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Only lower division courses listed"
+        }
+      ],
+      "sections": [
+        {
+          "id": "847f6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 167960,
+              "prefix": "SOCI",
+              "courseNumber": "101",
+              "title": "Introduction to Sociology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1995",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12119,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9113,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "be756e1c-8aa4-4a46-43de-08de6515a6a7",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 167960,
+                  "prefix": "SOCI",
+                  "courseNumber": "101",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12119,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9113,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "be756e1c-8aa4-4a46-43de-08de6515a6a7",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135841,
+                  "prefix": "SOC",
+                  "courseNumber": "101",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 244266,
+                  "prefix": "SOC",
+                  "courseNumber": "101H",
+                  "title": "Introduction to Sociology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "F2027",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135841,
+                      "prefix": "SOC",
+                      "courseNumber": "101",
+                      "title": "Introduction to Sociology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135841,
+                          "prefix": "SOC",
+                          "courseNumber": "101",
+                          "title": "Introduction to Sociology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 244266,
+                      "prefix": "SOC",
+                      "courseNumber": "101H",
+                      "title": "Introduction to Sociology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "F2027",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 244266,
+                          "prefix": "SOC",
+                          "courseNumber": "101H",
+                          "title": "Introduction to Sociology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "F2027",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "98013ee9-fa88-42a8-f0b2-08de64d899b4",
+                  "sendingArticulationId": "64644b7a-61e9-46c2-0ab5-08de64d899ab",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "be756e1c-8aa4-4a46-43de-08de6515a6a7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "827f6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "REQUIRED FOR GRADUATION",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "827f6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 338397,
+              "prefix": "POSC",
+              "courseNumber": "100",
+              "title": "American Government",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1995",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11050,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 2042,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "f442542a-4940-45b3-43dd-08de6515a6a7",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 338397,
+                  "prefix": "POSC",
+                  "courseNumber": "100",
+                  "title": "American Government",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11050,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 2042,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "f442542a-4940-45b3-43dd-08de6515a6a7",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330292,
+                  "prefix": "POLS",
+                  "courseNumber": "C1000",
+                  "title": "American Government and Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330292,
+                      "prefix": "POLS",
+                      "courseNumber": "C1000",
+                      "title": "American Government and Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330292,
+                          "prefix": "POLS",
+                          "courseNumber": "C1000",
+                          "title": "American Government and Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "f442542a-4940-45b3-43dd-08de6515a6a7"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "7a7f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "CSUF General Transfer Information",
+      "contentHtml": null
+    },
+    {
+      "id": "5f836f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "See the University Catalog for the full listing of degree requirements for this major. See the Admissions website for transfer admission requirements &amp; Admissions deadlines See approved General Education courses at CSU Fullerton. See Associate Degree for Transfer. See the Credit by Exam information (AP, IB, CLEP) .",
+      "contentHtml": "<blockquote><span style=\"font-size: 12px;\">See the </span><a href=\"https://catalog.fullerton.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">University Catalog</a><span style=\"font-size: 12px;\"> for the full listing of degree requirements for this major. </span></blockquote><blockquote><span style=\"font-size: 12px;\">See the Admissions website for </span><a href=\"https://admissions.fullerton.edu/prospectivestudent/transferlocaladmissionarea.php\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">transfer admission requirements</a><span style=\"font-size: 12px;\"> &amp; </span><a href=\"https://admissions.fullerton.edu/deadlines/index.php\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">Admissions deadlines</a></blockquote><blockquote><span style=\"font-size: 12px;\">See </span><a href=\"https://www.fullerton.edu/undergraduate/general-education/approved-courses.html#box5\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">approved General Education </a><span style=\"font-size: 12px;\">courses at CSU Fullerton. </span></blockquote><blockquote><span style=\"font-size: 12px;\">See </span><a href=\"https://www.calstate.edu/apply/transfer/Pages/associate-degree-for-transfer-major-and-campus-search.aspx\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">Associate Degree for Transfer.</a><span style=\"font-size: 12px;\"> </span></blockquote><blockquote><span style=\"font-size: 12px;\">See the </span><a href=\"https://registrar.fullerton.edu/articulation-tc/artic-agreements/external-exams/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">Credit by Exam information (AP, IB, CLEP)</a><a href=\"https://www.calstate.edu/attend/student-services/casper/Pages/external-exam-credit.aspx\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 12px;\">.</a></blockquote>"
+    },
+    {
+      "id": "7e7f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "About This Major",
+      "contentHtml": null
+    },
+    {
+      "id": "807f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "(120 UNITS) The Bachelor of Arts in Sociology ( Link ) is part of a strong program of social science studies that fosters critical thinking and analytical abilities, as well as develops the writing and communication skills that prepare students for a diverse and increasingly global job market. Through honing an understanding of and facility with both quantitative and qualitative methods of inquiry, the sociology major acquires a toolkit for problem-solving. Majoring in Sociology prepares students for a wide range of occupations, including social work, market research and statistical analysis, education, criminal justice, business and management, graduate school, and community and social services, among others. In addition to the requirements for the major, students must meet all other university requirements for a bachelor’s degree. Please consult the Graduation Requirements for the Bachelor’s Degree section in this catalog for complete information. SOCI 101 is a required prerequisite for most sociology courses. It is recommended that SOCI 302 be one of the first upper-division Sociology courses, and SOCI 410 be taken after 15 units of sociology. All courses counting towards the major must be taken for a letter grade. Students must pass core courses and the writing requirement with a “C” (2.0) or better. Concentrations Health and Social Welfare : ( Link ) provides students a deeper understanding of the social construction of health and social welfare, the social forces that influence health and social welfare, and the ways in which societal institutions meet needs related to health and social welfare. Social Inequalities : ( Link ) provides students a deeper understanding of how human differences may lead to devaluation and unequal outcomes; in addition to examining individual, community-based, institutional and ideological causes, consequences and intersections of various social inequalities and social stratification systems. Sociology of Deviance and Crime : ( Link ) provides students a deeper understanding of the causes of deviance and crime from a sociological perspective, focusing particularly on how norms and values construct human attitudes, behaviors and conditions as deviant and/or criminal. It also examines social forces regulating deviance and crime.",
+      "contentHtml": "<p><strong>(120&nbsp;UNITS)</strong></p><p>The&nbsp;Bachelor&nbsp;of&nbsp;Arts&nbsp;in&nbsp;Sociology&nbsp;(<a href=\"https://catalog.fullerton.edu/preview_program.php?catoid=101&amp;poid=47256&amp;returnto=15150\" rel=\"noopener noreferrer\" target=\"_blank\">Link</a>)&nbsp;is&nbsp;part&nbsp;of&nbsp;a&nbsp;strong&nbsp;program&nbsp;of&nbsp;social&nbsp;science&nbsp;studies&nbsp;that&nbsp;fosters&nbsp;critical&nbsp;thinking&nbsp;and&nbsp;analytical&nbsp;abilities,&nbsp;as&nbsp;well&nbsp;as&nbsp;develops&nbsp;the&nbsp;writing&nbsp;and&nbsp;communication&nbsp;skills&nbsp;that&nbsp;prepare&nbsp;students&nbsp;for&nbsp;a&nbsp;diverse&nbsp;and&nbsp;increasingly&nbsp;global&nbsp;job&nbsp;market.&nbsp;Through&nbsp;honing&nbsp;an&nbsp;understanding&nbsp;of&nbsp;and&nbsp;facility&nbsp;with&nbsp;both&nbsp;quantitative&nbsp;and&nbsp;qualitative&nbsp;methods&nbsp;of&nbsp;inquiry,&nbsp;the&nbsp;sociology&nbsp;major&nbsp;acquires&nbsp;a&nbsp;toolkit&nbsp;for&nbsp;problem-solving.&nbsp;Majoring&nbsp;in&nbsp;Sociology&nbsp;prepares&nbsp;students&nbsp;for&nbsp;a&nbsp;wide&nbsp;range&nbsp;of&nbsp;occupations,&nbsp;including&nbsp;social&nbsp;work,&nbsp;market&nbsp;research&nbsp;and&nbsp;statistical&nbsp;analysis,&nbsp;education,&nbsp;criminal&nbsp;justice,&nbsp;business&nbsp;and&nbsp;management,&nbsp;graduate&nbsp;school,&nbsp;and&nbsp;community&nbsp;and&nbsp;social&nbsp;services,&nbsp;among&nbsp;others.</p><p></p><p>In&nbsp;addition&nbsp;to&nbsp;the&nbsp;requirements&nbsp;for&nbsp;the&nbsp;major,&nbsp;students&nbsp;must&nbsp;meet&nbsp;all&nbsp;other&nbsp;university&nbsp;requirements&nbsp;for&nbsp;a&nbsp;bachelor’s&nbsp;degree.&nbsp;Please&nbsp;consult&nbsp;the&nbsp;<a href=\"https://catalog.fullerton.edu/content.php?catoid=101&amp;navoid=15099\" rel=\"noopener noreferrer\" target=\"_blank\">Graduation&nbsp;Requirements&nbsp;for&nbsp;the&nbsp;Bachelor’s&nbsp;Degree</a>&nbsp;section&nbsp;in&nbsp;this&nbsp;catalog&nbsp;for&nbsp;complete&nbsp;information.&nbsp;</p><p></p><p>SOCI&nbsp;101&nbsp;is&nbsp;a&nbsp;required&nbsp;prerequisite&nbsp;for&nbsp;most&nbsp;sociology&nbsp;courses.&nbsp;It&nbsp;is&nbsp;recommended&nbsp;that&nbsp;SOCI&nbsp;302&nbsp;be&nbsp;one&nbsp;of&nbsp;the&nbsp;first&nbsp;upper-division&nbsp;Sociology&nbsp;courses,&nbsp;and&nbsp;SOCI&nbsp;410&nbsp;be&nbsp;taken&nbsp;after&nbsp;15&nbsp;units&nbsp;of&nbsp;sociology.</p><p></p><p>All&nbsp;courses&nbsp;counting&nbsp;towards&nbsp;the&nbsp;major&nbsp;must&nbsp;be&nbsp;taken&nbsp;for&nbsp;a&nbsp;letter&nbsp;grade.&nbsp;Students&nbsp;must&nbsp;pass&nbsp;core&nbsp;courses&nbsp;and&nbsp;the&nbsp;writing&nbsp;requirement&nbsp;with&nbsp;a&nbsp;“C”&nbsp;(2.0)&nbsp;or&nbsp;better.</p><p></p><p><strong>Concentrations</strong></p><ul><li><strong>Health&nbsp;and&nbsp;Social&nbsp;Welfare</strong>:&nbsp;(<a href=\"https://catalog.fullerton.edu/preview_program.php?catoid=101&amp;poid=47526&amp;returnto=15150\" rel=\"noopener noreferrer\" target=\"_blank\">Link</a>)&nbsp;provides&nbsp;students&nbsp;a&nbsp;deeper&nbsp;understanding&nbsp;of&nbsp;the&nbsp;social&nbsp;construction&nbsp;of&nbsp;health&nbsp;and&nbsp;social&nbsp;welfare,&nbsp;the&nbsp;social&nbsp;forces&nbsp;that&nbsp;influence&nbsp;health&nbsp;and&nbsp;social&nbsp;welfare,&nbsp;and&nbsp;the&nbsp;ways&nbsp;in&nbsp;which&nbsp;societal&nbsp;institutions&nbsp;meet&nbsp;needs&nbsp;related&nbsp;to&nbsp;health&nbsp;and&nbsp;social&nbsp;welfare.</li><li><strong>Social&nbsp;Inequalities</strong>:&nbsp;(<a href=\"https://catalog.fullerton.edu/preview_program.php?catoid=101&amp;poid=47527&amp;returnto=15150\" rel=\"noopener noreferrer\" target=\"_blank\">Link</a>)&nbsp;provides&nbsp;students&nbsp;a&nbsp;deeper&nbsp;understanding&nbsp;of&nbsp;how&nbsp;human&nbsp;differences&nbsp;may&nbsp;lead&nbsp;to&nbsp;devaluation&nbsp;and&nbsp;unequal&nbsp;outcomes;&nbsp;in&nbsp;addition&nbsp;to&nbsp;examining&nbsp;individual,&nbsp;community-based,&nbsp;institutional&nbsp;and&nbsp;ideological&nbsp;causes,&nbsp;consequences&nbsp;and&nbsp;intersections&nbsp;of&nbsp;various&nbsp;social&nbsp;inequalities&nbsp;and&nbsp;social&nbsp;stratification&nbsp;systems.</li><li><strong>Sociology&nbsp;of&nbsp;Deviance&nbsp;and&nbsp;Crime</strong>:&nbsp;(<a href=\"https://catalog.fullerton.edu/preview_program.php?catoid=101&amp;poid=47528&amp;returnto=15150\" rel=\"noopener noreferrer\" target=\"_blank\">Link</a>)&nbsp;provides&nbsp;students&nbsp;a&nbsp;deeper&nbsp;understanding&nbsp;of&nbsp;the&nbsp;causes&nbsp;of&nbsp;deviance&nbsp;and&nbsp;crime&nbsp;from&nbsp;a&nbsp;sociological&nbsp;perspective,&nbsp;focusing&nbsp;particularly&nbsp;on&nbsp;how&nbsp;norms&nbsp;and&nbsp;values&nbsp;construct&nbsp;human&nbsp;attitudes,&nbsp;behaviors&nbsp;and&nbsp;conditions&nbsp;as&nbsp;deviant&nbsp;and/or&nbsp;criminal.&nbsp;It&nbsp;also&nbsp;examines&nbsp;social&nbsp;forces&nbsp;regulating&nbsp;deviance&nbsp;and&nbsp;crime.</li></ul>"
+    },
+    {
+      "id": "7c7f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 4,
+      "content": "Transfer Success Pathway major eligible",
+      "contentHtml": "<p><a href=\"https://www.calstate.edu/apply/transfer/Pages/transfer-success-pathway.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Success Pathway</a> major eligible </p>"
+    },
+    {
+      "id": "b8a730af-af06-4545-b0d0-019d68d6b5af",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "The information provided here is subject to change without notice. Please be advised that articulation agreements published here may be updated or added at any time. Be sure to check with a counselor or adviser for the most current requirements. For additional transfer information: For C-ID information: https://c-idsystem.org/courses/ For Common Course Numbering: https://registrar.fullerton.edu/articulation-tc/artic-agreements/common-course-numbering/",
+      "contentHtml": "<p></p><p></p><p><strong><em>The&nbsp;information&nbsp;provided&nbsp;here&nbsp;is&nbsp;subject&nbsp;to&nbsp;change&nbsp;without&nbsp;notice.&nbsp;Please&nbsp;be&nbsp;advised&nbsp;that&nbsp;articulation&nbsp;agreements&nbsp;published&nbsp;here&nbsp;may&nbsp;be&nbsp;updated&nbsp;or&nbsp;added&nbsp;at&nbsp;any&nbsp;time.&nbsp;Be&nbsp;sure&nbsp;to&nbsp;check&nbsp;with&nbsp;a&nbsp;counselor&nbsp;or&nbsp;adviser&nbsp;for&nbsp;the&nbsp;most&nbsp;current&nbsp;requirements.&nbsp;</em></strong></p><p></p><p></p><p><strong>For&nbsp;additional&nbsp;transfer&nbsp;information:&nbsp;</strong></p><ul><li>For&nbsp;C-ID&nbsp;information:&nbsp;<a href=\"https://c-idsystem.org/courses/\" rel=\"noopener noreferrer\" target=\"_blank\">https://c-idsystem.org/courses/</a></li><li>For&nbsp;Common&nbsp;Course&nbsp;Numbering:&nbsp;<a href=\"https://registrar.fullerton.edu/articulation-tc/artic-agreements/common-course-numbering/\" rel=\"noopener noreferrer\" target=\"_blank\">https://registrar.fullerton.edu/articulation-tc/artic-agreements/common-course-numbering/</a></li></ul>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:42.990Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=129&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F129%2FMajor%2F196c466d-41e4-43cc-cbaa-08de6515a695&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F129%2FMajor%2F196c466d-41e4-43cc-cbaa-08de6515a695",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F129%2FMajor%2F196c466d-41e4-43cc-cbaa-08de6515a695",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-129/major/3553d9a77312c943.json",
+    "templateAssetCount": 11,
+    "articulationCount": 2
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 50,
+    "name": "California State University, Dominguez Hills",
+    "code": "CSUDH",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/50/Major/e3ff0f0a-67a1-4032-4020-08dec89fcc4a",
+    "type": "Major",
+    "name": "Language and Linguistics B.A.",
+    "publishDate": "2026-08-18T13:13:21.6641615",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "2f7aec02-b274-47fc-9722-0193510a6e79",
+      "title": "LOWER DIVISION REQUIRED COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "2f7aec02-b274-47fc-9722-0193510a6e79:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 373098,
+              "prefix": "ENG",
+              "courseNumber": "150",
+              "title": "Languages of the World",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2019",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 4936,
+              "prefixDescription": "English",
+              "prefixParentId": 2673,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 376598,
+              "prefix": "ENG",
+              "courseNumber": "210",
+              "title": "Study of Lanaguage",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2020",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 4936,
+              "prefixDescription": "English",
+              "prefixParentId": 2673,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "d06e4216-9200-4078-9dcc-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 373098,
+                  "prefix": "ENG",
+                  "courseNumber": "150",
+                  "title": "Languages of the World",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2019",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4936,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2673,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "865195c1-40eb-46bf-9dcd-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 376598,
+                  "prefix": "ENG",
+                  "courseNumber": "210",
+                  "title": "Study of Lanaguage",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2020",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4936,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2673,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d06e4216-9200-4078-9dcc-08dec89fcd17",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 210036,
+                  "prefix": "ANTH",
+                  "courseNumber": "104",
+                  "title": "Language and Culture",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2016",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 736,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10776,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 210036,
+                      "prefix": "ANTH",
+                      "courseNumber": "104",
+                      "title": "Language and Culture",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "S2016",
+                      "endTerm": "",
+                      "department": "Anthropology",
+                      "departmentParentId": 736,
+                      "prefixDescription": "Anthropology",
+                      "prefixParentId": 10776,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 210036,
+                          "prefix": "ANTH",
+                          "courseNumber": "104",
+                          "title": "Language and Culture",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "S2016",
+                          "endTerm": "",
+                          "department": "Anthropology",
+                          "departmentParentId": 736,
+                          "prefixDescription": "Anthropology",
+                          "prefixParentId": 10776,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "865195c1-40eb-46bf-9dcd-08dec89fcd17",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d06e4216-9200-4078-9dcc-08dec89fcd17",
+            "865195c1-40eb-46bf-9dcd-08dec89fcd17"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "35f57845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "Thank you for your interest in CSU Dominguez Hills! This articulation agreement displays lower-division course requirements specific to this major. Students are advised to meet with an academic counselor when planning to transfer to CSU Dominguez Hills and refer to the University Catalog to learn more about this major and its features. Detailed admissions requirements for transfer students are available on the CSUDH campus website . Completion of Statutory Requirements (United States History, Constitution and American Ideals) is a baccalaureate degree requirement for the California State University system and may be met prior to transfer with eligible California Community College (CCC) courses designated as US-1, US-2, and US-3. Completion of Statutory Requirements prior to transfer is most advantageous and strongly encouraged as a number of CCC courses that meet this requirement might also double-count for General Education.",
+      "contentHtml": "<p><strong style=\"color: rgb(78, 14, 80); font-size: 16px;\">Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;interest&nbsp;in&nbsp;CSU&nbsp;Dominguez&nbsp;Hills!&nbsp;</strong><span style=\"font-size: 16px;\">This&nbsp;articulation&nbsp;agreement&nbsp;displays&nbsp;lower-division&nbsp;course&nbsp;requirements&nbsp;specific&nbsp;to&nbsp;this&nbsp;major.&nbsp;Students&nbsp;are&nbsp;advised&nbsp;to&nbsp;meet&nbsp;with&nbsp;an&nbsp;academic&nbsp;counselor&nbsp;when&nbsp;planning&nbsp;to&nbsp;transfer&nbsp;to&nbsp;CSU&nbsp;Dominguez&nbsp;Hills&nbsp;and&nbsp;refer&nbsp;to&nbsp;the&nbsp;</span><a href=\"https://catalog.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University&nbsp;Catalog</a><span style=\"font-size: 16px;\">&nbsp;to&nbsp;learn&nbsp;more&nbsp;about&nbsp;this&nbsp;major&nbsp;and&nbsp;its&nbsp;features.&nbsp;Detailed&nbsp;</span><a href=\"https://www.csudh.edu/future-students/transfer/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">admissions&nbsp;requirements&nbsp;for&nbsp;transfer&nbsp;students</a><span style=\"font-size: 16px;\">&nbsp;are&nbsp;available&nbsp;on&nbsp;the&nbsp;CSUDH&nbsp;</span><a href=\"https://www.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">campus&nbsp;website</a><span style=\"font-size: 16px;\">.&nbsp;Completion&nbsp;of&nbsp;</span><a href=\"https://catalog.csudh.edu/general-information/baccalaureate-degrees-undergraduate-studies/university-graduation-requirements/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Statutory&nbsp;Requirements&nbsp;</a><span style=\"font-size: 16px;\">(United&nbsp;States&nbsp;History,&nbsp;Constitution&nbsp;and&nbsp;American&nbsp;Ideals)&nbsp;is&nbsp;a&nbsp;baccalaureate&nbsp;degree&nbsp;requirement&nbsp;for&nbsp;the&nbsp;California&nbsp;State&nbsp;University&nbsp;system&nbsp;and&nbsp;may&nbsp;be&nbsp;met&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;with&nbsp;eligible&nbsp;California&nbsp;Community&nbsp;College&nbsp;(CCC)&nbsp;courses&nbsp;designated&nbsp;as&nbsp;US-1,&nbsp;US-2,&nbsp;and&nbsp;US-3.&nbsp;</span><strong style=\"font-size: 16px;\">Completion&nbsp;of&nbsp;Statutory&nbsp;Requirements&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;is&nbsp;most&nbsp;advantageous&nbsp;and&nbsp;strongly&nbsp;encouraged&nbsp;</strong><span style=\"font-size: 16px;\">as&nbsp;a&nbsp;number&nbsp;of&nbsp;CCC&nbsp;courses&nbsp;that&nbsp;meet&nbsp;this&nbsp;requirement&nbsp;might&nbsp;also&nbsp;double-count&nbsp;for&nbsp;General&nbsp;Education.&nbsp;</span></p>"
+    },
+    {
+      "id": "a5ca3293-818b-4792-b4f0-0193510a6e77",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "Program Notes",
+      "contentHtml": null
+    },
+    {
+      "id": "be2f1397-48cd-4743-ac09-0193510a6e78",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "To learn more about the Language and Linguistics degree program, please go to https://www.csudh.edu/english/undergraduate-programs/ .",
+      "contentHtml": "<p><span style=\"font-size: 16px;\">To learn more about the </span><strong style=\"font-size: 16px; color: rgb(78, 14, 80);\">Language and Linguistics</strong><strong style=\"font-size: 16px;\"> </strong><span style=\"font-size: 16px;\">degree program, please go to</span><a href=\"https://www.csudh.edu/english/undergraduate-programs/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\"> https://www.csudh.edu/english/undergraduate-programs/</a><span style=\"font-size: 16px;\">.</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:39.768Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=50&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F50%2FMajor%2Fe3ff0f0a-67a1-4032-4020-08dec89fcc4a&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F50%2FMajor%2Fe3ff0f0a-67a1-4032-4020-08dec89fcc4a",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F50%2FMajor%2Fe3ff0f0a-67a1-4032-4020-08dec89fcc4a",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-50/major/48818cd418d58962.json",
+    "templateAssetCount": 5,
+    "articulationCount": 1
+  }
+}

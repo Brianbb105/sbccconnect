@@ -1,0 +1,1505 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 141,
+    "name": "California State University, Chico",
+    "code": "CSUC",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/141/Major/7f30b79e-2e26-4796-4372-08dd86a6f1a7",
+    "type": "Major",
+    "name": "Criminal Justice B.A.",
+    "publishDate": "2026-05-11T15:51:15.7537051",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "6edc6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "RECOMMENDED GENERAL EDUCATION COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "**REFER TO TOP OF AGREEMENT**"
+        }
+      ],
+      "sections": [
+        {
+          "id": "6edc6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 250160,
+              "prefix": "MATH",
+              "courseNumber": "105",
+              "title": "Introduction to Statistics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 15672,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 10054,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 383034,
+              "prefix": "MATH",
+              "courseNumber": "185",
+              "title": "Data Analytics for Social Good",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Mathematics and Statistics",
+              "departmentParentId": 15672,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 10054,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e7e4cbfe-d414-4185-e6bf-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 250160,
+                  "prefix": "MATH",
+                  "courseNumber": "105",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 15672,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10054,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "cf9874df-80cd-48f4-e6c0-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383034,
+                  "prefix": "MATH",
+                  "courseNumber": "185",
+                  "title": "Data Analytics for Social Good",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics and Statistics",
+                  "departmentParentId": 15672,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10054,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e7e4cbfe-d414-4185-e6bf-08dd86a6f1b8",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383741,
+                  "prefix": "MATH",
+                  "courseNumber": "117A",
+                  "title": "Elementary Statistics A",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383742,
+                  "prefix": "MATH",
+                  "courseNumber": "117B",
+                  "title": "Elementary Statistics B",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 360940,
+                  "prefix": "SOC",
+                  "courseNumber": "125",
+                  "title": "Introduction to Statistics in Sociology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 383741,
+                      "prefix": "MATH",
+                      "courseNumber": "117A",
+                      "title": "Elementary Statistics A",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 383742,
+                      "prefix": "MATH",
+                      "courseNumber": "117B",
+                      "title": "Elementary Statistics B",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2022",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 383741,
+                          "prefix": "MATH",
+                          "courseNumber": "117A",
+                          "title": "Elementary Statistics A",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 383742,
+                          "prefix": "MATH",
+                          "courseNumber": "117B",
+                          "title": "Elementary Statistics B",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2022",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 3,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 360940,
+                      "prefix": "SOC",
+                      "courseNumber": "125",
+                      "title": "Introduction to Statistics in Sociology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2017",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 360940,
+                          "prefix": "SOC",
+                          "courseNumber": "125",
+                          "title": "Introduction to Statistics in Sociology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2017",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "2e82e1b8-f188-47f1-295a-08dd86a725d2",
+                  "sendingArticulationId": "3b14de21-4334-45ed-de3e-08dd86a71eba",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                },
+                {
+                  "id": "167e0b14-2556-4f45-295b-08dd86a725d2",
+                  "sendingArticulationId": "3b14de21-4334-45ed-de3e-08dd86a71eba",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 1,
+                  "sendingCourseGroupEndPosition": 2
+                },
+                {
+                  "id": "1994e4f1-6905-445d-295c-08dd86a725d2",
+                  "sendingArticulationId": "3b14de21-4334-45ed-de3e-08dd86a71eba",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 2,
+                  "sendingCourseGroupEndPosition": 3
+                }
+              ]
+            },
+            {
+              "receivingCellId": "cf9874df-80cd-48f4-e6c0-08dd86a6f1b8",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [
+            {
+              "id": null,
+              "position": 0,
+              "content": "Recommended; Not required for the major"
+            }
+          ],
+          "rawTemplateCellIds": [
+            "e7e4cbfe-d414-4185-e6bf-08dd86a6f1b8",
+            "cf9874df-80cd-48f4-e6c0-08dd86a6f1b8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "78dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION FOUNDATION",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "78dc6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 241078,
+              "prefix": "CRIM",
+              "courseNumber": "250",
+              "title": "Introduction to Criminal Justice",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Political Science and Criminal Justice",
+              "departmentParentId": 11094,
+              "prefixDescription": "Criminal Justice",
+              "prefixParentId": 17248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "252c3cf6-26dd-4070-e6c6-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 241078,
+                  "prefix": "CRIM",
+                  "courseNumber": "250",
+                  "title": "Introduction to Criminal Justice",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Political Science and Criminal Justice",
+                  "departmentParentId": 11094,
+                  "prefixDescription": "Criminal Justice",
+                  "prefixParentId": 17248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "252c3cf6-26dd-4070-e6c6-08dd86a6f1b8",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 210162,
+                  "prefix": "AJ",
+                  "courseNumber": "101",
+                  "title": "Introduction to the Administration of Justice",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Administration of Justice",
+                  "departmentParentId": 203,
+                  "prefixDescription": "Administration of Justice",
+                  "prefixParentId": 2505,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 210162,
+                      "prefix": "AJ",
+                      "courseNumber": "101",
+                      "title": "Introduction to the Administration of Justice",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Administration of Justice",
+                      "departmentParentId": 203,
+                      "prefixDescription": "Administration of Justice",
+                      "prefixParentId": 2505,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 210162,
+                          "prefix": "AJ",
+                          "courseNumber": "101",
+                          "title": "Introduction to the Administration of Justice",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Administration of Justice",
+                          "departmentParentId": 203,
+                          "prefixDescription": "Administration of Justice",
+                          "prefixParentId": 2505,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "252c3cf6-26dd-4070-e6c6-08dd86a6f1b8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "CRIMINAL JUSTICE DISCIPLINARY ELECTIVES",
+      "position": 5,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "70dc6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 241080,
+              "prefix": "CRIM",
+              "courseNumber": "257",
+              "title": "Juvenile Justice Process",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Political Science and Criminal Justice",
+              "departmentParentId": 11094,
+              "prefixDescription": "Criminal Justice",
+              "prefixParentId": 17248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 209217,
+              "prefix": "CRIM",
+              "courseNumber": "259",
+              "title": "Chico Police Service Learning Practicum",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Political Science and Criminal Justice",
+              "departmentParentId": 11094,
+              "prefixDescription": "Criminal Justice",
+              "prefixParentId": 17248,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 235075,
+              "prefix": "LEGL",
+              "courseNumber": "258",
+              "title": "Criminal Law",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Political Science and Criminal Justice",
+              "departmentParentId": 11094,
+              "prefixDescription": "Legal Studies",
+              "prefixParentId": 17249,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 383035,
+              "prefix": "PADM",
+              "courseNumber": "260",
+              "title": "Introduction to Public Administration",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Political Science and Criminal Justice",
+              "departmentParentId": 11094,
+              "prefixDescription": "Public Administration",
+              "prefixParentId": 17251,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 158108,
+              "prefix": "SWRK",
+              "courseNumber": "170",
+              "title": "Social Welfare Institutions: A Response to Power and Scarcity",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2005",
+              "endTerm": "",
+              "department": "Social Work",
+              "departmentParentId": 12029,
+              "prefixDescription": "Social Work",
+              "prefixParentId": 6015,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "a811c466-3742-41e4-e6c2-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 241080,
+                  "prefix": "CRIM",
+                  "courseNumber": "257",
+                  "title": "Juvenile Justice Process",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Political Science and Criminal Justice",
+                  "departmentParentId": 11094,
+                  "prefixDescription": "Criminal Justice",
+                  "prefixParentId": 17248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "41f499c6-9868-4404-e6c1-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 209217,
+                  "prefix": "CRIM",
+                  "courseNumber": "259",
+                  "title": "Chico Police Service Learning Practicum",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Political Science and Criminal Justice",
+                  "departmentParentId": 11094,
+                  "prefixDescription": "Criminal Justice",
+                  "prefixParentId": 17248,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "ed0e47b4-5866-44e6-e6c4-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 235075,
+                  "prefix": "LEGL",
+                  "courseNumber": "258",
+                  "title": "Criminal Law",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Political Science and Criminal Justice",
+                  "departmentParentId": 11094,
+                  "prefixDescription": "Legal Studies",
+                  "prefixParentId": 17249,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "97beb942-4f65-40ab-e6c3-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383035,
+                  "prefix": "PADM",
+                  "courseNumber": "260",
+                  "title": "Introduction to Public Administration",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Political Science and Criminal Justice",
+                  "departmentParentId": 11094,
+                  "prefixDescription": "Public Administration",
+                  "prefixParentId": 17251,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "e6110bef-0e98-40e0-e6c5-08dd86a6f1b8",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 158108,
+                  "prefix": "SWRK",
+                  "courseNumber": "170",
+                  "title": "Social Welfare Institutions: A Response to Power and Scarcity",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Social Work",
+                  "departmentParentId": 12029,
+                  "prefixDescription": "Social Work",
+                  "prefixParentId": 6015,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "a811c466-3742-41e4-e6c2-08dd86a6f1b8",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "41f499c6-9868-4404-e6c1-08dd86a6f1b8",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ed0e47b4-5866-44e6-e6c4-08dd86a6f1b8",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 338765,
+                  "prefix": "AJ",
+                  "courseNumber": "107",
+                  "title": "Concepts of Criminal Law",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Administration of Justice",
+                  "departmentParentId": 203,
+                  "prefixDescription": "Administration of Justice",
+                  "prefixParentId": 2505,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 338765,
+                      "prefix": "AJ",
+                      "courseNumber": "107",
+                      "title": "Concepts of Criminal Law",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Administration of Justice",
+                      "departmentParentId": 203,
+                      "prefixDescription": "Administration of Justice",
+                      "prefixParentId": 2505,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 338765,
+                          "prefix": "AJ",
+                          "courseNumber": "107",
+                          "title": "Concepts of Criminal Law",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Administration of Justice",
+                          "departmentParentId": 203,
+                          "prefixDescription": "Administration of Justice",
+                          "prefixParentId": 2505,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "97beb942-4f65-40ab-e6c3-08dd86a6f1b8",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e6110bef-0e98-40e0-e6c5-08dd86a6f1b8",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 254205,
+                  "prefix": "SOC",
+                  "courseNumber": "120",
+                  "title": "Introduction to Social Work",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 254205,
+                      "prefix": "SOC",
+                      "courseNumber": "120",
+                      "title": "Introduction to Social Work",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2010",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 254205,
+                          "prefix": "SOC",
+                          "courseNumber": "120",
+                          "title": "Introduction to Social Work",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2010",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 11,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [
+            {
+              "id": null,
+              "position": 1,
+              "content": "Only lower division courses listed"
+            },
+            {
+              "id": null,
+              "position": 0,
+              "content": "**REFER TO TOP OF AGREEMENT**"
+            }
+          ],
+          "rawTemplateCellIds": [
+            "a811c466-3742-41e4-e6c2-08dd86a6f1b8",
+            "41f499c6-9868-4404-e6c1-08dd86a6f1b8",
+            "ed0e47b4-5866-44e6-e6c4-08dd86a6f1b8",
+            "97beb942-4f65-40ab-e6c3-08dd86a6f1b8",
+            "e6110bef-0e98-40e0-e6c5-08dd86a6f1b8"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "76dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "Resources",
+      "contentHtml": null
+    },
+    {
+      "id": "74dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "See the University Catalog for the full listing of degree requirements for this major. See the Admissions website for transfer admission requirements/information. See the International Education &amp; Global Engagement website for international transfer academic qualifications. See the Academic Advising Programs website for information on California Promise and Associate Degree for Transfer. See the University Catalog for Credit by Exam information (AP, IB, CLEP).",
+      "contentHtml": "<ul><li><span style=\"font-size: 14px;\">See the </span><a href=\"https://catalog.csuchico.edu/archive/2025-2026/colleges-departments/college-behavioral-social-sciences/political-science-criminal-justice/criminal-justice-ba/#programrequirementstext\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">University Catalog</a><span style=\"font-size: 14px;\"> for the full listing of degree requirements for this major.</span></li><li><span style=\"font-size: 14px;\">See the </span><a href=\"https://www.csuchico.edu/admissions/transfer/index.shtml\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">Admissions </a><span style=\"font-size: 14px;\">website for transfer admission requirements/information.</span></li><li><span style=\"font-size: 14px;\">See the </span><a href=\"https://www.csuchico.edu/international/qualifications/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">International Education &amp; Global Engagement </a><span style=\"font-size: 14px;\">website for international transfer academic qualifications.</span></li><li><span style=\"font-size: 14px;\">See the </span><a href=\"https://www.csuchico.edu/aap/programs/index.shtml\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">Academic Advising Programs</a><span style=\"font-size: 14px;\"> website for information on California Promise and Associate Degree for Transfer.</span></li><li><span style=\"font-size: 14px;\">See the </span><a href=\"https://catalog.csuchico.edu/archive/2025-2026/academic-standards-policies/course-credit-policies/#creditbyexternalexamtext\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">University Catalog</a><span style=\"font-size: 14px;\"> for Credit by Exam information (AP, IB, CLEP).</span></li></ul>"
+    },
+    {
+      "id": "69dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "Associate Degree for Transfer Match",
+      "contentHtml": null
+    },
+    {
+      "id": "6adc6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "The BA in Criminal Justice is an approved match to: Administration of Justice (AS-T) Law, Public Policy, and Society (AA-T)",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">The BA in Criminal Justice is an approved match to:</span></p><ul><li><span style=\"font-size: 14px;\">Administration of Justice (AS-T)</span></li><li><span style=\"font-size: 14px;\">Law, Public Policy, and Society (AA-T)</span></li></ul>"
+    },
+    {
+      "id": "64b46845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "ADVISING NOTICE",
+      "contentHtml": null
+    },
+    {
+      "id": "6ab46845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "General Education courses are recommended, but not required, to support the student in this major. See Group 1: Recommended General Education Courses, for the selection of the following GE Mathematical Concepts and Quantitative Reasoning (2) courses. In the Criminal Justice Disciplinary Electives area (Group 3). Note that a minimum of 7 courses from subjects CRIM, INTR, LEGL, PADM, and POLS must be included in the \"Select 11 of the following.\"",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">General Education courses are recommended, but not required, to support&nbsp;the student in this major. </span></p><ul><li><span style=\"font-size: 14px;\">See Group 1: Recommended General Education Courses, for the selection of the following GE Mathematical Concepts and Quantitative Reasoning (2) courses.</span></li></ul><p><span style=\"font-size: 14px;\">In the Criminal Justice Disciplinary Electives area (Group 3). </span></p><ul><li><span style=\"font-size: 14px;\">Note that a minimum of 7 courses from subjects CRIM, INTR, LEGL, PADM, and POLS must be included in the \"Select 11 of the following.\" </span></li></ul>"
+    },
+    {
+      "id": "68dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 6,
+      "content": "upper division note",
+      "contentHtml": null
+    },
+    {
+      "id": "72dc6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 7,
+      "content": "In sections below where the student is directed to select courses and there is a note \"Only lower division courses listed,\" upper division courses are also available. See the University Catalog for the full listing of degree requirements.",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">In sections below where the student is directed to select courses and there is a note \"Only lower division courses listed,\" upper division courses are also available. See the </span><a href=\"https://catalog.csuchico.edu/archive/2025-2026/colleges-departments/college-behavioral-social-sciences/political-science-criminal-justice/criminal-justice-ba/#programrequirementstext\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">University Catalog</a><span style=\"font-size: 14px;\"> for the full listing of degree requirements.</span></p>"
+    },
+    {
+      "id": "b7fc72f9-8f89-4dbf-b6f5-01975c54d7b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 8,
+      "content": "important note",
+      "contentHtml": null
+    },
+    {
+      "id": "0520010d-d155-413f-84f8-019755ce93ba",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 9,
+      "content": "This agreement is not a static document. Articulations may be updated or added at any time , and the information provided is subject to change without notice. This agreement does not include upper-division major requirements, course prerequisites, general education coursework, or university-specific graduation requirements necessary for degree completion. Department agreements should be referenced alongside major agreements to ensure a clearer understanding of course articulation and program planning.",
+      "contentHtml": "<p><span style=\"font-size: 14px;\">This agreement is not a static document. </span><strong style=\"font-size: 14px;\">Articulations may be updated or added at any time</strong><span style=\"font-size: 14px;\">, and the information provided is subject to change without notice.</span></p><p><br></p><p><span style=\"font-size: 14px;\">This agreement does not include upper-division major requirements, course prerequisites, general education coursework, or university-specific graduation requirements necessary for degree completion.</span></p><p><br></p><p><span style=\"font-size: 14px;\">Department agreements should be referenced alongside major agreements to ensure a clearer understanding of course articulation and program planning.</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:54.305Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=141&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F141%2FMajor%2F7f30b79e-2e26-4796-4372-08dd86a6f1a7&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F141%2FMajor%2F7f30b79e-2e26-4796-4372-08dd86a6f1a7",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F141%2FMajor%2F7f30b79e-2e26-4796-4372-08dd86a6f1a7",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-141/major/ad95816da82d577f.json",
+    "templateAssetCount": 16,
+    "articulationCount": 5
+  }
+}

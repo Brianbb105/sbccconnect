@@ -1,0 +1,837 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 26,
+    "name": "San Diego State University",
+    "code": "SDSU",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/26/Major/a08d01fb-d21b-4763-f37f-08ddd3b241a4",
+    "type": "Major",
+    "name": "Asian American Studies, B.A.",
+    "publishDate": "2025-10-06T21:48:18.2455827",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "078423e0-f311-4c2a-a2a5-0196c10d33c5",
+      "title": "PREPARATION FOR THE MAJOR",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "078423e0-f311-4c2a-a2a5-0196c10d33c5:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 389079,
+              "prefix": "AAS",
+              "courseNumber": "100",
+              "title": "Asian American History",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "47ea44cc-52c1-47f0-0ee1-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 389079,
+                  "prefix": "AAS",
+                  "courseNumber": "100",
+                  "title": "Asian American History",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "47ea44cc-52c1-47f0-0ee1-08ddd3b241bf",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 203520,
+                  "prefix": "ASAM",
+                  "courseNumber": "101",
+                  "title": "Comparative Asian-American History, 1849 to 1965",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2007",
+                  "endTerm": "",
+                  "department": "Asian-American Studies",
+                  "departmentParentId": 1286,
+                  "prefixDescription": "Asian-American Studies",
+                  "prefixParentId": 3326,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 205585,
+                  "prefix": "ASAM",
+                  "courseNumber": "102",
+                  "title": "Contemporary Asian-American History",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Asian-American Studies",
+                  "departmentParentId": 1286,
+                  "prefixDescription": "Asian-American Studies",
+                  "prefixParentId": 3326,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 203520,
+                      "prefix": "ASAM",
+                      "courseNumber": "101",
+                      "title": "Comparative Asian-American History, 1849 to 1965",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2007",
+                      "endTerm": "",
+                      "department": "Asian-American Studies",
+                      "departmentParentId": 1286,
+                      "prefixDescription": "Asian-American Studies",
+                      "prefixParentId": 3326,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 205585,
+                      "prefix": "ASAM",
+                      "courseNumber": "102",
+                      "title": "Contemporary Asian-American History",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Asian-American Studies",
+                      "departmentParentId": 1286,
+                      "prefixDescription": "Asian-American Studies",
+                      "prefixParentId": 3326,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 203520,
+                          "prefix": "ASAM",
+                          "courseNumber": "101",
+                          "title": "Comparative Asian-American History, 1849 to 1965",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2007",
+                          "endTerm": "",
+                          "department": "Asian-American Studies",
+                          "departmentParentId": 1286,
+                          "prefixDescription": "Asian-American Studies",
+                          "prefixParentId": 3326,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 205585,
+                          "prefix": "ASAM",
+                          "courseNumber": "102",
+                          "title": "Contemporary Asian-American History",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Asian-American Studies",
+                          "departmentParentId": 1286,
+                          "prefixDescription": "Asian-American Studies",
+                          "prefixParentId": 3326,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "47ea44cc-52c1-47f0-0ee1-08ddd3b241bf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cf2b8567-1857-4607-a2da-0196c10d33c5",
+      "title": "PREPARATION FOR THE MAJOR",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 6,
+        "amountUnitType": "Unit",
+        "amountQuantifier": "None",
+        "toAmount": null,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "cf2b8567-1857-4607-a2da-0196c10d33c5:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 6,
+            "amountUnitType": "Unit",
+            "amountQuantifier": "None",
+            "toAmount": null,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 389078,
+              "prefix": "AAS",
+              "courseNumber": "101",
+              "title": "Politics, Power, and Asian America",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411764,
+              "prefix": "AAS",
+              "courseNumber": "103",
+              "title": "Introduction to Filipino American Studies",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411800,
+              "prefix": "AAS",
+              "courseNumber": "122",
+              "title": "War, Empire, and the Asian American Experience",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411801,
+              "prefix": "AAS",
+              "courseNumber": "208",
+              "title": "Asian Americans and Popular Culture",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411802,
+              "prefix": "AAS",
+              "courseNumber": "261",
+              "title": "Eating Asian America",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411793,
+              "prefix": "AAS",
+              "courseNumber": "263",
+              "title": "Asian American Film and Media",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411803,
+              "prefix": "AAS",
+              "courseNumber": "268",
+              "title": "Asian Americans and Mental Health",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Asian American Studies",
+              "departmentParentId": 15688,
+              "prefixDescription": "Asian American Studies",
+              "prefixParentId": 18722,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "48d4e4c7-f8d6-430f-0ee2-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 389078,
+                  "prefix": "AAS",
+                  "courseNumber": "101",
+                  "title": "Politics, Power, and Asian America",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "01b46159-b55c-41ab-0ee3-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411764,
+                  "prefix": "AAS",
+                  "courseNumber": "103",
+                  "title": "Introduction to Filipino American Studies",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "6c3fd97c-e635-4327-0ee4-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411800,
+                  "prefix": "AAS",
+                  "courseNumber": "122",
+                  "title": "War, Empire, and the Asian American Experience",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "3e404b31-7795-43bf-0ee5-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411801,
+                  "prefix": "AAS",
+                  "courseNumber": "208",
+                  "title": "Asian Americans and Popular Culture",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            },
+            {
+              "id": "41b71b9e-7c82-4b22-0ee6-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411802,
+                  "prefix": "AAS",
+                  "courseNumber": "261",
+                  "title": "Eating Asian America",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 4,
+              "rowAttributes": []
+            },
+            {
+              "id": "8ed83e03-66cb-431a-0ee7-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411793,
+                  "prefix": "AAS",
+                  "courseNumber": "263",
+                  "title": "Asian American Film and Media",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 5,
+              "rowAttributes": []
+            },
+            {
+              "id": "d4a018f2-b163-4dfd-0ee8-08ddd3b241bf",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411803,
+                  "prefix": "AAS",
+                  "courseNumber": "268",
+                  "title": "Asian Americans and Mental Health",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Asian American Studies",
+                  "departmentParentId": 15688,
+                  "prefixDescription": "Asian American Studies",
+                  "prefixParentId": 18722,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 6,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "48d4e4c7-f8d6-430f-0ee2-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "01b46159-b55c-41ab-0ee3-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "6c3fd97c-e635-4327-0ee4-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "3e404b31-7795-43bf-0ee5-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "41b71b9e-7c82-4b22-0ee6-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "8ed83e03-66cb-431a-0ee7-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "d4a018f2-b163-4dfd-0ee8-08ddd3b241bf",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "48d4e4c7-f8d6-430f-0ee2-08ddd3b241bf",
+            "01b46159-b55c-41ab-0ee3-08ddd3b241bf",
+            "6c3fd97c-e635-4327-0ee4-08ddd3b241bf",
+            "3e404b31-7795-43bf-0ee5-08ddd3b241bf",
+            "41b71b9e-7c82-4b22-0ee6-08ddd3b241bf",
+            "8ed83e03-66cb-431a-0ee7-08ddd3b241bf",
+            "d4a018f2-b163-4dfd-0ee8-08ddd3b241bf"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "3e4b3cce-41d1-400b-9dfb-0196c10a6009",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "Due to high demand, admission to SDSU is highly competitive. General admission information is available at: http://arweb.sdsu.edu/es/admissions/transfers/index.html",
+      "contentHtml": "<p>Due to high demand, admission to SDSU is highly competitive. General admission information is available at:<a href=\"http://arweb.sdsu.edu/es/admissions/transfers/index.html\" rel=\"noopener noreferrer\" target=\"_blank\">http://arweb.sdsu.edu/es/admissions/transfers/index.html</a></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:03.515Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=26&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F26%2FMajor%2Fa08d01fb-d21b-4763-f37f-08ddd3b241a4&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F26%2FMajor%2Fa08d01fb-d21b-4763-f37f-08ddd3b241a4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F26%2FMajor%2Fa08d01fb-d21b-4763-f37f-08ddd3b241a4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-26/major/d6a94583f1da07cb.json",
+    "templateAssetCount": 4,
+    "articulationCount": 1
+  }
+}

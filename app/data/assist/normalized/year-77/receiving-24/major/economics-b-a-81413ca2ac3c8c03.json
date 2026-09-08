@@ -1,0 +1,431 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 24,
+    "name": "California State University, Stanislaus",
+    "code": "CSUSTAN",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/24/Major/9a0910d9-3b7e-4d45-d891-08ded63e51e8",
+    "type": "Major",
+    "name": "Economics B.A.",
+    "publishDate": "2026-08-10T21:38:17.7338447",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "44fd6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "44fd6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 157935,
+              "prefix": "ECON",
+              "courseNumber": "2500",
+              "title": "Principles of Macroeconomics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4235,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1201,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136440,
+              "prefix": "ECON",
+              "courseNumber": "2510",
+              "title": "Principles of Microeconomics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4235,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1201,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "d13e07f8-40f5-4c3f-630a-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 157935,
+                  "prefix": "ECON",
+                  "courseNumber": "2500",
+                  "title": "Principles of Macroeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4235,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1201,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "e91aeafc-0371-4539-630b-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136440,
+                  "prefix": "ECON",
+                  "courseNumber": "2510",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4235,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1201,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d13e07f8-40f5-4c3f-630a-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156509,
+                  "prefix": "ECON",
+                  "courseNumber": "C2002",
+                  "title": "Principles of Macroeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156509,
+                      "prefix": "ECON",
+                      "courseNumber": "C2002",
+                      "title": "Principles of Macroeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156509,
+                          "prefix": "ECON",
+                          "courseNumber": "C2002",
+                          "title": "Principles of Macroeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e91aeafc-0371-4539-630b-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156521,
+                  "prefix": "ECON",
+                  "courseNumber": "C2001",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156521,
+                      "prefix": "ECON",
+                      "courseNumber": "C2001",
+                      "title": "Principles of Microeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156521,
+                          "prefix": "ECON",
+                          "courseNumber": "C2001",
+                          "title": "Principles of Microeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d13e07f8-40f5-4c3f-630a-08ded63e52af",
+            "e91aeafc-0371-4539-630b-08ded63e52af"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "1e407445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "97046645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "This agreement displays all lower-division courses required in the major : Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right. Helpful resources: Academic Catalog Transfer Admissions Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the Stanislaus State Articulation Website for contact information.",
+      "contentHtml": "<p>This agreement displays all<strong> lower-division courses required in the major</strong>: Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right.</p><p><br></p><p><strong>Helpful resources: </strong></p><p><a href=\"https://catalog.csustan.edu/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">Academic Catalog</a></p><p><a href=\"https://www.csustan.edu/undergrad/transfer-admission\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admissions</a></p><p><br></p><p>Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the <a href=\"https://www.csustan.edu/articulation\" rel=\"noopener noreferrer\" target=\"_blank\">Stanislaus State Articulation Website</a> for contact information.</p>"
+    },
+    {
+      "id": "796e7445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "About the Major",
+      "contentHtml": null
+    },
+    {
+      "id": "e2e87645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "The Department of Economics offers the degree, Bachelor of Arts in Economics. Economics is the study of how society efficiently allocates limited resources. It is a practical field of study which enables students to become critical thinkers and creative problem solvers. The program offers traditional principle courses as well as a wide variety of upper division electives, including quantitative data analysis. The principle courses, which are also required for business majors, introduce students to the methodology in the field. In addition, the program offers areas of specialization such as Banking, Investment, and Managerial Economics, International Trade and Alternative Economic Systems, Economics and the Public Sector, Labor Economics, and Economic History. The Bachelor of Arts in Economics prepares students for a wide range of career paths in business, finance, banking, government, and law, as well as graduate study in a wide range of disciplines. View information for the Department of Economics , including Learning Objectives for the department and its programs.",
+      "contentHtml": "<p><span style=\"color: rgb(29, 32, 36);\">The Department of Economics offers the degree, Bachelor of Arts in Economics. Economics is the study of how society efficiently allocates limited resources. It is a practical field of study which enables students to become critical thinkers and creative problem solvers. The program offers traditional principle courses as well as a wide variety of upper division electives, including quantitative data analysis.&nbsp;The principle courses, which are also required for business majors, introduce students to the methodology in the field. In addition, the program offers areas of specialization such as Banking, Investment, and Managerial Economics, International Trade and Alternative Economic Systems, Economics and the Public Sector, Labor Economics, and Economic History. The Bachelor of Arts in Economics prepares students for a wide range of career paths in business, finance, banking, government, and law, as well as graduate study in a wide range of disciplines.</span></p><p><br></p><p>View information for the <a href=\"https://catalog.csustan.edu/preview_program.php?catoid=35&amp;poid=7845&amp;returnto=6777\" rel=\"noopener noreferrer\" target=\"_blank\">Department of Economics</a>, including Learning Objectives for the department and its programs.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:47.118Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=24&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F24%2FMajor%2F9a0910d9-3b7e-4d45-d891-08ded63e51e8&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F24%2FMajor%2F9a0910d9-3b7e-4d45-d891-08ded63e51e8",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F24%2FMajor%2F9a0910d9-3b7e-4d45-d891-08ded63e51e8",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-24/major/81413ca2ac3c8c03.json",
+    "templateAssetCount": 6,
+    "articulationCount": 2
+  }
+}

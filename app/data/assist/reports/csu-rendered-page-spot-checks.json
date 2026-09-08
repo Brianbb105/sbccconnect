@@ -1,0 +1,32 @@
+{
+  "recordedAt": "2026-09-07T09:17:47.090Z",
+  "method": "Manual comparison of the live public ASSIST rendered page with its captured source and rebuilt structured data.",
+  "scope": "Two rendered pages, including a general-education area and an agreement with unlinked source records. This is not a visual audit of every agreement.",
+  "samples": [
+    {
+      "key": "77/92/to/75/Major/d34431b0-8472-4523-8c7f-08deaabd5f92",
+      "name": "Biotechnology, B.S.",
+      "campus": "Cal Poly Pomona",
+      "checks": [
+        "The rendered agreement identifies 2026-2027, SBCC, and Cal Poly Pomona.",
+        "Cal-GETC area 1B and its five SBCC course choices agree with the source and rebuilt fields.",
+        "ENGL C1000 and C1000H are alternatives for ENG 1103; the saved conjunction is OR.",
+        "The university Calculus I requirement maps to SBCC MATH 150, 5 units."
+      ],
+      "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=75&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F75%2FMajor%2Fd34431b0-8472-4523-8c7f-08deaabd5f92&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F75%2FMajor%2Fd34431b0-8472-4523-8c7f-08deaabd5f92"
+    },
+    {
+      "key": "77/92/to/11/Major/914d192f-fabd-4a98-1346-08deafb45440",
+      "name": "BIOMEDICAL ENGINEERING [BS]",
+      "campus": "Cal Poly San Luis Obispo",
+      "checks": [
+        "The corrected viewByKey link opens this specific 2026-2027 agreement directly.",
+        "BIO 1151 maps to BIOL 103, 5 units; CHEM 1120 and 1122 map to CHEM 155 and 156.",
+        "The calculus sequence requires MATH 150, 160, and 200; linear analysis requires MATH 210 and 220.",
+        "The page includes structured one-course selection advisements, which the updated converter retains.",
+        "The two unlinked API records, PHYS 2211 and MCRO 2224, are absent from the rendered requirements and are preserved separately."
+      ],
+      "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=11&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F11%2FMajor%2F914d192f-fabd-4a98-1346-08deafb45440&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F11%2FMajor%2F914d192f-fabd-4a98-1346-08deafb45440"
+    }
+  ]
+}

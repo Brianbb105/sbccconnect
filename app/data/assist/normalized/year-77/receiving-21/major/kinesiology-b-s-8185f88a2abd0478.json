@@ -1,0 +1,937 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 21,
+    "name": "California State University, East Bay",
+    "code": "CSUHAY",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/21/Major/10a46063-1e82-4f54-8600-08dee527a9e4",
+    "type": "Major",
+    "name": "Kinesiology, B.S.",
+    "publishDate": "2026-07-29T22:39:58.9131354",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "52c06f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE",
+      "position": 1,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "52c06f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": "5512b4af-4f76-4fc4-4c13-08dee5279ea1",
+              "courseIdentifierParentId": 281912,
+              "prefix": "BIOL",
+              "courseNumber": "270",
+              "title": "HUMAN PHYSIOLOGY AND ANATOMY I",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Biological Science",
+              "departmentParentId": 1620,
+              "prefixDescription": "Biological Science",
+              "prefixParentId": 9246,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "57ae5d2c-3091-4aa3-4c14-08dee5279ea1",
+              "courseIdentifierParentId": 308296,
+              "prefix": "BIOL",
+              "courseNumber": "271",
+              "title": "HUMAN PHYSIOLOGY AND ANATOMY II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Biological Science",
+              "departmentParentId": 1620,
+              "prefixDescription": "Biological Science",
+              "prefixParentId": 9246,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ea0499e3-3a84-4338-e708-08dee527a9f5",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "BIOL 270, BIOL 271",
+              "courses": [
+                {
+                  "id": "5512b4af-4f76-4fc4-4c13-08dee5279ea1",
+                  "courseIdentifierParentId": 281912,
+                  "prefix": "BIOL",
+                  "courseNumber": "270",
+                  "title": "HUMAN PHYSIOLOGY AND ANATOMY I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Biological Science",
+                  "departmentParentId": 1620,
+                  "prefixDescription": "Biological Science",
+                  "prefixParentId": 9246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "57ae5d2c-3091-4aa3-4c14-08dee5279ea1",
+                  "courseIdentifierParentId": 308296,
+                  "prefix": "BIOL",
+                  "courseNumber": "271",
+                  "title": "HUMAN PHYSIOLOGY AND ANATOMY II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Biological Science",
+                  "departmentParentId": 1620,
+                  "prefixDescription": "Biological Science",
+                  "prefixParentId": 9246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ea0499e3-3a84-4338-e708-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245732,
+                  "prefix": "BMS",
+                  "courseNumber": "107",
+                  "title": "Human Anatomy",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282159,
+                  "prefix": "BMS",
+                  "courseNumber": "108",
+                  "title": "Human Physiology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245732,
+                      "prefix": "BMS",
+                      "courseNumber": "107",
+                      "title": "Human Anatomy",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 282159,
+                      "prefix": "BMS",
+                      "courseNumber": "108",
+                      "title": "Human Physiology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245732,
+                          "prefix": "BMS",
+                          "courseNumber": "107",
+                          "title": "Human Anatomy",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 282159,
+                          "prefix": "BMS",
+                          "courseNumber": "108",
+                          "title": "Human Physiology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ea0499e3-3a84-4338-e708-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "52c06f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 281912,
+              "prefix": "BIOL",
+              "courseNumber": "270",
+              "title": "HUMAN PHYSIOLOGY AND ANATOMY I",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Biological Science",
+              "departmentParentId": 1620,
+              "prefixDescription": "Biological Science",
+              "prefixParentId": 9246,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 308296,
+              "prefix": "BIOL",
+              "courseNumber": "271",
+              "title": "HUMAN PHYSIOLOGY AND ANATOMY II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Biological Science",
+              "departmentParentId": 1620,
+              "prefixDescription": "Biological Science",
+              "prefixParentId": 9246,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "19012b2f-c5bf-44e0-e709-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 281912,
+                  "prefix": "BIOL",
+                  "courseNumber": "270",
+                  "title": "HUMAN PHYSIOLOGY AND ANATOMY I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Biological Science",
+                  "departmentParentId": 1620,
+                  "prefixDescription": "Biological Science",
+                  "prefixParentId": 9246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "64a41172-443b-49cc-e70a-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 308296,
+                  "prefix": "BIOL",
+                  "courseNumber": "271",
+                  "title": "HUMAN PHYSIOLOGY AND ANATOMY II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Biological Science",
+                  "departmentParentId": 1620,
+                  "prefixDescription": "Biological Science",
+                  "prefixParentId": 9246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "19012b2f-c5bf-44e0-e709-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "Articulates as a Series Only",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "64a41172-443b-49cc-e70a-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "Articulates as a Series Only",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "19012b2f-c5bf-44e0-e709-08dee527a9f5",
+            "64a41172-443b-49cc-e70a-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "54c06f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "54c06f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 357359,
+              "prefix": "KIN",
+              "courseNumber": "160",
+              "title": "Introduction to Kinesiology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Kinesiology and Physical Education",
+              "departmentParentId": 8162,
+              "prefixDescription": "Kinesiology and Physical Education",
+              "prefixParentId": 5110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "c1353bc8-6bc5-4aa7-e70b-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 357359,
+                  "prefix": "KIN",
+                  "courseNumber": "160",
+                  "title": "Introduction to Kinesiology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Kinesiology and Physical Education",
+                  "departmentParentId": 8162,
+                  "prefixDescription": "Kinesiology and Physical Education",
+                  "prefixParentId": 5110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c1353bc8-6bc5-4aa7-e70b-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 201340,
+                  "prefix": "PE",
+                  "courseNumber": "200",
+                  "title": "Introduction to Kinesiology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Physical Education",
+                  "departmentParentId": 10384,
+                  "prefixDescription": "Physical Education",
+                  "prefixParentId": 8472,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 201340,
+                      "prefix": "PE",
+                      "courseNumber": "200",
+                      "title": "Introduction to Kinesiology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2005",
+                      "endTerm": "",
+                      "department": "Physical Education",
+                      "departmentParentId": 10384,
+                      "prefixDescription": "Physical Education",
+                      "prefixParentId": 8472,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 201340,
+                          "prefix": "PE",
+                          "courseNumber": "200",
+                          "title": "Introduction to Kinesiology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2005",
+                          "endTerm": "",
+                          "department": "Physical Education",
+                          "departmentParentId": 10384,
+                          "prefixDescription": "Physical Education",
+                          "prefixParentId": 8472,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "c1353bc8-6bc5-4aa7-e70b-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "55c06f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION CORE",
+      "position": 3,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "55c06f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 256233,
+              "prefix": "KIN",
+              "courseNumber": "162",
+              "title": "NUTRITION AND PERFORMANCE",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Kinesiology and Physical Education",
+              "departmentParentId": 8162,
+              "prefixDescription": "Kinesiology and Physical Education",
+              "prefixParentId": 5110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "de810c14-a631-47ba-e70c-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 256233,
+                  "prefix": "KIN",
+                  "courseNumber": "162",
+                  "title": "NUTRITION AND PERFORMANCE",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Kinesiology and Physical Education",
+                  "departmentParentId": 8162,
+                  "prefixDescription": "Kinesiology and Physical Education",
+                  "prefixParentId": 5110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "de810c14-a631-47ba-e70c-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "de810c14-a631-47ba-e70c-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "55c06f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 296387,
+              "prefix": "KIN",
+              "courseNumber": "270",
+              "title": "Women and Sport",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Kinesiology and Physical Education",
+              "departmentParentId": 8162,
+              "prefixDescription": "Kinesiology and Physical Education",
+              "prefixParentId": 5110,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e72d4f9c-4ae0-422a-e70d-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 296387,
+                  "prefix": "KIN",
+                  "courseNumber": "270",
+                  "title": "Women and Sport",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Kinesiology and Physical Education",
+                  "departmentParentId": 8162,
+                  "prefixDescription": "Kinesiology and Physical Education",
+                  "prefixParentId": 5110,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "e72d4f9c-4ae0-422a-e70d-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "e72d4f9c-4ae0-422a-e70d-08dee527a9f5"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "5bc06f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "PLEASE NOTE: ASSIST does not replace the assistance of meeting with an adviser. Please contact CSU East Bay at (510) 885-2556 for an advising appointment. The most accurate and up to date transfer information for transfer courses accepted by CSU East Bay is available at this link: CSUEB Equivalencies All California Community College transfer students are encouraged to complete their CSU General Education Breadth or CALGETC pattern at their Community College prior to enrollment at CSU, East Bay. ASSOCIATE DEGREE FOR TRANSFER similarity matches with CSUEB DEGREES can be found here: ASSOCIATE DEGREES FOR TRANSFER CHART",
+      "contentHtml": "<p>PLEASE NOTE: ASSIST does not replace the assistance of meeting with an adviser. Please contact CSU East Bay at (510) 885-2556 for an advising appointment. The most accurate and up to date transfer information for transfer courses accepted by CSU East Bay is available at this link: <a href=\"https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=b75e02ac-0916-413d-8adf-f8011538371f&amp;aid=c79a2650-be66-45fb-9aff-c6f976fd20ff\" rel=\"noopener noreferrer\" target=\"_blank\">CSUEB Equivalencies </a>All California Community College transfer students are encouraged to complete their CSU General Education Breadth or CALGETC pattern at their Community College prior to enrollment at CSU, East Bay.  ASSOCIATE DEGREE FOR TRANSFER similarity matches with CSUEB DEGREES can be found here:  <a href=\"https://www.csueastbay.edu/aps/academic-services/articulation-and-transfer/associate-degrees-for-transfer.html\" rel=\"noopener noreferrer\" target=\"_blank\">ASSOCIATE DEGREES FOR TRANSFER CHART</a></p>"
+    },
+    {
+      "id": "57c06f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "Kinesiology, B.S. Program (120 units)",
+      "contentHtml": null
+    },
+    {
+      "id": "59c06f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "Program Description Kinesiology is the disciplinary study of physical activity and how it impacts individual and societal health and well-being. The discipline explores physical activity from a wide range of cognate disciplines, including, but not limited to, biomechanics, physiology, history, psychology, sociology, philosophy, and pedagogy. It involves areas of study that include sports performance, fitness leadership, sports medicine and related allied health professions, socio-cultural analysis of sport, sport and exercise psychology, physical education, and coaching. The BS in Kinesiology degree prepares students for careers in the fitness and exercise and allied health professions. Our mission is to prepare graduates who are knowledgeable, professional, and take a multidisciplinary approach to promoting physical activity. The degree not only examines the theoretical underpinning of sport, exercise, fitness and health, but is committed to addressing the practical issues concerning coaching and instructing, exercise, fitness and sport. It also addresses prescription; programming and safety in promoting health and performance-related physical activity; and issues of social justice in and through sport. The diverse curriculum strives to be innovative and encourage creative thinking and practice. Values The Department is dedicated to providing a quality engaged educational experience that will prepare students for their chosen profession and beyond. Six key principles guide the department: Student-centered. Evidence-based practice. Comprehensive discipline-based and transferable skills and knowledge. Dedicated and committed faculty and staff. Relevant, interesting, and contemporary program of study. Commitment to professional service. Objectives to provide a high quality learning experience which is relevant to personal and career aspirations and which will prepare students in the best way possible to gain employment or to continue with further study. to provide a scientific and multi-disciplinary approach to the study of sport, exercise, fitness, and health. to develop a framework of intellectual and conceptual skills aimed at broadening knowledge, understanding and critical appraisal of the scientific processes of the subject area. to encourage independent thinking, research awareness, investigation and analytical techniques to the study of kinesiology.",
+      "contentHtml": "<p>Program Description</p><p>Kinesiology is the disciplinary study of physical activity and how it impacts individual and societal health and well-being.&nbsp;The discipline explores physical activity from a wide range of cognate disciplines, including, but not limited to, biomechanics, physiology, history, psychology, sociology, philosophy, and pedagogy.&nbsp;It involves areas of study that include sports performance, fitness leadership, sports medicine and related allied health professions, socio-cultural analysis of sport, sport and exercise psychology, physical education, and coaching.&nbsp;&nbsp;&nbsp;</p><p><br></p><p>The BS in Kinesiology degree prepares students for careers in the fitness and exercise and allied health professions. Our mission is to prepare graduates who are knowledgeable, professional, and take a multidisciplinary approach to promoting physical activity.&nbsp;The degree not only examines the theoretical underpinning of sport, exercise, fitness and health, but is committed to addressing the practical issues concerning coaching and instructing, exercise, fitness and sport. It also addresses prescription; programming and safety in promoting health and performance-related physical activity; and issues of social justice in and through sport. The diverse curriculum strives to be innovative and encourage creative thinking and practice.</p><p><br></p><p>Values</p><p>The Department is dedicated to providing a quality engaged educational experience that will prepare students for their chosen profession and beyond.&nbsp;Six key principles guide the department:</p><ul><li>Student-centered.&nbsp;&nbsp;</li><li>Evidence-based practice.&nbsp;&nbsp;</li><li>Comprehensive discipline-based and transferable skills and knowledge.&nbsp;&nbsp;</li><li>Dedicated and committed faculty and staff.&nbsp;&nbsp;</li><li>Relevant, interesting, and contemporary program of study.</li><li>Commitment to professional service.&nbsp;&nbsp;</li></ul><p>Objectives</p><ul><li>to provide a high quality learning experience which is relevant to personal and career aspirations and which will prepare students in the best way possible to gain employment or to continue with further study.</li><li>to provide a scientific and multi-disciplinary approach to the study of sport, exercise, fitness, and health.</li><li>to develop a framework of intellectual and conceptual skills aimed at broadening knowledge, understanding and critical appraisal of the scientific processes of the subject area.</li><li>to encourage independent thinking, research awareness, investigation and analytical techniques to the study of kinesiology.</li></ul>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:41.641Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=21&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F21%2FMajor%2F10a46063-1e82-4f54-8600-08dee527a9e4&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F21%2FMajor%2F10a46063-1e82-4f54-8600-08dee527a9e4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F21%2FMajor%2F10a46063-1e82-4f54-8600-08dee527a9e4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-21/major/8185f88a2abd0478.json",
+    "templateAssetCount": 7,
+    "articulationCount": 4
+  }
+}

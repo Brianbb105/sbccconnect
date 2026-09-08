@@ -1,0 +1,4660 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 42,
+    "name": "California State University, Northridge",
+    "code": "CSUN",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/42/Major/97c851df-8994-472f-424b-08dda831fbe0",
+    "type": "Major",
+    "name": "RADIOLOGIC SCIENCES, B.S.",
+    "publishDate": "2026-04-23T04:45:39.3967229",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR PREPARATION COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "07ad53fa-adae-485d-b522-08dda831f292",
+              "courseIdentifierParentId": 330993,
+              "prefix": "BIOL",
+              "courseNumber": "101",
+              "title": "General Biology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "db172042-c813-4b37-b523-08dda831f292",
+              "courseIdentifierParentId": 47899,
+              "prefix": "BIOL",
+              "courseNumber": "101L",
+              "title": "General Biology Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "33005b8f-9781-479d-b65f-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "BIOL 101, BIOL 101L",
+              "courses": [
+                {
+                  "id": "07ad53fa-adae-485d-b522-08dda831f292",
+                  "courseIdentifierParentId": 330993,
+                  "prefix": "BIOL",
+                  "courseNumber": "101",
+                  "title": "General Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "db172042-c813-4b37-b523-08dda831f292",
+                  "courseIdentifierParentId": 47899,
+                  "prefix": "BIOL",
+                  "courseNumber": "101L",
+                  "title": "General Biology Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "33005b8f-9781-479d-b65f-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245700,
+                  "prefix": "BIOL",
+                  "courseNumber": "100",
+                  "title": "Concepts of Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 226331,
+                  "prefix": "BIOL",
+                  "courseNumber": "140",
+                  "title": "Principles of Biology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 127044,
+                  "prefix": "BIOL",
+                  "courseNumber": "141",
+                  "title": "Biology Laboratory",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245700,
+                      "prefix": "BIOL",
+                      "courseNumber": "100",
+                      "title": "Concepts of Biology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245700,
+                          "prefix": "BIOL",
+                          "courseNumber": "100",
+                          "title": "Concepts of Biology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 226331,
+                      "prefix": "BIOL",
+                      "courseNumber": "140",
+                      "title": "Principles of Biology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 127044,
+                      "prefix": "BIOL",
+                      "courseNumber": "141",
+                      "title": "Biology Laboratory",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2005",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 226331,
+                          "prefix": "BIOL",
+                          "courseNumber": "140",
+                          "title": "Principles of Biology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 127044,
+                          "prefix": "BIOL",
+                          "courseNumber": "141",
+                          "title": "Biology Laboratory",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2005",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "dce073b1-daab-40f1-6504-08dda83225b1",
+                  "sendingArticulationId": "f56ab81d-0df7-42f8-7275-08dda8322596",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "33005b8f-9781-479d-b65f-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "0a01a251-4f09-4086-b514-08dda831f292",
+              "courseIdentifierParentId": 121280,
+              "prefix": "BIOL",
+              "courseNumber": "211",
+              "title": "Human Anatomy",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "61eb9143-c693-49ae-b515-08dda831f292",
+              "courseIdentifierParentId": 48182,
+              "prefix": "BIOL",
+              "courseNumber": "212",
+              "title": "Laboratory Studies in Human Anatomy",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "3084b78a-bbd4-47d0-b661-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "BIOL 211, BIOL 212",
+              "courses": [
+                {
+                  "id": "0a01a251-4f09-4086-b514-08dda831f292",
+                  "courseIdentifierParentId": 121280,
+                  "prefix": "BIOL",
+                  "courseNumber": "211",
+                  "title": "Human Anatomy",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "61eb9143-c693-49ae-b515-08dda831f292",
+                  "courseIdentifierParentId": 48182,
+                  "prefix": "BIOL",
+                  "courseNumber": "212",
+                  "title": "Laboratory Studies in Human Anatomy",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3084b78a-bbd4-47d0-b661-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245732,
+                  "prefix": "BMS",
+                  "courseNumber": "107",
+                  "title": "Human Anatomy",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245732,
+                      "prefix": "BMS",
+                      "courseNumber": "107",
+                      "title": "Human Anatomy",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245732,
+                          "prefix": "BMS",
+                          "courseNumber": "107",
+                          "title": "Human Anatomy",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "3084b78a-bbd4-47d0-b661-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 136958,
+              "prefix": "BIOL",
+              "courseNumber": "281",
+              "title": "Human Physiology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1704,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4861,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "679f7a34-e2cd-4dd5-b663-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136958,
+                  "prefix": "BIOL",
+                  "courseNumber": "281",
+                  "title": "Human Physiology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1704,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4861,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "679f7a34-e2cd-4dd5-b663-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282159,
+                  "prefix": "BMS",
+                  "courseNumber": "108",
+                  "title": "Human Physiology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Biomedical Sciences",
+                  "departmentParentId": 1783,
+                  "prefixDescription": "Biomedical Sciences",
+                  "prefixParentId": 8693,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 282159,
+                      "prefix": "BMS",
+                      "courseNumber": "108",
+                      "title": "Human Physiology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Biomedical Sciences",
+                      "departmentParentId": 1783,
+                      "prefixDescription": "Biomedical Sciences",
+                      "prefixParentId": 8693,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 282159,
+                          "prefix": "BMS",
+                          "courseNumber": "108",
+                          "title": "Human Physiology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Biomedical Sciences",
+                          "departmentParentId": 1783,
+                          "prefixDescription": "Biomedical Sciences",
+                          "prefixParentId": 8693,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "679f7a34-e2cd-4dd5-b663-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330806,
+              "prefix": "CHEM",
+              "courseNumber": "100",
+              "title": "Principles of Chemistry",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2006",
+              "endTerm": "",
+              "department": "Chemistry",
+              "departmentParentId": 2298,
+              "prefixDescription": "Chemistry",
+              "prefixParentId": 3782,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "05107ae2-a7c5-4ab6-b660-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330806,
+                  "prefix": "CHEM",
+                  "courseNumber": "100",
+                  "title": "Principles of Chemistry",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2006",
+                  "endTerm": "",
+                  "department": "Chemistry",
+                  "departmentParentId": 2298,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3782,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [
+                {
+                  "id": "1234e317-18d5-4bcd-3dfd-08dda835ffaf",
+                  "variantIds": [
+                    "08c5a2d3-4188-49da-d182-08dda831fbe0"
+                  ],
+                  "sendingArticulation": {
+                    "noArticulationReason": null,
+                    "deniedCourses": [],
+                    "items": [
+                      {
+                        "courseConjunction": "And",
+                        "items": [
+                          {
+                            "visibleCrossListedCourses": [],
+                            "requisites": [],
+                            "attributes": [],
+                            "courseIdentifierParentId": 282158,
+                            "courseTitle": "Introductory Chemistry",
+                            "courseNumber": "101",
+                            "prefix": "CHEM",
+                            "prefixParentId": 3832,
+                            "prefixDescription": "Chemistry",
+                            "departmentParentId": 2340,
+                            "department": "Chemistry",
+                            "begin": "F1991",
+                            "end": "",
+                            "minUnits": 4,
+                            "maxUnits": 4,
+                            "pathways": [],
+                            "publishedCourseIdentifierYearTermId": 163,
+                            "position": 0,
+                            "type": "Course"
+                          }
+                        ],
+                        "attributes": [],
+                        "position": 0,
+                        "type": "CourseGroup"
+                      },
+                      {
+                        "courseConjunction": "And",
+                        "items": [
+                          {
+                            "visibleCrossListedCourses": [],
+                            "requisites": [],
+                            "attributes": [
+                              {
+                                "position": 0,
+                                "content": "Acceptable substitute"
+                              }
+                            ],
+                            "courseIdentifierParentId": 245745,
+                            "courseTitle": "Fundamentals of General, Organic and Biological Chemistry",
+                            "courseNumber": "104",
+                            "prefix": "CHEM",
+                            "prefixParentId": 3832,
+                            "prefixDescription": "Chemistry",
+                            "departmentParentId": 2340,
+                            "department": "Chemistry",
+                            "begin": "F1997",
+                            "end": "",
+                            "minUnits": 4,
+                            "maxUnits": 4,
+                            "pathways": [],
+                            "publishedCourseIdentifierYearTermId": 187,
+                            "position": 0,
+                            "type": "Course"
+                          }
+                        ],
+                        "attributes": [],
+                        "position": 1,
+                        "type": "CourseGroup"
+                      }
+                    ],
+                    "courseGroupConjunctions": [
+                      {
+                        "id": "559e89d8-bba8-4bf9-6b25-08dda83225b1",
+                        "sendingArticulationId": "1ff681ae-f64f-41cb-06bb-08dda8322597",
+                        "groupConjunction": "Or",
+                        "sendingCourseGroupBeginPosition": 0,
+                        "sendingCourseGroupEndPosition": 1
+                      }
+                    ],
+                    "type": "TemplateOverride",
+                    "attributes": []
+                  }
+                }
+              ],
+              "receivingCellId": "05107ae2-a7c5-4ab6-b660-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282158,
+                  "prefix": "CHEM",
+                  "courseNumber": "101",
+                  "title": "Introductory Chemistry",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Chemistry",
+                  "departmentParentId": 2340,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3832,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245745,
+                  "prefix": "CHEM",
+                  "courseNumber": "104",
+                  "title": "Fundamentals of General, Organic and Biological Chemistry",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1997",
+                  "endTerm": "",
+                  "department": "Chemistry",
+                  "departmentParentId": 2340,
+                  "prefixDescription": "Chemistry",
+                  "prefixParentId": 3832,
+                  "attributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Acceptable substitute"
+                    }
+                  ],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 282158,
+                      "prefix": "CHEM",
+                      "courseNumber": "101",
+                      "title": "Introductory Chemistry",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Chemistry",
+                      "departmentParentId": 2340,
+                      "prefixDescription": "Chemistry",
+                      "prefixParentId": 3832,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 282158,
+                          "prefix": "CHEM",
+                          "courseNumber": "101",
+                          "title": "Introductory Chemistry",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Chemistry",
+                          "departmentParentId": 2340,
+                          "prefixDescription": "Chemistry",
+                          "prefixParentId": 3832,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245745,
+                      "prefix": "CHEM",
+                      "courseNumber": "104",
+                      "title": "Fundamentals of General, Organic and Biological Chemistry",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1997",
+                      "endTerm": "",
+                      "department": "Chemistry",
+                      "departmentParentId": 2340,
+                      "prefixDescription": "Chemistry",
+                      "prefixParentId": 3832,
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Acceptable substitute"
+                        }
+                      ],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245745,
+                          "prefix": "CHEM",
+                          "courseNumber": "104",
+                          "title": "Fundamentals of General, Organic and Biological Chemistry",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1997",
+                          "endTerm": "",
+                          "department": "Chemistry",
+                          "departmentParentId": 2340,
+                          "prefixDescription": "Chemistry",
+                          "prefixParentId": 3832,
+                          "attributes": [
+                            {
+                              "id": null,
+                              "position": 0,
+                              "content": "Acceptable substitute"
+                            }
+                          ],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": [
+                        {
+                          "id": null,
+                          "position": 0,
+                          "content": "Acceptable substitute"
+                        }
+                      ]
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "559e89d8-bba8-4bf9-6b25-08dda83225b1",
+                  "sendingArticulationId": "1ff681ae-f64f-41cb-06bb-08dda8322597",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "05107ae2-a7c5-4ab6-b660-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-4",
+          "position": 4,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330999,
+              "prefix": "PHYS",
+              "courseNumber": "100A",
+              "title": "General Physics I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Physics & Astronomy",
+              "departmentParentId": 10864,
+              "prefixDescription": "Physics",
+              "prefixParentId": 222,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "d7a436b1-f9fb-48dd-b665-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330999,
+                  "prefix": "PHYS",
+                  "courseNumber": "100A",
+                  "title": "General Physics I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Physics & Astronomy",
+                  "departmentParentId": 10864,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 222,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d7a436b1-f9fb-48dd-b665-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282153,
+                  "prefix": "PHYS",
+                  "courseNumber": "105",
+                  "title": "General Physics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 271842,
+                  "prefix": "PHYS",
+                  "courseNumber": "110",
+                  "title": "Introductory Physics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2012",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 282153,
+                      "prefix": "PHYS",
+                      "courseNumber": "105",
+                      "title": "General Physics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 282153,
+                          "prefix": "PHYS",
+                          "courseNumber": "105",
+                          "title": "General Physics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 271842,
+                      "prefix": "PHYS",
+                      "courseNumber": "110",
+                      "title": "Introductory Physics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2012",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 271842,
+                          "prefix": "PHYS",
+                          "courseNumber": "110",
+                          "title": "Introductory Physics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2012",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "6c47700f-dc41-4b89-6b16-08dda83225b1",
+                  "sendingArticulationId": "a01d3b5f-ae0b-4d12-0621-08dda8322597",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d7a436b1-f9fb-48dd-b665-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-5",
+          "position": 5,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": "0d4e9c3a-e615-409d-b5a1-08dda831f292",
+              "courseIdentifierParentId": 172128,
+              "prefix": "PHYS",
+              "courseNumber": "100B",
+              "title": "General Physics II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Physics & Astronomy",
+              "departmentParentId": 10864,
+              "prefixDescription": "Physics",
+              "prefixParentId": 222,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": "32b5fd95-e8ec-4d2b-b5a2-08dda831f292",
+              "courseIdentifierParentId": 47902,
+              "prefix": "PHYS",
+              "courseNumber": "100BL",
+              "title": "General Physics II Laboratory",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Physics & Astronomy",
+              "departmentParentId": 10864,
+              "prefixDescription": "Physics",
+              "prefixParentId": 222,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "109975b1-9dff-43d8-b662-08dda831fbfa",
+              "type": "Series",
+              "position": 0,
+              "logic": "AND",
+              "name": "PHYS 100B, PHYS 100BL",
+              "courses": [
+                {
+                  "id": "0d4e9c3a-e615-409d-b5a1-08dda831f292",
+                  "courseIdentifierParentId": 172128,
+                  "prefix": "PHYS",
+                  "courseNumber": "100B",
+                  "title": "General Physics II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Physics & Astronomy",
+                  "departmentParentId": 10864,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 222,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": "32b5fd95-e8ec-4d2b-b5a2-08dda831f292",
+                  "courseIdentifierParentId": 47902,
+                  "prefix": "PHYS",
+                  "courseNumber": "100BL",
+                  "title": "General Physics II Laboratory",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Physics & Astronomy",
+                  "departmentParentId": 10864,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 222,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "seriesPathways": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Series",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Series",
+                "seriesAttributes": [],
+                "seriesCourseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "109975b1-9dff-43d8-b662-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 351805,
+                  "prefix": "PHYS",
+                  "courseNumber": "106",
+                  "title": "General Physics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 303267,
+                  "prefix": "PHYS",
+                  "courseNumber": "111",
+                  "title": "Introductory Physics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "S2012",
+                  "endTerm": "",
+                  "department": "Physics",
+                  "departmentParentId": 10800,
+                  "prefixDescription": "Physics",
+                  "prefixParentId": 276,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 351805,
+                      "prefix": "PHYS",
+                      "courseNumber": "106",
+                      "title": "General Physics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 351805,
+                          "prefix": "PHYS",
+                          "courseNumber": "106",
+                          "title": "General Physics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 303267,
+                      "prefix": "PHYS",
+                      "courseNumber": "111",
+                      "title": "Introductory Physics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "S2012",
+                      "endTerm": "",
+                      "department": "Physics",
+                      "departmentParentId": 10800,
+                      "prefixDescription": "Physics",
+                      "prefixParentId": 276,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 303267,
+                          "prefix": "PHYS",
+                          "courseNumber": "111",
+                          "title": "Introductory Physics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "S2012",
+                          "endTerm": "",
+                          "department": "Physics",
+                          "departmentParentId": 10800,
+                          "prefixDescription": "Physics",
+                          "prefixParentId": 276,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "03fdfe45-80a4-4053-65ba-08dda83225b1",
+                  "sendingArticulationId": "dec16aac-2d27-46f0-7930-08dda8322596",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "109975b1-9dff-43d8-b662-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-6",
+          "position": 6,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 171958,
+              "prefix": "PSY",
+              "courseNumber": "150",
+              "title": "Introduction to Psychology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2011",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11192,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4630,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "b8b2f664-785c-44be-b666-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171958,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2011",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11192,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4630,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "b8b2f664-785c-44be-b666-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156537,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 279543,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000H",
+                  "title": "Introduction to Psychology - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156537,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156537,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 279543,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000H",
+                      "title": "Introduction to Psychology - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 279543,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000H",
+                          "title": "Introduction to Psychology - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "e3758526-c99e-4241-6b06-08dda83225b1",
+                  "sendingArticulationId": "e56c04a7-7208-4c11-051a-08dda8322597",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "b8b2f664-785c-44be-b666-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e9a76f45-6887-ef11-8474-000d3a37e3b6:section-7",
+          "position": 7,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 172007,
+              "prefix": "SOC",
+              "courseNumber": "150",
+              "title": "Introductory Sociology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12061,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9015,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "c6723fab-dd22-48ec-b664-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 172007,
+                  "prefix": "SOC",
+                  "courseNumber": "150",
+                  "title": "Introductory Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12061,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9015,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c6723fab-dd22-48ec-b664-08dda831fbfa",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135841,
+                  "prefix": "SOC",
+                  "courseNumber": "101",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 244266,
+                  "prefix": "SOC",
+                  "courseNumber": "101H",
+                  "title": "Introduction to Sociology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135841,
+                      "prefix": "SOC",
+                      "courseNumber": "101",
+                      "title": "Introduction to Sociology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135841,
+                          "prefix": "SOC",
+                          "courseNumber": "101",
+                          "title": "Introduction to Sociology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 244266,
+                      "prefix": "SOC",
+                      "courseNumber": "101H",
+                      "title": "Introduction to Sociology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 244266,
+                          "prefix": "SOC",
+                          "courseNumber": "101H",
+                          "title": "Introduction to Sociology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "5db76de2-b7a5-41c8-6b23-08dda83225b1",
+                  "sendingArticulationId": "a1a45cc8-35de-4174-06a2-08dda8322597",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "c6723fab-dd22-48ec-b664-08dda831fbfa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e6a76f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR PREPARATION COURSES",
+      "position": 2,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "e6a76f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 308608,
+              "prefix": "MATH",
+              "courseNumber": "106",
+              "title": "Mathematical Foundations for Non-Calculus Physics",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "S2019",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8979,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9949,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "33bb117f-6489-4679-b65b-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 308608,
+                  "prefix": "MATH",
+                  "courseNumber": "106",
+                  "title": "Mathematical Foundations for Non-Calculus Physics",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "S2019",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8979,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9949,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "33bb117f-6489-4679-b65b-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "33bb117f-6489-4679-b65b-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e6a76f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 171503,
+              "prefix": "MATH",
+              "courseNumber": "105",
+              "title": "Pre-Calculus II",
+              "minUnits": 5,
+              "maxUnits": 5,
+              "beginTerm": "F2017",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8979,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9949,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "5274e69b-a221-4ae2-b65c-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171503,
+                  "prefix": "MATH",
+                  "courseNumber": "105",
+                  "title": "Pre-Calculus II",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8979,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9949,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "5274e69b-a221-4ae2-b65c-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 285273,
+                  "prefix": "MATH",
+                  "courseNumber": "137",
+                  "title": "College Algebra",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "Su2019",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 355869,
+                  "prefix": "MATH",
+                  "courseNumber": "138",
+                  "title": "Precalculus - College Algebra and Trigonometry",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2019",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 285273,
+                      "prefix": "MATH",
+                      "courseNumber": "137",
+                      "title": "College Algebra",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "Su2019",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 355869,
+                      "prefix": "MATH",
+                      "courseNumber": "138",
+                      "title": "Precalculus - College Algebra and Trigonometry",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2019",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 285273,
+                          "prefix": "MATH",
+                          "courseNumber": "137",
+                          "title": "College Algebra",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "Su2019",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 355869,
+                          "prefix": "MATH",
+                          "courseNumber": "138",
+                          "title": "Precalculus - College Algebra and Trigonometry",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2019",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [
+            {
+              "id": null,
+              "position": 0,
+              "content": "Acceptable substitute"
+            },
+            {
+              "id": null,
+              "position": 1,
+              "content": "**REFER TO TOP OF AGREEMENT**"
+            }
+          ],
+          "rawTemplateCellIds": [
+            "5274e69b-a221-4ae2-b65c-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "e6a76f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 201784,
+              "prefix": "MATH",
+              "courseNumber": "102",
+              "title": "Pre-Calculus I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2017",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8979,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9949,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 233004,
+              "prefix": "MATH",
+              "courseNumber": "104",
+              "title": "Trigonometry and Analytic Geometry",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2002",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 8979,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9949,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "921aed37-6305-4ee4-b65d-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 201784,
+                  "prefix": "MATH",
+                  "courseNumber": "102",
+                  "title": "Pre-Calculus I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8979,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9949,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "0bb2f6ce-10dc-4ae5-b65e-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 233004,
+                  "prefix": "MATH",
+                  "courseNumber": "104",
+                  "title": "Trigonometry and Analytic Geometry",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2002",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 8979,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9949,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "921aed37-6305-4ee4-b65d-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "0bb2f6ce-10dc-4ae5-b65e-08dda831fbfa",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [
+            {
+              "id": null,
+              "position": 0,
+              "content": "Acceptable substitute"
+            },
+            {
+              "id": null,
+              "position": 1,
+              "content": "Articulates as a sequence only"
+            },
+            {
+              "id": null,
+              "position": 2,
+              "content": "**REFER TO TOP OF AGREEMENT**"
+            }
+          ],
+          "rawTemplateCellIds": [
+            "921aed37-6305-4ee4-b65d-08dda831fbfa",
+            "0bb2f6ce-10dc-4ae5-b65e-08dda831fbfa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f3a76f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "CLINICAL COURSES",
+      "position": 4,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "f3a76f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 46808,
+              "prefix": "HSCI",
+              "courseNumber": "280",
+              "title": "Radiologic Technology: Clinical Education I",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "S2007",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "12a3e991-8929-42ca-b667-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 46808,
+                  "prefix": "HSCI",
+                  "courseNumber": "280",
+                  "title": "Radiologic Technology: Clinical Education I",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "12a3e991-8929-42ca-b667-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 300778,
+                  "prefix": "RT",
+                  "courseNumber": "191",
+                  "title": "Radiographic Technology Clinical Practicum I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 300778,
+                      "prefix": "RT",
+                      "courseNumber": "191",
+                      "title": "Radiographic Technology Clinical Practicum I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F2018",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 300778,
+                          "prefix": "RT",
+                          "courseNumber": "191",
+                          "title": "Radiographic Technology Clinical Practicum I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F2018",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "12a3e991-8929-42ca-b667-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "f3a76f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 45217,
+              "prefix": "HSCI",
+              "courseNumber": "281",
+              "title": "Radiologic Technology: Clinical Education II",
+              "minUnits": 2,
+              "maxUnits": 2,
+              "beginTerm": "S2007",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e34fa466-0fdb-43b7-16ae-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 45217,
+                  "prefix": "HSCI",
+                  "courseNumber": "281",
+                  "title": "Radiologic Technology: Clinical Education II",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e34fa466-0fdb-43b7-16ae-08dda50e1c0a",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 271545,
+                  "prefix": "RT",
+                  "courseNumber": "192",
+                  "title": "Radiographic Technology Clinical Practicum 2",
+                  "minUnits": 5.1,
+                  "maxUnits": 5.1,
+                  "beginTerm": "F2013",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 271545,
+                      "prefix": "RT",
+                      "courseNumber": "192",
+                      "title": "Radiographic Technology Clinical Practicum 2",
+                      "minUnits": 5.1,
+                      "maxUnits": 5.1,
+                      "beginTerm": "F2013",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 271545,
+                          "prefix": "RT",
+                          "courseNumber": "192",
+                          "title": "Radiographic Technology Clinical Practicum 2",
+                          "minUnits": 5.1,
+                          "maxUnits": 5.1,
+                          "beginTerm": "F2013",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "e34fa466-0fdb-43b7-16ae-08dda50e1c0a"
+          ]
+        },
+        {
+          "id": "f3a76f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330959,
+              "prefix": "HSCI",
+              "courseNumber": "282",
+              "title": "Radiologic Technology: Clinical Education III",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "35e7124e-3c4e-400a-16af-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330959,
+                  "prefix": "HSCI",
+                  "courseNumber": "282",
+                  "title": "Radiologic Technology: Clinical Education III",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "35e7124e-3c4e-400a-16af-08dda50e1c0a",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 289579,
+                  "prefix": "RT",
+                  "courseNumber": "293",
+                  "title": "Radiographic Technology Clinical Practicum 3",
+                  "minUnits": 7,
+                  "maxUnits": 7,
+                  "beginTerm": "Su2018",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 289579,
+                      "prefix": "RT",
+                      "courseNumber": "293",
+                      "title": "Radiographic Technology Clinical Practicum 3",
+                      "minUnits": 7,
+                      "maxUnits": 7,
+                      "beginTerm": "Su2018",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 289579,
+                          "prefix": "RT",
+                          "courseNumber": "293",
+                          "title": "Radiographic Technology Clinical Practicum 3",
+                          "minUnits": 7,
+                          "maxUnits": 7,
+                          "beginTerm": "Su2018",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "35e7124e-3c4e-400a-16af-08dda50e1c0a"
+          ]
+        },
+        {
+          "id": "f3a76f45-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 121518,
+              "prefix": "HSCI",
+              "courseNumber": "283",
+              "title": "Radiologic Technology: Clinical Education IV",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "S2007",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "3afa86c6-57a3-4cf6-16b0-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 121518,
+                  "prefix": "HSCI",
+                  "courseNumber": "283",
+                  "title": "Radiologic Technology: Clinical Education IV",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3afa86c6-57a3-4cf6-16b0-08dda50e1c0a",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 300783,
+                  "prefix": "RT",
+                  "courseNumber": "294",
+                  "title": "Radiographic Technology Clinical Practicum 4",
+                  "minUnits": 8,
+                  "maxUnits": 8,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 300783,
+                      "prefix": "RT",
+                      "courseNumber": "294",
+                      "title": "Radiographic Technology Clinical Practicum 4",
+                      "minUnits": 8,
+                      "maxUnits": 8,
+                      "beginTerm": "F2018",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 300783,
+                          "prefix": "RT",
+                          "courseNumber": "294",
+                          "title": "Radiographic Technology Clinical Practicum 4",
+                          "minUnits": 8,
+                          "maxUnits": 8,
+                          "beginTerm": "F2018",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "3afa86c6-57a3-4cf6-16b0-08dda50e1c0a"
+          ]
+        },
+        {
+          "id": "f3a76f45-6887-ef11-8474-000d3a37e3b6:section-4",
+          "position": 4,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 171694,
+              "prefix": "HSCI",
+              "courseNumber": "284",
+              "title": "Radiologic Technology: Clinical Education V",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "S2007",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ddf96a40-edfb-474a-16b1-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171694,
+                  "prefix": "HSCI",
+                  "courseNumber": "284",
+                  "title": "Radiologic Technology: Clinical Education V",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2007",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ddf96a40-edfb-474a-16b1-08dda50e1c0a",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 291926,
+                  "prefix": "RT",
+                  "courseNumber": "295",
+                  "title": "Radiographic Technology Clinical Practicum 5",
+                  "minUnits": 8.6,
+                  "maxUnits": 8.6,
+                  "beginTerm": "F2013",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 291926,
+                      "prefix": "RT",
+                      "courseNumber": "295",
+                      "title": "Radiographic Technology Clinical Practicum 5",
+                      "minUnits": 8.6,
+                      "maxUnits": 8.6,
+                      "beginTerm": "F2013",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 291926,
+                          "prefix": "RT",
+                          "courseNumber": "295",
+                          "title": "Radiographic Technology Clinical Practicum 5",
+                          "minUnits": 8.6,
+                          "maxUnits": 8.6,
+                          "beginTerm": "F2013",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ddf96a40-edfb-474a-16b1-08dda50e1c0a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03a86f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "PROFESSIONAL COURSES",
+      "position": 6,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "03a86f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 171533,
+              "prefix": "HSCI",
+              "courseNumber": "181",
+              "title": "Medical Imaging Sciences I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "1beb5557-150b-4af6-b66c-08dda831fbfa",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171533,
+                  "prefix": "HSCI",
+                  "courseNumber": "181",
+                  "title": "Medical Imaging Sciences I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "1beb5557-150b-4af6-b66c-08dda831fbfa",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 144263,
+                  "prefix": "RT",
+                  "courseNumber": "109",
+                  "title": "Principles of Radiographic Exposure",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2002",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 229028,
+                  "prefix": "RT",
+                  "courseNumber": "119",
+                  "title": "Radiological Technology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2012",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 144263,
+                      "prefix": "RT",
+                      "courseNumber": "109",
+                      "title": "Principles of Radiographic Exposure",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2002",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 229028,
+                      "prefix": "RT",
+                      "courseNumber": "119",
+                      "title": "Radiological Technology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "S2012",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 144263,
+                          "prefix": "RT",
+                          "courseNumber": "109",
+                          "title": "Principles of Radiographic Exposure",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2002",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 229028,
+                          "prefix": "RT",
+                          "courseNumber": "119",
+                          "title": "Radiological Technology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "S2012",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "1beb5557-150b-4af6-b66c-08dda831fbfa"
+          ]
+        },
+        {
+          "id": "03a86f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 158505,
+              "prefix": "HSCI",
+              "courseNumber": "182",
+              "title": "Medical Imaging Sciences II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "c7b53e6c-0e61-4bd0-16b2-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 158505,
+                  "prefix": "HSCI",
+                  "courseNumber": "182",
+                  "title": "Medical Imaging Sciences II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "c7b53e6c-0e61-4bd0-16b2-08dda50e1c0a",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Course Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "c7b53e6c-0e61-4bd0-16b2-08dda50e1c0a"
+          ]
+        },
+        {
+          "id": "03a86f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 282943,
+              "prefix": "HSCI",
+              "courseNumber": "285",
+              "title": "Radiographic Anatomy and Positioning I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "285f467d-2ef9-4a93-16b3-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282943,
+                  "prefix": "HSCI",
+                  "courseNumber": "285",
+                  "title": "Radiographic Anatomy and Positioning I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "285f467d-2ef9-4a93-16b3-08dda50e1c0a",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 290286,
+                  "prefix": "RT",
+                  "courseNumber": "102",
+                  "title": "Fundamentals of Radiographic Positioning and Procedures I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 118681,
+                  "prefix": "RT",
+                  "courseNumber": "120",
+                  "title": "Patient Care in Radiography",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2008",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 290286,
+                      "prefix": "RT",
+                      "courseNumber": "102",
+                      "title": "Fundamentals of Radiographic Positioning and Procedures I",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 118681,
+                      "prefix": "RT",
+                      "courseNumber": "120",
+                      "title": "Patient Care in Radiography",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2008",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 290286,
+                          "prefix": "RT",
+                          "courseNumber": "102",
+                          "title": "Fundamentals of Radiographic Positioning and Procedures I",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 118681,
+                          "prefix": "RT",
+                          "courseNumber": "120",
+                          "title": "Patient Care in Radiography",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2008",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "285f467d-2ef9-4a93-16b3-08dda50e1c0a"
+          ]
+        },
+        {
+          "id": "03a86f45-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 158259,
+              "prefix": "HSCI",
+              "courseNumber": "286",
+              "title": "Radiographic Anatomy and Positioning II",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ae8d7c48-aebe-4679-16b4-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 158259,
+                  "prefix": "HSCI",
+                  "courseNumber": "286",
+                  "title": "Radiographic Anatomy and Positioning II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ae8d7c48-aebe-4679-16b4-08dda50e1c0a",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 290289,
+                  "prefix": "RT",
+                  "courseNumber": "103",
+                  "title": "Fundamentals of Radiographic Positioning and Procedures II",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 233445,
+                  "prefix": "RT",
+                  "courseNumber": "250",
+                  "title": "Principles and Applications of Cross-Sectional Anatomy in Imaging",
+                  "minUnits": 2,
+                  "maxUnits": 2,
+                  "beginTerm": "F2002",
+                  "endTerm": "",
+                  "department": "Radiologic Technology",
+                  "departmentParentId": 11446,
+                  "prefixDescription": "Radiologic Technology",
+                  "prefixParentId": 4291,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 290289,
+                      "prefix": "RT",
+                      "courseNumber": "103",
+                      "title": "Fundamentals of Radiographic Positioning and Procedures II",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 233445,
+                      "prefix": "RT",
+                      "courseNumber": "250",
+                      "title": "Principles and Applications of Cross-Sectional Anatomy in Imaging",
+                      "minUnits": 2,
+                      "maxUnits": 2,
+                      "beginTerm": "F2002",
+                      "endTerm": "",
+                      "department": "Radiologic Technology",
+                      "departmentParentId": 11446,
+                      "prefixDescription": "Radiologic Technology",
+                      "prefixParentId": 4291,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 290289,
+                          "prefix": "RT",
+                          "courseNumber": "103",
+                          "title": "Fundamentals of Radiographic Positioning and Procedures II",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 233445,
+                          "prefix": "RT",
+                          "courseNumber": "250",
+                          "title": "Principles and Applications of Cross-Sectional Anatomy in Imaging",
+                          "minUnits": 2,
+                          "maxUnits": 2,
+                          "beginTerm": "F2002",
+                          "endTerm": "",
+                          "department": "Radiologic Technology",
+                          "departmentParentId": 11446,
+                          "prefixDescription": "Radiologic Technology",
+                          "prefixParentId": 4291,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ae8d7c48-aebe-4679-16b4-08dda50e1c0a"
+          ]
+        },
+        {
+          "id": "03a86f45-6887-ef11-8474-000d3a37e3b6:section-4",
+          "position": 4,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 417355,
+              "prefix": "HSCI",
+              "courseNumber": "287",
+              "title": "Cultural Awareness and Patient Care in Medical Imaging",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Health Sciences",
+              "departmentParentId": 6859,
+              "prefixDescription": "Health Sciences",
+              "prefixParentId": 7481,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "418555c1-66c8-4c30-16b5-08dda50e1c0a",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 417355,
+                  "prefix": "HSCI",
+                  "courseNumber": "287",
+                  "title": "Cultural Awareness and Patient Care in Medical Imaging",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Health Sciences",
+                  "departmentParentId": 6859,
+                  "prefixDescription": "Health Sciences",
+                  "prefixParentId": 7481,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "418555c1-66c8-4c30-16b5-08dda50e1c0a",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "418555c1-66c8-4c30-16b5-08dda50e1c0a"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "f8a76f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "c9a86f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "This agreement displays all lower-division courses required in the major: CSU Northridge courses on the left, approved (articulated) transfer courses to the right. General education (Cal-GETC or CSU Northridge GE) and upper-division courses are also required to complete the bachelor's degree. Completion of all coursework listed in this agreement is not mandatory prior to admission. For CSU Northridge Undergraduate Admission Requirements , refer to Upper Division Transfer . Some coursework may be satisfied by Advanced Placement exams completed in high school. Visit AP Credit for information. Additional information about the major is available in the CSUN University Catalog . Questions regarding this agreement may be directed to: articulation@csun.edu .",
+      "contentHtml": "<p><strong>This agreement displays all lower-division courses required in the major:</strong> CSU Northridge courses on the left, approved (articulated) transfer courses to the right. General education (Cal-GETC or CSU Northridge GE) and upper-division courses are also required to complete the bachelor's degree.</p><p><br></p><p>Completion of all coursework listed in this agreement is not mandatory prior to admission. For CSU Northridge Undergraduate <strong>Admission Requirements</strong>, refer to <a href=\"http://www.csun.edu/admissions-records/apply-upper-division-transfer-student#eligible\" rel=\"noopener noreferrer\" target=\"_blank\">Upper Division Transfer</a>.</p><p><br></p><p>Some coursework may be satisfied by Advanced Placement exams completed in high school. Visit <a href=\"http://catalog.csun.edu/policies/advanced-placement-ap-credit/\" rel=\"noopener noreferrer\" target=\"_blank\">AP Credit</a> for information. Additional information about the major is available in the <a href=\"http://catalog.csun.edu/programs/major/\" rel=\"noopener noreferrer\" target=\"_blank\">CSUN University Catalog</a>.</p><p><br></p><p>Questions regarding this agreement may be directed to: <a href=\"mailto:articulation@csun.edu\" rel=\"noopener noreferrer\" target=\"_blank\">articulation@csun.edu</a>.</p>"
+    },
+    {
+      "id": "f5a76f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 3,
+      "content": "Radiologic Sciences - General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "07a86f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 4,
+      "content": "Admission to CSUN and admission to the Radiologic Sciences program are separate procedures requiring two separate applications. Completion of the prerequisite criteria and acceptance to CSUN does not guarantee acceptance to the professional program because of limited clinical placements. Non-current students may meet with the CSUN B.S. Radiologic Science advisor at least one year before their planned transfer to CSUN. An appointment may be made with a dedicated BSRS advisor directly through https://hsci.setmore.com/ . The advisor will provide guidance and confirm prerequisite course and requirement progress/completion. Pre-professional courses must be completed or in-progress to be eligible for the Professional phase of the program. Refer to the Program website for additional information. Mathematics: Either Pre-Calculus II or both ( Pre-Calculus I + Trigonometry and Analytic Geometry ) or equivalent transfer courses are accepted to satisfy the Mathematical Foundations for Non-Calculus Physics requirement.",
+      "contentHtml": "<p>Admission to CSUN and admission to the Radiologic Sciences program are separate procedures requiring two separate applications. Completion of the prerequisite criteria and acceptance to CSUN does not guarantee acceptance to the professional program because of limited clinical placements.</p><p><br></p><p>Non-current students may meet with the CSUN B.S. Radiologic Science advisor at least one year before their planned transfer to CSUN. An appointment may be made with a dedicated BSRS advisor directly through <a href=\"https://hsci.setmore.com/\" rel=\"noopener noreferrer\" target=\"_blank\">https://hsci.setmore.com/</a>. The advisor will provide guidance and confirm prerequisite course and requirement progress/completion. Pre-professional courses must be completed or in-progress to be eligible for the Professional phase of the program. Refer to the <a href=\"https://w2.csun.edu/health-human-development/health-sciences/programs/radiologic-sciences\" rel=\"noopener noreferrer\" target=\"_blank\">Program website </a>for additional information.</p><p><br></p><p>Mathematics: Either <em>Pre-Calculus II </em><strong>or</strong> both (<em>Pre-Calculus I + Trigonometry and Analytic Geometry</em>) <strong>or </strong>equivalent transfer courses are accepted to satisfy the <em>Mathematical Foundations for Non-Calculus Physics</em> requirement.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:57.939Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=42&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F42%2FMajor%2F97c851df-8994-472f-424b-08dda831fbe0&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F42%2FMajor%2F97c851df-8994-472f-424b-08dda831fbe0",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F42%2FMajor%2F97c851df-8994-472f-424b-08dda831fbe0",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-42/major/c68a94ee5fb4f48f.json",
+    "templateAssetCount": 11,
+    "articulationCount": 18
+  }
+}

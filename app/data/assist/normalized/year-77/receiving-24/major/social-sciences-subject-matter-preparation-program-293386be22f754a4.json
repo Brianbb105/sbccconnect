@@ -1,0 +1,1702 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 24,
+    "name": "California State University, Stanislaus",
+    "code": "CSUSTAN",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/24/Major/3a9618d5-3d56-4805-d872-08ded63e51e8",
+    "type": "Major",
+    "name": "Social Sciences Subject Matter Preparation Program",
+    "publishDate": "2026-08-10T21:14:10.8231125",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "edeb6545-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "edeb6545-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 157935,
+              "prefix": "ECON",
+              "courseNumber": "2500",
+              "title": "Principles of Macroeconomics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4235,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1201,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 136440,
+              "prefix": "ECON",
+              "courseNumber": "2510",
+              "title": "Principles of Microeconomics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4235,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1201,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "19325a71-81db-44ab-61a4-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 157935,
+                  "prefix": "ECON",
+                  "courseNumber": "2500",
+                  "title": "Principles of Macroeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4235,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1201,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "faa5c871-20ac-4600-61a5-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136440,
+                  "prefix": "ECON",
+                  "courseNumber": "2510",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4235,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1201,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "19325a71-81db-44ab-61a4-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156509,
+                  "prefix": "ECON",
+                  "courseNumber": "C2002",
+                  "title": "Principles of Macroeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156509,
+                      "prefix": "ECON",
+                      "courseNumber": "C2002",
+                      "title": "Principles of Macroeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156509,
+                          "prefix": "ECON",
+                          "courseNumber": "C2002",
+                          "title": "Principles of Macroeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "faa5c871-20ac-4600-61a5-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156521,
+                  "prefix": "ECON",
+                  "courseNumber": "C2001",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156521,
+                      "prefix": "ECON",
+                      "courseNumber": "C2001",
+                      "title": "Principles of Microeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156521,
+                          "prefix": "ECON",
+                          "courseNumber": "C2001",
+                          "title": "Principles of Microeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "19325a71-81db-44ab-61a4-08ded63e52af",
+            "faa5c871-20ac-4600-61a5-08ded63e52af"
+          ]
+        },
+        {
+          "id": "edeb6545-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 136350,
+              "prefix": "GEOG",
+              "courseNumber": "2400",
+              "title": "Global Cultures and Environments",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2021",
+              "endTerm": "",
+              "department": "Geography",
+              "departmentParentId": 6143,
+              "prefixDescription": "Geography",
+              "prefixParentId": 10509,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "ad944753-4764-4b4f-61a6-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136350,
+                  "prefix": "GEOG",
+                  "courseNumber": "2400",
+                  "title": "Global Cultures and Environments",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "Geography",
+                  "departmentParentId": 6143,
+                  "prefixDescription": "Geography",
+                  "prefixParentId": 10509,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ad944753-4764-4b4f-61a6-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 264757,
+                  "prefix": "GEOG",
+                  "courseNumber": "104",
+                  "title": "World Regional Geography",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2011",
+                  "endTerm": "",
+                  "department": "Geography",
+                  "departmentParentId": 6197,
+                  "prefixDescription": "Geography",
+                  "prefixParentId": 10579,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 264757,
+                      "prefix": "GEOG",
+                      "courseNumber": "104",
+                      "title": "World Regional Geography",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2011",
+                      "endTerm": "",
+                      "department": "Geography",
+                      "departmentParentId": 6197,
+                      "prefixDescription": "Geography",
+                      "prefixParentId": 10579,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 264757,
+                          "prefix": "GEOG",
+                          "courseNumber": "104",
+                          "title": "World Regional Geography",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2011",
+                          "endTerm": "",
+                          "department": "Geography",
+                          "departmentParentId": 6197,
+                          "prefixDescription": "Geography",
+                          "prefixParentId": 10579,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "ad944753-4764-4b4f-61a6-08ded63e52af"
+          ]
+        },
+        {
+          "id": "edeb6545-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 136408,
+              "prefix": "HIST",
+              "courseNumber": "1010",
+              "title": "World Civilizations I",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6939,
+              "prefixDescription": "History",
+              "prefixParentId": 2923,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 330656,
+              "prefix": "HIST",
+              "courseNumber": "1020",
+              "title": "World Civilizations II",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "History",
+              "departmentParentId": 6939,
+              "prefixDescription": "History",
+              "prefixParentId": 2923,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "37a7b1a4-cff0-4be4-61a7-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 136408,
+                  "prefix": "HIST",
+                  "courseNumber": "1010",
+                  "title": "World Civilizations I",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6939,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2923,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "1e285a18-b4a9-4969-61a8-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330656,
+                  "prefix": "HIST",
+                  "courseNumber": "1020",
+                  "title": "World Civilizations II",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6939,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2923,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "37a7b1a4-cff0-4be4-61a7-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 236344,
+                  "prefix": "HIST",
+                  "courseNumber": "107",
+                  "title": "World Civilization, Beginnings to 1550",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 236344,
+                      "prefix": "HIST",
+                      "courseNumber": "107",
+                      "title": "World Civilization, Beginnings to 1550",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 236344,
+                          "prefix": "HIST",
+                          "courseNumber": "107",
+                          "title": "World Civilization, Beginnings to 1550",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "1e285a18-b4a9-4969-61a8-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 246581,
+                  "prefix": "HIST",
+                  "courseNumber": "108",
+                  "title": "World Civilization, 1550 to Present",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "History",
+                  "departmentParentId": 6990,
+                  "prefixDescription": "History",
+                  "prefixParentId": 2990,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 246581,
+                      "prefix": "HIST",
+                      "courseNumber": "108",
+                      "title": "World Civilization, 1550 to Present",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2003",
+                      "endTerm": "",
+                      "department": "History",
+                      "departmentParentId": 6990,
+                      "prefixDescription": "History",
+                      "prefixParentId": 2990,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 246581,
+                          "prefix": "HIST",
+                          "courseNumber": "108",
+                          "title": "World Civilization, 1550 to Present",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2003",
+                          "endTerm": "",
+                          "department": "History",
+                          "departmentParentId": 6990,
+                          "prefixDescription": "History",
+                          "prefixParentId": 2990,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "37a7b1a4-cff0-4be4-61a7-08ded63e52af",
+            "1e285a18-b4a9-4969-61a8-08ded63e52af"
+          ]
+        },
+        {
+          "id": "edeb6545-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 330624,
+              "prefix": "PSCI",
+              "courseNumber": "1201",
+              "title": "American Government",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 11091,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1912,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "bec92c93-2c08-47d8-61a9-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330624,
+                  "prefix": "PSCI",
+                  "courseNumber": "1201",
+                  "title": "American Government",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11091,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1912,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "bec92c93-2c08-47d8-61a9-08ded63e52af",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330292,
+                  "prefix": "POLS",
+                  "courseNumber": "C1000",
+                  "title": "American Government and Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330292,
+                      "prefix": "POLS",
+                      "courseNumber": "C1000",
+                      "title": "American Government and Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330292,
+                          "prefix": "POLS",
+                          "courseNumber": "C1000",
+                          "title": "American Government and Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "bec92c93-2c08-47d8-61a9-08ded63e52af"
+          ]
+        },
+        {
+          "id": "edeb6545-6887-ef11-8474-000d3a37e3b6:section-4",
+          "position": 4,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 171101,
+              "prefix": "SOCL",
+              "courseNumber": "1010",
+              "title": "Introduction to Sociology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1993",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12170,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 8998,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 157869,
+              "prefix": "ANTH",
+              "courseNumber": "2060",
+              "title": "Intro to Cultural Anthropology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "Anthropology",
+              "departmentParentId": 704,
+              "prefixDescription": "Anthropology",
+              "prefixParentId": 10701,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 171197,
+              "prefix": "PSYC",
+              "courseNumber": "2010",
+              "title": "Introduction to Psychology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1997",
+              "endTerm": "",
+              "department": "Psychology",
+              "departmentParentId": 11230,
+              "prefixDescription": "Psychology",
+              "prefixParentId": 4612,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "781c89f5-bc40-4ad3-61aa-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171101,
+                  "prefix": "SOCL",
+                  "courseNumber": "1010",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1993",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12170,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 8998,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "6105e6bd-9186-45c0-61ab-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 157869,
+                  "prefix": "ANTH",
+                  "courseNumber": "2060",
+                  "title": "Intro to Cultural Anthropology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Anthropology",
+                  "departmentParentId": 704,
+                  "prefixDescription": "Anthropology",
+                  "prefixParentId": 10701,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "ae00086b-9d11-4c4e-61ac-08ded63e52af",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 171197,
+                  "prefix": "PSYC",
+                  "courseNumber": "2010",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1997",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11230,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4612,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "781c89f5-bc40-4ad3-61aa-08ded63e52af",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135841,
+                  "prefix": "SOC",
+                  "courseNumber": "101",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 244266,
+                  "prefix": "SOC",
+                  "courseNumber": "101H",
+                  "title": "Introduction to Sociology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "F2027",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135841,
+                      "prefix": "SOC",
+                      "courseNumber": "101",
+                      "title": "Introduction to Sociology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135841,
+                          "prefix": "SOC",
+                          "courseNumber": "101",
+                          "title": "Introduction to Sociology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 244266,
+                      "prefix": "SOC",
+                      "courseNumber": "101H",
+                      "title": "Introduction to Sociology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "F2027",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 244266,
+                          "prefix": "SOC",
+                          "courseNumber": "101H",
+                          "title": "Introduction to Sociology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "F2027",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "b9ce403f-68d2-42e4-d4bd-08ded63eb1fe",
+                  "sendingArticulationId": "a747b365-662a-48b2-b6fc-08ded63ea000",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "receivingCellId": "6105e6bd-9186-45c0-61ab-08ded63e52af",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ae00086b-9d11-4c4e-61ac-08ded63e52af",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156537,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 279543,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000H",
+                  "title": "Introduction to Psychology - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156537,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156537,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 279543,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000H",
+                      "title": "Introduction to Psychology - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 279543,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000H",
+                          "title": "Introduction to Psychology - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "c1c4b3dc-5d64-41cc-d4c4-08ded63eb1fe",
+                  "sendingArticulationId": "45952f8d-9e63-475c-b715-08ded63ea000",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "781c89f5-bc40-4ad3-61aa-08ded63e52af",
+            "6105e6bd-9186-45c0-61ab-08ded63e52af",
+            "ae00086b-9d11-4c4e-61ac-08ded63e52af"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "7f3b7445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "96046645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Please note that this is an optional waiver program and not a degree program, concentration, track, or emphasis. This agreement displays all lower-division courses required in the program : Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right. Helpful resources: Academic Catalog Transfer Admissions Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the Stanislaus State Articulation Website for contact information.",
+      "contentHtml": "<h2><strong style=\"font-size: 20px; color: rgb(29, 32, 36);\">Please note that this is an optional waiver program and not a degree program, concentration, track, or emphasis.&nbsp;</strong></h2><p><br></p><p>This agreement displays all<strong> lower-division courses required in the program</strong>: Stanislaus State courses or requirements on the left, approved (articulated) transfer courses on the right.</p><p><br></p><p><strong>Helpful resources: </strong></p><p><a href=\"https://catalog.csustan.edu/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">Academic Catalog</a></p><p><a href=\"https://www.csustan.edu/undergrad/transfer-admission\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admissions</a></p><p><br></p><p>Questions regarding this agreement may be directed to the Stanislaus State Articulation Analyst. Please visit the <a href=\"https://www.csustan.edu/articulation\" rel=\"noopener noreferrer\" target=\"_blank\">Stanislaus State Articulation Website</a> for contact information.</p>"
+    },
+    {
+      "id": "2b367445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "About the Major",
+      "contentHtml": null
+    },
+    {
+      "id": "c5ea6545-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "is a program of courses for students who are planning to apply for admission to the Social Sciences single subject credential program at Stanislaus State. This program is approved by the California Commission on Teacher Credentialing in Sacramento. Other public or private universities, such as Chapman and National, also require this or an equivalent CCTC-approved teacher credential subject matter preparation program. In addition to this or an equivalent credential subject matter preparation program, students must complete a bachelor’s degree. Students completing the single subject matter preparation program are advised to major in Social Sciences with a concentration in History, Political Science, and Geography, as nearly all courses in the 38-unit Social Sciences major with the above concentration also count in this program. Students must maintain a grade point average of 2.85 to successfully complete the program. Students have the option to take the Single Subject CSET (California Subject Examinations for Teachers). Those who pass do not need to complete this or any other credential preparation program to be accepted into a single subject credential program for social sciences. Exam fee, testing dates, and more information is available at the Stanislaus State Credential Processing Center in DBH 303 (on the Stanislaus State Turlock Campus), or by calling (209) 667-3534. Students planning to complete this program must contact the Coordinator of Social Sciences for advisement and an evaluation of courses taken elsewhere that may satisfy requirements. The coordinator is also the officer who signs the final forms certifying to the Credential Processing Center that the student has satisfactorily completed the single subject matter preparation program and has met grade point average requirements. Please note that this is an optional waiver program and not a degree program, concentration, track, or emphasis. Students intending to enter the Credential Program should consult the Teacher Education section of the Academic Catalog for additional requirements. Please contact the Department of Economics, Agricultural Studies, and Social Sciences for more information.",
+      "contentHtml": "<p>is a program of courses for students who are planning to apply for admission to the Social Sciences single subject credential program at Stanislaus State. This program is approved by the California Commission on Teacher Credentialing in Sacramento. Other public or private universities, such as Chapman and National, also require this or an equivalent CCTC-approved teacher credential subject matter preparation program.</p><p><br></p><p>In addition to this or an equivalent credential subject matter preparation program, students must complete a bachelor’s degree. Students completing the single subject matter preparation program are advised to major in <a href=\"https://catalog.csustan.edu/preview_program.php?catoid=35&amp;poid=7957&amp;returnto=6777\" rel=\"noopener noreferrer\" target=\"_blank\">Social Sciences</a> with a concentration in History, Political Science, and Geography, as nearly all courses in the 38-unit Social Sciences major with the above concentration also count in this program. Students must maintain a grade point average of 2.85 to successfully complete the program. Students have the option to take the Single Subject CSET (California Subject Examinations for Teachers). Those who pass do not need to complete this or any other credential preparation program to be accepted into a single subject credential program for social sciences. Exam fee, testing dates, and more information is available at the Stanislaus State Credential Processing Center in DBH 303 (on the Stanislaus State Turlock Campus), or by calling (209) 667-3534.</p><p><br></p><p>Students planning to complete this program must contact the Coordinator of Social Sciences for advisement and an evaluation of courses taken elsewhere that may satisfy requirements. The coordinator is also the officer who signs the final forms certifying to the Credential Processing Center that the student has satisfactorily completed the single subject matter preparation program and has met grade point average requirements.</p><p><br></p><p>Please note that this is an optional waiver program and not a degree program, concentration, track, or emphasis. Students intending to enter the Credential Program should consult the <a href=\"https://catalog.csustan.edu/preview_entity.php?catoid=35&amp;ent_oid=1713\" rel=\"noopener noreferrer\" target=\"_blank\">Teacher Education</a> section of the <a href=\"https://catalog.csustan.edu/\" rel=\"noopener noreferrer\" target=\"_blank\">Academic Catalog</a> for additional requirements.</p><p><br></p><p>Please contact the <a href=\"https://catalog.csustan.edu/preview_entity.php?catoid=35&amp;ent_oid=1721\" rel=\"noopener noreferrer\" target=\"_blank\">Department of Economics, Agricultural Studies, and Social Sciences</a> for more information.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:46.689Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=24&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F24%2FMajor%2F3a9618d5-3d56-4805-d872-08ded63e51e8&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F24%2FMajor%2F3a9618d5-3d56-4805-d872-08ded63e51e8",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F24%2FMajor%2F3a9618d5-3d56-4805-d872-08ded63e51e8",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-24/major/293386be22f754a4.json",
+    "templateAssetCount": 6,
+    "articulationCount": 8
+  }
+}

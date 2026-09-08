@@ -1,0 +1,523 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 50,
+    "name": "California State University, Dominguez Hills",
+    "code": "CSUDH",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/50/Major/60b89147-97f9-495b-4002-08dec89fcc4a",
+    "type": "Major",
+    "name": "Political Science B.A. All Concentrations",
+    "publishDate": "2026-08-18T13:12:55.9680338",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "14ed7645-6887-ef11-8474-000d3a37e3b6",
+      "title": "Requirement Group",
+      "position": 0,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "14ed7645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [],
+          "receivingItems": [],
+          "sbccArticulations": [],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": []
+        },
+        {
+          "id": "14ed7645-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 160849,
+              "prefix": "POL",
+              "courseNumber": "100",
+              "title": "General Studies Political Science: World Perspectives",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 10961,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1941,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 155852,
+              "prefix": "POL",
+              "courseNumber": "101",
+              "title": "American Institutions",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1989",
+              "endTerm": "",
+              "department": "Political Science",
+              "departmentParentId": 10961,
+              "prefixDescription": "Political Science",
+              "prefixParentId": 1941,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "0448eb77-75cb-41c2-9d0e-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 160849,
+                  "prefix": "POL",
+                  "courseNumber": "100",
+                  "title": "General Studies Political Science: World Perspectives",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 10961,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1941,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "43e6bdd4-b214-44bc-9d0d-08dec89fcd17",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 155852,
+                  "prefix": "POL",
+                  "courseNumber": "101",
+                  "title": "American Institutions",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1989",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 10961,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1941,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "0448eb77-75cb-41c2-9d0e-08dec89fcd17",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 216326,
+                  "prefix": "POLS",
+                  "courseNumber": "121",
+                  "title": "International Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 360936,
+                  "prefix": "POLS",
+                  "courseNumber": "121H",
+                  "title": "International Politics, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2017",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 216326,
+                      "prefix": "POLS",
+                      "courseNumber": "121",
+                      "title": "International Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 216326,
+                          "prefix": "POLS",
+                          "courseNumber": "121",
+                          "title": "International Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 360936,
+                      "prefix": "POLS",
+                      "courseNumber": "121H",
+                      "title": "International Politics, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2017",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 360936,
+                          "prefix": "POLS",
+                          "courseNumber": "121H",
+                          "title": "International Politics, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2017",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "35a72bbb-dbed-4cd7-6d9a-08dec8a01552",
+                  "sendingArticulationId": "aa0913fd-34c7-4006-6090-08dec8a01421",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "43e6bdd4-b214-44bc-9d0d-08dec89fcd17",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330292,
+                  "prefix": "POLS",
+                  "courseNumber": "C1000",
+                  "title": "American Government and Politics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Political Science",
+                  "departmentParentId": 11046,
+                  "prefixDescription": "Political Science",
+                  "prefixParentId": 1988,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330292,
+                      "prefix": "POLS",
+                      "courseNumber": "C1000",
+                      "title": "American Government and Politics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Political Science",
+                      "departmentParentId": 11046,
+                      "prefixDescription": "Political Science",
+                      "prefixParentId": 1988,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330292,
+                          "prefix": "POLS",
+                          "courseNumber": "C1000",
+                          "title": "American Government and Politics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Political Science",
+                          "departmentParentId": 11046,
+                          "prefixDescription": "Political Science",
+                          "prefixParentId": 1988,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "0448eb77-75cb-41c2-9d0e-08dec89fcd17",
+            "43e6bdd4-b214-44bc-9d0d-08dec89fcd17"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "6db37645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General information",
+      "contentHtml": null
+    },
+    {
+      "id": "35f57845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Thank you for your interest in CSU Dominguez Hills! This articulation agreement displays lower-division course requirements specific to this major. Students are advised to meet with an academic counselor when planning to transfer to CSU Dominguez Hills and refer to the University Catalog to learn more about this major and its features. Detailed admissions requirements for transfer students are available on the CSUDH campus website . Completion of Statutory Requirements (United States History, Constitution and American Ideals) is a baccalaureate degree requirement for the California State University system and may be met prior to transfer with eligible California Community College (CCC) courses designated as US-1, US-2, and US-3. Completion of Statutory Requirements prior to transfer is most advantageous and strongly encouraged as a number of CCC courses that meet this requirement might also double-count for General Education.",
+      "contentHtml": "<p><strong style=\"color: rgb(78, 14, 80); font-size: 16px;\">Thank&nbsp;you&nbsp;for&nbsp;your&nbsp;interest&nbsp;in&nbsp;CSU&nbsp;Dominguez&nbsp;Hills!&nbsp;</strong><span style=\"font-size: 16px;\">This&nbsp;articulation&nbsp;agreement&nbsp;displays&nbsp;lower-division&nbsp;course&nbsp;requirements&nbsp;specific&nbsp;to&nbsp;this&nbsp;major.&nbsp;Students&nbsp;are&nbsp;advised&nbsp;to&nbsp;meet&nbsp;with&nbsp;an&nbsp;academic&nbsp;counselor&nbsp;when&nbsp;planning&nbsp;to&nbsp;transfer&nbsp;to&nbsp;CSU&nbsp;Dominguez&nbsp;Hills&nbsp;and&nbsp;refer&nbsp;to&nbsp;the&nbsp;</span><a href=\"https://catalog.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">University&nbsp;Catalog</a><span style=\"font-size: 16px;\">&nbsp;to&nbsp;learn&nbsp;more&nbsp;about&nbsp;this&nbsp;major&nbsp;and&nbsp;its&nbsp;features.&nbsp;Detailed&nbsp;</span><a href=\"https://www.csudh.edu/future-students/transfer/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">admissions&nbsp;requirements&nbsp;for&nbsp;transfer&nbsp;students</a><span style=\"font-size: 16px;\">&nbsp;are&nbsp;available&nbsp;on&nbsp;the&nbsp;CSUDH&nbsp;</span><a href=\"https://www.csudh.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">campus&nbsp;website</a><span style=\"font-size: 16px;\">.&nbsp;Completion&nbsp;of&nbsp;</span><a href=\"https://catalog.csudh.edu/general-information/baccalaureate-degrees-undergraduate-studies/university-graduation-requirements/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Statutory&nbsp;Requirements&nbsp;</a><span style=\"font-size: 16px;\">(United&nbsp;States&nbsp;History,&nbsp;Constitution&nbsp;and&nbsp;American&nbsp;Ideals)&nbsp;is&nbsp;a&nbsp;baccalaureate&nbsp;degree&nbsp;requirement&nbsp;for&nbsp;the&nbsp;California&nbsp;State&nbsp;University&nbsp;system&nbsp;and&nbsp;may&nbsp;be&nbsp;met&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;with&nbsp;eligible&nbsp;California&nbsp;Community&nbsp;College&nbsp;(CCC)&nbsp;courses&nbsp;designated&nbsp;as&nbsp;US-1,&nbsp;US-2,&nbsp;and&nbsp;US-3.&nbsp;</span><strong style=\"font-size: 16px;\">Completion&nbsp;of&nbsp;Statutory&nbsp;Requirements&nbsp;prior&nbsp;to&nbsp;transfer&nbsp;is&nbsp;most&nbsp;advantageous&nbsp;and&nbsp;strongly&nbsp;encouraged&nbsp;</strong><span style=\"font-size: 16px;\">as&nbsp;a&nbsp;number&nbsp;of&nbsp;CCC&nbsp;courses&nbsp;that&nbsp;meet&nbsp;this&nbsp;requirement&nbsp;might&nbsp;also&nbsp;double-count&nbsp;for&nbsp;General&nbsp;Education.&nbsp;</span></p>"
+    },
+    {
+      "id": "2bfd6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "Program notes",
+      "contentHtml": null
+    },
+    {
+      "id": "9dec6545-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "There are no lower division course requirements for this major ; however, as a preparation for the major, lower division courses introducing students to the discipline of political science, international relations and comparative politics also are highly recommended. Students at CSU Dominguez Hills should complete both POL 100 and 101 as a preparation for the major. POL 100 satisfies CSU GE AREA D Social Sciences. POL 101 satisfies US-2 Constitution &amp; Government and US-3 California State and Local Government graduation requirements. Transfer students must take POL 300 (Quantitative Methods of Political Analysis) at CSUDH. Political Science Department Website",
+      "contentHtml": "<ul><li><strong style=\"color: rgb(78, 14, 80); font-size: 16px;\">There are no lower division course requirements for this major</strong><span style=\"color: rgb(78, 14, 80); font-size: 16px;\">;</span><span style=\"color: rgb(29, 32, 36); font-size: 16px;\"> however, as a preparation for the major, lower division courses introducing students to the discipline of political science, international relations and comparative politics also are highly recommended. </span></li><li><span style=\"font-size: 16px;\">Students at CSU Dominguez Hills should complete both POL 100 and 101 as a preparation for the major. POL 100 satisfies CSU GE AREA D Social Sciences. POL 101 satisfies US-2 Constitution &amp; Government and US-3 California State and Local Government graduation requirements.</span></li><li><span style=\"font-size: 16px;\">﻿Transfer students must take </span><a href=\"http://csudh.smartcatalogiq.com/2019-2020/Catalog/Courses/POL-Political-Science/300/POL-300\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">POL 300</a><span style=\"font-size: 16px;\"> (Quantitative Methods of Political Analysis) at CSUDH.</span></li></ul><p><br></p><p><a href=\"https://www.csudh.edu/political-science/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Political Science Department Website</a></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:40.535Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=50&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F50%2FMajor%2F60b89147-97f9-495b-4002-08dec89fcc4a&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F50%2FMajor%2F60b89147-97f9-495b-4002-08dec89fcc4a",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F50%2FMajor%2F60b89147-97f9-495b-4002-08dec89fcc4a",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-50/major/b9dcf94bf6e0d5cb.json",
+    "templateAssetCount": 5,
+    "articulationCount": 2
+  }
+}

@@ -1,0 +1,891 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 60,
+    "name": "California State University, Sacramento",
+    "code": "CSUS",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/60/Major/eace2932-5581-4177-ad5e-08ddbf3f4ee7",
+    "type": "Major",
+    "name": "Sociology, BA",
+    "publishDate": "2025-09-17T16:18:13.4634648",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "0b786f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "PRE-MAJOR REQUIREMENTS",
+      "position": 1,
+      "logic": "AND",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "AND",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "0b786f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 158136,
+              "prefix": "SOC",
+              "courseNumber": "1",
+              "title": "Principles of Sociology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12072,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9034,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "2b46196b-d0ea-433e-656e-08ddbf3f4f04",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 158136,
+                  "prefix": "SOC",
+                  "courseNumber": "1",
+                  "title": "Principles of Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12072,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9034,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "2b46196b-d0ea-433e-656e-08ddbf3f4f04",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135841,
+                  "prefix": "SOC",
+                  "courseNumber": "101",
+                  "title": "Introduction to Sociology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 244266,
+                  "prefix": "SOC",
+                  "courseNumber": "101H",
+                  "title": "Introduction to Sociology, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2015",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135841,
+                      "prefix": "SOC",
+                      "courseNumber": "101",
+                      "title": "Introduction to Sociology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135841,
+                          "prefix": "SOC",
+                          "courseNumber": "101",
+                          "title": "Introduction to Sociology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 244266,
+                      "prefix": "SOC",
+                      "courseNumber": "101H",
+                      "title": "Introduction to Sociology, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2015",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 244266,
+                          "prefix": "SOC",
+                          "courseNumber": "101H",
+                          "title": "Introduction to Sociology, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2015",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "b7422148-1c24-4f69-666f-08ddbf3f8663",
+                  "sendingArticulationId": "0f648ad5-4cb7-4fe2-ac90-08ddbf3f85bb",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "2b46196b-d0ea-433e-656e-08ddbf3f4f04"
+          ]
+        },
+        {
+          "id": "0b786f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "AND",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "AND",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 133877,
+              "prefix": "SOC",
+              "courseNumber": "3",
+              "title": "Social Problems",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12072,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9034,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 151382,
+              "prefix": "SOC",
+              "courseNumber": "5",
+              "title": "Exploring Issues Facing Contemporary Families",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12072,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9034,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 329119,
+              "prefix": "SOC",
+              "courseNumber": "8",
+              "title": "Sense and Nonsense in Social Issues and Research",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12072,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9034,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 133868,
+              "prefix": "SOC",
+              "courseNumber": "10",
+              "title": "Issues in Crime and Social Control",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12072,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9034,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e6728e10-f8aa-4f7c-656b-08ddbf3f4f04",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 133877,
+                  "prefix": "SOC",
+                  "courseNumber": "3",
+                  "title": "Social Problems",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12072,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9034,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "5fe49864-3f62-4e4c-656d-08ddbf3f4f04",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 151382,
+                  "prefix": "SOC",
+                  "courseNumber": "5",
+                  "title": "Exploring Issues Facing Contemporary Families",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12072,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9034,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "636b6e0b-1100-4f9c-656a-08ddbf3f4f04",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 329119,
+                  "prefix": "SOC",
+                  "courseNumber": "8",
+                  "title": "Sense and Nonsense in Social Issues and Research",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12072,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9034,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "3652ba3c-c904-4588-656c-08ddbf3f4f04",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 133868,
+                  "prefix": "SOC",
+                  "courseNumber": "10",
+                  "title": "Issues in Crime and Social Control",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12072,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9034,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e6728e10-f8aa-4f7c-656b-08ddbf3f4f04",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 170152,
+                  "prefix": "SOC",
+                  "courseNumber": "109",
+                  "title": "Social Problems",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2016",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12094,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9070,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 170152,
+                      "prefix": "SOC",
+                      "courseNumber": "109",
+                      "title": "Social Problems",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "S2016",
+                      "endTerm": "",
+                      "department": "Sociology",
+                      "departmentParentId": 12094,
+                      "prefixDescription": "Sociology",
+                      "prefixParentId": 9070,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 170152,
+                          "prefix": "SOC",
+                          "courseNumber": "109",
+                          "title": "Social Problems",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "S2016",
+                          "endTerm": "",
+                          "department": "Sociology",
+                          "departmentParentId": 12094,
+                          "prefixDescription": "Sociology",
+                          "prefixParentId": 9070,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "5fe49864-3f62-4e4c-656d-08ddbf3f4f04",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "Not Articulated",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "636b6e0b-1100-4f9c-656a-08ddbf3f4f04",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Comparable Course",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3652ba3c-c904-4588-656c-08ddbf3f4f04",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Comparable Course",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFromUnits",
+              "amount": 1,
+              "amountQuantifier": "UpTo",
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "e6728e10-f8aa-4f7c-656b-08ddbf3f4f04",
+            "5fe49864-3f62-4e4c-656d-08ddbf3f4f04",
+            "636b6e0b-1100-4f9c-656a-08ddbf3f4f04",
+            "3652ba3c-c904-4588-656c-08ddbf3f4f04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "096b6573-2387-445a-9670-019326db8bbf",
+      "title": "LOWER DIVISION MAJOR PREPARATION COURSES",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "096b6573-2387-445a-9670-019326db8bbf:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 383192,
+              "prefix": "SOC",
+              "courseNumber": "2",
+              "title": "You, Sociology and the University",
+              "minUnits": 1,
+              "maxUnits": 1,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Sociology",
+              "departmentParentId": 12072,
+              "prefixDescription": "Sociology",
+              "prefixParentId": 9034,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "def25b79-9999-44de-656f-08ddbf3f4f04",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 383192,
+                  "prefix": "SOC",
+                  "courseNumber": "2",
+                  "title": "You, Sociology and the University",
+                  "minUnits": 1,
+                  "maxUnits": 1,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Sociology",
+                  "departmentParentId": 12072,
+                  "prefixDescription": "Sociology",
+                  "prefixParentId": 9034,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "def25b79-9999-44de-656f-08ddbf3f4f04",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "No Comparable Course",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "def25b79-9999-44de-656f-08ddbf3f4f04"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "07786f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "TRANSFER INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "df7b6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Thank you for your interest in Sacramento State! This articulation agreement displays the lower-division courses required in the major: Sacramento State courses on the left and approved (articulated) transfer courses on the right. Although completion of the coursework listed below is not mandatory prior to admission, students are advised to complete as much lower-division course preparation as possible prior to transfer. Additional Resources: See the University Catalog for the full listing of degree requirements for this major. Visit our Sac State Apply page for more information about our campus! Visit the Admissions website for current transfer admission requirements. Connect with an Admissions Counselor .",
+      "contentHtml": "<p><strong style=\"color: rgb(29, 32, 36); font-size: 14px;\">Thank you for your interest in Sacramento State! </strong></p><p><br></p><p><span style=\"font-size: 14px;\">This articulation agreement displays the lower-division courses required in the major: Sacramento State courses on the left and approved (articulated) transfer courses on the right. Although completion of the coursework listed below is not mandatory prior to admission, students are advised to complete as much lower-division course preparation as possible prior to transfer. </span></p><p><br></p><p><span style=\"font-size: 14px;\">Additional Resources:</span></p><ul><li><span style=\"font-size: 14px;\">See the </span><a href=\"https://catalog.csus.edu/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(41, 98, 255);\"><strong>University Catalog</strong></a><span style=\"font-size: 14px;\"> for the full listing of degree requirements for this major.</span></li><li><span style=\"font-size: 14px;\">Visit our </span><a href=\"https://www.csus.edu/apply/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(41, 98, 255);\"><strong>Sac State Apply</strong></a><span style=\"font-size: 14px;\"> page for more information about our campus!</span></li><li><span style=\"font-size: 14px;\">Visit the </span><a href=\"https://www.csus.edu/apply/admissions/application-process/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(41, 98, 255);\"><strong>Admissions website</strong></a><span style=\"font-size: 14px;\"> for current transfer admission requirements. </span></li><li><span style=\"font-size: 14px;\">Connect with an </span><a href=\"https://www.csus.edu/apply/admissions/connect-with-admissions.html\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(41, 98, 255);\"><strong>Admissions Counselor</strong></a><span style=\"font-size: 14px;\">. </span></li></ul>"
+    },
+    {
+      "id": "09786f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "MAJOR INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "0d786f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "The Pre-Major is a total of 6 units: SOC 1, and one of the following: SOC 3, SOC 5, SOC 8, or SOC 10. The Associate Degree for Transfer (ADT) in Sociology is compatible with the B.A. in Sociology at Sacramento State. Students pursuing the Associate Degree for Transfer must complete all lower-division major coursework with a \"C\" grade or better. For additional information, please visit: Department of Sociology .",
+      "contentHtml": "<ol><li><span style=\"font-size: 14px;\">The Pre-Major is a total of 6 units: SOC 1, and one of the following: SOC 3, SOC 5, SOC 8, or SOC 10.</span></li><li><span style=\"font-size: 14px;\">The Associate Degree for Transfer (ADT) in Sociology is compatible with the B.A. in Sociology at Sacramento State. Students pursuing the Associate Degree for Transfer must complete all lower-division major coursework with a \"C\" grade or better. </span></li><li><span style=\"font-size: 14px;\">For additional information, please visit: </span><a href=\"https://www.csus.edu/college/social-sciences-interdisciplinary-studies/sociology/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(41, 98, 255);\"><strong>Department of Sociology</strong></a><span style=\"font-size: 14px;\">.</span></li></ol>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:01.076Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=60&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F60%2FMajor%2Feace2932-5581-4177-ad5e-08ddbf3f4ee7&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F60%2FMajor%2Feace2932-5581-4177-ad5e-08ddbf3f4ee7",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F60%2FMajor%2Feace2932-5581-4177-ad5e-08ddbf3f4ee7",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-60/major/b48b37fb3a9dcded.json",
+    "templateAssetCount": 8,
+    "articulationCount": 6
+  }
+}

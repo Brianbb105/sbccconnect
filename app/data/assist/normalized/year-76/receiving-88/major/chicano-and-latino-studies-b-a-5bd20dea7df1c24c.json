@@ -1,0 +1,665 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 88,
+    "name": "Sonoma State University",
+    "code": "SSU",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/88/Major/b8dcb240-db3b-4aeb-5b4f-08dd9e07c477",
+    "type": "Major",
+    "name": "Chicano & Latino Studies, B.A.",
+    "publishDate": "2026-03-11T18:52:01.2994941",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "faf17645-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION ELECTIVES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "faf17645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 191538,
+              "prefix": "CALS",
+              "courseNumber": "219",
+              "title": "The Latino Experience",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "S2009",
+              "endTerm": "",
+              "department": "Chicano and Latino Studies",
+              "departmentParentId": 2409,
+              "prefixDescription": "Chicano and Latino Studies",
+              "prefixParentId": 4789,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 298558,
+              "prefix": "CALS",
+              "courseNumber": "220",
+              "title": "Latina/o Arts and Humanities",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2012",
+              "endTerm": "",
+              "department": "Chicano and Latino Studies",
+              "departmentParentId": 2409,
+              "prefixDescription": "Chicano and Latino Studies",
+              "prefixParentId": 4789,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "b5818bba-73ee-435c-66af-08dd9e07c4d5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 191538,
+                  "prefix": "CALS",
+                  "courseNumber": "219",
+                  "title": "The Latino Experience",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2009",
+                  "endTerm": "",
+                  "department": "Chicano and Latino Studies",
+                  "departmentParentId": 2409,
+                  "prefixDescription": "Chicano and Latino Studies",
+                  "prefixParentId": 4789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "b8b403ac-8867-4cb6-66b0-08dd9e07c4d5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 298558,
+                  "prefix": "CALS",
+                  "courseNumber": "220",
+                  "title": "Latina/o Arts and Humanities",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2012",
+                  "endTerm": "",
+                  "department": "Chicano and Latino Studies",
+                  "departmentParentId": 2409,
+                  "prefixDescription": "Chicano and Latino Studies",
+                  "prefixParentId": 4789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "b5818bba-73ee-435c-66af-08dd9e07c4d5",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156484,
+                  "prefix": "CHST",
+                  "courseNumber": "101",
+                  "title": "Mexican-American (Chicano) History in the U.S.",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Chicano Studies",
+                  "departmentParentId": 2433,
+                  "prefixDescription": "Chicano Studies",
+                  "prefixParentId": 4243,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156650,
+                  "prefix": "CHST",
+                  "courseNumber": "102",
+                  "title": "The Chicano and Latino in U.S. History from the 1960s to the Present",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Chicano Studies",
+                  "departmentParentId": 2433,
+                  "prefixDescription": "Chicano Studies",
+                  "prefixParentId": 4243,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156484,
+                      "prefix": "CHST",
+                      "courseNumber": "101",
+                      "title": "Mexican-American (Chicano) History in the U.S.",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Chicano Studies",
+                      "departmentParentId": 2433,
+                      "prefixDescription": "Chicano Studies",
+                      "prefixParentId": 4243,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156484,
+                          "prefix": "CHST",
+                          "courseNumber": "101",
+                          "title": "Mexican-American (Chicano) History in the U.S.",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Chicano Studies",
+                          "departmentParentId": 2433,
+                          "prefixDescription": "Chicano Studies",
+                          "prefixParentId": 4243,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156650,
+                      "prefix": "CHST",
+                      "courseNumber": "102",
+                      "title": "The Chicano and Latino in U.S. History from the 1960s to the Present",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Chicano Studies",
+                      "departmentParentId": 2433,
+                      "prefixDescription": "Chicano Studies",
+                      "prefixParentId": 4243,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156650,
+                          "prefix": "CHST",
+                          "courseNumber": "102",
+                          "title": "The Chicano and Latino in U.S. History from the 1960s to the Present",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Chicano Studies",
+                          "departmentParentId": 2433,
+                          "prefixDescription": "Chicano Studies",
+                          "prefixParentId": 4243,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "e4f1a26e-05e8-4a6c-643a-08dd9e080278",
+                  "sendingArticulationId": "938ade11-4cd1-43a0-7eb0-08dd9e07e359",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "b8b403ac-8867-4cb6-66b0-08dd9e07c4d5",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 185706,
+                  "prefix": "CHST",
+                  "courseNumber": "131",
+                  "title": "History of Chicano Art",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Chicano Studies",
+                  "departmentParentId": 2433,
+                  "prefixDescription": "Chicano Studies",
+                  "prefixParentId": 4243,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 212230,
+                  "prefix": "CHST",
+                  "courseNumber": "160",
+                  "title": "Chicano Theatre",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Chicano Studies",
+                  "departmentParentId": 2433,
+                  "prefixDescription": "Chicano Studies",
+                  "prefixParentId": 4243,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": "62ff25a1-faff-4b8c-8541-08dd9e07e400",
+                      "courseIdentifierParentId": 212229,
+                      "prefix": "TA",
+                      "courseNumber": "160",
+                      "title": "Chicano Theatre",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 185706,
+                      "prefix": "CHST",
+                      "courseNumber": "131",
+                      "title": "History of Chicano Art",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Chicano Studies",
+                      "departmentParentId": 2433,
+                      "prefixDescription": "Chicano Studies",
+                      "prefixParentId": 4243,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 185706,
+                          "prefix": "CHST",
+                          "courseNumber": "131",
+                          "title": "History of Chicano Art",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Chicano Studies",
+                          "departmentParentId": 2433,
+                          "prefixDescription": "Chicano Studies",
+                          "prefixParentId": 4243,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 212230,
+                      "prefix": "CHST",
+                      "courseNumber": "160",
+                      "title": "Chicano Theatre",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Chicano Studies",
+                      "departmentParentId": 2433,
+                      "prefixDescription": "Chicano Studies",
+                      "prefixParentId": 4243,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [
+                        {
+                          "id": "62ff25a1-faff-4b8c-8541-08dd9e07e400",
+                          "courseIdentifierParentId": 212229,
+                          "prefix": "TA",
+                          "courseNumber": "160",
+                          "title": "Chicano Theatre",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 212230,
+                          "prefix": "CHST",
+                          "courseNumber": "160",
+                          "title": "Chicano Theatre",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Chicano Studies",
+                          "departmentParentId": 2433,
+                          "prefixDescription": "Chicano Studies",
+                          "prefixParentId": 4243,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [
+                            {
+                              "id": "62ff25a1-faff-4b8c-8541-08dd9e07e400",
+                              "courseIdentifierParentId": 212229,
+                              "prefix": "TA",
+                              "courseNumber": "160",
+                              "title": "Chicano Theatre",
+                              "minUnits": 3,
+                              "maxUnits": 3,
+                              "beginTerm": "F1995",
+                              "endTerm": "",
+                              "department": "Theater Arts",
+                              "departmentParentId": 12775,
+                              "prefixDescription": "Theater Arts",
+                              "prefixParentId": 2407,
+                              "attributes": [],
+                              "courseAttributes": [],
+                              "requisites": [],
+                              "visibleCrossListedCourses": [],
+                              "hiddenCrossListedCourses": [],
+                              "pathways": []
+                            }
+                          ],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "6fcb4415-771d-4cba-64e5-08dd9e080278",
+                  "sendingArticulationId": "917ad49a-1d95-4460-840b-08dd9e07e359",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "b5818bba-73ee-435c-66af-08dd9e07c4d5",
+            "b8b403ac-8867-4cb6-66b0-08dd9e07c4d5"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "4fb27645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "GENERAL information",
+      "contentHtml": null
+    },
+    {
+      "id": "d2ed7145-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "This agreement is subject to revision without prior notice. Please check with a counselor every semester to obtain current information about possible changes in the agreement. To learn more about the courses and programs offered at Sonoma State University or the General Education and Upper-division requirements for each major please refer to the university catalog at: http://www.sonoma.edu/catalog/",
+      "contentHtml": "This agreement is subject to revision without prior notice.  Please check with a counselor every semester to obtain current information about possible changes in the agreement.  To learn more about the courses and programs offered at Sonoma State University or the General Education and Upper-division requirements for each major please refer to the university catalog at: <a href=\"http://www.sonoma.edu/catalog/\" target=\"_blank\">http://www.sonoma.edu/catalog/</a>"
+    },
+    {
+      "id": "61e86545-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "IMPORTANT TRANSFER INFORMATION",
+      "contentHtml": null
+    },
+    {
+      "id": "1cfd6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "The Chicano &amp; Latino Studies BA major requirements are Upper Division and should be completed at SSU.",
+      "contentHtml": "<p>The Chicano &amp; Latino Studies BA major requirements are Upper Division and should be completed at SSU.</p><p><br></p><p><br></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:51:06.783Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=88&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F88%2FMajor%2Fb8dcb240-db3b-4aeb-5b4f-08dd9e07c477&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F88%2FMajor%2Fb8dcb240-db3b-4aeb-5b4f-08dd9e07c477",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F88%2FMajor%2Fb8dcb240-db3b-4aeb-5b4f-08dd9e07c477",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-76/receiving-88/major/5bd20dea7df1c24c.json",
+    "templateAssetCount": 6,
+    "articulationCount": 2
+  }
+}

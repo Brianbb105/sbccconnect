@@ -1,0 +1,2428 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 81,
+    "name": "California State University, Long Beach",
+    "code": "CSULB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/81/Major/ddbd15ad-2687-4d1f-5657-08dec02198ed",
+    "type": "Major",
+    "name": "English, English Education Option, B.A.",
+    "publishDate": "2026-08-19T19:15:47.4945591",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "aeb56845-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+      "position": 1,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [
+        {
+          "type": "NFollowing",
+          "amount": 1,
+          "amountUnitType": "Course",
+          "position": 0,
+          "selectionType": "Select",
+          "id": null,
+          "content": ""
+        }
+      ],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "aeb56845-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 174650,
+              "prefix": "ENGL",
+              "courseNumber": "102",
+              "title": "Critical Reading and Writing",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "bc90dc55-acc7-4845-fcfc-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 174650,
+                  "prefix": "ENGL",
+                  "courseNumber": "102",
+                  "title": "Critical Reading and Writing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "bc90dc55-acc7-4845-fcfc-08dec02198ff",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 209689,
+                  "prefix": "ENG",
+                  "courseNumber": "111",
+                  "title": "Critical Thinking and Composition Through Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 151083,
+                  "prefix": "ENG",
+                  "courseNumber": "111H",
+                  "title": "Critical Thinking and Composition through Literature, Honors",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 209689,
+                      "prefix": "ENG",
+                      "courseNumber": "111",
+                      "title": "Critical Thinking and Composition Through Literature",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 209689,
+                          "prefix": "ENG",
+                          "courseNumber": "111",
+                          "title": "Critical Thinking and Composition Through Literature",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 151083,
+                      "prefix": "ENG",
+                      "courseNumber": "111H",
+                      "title": "Critical Thinking and Composition through Literature, Honors",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 151083,
+                          "prefix": "ENG",
+                          "courseNumber": "111H",
+                          "title": "Critical Thinking and Composition through Literature, Honors",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "24c2fce4-953a-4a6d-035d-08dec021bb15",
+                  "sendingArticulationId": "b975048c-f9be-47e9-c071-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "bc90dc55-acc7-4845-fcfc-08dec02198ff"
+          ]
+        },
+        {
+          "id": "aeb56845-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 214023,
+              "prefix": "ENGL",
+              "courseNumber": "180",
+              "title": "Appreciation of Literature",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "96e2d024-3283-42fc-fcfe-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 214023,
+                  "prefix": "ENGL",
+                  "courseNumber": "180",
+                  "title": "Appreciation of Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "96e2d024-3283-42fc-fcfe-08dec02198ff",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 209689,
+                  "prefix": "ENG",
+                  "courseNumber": "111",
+                  "title": "Critical Thinking and Composition Through Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 151083,
+                  "prefix": "ENG",
+                  "courseNumber": "111H",
+                  "title": "Critical Thinking and Composition through Literature, Honors",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 235754,
+                  "prefix": "ENGL",
+                  "courseNumber": "C1002",
+                  "title": "Introduction to Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 18787,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 209689,
+                      "prefix": "ENG",
+                      "courseNumber": "111",
+                      "title": "Critical Thinking and Composition Through Literature",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 209689,
+                          "prefix": "ENG",
+                          "courseNumber": "111",
+                          "title": "Critical Thinking and Composition Through Literature",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 151083,
+                      "prefix": "ENG",
+                      "courseNumber": "111H",
+                      "title": "Critical Thinking and Composition through Literature, Honors",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 151083,
+                          "prefix": "ENG",
+                          "courseNumber": "111H",
+                          "title": "Critical Thinking and Composition through Literature, Honors",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 235754,
+                      "prefix": "ENGL",
+                      "courseNumber": "C1002",
+                      "title": "Introduction to Literature",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 18787,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 235754,
+                          "prefix": "ENGL",
+                          "courseNumber": "C1002",
+                          "title": "Introduction to Literature",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 18787,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "ce29b085-a945-4264-0918-08dec021bb15",
+                  "sendingArticulationId": "8e229e31-f98c-4878-f169-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                },
+                {
+                  "id": "639a2389-f909-42de-0919-08dec021bb15",
+                  "sendingArticulationId": "8e229e31-f98c-4878-f169-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 1,
+                  "sendingCourseGroupEndPosition": 2
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "96e2d024-3283-42fc-fcfe-08dec02198ff"
+          ]
+        },
+        {
+          "id": "aeb56845-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 344480,
+              "prefix": "ENGL",
+              "courseNumber": "204",
+              "title": "Introduction to Creative Writing: Creative Nonfiction",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2002",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "0628671d-b171-46e8-fcfd-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 344480,
+                  "prefix": "ENGL",
+                  "courseNumber": "204",
+                  "title": "Introduction to Creative Writing: Creative Nonfiction",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2002",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "0628671d-b171-46e8-fcfd-08dec02198ff",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 152087,
+                  "prefix": "ENG",
+                  "courseNumber": "271NF",
+                  "title": "Creative Writing: Non-Fiction",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2008",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": "f498a522-329a-44f3-e225-08dec021b8d4",
+                      "courseIdentifierParentId": 152088,
+                      "prefix": "JOUR",
+                      "courseNumber": "271",
+                      "title": "Creative Writing: Non-Fiction",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2008",
+                      "endTerm": "",
+                      "department": "Journalism",
+                      "departmentParentId": 8007,
+                      "prefixDescription": "Journalism",
+                      "prefixParentId": 1540,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 152087,
+                      "prefix": "ENG",
+                      "courseNumber": "271NF",
+                      "title": "Creative Writing: Non-Fiction",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2008",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [
+                        {
+                          "id": "f498a522-329a-44f3-e225-08dec021b8d4",
+                          "courseIdentifierParentId": 152088,
+                          "prefix": "JOUR",
+                          "courseNumber": "271",
+                          "title": "Creative Writing: Non-Fiction",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2008",
+                          "endTerm": "",
+                          "department": "Journalism",
+                          "departmentParentId": 8007,
+                          "prefixDescription": "Journalism",
+                          "prefixParentId": 1540,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 152087,
+                          "prefix": "ENG",
+                          "courseNumber": "271NF",
+                          "title": "Creative Writing: Non-Fiction",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2008",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [
+                            {
+                              "id": "f498a522-329a-44f3-e225-08dec021b8d4",
+                              "courseIdentifierParentId": 152088,
+                              "prefix": "JOUR",
+                              "courseNumber": "271",
+                              "title": "Creative Writing: Non-Fiction",
+                              "minUnits": 3,
+                              "maxUnits": 3,
+                              "beginTerm": "F2008",
+                              "endTerm": "",
+                              "department": "Journalism",
+                              "departmentParentId": 8007,
+                              "prefixDescription": "Journalism",
+                              "prefixParentId": 1540,
+                              "attributes": [],
+                              "courseAttributes": [],
+                              "requisites": [],
+                              "visibleCrossListedCourses": [],
+                              "hiddenCrossListedCourses": [],
+                              "pathways": []
+                            }
+                          ],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "0628671d-b171-46e8-fcfd-08dec02198ff"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b3b56845-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+      "position": 2,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [
+        {
+          "type": "NFollowing",
+          "amount": 1,
+          "amountUnitType": "Course",
+          "position": 0,
+          "selectionType": "Select",
+          "id": null,
+          "content": ""
+        }
+      ],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "b3b56845-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 286624,
+              "prefix": "ENGL",
+              "courseNumber": "250A",
+              "title": "Survey of English Literature",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "e1f86851-f79d-45f3-fd00-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 286624,
+                  "prefix": "ENGL",
+                  "courseNumber": "250A",
+                  "title": "Survey of English Literature",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "e1f86851-f79d-45f3-fd00-08dec02198ff",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156490,
+                  "prefix": "ENG",
+                  "courseNumber": "221",
+                  "title": "Survey of British Literature: 800-1798",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2020",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156490,
+                      "prefix": "ENG",
+                      "courseNumber": "221",
+                      "title": "Survey of British Literature: 800-1798",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2020",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156490,
+                          "prefix": "ENG",
+                          "courseNumber": "221",
+                          "title": "Survey of British Literature: 800-1798",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2020",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "e1f86851-f79d-45f3-fd00-08dec02198ff"
+          ]
+        },
+        {
+          "id": "b3b56845-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 286600,
+              "prefix": "ENGL",
+              "courseNumber": "250B",
+              "title": "Survey of English Literature",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F1999",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "082c1168-8ced-4cb8-fcff-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 286600,
+                  "prefix": "ENGL",
+                  "courseNumber": "250B",
+                  "title": "Survey of English Literature",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "082c1168-8ced-4cb8-fcff-08dec02198ff",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135793,
+                  "prefix": "ENG",
+                  "courseNumber": "222",
+                  "title": "Survey of British Literature: 1798-Present",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2021",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 357794,
+                  "prefix": "ENG",
+                  "courseNumber": "222H",
+                  "title": "Survey of British Literature: 1798-Present, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2021",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135793,
+                      "prefix": "ENG",
+                      "courseNumber": "222",
+                      "title": "Survey of British Literature: 1798-Present",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "S2021",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135793,
+                          "prefix": "ENG",
+                          "courseNumber": "222",
+                          "title": "Survey of British Literature: 1798-Present",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "S2021",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 357794,
+                      "prefix": "ENG",
+                      "courseNumber": "222H",
+                      "title": "Survey of British Literature: 1798-Present, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2021",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 357794,
+                          "prefix": "ENG",
+                          "courseNumber": "222H",
+                          "title": "Survey of British Literature: 1798-Present, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2021",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "1a40a0d6-8f0f-4787-0914-08dec021bb15",
+                  "sendingArticulationId": "94bcf6f6-0052-4a28-f166-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "082c1168-8ced-4cb8-fcff-08dec02198ff"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b8b56845-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+      "position": 3,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [
+        {
+          "type": "NFollowing",
+          "amount": 1,
+          "amountUnitType": "Course",
+          "position": 0,
+          "selectionType": "Select",
+          "id": null,
+          "content": ""
+        }
+      ],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "b8b56845-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 295332,
+              "prefix": "ENGL",
+              "courseNumber": "270A",
+              "title": "Survey of American Literature",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "274df533-716c-49ca-fd06-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 295332,
+                  "prefix": "ENGL",
+                  "courseNumber": "270A",
+                  "title": "Survey of American Literature",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "274df533-716c-49ca-fd06-08dec02198ff",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135842,
+                  "prefix": "ENG",
+                  "courseNumber": "225",
+                  "title": "American Literature: Pre-Colonization to 1865",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2020",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135842,
+                      "prefix": "ENG",
+                      "courseNumber": "225",
+                      "title": "American Literature: Pre-Colonization to 1865",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2020",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135842,
+                          "prefix": "ENG",
+                          "courseNumber": "225",
+                          "title": "American Literature: Pre-Colonization to 1865",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2020",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "274df533-716c-49ca-fd06-08dec02198ff"
+          ]
+        },
+        {
+          "id": "b8b56845-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 268837,
+              "prefix": "ENGL",
+              "courseNumber": "270B",
+              "title": "Survey of American Literature",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2003",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 5003,
+              "prefixDescription": "English",
+              "prefixParentId": 2703,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "3f0b425c-6ba7-4374-fd05-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 268837,
+                  "prefix": "ENGL",
+                  "courseNumber": "270B",
+                  "title": "Survey of American Literature",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2003",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 5003,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2703,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3f0b425c-6ba7-4374-fd05-08dec02198ff",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156489,
+                  "prefix": "ENG",
+                  "courseNumber": "226",
+                  "title": "American Literature: 1865 to Present",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2020",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 151092,
+                  "prefix": "ENG",
+                  "courseNumber": "226H",
+                  "title": "American Literature, Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2015",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156489,
+                      "prefix": "ENG",
+                      "courseNumber": "226",
+                      "title": "American Literature: 1865 to Present",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2020",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156489,
+                          "prefix": "ENG",
+                          "courseNumber": "226",
+                          "title": "American Literature: 1865 to Present",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2020",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 151092,
+                      "prefix": "ENG",
+                      "courseNumber": "226H",
+                      "title": "American Literature, Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2015",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 151092,
+                          "prefix": "ENG",
+                          "courseNumber": "226H",
+                          "title": "American Literature, Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2015",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": [
+                {
+                  "id": "f095f7d7-4019-4bc8-0316-08dec021bb15",
+                  "sendingArticulationId": "4282d370-b92d-4cd2-bef4-08dec021b8c7",
+                  "groupConjunction": "Or",
+                  "sendingCourseGroupBeginPosition": 0,
+                  "sendingCourseGroupEndPosition": 1
+                }
+              ]
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "3f0b425c-6ba7-4374-fd05-08dec02198ff"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b4b56845-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+      "position": 4,
+      "logic": "OR",
+      "selection": {
+        "type": "Conjunction",
+        "logic": "OR",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [
+        {
+          "type": "NFollowing",
+          "amount": 1,
+          "amountUnitType": "Course",
+          "position": 0,
+          "selectionType": "Select",
+          "id": null,
+          "content": ""
+        }
+      ],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Only lower division courses listed"
+        }
+      ],
+      "sections": [
+        {
+          "id": "b4b56845-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 174300,
+              "prefix": "CLSC",
+              "courseNumber": "101",
+              "title": "Greek Mythology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2005",
+              "endTerm": "",
+              "department": "Classics",
+              "departmentParentId": 2701,
+              "prefixDescription": "Classics",
+              "prefixParentId": 3085,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "7ee45c4b-bc60-4320-fd04-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 174300,
+                  "prefix": "CLSC",
+                  "courseNumber": "101",
+                  "title": "Greek Mythology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2005",
+                  "endTerm": "",
+                  "department": "Classics",
+                  "departmentParentId": 2701,
+                  "prefixDescription": "Classics",
+                  "prefixParentId": 3085,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "7ee45c4b-bc60-4320-fd04-08dec02198ff",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "7ee45c4b-bc60-4320-fd04-08dec02198ff"
+          ]
+        },
+        {
+          "id": "b4b56845-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 174633,
+              "prefix": "CWL",
+              "courseNumber": "100",
+              "title": "Introduction to World Literature",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2006",
+              "endTerm": "",
+              "department": "Comparative Literature",
+              "departmentParentId": 2938,
+              "prefixDescription": "Comparative World Literature",
+              "prefixParentId": 6669,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "1cbc8be6-feac-4af9-fd01-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 174633,
+                  "prefix": "CWL",
+                  "courseNumber": "100",
+                  "title": "Introduction to World Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2006",
+                  "endTerm": "",
+                  "department": "Comparative Literature",
+                  "departmentParentId": 2938,
+                  "prefixDescription": "Comparative World Literature",
+                  "prefixParentId": 6669,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "1cbc8be6-feac-4af9-fd01-08dec02198ff",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "1cbc8be6-feac-4af9-fd01-08dec02198ff"
+          ]
+        },
+        {
+          "id": "b4b56845-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 178485,
+              "prefix": "CWL",
+              "courseNumber": "124",
+              "title": "Introduction to World Theatre and Drama",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2004",
+              "endTerm": "",
+              "department": "Comparative Literature",
+              "departmentParentId": 2938,
+              "prefixDescription": "Comparative World Literature",
+              "prefixParentId": 6669,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "80c212d9-bd29-42b3-fd02-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 178485,
+                  "prefix": "CWL",
+                  "courseNumber": "124",
+                  "title": "Introduction to World Theatre and Drama",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2004",
+                  "endTerm": "",
+                  "department": "Comparative Literature",
+                  "departmentParentId": 2938,
+                  "prefixDescription": "Comparative World Literature",
+                  "prefixParentId": 6669,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "80c212d9-bd29-42b3-fd02-08dec02198ff",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 170157,
+                  "prefix": "TA",
+                  "courseNumber": "103",
+                  "title": "Theatre Appreciation",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2010",
+                  "endTerm": "",
+                  "department": "Theater Arts",
+                  "departmentParentId": 12775,
+                  "prefixDescription": "Theater Arts",
+                  "prefixParentId": 2407,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 170157,
+                      "prefix": "TA",
+                      "courseNumber": "103",
+                      "title": "Theatre Appreciation",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "S2010",
+                      "endTerm": "",
+                      "department": "Theater Arts",
+                      "departmentParentId": 12775,
+                      "prefixDescription": "Theater Arts",
+                      "prefixParentId": 2407,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 170157,
+                          "prefix": "TA",
+                          "courseNumber": "103",
+                          "title": "Theatre Appreciation",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "S2010",
+                          "endTerm": "",
+                          "department": "Theater Arts",
+                          "departmentParentId": 12775,
+                          "prefixDescription": "Theater Arts",
+                          "prefixParentId": 2407,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "80c212d9-bd29-42b3-fd02-08dec02198ff"
+          ]
+        },
+        {
+          "id": "b4b56845-6887-ef11-8474-000d3a37e3b6:section-3",
+          "position": 3,
+          "logic": "OR",
+          "selection": {
+            "type": "Conjunction",
+            "logic": "OR",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 221723,
+              "prefix": "CWL",
+              "courseNumber": "132",
+              "title": "World Mythology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Comparative Literature",
+              "departmentParentId": 2938,
+              "prefixDescription": "Comparative World Literature",
+              "prefixParentId": 6669,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "d68d6b96-cc3b-49e8-fd03-08dec02198ff",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 221723,
+                  "prefix": "CWL",
+                  "courseNumber": "132",
+                  "title": "World Mythology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Comparative Literature",
+                  "departmentParentId": 2938,
+                  "prefixDescription": "Comparative World Literature",
+                  "prefixParentId": 6669,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Minimum grade required: C or better"
+                }
+              ]
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "d68d6b96-cc3b-49e8-fd03-08dec02198ff",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d68d6b96-cc3b-49e8-fd03-08dec02198ff"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "496f6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "Agreement Information The information below represents a view of articulated lower-division courses between California State University, Long Beach (CSULB) and the sending institution, aligning with the CSULB Academic Catalog. In the tables below, the left column represents CSULB courses, while any corresponding articulated courses are displayed on the right. It is essential to note that degree requirements may involve various combinations of courses or additional instructions; consequently, a careful review of all relevant information associated with the agreement is advised. Important Admissions Information for Fall 2027 ALL MAJORS ARE IMPACTED at California State University, Long Beach. As a result, incoming students must complete a series of major-specific preparation coursework and meet GPA requirements. Please visit our Major Specific Degree Requirements webpage for more information and to find the correct path and year for your major. Review the following for information related to transfer admissions to CSULB: Transfer Admission Eligibility Overview Transfer Application Process Lower Division Requirements Information for Major Agreements Due to ASSIST text limitations, some information regarding upper-division course options and electives may not be clear below. It is strongly recommended that agreement information along with CSULB Catalog information be reviewed when assessing a degree's requirements. It is crucial to note that the lower-division course requirements may change from year to year. The specific course requirements (catalog rights) will be determined for the student based on the catalog in effect at the time of their first term at CSULB. While effort is expended to mitigate alterations, agreement language can change with little advanced notice.",
+      "contentHtml": "<h2>Agreement Information</h2><p><br></p><p class=\"ql-indent-1\">The information below represents a view of articulated lower-division courses between California State University, Long Beach (CSULB) and the sending institution, aligning with the CSULB Academic Catalog. In the tables below, the left column represents CSULB courses, while any corresponding articulated courses are displayed on the right. It is essential to note that degree requirements may involve various combinations of courses or additional instructions; consequently, a careful review of all relevant information associated with the agreement is advised.</p><p><br></p><h2>Important Admissions Information for Fall 2027</h2><p><br></p><p class=\"ql-indent-1\"><strong>ALL </strong><a href=\"https://www.calstate.edu/attend/impaction-at-the-csu\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>MAJORS ARE IMPACTED</strong></a> at California State University, Long Beach. As a result, incoming students <strong>must</strong> complete a series of major-specific preparation coursework and meet GPA requirements. Please visit our <a href=\"https://www.csulb.edu/admissions/major-specific-degree-requirements-for-transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\">Major Specific Degree Requirements</a> webpage for more information and to find the correct path and year for your major.</p><p class=\"ql-indent-1\"><br></p><p class=\"ql-indent-1\">Review the following for information related to transfer admissions to CSULB:</p><ul><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/admissions/transfer-admission-eligibility\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admission Eligibility Overview</a></li><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/admissions/transfer-application-process\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Application Process</a></li><li class=\"ql-indent-1\"><a href=\"https://www.csulb.edu/academic-affairs/articulation/assist-agreement-information\" rel=\"noopener noreferrer\" target=\"_blank\">Lower Division Requirements Information for Major Agreements</a></li></ul><p><br></p><p class=\"ql-indent-1\">Due to ASSIST text limitations, some information regarding upper-division course options and electives may not be clear below. It is strongly recommended that agreement information <strong>along with</strong> <a href=\"https://csulb.catalog.acalog.com/index.php\" rel=\"noopener noreferrer\" target=\"_blank\">CSULB Catalog information</a> be reviewed when assessing a degree's requirements. It is crucial to note that the lower-division course requirements may change from year to year. The specific course requirements (catalog rights) will be determined for the student based on the catalog in effect at the time of their first term at CSULB. While effort is expended to mitigate alterations, agreement language can change with little advanced notice.</p>"
+    },
+    {
+      "id": "b6b56845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "General Information & Degree Notes",
+      "contentHtml": null
+    },
+    {
+      "id": "b0b56845-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "The Option in English Education is designed for prospective secondary English teachers and satisfies the state-mandated requirement in subject matter competence for the Single Subject Teaching Credential. All students must achieve a 'C' or better grade in all courses in the major. Each course on the student's program planner must be completed with a grade of 'C' or higher. In addition, a course in which a grade lower than 'C' is received must be retaken and successfully completed prior to enrolling in a course for which it is a prerequisite. Consult the CSULB Catalog for additional details.",
+      "contentHtml": "<p>The Option in English Education is designed for prospective secondary English teachers and satisfies the state-mandated requirement in subject matter competence for the Single Subject Teaching Credential.</p><p><br></p><p>All students must achieve a 'C' or better grade in all courses in the major.</p><p><br></p><p>Each course on the student's program planner must be completed with a grade of 'C' or higher. In addition, a course in which a grade lower than 'C' is received must be retaken and successfully completed prior to enrolling in a course for which it is a prerequisite.&nbsp;</p><p><br></p><p><strong>Consult </strong>the <a href=\"https://csulb.catalog.acalog.com/preview_program.php?catoid=12&amp;poid=6381\" rel=\"noopener noreferrer\" target=\"_blank\">CSULB Catalog</a> for additional details.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:44.992Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=81&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F81%2FMajor%2Fddbd15ad-2687-4d1f-5657-08dec02198ed&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F81%2FMajor%2Fddbd15ad-2687-4d1f-5657-08dec02198ed",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F81%2FMajor%2Fddbd15ad-2687-4d1f-5657-08dec02198ed",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-81/major/a59fc536ff96651c.json",
+    "templateAssetCount": 8,
+    "articulationCount": 8
+  }
+}

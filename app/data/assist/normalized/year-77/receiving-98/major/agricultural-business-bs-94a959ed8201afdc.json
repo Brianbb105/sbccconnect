@@ -1,0 +1,1977 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 98,
+    "name": "California State University, Bakersfield",
+    "code": "CSUB",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/98/Major/ad2dbc5b-529b-4b3d-855f-08dee527a9e4",
+    "type": "Major",
+    "name": "Agricultural Business, BS",
+    "publishDate": "2026-07-20T00:55:37.3962181",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "78fc6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "FOUNDATION COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "78fc6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 265354,
+              "prefix": "AGBS",
+              "courseNumber": "1010",
+              "title": "Introduction to Soil Science",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 384264,
+              "prefix": "GEOL",
+              "courseNumber": "2050",
+              "title": "Introduction to Soil Science",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2022",
+              "endTerm": "",
+              "department": "Geological Sciences",
+              "departmentParentId": 6260,
+              "prefixDescription": "Geology",
+              "prefixParentId": 11315,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "7fd5059d-a866-43d7-deca-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 265354,
+                  "prefix": "AGBS",
+                  "courseNumber": "1010",
+                  "title": "Introduction to Soil Science",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "d45b0c6d-8a9c-4b3b-dec9-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 384264,
+                  "prefix": "GEOL",
+                  "courseNumber": "2050",
+                  "title": "Introduction to Soil Science",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2022",
+                  "endTerm": "",
+                  "department": "Geological Sciences",
+                  "departmentParentId": 6260,
+                  "prefixDescription": "Geology",
+                  "prefixParentId": 11315,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "7fd5059d-a866-43d7-deca-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 190869,
+                  "prefix": "EH",
+                  "courseNumber": "102",
+                  "title": "Soils and Plant Nutrients",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "S2015",
+                  "endTerm": "",
+                  "department": "Environmental Horticulture",
+                  "departmentParentId": 5232,
+                  "prefixDescription": "Environmental Horticulture",
+                  "prefixParentId": 4039,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 190869,
+                      "prefix": "EH",
+                      "courseNumber": "102",
+                      "title": "Soils and Plant Nutrients",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "S2015",
+                      "endTerm": "",
+                      "department": "Environmental Horticulture",
+                      "departmentParentId": 5232,
+                      "prefixDescription": "Environmental Horticulture",
+                      "prefixParentId": 4039,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 190869,
+                          "prefix": "EH",
+                          "courseNumber": "102",
+                          "title": "Soils and Plant Nutrients",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "S2015",
+                          "endTerm": "",
+                          "department": "Environmental Horticulture",
+                          "departmentParentId": 5232,
+                          "prefixDescription": "Environmental Horticulture",
+                          "prefixParentId": 4039,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "d45b0c6d-8a9c-4b3b-dec9-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "7fd5059d-a866-43d7-deca-08dee527a9f5",
+            "d45b0c6d-8a9c-4b3b-dec9-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "78fc6f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 265356,
+              "prefix": "AGBS",
+              "courseNumber": "1020",
+              "title": "Introduction to Animal Science",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 300271,
+              "prefix": "BIOL",
+              "courseNumber": "2110",
+              "title": "Introductory Biology - Animals",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1669,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4912,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "f444bd33-db87-4ded-dece-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 265356,
+                  "prefix": "AGBS",
+                  "courseNumber": "1020",
+                  "title": "Introduction to Animal Science",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "295d6de3-26a1-4115-decd-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 300271,
+                  "prefix": "BIOL",
+                  "courseNumber": "2110",
+                  "title": "Introductory Biology - Animals",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1669,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4912,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "f444bd33-db87-4ded-dece-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "295d6de3-26a1-4115-decd-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 301209,
+                  "prefix": "BIOL",
+                  "courseNumber": "102",
+                  "title": "Animal Biology",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 301209,
+                      "prefix": "BIOL",
+                      "courseNumber": "102",
+                      "title": "Animal Biology",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 301209,
+                          "prefix": "BIOL",
+                          "courseNumber": "102",
+                          "title": "Animal Biology",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "f444bd33-db87-4ded-dece-08dee527a9f5",
+            "295d6de3-26a1-4115-decd-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "78fc6f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 350304,
+              "prefix": "AGBS",
+              "courseNumber": "1040",
+              "title": "Introduction to Plant Science w/Lab",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 300274,
+              "prefix": "BIOL",
+              "courseNumber": "2120",
+              "title": "Introductory Biology - Plants",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Biology",
+              "departmentParentId": 1669,
+              "prefixDescription": "Biology",
+              "prefixParentId": 4912,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "6c5593cb-1b7e-485d-decc-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 350304,
+                  "prefix": "AGBS",
+                  "courseNumber": "1040",
+                  "title": "Introduction to Plant Science w/Lab",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "15c646b0-8d64-4a3e-decb-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 300274,
+                  "prefix": "BIOL",
+                  "courseNumber": "2120",
+                  "title": "Introductory Biology - Plants",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1669,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4912,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "6c5593cb-1b7e-485d-decc-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "15c646b0-8d64-4a3e-decb-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 276929,
+                  "prefix": "BIOL",
+                  "courseNumber": "101",
+                  "title": "Plant Biology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Biology",
+                  "departmentParentId": 1731,
+                  "prefixDescription": "Biology",
+                  "prefixParentId": 4909,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 276929,
+                      "prefix": "BIOL",
+                      "courseNumber": "101",
+                      "title": "Plant Biology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2016",
+                      "endTerm": "",
+                      "department": "Biology",
+                      "departmentParentId": 1731,
+                      "prefixDescription": "Biology",
+                      "prefixParentId": 4909,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 276929,
+                          "prefix": "BIOL",
+                          "courseNumber": "101",
+                          "title": "Plant Biology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2016",
+                          "endTerm": "",
+                          "department": "Biology",
+                          "departmentParentId": 1731,
+                          "prefixDescription": "Biology",
+                          "prefixParentId": 4909,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "6c5593cb-1b7e-485d-decc-08dee527a9f5",
+            "15c646b0-8d64-4a3e-decb-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7ff6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "FOUNDATION COURSES",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "c7ff6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 350306,
+              "prefix": "AGBS",
+              "courseNumber": "1220",
+              "title": "Agriculture Sales and Service",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "aed4e14d-31d2-4889-ded3-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 350306,
+                  "prefix": "AGBS",
+                  "courseNumber": "1220",
+                  "title": "Agriculture Sales and Service",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "aed4e14d-31d2-4889-ded3-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "aed4e14d-31d2-4889-ded3-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "c7ff6f45-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 265358,
+              "prefix": "AGBS",
+              "courseNumber": "1240",
+              "title": "Agricultural Economics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 264872,
+              "prefix": "ECON",
+              "courseNumber": "2018",
+              "title": "Essentials of Micro-Economics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4298,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1274,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "0310b7b5-3648-4d40-ded5-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 265358,
+                  "prefix": "AGBS",
+                  "courseNumber": "1240",
+                  "title": "Agricultural Economics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "0ab8ffec-b6b2-4bc2-ded4-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 264872,
+                  "prefix": "ECON",
+                  "courseNumber": "2018",
+                  "title": "Essentials of Micro-Economics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4298,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1274,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "0310b7b5-3648-4d40-ded5-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "0ab8ffec-b6b2-4bc2-ded4-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156521,
+                  "prefix": "ECON",
+                  "courseNumber": "C2001",
+                  "title": "Principles of Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156521,
+                      "prefix": "ECON",
+                      "courseNumber": "C2001",
+                      "title": "Principles of Microeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156521,
+                          "prefix": "ECON",
+                          "courseNumber": "C2001",
+                          "title": "Principles of Microeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "0310b7b5-3648-4d40-ded5-08dee527a9f5",
+            "0ab8ffec-b6b2-4bc2-ded4-08dee527a9f5"
+          ]
+        },
+        {
+          "id": "c7ff6f45-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 275452,
+              "prefix": "AGBS",
+              "courseNumber": "1250",
+              "title": "Agriculture Environment & Soc",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 384261,
+              "prefix": "AGBS",
+              "courseNumber": "2000",
+              "title": "Introduction to Agricultural Business",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2023",
+              "endTerm": "",
+              "department": "Agriculture Business",
+              "departmentParentId": 15325,
+              "prefixDescription": "Agriculture Business",
+              "prefixParentId": 15430,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "8a9c5e97-002f-444e-ded7-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 275452,
+                  "prefix": "AGBS",
+                  "courseNumber": "1250",
+                  "title": "Agriculture Environment & Soc",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "76521f0f-b2c3-4881-ded6-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 384261,
+                  "prefix": "AGBS",
+                  "courseNumber": "2000",
+                  "title": "Introduction to Agricultural Business",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2023",
+                  "endTerm": "",
+                  "department": "Agriculture Business",
+                  "departmentParentId": 15325,
+                  "prefixDescription": "Agriculture Business",
+                  "prefixParentId": 15430,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "8a9c5e97-002f-444e-ded7-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "76521f0f-b2c3-4881-ded6-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "8a9c5e97-002f-444e-ded7-08dee527a9f5",
+            "76521f0f-b2c3-4881-ded6-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2266645-6887-ef11-8474-000d3a37e3b6",
+      "title": "FOUNDATION COURSES",
+      "position": 4,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "b2266645-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 274197,
+              "prefix": "ACCT",
+              "courseNumber": "2200",
+              "title": "Introduction to Financial Reporting and Accounting",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Accounting",
+              "departmentParentId": 46,
+              "prefixDescription": "Accounting",
+              "prefixParentId": 5759,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 237284,
+              "prefix": "ACCT",
+              "courseNumber": "2210",
+              "title": "Managerial Accounting",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Accounting",
+              "departmentParentId": 46,
+              "prefixDescription": "Accounting",
+              "prefixParentId": 5759,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 285648,
+              "prefix": "ECON",
+              "courseNumber": "2028",
+              "title": "Essentials of Macro-Economics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Economics",
+              "departmentParentId": 4298,
+              "prefixDescription": "Economics",
+              "prefixParentId": 1274,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 274202,
+              "prefix": "MATH",
+              "courseNumber": "1209",
+              "title": "Statistics in the Modern World",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2016",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 9026,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 10010,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "3ed10807-33e4-4b29-decf-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 274197,
+                  "prefix": "ACCT",
+                  "courseNumber": "2200",
+                  "title": "Introduction to Financial Reporting and Accounting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Accounting",
+                  "departmentParentId": 46,
+                  "prefixDescription": "Accounting",
+                  "prefixParentId": 5759,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "bf4bae12-f51e-4a3f-ded0-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 237284,
+                  "prefix": "ACCT",
+                  "courseNumber": "2210",
+                  "title": "Managerial Accounting",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Accounting",
+                  "departmentParentId": 46,
+                  "prefixDescription": "Accounting",
+                  "prefixParentId": 5759,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "8557cdad-acb8-41c0-ded1-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 285648,
+                  "prefix": "ECON",
+                  "courseNumber": "2028",
+                  "title": "Essentials of Macro-Economics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4298,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1274,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "1e7fc275-2f70-4874-ded2-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 274202,
+                  "prefix": "MATH",
+                  "courseNumber": "1209",
+                  "title": "Statistics in the Modern World",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2016",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9026,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10010,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "3ed10807-33e4-4b29-decf-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 275646,
+                  "prefix": "ACCT",
+                  "courseNumber": "230",
+                  "title": "Financial Accounting",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F2010",
+                  "endTerm": "",
+                  "department": "Accounting",
+                  "departmentParentId": 43,
+                  "prefixDescription": "Accounting",
+                  "prefixParentId": 5756,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 275646,
+                      "prefix": "ACCT",
+                      "courseNumber": "230",
+                      "title": "Financial Accounting",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F2010",
+                      "endTerm": "",
+                      "department": "Accounting",
+                      "departmentParentId": 43,
+                      "prefixDescription": "Accounting",
+                      "prefixParentId": 5756,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 275646,
+                          "prefix": "ACCT",
+                          "courseNumber": "230",
+                          "title": "Financial Accounting",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F2010",
+                          "endTerm": "",
+                          "department": "Accounting",
+                          "departmentParentId": 43,
+                          "prefixDescription": "Accounting",
+                          "prefixParentId": 5756,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "bf4bae12-f51e-4a3f-ded0-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 282440,
+                  "prefix": "ACCT",
+                  "courseNumber": "240",
+                  "title": "Managerial Accounting",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Accounting",
+                  "departmentParentId": 43,
+                  "prefixDescription": "Accounting",
+                  "prefixParentId": 5756,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 282440,
+                      "prefix": "ACCT",
+                      "courseNumber": "240",
+                      "title": "Managerial Accounting",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Accounting",
+                      "departmentParentId": 43,
+                      "prefixDescription": "Accounting",
+                      "prefixParentId": 5756,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 282440,
+                          "prefix": "ACCT",
+                          "courseNumber": "240",
+                          "title": "Managerial Accounting",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Accounting",
+                          "departmentParentId": 43,
+                          "prefixDescription": "Accounting",
+                          "prefixParentId": 5756,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "8557cdad-acb8-41c0-ded1-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156509,
+                  "prefix": "ECON",
+                  "courseNumber": "C2002",
+                  "title": "Principles of Macroeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2026",
+                  "endTerm": "",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156509,
+                      "prefix": "ECON",
+                      "courseNumber": "C2002",
+                      "title": "Principles of Macroeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2026",
+                      "endTerm": "",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156509,
+                          "prefix": "ECON",
+                          "courseNumber": "C2002",
+                          "title": "Principles of Macroeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2026",
+                          "endTerm": "",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "1e7fc275-2f70-4874-ded2-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "3ed10807-33e4-4b29-decf-08dee527a9f5",
+            "bf4bae12-f51e-4a3f-ded0-08dee527a9f5",
+            "8557cdad-acb8-41c0-ded1-08dee527a9f5",
+            "1e7fc275-2f70-4874-ded2-08dee527a9f5"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "42387445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "General Information",
+      "contentHtml": null
+    },
+    {
+      "id": "be977645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Articulation Agreement Overview This agreement outlines lower-division course requirements specific to the major. Students are strongly encouraged to consult an academic advisor to ensure they meet all degree requirements for their intended baccalaureate program. Helpful Resources: CSUB Catalog Transfer Admission Requirements Academic Advising Student Centers CSUB Program Pathways Mapper Course Equivalency Information for 4-Year Institutions Students and staff can explore course transfer equivalencies through the Transfer Evaluation System (TES) . Equivalency agreements are updated regularly and subject to change. For the most current information, please refer to TES or contact the Articulation Office .",
+      "contentHtml": "<p><strong>Articulation Agreement Overview</strong></p><p>This agreement outlines lower-division course requirements specific to the major. Students are strongly encouraged to consult an academic advisor to ensure they meet all degree requirements for their intended baccalaureate program.</p><p><br></p><p><strong>Helpful Resources:</strong></p><ul><li><a href=\"https://catalog.csub.edu/\" rel=\"noopener noreferrer\" target=\"_blank\">CSUB Catalog</a></li><li><a href=\"https://www.csub.edu/admissions/transfer\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Admission Requirements</a></li><li><a href=\"https://www.csub.edu/advising\" rel=\"noopener noreferrer\" target=\"_blank\">Academic Advising Student Centers</a></li><li><a href=\"https://www.csub.edu/ppm\" rel=\"noopener noreferrer\" target=\"_blank\">CSUB Program Pathways Mapper</a></li></ul><p><br></p><p><strong>Course Equivalency Information for 4-Year Institutions</strong></p><p>Students and staff can explore course transfer equivalencies through the <a href=\"https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=7ea49506-39bf-4815-8199-734369e7a30c&amp;aid=ccc830a2-2435-4dd6-b352-a586b4575654\" rel=\"noopener noreferrer\" target=\"_blank\">Transfer Evaluation System (TES)</a>. Equivalency agreements are updated regularly and subject to change. For the most current information, please refer to TES or contact the <a href=\"https://www.csub.edu/articulation/\" rel=\"noopener noreferrer\" target=\"_blank\">Articulation Office</a>.</p>"
+    },
+    {
+      "id": "f6187745-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 2,
+      "content": "About the Major",
+      "contentHtml": null
+    },
+    {
+      "id": "38b57645-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "The Bachelor of Science in Agricultural Business prepares students for entry-level employment in the business management of the food and fiber sectors. Agricultural business includes a range of activities, from farming to retail sales of food (also known as ‘farm to fork’), that is integral to modern food production. The Bachelor of Science in Agricultural Business is a ‘2+2’ program that combines core upper-division undergraduate courses in agricultural business at CSUB, with lower-division agricultural science and agricultural business foundation courses that can be completed at a community college. This degree enables students to enhance their foundation agricultural courses, completed at a community college, with upper-division knowledge and skills to better prepare them for entry-level management positions in the agriculture and food sector. For additional information, visit the following: Department of Agriculture Business Program Requirements - Agricultural Business, BS",
+      "contentHtml": "<p>The Bachelor of Science in Agricultural Business prepares students for entry-level employment in the business management of the food and fiber sectors. Agricultural business includes a range of activities, from farming to retail sales of food (also known as ‘farm to fork’), that is integral to modern food production.&nbsp;</p><p>The Bachelor of Science in Agricultural Business is a ‘2+2’ program that combines core upper-division undergraduate courses in agricultural business at CSUB, with lower-division agricultural science and agricultural business foundation courses that can be completed at a community college. This degree enables students to enhance their foundation agricultural courses, completed at a community college, with upper-division knowledge and skills to better prepare them for entry-level management positions in the agriculture and food sector.</p><p><br></p><p>For additional information, visit the following:</p><p>Department of <a href=\"https://www.csub.edu/bpa/agricultural-business\" rel=\"noopener noreferrer\" target=\"_blank\">Agriculture Business</a></p><p>Program Requirements - <a href=\"https://catalog.csub.edu/academic-degrees-programs/undergraduate-majors/agricultural-business-bs/#text\" rel=\"noopener noreferrer\" target=\"_blank\">Agricultural Business, BS</a></p>"
+    },
+    {
+      "id": "49017045-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 4,
+      "content": "Important Note",
+      "contentHtml": null
+    },
+    {
+      "id": "83687445-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 5,
+      "content": "Students who have taken lower division BIOL 2120 and 2210 major coursework taken at multiple California Community Colleges should check the Articulation Agreement by Department of the respective community colleges. The agreement may articulate differently, and it may determine whether the entire Biology and/or Chemistry sequence needs to be completed to receive appropriate course credit for the major requirements at CSUB.",
+      "contentHtml": "<p>Students who have taken lower division BIOL 2120 and 2210 major coursework taken at multiple California Community Colleges should check the <strong><em>Articulation Agreement by Department</em></strong> of the respective community colleges. The agreement may articulate differently, and it may determine whether the entire Biology and/or Chemistry sequence needs to be completed to receive appropriate course credit for the major requirements at CSUB.</p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:37.659Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=98&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F98%2FMajor%2Fad2dbc5b-529b-4b3d-855f-08dee527a9e4&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F98%2FMajor%2Fad2dbc5b-529b-4b3d-855f-08dee527a9e4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F98%2FMajor%2Fad2dbc5b-529b-4b3d-855f-08dee527a9e4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-98/major/94a959ed8201afdc.json",
+    "templateAssetCount": 11,
+    "articulationCount": 7
+  }
+}

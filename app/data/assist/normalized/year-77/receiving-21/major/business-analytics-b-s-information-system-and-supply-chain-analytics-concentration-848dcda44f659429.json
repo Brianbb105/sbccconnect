@@ -1,0 +1,606 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 21,
+    "name": "California State University, East Bay",
+    "code": "CSUHAY",
+    "segment": "CSU"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/21/Major/ac82d3c7-f4e8-4cfd-85fd-08dee527a9e4",
+    "type": "Major",
+    "name": "Business Analytics, B.S.: Information System and Supply Chain Analytics Concentration",
+    "publishDate": "2026-07-29T22:40:39.8157187",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "06d8084b-98e6-4fbf-989e-0196b5a7e1cd",
+      "title": "LOWER DIVISION CORE",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "06d8084b-98e6-4fbf-989e-0196b5a7e1cd:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 256819,
+              "prefix": "MATH",
+              "courseNumber": "130",
+              "title": "CALCULUS I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 14106,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9927,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 369617,
+              "prefix": "MATH",
+              "courseNumber": "211",
+              "title": "Discrete Structures",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Mathematics",
+              "departmentParentId": 14106,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 9927,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "cea356d5-f24a-4bbf-e6f8-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 256819,
+                  "prefix": "MATH",
+                  "courseNumber": "130",
+                  "title": "CALCULUS I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 14106,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9927,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "2282f782-e68a-4a5d-e6f9-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 369617,
+                  "prefix": "MATH",
+                  "courseNumber": "211",
+                  "title": "Discrete Structures",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 14106,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 9927,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "cea356d5-f24a-4bbf-e6f8-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 358343,
+                  "prefix": "MATH",
+                  "courseNumber": "150",
+                  "title": "Calculus with Analytic Geometry I",
+                  "minUnits": 5,
+                  "maxUnits": 5,
+                  "beginTerm": "F1991",
+                  "endTerm": "F2027",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 10002,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 358343,
+                      "prefix": "MATH",
+                      "courseNumber": "150",
+                      "title": "Calculus with Analytic Geometry I",
+                      "minUnits": 5,
+                      "maxUnits": 5,
+                      "beginTerm": "F1991",
+                      "endTerm": "F2027",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Mathematics",
+                      "prefixParentId": 10002,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 358343,
+                          "prefix": "MATH",
+                          "courseNumber": "150",
+                          "title": "Calculus with Analytic Geometry I",
+                          "minUnits": 5,
+                          "maxUnits": 5,
+                          "beginTerm": "F1991",
+                          "endTerm": "F2027",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Mathematics",
+                          "prefixParentId": 10002,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "2282f782-e68a-4a5d-e6f9-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "cea356d5-f24a-4bbf-e6f8-08dee527a9f5",
+            "2282f782-e68a-4a5d-e6f9-08dee527a9f5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "96d237a4-2a21-4959-b08e-0196b5a7e1ce",
+      "title": "LOWER DIVISION CORE",
+      "position": 2,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromArea",
+        "logic": "UNKNOWN",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "amountQuantifier": "None",
+        "toAmount": 0,
+        "toAmountDeterminer": "None",
+        "areaType": "None",
+        "selectionType": "Select"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "96d237a4-2a21-4959-b08e-0196b5a7e1ce:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromArea",
+            "logic": "UNKNOWN",
+            "amount": 1,
+            "amountUnitType": "Course",
+            "amountQuantifier": "None",
+            "toAmount": 0,
+            "toAmountDeterminer": "None",
+            "areaType": "None",
+            "selectionType": "Select"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 284876,
+              "prefix": "CS",
+              "courseNumber": "100",
+              "title": "Programming for Everyone",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 14107,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 483,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 365342,
+              "prefix": "CS",
+              "courseNumber": "101",
+              "title": "Computer Science I",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2018",
+              "endTerm": "",
+              "department": "Computer Science",
+              "departmentParentId": 14107,
+              "prefixDescription": "Computer Science",
+              "prefixParentId": 483,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "d9a81178-e2cf-4c22-e6fa-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 284876,
+                  "prefix": "CS",
+                  "courseNumber": "100",
+                  "title": "Programming for Everyone",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 14107,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 483,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "9f78a0c6-cf51-44b8-e6fb-08dee527a9f5",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 365342,
+                  "prefix": "CS",
+                  "courseNumber": "101",
+                  "title": "Computer Science I",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2018",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 14107,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 483,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "d9a81178-e2cf-4c22-e6fa-08dee527a9f5",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 353445,
+                  "prefix": "CS",
+                  "courseNumber": "140",
+                  "title": "Object-Oriented Programming Using C++",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Computer Science",
+                  "departmentParentId": 3216,
+                  "prefixDescription": "Computer Science",
+                  "prefixParentId": 529,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 353445,
+                      "prefix": "CS",
+                      "courseNumber": "140",
+                      "title": "Object-Oriented Programming Using C++",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Computer Science",
+                      "departmentParentId": 3216,
+                      "prefixDescription": "Computer Science",
+                      "prefixParentId": 529,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 353445,
+                          "prefix": "CS",
+                          "courseNumber": "140",
+                          "title": "Object-Oriented Programming Using C++",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Computer Science",
+                          "departmentParentId": 3216,
+                          "prefixDescription": "Computer Science",
+                          "prefixParentId": 529,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": []
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "9f78a0c6-cf51-44b8-e6fb-08dee527a9f5",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "d9a81178-e2cf-4c22-e6fa-08dee527a9f5",
+            "9f78a0c6-cf51-44b8-e6fb-08dee527a9f5"
+          ]
+        }
+      ]
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "d7bd6f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "PLEASE NOTE: ASSIST does not replace the assistance of meeting with an adviser. Please contact CSU East Bay at (510) 885-2556 for an advising appointment. The most accurate and up to date transfer information for transfer courses accepted by CSU East Bay is available at this link: CSUEB Equivalencies All California Community College transfer students are encouraged to complete their CSU General Education Breadth or CALGETC pattern at their Community College prior to enrollment at CSU, East Bay. ASSOCIATE DEGREE FOR TRANSFER similarity matches with CSUEB DEGREES can be found here: ASSOCIATE DEGREES FOR TRANSFER CHART",
+      "contentHtml": "<p>PLEASE NOTE: ASSIST does not replace the assistance of meeting with an adviser. Please contact CSU East Bay at (510) 885-2556 for an advising appointment. The most accurate and up to date transfer information for transfer courses accepted by CSU East Bay is available at this link: <a href=\"https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=b75e02ac-0916-413d-8adf-f8011538371f&amp;aid=c79a2650-be66-45fb-9aff-c6f976fd20ff\" rel=\"noopener noreferrer\" target=\"_blank\">CSUEB Equivalencies </a>All California Community College transfer students are encouraged to complete their CSU General Education Breadth or CALGETC pattern at their Community College prior to enrollment at CSU, East Bay.  ASSOCIATE DEGREE FOR TRANSFER similarity matches with CSUEB DEGREES can be found here:  <a href=\"https://www.csueastbay.edu/aps/academic-services/articulation-and-transfer/associate-degrees-for-transfer.html\" rel=\"noopener noreferrer\" target=\"_blank\">ASSOCIATE DEGREES FOR TRANSFER CHART</a></p>"
+    },
+    {
+      "id": "eeff66e2-145c-4250-ab5e-0196b5a07b9d",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 1,
+      "content": "Business Analytics, B.S. (120 Units)",
+      "contentHtml": null
+    },
+    {
+      "id": "7f73f6a8-1a18-47c7-a56d-0196b5a07b9d",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "Program Description To build computational skills with business insights, this designated STEM program explores emerging technologies and business practices in next-generation analytics, such as AI, ML, data pipeline, ITsystems, blockchain, business intelligence, and digital strategy. This program blends computer science skills with business applications to help students build core competencies and learn how to interpret analytical findings, uncover business-relevant insights, and advance their careers. The innovative curriculum consists of rigorous courses that will help build your capabilities in technical, analytical, and operational areas to prepare your career with computer analytics and management skills. The Business Analytics major requires four sets of courses: lower-division core courses (10-11 units), upper-division core courses (33 units), courses to fulfill concentration requirements (18 units), and elective courses in individual interest. For qualified students, this program can be blended with an accelerated MBA pathway to receive an AACSB-accredited MBA Degree by taking 30 units of MBA core courses.",
+      "contentHtml": "<p>Program Description</p><p>To build computational skills with business insights, this designated STEM program explores emerging technologies and business practices in next-generation analytics, such as AI, ML, data pipeline, ITsystems, blockchain, business intelligence, and digital strategy. This program blends computer science skills with business applications to help students build core competencies and learn how to interpret analytical findings, uncover business-relevant insights, and advance their careers.</p><p><br></p><p>The innovative curriculum consists of rigorous courses that will help build your capabilities in technical, analytical, and operational areas to prepare your career with computer analytics and management skills. The Business Analytics major requires four sets of courses: lower-division core courses (10-11 units), upper-division core courses (33 units), courses to fulfill concentration requirements (18 units), and elective courses in individual interest. For qualified students, this program can be blended with an accelerated MBA pathway to receive an AACSB-accredited MBA Degree by taking 30 units of MBA core courses.</p><p><br></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-07T09:50:40.909Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=21&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F21%2FMajor%2Fac82d3c7-f4e8-4cfd-85fd-08dee527a9e4&viewBy=major&viewSendingAgreements=false&viewByKey=77%2F92%2Fto%2F21%2FMajor%2Fac82d3c7-f4e8-4cfd-85fd-08dee527a9e4",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F21%2FMajor%2Fac82d3c7-f4e8-4cfd-85fd-08dee527a9e4",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist/raw/agreements/year-77/receiving-21/major/848dcda44f659429.json",
+    "templateAssetCount": 6,
+    "articulationCount": 2
+  }
+}

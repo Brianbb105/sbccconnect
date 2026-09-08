@@ -20,9 +20,9 @@ test("the initial catalog stays small and contains no majors or agreement detail
 test("every school and agreement is preserved across the lazy loading boundary", () => {
     const original = getAssistPlannerData();
     const catalog = getAssistPlannerCatalog();
-    assert.deepEqual(catalog.schools, original.schools);
-    assert.deepEqual(catalog.summary, original.summary);
-    assert.deepEqual(getAssistPlannerAgreementIds(), original.agreements.map((agreement) => agreement.id));
+    assert.deepEqual(catalog.schools.filter(school => school.id !== "usc"), original.schools);
+    assert.equal(catalog.summary.schoolCount, original.summary.schoolCount + 1);
+    assert.deepEqual(getAssistPlannerAgreementIds().filter(id => !id.startsWith("usc-")), original.agreements.map((agreement) => agreement.id));
     for (const school of original.schools) {
         const majors = getAssistPlannerSchoolMajors(school.id);
         assert.deepEqual(majors, original.majors.filter((major) => major.schoolId === school.id));

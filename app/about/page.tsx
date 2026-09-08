@@ -24,7 +24,7 @@ const aboutSections: readonly AboutSection[] = [
     {
         title: "About Planner",
         paragraphs: [
-            "The Planner helps students explore transfer requirements and UC articulation agreements. Data is sourced from ASSIST.org and organized to make transfer pathways easier to browse and understand.",
+            "The Planner helps students explore UC and CSU articulation agreements from ASSIST.org, along with USC's Transfer Planning Guides for SBCC. Each agreement or guide shows its academic year and links to the official source. USC's guides describe degree requirements, including work completed after transfer, and do not guarantee admission.",
             "This feature is currently in beta — some information may be incomplete, outdated, or inaccurate. Always verify important transfer requirements through ASSIST.org, official college resources, and an academic counselor before making final decisions. The Planner is meant to make planning easier, not to replace official advising.",
         ],
     },

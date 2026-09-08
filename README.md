@@ -147,6 +147,8 @@ npm run build
 
 ## ASSIST transfer agreement importer
 
+USC uses a separate source and importer. See [USC import, validation, and planner notes](app/data/usc/README.md) and [private-university transfer research](docs/research/private-transfer-agreements-2026-09-08.md).
+
 The ASSIST importer uses the public JSON endpoints used by ASSIST.org's app. It keeps raw API responses separate from normalized SBCCPlan data and is designed to resume from cached files.
 
 The verified September 7, 2026 CSU snapshot contains 2,186 SBCC major agreements: 13 campuses use 2026–2027 and 10 use 2025–2026. See the [coverage and verification report](app/data/assist/reports/csu-latest-coverage.md) for campus counts, source-record notes, and validation evidence.

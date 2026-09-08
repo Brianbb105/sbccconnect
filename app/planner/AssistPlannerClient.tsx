@@ -13,6 +13,7 @@ import type {
 } from "@/lib/assistPlanner";
 import { appendTermToHref, getDefaultTermSlug } from "@/lib/terms";
 import { usePlannerResource } from "@/lib/plannerDataClient";
+import UscPlannerGuide from "./UscPlannerGuide";
 
 type RequirementView = "all" | "required" | "recommended" | "missing";
 type PlannerStep = "school" | "major" | "agreement";
@@ -20,7 +21,7 @@ type PlannerStep = "school" | "major" | "agreement";
 const SCHOOL_GROUPS = [
     { id: "UC", label: "University of California (UC)" },
     { id: "CSU", label: "California State University (CSU)" },
-    { id: "other", label: "Other Universities" },
+    { id: "other", label: "Private Universities" },
 ];
 const EMPTY_MAJORS: PlannerMajor[] = [];
 
@@ -132,7 +133,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
         <div className="space-y-6">
             <section className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
                 <div className="p-6 md:p-8">
-                    <p className="text-xs font-bold uppercase tracking-[0.24em] text-red-700">ASSIST transfer map</p>
+                    <p className="text-xs font-bold uppercase tracking-[0.24em] text-red-700">SBCC transfer map</p>
                     <div className="mt-3 flex flex-wrap items-center gap-3">
                         <h1 className="text-3xl font-bold leading-tight text-[#0f172a] md:text-4xl">
                             Transfer Planner
@@ -142,8 +143,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                         </span>
                     </div>
                     <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-                        Choose a school, choose a major, then open the agreement map for that path. All transfer
-                        agreement data shown here is from{" "}
+                        Choose a school, choose a major, then open the agreement for that path. UC and CSU data comes from{" "}
                         <a
                             href="https://www.assist.org"
                             target="_blank"
@@ -152,16 +152,17 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                         >
                             ASSIST.org
                         </a>
-                        . For accuracy and safety, please verify final requirements on ASSIST.org before planning or
-                        submitting transfer coursework.
+                        . USC data comes from its{" "}
+                        <a href="https://darsweb.usc.edu/TPG/Default.aspx" target="_blank" rel="noopener noreferrer" className="font-bold text-[#0f172a] underline underline-offset-4">Transfer Planning Guide</a>
+                        . Verify your course choices and the agreement year with the linked university source before planning transfer coursework.
                     </p>
                 </div>
 
                 <div className="border-t border-slate-200 bg-slate-50 px-6 py-5 md:px-8">
                     <div className="flex flex-wrap gap-2">
                         <SummaryPill value={summary.schoolCount} label="schools" />
-                        <SummaryPill value={summary.cachedMajorCount} label="cached majors" />
-                        <SummaryPill value={summary.detailedAgreementCount} label="agreements ready" />
+                        <SummaryPill value={summary.cachedMajorCount} label="programs listed" />
+                        <SummaryPill value={summary.detailedAgreementCount} label="agreements and guides ready" />
                     </div>
                 </div>
 
@@ -208,7 +209,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                         title={selectedSchool.name}
                         description={
                             selectedSchool.hasMajorList
-                                ? "Choose a major to open its agreement."
+                                ? selectedSchool.id === "usc" ? "Choose a USC program to see its degree-planning guide. Program codes distinguish similarly named options in USC’s menu." : "Choose a major to open its agreement."
                                 : "This school is available in the partner cache, but its major list is not downloaded yet."
                         }
                         searchValue={majorSearch}
@@ -248,6 +249,8 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                     </div>
                     {agreementResource.loading || agreementResource.error ? (
                         <ResourceStatus loadingText="Loading agreement…" error={agreementResource.error} onRetry={agreementResource.retry} />
+                    ) : selectedAgreement?.uscGuide ? (
+                        <UscPlannerGuide key={selectedAgreement.id} agreement={selectedAgreement} />
                     ) : selectedAgreement ? (
                         <AgreementCard
                             agreement={selectedAgreement}
@@ -352,7 +355,7 @@ function SchoolCard({ onClick, school }: { onClick: () => void; school: PlannerS
             <span className="mt-4 flex flex-wrap gap-2">
                 {school.hasMajorList ? (
                     <span className="rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">
-                        {school.majorCount ?? 0} majors
+                        {school.majorCount ?? 0} {school.id === "usc" ? "programs" : "majors"}
                     </span>
                 ) : (
                     <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-bold text-slate-500">
@@ -384,7 +387,7 @@ function MajorCard({ major, onClick }: { major: PlannerMajor; onClick: () => voi
                         : "border-slate-200 bg-white text-slate-500"
                 }`}
             >
-                {major.hasDetails ? "Requirements ready" : "Agreement not imported"}
+                {major.hasDetails ? major.schoolId === "usc" ? "USC guide ready" : "Requirements ready" : major.unavailableReason ? "Guide unavailable" : "Agreement not imported"}
             </span>
         </button>
     );
@@ -409,10 +412,11 @@ function MissingAgreementPanel({
         <section className="rounded-3xl border border-slate-200 bg-white px-6 py-8 shadow-sm md:px-8">
             <h2 className="text-2xl font-bold text-[#0f172a]">Requirements Not Ready Yet</h2>
             <p className="mt-3 max-w-3xl text-slate-600 leading-7">
-                {major
+                {major?.unavailableReason ?? (major
                     ? `${major.label} is listed for ${school?.name ?? "this school"}, but the local ASSIST cache does not include the full agreement details yet.`
-                    : `${school?.name ?? "This school"} does not have a cached major list in the local ASSIST data yet.`}
+                    : `${school?.name ?? "This school"} does not have a cached major list in the local ASSIST data yet.`)}
             </p>
+            {school?.id === "usc" && <a href="https://darsweb.usc.edu/TPG/Default.aspx" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block font-bold text-slate-900 underline">Check USC’s planning guide ↗</a>}
         </section>
     );
 }

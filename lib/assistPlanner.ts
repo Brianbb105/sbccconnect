@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { getUscPlannerData } from "./uscPlanner.ts";
 
 type AssistInstitution = {
     id?: number | null;
@@ -156,6 +157,14 @@ export type PlannerRequirementGroup = {
 };
 
 export type PlannerAgreement = {
+    uscGuide?: {
+        programCode: string;
+        sections: Array<{ position: number; text: string }>;
+        advisoryText: string;
+        advisoryLinks: Array<{ label: string; url: string }>;
+        restrictionsText: string;
+        warnings: string[];
+    };
     id: string;
     key: string;
     schoolId: string;
@@ -192,6 +201,7 @@ export type PlannerSchool = {
 };
 
 export type PlannerMajor = {
+    unavailableReason?: string;
     id: string;
     schoolId: string;
     schoolName: string;
@@ -705,10 +715,18 @@ let plannerSnapshot: {
 function getPlannerSnapshot() {
     const manifestPath = path.join(process.cwd(), "app/data/assist/cache-manifest.json");
     const manifest = fs.statSync(manifestPath, { throwIfNoEntry: false });
-    const version = `${manifest?.mtimeMs ?? 0}-${manifest?.size ?? 0}`;
+    const uscManifest = fs.statSync(path.join(process.cwd(), "app/data/usc/manifest.json"), { throwIfNoEntry: false });
+    const version = `${manifest?.mtimeMs ?? 0}-${manifest?.size ?? 0}-${uscManifest?.mtimeMs ?? 0}-${uscManifest?.size ?? 0}`;
     if (plannerSnapshot?.version === version) return plannerSnapshot;
 
     const data = getAssistPlannerData();
+    const usc = getUscPlannerData();
+    data.schools.push(...usc.schools);
+    data.majors.push(...usc.majors);
+    data.agreements.push(...usc.agreements);
+    data.summary.schoolCount += usc.schools.length;
+    data.summary.cachedMajorCount += usc.majors.length;
+    data.summary.detailedAgreementCount += usc.agreements.length;
     const majors = new Map(data.schools.map((school) => [school.id, [] as PlannerMajor[]]));
     data.majors.forEach((major) => majors.get(major.schoolId)?.push(major));
     plannerSnapshot = {

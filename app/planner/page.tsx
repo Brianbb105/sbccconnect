@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { getAssistPlannerData } from "@/lib/assistPlanner";
+import { getAssistPlannerCatalog } from "@/lib/assistPlanner";
 import AssistPlannerClient from "./AssistPlannerClient";
 
 const registrationSchedule = [
@@ -135,7 +135,7 @@ const registrationSchedule = [
 ] as const;
 
 export default function PlannerPage() {
-    const assistPlannerData = getAssistPlannerData();
+    const assistPlannerData = getAssistPlannerCatalog();
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans text-slate-800">

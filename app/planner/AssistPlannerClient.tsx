@@ -5,19 +5,27 @@ import Link from "next/link";
 import type {
     PlannerAgreement,
     PlannerCourse,
-    PlannerData,
+    PlannerCatalog,
     PlannerMajor,
     PlannerOption,
     PlannerRequirement,
     PlannerSchool,
 } from "@/lib/assistPlanner";
 import { appendTermToHref, getDefaultTermSlug } from "@/lib/terms";
+import { usePlannerResource } from "@/lib/plannerDataClient";
 
 type RequirementView = "all" | "required" | "recommended" | "missing";
 type PlannerStep = "school" | "major" | "agreement";
 
-export default function AssistPlannerClient({ data }: { data: PlannerData }) {
-    const { agreements, majors, schools, summary } = data;
+const SCHOOL_GROUPS = [
+    { id: "UC", label: "University of California (UC)" },
+    { id: "CSU", label: "California State University (CSU)" },
+    { id: "other", label: "Other Universities" },
+];
+const EMPTY_MAJORS: PlannerMajor[] = [];
+
+export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) {
+    const { schools, summary, version } = data;
     const [selectedSchoolId, setSelectedSchoolId] = useState("");
     const [selectedMajorId, setSelectedMajorId] = useState("");
     const [schoolSearch, setSchoolSearch] = useState("");
@@ -33,10 +41,24 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
         return schools.filter((school) => `${school.name} ${school.code} ${school.segment}`.toLowerCase().includes(query));
     }, [schoolSearch, schools]);
 
-    const majorOptions = useMemo(
-        () => majors.filter((major) => major.schoolId === selectedSchoolId),
-        [majors, selectedSchoolId],
+    const visibleSchoolGroups = useMemo(
+        () => SCHOOL_GROUPS.map((group) => ({
+            ...group,
+            schools: visibleSchools
+                .filter((school) => group.id === "other"
+                    ? school.segment !== "UC" && school.segment !== "CSU"
+                    : school.segment === group.id)
+                .sort((a, b) => a.name.localeCompare(b.name)),
+        })).filter((group) => group.schools.length > 0),
+        [visibleSchools],
     );
+
+    const majorResource = usePlannerResource<PlannerMajor[]>(
+        selectedSchoolId
+            ? `/api/planner/schools/${encodeURIComponent(selectedSchoolId)}?v=${encodeURIComponent(version)}`
+            : null,
+    );
+    const majorOptions = majorResource.data ?? EMPTY_MAJORS;
     const visibleMajors = useMemo(() => {
         const query = majorSearch.trim().toLowerCase();
         if (!query) return majorOptions;
@@ -45,10 +67,12 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
 
     const selectedSchool = schools.find((school) => school.id === selectedSchoolId) ?? null;
     const selectedMajor = majorOptions.find((major) => major.id === selectedMajorId) ?? null;
-    const selectedAgreement =
-        agreements.find((agreement) => agreement.id === selectedMajor?.agreementId) ??
-        agreements.find((agreement) => agreement.schoolId === selectedSchoolId && agreement.key === selectedMajor?.key) ??
-        null;
+    const agreementResource = usePlannerResource<PlannerAgreement>(
+        selectedMajor?.agreementId
+            ? `/api/planner/agreements/${encodeURIComponent(selectedMajor.agreementId)}?v=${encodeURIComponent(version)}`
+            : null,
+    );
+    const selectedAgreement = agreementResource.data;
 
     useEffect(() => {
         if (!shouldScrollToActivePanelRef.current) return;
@@ -151,10 +175,26 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
                         searchValue={schoolSearch}
                         searchPlaceholder="Search schools"
                         onSearchChange={setSchoolSearch}
+                        spaciousHeader
                     >
-                        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-                            {visibleSchools.map((school) => (
-                                <SchoolCard key={school.id} school={school} onClick={() => handleSchoolClick(school.id)} />
+                        <div className="space-y-10">
+                            {visibleSchoolGroups.map((group) => (
+                                <section key={group.id} aria-labelledby={`school-group-${group.id}`}>
+                                    <h3
+                                        id={`school-group-${group.id}`}
+                                        className="mb-4 flex flex-wrap items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4 text-xl font-bold leading-snug text-[#0f172a] md:text-2xl"
+                                    >
+                                        {group.label}
+                                        <span className="text-sm font-medium text-slate-600 sm:ml-auto">
+                                            {group.schools.length} {group.schools.length === 1 ? "school" : "schools"}
+                                        </span>
+                                    </h3>
+                                    <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                                        {group.schools.map((school) => (
+                                            <SchoolCard key={school.id} school={school} onClick={() => handleSchoolClick(school.id)} />
+                                        ))}
+                                    </div>
+                                </section>
                             ))}
                         </div>
                         {visibleSchools.length === 0 ? <EmptyState text="No schools match that search." /> : null}
@@ -177,7 +217,9 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
                         backLabel="Back To Schools"
                         onBack={goToSchools}
                     >
-                        {selectedSchool.hasMajorList ? (
+                        {majorResource.loading || majorResource.error ? (
+                            <ResourceStatus loadingText="Loading majors…" error={majorResource.error} onRetry={majorResource.retry} />
+                        ) : selectedSchool.hasMajorList ? (
                             <>
                                 <div className="grid gap-3 md:grid-cols-2">
                                     {visibleMajors.map((major) => (
@@ -204,7 +246,9 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
                             Back To Majors
                         </button>
                     </div>
-                    {selectedAgreement ? (
+                    {agreementResource.loading || agreementResource.error ? (
+                        <ResourceStatus loadingText="Loading agreement…" error={agreementResource.error} onRetry={agreementResource.retry} />
+                    ) : selectedAgreement ? (
                         <AgreementCard
                             agreement={selectedAgreement}
                             requirementView={requirementView}
@@ -219,6 +263,19 @@ export default function AssistPlannerClient({ data }: { data: PlannerData }) {
     );
 }
 
+function ResourceStatus({ loadingText, error, onRetry }: { loadingText: string; error: string | null; onRetry: () => void }) {
+    return (
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 text-slate-600" role={error ? "alert" : "status"}>
+            <p>{error ?? loadingText}</p>
+            {error ? (
+                <button type="button" onClick={onRetry} className="mt-3 rounded-full border border-slate-300 px-4 py-2 text-sm font-bold text-slate-800 hover:bg-slate-50">
+                    Try Again
+                </button>
+            ) : null}
+        </div>
+    );
+}
+
 function ChoicePanel({
     children,
     backLabel,
@@ -227,6 +284,7 @@ function ChoicePanel({
     onSearchChange,
     searchPlaceholder,
     searchValue,
+    spaciousHeader = false,
     title,
 }: {
     children: React.ReactNode;
@@ -236,11 +294,12 @@ function ChoicePanel({
     onSearchChange: (value: string) => void;
     searchPlaceholder: string;
     searchValue: string;
+    spaciousHeader?: boolean;
     title: string;
 }) {
     return (
         <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
-            <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div className={`flex flex-col lg:flex-row lg:items-end lg:justify-between ${spaciousHeader ? "gap-6" : "gap-4"}`}>
                 <div className="min-w-0">
                     {onBack ? (
                         <button
@@ -252,7 +311,9 @@ function ChoicePanel({
                         </button>
                     ) : null}
                     <h2 className="text-2xl font-bold text-[#0f172a]">{title}</h2>
-                    <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">{description}</p>
+                    <p className={`max-w-2xl text-slate-500 ${spaciousHeader ? "mt-4 text-base leading-7" : "mt-2 text-sm leading-6"}`}>
+                        {description}
+                    </p>
                 </div>
                 <label className="min-w-0 lg:w-80">
                     <span className="sr-only">{searchPlaceholder}</span>
@@ -264,7 +325,7 @@ function ChoicePanel({
                     />
                 </label>
             </div>
-            <div className="mt-5">{children}</div>
+            <div className={spaciousHeader ? "mt-8 md:mt-10" : "mt-5"}>{children}</div>
         </section>
     );
 }

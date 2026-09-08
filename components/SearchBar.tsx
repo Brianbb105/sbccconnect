@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useId, useMemo, useRef, useState } from 'react'
+import { useEffect, useEffectEvent, useId, useMemo, useRef, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { getSearchSuggestions, type SearchSuggestion } from "@/lib/searchSuggestions";
 import { appendTermToHref, getTermFromSearchParams } from "@/lib/terms";
@@ -48,6 +48,8 @@ export default function SearchBar() {
     const [debouncedQuery, setDebouncedQuery] = useState('')
     const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false)
     const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1)
+    const [searchActivated, setSearchActivated] = useState(false)
+    const [pendingSearch, setPendingSearch] = useState(false)
     const activeSuggestionIndexRef = useRef(-1)
     const formRef = useRef<HTMLFormElement>(null)
     const listboxId = useId()
@@ -55,11 +57,11 @@ export default function SearchBar() {
     const {
         data: sections,
         loading: sectionsLoading,
-    } = useTermSections<Section>(currentTerm.slug);
+    } = useTermSections<Section>(currentTerm.slug, searchActivated);
     const {
         data: professors,
         loading: professorsLoading,
-    } = useTermProfessors<Professor>(currentTerm.slug);
+    } = useTermProfessors<Professor>(currentTerm.slug, searchActivated);
 
     const { subjects, coursesByCode, orderedCourses, igetcAreas } = useMemo(() => {
         const subjectSet = new Set<string>();
@@ -182,19 +184,12 @@ export default function SearchBar() {
         pushWithTerm(suggestion.href);
     };
 
-    const handleSearch = (e: React.FormEvent) => {
-        e.preventDefault()
-
+    const performSearch = () => {
         const term = normalizeWhitespace(query)
         if (!term) return
 
         setIsSuggestionsOpen(false);
         resetActiveSuggestion();
-
-        if ((sectionsLoading && !sections) || (professorsLoading && !professors)) {
-            pushWithTerm("/classes");
-            return;
-        }
 
         const termUpper = term.toUpperCase();
         const termLower = term.toLowerCase();
@@ -281,10 +276,29 @@ export default function SearchBar() {
     }
 
     const isLoading = (sectionsLoading && !sections) || (professorsLoading && !professors);
+    const handleSearch = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!query.trim()) return;
+        setSearchActivated(true);
+        if (!searchActivated || isLoading) {
+            setPendingSearch(true);
+            return;
+        }
+        performSearch();
+    };
+    const finishPendingSearch = useEffectEvent(() => {
+        setPendingSearch(false);
+        performSearch();
+    });
+    useEffect(() => {
+        if (pendingSearch && searchActivated && !isLoading) finishPendingSearch();
+    }, [pendingSearch, searchActivated, isLoading]);
     const hasSearchText = normalizeWhitespace(query).length > 0;
     const showSuggestions = isSuggestionsOpen && hasSearchText && suggestions.length > 0;
 
     const handleInputChange = (value: string) => {
+        setSearchActivated(true);
+        setPendingSearch(false);
         setQuery(value);
         setIsSuggestionsOpen(normalizeWhitespace(value).length > 0);
         resetActiveSuggestion();
@@ -344,6 +358,7 @@ export default function SearchBar() {
                 value={query}
                 onChange={(e) => handleInputChange(e.target.value)}
                 onFocus={() => {
+                    setSearchActivated(true);
                     if (hasSearchText) setIsSuggestionsOpen(true);
                 }}
                 onKeyDown={handleKeyDown}
@@ -360,6 +375,7 @@ export default function SearchBar() {
                 data-testid="global-search-input"
                 className="w-full pl-10 pr-4 py-2 rounded-full border border-slate-300 bg-white outline-none text-slate-800 focus:border-slate-400 focus:ring-2 focus:ring-slate-300 transition shadow-sm"
             />
+            {pendingSearch && isLoading ? <p role="status" className="mt-2 text-sm text-slate-600">Loading search results…</p> : null}
             {showSuggestions && (
                 <div
                     className="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl"

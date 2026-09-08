@@ -1,6 +1,7 @@
 import crypto from "crypto";
 import fs from "fs";
 import path from "path";
+import { pathToFileURL } from "url";
 
 const ASSIST_BASE_URL = "https://www.assist.org";
 const SBCC_INSTITUTION_ID = 92;
@@ -55,7 +56,9 @@ function readJsonFile(filePath, fallback = null) {
 
 function writeJsonFile(filePath, value) {
   ensureParent(filePath);
-  fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`);
+  const temporaryPath = `${filePath}.${process.pid}.tmp`;
+  fs.writeFileSync(temporaryPath, `${JSON.stringify(value, null, 2)}\n`);
+  fs.renameSync(temporaryPath, filePath);
 }
 
 function toRelative(filePath) {
@@ -90,6 +93,7 @@ function trimCode(value) {
 }
 
 function numberOrNull(value) {
+  if (value == null || (typeof value === "string" && value.trim() === "")) return null;
   const parsed = Number(value);
   return Number.isFinite(parsed) ? parsed : null;
 }
@@ -167,6 +171,7 @@ Examples:
 
 Options:
   --year-id <id>                 ASSIST academic year id. Defaults to the latest year with SBCC UC/CSU agreements.
+  --fallback-year-id <id>        In fetch-all, use this older year only for campuses absent from the selected year.
   --segments <UC,CSU>            Receiving institution segments to include.
   --receiving-id <id>            Restrict list/fetch-all to one receiving institution.
   --category <code>              Agreement category for list mode. Default: major.
@@ -631,6 +636,11 @@ function agreementSourceUrl(normalizedKey, academicYear, sendingInstitution, rec
   url.searchParams.set("agreementType", "to");
   url.searchParams.set("view", "agreement");
   url.searchParams.set("keyName", normalizedKey);
+  if (parseAgreementKey(normalizedKey).type === "Major") {
+    url.searchParams.set("viewBy", "major");
+    url.searchParams.set("viewSendingAgreements", "false");
+    url.searchParams.set("viewByKey", normalizedKey);
+  }
   return url.toString();
 }
 
@@ -667,6 +677,7 @@ function normalizeAttributes(attributes) {
 function normalizeAdvisements(advisements) {
   if (!Array.isArray(advisements)) return [];
   return advisements.map((advisement) => ({
+    ...advisement,
     id: advisement.id ?? null,
     position: numberOrNull(advisement.position),
     content: trimString(advisement.content ?? advisement.text ?? advisement.name),
@@ -735,6 +746,7 @@ function normalizeInstruction(instruction) {
   return {
     type: type || "UNKNOWN",
     logic: "UNKNOWN",
+    selectionType: trimString(instruction.selectionType),
   };
 }
 
@@ -745,6 +757,9 @@ function coursesFromReceivingCell(cell) {
   }
   if (cell.type === "Series") {
     return (cell.series?.courses || []).map((course) => normalizeCourse(course, cell)).filter(Boolean);
+  }
+  if (cell.type === "GeneralEducation") {
+    return (cell.generalEducationArea?.courses || []).map((course) => normalizeCourse(course, cell)).filter(Boolean);
   }
   return [];
 }
@@ -767,6 +782,19 @@ function normalizeReceivingCell(cell) {
     item.name = trimString(cell.series?.name);
     item.seriesPathways = Array.isArray(cell.series?.seriesPathways) ? cell.series.seriesPathways : [];
   }
+  if (cell.type === "Requirement") {
+    item.name = trimString(cell.requirement?.name);
+    item.requirementAttributes = normalizeAttributes(cell.requirementAttributes);
+  }
+  if (["CALGETC", "CSUGE", "CSUAI", "IGETC", "GeneralEducation"].includes(cell.type)) {
+    const area = cell.type === "GeneralEducation" ? cell.generalEducationArea : cell[cell.type.toLowerCase()];
+    item.name = trimString(area?.name);
+    item.areaCode = trimCode(area?.code);
+    item.areaType = trimCode(area?.areaType || cell.type);
+    if (cell.type === "GeneralEducation") {
+      item.generalEducationAreaAttributes = normalizeAttributes(cell.generalEducationAreaAttributes);
+    }
+  }
 
   return item;
 }
@@ -776,6 +804,7 @@ function normalizeSendingItem(item) {
   if (item.type === "Course") {
     return {
       type: "Course",
+      position: numberOrNull(item.position),
       courses: [normalizeCourse(item, item)].filter(Boolean),
       attributes: normalizeAttributes(item.attributes),
     };
@@ -783,6 +812,7 @@ function normalizeSendingItem(item) {
   if (item.type === "Series") {
     return {
       type: "Series",
+      position: numberOrNull(item.position),
       logic: normalizeConjunction(item.series?.conjunction),
       name: trimString(item.series?.name),
       courses: (item.series?.courses || []).map((course) => normalizeCourse(course, item)).filter(Boolean),
@@ -791,6 +821,7 @@ function normalizeSendingItem(item) {
   }
   return {
     type: trimString(item.type) || "UNKNOWN",
+    position: numberOrNull(item.position),
     courses: [],
     attributes: normalizeAttributes(item.attributes),
   };
@@ -806,8 +837,16 @@ function deriveSendingLogic(groups, conjunctions) {
 function normalizeSendingArticulation(articulationRecord, receivingCellId) {
   const articulation = articulationRecord?.articulation || articulationRecord;
   const sending = articulation?.sendingArticulation;
+  const supplementary = {
+    articulationType: trimString(articulation?.type),
+    articulationAttributes: normalizeAttributes(articulation?.attributes),
+    receivingAttributes: normalizeAttributes(articulation?.receivingAttributes),
+    receivingTemplateAttributes: articulationRecord?.receivingAttributes ?? null,
+    templateOverrides: Array.isArray(articulation?.templateOverrides) ? articulation.templateOverrides : [],
+  };
   if (!sending) {
     return {
+      ...supplementary,
       receivingCellId,
       logic: "UNKNOWN",
       courses: [],
@@ -823,7 +862,9 @@ function normalizeSendingArticulation(articulationRecord, receivingCellId) {
     .slice()
     .sort((a, b) => Number(a.position || 0) - Number(b.position || 0))
     .map((group) => {
-      const normalizedItems = (group.items || []).map((item) => normalizeSendingItem(item));
+      const normalizedItems = (group.items || []).slice()
+        .sort((a, b) => Number(a.position || 0) - Number(b.position || 0))
+        .map((item) => normalizeSendingItem(item));
       return {
         type: trimString(group.type) || "CourseGroup",
         position: numberOrNull(group.position),
@@ -835,6 +876,7 @@ function normalizeSendingArticulation(articulationRecord, receivingCellId) {
     });
 
   return {
+    ...supplementary,
     receivingCellId,
     logic: deriveSendingLogic(courseGroups, sending.courseGroupConjunctions),
     courses: courseGroups.flatMap((group) => group.courses),
@@ -968,6 +1010,8 @@ function normalizeAgreementResponse(apiResponse, context = {}) {
     segment: context.segment || "UNKNOWN",
   };
   const key = context.key || result.key || "";
+  const requirementGroups = normalizeRequirementGroups(Array.isArray(templateAssets) ? templateAssets : [], Array.isArray(articulations) ? articulations : []);
+  const linkedCellIds = new Set(requirementGroups.flatMap((group) => group.sections.flatMap((section) => section.receivingItems.map((item) => item.id))));
 
   const normalized = {
     source: "ASSIST",
@@ -981,7 +1025,8 @@ function normalizeAgreementResponse(apiResponse, context = {}) {
       publishDate: result.publishDate ?? null,
       catalogYear,
     },
-    requirementGroups: normalizeRequirementGroups(Array.isArray(templateAssets) ? templateAssets : [], Array.isArray(articulations) ? articulations : []),
+    requirementGroups,
+    unlinkedArticulations: (Array.isArray(articulations) ? articulations : []).filter((record) => !linkedCellIds.has(record.templateCellId)),
     notes: normalizeTemplateNotes(Array.isArray(templateAssets) ? templateAssets : []),
     parseErrors,
     lastCheckedAt: nowIso(),
@@ -1171,13 +1216,39 @@ async function runLimited(tasks, concurrency, worker) {
   return results;
 }
 
+function buildImportTargets(metadata, fallbackYearId = null) {
+  const targets = metadata.transferPartners.map((partner) => ({
+    ...partner,
+    academicYear: metadata.year,
+    yearSelection: "preferred",
+  }));
+  if (!fallbackYearId) return targets;
+
+  const fallbackYear = normalizeAcademicYear(resolveYear(metadata.academicYears, [], fallbackYearId));
+  if (fallbackYear.fallYear >= metadata.year.fallYear) {
+    throw new Error("The fallback academic year must be older than the preferred academic year.");
+  }
+  const selectedIds = new Set(targets.map((partner) => partner.id));
+  const fallbackPartners = buildSbccTransferPartners(
+    metadata.partners, metadata.institutions, fallbackYear.id, metadata.requestedSegments,
+  );
+  for (const partner of fallbackPartners) {
+    if (selectedIds.has(partner.id)) continue;
+    targets.push({ ...partner, academicYear: fallbackYear, yearSelection: "fallback" });
+    selectedIds.add(partner.id);
+  }
+  return targets;
+}
+
 async function commandFetchAll(client, manifest, options) {
   const metadata = await getMetadata(client, manifest, options);
+  const importTargets = buildImportTargets(metadata, options["fallback-year-id"]);
   const receivingIdFilter = options["receiving-id"] ? Number(options["receiving-id"]) : null;
   const partners = receivingIdFilter
-    ? metadata.transferPartners.filter((partner) => partner.id === receivingIdFilter)
-    : metadata.transferPartners;
-  const counts = summarizePartnerCounts(metadata.transferPartners);
+    ? importTargets.filter((partner) => partner.id === receivingIdFilter)
+    : importTargets;
+  if (partners.length === 0) throw new Error("No campuses match the requested academic years and institution filter.");
+  const counts = summarizePartnerCounts(importTargets);
   const listCategories = parseCsv(options["list-categories"], DEFAULT_LIST_CATEGORIES);
   const fullCategories = new Set(parseCsv(options["full-categories"], DEFAULT_FULL_CATEGORIES));
   const dryRun = parseBoolean(options["dry-run"]);
@@ -1187,6 +1258,9 @@ async function commandFetchAll(client, manifest, options) {
     completedAt: null,
     dryRun,
     academicYear: metadata.year,
+    fallbackAcademicYear: options["fallback-year-id"]
+      ? normalizeAcademicYear(resolveYear(metadata.academicYears, [], options["fallback-year-id"]))
+      : null,
     segments: metadata.requestedSegments,
     receivingInstitutionFilter: receivingIdFilter,
     ucCampusesFound: counts.ucCampusesFound,
@@ -1202,17 +1276,31 @@ async function commandFetchAll(client, manifest, options) {
     metadataErrors: [],
     parseErrors: [],
     sampleNormalizedOutputPath: null,
+    campuses: partners.map((partner) => ({
+      receivingInstitutionId: partner.id,
+      receivingInstitutionName: partner.name,
+      segment: partner.segment,
+      academicYear: partner.academicYear,
+      yearSelection: partner.yearSelection,
+      majorAgreementsListed: 0,
+      agreementsProcessed: 0,
+      failedAgreements: 0,
+    })),
   };
+  saveRunReport(report);
 
   const fullAgreementTasks = [];
   for (const partner of partners) {
+    const yearId = partner.academicYear.id;
+    const campusReport = report.campuses.find((campus) => campus.receivingInstitutionId === partner.id);
     let categories = [];
     try {
-      categories = await fetchAgreementCategories(client, manifest, metadata.year.id, partner.id);
+      categories = await fetchAgreementCategories(client, manifest, yearId, partner.id);
     } catch (error) {
       report.metadataErrors.push({
         receivingInstitutionId: partner.id,
         receivingInstitutionName: partner.name,
+        academicYearId: yearId,
         stage: "categories",
         message: error.message,
       });
@@ -1224,11 +1312,12 @@ async function commandFetchAll(client, manifest, options) {
       if (!categoryCodes.has(category)) continue;
       let list;
       try {
-        list = await fetchAgreementList(client, manifest, metadata.year.id, partner.id, category);
+        list = await fetchAgreementList(client, manifest, yearId, partner.id, category);
       } catch (error) {
         report.metadataErrors.push({
           receivingInstitutionId: partner.id,
           receivingInstitutionName: partner.name,
+          academicYearId: yearId,
           stage: `list:${category}`,
           message: error.message,
         });
@@ -1237,6 +1326,7 @@ async function commandFetchAll(client, manifest, options) {
       const reports = reportsFromAgreementList(list);
       report.agreementListsFetched += 1;
       report.agreementListReportsFound += reports.length;
+      if (category === "major") campusReport.majorAgreementsListed = reports.length;
 
       if (!fullCategories.has(category)) continue;
       for (const item of reports) {
@@ -1248,23 +1338,35 @@ async function commandFetchAll(client, manifest, options) {
           receivingInstitutionId: partner.id,
           receivingInstitutionName: partner.name,
           segment: partner.segment,
+          academicYearId: yearId,
         });
       }
     }
+    console.log(`Inventory: ${partner.name}, ${partner.academicYear.label}: ${campusReport.majorAgreementsListed} major agreements.`);
+    saveRunReport(report);
   }
 
   const limitedTasks = limit > 0 ? fullAgreementTasks.slice(0, limit) : fullAgreementTasks;
   report.majorAgreementsQueued = fullAgreementTasks.filter((task) => task.category === "major").length;
+  saveRunReport(report);
 
   if (dryRun) {
     report.completedAt = nowIso();
     writeRunReport(report, manifest);
     printRunReport(report);
     console.log("Dry run: full agreement downloads were skipped.");
+    if (report.metadataErrors.length) process.exitCode = 1;
     return;
   }
 
+  if (report.metadataErrors.length) {
+    report.completedAt = nowIso();
+    writeRunReport(report, manifest);
+    throw new Error("Agreement inventory is incomplete; resolve metadata/list errors before downloading full agreements.");
+  }
+
   const results = await runLimited(limitedTasks, options.concurrency || 1, async (task, index) => {
+    const campusReport = report.campuses.find((campus) => campus.receivingInstitutionId === task.receivingInstitutionId);
     try {
       const result = await fetchAndNormalizeAgreement(client, manifest, task, options);
       if (result.status === "skipped") report.agreementsSkippedCached += 1;
@@ -1277,14 +1379,18 @@ async function commandFetchAll(client, manifest, options) {
         report.agreementsWithParseErrors += 1;
         report.parseErrors.push({ key: task.key, errors: result.parseErrors });
       }
+      campusReport.agreementsProcessed += 1;
       if ((index + 1) % 10 === 0 || index === limitedTasks.length - 1) {
         console.log(`Processed ${index + 1}/${limitedTasks.length} full agreements.`);
+        saveRunReport(report);
       }
       return result;
     } catch (error) {
+      campusReport.failedAgreements += 1;
       report.agreementsWithParseErrors += 1;
       report.parseErrors.push({ key: task.key, errors: [{ message: error.message }] });
       console.error(`Failed ${task.key}: ${error.message}`);
+      saveRunReport(report);
       return { status: "failed", key: task.key, error };
     }
   });
@@ -1293,14 +1399,20 @@ async function commandFetchAll(client, manifest, options) {
   report.failedAgreements = results.filter((result) => result.status === "failed").length;
   writeRunReport(report, manifest);
   printRunReport(report);
+  if (report.failedAgreements || report.agreementsWithParseErrors) process.exitCode = 1;
 }
 
-function writeRunReport(report, manifest) {
+function saveRunReport(report) {
   ensureDir(REPORTS_ROOT);
   const timestampSlug = report.startedAt.replace(/[:.]/g, "-");
   const reportPath = path.join(REPORTS_ROOT, `assist-import-${timestampSlug}.json`);
   writeJsonFile(reportPath, report);
   writeJsonFile(path.join(REPORTS_ROOT, "last-run.json"), report);
+  return reportPath;
+}
+
+function writeRunReport(report, manifest) {
+  const reportPath = saveRunReport(report);
   manifest.runs.push({
     startedAt: report.startedAt,
     completedAt: report.completedAt,
@@ -1313,6 +1425,7 @@ function writeRunReport(report, manifest) {
 
 function printRunReport(report) {
   console.log(`Academic year: ${report.academicYear.label} (id ${report.academicYear.id})`);
+  if (report.fallbackAcademicYear) console.log(`Fallback academic year: ${report.fallbackAcademicYear.label}`);
   console.log(`UC campuses found: ${report.ucCampusesFound}`);
   console.log(`CSU campuses found: ${report.csuCampusesFound}`);
   console.log(`Campuses selected: ${report.campusesSelected}`);
@@ -1362,7 +1475,11 @@ async function main() {
   throw new Error(`Unknown command: ${command}`);
 }
 
-main().catch((error) => {
-  console.error(error.stack || error.message);
-  process.exitCode = 1;
-});
+export { AssistClient, buildImportTargets, buildSbccTransferPartners, normalizeAgreementResponse, normalizeInstruction, normalizeReceivingCell, normalizeSendingArticulation };
+
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+  main().catch((error) => {
+    console.error(error.stack || error.message);
+    process.exitCode = 1;
+  });
+}

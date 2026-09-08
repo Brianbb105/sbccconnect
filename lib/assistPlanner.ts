@@ -215,6 +215,8 @@ export type PlannerData = {
     };
 };
 
+export type PlannerCatalog = Pick<PlannerData, "schools" | "summary"> & { version: string };
+
 const ASSIST_NORMALIZED_ROOT = path.join(process.cwd(), "app/data/assist/normalized");
 const ASSIST_RAW_LISTS_ROOT = path.join(process.cwd(), "app/data/assist/raw/lists");
 const ASSIST_PARTNERS_PATH = path.join(process.cwd(), "app/data/assist/raw/metadata/sbcc-agreement-partners.json");
@@ -689,4 +691,48 @@ export function getAssistPlannerData(): PlannerData {
             sbccCourseCount: agreements.reduce((sum, agreement) => sum + agreement.stats.uniqueSbccCourseCount, 0),
         },
     };
+}
+
+// Reuse the prepared data across local requests and static route generation.
+// The importer updates its manifest, which invalidates this cache after an import.
+let plannerSnapshot: {
+    version: string;
+    data: PlannerData;
+    agreements: Map<string, PlannerAgreement>;
+    majors: Map<string, PlannerMajor[]>;
+} | undefined;
+
+function getPlannerSnapshot() {
+    const manifestPath = path.join(process.cwd(), "app/data/assist/cache-manifest.json");
+    const manifest = fs.statSync(manifestPath, { throwIfNoEntry: false });
+    const version = `${manifest?.mtimeMs ?? 0}-${manifest?.size ?? 0}`;
+    if (plannerSnapshot?.version === version) return plannerSnapshot;
+
+    const data = getAssistPlannerData();
+    const majors = new Map(data.schools.map((school) => [school.id, [] as PlannerMajor[]]));
+    data.majors.forEach((major) => majors.get(major.schoolId)?.push(major));
+    plannerSnapshot = {
+        version,
+        data,
+        agreements: new Map(data.agreements.map((agreement) => [agreement.id, agreement])),
+        majors,
+    };
+    return plannerSnapshot;
+}
+
+export function getAssistPlannerCatalog(): PlannerCatalog {
+    const { version, data: { schools, summary } } = getPlannerSnapshot();
+    return { schools, summary, version };
+}
+
+export function getAssistPlannerSchoolMajors(schoolId: string): PlannerMajor[] | null {
+    return getPlannerSnapshot().majors.get(schoolId) ?? null;
+}
+
+export function getAssistPlannerAgreementIds(): string[] {
+    return Array.from(getPlannerSnapshot().agreements.keys());
+}
+
+export function getAssistPlannerAgreement(agreementId: string): PlannerAgreement | null {
+    return getPlannerSnapshot().agreements.get(agreementId) ?? null;
 }

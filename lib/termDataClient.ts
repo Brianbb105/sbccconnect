@@ -39,7 +39,10 @@ function getCachedArray(
     const existing = cache.get(term);
     if (existing) return existing;
 
-    const next = loader().then((mod) => (Array.isArray(mod.default) ? mod.default : []));
+    const next = loader().then((mod) => (Array.isArray(mod.default) ? mod.default : [])).catch((error: unknown) => {
+        cache.delete(term);
+        throw error;
+    });
     cache.set(term, next);
     return next;
 }
@@ -123,19 +126,23 @@ type TermDataState<T> = {
 function useTermDataLoader<T>(
     term: TermSlug,
     load: (term: TermSlug) => Promise<T[]>,
+    enabled = true,
 ): TermDataState<T> {
-    const [state, setState] = useState<TermDataState<T>>({
+    const [state, setState] = useState<TermDataState<T> & { term: TermSlug }>({
+        term,
         data: null,
         loading: true,
         error: null,
     });
 
     useEffect(() => {
+        if (!enabled) return;
         let cancelled = false;
 
         queueMicrotask(() => {
             if (cancelled) return;
             setState({
+                term,
                 data: null,
                 loading: true,
                 error: null,
@@ -146,6 +153,7 @@ function useTermDataLoader<T>(
             .then((rows) => {
                 if (cancelled) return;
                 setState({
+                    term,
                     data: rows,
                     loading: false,
                     error: null,
@@ -154,6 +162,7 @@ function useTermDataLoader<T>(
             .catch((error) => {
                 if (cancelled) return;
                 setState({
+                    term,
                     data: [],
                     loading: false,
                     error: error instanceof Error ? error.message : "Failed to load term data.",
@@ -163,17 +172,18 @@ function useTermDataLoader<T>(
         return () => {
             cancelled = true;
         };
-    }, [term, load]);
+    }, [term, load, enabled]);
 
-    return state;
+    if (!enabled) return { data: null, loading: false, error: null };
+    return state.term === term ? state : { data: null, loading: true, error: null };
 }
 
-export function useTermSections<T>(term: TermSlug): TermDataState<T> {
-    return useTermDataLoader(term, loadSectionsForTerm<T>);
+export function useTermSections<T>(term: TermSlug, enabled = true): TermDataState<T> {
+    return useTermDataLoader(term, loadSectionsForTerm<T>, enabled);
 }
 
-export function useTermProfessors<T>(term: TermSlug): TermDataState<T> {
-    return useTermDataLoader(term, loadProfessorsForTerm<T>);
+export function useTermProfessors<T>(term: TermSlug, enabled = true): TermDataState<T> {
+    return useTermDataLoader(term, loadProfessorsForTerm<T>, enabled);
 }
 
 export function useAllProfessors<T extends ProfessorLike>(): TermDataState<ProfessorWithTerms<T>> {

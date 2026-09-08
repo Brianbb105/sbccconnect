@@ -149,6 +149,14 @@ npm run build
 
 The ASSIST importer uses the public JSON endpoints used by ASSIST.org's app. It keeps raw API responses separate from normalized SBCCPlan data and is designed to resume from cached files.
 
+The verified September 7, 2026 CSU snapshot contains 2,186 SBCC major agreements: 13 campuses use 2026–2027 and 10 use 2025–2026. See the [coverage and verification report](app/data/assist/reports/csu-latest-coverage.md) for campus counts, source-record notes, and validation evidence.
+
+The planner initially sends only its school catalog and summary. Selecting a school requests `/api/planner/schools/[schoolId]`; selecting a major requests `/api/planner/agreements/[agreementId]`. Both endpoints are generated as static JSON responses during `npm run build`, so the source archive remains excluded from production function bundles. Rebuild after importing new agreements. During development, the importer manifest timestamp invalidates the prepared server data; refresh the browser after an import. Client requests share a bounded session cache, and failed requests can be retried.
+
+The shared search bar loads term data when focused or used. An early search submission waits for the data before navigating. Route changes have a loading indicator while their content becomes available.
+
+Run the planner loading and data-preservation checks with `node --test app/scripts/assistPlannerLoading.test.mjs` (Node 24). For realistic navigation checks, run `npm run build` followed by `npm run start -- --port 3001`, then open `http://localhost:3001`. Development mode can still pause to compile a route on its first visit.
+
 Data locations:
 
 - Raw cache: `app/data/assist/raw/`
@@ -182,3 +190,37 @@ Operational notes:
 - `fetch-all` caches `major`, `breadth`, `dept`, and `prefix` agreement lists by default, but only downloads full `major` agreements unless `--full-categories` is changed.
 - Use `--force` to re-fetch cached API responses.
 - Use `--renormalize` to rebuild normalized files from cached raw agreements without re-downloading unchanged keys.
+
+To prefer 2026–2027 CSU agreements and use 2025–2026 only for campuses without a 2026–2027 partner record:
+
+```bash
+# Refresh metadata and major lists, and review each campus's selected year and count.
+node app/scripts/importAssistAgreements.mjs fetch-all --year-id 77 --fallback-year-id 76 --segments CSU --list-categories major --full-categories major --dry-run --force
+
+# Download or resume the selected agreements using those cached inventories.
+node app/scripts/importAssistAgreements.mjs fetch-all --year-id 77 --fallback-year-id 76 --segments CSU --list-categories major --full-categories major --concurrency 1
+```
+
+The fallback is selected per campus, not per major. A campus present in the preferred year's partner metadata never also receives a fallback-year import. A missing or failed preferred-year major list is not silently replaced with older data. Each run report includes campus names, selected years, inventory counts, and progress. `--dry-run` writes metadata, lists, and reports but skips full agreement downloads. Runs with inventory, download, or parse errors exit unsuccessfully; full downloads do not start if inventory requests fail. Validate output against every listed agreement key before treating the import as complete.
+
+Run the importer selection and data-preservation checks with `node --test app/scripts/importAssistAgreements.test.mjs`.
+
+The normalized output retains named requirements, general-education area names and codes, structured selection advisements, grade and credit notes, and conditional `templateOverrides`. The overrides remain structured source records; preserving them does not apply their conditions in the planner UI. Unmatched source records are retained separately in `unlinkedArticulations`, without inventing a requirement placement. Major source URLs select the agreement directly.
+
+After changing normalization rules, rebuild selected normalized files from cached raw responses by adding `--renormalize` to the same import command. This avoids downloading the source again.
+
+After a complete major-only import, reconcile its campus/year selection, every listed agreement key, raw hashes, normalized identities, requirement cells, course details, cross-listings, notes, and selection rules:
+
+```bash
+node app/scripts/validateAssistImport.mjs --output app/data/assist/reports/csu-latest-validation.json
+```
+
+The validator reads `reports/last-run.json` by default; use `--report <path>` for a specific run. It separately reports ASSIST articulation records that have no matching cell anywhere in the source template. These source inconsistencies remain preserved in the raw responses and the normalized `unlinkedArticulations` collection. A successful integrity check establishes data preservation; it does not certify every source requirement's meaning or its presentation in the planner UI.
+
+To re-fetch one deterministic sample per campus and compare its complete response with the saved source, ignoring JSON object-key ordering and embedded JSON formatting:
+
+```bash
+node app/scripts/verifyAssistLiveSamples.mjs --output app/data/assist/reports/csu-live-sample-validation.json
+```
+
+Live sample checks retain the importer's 6.5-second request spacing. They supplement the full local reconciliation; they do not re-fetch every agreement.

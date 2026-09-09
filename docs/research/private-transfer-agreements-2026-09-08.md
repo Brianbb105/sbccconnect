@@ -64,10 +64,10 @@ The full institution list and the returned categories/report keys are retained i
 | [Pepperdine Graziadio BSM guarantee](https://bschool.pepperdine.edu/undergraduate-programs/business-management/transfer-guarantee/) | A transfer-admission pathway for the online Bachelor of Science in Management degree-completion program | Distinct from Seaver College and the College of Health Science reports above; not a general Pepperdine guarantee |
 | [California Community Colleges independent-university ADT partners](https://www.cccco.edu/Students/Transfer/participating-ca-independent-non-profit-universities) | Formal ADT arrangements with named institutions, including Fresno Pacific, Golden Gate, National, Saint Mary's, Pacific, and University of the West | Institution/major conditions apply. The page is not used here as an exhaustive, current count of every private ADT participant |
 
-## Suggested next import scope
+## Completed ASSIST import and additional candidates
 
-The 15 verified ASSIST partners are the most direct extension of the existing importer. Include published GE and department/prefix categories where major reports are absent; a major-only scrape would miss LMU, Santa Clara, Cal Lutheran, APU, and Palo Alto's current entries. Keep each school's latest verified year visible.
+All 15 verified ASSIST partners have now been imported and added to the local planner: 333 major, 23 GE, 545 department, and 732 prefix report views. Both university-organized and SBCC-organized course reports are included; the 1,633 views overlap and are not 1,633 unique majors. Each school’s latest verified year is visible. See [the import coverage and verification report](../../app/data/assist-private/reports/coverage.md).
 
 USF is another practical source to add because its SBCC agreement has structured course tables and an explicit recent update date. Westmont's 2025–26 SBCC PDF is also a concrete import candidate. Cal Lutheran's own major page needs an effective-year check. Chapman requires a separate TES lookup and source validation.
 
-This research confirms transfer-agreement availability, not a student's eligibility, admission outcome, or guaranteed award of credit. The other private-school reports above were researched but have not been imported into SBCCPlan in this change.
+This research confirms transfer-agreement availability, not a student's eligibility, admission outcome, or guaranteed award of credit. The 15 ASSIST partners are integrated locally pending publication approval. USF, Westmont, Cal Lutheran’s separate university-hosted major page, Chapman TES, and the separate admission-guarantee resources were researched but are not part of this import.

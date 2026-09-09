@@ -14,6 +14,8 @@ import type {
 import { appendTermToHref, getDefaultTermSlug } from "@/lib/terms";
 import { usePlannerResource } from "@/lib/plannerDataClient";
 import UscPlannerGuide from "./UscPlannerGuide";
+import PrivateAssistGuide from "./PrivateAssistGuide";
+import { PRIVATE_CATEGORY_LABELS, type PrivateAgreementCategory } from "@/lib/privateAssistTypes";
 
 type RequirementView = "all" | "required" | "recommended" | "missing";
 type PlannerStep = "school" | "major" | "agreement";
@@ -31,6 +33,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
     const [selectedMajorId, setSelectedMajorId] = useState("");
     const [schoolSearch, setSchoolSearch] = useState("");
     const [majorSearch, setMajorSearch] = useState("");
+    const [agreementCategory, setAgreementCategory] = useState<PrivateAgreementCategory | 'all'>('all');
     const [step, setStep] = useState<PlannerStep>("school");
     const [requirementView, setRequirementView] = useState<RequirementView>("all");
     const activePanelRef = useRef<HTMLDivElement>(null);
@@ -62,9 +65,9 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
     const majorOptions = majorResource.data ?? EMPTY_MAJORS;
     const visibleMajors = useMemo(() => {
         const query = majorSearch.trim().toLowerCase();
-        if (!query) return majorOptions;
-        return majorOptions.filter((major) => `${major.label} ${major.schoolCode}`.toLowerCase().includes(query));
-    }, [majorOptions, majorSearch]);
+        return majorOptions.filter(major => agreementCategory === 'all' || major.agreementCategory === agreementCategory)
+            .filter((major) => !query || `${major.label} ${major.schoolCode} ${major.organizedBy === 'SBCC' ? 'SBCC' : ''}`.toLowerCase().includes(query));
+    }, [majorOptions, majorSearch, agreementCategory]);
 
     const selectedSchool = schools.find((school) => school.id === selectedSchoolId) ?? null;
     const selectedMajor = majorOptions.find((major) => major.id === selectedMajorId) ?? null;
@@ -85,6 +88,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
     const handleSchoolClick = (schoolId: string) => {
         shouldScrollToActivePanelRef.current = true;
         setSelectedSchoolId(schoolId);
+        setAgreementCategory('all');
         setSelectedMajorId("");
         setMajorSearch("");
         setRequirementView("all");
@@ -143,7 +147,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                         </span>
                     </div>
                     <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-                        Choose a school, choose a major, then open the agreement for that path. UC and CSU data comes from{" "}
+                        Choose a school, then browse its programs and transfer agreements. UC, CSU, and participating private-university agreements come from{" "}
                         <a
                             href="https://www.assist.org"
                             target="_blank"
@@ -161,7 +165,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                 <div className="border-t border-slate-200 bg-slate-50 px-6 py-5 md:px-8">
                     <div className="flex flex-wrap gap-2">
                         <SummaryPill value={summary.schoolCount} label="schools" />
-                        <SummaryPill value={summary.cachedMajorCount} label="programs listed" />
+                        <SummaryPill value={summary.cachedMajorCount} label="programs and agreements listed" />
                         <SummaryPill value={summary.detailedAgreementCount} label="agreements and guides ready" />
                     </div>
                 </div>
@@ -172,7 +176,7 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                 <div ref={activePanelRef} className="scroll-mt-6">
                     <ChoicePanel
                         title="Choose A Transfer School"
-                        description="Start with one school. The major list opens after you pick a destination."
+                        description="Start with one school. Its programs and agreements open after you pick a destination."
                         searchValue={schoolSearch}
                         searchPlaceholder="Search schools"
                         onSearchChange={setSchoolSearch}
@@ -209,25 +213,29 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                         title={selectedSchool.name}
                         description={
                             selectedSchool.hasMajorList
-                                ? selectedSchool.id === "usc" ? "Choose a USC program to see its degree-planning guide. Program codes distinguish similarly named options in USC’s menu." : "Choose a major to open its agreement."
+                                ? selectedSchool.agreementCategories ? `Browse this school’s ${selectedSchool.academicYearLabel} SBCC agreements by type. Department and course-prefix views overlap; their counts are not separate majors.` : selectedSchool.id === "usc" ? "Choose a USC program to see its degree-planning guide. Program codes distinguish similarly named options in USC’s menu." : "Choose a major to open its agreement."
                                 : "This school is available in the partner cache, but its major list is not downloaded yet."
                         }
                         searchValue={majorSearch}
-                        searchPlaceholder="Search majors"
+                        searchPlaceholder={selectedSchool.agreementCategories ? "Search agreements" : "Search majors"}
                         onSearchChange={setMajorSearch}
                         backLabel="Back To Schools"
                         onBack={goToSchools}
                     >
                         {majorResource.loading || majorResource.error ? (
-                            <ResourceStatus loadingText="Loading majors…" error={majorResource.error} onRetry={majorResource.retry} />
+                            <ResourceStatus loadingText="Loading agreements…" error={majorResource.error} onRetry={majorResource.retry} />
                         ) : selectedSchool.hasMajorList ? (
                             <>
+                                {selectedSchool.agreementCategories && <div className="mb-5 flex flex-wrap gap-2" aria-label="Agreement type">
+                                    <button type="button" aria-pressed={agreementCategory === 'all'} onClick={() => setAgreementCategory('all')} className={`rounded-full border px-4 py-2 text-sm font-bold ${agreementCategory === 'all' ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-300 text-slate-700'}`}>All agreements</button>
+                                    {(Object.entries(selectedSchool.agreementCategories) as Array<[PrivateAgreementCategory, number]>).map(([category, count]) => <button key={category} type="button" aria-pressed={agreementCategory === category} onClick={() => setAgreementCategory(category)} className={`rounded-full border px-4 py-2 text-sm font-bold ${agreementCategory === category ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-300 text-slate-700'}`}>{PRIVATE_CATEGORY_LABELS[category]} ({count})</button>)}
+                                </div>}
                                 <div className="grid gap-3 md:grid-cols-2">
                                     {visibleMajors.map((major) => (
                                         <MajorCard key={major.id} major={major} onClick={() => handleMajorClick(major.id)} />
                                     ))}
                                 </div>
-                                {visibleMajors.length === 0 ? <EmptyState text="No majors match that search." /> : null}
+                                {visibleMajors.length === 0 ? <EmptyState text="No programs or agreements match that search." /> : null}
                             </>
                         ) : (
                             <MissingAgreementPanel school={selectedSchool} major={null} />
@@ -244,13 +252,15 @@ export default function AssistPlannerClient({ data }: { data: PlannerCatalog }) 
                             onClick={goToMajors}
                             className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50"
                         >
-                            Back To Majors
+                            {selectedSchool.agreementCategories ? 'Back To Agreements' : 'Back To Majors'}
                         </button>
                     </div>
                     {agreementResource.loading || agreementResource.error ? (
                         <ResourceStatus loadingText="Loading agreement…" error={agreementResource.error} onRetry={agreementResource.retry} />
                     ) : selectedAgreement?.uscGuide ? (
                         <UscPlannerGuide key={selectedAgreement.id} agreement={selectedAgreement} />
+                    ) : selectedAgreement?.privateGuide ? (
+                        <PrivateAssistGuide key={selectedAgreement.id} agreement={selectedAgreement} />
                     ) : selectedAgreement ? (
                         <AgreementCard
                             agreement={selectedAgreement}
@@ -355,7 +365,7 @@ function SchoolCard({ onClick, school }: { onClick: () => void; school: PlannerS
             <span className="mt-4 flex flex-wrap gap-2">
                 {school.hasMajorList ? (
                     <span className="rounded-full border border-blue-200 bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">
-                        {school.majorCount ?? 0} {school.id === "usc" ? "programs" : "majors"}
+                        {school.majorCount ?? 0} {school.agreementCategories ? school.majorCount === 1 ? 'agreement' : 'agreements' : school.id === "usc" ? "programs" : "majors"}
                     </span>
                 ) : (
                     <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-bold text-slate-500">
@@ -368,6 +378,7 @@ function SchoolCard({ onClick, school }: { onClick: () => void; school: PlannerS
                     </span>
                 ) : null}
             </span>
+            {school.academicYearLabel && <span className="mt-3 block text-xs font-semibold text-slate-500">{school.academicYearLabel}</span>}
         </button>
     );
 }
@@ -380,6 +391,7 @@ function MajorCard({ major, onClick }: { major: PlannerMajor; onClick: () => voi
             className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-left transition hover:-translate-y-0.5 hover:border-[#0f172a] hover:bg-white hover:shadow-sm"
         >
             <span className="block text-base font-bold leading-snug text-[#0f172a]">{major.label}</span>
+            {major.agreementCategory && <span className="mt-2 block text-xs font-semibold text-slate-500">{PRIVATE_CATEGORY_LABELS[major.agreementCategory]}{['dept', 'prefix'].includes(major.agreementCategory) ? ` · ${major.organizedBy === 'SBCC' ? 'SBCC' : 'University'} view` : ''}</span>}
             <span
                 className={`mt-4 inline-flex rounded-full border px-3 py-1 text-xs font-bold ${
                     major.hasDetails
@@ -387,7 +399,7 @@ function MajorCard({ major, onClick }: { major: PlannerMajor; onClick: () => voi
                         : "border-slate-200 bg-white text-slate-500"
                 }`}
             >
-                {major.hasDetails ? major.schoolId === "usc" ? "USC guide ready" : "Requirements ready" : major.unavailableReason ? "Guide unavailable" : "Agreement not imported"}
+                {major.hasDetails ? major.agreementCategory ? 'Agreement ready' : major.schoolId === "usc" ? "USC guide ready" : "Requirements ready" : major.unavailableReason ? "Guide unavailable" : "Agreement not imported"}
             </span>
         </button>
     );

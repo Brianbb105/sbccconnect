@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { getUscPlannerData } from "./uscPlanner.ts";
+import { getPrivateAssistPlannerData } from "./privateAssistPlanner.ts";
+import type { PrivateAssistGuide, PrivateAgreementCategory } from "./privateAssistTypes";
 
 type AssistInstitution = {
     id?: number | null;
@@ -157,6 +159,7 @@ export type PlannerRequirementGroup = {
 };
 
 export type PlannerAgreement = {
+    privateGuide?: PrivateAssistGuide;
     uscGuide?: {
         programCode: string;
         sections: Array<{ position: number; text: string }>;
@@ -191,6 +194,8 @@ export type PlannerAgreement = {
 };
 
 export type PlannerSchool = {
+    agreementCategories?: Partial<Record<PrivateAgreementCategory, number>>;
+    academicYearLabel?: string;
     id: string;
     name: string;
     code: string;
@@ -201,6 +206,8 @@ export type PlannerSchool = {
 };
 
 export type PlannerMajor = {
+    agreementCategory?: PrivateAgreementCategory;
+    organizedBy?: 'SBCC' | 'university';
     unavailableReason?: string;
     id: string;
     schoolId: string;
@@ -716,7 +723,8 @@ function getPlannerSnapshot() {
     const manifestPath = path.join(process.cwd(), "app/data/assist/cache-manifest.json");
     const manifest = fs.statSync(manifestPath, { throwIfNoEntry: false });
     const uscManifest = fs.statSync(path.join(process.cwd(), "app/data/usc/manifest.json"), { throwIfNoEntry: false });
-    const version = `${manifest?.mtimeMs ?? 0}-${manifest?.size ?? 0}-${uscManifest?.mtimeMs ?? 0}-${uscManifest?.size ?? 0}`;
+    const privateManifest = fs.statSync(path.join(process.cwd(), "app/data/assist-private/manifest.json"), { throwIfNoEntry: false });
+    const version = `${manifest?.mtimeMs ?? 0}-${manifest?.size ?? 0}-${uscManifest?.mtimeMs ?? 0}-${uscManifest?.size ?? 0}-${privateManifest?.mtimeMs ?? 0}-${privateManifest?.size ?? 0}`;
     if (plannerSnapshot?.version === version) return plannerSnapshot;
 
     const data = getAssistPlannerData();
@@ -727,6 +735,14 @@ function getPlannerSnapshot() {
     data.summary.schoolCount += usc.schools.length;
     data.summary.cachedMajorCount += usc.majors.length;
     data.summary.detailedAgreementCount += usc.agreements.length;
+    const privateData = getPrivateAssistPlannerData();
+    data.schools.push(...privateData.schools);
+    data.majors.push(...privateData.majors);
+    data.agreements.push(...privateData.agreements);
+    data.summary.schoolCount += privateData.schools.length;
+    data.summary.cachedMajorCount += privateData.majors.length;
+    data.summary.detailedAgreementCount += privateData.agreements.length;
+    data.summary.requirementCount += privateData.agreements.reduce((sum, agreement) => sum + agreement.stats.requirementCount, 0);
     const majors = new Map(data.schools.map((school) => [school.id, [] as PlannerMajor[]]));
     data.majors.forEach((major) => majors.get(major.schoolId)?.push(major));
     plannerSnapshot = {

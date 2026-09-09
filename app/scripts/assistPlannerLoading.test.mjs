@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import fs from "node:fs";
+import path from "node:path";
 import {
     getAssistPlannerData,
     getAssistPlannerCatalog,
@@ -20,9 +22,9 @@ test("the initial catalog stays small and contains no majors or agreement detail
 test("every school and agreement is preserved across the lazy loading boundary", () => {
     const original = getAssistPlannerData();
     const catalog = getAssistPlannerCatalog();
-    assert.deepEqual(catalog.schools.filter(school => school.id !== "usc"), original.schools);
-    assert.equal(catalog.summary.schoolCount, original.summary.schoolCount + 1);
-    assert.deepEqual(getAssistPlannerAgreementIds().filter(id => !id.startsWith("usc-")), original.agreements.map((agreement) => agreement.id));
+    assert.deepEqual(catalog.schools.filter(school => school.segment === "UC" || school.segment === "CSU"), original.schools);
+    assert.equal(catalog.summary.schoolCount, original.summary.schoolCount + 16);
+    assert.deepEqual(getAssistPlannerAgreementIds().filter(id => !id.startsWith("usc-") && !id.startsWith("private-assist-")), original.agreements.map((agreement) => agreement.id));
     for (const school of original.schools) {
         const majors = getAssistPlannerSchoolMajors(school.id);
         assert.deepEqual(majors, original.majors.filter((major) => major.schoolId === school.id));
@@ -40,6 +42,32 @@ test("unknown selections never fall back to another school or agreement", () => 
     for (const id of ["unknown", "", "../../cache-manifest.json"]) {
         assert.equal(getAssistPlannerSchoolMajors(id), null);
         assert.equal(getAssistPlannerAgreement(id), null);
+    }
+});
+
+test("all 15 private-school inventories and prepared source guides survive planner loading", () => {
+    const root = path.resolve("app/data/assist-private");
+    const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
+    const catalog = getAssistPlannerCatalog();
+    assert.equal(manifest.schools.length, 15);
+    for (const sourceSchool of manifest.schools) {
+        const school = catalog.schools.find(school => school.id === String(sourceSchool.id));
+        assert.equal(school?.segment, "PRIVATE");
+        assert.equal(school?.academicYearLabel, sourceSchool.academicYear.label);
+        assert.deepEqual(school?.agreementCategories, sourceSchool.categoryCounts);
+        const majors = getAssistPlannerSchoolMajors(String(sourceSchool.id));
+        const reports = manifest.reports.filter(report => report.schoolId === sourceSchool.id);
+        assert.deepEqual(majors.map(major => major.key).sort(), reports.map(report => report.key).sort());
+        for (const report of reports) {
+            const major = majors.find(major => major.key === report.key);
+            const guide = getAssistPlannerAgreement(major.agreementId);
+            const source = JSON.parse(fs.readFileSync(path.join(root, manifest.agreements[report.key].normalizedPath), "utf8"));
+            assert.equal(major.agreementCategory, report.category);
+            assert.equal(guide.schoolId, String(report.schoolId));
+            assert.equal(guide.academicYearLabel, source.academicYear.label);
+            assert.equal(guide.sourceUrl, source.sourceUrl);
+            assert.deepEqual(guide.privateGuide, source.plannerGuide);
+        }
     }
 });
 

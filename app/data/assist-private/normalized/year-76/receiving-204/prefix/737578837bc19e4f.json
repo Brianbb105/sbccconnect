@@ -1,0 +1,378 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 204,
+    "name": "Charles R. Drew University of Medicine and Science",
+    "code": "CDU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/204/SendingPrefix/16250",
+    "type": "SendingPrefix",
+    "name": "TIS Translation and Interpretation Services",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.241Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=204&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F204%2FSendingPrefix%2F16250&viewBy=prefix&viewByKey=76%2F92%2Fto%2F204%2FSendingPrefix%2F16250&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F204%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-204/30c867a353488563.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 405992,
+            "prefix": "COM",
+            "courseNumber": "231",
+            "title": "Spanish for Healthcare Professionals",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Communication",
+            "departmentParentId": 15091,
+            "prefixDescription": "Communication",
+            "prefixParentId": 18297,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 366182,
+            "prefix": "TIS",
+            "courseNumber": "106",
+            "title": "Spanish Translation of Specialty Areas",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2018",
+            "endTerm": "",
+            "department": "Spanish",
+            "departmentParentId": 12272,
+            "prefixDescription": "Translation and Interpretation Services",
+            "prefixParentId": 16250,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 366186,
+            "prefix": "TIS",
+            "courseNumber": "116",
+            "title": "Basic Medical Terminology, Spanish",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2018",
+            "endTerm": "",
+            "department": "Spanish",
+            "departmentParentId": 12272,
+            "prefixDescription": "Translation and Interpretation Services",
+            "prefixParentId": 16250,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 366187,
+            "prefix": "TIS",
+            "courseNumber": "117",
+            "title": "Medical Spanish/English Interpretation",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2018",
+            "endTerm": "",
+            "department": "Spanish",
+            "departmentParentId": 12272,
+            "prefixDescription": "Translation and Interpretation Services",
+            "prefixParentId": 16250,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "Advisement",
+            "position": 0,
+            "logic": "UNKNOWN",
+            "courses": [],
+            "items": [],
+            "attributes": [],
+            "sourceAdvisement": {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select"
+            }
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 366182,
+                "prefix": "TIS",
+                "courseNumber": "106",
+                "title": "Spanish Translation of Specialty Areas",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2018",
+                "endTerm": "",
+                "department": "Spanish",
+                "departmentParentId": 12272,
+                "prefixDescription": "Translation and Interpretation Services",
+                "prefixParentId": 16250,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 366186,
+                "prefix": "TIS",
+                "courseNumber": "116",
+                "title": "Basic Medical Terminology, Spanish",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2018",
+                "endTerm": "",
+                "department": "Spanish",
+                "departmentParentId": 12272,
+                "prefixDescription": "Translation and Interpretation Services",
+                "prefixParentId": 16250,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 366187,
+                "prefix": "TIS",
+                "courseNumber": "117",
+                "title": "Medical Spanish/English Interpretation",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2018",
+                "endTerm": "",
+                "department": "Spanish",
+                "departmentParentId": 12272,
+                "prefixDescription": "Translation and Interpretation Services",
+                "prefixParentId": 16250,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 366182,
+                    "prefix": "TIS",
+                    "courseNumber": "106",
+                    "title": "Spanish Translation of Specialty Areas",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2018",
+                    "endTerm": "",
+                    "department": "Spanish",
+                    "departmentParentId": 12272,
+                    "prefixDescription": "Translation and Interpretation Services",
+                    "prefixParentId": 16250,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 366186,
+                    "prefix": "TIS",
+                    "courseNumber": "116",
+                    "title": "Basic Medical Terminology, Spanish",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2018",
+                    "endTerm": "",
+                    "department": "Spanish",
+                    "departmentParentId": 12272,
+                    "prefixDescription": "Translation and Interpretation Services",
+                    "prefixParentId": 16250,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 2,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 366187,
+                    "prefix": "TIS",
+                    "courseNumber": "117",
+                    "title": "Medical Spanish/English Interpretation",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2018",
+                    "endTerm": "",
+                    "department": "Spanish",
+                    "departmentParentId": 12272,
+                    "prefixDescription": "Translation and Interpretation Services",
+                    "prefixParentId": 16250,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "COM 231",
+                "receivingText": "COM 231 — Spanish for Healthcare Professionals (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "Select 1 course from the following\nTIS 106 — Spanish Translation of Specialty Areas (3 units)\nCourse validity: F2018 onward\nOR\nTIS 116 — Basic Medical Terminology, Spanish (3 units)\nCourse validity: F2018 onward\nOR\nTIS 117 — Medical Spanish/English Interpretation (3 units)\nCourse validity: F2018 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/204/AllSendingPrefixes",
+    "groupIndex": 46,
+    "groupName": "TIS Translation and Interpretation Services",
+    "publishDate": "2026-06-12T19:12:53.770943"
+  }
+}

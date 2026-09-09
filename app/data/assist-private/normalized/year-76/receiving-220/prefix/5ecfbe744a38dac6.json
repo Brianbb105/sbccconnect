@@ -1,0 +1,948 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 220,
+    "name": "University of Redlands",
+    "code": "UOFR",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/220/Prefix/17933",
+    "type": "Prefix",
+    "name": "MUSI Music Ensemble",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:47.506Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=220&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F220%2FPrefix%2F17933&viewBy=prefix&viewByKey=76%2F92%2Fto%2F220%2FPrefix%2F17933&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F220%2FAllPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-220/6e27d74e2d438d19.json",
+    "templateAssetCount": 0,
+    "articulationCount": 10
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 412288,
+            "prefix": "MUSI",
+            "courseNumber": "110",
+            "title": "Opera Workshop",
+            "minUnits": 1,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399499,
+            "prefix": "MUSI",
+            "courseNumber": "121",
+            "title": "Class Piano I",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 39026,
+            "prefix": "MUS",
+            "courseNumber": "140A",
+            "title": "Beginning Piano",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 9431,
+            "prefixDescription": "Music",
+            "prefixParentId": 6602,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 39026,
+                "prefix": "MUS",
+                "courseNumber": "140A",
+                "title": "Beginning Piano",
+                "minUnits": 1,
+                "maxUnits": 1,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Music",
+                "departmentParentId": 9431,
+                "prefixDescription": "Music",
+                "prefixParentId": 6602,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 39026,
+                    "prefix": "MUS",
+                    "courseNumber": "140A",
+                    "title": "Beginning Piano",
+                    "minUnits": 1,
+                    "maxUnits": 1,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Music",
+                    "departmentParentId": 9431,
+                    "prefixDescription": "Music",
+                    "prefixParentId": 6602,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399500,
+            "prefix": "MUSI",
+            "courseNumber": "123A",
+            "title": "Class Classical Guitar I",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 3,
+      "receiving": {
+        "id": "source-row-3",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399501,
+            "prefix": "MUSI",
+            "courseNumber": "123B",
+            "title": "Class Classical Guitar II",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-3",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 4,
+      "receiving": {
+        "id": "source-row-4",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399502,
+            "prefix": "MUSI",
+            "courseNumber": "124",
+            "title": "Introduction to Voice",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-4",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 5,
+      "receiving": {
+        "id": "source-row-5",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399503,
+            "prefix": "MUSI",
+            "courseNumber": "125A",
+            "title": "Class Popular Guitar I",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-5",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 6,
+      "receiving": {
+        "id": "source-row-6",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399504,
+            "prefix": "MUSI",
+            "courseNumber": "125B",
+            "title": "Class Popular Guitar II",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-6",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 7,
+      "receiving": {
+        "id": "source-row-7",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399505,
+            "prefix": "MUSI",
+            "courseNumber": "125C",
+            "title": "Class Popular Guitar III",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-7",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 8,
+      "receiving": {
+        "id": "source-row-8",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399506,
+            "prefix": "MUSI",
+            "courseNumber": "126",
+            "title": "Class Piano II",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-8",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 313310,
+            "prefix": "MUS",
+            "courseNumber": "140B",
+            "title": "Beginning Piano",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 9431,
+            "prefixDescription": "Music",
+            "prefixParentId": 6602,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 313310,
+                "prefix": "MUS",
+                "courseNumber": "140B",
+                "title": "Beginning Piano",
+                "minUnits": 1,
+                "maxUnits": 1,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Music",
+                "departmentParentId": 9431,
+                "prefixDescription": "Music",
+                "prefixParentId": 6602,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 313310,
+                    "prefix": "MUS",
+                    "courseNumber": "140B",
+                    "title": "Beginning Piano",
+                    "minUnits": 1,
+                    "maxUnits": 1,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Music",
+                    "departmentParentId": 9431,
+                    "prefixDescription": "Music",
+                    "prefixParentId": 6602,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 9,
+      "receiving": {
+        "id": "source-row-9",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399507,
+            "prefix": "MUSI",
+            "courseNumber": "221",
+            "title": "Class Piano III",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 14868,
+            "prefixDescription": "Music Ensemble",
+            "prefixParentId": 17933,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-9",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 38565,
+            "prefix": "MUS",
+            "courseNumber": "142A",
+            "title": "Intermediate Piano",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Music",
+            "departmentParentId": 9431,
+            "prefixDescription": "Music",
+            "prefixParentId": 6602,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 38565,
+                "prefix": "MUS",
+                "courseNumber": "142A",
+                "title": "Intermediate Piano",
+                "minUnits": 1,
+                "maxUnits": 1,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Music",
+                "departmentParentId": 9431,
+                "prefixDescription": "Music",
+                "prefixParentId": 6602,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 38565,
+                    "prefix": "MUS",
+                    "courseNumber": "142A",
+                    "title": "Intermediate Piano",
+                    "minUnits": 1,
+                    "maxUnits": 1,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Music",
+                    "departmentParentId": 9431,
+                    "prefixDescription": "Music",
+                    "prefixParentId": 6602,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "MUSI 110",
+                "receivingText": "MUSI 110 — Opera Workshop (1–3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-1",
+                "title": "MUSI 121",
+                "receivingText": "MUSI 121 — Class Piano I (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "MUS 140A — Beginning Piano (1 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "MUSI 123A",
+                "receivingText": "MUSI 123A — Class Classical Guitar I (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-3",
+                "title": "MUSI 123B",
+                "receivingText": "MUSI 123B — Class Classical Guitar II (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-4",
+                "title": "MUSI 124",
+                "receivingText": "MUSI 124 — Introduction to Voice (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-5",
+                "title": "MUSI 125A",
+                "receivingText": "MUSI 125A — Class Popular Guitar I (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-6",
+                "title": "MUSI 125B",
+                "receivingText": "MUSI 125B — Class Popular Guitar II (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-7",
+                "title": "MUSI 125C",
+                "receivingText": "MUSI 125C — Class Popular Guitar III (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-8",
+                "title": "MUSI 126",
+                "receivingText": "MUSI 126 — Class Piano II (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "MUS 140B — Beginning Piano (1 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-9",
+                "title": "MUSI 221",
+                "receivingText": "MUSI 221 — Class Piano III (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "MUS 142A — Intermediate Piano (1 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/220/AllPrefixes",
+    "groupIndex": 39,
+    "groupName": "MUSI Music Ensemble",
+    "publishDate": "2026-03-10T23:34:34.8075686"
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 228,
+    "name": "Simpson University",
+    "code": "SU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/228/SendingPrefix/18789",
+    "type": "SendingPrefix",
+    "name": "STAT Statistics",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:47.852Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=228&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F228%2FSendingPrefix%2F18789&viewBy=prefix&viewByKey=76%2F92%2Fto%2F228%2FSendingPrefix%2F18789&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F228%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-228/a009d9f1c5b29eea.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 405479,
+            "prefix": "MATH",
+            "courseNumber": "2610",
+            "title": "Statistics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Math & Science",
+            "departmentParentId": 15068,
+            "prefixDescription": "Math",
+            "prefixParentId": 18251,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 383741,
+            "prefix": "MATH",
+            "courseNumber": "117A",
+            "title": "Elementary Statistics A",
+            "minUnits": 2,
+            "maxUnits": 2,
+            "beginTerm": "F2022",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Mathematics",
+            "prefixParentId": 10002,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 383742,
+            "prefix": "MATH",
+            "courseNumber": "117B",
+            "title": "Elementary Statistics B",
+            "minUnits": 2,
+            "maxUnits": 2,
+            "beginTerm": "F2022",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Mathematics",
+            "prefixParentId": 10002,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 245747,
+            "prefix": "STAT",
+            "courseNumber": "C1000",
+            "title": "Introduction to Statistics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Statistics",
+            "prefixParentId": 18789,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 383741,
+                "prefix": "MATH",
+                "courseNumber": "117A",
+                "title": "Elementary Statistics A",
+                "minUnits": 2,
+                "maxUnits": 2,
+                "beginTerm": "F2022",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Mathematics",
+                "prefixParentId": 10002,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 383742,
+                "prefix": "MATH",
+                "courseNumber": "117B",
+                "title": "Elementary Statistics B",
+                "minUnits": 2,
+                "maxUnits": 2,
+                "beginTerm": "F2022",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Mathematics",
+                "prefixParentId": 10002,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 383741,
+                    "prefix": "MATH",
+                    "courseNumber": "117A",
+                    "title": "Elementary Statistics A",
+                    "minUnits": 2,
+                    "maxUnits": 2,
+                    "beginTerm": "F2022",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Mathematics",
+                    "prefixParentId": 10002,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 383742,
+                    "prefix": "MATH",
+                    "courseNumber": "117B",
+                    "title": "Elementary Statistics B",
+                    "minUnits": 2,
+                    "maxUnits": 2,
+                    "beginTerm": "F2022",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Mathematics",
+                    "prefixParentId": 10002,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245747,
+                "prefix": "STAT",
+                "courseNumber": "C1000",
+                "title": "Introduction to Statistics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2025",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Statistics",
+                "prefixParentId": 18789,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245747,
+                    "prefix": "STAT",
+                    "courseNumber": "C1000",
+                    "title": "Introduction to Statistics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2025",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Statistics",
+                    "prefixParentId": 18789,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "4dd66ba4-73d4-4c4e-b8e9-08dec6f55a66",
+            "sendingArticulationId": "163327a7-dc23-4693-6114-08dec6f55a65",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          }
+        ]
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "MATH 2610",
+                "receivingText": "MATH 2610 — Statistics (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "MATH 117A — Elementary Statistics A (2 units)\nCourse validity: F2022 onward\nAND\nMATH 117B — Elementary Statistics B (2 units)\nCourse validity: F2022 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "STAT C1000 — Introduction to Statistics (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/228/AllSendingPrefixes",
+    "groupIndex": 15,
+    "groupName": "STAT Statistics",
+    "publishDate": "2026-07-16T23:54:28.4647516"
+  }
+}

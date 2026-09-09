@@ -1,0 +1,598 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 215,
+    "name": "Touro University Worldwide",
+    "code": "TUW",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/215/SendingDepartment/5663",
+    "type": "SendingDepartment",
+    "name": "Finance",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.234Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=215&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F215%2FSendingDepartment%2F5663&viewBy=dept&viewByKey=77%2F92%2Fto%2F215%2FSendingDepartment%2F5663&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F215%2FAllSendingDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-77/receiving-215/f3a8bff0b3e1e856.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391776,
+            "prefix": "ECO",
+            "courseNumber": "305",
+            "title": "Money, Banking and Financial Intermediaries",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Business",
+            "departmentParentId": 14634,
+            "prefixDescription": "Economics",
+            "prefixParentId": 17506,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 202510,
+            "prefix": "FIN",
+            "courseNumber": "101",
+            "title": "Introduction to Finance and Banking",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "S2003",
+            "endTerm": "",
+            "department": "Finance",
+            "departmentParentId": 5663,
+            "prefixDescription": "Finance",
+            "prefixParentId": 4400,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 202510,
+                "prefix": "FIN",
+                "courseNumber": "101",
+                "title": "Introduction to Finance and Banking",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "S2003",
+                "endTerm": "",
+                "department": "Finance",
+                "departmentParentId": 5663,
+                "prefixDescription": "Finance",
+                "prefixParentId": 4400,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 202510,
+                    "prefix": "FIN",
+                    "courseNumber": "101",
+                    "title": "Introduction to Finance and Banking",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "S2003",
+                    "endTerm": "",
+                    "department": "Finance",
+                    "departmentParentId": 5663,
+                    "prefixDescription": "Finance",
+                    "prefixParentId": 4400,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391870,
+            "prefix": "MGT",
+            "courseNumber": "314",
+            "title": "Principles of Finance and Budgeting",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Business",
+            "departmentParentId": 14634,
+            "prefixDescription": "Management",
+            "prefixParentId": 17518,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 203652,
+            "prefix": "FIN",
+            "courseNumber": "202",
+            "title": "Managerial Finance",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1996",
+            "endTerm": "",
+            "department": "Finance",
+            "departmentParentId": 5663,
+            "prefixDescription": "Finance",
+            "prefixParentId": 4400,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 203652,
+                "prefix": "FIN",
+                "courseNumber": "202",
+                "title": "Managerial Finance",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1996",
+                "endTerm": "",
+                "department": "Finance",
+                "departmentParentId": 5663,
+                "prefixDescription": "Finance",
+                "prefixParentId": 4400,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 203652,
+                    "prefix": "FIN",
+                    "courseNumber": "202",
+                    "title": "Managerial Finance",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1996",
+                    "endTerm": "",
+                    "department": "Finance",
+                    "departmentParentId": 5663,
+                    "prefixDescription": "Finance",
+                    "prefixParentId": 4400,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "ECO 305",
+                "receivingText": "ECO 305 — Money, Banking and Financial Intermediaries (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "FIN 101 — Introduction to Finance and Banking (3 units)\nCourse validity: S2003 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "MGT 314",
+                "receivingText": "MGT 314 — Principles of Finance and Budgeting (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "FIN 202 — Managerial Finance (3 units)\nCourse validity: F1996 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "77/92/to/215/AllSendingDepartments",
+    "groupIndex": 16,
+    "groupName": "Finance",
+    "publishDate": "2026-07-17T21:39:08.8402946"
+  }
+}

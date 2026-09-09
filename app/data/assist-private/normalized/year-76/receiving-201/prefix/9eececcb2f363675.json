@@ -1,0 +1,372 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 201,
+    "name": "California Lutheran University",
+    "code": "CLU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/201/SendingPrefix/7851",
+    "type": "SendingPrefix",
+    "name": "GER German",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:42.820Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=201&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F201%2FSendingPrefix%2F7851&viewBy=prefix&viewByKey=76%2F92%2Fto%2F201%2FSendingPrefix%2F7851&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F201%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-201/2fd943927b1c1b55.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 390569,
+            "prefix": "GERM",
+            "courseNumber": "101",
+            "title": "Elementary German",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Languages",
+            "departmentParentId": 14585,
+            "prefixDescription": "German",
+            "prefixParentId": 17414,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 275915,
+            "prefix": "GER",
+            "courseNumber": "101",
+            "title": "Beginning German I",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F2014",
+            "endTerm": "",
+            "department": "German",
+            "departmentParentId": 6414,
+            "prefixDescription": "German",
+            "prefixParentId": 7851,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 275915,
+                "prefix": "GER",
+                "courseNumber": "101",
+                "title": "Beginning German I",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F2014",
+                "endTerm": "",
+                "department": "German",
+                "departmentParentId": 6414,
+                "prefixDescription": "German",
+                "prefixParentId": 7851,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 275915,
+                    "prefix": "GER",
+                    "courseNumber": "101",
+                    "title": "Beginning German I",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F2014",
+                    "endTerm": "",
+                    "department": "German",
+                    "departmentParentId": 6414,
+                    "prefixDescription": "German",
+                    "prefixParentId": 7851,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 390570,
+            "prefix": "GERM",
+            "courseNumber": "102",
+            "title": "Elementary German",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Languages",
+            "departmentParentId": 14585,
+            "prefixDescription": "German",
+            "prefixParentId": 17414,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245668,
+            "prefix": "GER",
+            "courseNumber": "102",
+            "title": "Beginning German II",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F2014",
+            "endTerm": "",
+            "department": "German",
+            "departmentParentId": 6414,
+            "prefixDescription": "German",
+            "prefixParentId": 7851,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245668,
+                "prefix": "GER",
+                "courseNumber": "102",
+                "title": "Beginning German II",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F2014",
+                "endTerm": "",
+                "department": "German",
+                "departmentParentId": 6414,
+                "prefixDescription": "German",
+                "prefixParentId": 7851,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245668,
+                    "prefix": "GER",
+                    "courseNumber": "102",
+                    "title": "Beginning German II",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F2014",
+                    "endTerm": "",
+                    "department": "German",
+                    "departmentParentId": 6414,
+                    "prefixDescription": "German",
+                    "prefixParentId": 7851,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "GERM 101",
+                "receivingText": "GERM 101 — Elementary German (4 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "GER 101 — Beginning German I (5 units)\nCourse validity: F2014 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "GERM 102",
+                "receivingText": "GERM 102 — Elementary German (4 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "GER 102 — Beginning German II (5 units)\nCourse validity: F2014 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/201/AllSendingPrefixes",
+    "groupIndex": 12,
+    "groupName": "GER German",
+    "publishDate": "2026-03-09T21:50:28.2429457"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 213,
+    "name": "National University",
+    "code": "NU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/213/SendingPrefix/8128",
+    "type": "SendingPrefix",
+    "name": "PHSC Physical Science",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.043Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=213&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F213%2FSendingPrefix%2F8128&viewBy=prefix&viewByKey=76%2F92%2Fto%2F213%2FSendingPrefix%2F8128&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F213%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-213/06ab894cf9801b28.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "PHS 1002, PHS 1002A",
+        "courses": [
+          {
+            "id": "e0a31329-439e-4adf-3bec-08de803a9cb0",
+            "courseIdentifierParentId": 419847,
+            "prefix": "PHS",
+            "courseNumber": "1002",
+            "title": "Physics of Everyday Life",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "S2026",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 15318,
+            "prefixDescription": "Physics",
+            "prefixParentId": 18010,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "ffd758e0-ed7c-4f3b-3bed-08de803a9cb0",
+            "courseIdentifierParentId": 419789,
+            "prefix": "PHS",
+            "courseNumber": "1002A",
+            "title": "Physics of Everyday Life Laboratory",
+            "minUnits": 1.5,
+            "maxUnits": 1.5,
+            "beginTerm": "S2026",
+            "endTerm": "Su2026",
+            "department": "Physics",
+            "departmentParentId": 15318,
+            "prefixDescription": "Physics",
+            "prefixParentId": 18010,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245729,
+            "prefix": "PHSC",
+            "courseNumber": "103",
+            "title": "The Physical Universe",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Physical Science",
+            "departmentParentId": 10678,
+            "prefixDescription": "Physical Science",
+            "prefixParentId": 8128,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245729,
+                "prefix": "PHSC",
+                "courseNumber": "103",
+                "title": "The Physical Universe",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Physical Science",
+                "departmentParentId": 10678,
+                "prefixDescription": "Physical Science",
+                "prefixParentId": 8128,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245729,
+                    "prefix": "PHSC",
+                    "courseNumber": "103",
+                    "title": "The Physical Universe",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Physical Science",
+                    "departmentParentId": 10678,
+                    "prefixDescription": "Physical Science",
+                    "prefixParentId": 8128,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "PHS 1002, PHS 1002A",
+                "receivingText": "PHS 1002 — Physics of Everyday Life (4.5 units)\nCourse validity: S2026 onward\nAND\nPHS 1002A — Physics of Everyday Life Laboratory (1.5 units)\nCourse validity: S2026 through Su2026",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PHSC 103 — The Physical Universe (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/213/AllSendingPrefixes",
+    "groupIndex": 29,
+    "groupName": "PHSC Physical Science",
+    "publishDate": "2026-03-30T17:58:13.2261932"
+  }
+}

@@ -70,4 +70,4 @@ All 15 verified ASSIST partners have now been imported and added to the local pl
 
 USF is another practical source to add because its SBCC agreement has structured course tables and an explicit recent update date. Westmont's 2025–26 SBCC PDF is also a concrete import candidate. Cal Lutheran's own major page needs an effective-year check. Chapman requires a separate TES lookup and source validation.
 
-This research confirms transfer-agreement availability, not a student's eligibility, admission outcome, or guaranteed award of credit. The 15 ASSIST partners are integrated locally pending publication approval. USF, Westmont, Cal Lutheran’s separate university-hosted major page, Chapman TES, and the separate admission-guarantee resources were researched but are not part of this import.
+This research confirms transfer-agreement availability, not a student's eligibility, admission outcome, or guaranteed award of credit. The 15 ASSIST partners are integrated with the planner. USF, Westmont, Cal Lutheran’s separate university-hosted major page, Chapman TES, and the separate admission-guarantee resources were researched but are not part of this import.

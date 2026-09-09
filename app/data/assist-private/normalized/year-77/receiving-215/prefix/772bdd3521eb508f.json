@@ -1,0 +1,661 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 215,
+    "name": "Touro University Worldwide",
+    "code": "TUW",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/215/SendingPrefix/276",
+    "type": "SendingPrefix",
+    "name": "PHYS Physics",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.379Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=215&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F215%2FSendingPrefix%2F276&viewBy=prefix&viewByKey=77%2F92%2Fto%2F215%2FSendingPrefix%2F276&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F215%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-77/receiving-215/a9014bb9723953f8.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391909,
+            "prefix": "PHY",
+            "courseNumber": "104",
+            "title": "College Physics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 14656,
+            "prefixDescription": "Physics",
+            "prefixParentId": 17524,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 156491,
+            "prefix": "PHYS",
+            "courseNumber": "101",
+            "title": "Conceptual Physics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 10800,
+            "prefixDescription": "Physics",
+            "prefixParentId": 276,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 282153,
+            "prefix": "PHYS",
+            "courseNumber": "105",
+            "title": "General Physics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 10800,
+            "prefixDescription": "Physics",
+            "prefixParentId": 276,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 351805,
+            "prefix": "PHYS",
+            "courseNumber": "106",
+            "title": "General Physics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 10800,
+            "prefixDescription": "Physics",
+            "prefixParentId": 276,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 271842,
+            "prefix": "PHYS",
+            "courseNumber": "110",
+            "title": "Introductory Physics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "S2012",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 10800,
+            "prefixDescription": "Physics",
+            "prefixParentId": 276,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 303267,
+            "prefix": "PHYS",
+            "courseNumber": "111",
+            "title": "Introductory Physics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "S2012",
+            "endTerm": "",
+            "department": "Physics",
+            "departmentParentId": 10800,
+            "prefixDescription": "Physics",
+            "prefixParentId": 276,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 156491,
+                "prefix": "PHYS",
+                "courseNumber": "101",
+                "title": "Conceptual Physics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Physics",
+                "departmentParentId": 10800,
+                "prefixDescription": "Physics",
+                "prefixParentId": 276,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 156491,
+                    "prefix": "PHYS",
+                    "courseNumber": "101",
+                    "title": "Conceptual Physics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Physics",
+                    "departmentParentId": 10800,
+                    "prefixDescription": "Physics",
+                    "prefixParentId": 276,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282153,
+                "prefix": "PHYS",
+                "courseNumber": "105",
+                "title": "General Physics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Physics",
+                "departmentParentId": 10800,
+                "prefixDescription": "Physics",
+                "prefixParentId": 276,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 351805,
+                "prefix": "PHYS",
+                "courseNumber": "106",
+                "title": "General Physics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Physics",
+                "departmentParentId": 10800,
+                "prefixDescription": "Physics",
+                "prefixParentId": 276,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282153,
+                    "prefix": "PHYS",
+                    "courseNumber": "105",
+                    "title": "General Physics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Physics",
+                    "departmentParentId": 10800,
+                    "prefixDescription": "Physics",
+                    "prefixParentId": 276,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 351805,
+                    "prefix": "PHYS",
+                    "courseNumber": "106",
+                    "title": "General Physics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Physics",
+                    "departmentParentId": 10800,
+                    "prefixDescription": "Physics",
+                    "prefixParentId": 276,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 2,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 271842,
+                "prefix": "PHYS",
+                "courseNumber": "110",
+                "title": "Introductory Physics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "S2012",
+                "endTerm": "",
+                "department": "Physics",
+                "departmentParentId": 10800,
+                "prefixDescription": "Physics",
+                "prefixParentId": 276,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 303267,
+                "prefix": "PHYS",
+                "courseNumber": "111",
+                "title": "Introductory Physics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "S2012",
+                "endTerm": "",
+                "department": "Physics",
+                "departmentParentId": 10800,
+                "prefixDescription": "Physics",
+                "prefixParentId": 276,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 271842,
+                    "prefix": "PHYS",
+                    "courseNumber": "110",
+                    "title": "Introductory Physics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "S2012",
+                    "endTerm": "",
+                    "department": "Physics",
+                    "departmentParentId": 10800,
+                    "prefixDescription": "Physics",
+                    "prefixParentId": 276,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 303267,
+                    "prefix": "PHYS",
+                    "courseNumber": "111",
+                    "title": "Introductory Physics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "S2012",
+                    "endTerm": "",
+                    "department": "Physics",
+                    "departmentParentId": 10800,
+                    "prefixDescription": "Physics",
+                    "prefixParentId": 276,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "4f6d4fc0-87be-47c5-f425-08ded63eb1fe",
+            "sendingArticulationId": "af1f2cd6-5d7f-48b8-c5de-08ded63ea001",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          },
+          {
+            "id": "8f022017-07bc-4a75-f426-08ded63eb1fe",
+            "sendingArticulationId": "af1f2cd6-5d7f-48b8-c5de-08ded63ea001",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 1,
+            "sendingCourseGroupEndPosition": 2
+          }
+        ]
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "PHY 104",
+                "receivingText": "PHY 104 — College Physics (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "PHYS 101 — Conceptual Physics (3 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "PHYS 105 — General Physics (4 units)\nCourse validity: F1991 onward\nAND\nPHYS 106 — General Physics (4 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "PHYS 110 — Introductory Physics (4 units)\nCourse validity: S2012 onward\nAND\nPHYS 111 — Introductory Physics (4 units)\nCourse validity: S2012 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "77/92/to/215/AllSendingPrefixes",
+    "groupIndex": 26,
+    "groupName": "PHYS Physics",
+    "publishDate": "2026-07-17T21:39:09.3945475"
+  }
+}

@@ -1,0 +1,587 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 201,
+    "name": "California Lutheran University",
+    "code": "CLU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/201/SendingDepartment/2340",
+    "type": "SendingDepartment",
+    "name": "Chemistry",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:42.704Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=201&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F201%2FSendingDepartment%2F2340&viewBy=dept&viewByKey=76%2F92%2Fto%2F201%2FSendingDepartment%2F2340&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F201%2FAllSendingDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-201/61dbb591b2164fd0.json",
+    "templateAssetCount": 0,
+    "articulationCount": 3
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "CHEM 151, CHEM 151L",
+        "courses": [
+          {
+            "id": "b76caa41-a33c-4115-e50c-08de64d7db44",
+            "courseIdentifierParentId": 390145,
+            "prefix": "CHEM",
+            "courseNumber": "151",
+            "title": "General Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 14568,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 17397,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "acdd8a7b-e811-4f63-e50d-08de64d7db44",
+            "courseIdentifierParentId": 390165,
+            "prefix": "CHEM",
+            "courseNumber": "151L",
+            "title": "Gen'l Chem Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 14568,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 17397,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 306954,
+            "prefix": "CHEM",
+            "courseNumber": "155",
+            "title": "General Chemistry I",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 306954,
+                "prefix": "CHEM",
+                "courseNumber": "155",
+                "title": "General Chemistry I",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 306954,
+                    "prefix": "CHEM",
+                    "courseNumber": "155",
+                    "title": "General Chemistry I",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "CHEM 111, CHEM 111L",
+        "courses": [
+          {
+            "id": "bf80e2ca-7b6b-45c4-e50a-08de64d7db44",
+            "courseIdentifierParentId": 390144,
+            "prefix": "CHEM",
+            "courseNumber": "111",
+            "title": "Chemistry and the Environment",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 14568,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 17397,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "8aecd021-7231-484a-e50b-08de64d7db44",
+            "courseIdentifierParentId": 390164,
+            "prefix": "CHEM",
+            "courseNumber": "111L",
+            "title": "Chem and the Environment Lab",
+            "minUnits": 0.25,
+            "maxUnits": 0.25,
+            "beginTerm": "F2024",
+            "endTerm": "F2025",
+            "department": "Chemistry",
+            "departmentParentId": 14568,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 17397,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 282158,
+            "prefix": "CHEM",
+            "courseNumber": "101",
+            "title": "Introductory Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282158,
+                "prefix": "CHEM",
+                "courseNumber": "101",
+                "title": "Introductory Chemistry",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282158,
+                    "prefix": "CHEM",
+                    "courseNumber": "101",
+                    "title": "Introductory Chemistry",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "CHEM 152, CHEM 152L",
+        "courses": [
+          {
+            "id": "561eb0f8-d88b-4d68-e510-08de64d7db44",
+            "courseIdentifierParentId": 390146,
+            "prefix": "CHEM",
+            "courseNumber": "152",
+            "title": "General Chemistry II",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 14568,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 17397,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "9872d0ff-78c5-4519-e511-08de64d7db44",
+            "courseIdentifierParentId": 390166,
+            "prefix": "CHEM",
+            "courseNumber": "152L",
+            "title": "Gen'l Chem II Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 14568,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 17397,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 301210,
+            "prefix": "CHEM",
+            "courseNumber": "156",
+            "title": "General Chemistry II",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 301210,
+                "prefix": "CHEM",
+                "courseNumber": "156",
+                "title": "General Chemistry II",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 301210,
+                    "prefix": "CHEM",
+                    "courseNumber": "156",
+                    "title": "General Chemistry II",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "CHEM 151, CHEM 151L",
+                "receivingText": "CHEM 151 — General Chemistry (4 units)\nCourse validity: F2024 onward\nAND\nCHEM 151L — Gen'l Chem Lab (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 155 — General Chemistry I (5 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "CHEM 111, CHEM 111L",
+                "receivingText": "CHEM 111 — Chemistry and the Environment (4 units)\nCourse validity: F2024 onward\nAND\nCHEM 111L — Chem and the Environment Lab (0.25 units)\nCourse validity: F2024 through F2025",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 101 — Introductory Chemistry (4 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "CHEM 152, CHEM 152L",
+                "receivingText": "CHEM 152 — General Chemistry II (4 units)\nCourse validity: F2024 onward\nAND\nCHEM 152L — Gen'l Chem II Lab (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 156 — General Chemistry II (5 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/201/AllSendingDepartments",
+    "groupIndex": 3,
+    "groupName": "Chemistry",
+    "publishDate": "2026-03-09T21:50:27.5664338"
+  }
+}

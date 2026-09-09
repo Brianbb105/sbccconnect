@@ -1,0 +1,838 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 220,
+    "name": "University of Redlands",
+    "code": "UOFR",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/220/SendingDepartment/4293",
+    "type": "SendingDepartment",
+    "name": "Economics",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:47.306Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=220&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F220%2FSendingDepartment%2F4293&viewBy=dept&viewByKey=76%2F92%2Fto%2F220%2FSendingDepartment%2F4293&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F220%2FAllSendingDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-220/1d55343497bd608b.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399094,
+            "prefix": "ECON",
+            "courseNumber": "101",
+            "title": "Principles of Economics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Economics",
+            "departmentParentId": 14853,
+            "prefixDescription": "Economics",
+            "prefixParentId": 17915,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 156521,
+            "prefix": "ECON",
+            "courseNumber": "101",
+            "title": "Microeconomics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1995",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 370702,
+            "prefix": "ECON",
+            "courseNumber": "101H",
+            "title": "Microeconomics, Honors",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2019",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 156509,
+            "prefix": "ECON",
+            "courseNumber": "102",
+            "title": "Macroeconomics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1995",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 366162,
+            "prefix": "ECON",
+            "courseNumber": "102H",
+            "title": "Macroeconomics, Honors",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2018",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 156521,
+                "prefix": "ECON",
+                "courseNumber": "101",
+                "title": "Microeconomics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 370702,
+                "prefix": "ECON",
+                "courseNumber": "101H",
+                "title": "Microeconomics, Honors",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2019",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 156521,
+                    "prefix": "ECON",
+                    "courseNumber": "101",
+                    "title": "Microeconomics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 370702,
+                    "prefix": "ECON",
+                    "courseNumber": "101H",
+                    "title": "Microeconomics, Honors",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2019",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 156509,
+                "prefix": "ECON",
+                "courseNumber": "102",
+                "title": "Macroeconomics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 366162,
+                "prefix": "ECON",
+                "courseNumber": "102H",
+                "title": "Macroeconomics, Honors",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2018",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 156509,
+                    "prefix": "ECON",
+                    "courseNumber": "102",
+                    "title": "Macroeconomics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 366162,
+                    "prefix": "ECON",
+                    "courseNumber": "102H",
+                    "title": "Macroeconomics, Honors",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2018",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "c3b1fc95-4b42-46e4-94cd-08ddf49accf2",
+            "sendingArticulationId": "d7047aa0-b0b8-4d74-bc70-08ddf49acc21",
+            "groupConjunction": "And",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          }
+        ]
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399011,
+            "prefix": "BUSB",
+            "courseNumber": "230",
+            "title": "Economics for Business",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "School of Business",
+            "departmentParentId": 14877,
+            "prefixDescription": "Business",
+            "prefixParentId": 17908,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 156521,
+            "prefix": "ECON",
+            "courseNumber": "101",
+            "title": "Microeconomics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1995",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 370702,
+            "prefix": "ECON",
+            "courseNumber": "101H",
+            "title": "Microeconomics, Honors",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2019",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 156509,
+            "prefix": "ECON",
+            "courseNumber": "102",
+            "title": "Macroeconomics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1995",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 366162,
+            "prefix": "ECON",
+            "courseNumber": "102H",
+            "title": "Macroeconomics, Honors",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2018",
+            "endTerm": "F2026",
+            "department": "Economics",
+            "departmentParentId": 4293,
+            "prefixDescription": "Economics",
+            "prefixParentId": 1266,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 156521,
+                "prefix": "ECON",
+                "courseNumber": "101",
+                "title": "Microeconomics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 370702,
+                "prefix": "ECON",
+                "courseNumber": "101H",
+                "title": "Microeconomics, Honors",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2019",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 156521,
+                    "prefix": "ECON",
+                    "courseNumber": "101",
+                    "title": "Microeconomics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 370702,
+                    "prefix": "ECON",
+                    "courseNumber": "101H",
+                    "title": "Microeconomics, Honors",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2019",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 156509,
+                "prefix": "ECON",
+                "courseNumber": "102",
+                "title": "Macroeconomics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 366162,
+                "prefix": "ECON",
+                "courseNumber": "102H",
+                "title": "Macroeconomics, Honors",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2018",
+                "endTerm": "F2026",
+                "department": "Economics",
+                "departmentParentId": 4293,
+                "prefixDescription": "Economics",
+                "prefixParentId": 1266,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 156509,
+                    "prefix": "ECON",
+                    "courseNumber": "102",
+                    "title": "Macroeconomics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 366162,
+                    "prefix": "ECON",
+                    "courseNumber": "102H",
+                    "title": "Macroeconomics, Honors",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2018",
+                    "endTerm": "F2026",
+                    "department": "Economics",
+                    "departmentParentId": 4293,
+                    "prefixDescription": "Economics",
+                    "prefixParentId": 1266,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "5c5263b8-49e0-4aff-94cc-08ddf49accf2",
+            "sendingArticulationId": "1129abdb-82b1-4ffa-bc6e-08ddf49acc21",
+            "groupConjunction": "And",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          }
+        ]
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "ECON 101",
+                "receivingText": "ECON 101 — Principles of Economics (4 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ECON 101 — Microeconomics (3 units)\nCourse validity: F1995 through F2026\nOR\nECON 101H — Microeconomics, Honors (4 units)\nCourse validity: F2019 through F2026",
+                    "notes": []
+                  },
+                  {
+                    "text": "ECON 102 — Macroeconomics (3 units)\nCourse validity: F1995 through F2026\nOR\nECON 102H — Macroeconomics, Honors (4 units)\nCourse validity: F2018 through F2026",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "BUSB 230",
+                "receivingText": "BUSB 230 — Economics for Business (4 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ECON 101 — Microeconomics (3 units)\nCourse validity: F1995 through F2026\nOR\nECON 101H — Microeconomics, Honors (4 units)\nCourse validity: F2019 through F2026",
+                    "notes": []
+                  },
+                  {
+                    "text": "ECON 102 — Macroeconomics (3 units)\nCourse validity: F1995 through F2026\nOR\nECON 102H — Macroeconomics, Honors (4 units)\nCourse validity: F2018 through F2026",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/220/AllSendingDepartments",
+    "groupIndex": 6,
+    "groupName": "Economics",
+    "publishDate": "2026-03-10T23:34:34.0447892"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 204,
+    "name": "Charles R. Drew University of Medicine and Science",
+    "code": "CDU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/204/SendingPrefix/8472",
+    "type": "SendingPrefix",
+    "name": "PE Physical Education",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.208Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=204&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F204%2FSendingPrefix%2F8472&viewBy=prefix&viewByKey=76%2F92%2Fto%2F204%2FSendingPrefix%2F8472&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F204%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-204/30c867a353488563.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 405985,
+            "prefix": "BMS",
+            "courseNumber": "350",
+            "title": "Fundamentals of Kinesiology",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 15089,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 18294,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 201340,
+            "prefix": "PE",
+            "courseNumber": "200",
+            "title": "Introduction to Kinesiology",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2005",
+            "endTerm": "",
+            "department": "Physical Education",
+            "departmentParentId": 10384,
+            "prefixDescription": "Physical Education",
+            "prefixParentId": 8472,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 201340,
+                "prefix": "PE",
+                "courseNumber": "200",
+                "title": "Introduction to Kinesiology",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2005",
+                "endTerm": "",
+                "department": "Physical Education",
+                "departmentParentId": 10384,
+                "prefixDescription": "Physical Education",
+                "prefixParentId": 8472,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 201340,
+                    "prefix": "PE",
+                    "courseNumber": "200",
+                    "title": "Introduction to Kinesiology",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2005",
+                    "endTerm": "",
+                    "department": "Physical Education",
+                    "departmentParentId": 10384,
+                    "prefixDescription": "Physical Education",
+                    "prefixParentId": 8472,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "BMS 350",
+                "receivingText": "BMS 350 — Fundamentals of Kinesiology (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PE 200 — Introduction to Kinesiology (3 units)\nCourse validity: F2005 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/204/AllSendingPrefixes",
+    "groupIndex": 36,
+    "groupName": "PE Physical Education",
+    "publishDate": "2026-06-12T19:12:53.770943"
+  }
+}

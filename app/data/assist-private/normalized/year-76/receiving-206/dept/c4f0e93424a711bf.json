@@ -1,0 +1,946 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 206,
+    "name": "Fresno Pacific University",
+    "code": "FPU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/206/SendingDepartment/1783",
+    "type": "SendingDepartment",
+    "name": "Biomedical Sciences",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.509Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=206&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F206%2FSendingDepartment%2F1783&viewBy=dept&viewByKey=76%2F92%2Fto%2F206%2FSendingDepartment%2F1783&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F206%2FAllSendingDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-206/7e5da3e0f4d81001.json",
+    "templateAssetCount": 0,
+    "articulationCount": 4
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "BIOL 231, BIOL 231L",
+        "courses": [
+          {
+            "id": "c7a59f5e-7f67-4e14-c082-08ddf49a0312",
+            "courseIdentifierParentId": 396453,
+            "prefix": "BIOL",
+            "courseNumber": "231",
+            "title": "Anatomy and Physiology I",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biological Sciences",
+            "departmentParentId": 14776,
+            "prefixDescription": "Biology",
+            "prefixParentId": 17695,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "9372a18e-2b98-46d1-c083-08ddf49a0312",
+            "courseIdentifierParentId": 396454,
+            "prefix": "BIOL",
+            "courseNumber": "231L",
+            "title": "Anatomy and Physiology I Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biological Sciences",
+            "departmentParentId": 14776,
+            "prefixDescription": "Biology",
+            "prefixParentId": 17695,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245732,
+            "prefix": "BMS",
+            "courseNumber": "107",
+            "title": "Human Anatomy",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 282159,
+            "prefix": "BMS",
+            "courseNumber": "108",
+            "title": "Human Physiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245732,
+                "prefix": "BMS",
+                "courseNumber": "107",
+                "title": "Human Anatomy",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 282159,
+                "prefix": "BMS",
+                "courseNumber": "108",
+                "title": "Human Physiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245732,
+                    "prefix": "BMS",
+                    "courseNumber": "107",
+                    "title": "Human Anatomy",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282159,
+                    "prefix": "BMS",
+                    "courseNumber": "108",
+                    "title": "Human Physiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "BIOL 232, BIOL 232L",
+        "courses": [
+          {
+            "id": "dc513833-e04b-43ea-c084-08ddf49a0312",
+            "courseIdentifierParentId": 396455,
+            "prefix": "BIOL",
+            "courseNumber": "232",
+            "title": "Anatomy and Physiology II",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biological Sciences",
+            "departmentParentId": 14776,
+            "prefixDescription": "Biology",
+            "prefixParentId": 17695,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "86e2c5b3-f1cd-498d-c085-08ddf49a0312",
+            "courseIdentifierParentId": 396456,
+            "prefix": "BIOL",
+            "courseNumber": "232L",
+            "title": "Anatomy and Physiology II Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biological Sciences",
+            "departmentParentId": 14776,
+            "prefixDescription": "Biology",
+            "prefixParentId": 17695,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245732,
+            "prefix": "BMS",
+            "courseNumber": "107",
+            "title": "Human Anatomy",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 282159,
+            "prefix": "BMS",
+            "courseNumber": "108",
+            "title": "Human Physiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245732,
+                "prefix": "BMS",
+                "courseNumber": "107",
+                "title": "Human Anatomy",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 282159,
+                "prefix": "BMS",
+                "courseNumber": "108",
+                "title": "Human Physiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245732,
+                    "prefix": "BMS",
+                    "courseNumber": "107",
+                    "title": "Human Anatomy",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282159,
+                    "prefix": "BMS",
+                    "courseNumber": "108",
+                    "title": "Human Physiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Series",
+        "position": null,
+        "logic": "AND",
+        "name": "BIOL 235, BIOL 235L",
+        "courses": [
+          {
+            "id": "5b923b27-50c3-4171-c076-08ddf49a0312",
+            "courseIdentifierParentId": 396457,
+            "prefix": "BIOL",
+            "courseNumber": "235",
+            "title": "Microbiology for Health Sciences",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biological Sciences",
+            "departmentParentId": 14776,
+            "prefixDescription": "Biology",
+            "prefixParentId": 17695,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": "2f768c30-f9d8-4dd7-c077-08ddf49a0312",
+            "courseIdentifierParentId": 396458,
+            "prefix": "BIOL",
+            "courseNumber": "235L",
+            "title": "Microbiology for Health Sciences Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Biological Sciences",
+            "departmentParentId": 14776,
+            "prefixDescription": "Biology",
+            "prefixParentId": 17695,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": [],
+        "seriesPathways": []
+      },
+      "sending": {
+        "articulationType": "Series",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 299579,
+            "prefix": "BMS",
+            "courseNumber": "127",
+            "title": "Medical Microbiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2014",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 304549,
+            "prefix": "BMS",
+            "courseNumber": "157",
+            "title": "General Microbiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2014",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 299579,
+                "prefix": "BMS",
+                "courseNumber": "127",
+                "title": "Medical Microbiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2014",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 304549,
+                "prefix": "BMS",
+                "courseNumber": "157",
+                "title": "General Microbiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2014",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 299579,
+                    "prefix": "BMS",
+                    "courseNumber": "127",
+                    "title": "Medical Microbiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2014",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 304549,
+                    "prefix": "BMS",
+                    "courseNumber": "157",
+                    "title": "General Microbiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2014",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 3,
+      "receiving": {
+        "id": "source-row-3",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 396743,
+            "prefix": "KIN",
+            "courseNumber": "270",
+            "title": "Nutrition",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Kinesiology",
+            "departmentParentId": 14786,
+            "prefixDescription": "Kinesiology",
+            "prefixParentId": 17715,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-3",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 198060,
+            "prefix": "BMS",
+            "courseNumber": "128",
+            "title": "Human Nutrition",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 198060,
+                "prefix": "BMS",
+                "courseNumber": "128",
+                "title": "Human Nutrition",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 198060,
+                    "prefix": "BMS",
+                    "courseNumber": "128",
+                    "title": "Human Nutrition",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "BIOL 231, BIOL 231L",
+                "receivingText": "BIOL 231 — Anatomy and Physiology I (3 units)\nCourse validity: F2024 onward\nAND\nBIOL 231L — Anatomy and Physiology I Lab (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 107 — Human Anatomy (4 units)\nCourse validity: Su2007 onward\nAND\nBMS 108 — Human Physiology (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "BIOL 232, BIOL 232L",
+                "receivingText": "BIOL 232 — Anatomy and Physiology II (3 units)\nCourse validity: F2024 onward\nAND\nBIOL 232L — Anatomy and Physiology II Lab (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 107 — Human Anatomy (4 units)\nCourse validity: Su2007 onward\nAND\nBMS 108 — Human Physiology (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "BIOL 235, BIOL 235L",
+                "receivingText": "BIOL 235 — Microbiology for Health Sciences (3 units)\nCourse validity: F2024 onward\nAND\nBIOL 235L — Microbiology for Health Sciences Lab (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 127 — Medical Microbiology (4 units)\nCourse validity: F2014 onward\nOR\nBMS 157 — General Microbiology (4 units)\nCourse validity: F2014 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "course-3",
+                "title": "KIN 270",
+                "receivingText": "KIN 270 — Nutrition (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 128 — Human Nutrition (3 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/206/AllSendingDepartments",
+    "groupIndex": 4,
+    "groupName": "Biomedical Sciences",
+    "publishDate": "2026-03-16T21:34:27.2569743"
+  }
+}

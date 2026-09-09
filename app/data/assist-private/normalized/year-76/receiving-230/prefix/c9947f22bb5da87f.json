@@ -1,0 +1,1070 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 230,
+    "name": "Azusa Pacific University",
+    "code": "APU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/230/SendingPrefix/18789",
+    "type": "SendingPrefix",
+    "name": "STAT Statistics",
+    "publishDate": "2025-09-30T17:40:42.1731417",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:48.046Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=230&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F230%2FSendingPrefix%2F18789&viewBy=prefix&viewByKey=76%2F92%2Fto%2F230%2FSendingPrefix%2F18789&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F230%2FSendingPrefix%2F18789",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/agreements/year-76/receiving-230/prefix/c9947f22bb5da87f.json",
+    "templateAssetCount": 0,
+    "articulationCount": 3
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413853,
+            "prefix": "MATH",
+            "courseNumber": "130",
+            "title": "Introduction to Statistics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Computer Science, Engineering, Mathematics, Physics, and Statistics",
+            "departmentParentId": 15491,
+            "prefixDescription": "Mathematics",
+            "prefixParentId": 19079,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245747,
+            "prefix": "STAT",
+            "courseNumber": "C1000",
+            "title": "Introduction to Statistics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Statistics",
+            "prefixParentId": 18789,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 138951,
+            "prefix": "PSY",
+            "courseNumber": "150",
+            "title": "Statistics for the Behavioral Sciences",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Psychology",
+            "departmentParentId": 11299,
+            "prefixDescription": "Psychology",
+            "prefixParentId": 4686,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 360940,
+            "prefix": "SOC",
+            "courseNumber": "125",
+            "title": "Introduction to Statistics in Sociology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2017",
+            "endTerm": "",
+            "department": "Sociology",
+            "departmentParentId": 12094,
+            "prefixDescription": "Sociology",
+            "prefixParentId": 9070,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245747,
+                "prefix": "STAT",
+                "courseNumber": "C1000",
+                "title": "Introduction to Statistics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2025",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Statistics",
+                "prefixParentId": 18789,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245747,
+                    "prefix": "STAT",
+                    "courseNumber": "C1000",
+                    "title": "Introduction to Statistics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2025",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Statistics",
+                    "prefixParentId": 18789,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 138951,
+                "prefix": "PSY",
+                "courseNumber": "150",
+                "title": "Statistics for the Behavioral Sciences",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Psychology",
+                "departmentParentId": 11299,
+                "prefixDescription": "Psychology",
+                "prefixParentId": 4686,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 138951,
+                    "prefix": "PSY",
+                    "courseNumber": "150",
+                    "title": "Statistics for the Behavioral Sciences",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Psychology",
+                    "departmentParentId": 11299,
+                    "prefixDescription": "Psychology",
+                    "prefixParentId": 4686,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 2,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 360940,
+                "prefix": "SOC",
+                "courseNumber": "125",
+                "title": "Introduction to Statistics in Sociology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2017",
+                "endTerm": "",
+                "department": "Sociology",
+                "departmentParentId": 12094,
+                "prefixDescription": "Sociology",
+                "prefixParentId": 9070,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 360940,
+                    "prefix": "SOC",
+                    "courseNumber": "125",
+                    "title": "Introduction to Statistics in Sociology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2017",
+                    "endTerm": "",
+                    "department": "Sociology",
+                    "departmentParentId": 12094,
+                    "prefixDescription": "Sociology",
+                    "prefixParentId": 9070,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "830ad3fc-4070-464c-15ac-08ddf78da186",
+            "sendingArticulationId": "f24ade34-3a30-4123-3193-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          },
+          {
+            "id": "90e8c355-1fb2-4b43-15ad-08ddf78da186",
+            "sendingArticulationId": "f24ade34-3a30-4123-3193-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 1,
+            "sendingCourseGroupEndPosition": 2
+          }
+        ]
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 414114,
+            "prefix": "PRMA",
+            "courseNumber": "130",
+            "title": "Introduction to Statistics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Computer Science, Engineering, Mathematics, Physics, and Statistics",
+            "departmentParentId": 15491,
+            "prefixDescription": "Mathematics",
+            "prefixParentId": 19099,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245747,
+            "prefix": "STAT",
+            "courseNumber": "C1000",
+            "title": "Introduction to Statistics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Statistics",
+            "prefixParentId": 18789,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 138951,
+            "prefix": "PSY",
+            "courseNumber": "150",
+            "title": "Statistics for the Behavioral Sciences",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Psychology",
+            "departmentParentId": 11299,
+            "prefixDescription": "Psychology",
+            "prefixParentId": 4686,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 360940,
+            "prefix": "SOC",
+            "courseNumber": "125",
+            "title": "Introduction to Statistics in Sociology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2017",
+            "endTerm": "",
+            "department": "Sociology",
+            "departmentParentId": 12094,
+            "prefixDescription": "Sociology",
+            "prefixParentId": 9070,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245747,
+                "prefix": "STAT",
+                "courseNumber": "C1000",
+                "title": "Introduction to Statistics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2025",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Statistics",
+                "prefixParentId": 18789,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245747,
+                    "prefix": "STAT",
+                    "courseNumber": "C1000",
+                    "title": "Introduction to Statistics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2025",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Statistics",
+                    "prefixParentId": 18789,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 138951,
+                "prefix": "PSY",
+                "courseNumber": "150",
+                "title": "Statistics for the Behavioral Sciences",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Psychology",
+                "departmentParentId": 11299,
+                "prefixDescription": "Psychology",
+                "prefixParentId": 4686,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 138951,
+                    "prefix": "PSY",
+                    "courseNumber": "150",
+                    "title": "Statistics for the Behavioral Sciences",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Psychology",
+                    "departmentParentId": 11299,
+                    "prefixDescription": "Psychology",
+                    "prefixParentId": 4686,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 2,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 360940,
+                "prefix": "SOC",
+                "courseNumber": "125",
+                "title": "Introduction to Statistics in Sociology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2017",
+                "endTerm": "",
+                "department": "Sociology",
+                "departmentParentId": 12094,
+                "prefixDescription": "Sociology",
+                "prefixParentId": 9070,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 360940,
+                    "prefix": "SOC",
+                    "courseNumber": "125",
+                    "title": "Introduction to Statistics in Sociology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2017",
+                    "endTerm": "",
+                    "department": "Sociology",
+                    "departmentParentId": 12094,
+                    "prefixDescription": "Sociology",
+                    "prefixParentId": 9070,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "98012ca7-c9d9-42c1-15ae-08ddf78da186",
+            "sendingArticulationId": "59fc127d-73a7-4049-319b-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          },
+          {
+            "id": "689e181c-1a36-496f-15af-08ddf78da186",
+            "sendingArticulationId": "59fc127d-73a7-4049-319b-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 1,
+            "sendingCourseGroupEndPosition": 2
+          }
+        ]
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 414144,
+            "prefix": "PSYC",
+            "courseNumber": "299",
+            "title": "Applied Statistics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Psychology",
+            "departmentParentId": 15501,
+            "prefixDescription": "Psychology",
+            "prefixParentId": 19108,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 138951,
+            "prefix": "PSY",
+            "courseNumber": "150",
+            "title": "Statistics for the Behavioral Sciences",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Psychology",
+            "departmentParentId": 11299,
+            "prefixDescription": "Psychology",
+            "prefixParentId": 4686,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 360940,
+            "prefix": "SOC",
+            "courseNumber": "125",
+            "title": "Introduction to Statistics in Sociology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2017",
+            "endTerm": "",
+            "department": "Sociology",
+            "departmentParentId": 12094,
+            "prefixDescription": "Sociology",
+            "prefixParentId": 9070,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 245747,
+            "prefix": "STAT",
+            "courseNumber": "C1000",
+            "title": "Introduction to Statistics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Statistics",
+            "prefixParentId": 18789,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 138951,
+                "prefix": "PSY",
+                "courseNumber": "150",
+                "title": "Statistics for the Behavioral Sciences",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Psychology",
+                "departmentParentId": 11299,
+                "prefixDescription": "Psychology",
+                "prefixParentId": 4686,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 138951,
+                    "prefix": "PSY",
+                    "courseNumber": "150",
+                    "title": "Statistics for the Behavioral Sciences",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Psychology",
+                    "departmentParentId": 11299,
+                    "prefixDescription": "Psychology",
+                    "prefixParentId": 4686,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 360940,
+                "prefix": "SOC",
+                "courseNumber": "125",
+                "title": "Introduction to Statistics in Sociology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2017",
+                "endTerm": "",
+                "department": "Sociology",
+                "departmentParentId": 12094,
+                "prefixDescription": "Sociology",
+                "prefixParentId": 9070,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 360940,
+                    "prefix": "SOC",
+                    "courseNumber": "125",
+                    "title": "Introduction to Statistics in Sociology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2017",
+                    "endTerm": "",
+                    "department": "Sociology",
+                    "departmentParentId": 12094,
+                    "prefixDescription": "Sociology",
+                    "prefixParentId": 9070,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 2,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245747,
+                "prefix": "STAT",
+                "courseNumber": "C1000",
+                "title": "Introduction to Statistics",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2025",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Statistics",
+                "prefixParentId": 18789,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245747,
+                    "prefix": "STAT",
+                    "courseNumber": "C1000",
+                    "title": "Introduction to Statistics",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2025",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Statistics",
+                    "prefixParentId": 18789,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "5ccdb7e5-5789-4e99-15bf-08ddf78da186",
+            "sendingArticulationId": "a3a8e7ab-1543-43f6-328a-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          },
+          {
+            "id": "c1ec29d3-b95c-4a63-15c0-08ddf78da186",
+            "sendingArticulationId": "a3a8e7ab-1543-43f6-328a-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 1,
+            "sendingCourseGroupEndPosition": 2
+          }
+        ]
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "MATH 130",
+                "receivingText": "MATH 130 — Introduction to Statistics (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "STAT C1000 — Introduction to Statistics (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "PSY 150 — Statistics for the Behavioral Sciences (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "SOC 125 — Introduction to Statistics in Sociology (4 units)\nCourse validity: F2017 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "PRMA 130",
+                "receivingText": "PRMA 130 — Introduction to Statistics (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "STAT C1000 — Introduction to Statistics (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "PSY 150 — Statistics for the Behavioral Sciences (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "SOC 125 — Introduction to Statistics in Sociology (4 units)\nCourse validity: F2017 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "PSYC 299",
+                "receivingText": "PSYC 299 — Applied Statistics (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PSY 150 — Statistics for the Behavioral Sciences (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "SOC 125 — Introduction to Statistics in Sociology (4 units)\nCourse validity: F2017 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "STAT C1000 — Introduction to Statistics (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

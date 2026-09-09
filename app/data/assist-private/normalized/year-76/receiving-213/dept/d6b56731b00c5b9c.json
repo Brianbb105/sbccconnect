@@ -1,0 +1,631 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 213,
+    "name": "National University",
+    "code": "NU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/213/Department/15277",
+    "type": "Department",
+    "name": "Analytics",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.905Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=213&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F213%2FDepartment%2F15277&viewBy=dept&viewByKey=76%2F92%2Fto%2F213%2FDepartment%2F15277&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F213%2FAllDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-213/84d1b10bcf498f8f.json",
+    "templateAssetCount": 0,
+    "articulationCount": 4
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 400049,
+            "prefix": "ANA",
+            "courseNumber": "200",
+            "title": "Intro to Data Science",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Analytics",
+            "departmentParentId": 15277,
+            "prefixDescription": "Analytics",
+            "prefixParentId": 17955,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 381004,
+            "prefix": "CS",
+            "courseNumber": "118",
+            "title": "Data Science for All",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2021",
+            "endTerm": "",
+            "department": "Computer Science",
+            "departmentParentId": 3216,
+            "prefixDescription": "Computer Science",
+            "prefixParentId": 529,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [
+              {
+                "id": "2d9bbc82-a05a-4780-8eab-08ddac59bfa8",
+                "courseIdentifierParentId": 380778,
+                "prefix": "MATH",
+                "courseNumber": "118",
+                "title": "Data Science for All",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2021",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Mathematics",
+                "prefixParentId": 10002,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 380778,
+            "prefix": "MATH",
+            "courseNumber": "118",
+            "title": "Data Science for All",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2021",
+            "endTerm": "",
+            "department": "Mathematics",
+            "departmentParentId": 9021,
+            "prefixDescription": "Mathematics",
+            "prefixParentId": 10002,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [
+              {
+                "id": "dec5761d-4353-46e2-8eaa-08ddac59bfa8",
+                "courseIdentifierParentId": 381004,
+                "prefix": "CS",
+                "courseNumber": "118",
+                "title": "Data Science for All",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2021",
+                "endTerm": "",
+                "department": "Computer Science",
+                "departmentParentId": 3216,
+                "prefixDescription": "Computer Science",
+                "prefixParentId": 529,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 381004,
+                "prefix": "CS",
+                "courseNumber": "118",
+                "title": "Data Science for All",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2021",
+                "endTerm": "",
+                "department": "Computer Science",
+                "departmentParentId": 3216,
+                "prefixDescription": "Computer Science",
+                "prefixParentId": 529,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [
+                  {
+                    "id": "2d9bbc82-a05a-4780-8eab-08ddac59bfa8",
+                    "courseIdentifierParentId": 380778,
+                    "prefix": "MATH",
+                    "courseNumber": "118",
+                    "title": "Data Science for All",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2021",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Mathematics",
+                    "prefixParentId": 10002,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 381004,
+                    "prefix": "CS",
+                    "courseNumber": "118",
+                    "title": "Data Science for All",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2021",
+                    "endTerm": "",
+                    "department": "Computer Science",
+                    "departmentParentId": 3216,
+                    "prefixDescription": "Computer Science",
+                    "prefixParentId": 529,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [
+                      {
+                        "id": "2d9bbc82-a05a-4780-8eab-08ddac59bfa8",
+                        "courseIdentifierParentId": 380778,
+                        "prefix": "MATH",
+                        "courseNumber": "118",
+                        "title": "Data Science for All",
+                        "minUnits": 4,
+                        "maxUnits": 4,
+                        "beginTerm": "F2021",
+                        "endTerm": "",
+                        "department": "Mathematics",
+                        "departmentParentId": 9021,
+                        "prefixDescription": "Mathematics",
+                        "prefixParentId": 10002,
+                        "attributes": [],
+                        "courseAttributes": [],
+                        "requisites": [],
+                        "visibleCrossListedCourses": [],
+                        "hiddenCrossListedCourses": [],
+                        "pathways": []
+                      }
+                    ],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 380778,
+                "prefix": "MATH",
+                "courseNumber": "118",
+                "title": "Data Science for All",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2021",
+                "endTerm": "",
+                "department": "Mathematics",
+                "departmentParentId": 9021,
+                "prefixDescription": "Mathematics",
+                "prefixParentId": 10002,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [
+                  {
+                    "id": "dec5761d-4353-46e2-8eaa-08ddac59bfa8",
+                    "courseIdentifierParentId": 381004,
+                    "prefix": "CS",
+                    "courseNumber": "118",
+                    "title": "Data Science for All",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2021",
+                    "endTerm": "",
+                    "department": "Computer Science",
+                    "departmentParentId": 3216,
+                    "prefixDescription": "Computer Science",
+                    "prefixParentId": 529,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 380778,
+                    "prefix": "MATH",
+                    "courseNumber": "118",
+                    "title": "Data Science for All",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2021",
+                    "endTerm": "",
+                    "department": "Mathematics",
+                    "departmentParentId": 9021,
+                    "prefixDescription": "Mathematics",
+                    "prefixParentId": 10002,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [
+                      {
+                        "id": "dec5761d-4353-46e2-8eaa-08ddac59bfa8",
+                        "courseIdentifierParentId": 381004,
+                        "prefix": "CS",
+                        "courseNumber": "118",
+                        "title": "Data Science for All",
+                        "minUnits": 4,
+                        "maxUnits": 4,
+                        "beginTerm": "F2021",
+                        "endTerm": "",
+                        "department": "Computer Science",
+                        "departmentParentId": 3216,
+                        "prefixDescription": "Computer Science",
+                        "prefixParentId": 529,
+                        "attributes": [],
+                        "courseAttributes": [],
+                        "requisites": [],
+                        "visibleCrossListedCourses": [],
+                        "hiddenCrossListedCourses": [],
+                        "pathways": []
+                      }
+                    ],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "d9e38e63-772b-434b-871a-08ddaba84794",
+            "sendingArticulationId": "acfcefd4-799a-4d0e-3c80-08ddaba4a734",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          }
+        ]
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 410981,
+            "prefix": "ANA",
+            "courseNumber": "210",
+            "title": "Applied Ethics for AI",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Analytics",
+            "departmentParentId": 15277,
+            "prefixDescription": "Analytics",
+            "prefixParentId": 17955,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 400048,
+            "prefix": "ANA",
+            "courseNumber": "230",
+            "title": "Introduction to Data Visualization",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Analytics",
+            "departmentParentId": 15277,
+            "prefixDescription": "Analytics",
+            "prefixParentId": 17955,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 3,
+      "receiving": {
+        "id": "source-row-3",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 410982,
+            "prefix": "ANA",
+            "courseNumber": "240",
+            "title": "Introduction to AI",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Analytics",
+            "departmentParentId": 15277,
+            "prefixDescription": "Analytics",
+            "prefixParentId": 17955,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-3",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "ANA 200",
+                "receivingText": "ANA 200 — Intro to Data Science (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CS 118 — Data Science for All (4 units)\nAlso listed as: MATH 118\nCourse validity: F2021 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "MATH 118 — Data Science for All (4 units)\nAlso listed as: CS 118\nCourse validity: F2021 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "ANA 210",
+                "receivingText": "ANA 210 — Applied Ethics for AI (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-2",
+                "title": "ANA 230",
+                "receivingText": "ANA 230 — Introduction to Data Visualization (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-3",
+                "title": "ANA 240",
+                "receivingText": "ANA 240 — Introduction to AI (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/213/AllDepartments",
+    "groupIndex": 2,
+    "groupName": "Analytics",
+    "publishDate": "2026-03-30T17:58:10.9949815"
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 215,
+    "name": "Touro University Worldwide",
+    "code": "TUW",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/215/SendingPrefix/3301",
+    "type": "SendingPrefix",
+    "name": "HIT Health Information Technology",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.333Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=215&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F215%2FSendingPrefix%2F3301&viewBy=prefix&viewByKey=77%2F92%2Fto%2F215%2FSendingPrefix%2F3301&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F215%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-77/receiving-215/a9014bb9723953f8.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391817,
+            "prefix": "BHA",
+            "courseNumber": "304",
+            "title": "Management of Health Services",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Health and Human Services",
+            "departmentParentId": 14644,
+            "prefixDescription": "Healthcare Administration",
+            "prefixParentId": 17495,
+            "attributes": [
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              },
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          },
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          },
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 107219,
+            "prefix": "HIT",
+            "courseNumber": "240",
+            "title": "Health Care Quality Management",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "S2008",
+            "endTerm": "",
+            "department": "Health Information Technology",
+            "departmentParentId": 6798,
+            "prefixDescription": "Health Information Technology",
+            "prefixParentId": 3301,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 107219,
+                "prefix": "HIT",
+                "courseNumber": "240",
+                "title": "Health Care Quality Management",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "S2008",
+                "endTerm": "",
+                "department": "Health Information Technology",
+                "departmentParentId": 6798,
+                "prefixDescription": "Health Information Technology",
+                "prefixParentId": 3301,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 107219,
+                    "prefix": "HIT",
+                    "courseNumber": "240",
+                    "title": "Health Care Quality Management",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "S2008",
+                    "endTerm": "",
+                    "department": "Health Information Technology",
+                    "departmentParentId": 6798,
+                    "prefixDescription": "Health Information Technology",
+                    "prefixParentId": 3301,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391839,
+            "prefix": "BHA",
+            "courseNumber": "418",
+            "title": "Health Information Systems",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Health and Human Services",
+            "departmentParentId": 14644,
+            "prefixDescription": "Healthcare Administration",
+            "prefixParentId": 17495,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 344528,
+            "prefix": "HIT",
+            "courseNumber": "101",
+            "title": "Introduction to Health Information Management",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2002",
+            "endTerm": "",
+            "department": "Health Information Technology",
+            "departmentParentId": 6798,
+            "prefixDescription": "Health Information Technology",
+            "prefixParentId": 3301,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 127997,
+            "prefix": "HIT",
+            "courseNumber": "265",
+            "title": "HIT Computer Applications",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2017",
+            "endTerm": "",
+            "department": "Health Information Technology",
+            "departmentParentId": 6798,
+            "prefixDescription": "Health Information Technology",
+            "prefixParentId": 3301,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 344528,
+                "prefix": "HIT",
+                "courseNumber": "101",
+                "title": "Introduction to Health Information Management",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2002",
+                "endTerm": "",
+                "department": "Health Information Technology",
+                "departmentParentId": 6798,
+                "prefixDescription": "Health Information Technology",
+                "prefixParentId": 3301,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 127997,
+                "prefix": "HIT",
+                "courseNumber": "265",
+                "title": "HIT Computer Applications",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2017",
+                "endTerm": "",
+                "department": "Health Information Technology",
+                "departmentParentId": 6798,
+                "prefixDescription": "Health Information Technology",
+                "prefixParentId": 3301,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 344528,
+                    "prefix": "HIT",
+                    "courseNumber": "101",
+                    "title": "Introduction to Health Information Management",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2002",
+                    "endTerm": "",
+                    "department": "Health Information Technology",
+                    "departmentParentId": 6798,
+                    "prefixDescription": "Health Information Technology",
+                    "prefixParentId": 3301,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 127997,
+                    "prefix": "HIT",
+                    "courseNumber": "265",
+                    "title": "HIT Computer Applications",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2017",
+                    "endTerm": "",
+                    "department": "Health Information Technology",
+                    "departmentParentId": 6798,
+                    "prefixDescription": "Health Information Technology",
+                    "prefixParentId": 3301,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "BHA 304",
+                "receivingText": "BHA 304 — Management of Health Services (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "HIT 240 — Health Care Quality Management (3 units)\nCourse validity: S2008 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "BHA 418",
+                "receivingText": "BHA 418 — Health Information Systems (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "HIT 101 — Introduction to Health Information Management (3 units)\nCourse validity: F2002 onward\nAND\nHIT 265 — HIT Computer Applications (3 units)\nCourse validity: F2017 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "77/92/to/215/AllSendingPrefixes",
+    "groupIndex": 19,
+    "groupName": "HIT Health Information Technology",
+    "publishDate": "2026-07-17T21:39:09.3945475"
+  }
+}

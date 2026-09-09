@@ -1,0 +1,3676 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 230,
+    "name": "Azusa Pacific University",
+    "code": "APU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/230/Department/15488",
+    "type": "Department",
+    "name": "Biology & Chemistry",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:47.933Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=230&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F230%2FDepartment%2F15488&viewBy=dept&viewByKey=76%2F92%2Fto%2F230%2FDepartment%2F15488&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F230%2FAllDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-230/2ce1941a20cf5717.json",
+    "templateAssetCount": 0,
+    "articulationCount": 33
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413641,
+            "prefix": "BIOC",
+            "courseNumber": "270",
+            "title": "Biomolecular Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biochemistry",
+            "prefixParentId": 19047,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413642,
+            "prefix": "BIOL",
+            "courseNumber": "101",
+            "title": "Biology and Society",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245700,
+            "prefix": "BIOL",
+            "courseNumber": "100",
+            "title": "Concepts of Biology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Biology",
+            "departmentParentId": 1731,
+            "prefixDescription": "Biology",
+            "prefixParentId": 4909,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245700,
+                "prefix": "BIOL",
+                "courseNumber": "100",
+                "title": "Concepts of Biology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Biology",
+                "departmentParentId": 1731,
+                "prefixDescription": "Biology",
+                "prefixParentId": 4909,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245700,
+                    "prefix": "BIOL",
+                    "courseNumber": "100",
+                    "title": "Concepts of Biology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Biology",
+                    "departmentParentId": 1731,
+                    "prefixDescription": "Biology",
+                    "prefixParentId": 4909,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413643,
+            "prefix": "BIOL",
+            "courseNumber": "109",
+            "title": "Introduction to Biological Sciences",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 3,
+      "receiving": {
+        "id": "source-row-3",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413644,
+            "prefix": "BIOL",
+            "courseNumber": "115",
+            "title": "Anatomy & Physiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-3",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 4,
+      "receiving": {
+        "id": "source-row-4",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413645,
+            "prefix": "BIOL",
+            "courseNumber": "151",
+            "title": "General Biology I",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-4",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 5,
+      "receiving": {
+        "id": "source-row-5",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413646,
+            "prefix": "BIOL",
+            "courseNumber": "152",
+            "title": "General Biology II",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-5",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 6,
+      "receiving": {
+        "id": "source-row-6",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413647,
+            "prefix": "BIOL",
+            "courseNumber": "200",
+            "title": "Human Anatomy for Nursing",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-6",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245732,
+            "prefix": "BMS",
+            "courseNumber": "107",
+            "title": "Human Anatomy",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245732,
+                "prefix": "BMS",
+                "courseNumber": "107",
+                "title": "Human Anatomy",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245732,
+                    "prefix": "BMS",
+                    "courseNumber": "107",
+                    "title": "Human Anatomy",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 7,
+      "receiving": {
+        "id": "source-row-7",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413648,
+            "prefix": "BIOL",
+            "courseNumber": "210",
+            "title": "Human Physiology for Nursing",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-7",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 282159,
+            "prefix": "BMS",
+            "courseNumber": "108",
+            "title": "Human Physiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282159,
+                "prefix": "BMS",
+                "courseNumber": "108",
+                "title": "Human Physiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282159,
+                    "prefix": "BMS",
+                    "courseNumber": "108",
+                    "title": "Human Physiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 8,
+      "receiving": {
+        "id": "source-row-8",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413649,
+            "prefix": "BIOL",
+            "courseNumber": "220",
+            "title": "General Microbiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-8",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 299579,
+            "prefix": "BMS",
+            "courseNumber": "127",
+            "title": "Medical Microbiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2014",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 304549,
+            "prefix": "BMS",
+            "courseNumber": "157",
+            "title": "General Microbiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2014",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 299579,
+                "prefix": "BMS",
+                "courseNumber": "127",
+                "title": "Medical Microbiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2014",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 299579,
+                    "prefix": "BMS",
+                    "courseNumber": "127",
+                    "title": "Medical Microbiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2014",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 304549,
+                "prefix": "BMS",
+                "courseNumber": "157",
+                "title": "General Microbiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2014",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 304549,
+                    "prefix": "BMS",
+                    "courseNumber": "157",
+                    "title": "General Microbiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2014",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "245976d9-cda4-4308-159b-08ddf78da186",
+            "sendingArticulationId": "7ef11749-b368-478b-3155-08ddf7927a79",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          }
+        ]
+      }
+    },
+    {
+      "sourceIndex": 9,
+      "receiving": {
+        "id": "source-row-9",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413650,
+            "prefix": "BIOL",
+            "courseNumber": "226",
+            "title": "Introduction to Neurobiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-9",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 10,
+      "receiving": {
+        "id": "source-row-10",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413651,
+            "prefix": "BIOL",
+            "courseNumber": "230",
+            "title": "Human Anatomy & Physiology I",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-10",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 11,
+      "receiving": {
+        "id": "source-row-11",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413652,
+            "prefix": "BIOL",
+            "courseNumber": "231",
+            "title": "Human Anat & Physiology II",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-11",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 12,
+      "receiving": {
+        "id": "source-row-12",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413653,
+            "prefix": "BIOL",
+            "courseNumber": "240",
+            "title": "Biology of Microorganisms",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-12",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 13,
+      "receiving": {
+        "id": "source-row-13",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413654,
+            "prefix": "BIOL",
+            "courseNumber": "250",
+            "title": "Human Anatomy",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-13",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245732,
+            "prefix": "BMS",
+            "courseNumber": "107",
+            "title": "Human Anatomy",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245732,
+                "prefix": "BMS",
+                "courseNumber": "107",
+                "title": "Human Anatomy",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245732,
+                    "prefix": "BMS",
+                    "courseNumber": "107",
+                    "title": "Human Anatomy",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 14,
+      "receiving": {
+        "id": "source-row-14",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413655,
+            "prefix": "BIOL",
+            "courseNumber": "251",
+            "title": "Human Physiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-14",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 282159,
+            "prefix": "BMS",
+            "courseNumber": "108",
+            "title": "Human Physiology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Biomedical Sciences",
+            "departmentParentId": 1783,
+            "prefixDescription": "Biomedical Sciences",
+            "prefixParentId": 8693,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282159,
+                "prefix": "BMS",
+                "courseNumber": "108",
+                "title": "Human Physiology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Biomedical Sciences",
+                "departmentParentId": 1783,
+                "prefixDescription": "Biomedical Sciences",
+                "prefixParentId": 8693,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282159,
+                    "prefix": "BMS",
+                    "courseNumber": "108",
+                    "title": "Human Physiology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Biomedical Sciences",
+                    "departmentParentId": 1783,
+                    "prefixDescription": "Biomedical Sciences",
+                    "prefixParentId": 8693,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 15,
+      "receiving": {
+        "id": "source-row-15",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413656,
+            "prefix": "BIOL",
+            "courseNumber": "280",
+            "title": "Cell Biology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-15",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 16,
+      "receiving": {
+        "id": "source-row-16",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413657,
+            "prefix": "BIOL",
+            "courseNumber": "300",
+            "title": "Genetics",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-16",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 17,
+      "receiving": {
+        "id": "source-row-17",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413658,
+            "prefix": "BIOL",
+            "courseNumber": "320",
+            "title": "Ecology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-17",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 18,
+      "receiving": {
+        "id": "source-row-18",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413659,
+            "prefix": "BIOL",
+            "courseNumber": "325",
+            "title": "Humans & the Environment",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-18",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 19,
+      "receiving": {
+        "id": "source-row-19",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413660,
+            "prefix": "BIOL",
+            "courseNumber": "365",
+            "title": "Plant Biology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19048,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-19",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 20,
+      "receiving": {
+        "id": "source-row-20",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413672,
+            "prefix": "CHEM",
+            "courseNumber": "101",
+            "title": "Chemistry and Society",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-20",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 282158,
+            "prefix": "CHEM",
+            "courseNumber": "101",
+            "title": "Introductory Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282158,
+                "prefix": "CHEM",
+                "courseNumber": "101",
+                "title": "Introductory Chemistry",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282158,
+                    "prefix": "CHEM",
+                    "courseNumber": "101",
+                    "title": "Introductory Chemistry",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 21,
+      "receiving": {
+        "id": "source-row-21",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413673,
+            "prefix": "CHEM",
+            "courseNumber": "105",
+            "title": "Citizen Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-21",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 22,
+      "receiving": {
+        "id": "source-row-22",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413674,
+            "prefix": "CHEM",
+            "courseNumber": "123",
+            "title": "General, Organic, and Biological Chemistry for Health Sciences",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-22",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245745,
+            "prefix": "CHEM",
+            "courseNumber": "104",
+            "title": "Fundamentals of General, Organic and Biological Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1997",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245745,
+                "prefix": "CHEM",
+                "courseNumber": "104",
+                "title": "Fundamentals of General, Organic and Biological Chemistry",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1997",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245745,
+                    "prefix": "CHEM",
+                    "courseNumber": "104",
+                    "title": "Fundamentals of General, Organic and Biological Chemistry",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1997",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 23,
+      "receiving": {
+        "id": "source-row-23",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413675,
+            "prefix": "CHEM",
+            "courseNumber": "151",
+            "title": "General Chemistry I",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-23",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 306954,
+            "prefix": "CHEM",
+            "courseNumber": "155",
+            "title": "General Chemistry I",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 306954,
+                "prefix": "CHEM",
+                "courseNumber": "155",
+                "title": "General Chemistry I",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 306954,
+                    "prefix": "CHEM",
+                    "courseNumber": "155",
+                    "title": "General Chemistry I",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 24,
+      "receiving": {
+        "id": "source-row-24",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413676,
+            "prefix": "CHEM",
+            "courseNumber": "152",
+            "title": "General Chemistry II",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-24",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 301210,
+            "prefix": "CHEM",
+            "courseNumber": "156",
+            "title": "General Chemistry II",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 301210,
+                "prefix": "CHEM",
+                "courseNumber": "156",
+                "title": "General Chemistry II",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 301210,
+                    "prefix": "CHEM",
+                    "courseNumber": "156",
+                    "title": "General Chemistry II",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 25,
+      "receiving": {
+        "id": "source-row-25",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413677,
+            "prefix": "CHEM",
+            "courseNumber": "240",
+            "title": "Introduction to Organic and Biochemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-25",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 26,
+      "receiving": {
+        "id": "source-row-26",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413678,
+            "prefix": "CHEM",
+            "courseNumber": "251",
+            "title": "Organic Chemistry: Theory I",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-26",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 170165,
+            "prefix": "CHEM",
+            "courseNumber": "211",
+            "title": "Organic Chemistry I",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 170165,
+                "prefix": "CHEM",
+                "courseNumber": "211",
+                "title": "Organic Chemistry I",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 170165,
+                    "prefix": "CHEM",
+                    "courseNumber": "211",
+                    "title": "Organic Chemistry I",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 27,
+      "receiving": {
+        "id": "source-row-27",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413679,
+            "prefix": "CHEM",
+            "courseNumber": "252",
+            "title": "Organic Chemistry: Theory II",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-27",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 330290,
+            "prefix": "CHEM",
+            "courseNumber": "212",
+            "title": "Organic Chemistry II",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 330290,
+                "prefix": "CHEM",
+                "courseNumber": "212",
+                "title": "Organic Chemistry II",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 330290,
+                    "prefix": "CHEM",
+                    "courseNumber": "212",
+                    "title": "Organic Chemistry II",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 28,
+      "receiving": {
+        "id": "source-row-28",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413680,
+            "prefix": "CHEM",
+            "courseNumber": "261",
+            "title": "Organic Chemistry - Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-28",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 295455,
+            "prefix": "CHEM",
+            "courseNumber": "221",
+            "title": "Organic Chemistry Laboratory I",
+            "minUnits": 2.3,
+            "maxUnits": 2.3,
+            "beginTerm": "F2002",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 295455,
+                "prefix": "CHEM",
+                "courseNumber": "221",
+                "title": "Organic Chemistry Laboratory I",
+                "minUnits": 2.3,
+                "maxUnits": 2.3,
+                "beginTerm": "F2002",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 295455,
+                    "prefix": "CHEM",
+                    "courseNumber": "221",
+                    "title": "Organic Chemistry Laboratory I",
+                    "minUnits": 2.3,
+                    "maxUnits": 2.3,
+                    "beginTerm": "F2002",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 29,
+      "receiving": {
+        "id": "source-row-29",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 413681,
+            "prefix": "CHEM",
+            "courseNumber": "262",
+            "title": "Organic Chemistry - Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19050,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-29",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 125928,
+            "prefix": "CHEM",
+            "courseNumber": "222",
+            "title": "Organic Chemistry Laboratory II",
+            "minUnits": 2.5,
+            "maxUnits": 2.5,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 125928,
+                "prefix": "CHEM",
+                "courseNumber": "222",
+                "title": "Organic Chemistry Laboratory II",
+                "minUnits": 2.5,
+                "maxUnits": 2.5,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 125928,
+                    "prefix": "CHEM",
+                    "courseNumber": "222",
+                    "title": "Organic Chemistry Laboratory II",
+                    "minUnits": 2.5,
+                    "maxUnits": 2.5,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 30,
+      "receiving": {
+        "id": "source-row-30",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 414088,
+            "prefix": "PRBI",
+            "courseNumber": "101",
+            "title": "Biology and Society",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Biology",
+            "prefixParentId": 19092,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-30",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245700,
+            "prefix": "BIOL",
+            "courseNumber": "100",
+            "title": "Concepts of Biology",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Biology",
+            "departmentParentId": 1731,
+            "prefixDescription": "Biology",
+            "prefixParentId": 4909,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245700,
+                "prefix": "BIOL",
+                "courseNumber": "100",
+                "title": "Concepts of Biology",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Biology",
+                "departmentParentId": 1731,
+                "prefixDescription": "Biology",
+                "prefixParentId": 4909,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245700,
+                    "prefix": "BIOL",
+                    "courseNumber": "100",
+                    "title": "Concepts of Biology",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Biology",
+                    "departmentParentId": 1731,
+                    "prefixDescription": "Biology",
+                    "prefixParentId": 4909,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 31,
+      "receiving": {
+        "id": "source-row-31",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 414091,
+            "prefix": "PRCH",
+            "courseNumber": "101",
+            "title": "Chemistry and Society",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19094,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-31",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 282158,
+            "prefix": "CHEM",
+            "courseNumber": "101",
+            "title": "Introductory Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1991",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282158,
+                "prefix": "CHEM",
+                "courseNumber": "101",
+                "title": "Introductory Chemistry",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1991",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282158,
+                    "prefix": "CHEM",
+                    "courseNumber": "101",
+                    "title": "Introductory Chemistry",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1991",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 32,
+      "receiving": {
+        "id": "source-row-32",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 414092,
+            "prefix": "PRCH",
+            "courseNumber": "123",
+            "title": "GOB Chem for Health Sciences",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Biology & Chemistry",
+            "departmentParentId": 15488,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 19094,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-32",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 245745,
+            "prefix": "CHEM",
+            "courseNumber": "104",
+            "title": "Fundamentals of General, Organic and Biological Chemistry",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1997",
+            "endTerm": "",
+            "department": "Chemistry",
+            "departmentParentId": 2340,
+            "prefixDescription": "Chemistry",
+            "prefixParentId": 3832,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 245745,
+                "prefix": "CHEM",
+                "courseNumber": "104",
+                "title": "Fundamentals of General, Organic and Biological Chemistry",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1997",
+                "endTerm": "",
+                "department": "Chemistry",
+                "departmentParentId": 2340,
+                "prefixDescription": "Chemistry",
+                "prefixParentId": 3832,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 245745,
+                    "prefix": "CHEM",
+                    "courseNumber": "104",
+                    "title": "Fundamentals of General, Organic and Biological Chemistry",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1997",
+                    "endTerm": "",
+                    "department": "Chemistry",
+                    "departmentParentId": 2340,
+                    "prefixDescription": "Chemistry",
+                    "prefixParentId": 3832,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "BIOC 270",
+                "receivingText": "BIOC 270 — Biomolecular Chemistry (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-1",
+                "title": "BIOL 101",
+                "receivingText": "BIOL 101 — Biology and Society (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BIOL 100 — Concepts of Biology (4 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "BIOL 109",
+                "receivingText": "BIOL 109 — Introduction to Biological Sciences (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-3",
+                "title": "BIOL 115",
+                "receivingText": "BIOL 115 — Anatomy & Physiology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-4",
+                "title": "BIOL 151",
+                "receivingText": "BIOL 151 — General Biology I (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-5",
+                "title": "BIOL 152",
+                "receivingText": "BIOL 152 — General Biology II (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-6",
+                "title": "BIOL 200",
+                "receivingText": "BIOL 200 — Human Anatomy for Nursing (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 107 — Human Anatomy (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-7",
+                "title": "BIOL 210",
+                "receivingText": "BIOL 210 — Human Physiology for Nursing (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 108 — Human Physiology (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-8",
+                "title": "BIOL 220",
+                "receivingText": "BIOL 220 — General Microbiology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 127 — Medical Microbiology (4 units)\nCourse validity: F2014 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "BMS 157 — General Microbiology (4 units)\nCourse validity: F2014 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "course-9",
+                "title": "BIOL 226",
+                "receivingText": "BIOL 226 — Introduction to Neurobiology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-10",
+                "title": "BIOL 230",
+                "receivingText": "BIOL 230 — Human Anatomy & Physiology I (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-11",
+                "title": "BIOL 231",
+                "receivingText": "BIOL 231 — Human Anat & Physiology II (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-12",
+                "title": "BIOL 240",
+                "receivingText": "BIOL 240 — Biology of Microorganisms (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-13",
+                "title": "BIOL 250",
+                "receivingText": "BIOL 250 — Human Anatomy (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 107 — Human Anatomy (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-14",
+                "title": "BIOL 251",
+                "receivingText": "BIOL 251 — Human Physiology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BMS 108 — Human Physiology (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-15",
+                "title": "BIOL 280",
+                "receivingText": "BIOL 280 — Cell Biology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-16",
+                "title": "BIOL 300",
+                "receivingText": "BIOL 300 — Genetics (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-17",
+                "title": "BIOL 320",
+                "receivingText": "BIOL 320 — Ecology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-18",
+                "title": "BIOL 325",
+                "receivingText": "BIOL 325 — Humans & the Environment (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-19",
+                "title": "BIOL 365",
+                "receivingText": "BIOL 365 — Plant Biology (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-20",
+                "title": "CHEM 101",
+                "receivingText": "CHEM 101 — Chemistry and Society (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 101 — Introductory Chemistry (4 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-21",
+                "title": "CHEM 105",
+                "receivingText": "CHEM 105 — Citizen Chemistry (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-22",
+                "title": "CHEM 123",
+                "receivingText": "CHEM 123 — General, Organic, and Biological Chemistry for Health Sciences (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 104 — Fundamentals of General, Organic and Biological Chemistry (4 units)\nCourse validity: F1997 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-23",
+                "title": "CHEM 151",
+                "receivingText": "CHEM 151 — General Chemistry I (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 155 — General Chemistry I (5 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-24",
+                "title": "CHEM 152",
+                "receivingText": "CHEM 152 — General Chemistry II (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 156 — General Chemistry II (5 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-25",
+                "title": "CHEM 240",
+                "receivingText": "CHEM 240 — Introduction to Organic and Biochemistry (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-26",
+                "title": "CHEM 251",
+                "receivingText": "CHEM 251 — Organic Chemistry: Theory I (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 211 — Organic Chemistry I (3 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-27",
+                "title": "CHEM 252",
+                "receivingText": "CHEM 252 — Organic Chemistry: Theory II (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 212 — Organic Chemistry II (3 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-28",
+                "title": "CHEM 261",
+                "receivingText": "CHEM 261 — Organic Chemistry - Lab (1 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 221 — Organic Chemistry Laboratory I (2.3 units)\nCourse validity: F2002 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-29",
+                "title": "CHEM 262",
+                "receivingText": "CHEM 262 — Organic Chemistry - Lab (1 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 222 — Organic Chemistry Laboratory II (2.5 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-30",
+                "title": "PRBI 101",
+                "receivingText": "PRBI 101 — Biology and Society (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BIOL 100 — Concepts of Biology (4 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-31",
+                "title": "PRCH 101",
+                "receivingText": "PRCH 101 — Chemistry and Society (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 101 — Introductory Chemistry (4 units)\nCourse validity: F1991 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-32",
+                "title": "PRCH 123",
+                "receivingText": "PRCH 123 — GOB Chem for Health Sciences (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "CHEM 104 — Fundamentals of General, Organic and Biological Chemistry (4 units)\nCourse validity: F1997 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/230/AllDepartments",
+    "groupIndex": 1,
+    "groupName": "Biology & Chemistry",
+    "publishDate": "2025-09-30T17:40:48.1064409"
+  }
+}

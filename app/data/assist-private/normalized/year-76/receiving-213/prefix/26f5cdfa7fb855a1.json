@@ -1,0 +1,377 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 213,
+    "name": "National University",
+    "code": "NU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/213/Prefix/17996",
+    "type": "Prefix",
+    "name": "LAW Law",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.010Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=213&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F213%2FPrefix%2F17996&viewBy=prefix&viewByKey=76%2F92%2Fto%2F213%2FPrefix%2F17996&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F213%2FAllPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-213/d04350c86cce8225.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 400244,
+            "prefix": "LAW",
+            "courseNumber": "200",
+            "title": "Intro to Law and Legal Writing",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Law",
+            "departmentParentId": 15307,
+            "prefixDescription": "Law",
+            "prefixParentId": 17996,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 400243,
+            "prefix": "LAW",
+            "courseNumber": "204",
+            "title": "Legal Aspects of Business I",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Law",
+            "departmentParentId": 15307,
+            "prefixDescription": "Law",
+            "prefixParentId": 17996,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 169401,
+            "prefix": "BLAW",
+            "courseNumber": "101",
+            "title": "Business Law",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Business Law",
+            "departmentParentId": 2111,
+            "prefixDescription": "Business Law",
+            "prefixParentId": 12201,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 169796,
+            "prefix": "BLAW",
+            "courseNumber": "110",
+            "title": "Legal Environment of Business",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Business Law",
+            "departmentParentId": 2111,
+            "prefixDescription": "Business Law",
+            "prefixParentId": 12201,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 169401,
+                "prefix": "BLAW",
+                "courseNumber": "101",
+                "title": "Business Law",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Business Law",
+                "departmentParentId": 2111,
+                "prefixDescription": "Business Law",
+                "prefixParentId": 12201,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 169401,
+                    "prefix": "BLAW",
+                    "courseNumber": "101",
+                    "title": "Business Law",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Business Law",
+                    "departmentParentId": 2111,
+                    "prefixDescription": "Business Law",
+                    "prefixParentId": 12201,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 169796,
+                "prefix": "BLAW",
+                "courseNumber": "110",
+                "title": "Legal Environment of Business",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Business Law",
+                "departmentParentId": 2111,
+                "prefixDescription": "Business Law",
+                "prefixParentId": 12201,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 169796,
+                    "prefix": "BLAW",
+                    "courseNumber": "110",
+                    "title": "Legal Environment of Business",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Business Law",
+                    "departmentParentId": 2111,
+                    "prefixDescription": "Business Law",
+                    "prefixParentId": 12201,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": [
+          {
+            "id": "36a8c6d8-5d37-4d8b-8739-08ddaba84794",
+            "sendingArticulationId": "cdb9c158-4832-4215-4283-08ddaba4a734",
+            "groupConjunction": "Or",
+            "sendingCourseGroupBeginPosition": 0,
+            "sendingCourseGroupEndPosition": 1
+          }
+        ]
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "LAW 200",
+                "receivingText": "LAW 200 — Intro to Law and Legal Writing (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-1",
+                "title": "LAW 204",
+                "receivingText": "LAW 204 — Legal Aspects of Business I (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BLAW 101 — Business Law (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "BLAW 110 — Legal Environment of Business (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/213/AllPrefixes",
+    "groupIndex": 22,
+    "groupName": "LAW Law",
+    "publishDate": "2026-03-30T17:58:12.9427078"
+  }
+}

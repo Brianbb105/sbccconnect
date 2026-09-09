@@ -1,0 +1,870 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 201,
+    "name": "California Lutheran University",
+    "code": "CLU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/201/SendingDepartment/6197",
+    "type": "SendingDepartment",
+    "name": "Geography",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:42.706Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=201&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F201%2FSendingDepartment%2F6197&viewBy=dept&viewByKey=76%2F92%2Fto%2F201%2FSendingDepartment%2F6197&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F201%2FAllSendingDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-201/61dbb591b2164fd0.json",
+    "templateAssetCount": 0,
+    "articulationCount": 3
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 390366,
+            "prefix": "EES",
+            "courseNumber": "111",
+            "title": "Physical Geology",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Earth and Environmental Science",
+            "departmentParentId": 14574,
+            "prefixDescription": "Earth and Environmental Science",
+            "prefixParentId": 17407,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 275950,
+            "prefix": "GEOG",
+            "courseNumber": "101",
+            "title": "Physical Geography",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "",
+            "endTerm": "",
+            "department": "Geography",
+            "departmentParentId": 6197,
+            "prefixDescription": "Geography",
+            "prefixParentId": 10579,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [
+              {
+                "id": "46567c0c-3019-450c-770e-08de64d8eef0",
+                "courseIdentifierParentId": 156177,
+                "prefix": "ERTH",
+                "courseNumber": "141",
+                "title": "Physical Geography",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Earth and Planetary Sciences",
+                "departmentParentId": 4132,
+                "prefixDescription": "Earth and Planetary Sciences",
+                "prefixParentId": 343,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 156177,
+            "prefix": "ERTH",
+            "courseNumber": "141",
+            "title": "Physical Geography",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Earth and Planetary Sciences",
+            "departmentParentId": 4132,
+            "prefixDescription": "Earth and Planetary Sciences",
+            "prefixParentId": 343,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [
+              {
+                "id": "ba244491-ae58-44b3-770f-08de64d8eef0",
+                "courseIdentifierParentId": 275950,
+                "prefix": "GEOG",
+                "courseNumber": "101",
+                "title": "Physical Geography",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Geography",
+                "departmentParentId": 6197,
+                "prefixDescription": "Geography",
+                "prefixParentId": 10579,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 275950,
+                "prefix": "GEOG",
+                "courseNumber": "101",
+                "title": "Physical Geography",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "",
+                "endTerm": "",
+                "department": "Geography",
+                "departmentParentId": 6197,
+                "prefixDescription": "Geography",
+                "prefixParentId": 10579,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [
+                  {
+                    "id": "46567c0c-3019-450c-770e-08de64d8eef0",
+                    "courseIdentifierParentId": 156177,
+                    "prefix": "ERTH",
+                    "courseNumber": "141",
+                    "title": "Physical Geography",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Earth and Planetary Sciences",
+                    "departmentParentId": 4132,
+                    "prefixDescription": "Earth and Planetary Sciences",
+                    "prefixParentId": 343,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 275950,
+                    "prefix": "GEOG",
+                    "courseNumber": "101",
+                    "title": "Physical Geography",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "",
+                    "endTerm": "",
+                    "department": "Geography",
+                    "departmentParentId": 6197,
+                    "prefixDescription": "Geography",
+                    "prefixParentId": 10579,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [
+                      {
+                        "id": "46567c0c-3019-450c-770e-08de64d8eef0",
+                        "courseIdentifierParentId": 156177,
+                        "prefix": "ERTH",
+                        "courseNumber": "141",
+                        "title": "Physical Geography",
+                        "minUnits": 3,
+                        "maxUnits": 3,
+                        "beginTerm": "Su2007",
+                        "endTerm": "",
+                        "department": "Earth and Planetary Sciences",
+                        "departmentParentId": 4132,
+                        "prefixDescription": "Earth and Planetary Sciences",
+                        "prefixParentId": 343,
+                        "attributes": [],
+                        "courseAttributes": [],
+                        "requisites": [],
+                        "visibleCrossListedCourses": [],
+                        "hiddenCrossListedCourses": [],
+                        "pathways": []
+                      }
+                    ],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 156177,
+                "prefix": "ERTH",
+                "courseNumber": "141",
+                "title": "Physical Geography",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Earth and Planetary Sciences",
+                "departmentParentId": 4132,
+                "prefixDescription": "Earth and Planetary Sciences",
+                "prefixParentId": 343,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [
+                  {
+                    "id": "ba244491-ae58-44b3-770f-08de64d8eef0",
+                    "courseIdentifierParentId": 275950,
+                    "prefix": "GEOG",
+                    "courseNumber": "101",
+                    "title": "Physical Geography",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Geography",
+                    "departmentParentId": 6197,
+                    "prefixDescription": "Geography",
+                    "prefixParentId": 10579,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 156177,
+                    "prefix": "ERTH",
+                    "courseNumber": "141",
+                    "title": "Physical Geography",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Earth and Planetary Sciences",
+                    "departmentParentId": 4132,
+                    "prefixDescription": "Earth and Planetary Sciences",
+                    "prefixParentId": 343,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [
+                      {
+                        "id": "ba244491-ae58-44b3-770f-08de64d8eef0",
+                        "courseIdentifierParentId": 275950,
+                        "prefix": "GEOG",
+                        "courseNumber": "101",
+                        "title": "Physical Geography",
+                        "minUnits": 3,
+                        "maxUnits": 3,
+                        "beginTerm": "F1995",
+                        "endTerm": "",
+                        "department": "Geography",
+                        "departmentParentId": 6197,
+                        "prefixDescription": "Geography",
+                        "prefixParentId": 10579,
+                        "attributes": [],
+                        "courseAttributes": [],
+                        "requisites": [],
+                        "visibleCrossListedCourses": [],
+                        "hiddenCrossListedCourses": [],
+                        "pathways": []
+                      }
+                    ],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 390370,
+            "prefix": "EES",
+            "courseNumber": "151",
+            "title": "Physical Geography",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Earth and Environmental Science",
+            "departmentParentId": 14574,
+            "prefixDescription": "Earth and Environmental Science",
+            "prefixParentId": 17407,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 275950,
+            "prefix": "GEOG",
+            "courseNumber": "101",
+            "title": "Physical Geography",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "",
+            "endTerm": "",
+            "department": "Geography",
+            "departmentParentId": 6197,
+            "prefixDescription": "Geography",
+            "prefixParentId": 10579,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [
+              {
+                "id": "dc219259-5fbb-4fe1-7713-08de64d8eef0",
+                "courseIdentifierParentId": 156177,
+                "prefix": "ERTH",
+                "courseNumber": "141",
+                "title": "Physical Geography",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Earth and Planetary Sciences",
+                "departmentParentId": 4132,
+                "prefixDescription": "Earth and Planetary Sciences",
+                "prefixParentId": 343,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 275950,
+                "prefix": "GEOG",
+                "courseNumber": "101",
+                "title": "Physical Geography",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "",
+                "endTerm": "",
+                "department": "Geography",
+                "departmentParentId": 6197,
+                "prefixDescription": "Geography",
+                "prefixParentId": 10579,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [
+                  {
+                    "id": "dc219259-5fbb-4fe1-7713-08de64d8eef0",
+                    "courseIdentifierParentId": 156177,
+                    "prefix": "ERTH",
+                    "courseNumber": "141",
+                    "title": "Physical Geography",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Earth and Planetary Sciences",
+                    "departmentParentId": 4132,
+                    "prefixDescription": "Earth and Planetary Sciences",
+                    "prefixParentId": 343,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 275950,
+                    "prefix": "GEOG",
+                    "courseNumber": "101",
+                    "title": "Physical Geography",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "",
+                    "endTerm": "",
+                    "department": "Geography",
+                    "departmentParentId": 6197,
+                    "prefixDescription": "Geography",
+                    "prefixParentId": 10579,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [
+                      {
+                        "id": "dc219259-5fbb-4fe1-7713-08de64d8eef0",
+                        "courseIdentifierParentId": 156177,
+                        "prefix": "ERTH",
+                        "courseNumber": "141",
+                        "title": "Physical Geography",
+                        "minUnits": 3,
+                        "maxUnits": 3,
+                        "beginTerm": "Su2007",
+                        "endTerm": "",
+                        "department": "Earth and Planetary Sciences",
+                        "departmentParentId": 4132,
+                        "prefixDescription": "Earth and Planetary Sciences",
+                        "prefixParentId": 343,
+                        "attributes": [],
+                        "courseAttributes": [],
+                        "requisites": [],
+                        "visibleCrossListedCourses": [],
+                        "hiddenCrossListedCourses": [],
+                        "pathways": []
+                      }
+                    ],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 390391,
+            "prefix": "EES",
+            "courseNumber": "151L",
+            "title": "Physical Geography Lab",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Earth and Environmental Science",
+            "departmentParentId": 14574,
+            "prefixDescription": "Earth and Environmental Science",
+            "prefixParentId": 17407,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 67119,
+            "prefix": "GEOG",
+            "courseNumber": "101L",
+            "title": "Physical Geography Laboratory",
+            "minUnits": 1,
+            "maxUnits": 1,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Geography",
+            "departmentParentId": 6197,
+            "prefixDescription": "Geography",
+            "prefixParentId": 10579,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [
+              {
+                "id": "6fcfa262-f710-4b51-7712-08de64d8eef0",
+                "courseIdentifierParentId": 26221,
+                "prefix": "ERTH",
+                "courseNumber": "141L",
+                "title": "Physical Geography Laboratory",
+                "minUnits": 1,
+                "maxUnits": 1,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Earth and Planetary Sciences",
+                "departmentParentId": 4132,
+                "prefixDescription": "Earth and Planetary Sciences",
+                "prefixParentId": 343,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 67119,
+                "prefix": "GEOG",
+                "courseNumber": "101L",
+                "title": "Physical Geography Laboratory",
+                "minUnits": 1,
+                "maxUnits": 1,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Geography",
+                "departmentParentId": 6197,
+                "prefixDescription": "Geography",
+                "prefixParentId": 10579,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [
+                  {
+                    "id": "6fcfa262-f710-4b51-7712-08de64d8eef0",
+                    "courseIdentifierParentId": 26221,
+                    "prefix": "ERTH",
+                    "courseNumber": "141L",
+                    "title": "Physical Geography Laboratory",
+                    "minUnits": 1,
+                    "maxUnits": 1,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Earth and Planetary Sciences",
+                    "departmentParentId": 4132,
+                    "prefixDescription": "Earth and Planetary Sciences",
+                    "prefixParentId": 343,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 67119,
+                    "prefix": "GEOG",
+                    "courseNumber": "101L",
+                    "title": "Physical Geography Laboratory",
+                    "minUnits": 1,
+                    "maxUnits": 1,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Geography",
+                    "departmentParentId": 6197,
+                    "prefixDescription": "Geography",
+                    "prefixParentId": 10579,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [
+                      {
+                        "id": "6fcfa262-f710-4b51-7712-08de64d8eef0",
+                        "courseIdentifierParentId": 26221,
+                        "prefix": "ERTH",
+                        "courseNumber": "141L",
+                        "title": "Physical Geography Laboratory",
+                        "minUnits": 1,
+                        "maxUnits": 1,
+                        "beginTerm": "Su2007",
+                        "endTerm": "",
+                        "department": "Earth and Planetary Sciences",
+                        "departmentParentId": 4132,
+                        "prefixDescription": "Earth and Planetary Sciences",
+                        "prefixParentId": 343,
+                        "attributes": [],
+                        "courseAttributes": [],
+                        "requisites": [],
+                        "visibleCrossListedCourses": [],
+                        "hiddenCrossListedCourses": [],
+                        "pathways": []
+                      }
+                    ],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "EES 111",
+                "receivingText": "EES 111 — Physical Geology (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "GEOG 101 — Physical Geography (3 units)\nAlso listed as: ERTH 141",
+                    "notes": []
+                  },
+                  {
+                    "text": "ERTH 141 — Physical Geography (3 units)\nAlso listed as: GEOG 101\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "EES 151",
+                "receivingText": "EES 151 — Physical Geography (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "GEOG 101 — Physical Geography (3 units)\nAlso listed as: ERTH 141",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "EES 151L",
+                "receivingText": "EES 151L — Physical Geography Lab (1 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "GEOG 101L — Physical Geography Laboratory (1 units)\nAlso listed as: ERTH 141L\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/201/AllSendingDepartments",
+    "groupIndex": 11,
+    "groupName": "Geography",
+    "publishDate": "2026-03-09T21:50:27.5664338"
+  }
+}

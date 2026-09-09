@@ -1,0 +1,982 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 206,
+    "name": "Fresno Pacific University",
+    "code": "FPU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/206/Major/296bf2fe-6e03-48e9-c0fb-08ddf49aba41",
+    "type": "Major",
+    "name": "Business Administration - Project Management Emphasis, B.A. (DC)",
+    "publishDate": "2026-03-16T21:33:39.6774061",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "35a59c44-5d57-43f9-90d3-01931c56e32b",
+      "title": "LOWER DIVISION PREREQUISITES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "35a59c44-5d57-43f9-90d3-01931c56e32b:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 396674,
+              "prefix": "ECON",
+              "courseNumber": "103",
+              "title": "Introduction to Economics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Business",
+              "departmentParentId": 14777,
+              "prefixDescription": "Economics",
+              "prefixParentId": 17705,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 396824,
+              "prefix": "MATH",
+              "courseNumber": "205",
+              "title": "Introductory Statistics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Math/Computer Science",
+              "departmentParentId": 14790,
+              "prefixDescription": "Mathematics",
+              "prefixParentId": 17721,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "43a45804-365a-46ae-448f-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 396674,
+                  "prefix": "ECON",
+                  "courseNumber": "103",
+                  "title": "Introduction to Economics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Business",
+                  "departmentParentId": 14777,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 17705,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "203e887c-230a-4939-2c5e-08ddf49aba51",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 396824,
+                  "prefix": "MATH",
+                  "courseNumber": "205",
+                  "title": "Introductory Statistics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Math/Computer Science",
+                  "departmentParentId": 14790,
+                  "prefixDescription": "Mathematics",
+                  "prefixParentId": 17721,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "43a45804-365a-46ae-448f-08de00ff42ca",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156521,
+                  "prefix": "ECON",
+                  "courseNumber": "101",
+                  "title": "Microeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "F2026",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156509,
+                  "prefix": "ECON",
+                  "courseNumber": "102",
+                  "title": "Macroeconomics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "F2026",
+                  "department": "Economics",
+                  "departmentParentId": 4293,
+                  "prefixDescription": "Economics",
+                  "prefixParentId": 1266,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "OR",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156521,
+                      "prefix": "ECON",
+                      "courseNumber": "101",
+                      "title": "Microeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "F2026",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156509,
+                      "prefix": "ECON",
+                      "courseNumber": "102",
+                      "title": "Macroeconomics",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "F2026",
+                      "department": "Economics",
+                      "departmentParentId": 4293,
+                      "prefixDescription": "Economics",
+                      "prefixParentId": 1266,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156521,
+                          "prefix": "ECON",
+                          "courseNumber": "101",
+                          "title": "Microeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "F2026",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156509,
+                          "prefix": "ECON",
+                          "courseNumber": "102",
+                          "title": "Macroeconomics",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "F2026",
+                          "department": "Economics",
+                          "departmentParentId": 4293,
+                          "prefixDescription": "Economics",
+                          "prefixParentId": 1266,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "203e887c-230a-4939-2c5e-08ddf49aba51",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 245747,
+                  "prefix": "STAT",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Statistics",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Mathematics",
+                  "departmentParentId": 9021,
+                  "prefixDescription": "Statistics",
+                  "prefixParentId": 18789,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 245747,
+                      "prefix": "STAT",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Statistics",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Mathematics",
+                      "departmentParentId": 9021,
+                      "prefixDescription": "Statistics",
+                      "prefixParentId": 18789,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 245747,
+                          "prefix": "STAT",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Statistics",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Mathematics",
+                          "departmentParentId": 9021,
+                          "prefixDescription": "Statistics",
+                          "prefixParentId": 18789,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "43a45804-365a-46ae-448f-08de00ff42ca",
+            "203e887c-230a-4939-2c5e-08ddf49aba51"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        }
+      ],
+      "sourceInstruction": {
+        "type": "Following",
+        "id": "2646515c-3cbf-4213-018d-08ddf49aba4d",
+        "selectionType": "Complete"
+      }
+    },
+    {
+      "id": "0eda3be1-4791-4cf4-ac19-0199a1196e03",
+      "title": "ADDITIONAL MAJOR REQUIREMENTS",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "0eda3be1-4791-4cf4-ac19-0199a1196e03:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 412797,
+              "prefix": "BIB",
+              "courseNumber": "114",
+              "title": "Jesus and the Christian Community",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "Su2025",
+              "endTerm": "",
+              "department": "Biblical Studies",
+              "departmentParentId": 14775,
+              "prefixDescription": "Biblical Studies",
+              "prefixParentId": 17694,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 411635,
+              "prefix": "BIB",
+              "courseNumber": "251",
+              "title": "Biblical Perspectives for Leadership",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "Su2025",
+              "endTerm": "",
+              "department": "Biblical Studies",
+              "departmentParentId": 14775,
+              "prefixDescription": "Biblical Studies",
+              "prefixParentId": 17694,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 396549,
+              "prefix": "BUS",
+              "courseNumber": "475",
+              "title": "Law and the Business Environment",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Business",
+              "departmentParentId": 14777,
+              "prefixDescription": "Business Administration",
+              "prefixParentId": 17697,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "2d3f61de-a9b4-4d84-448c-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 412797,
+                  "prefix": "BIB",
+                  "courseNumber": "114",
+                  "title": "Jesus and the Christian Community",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2025",
+                  "endTerm": "",
+                  "department": "Biblical Studies",
+                  "departmentParentId": 14775,
+                  "prefixDescription": "Biblical Studies",
+                  "prefixParentId": 17694,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "8385de74-c68b-4539-448d-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 411635,
+                  "prefix": "BIB",
+                  "courseNumber": "251",
+                  "title": "Biblical Perspectives for Leadership",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2025",
+                  "endTerm": "",
+                  "department": "Biblical Studies",
+                  "departmentParentId": 14775,
+                  "prefixDescription": "Biblical Studies",
+                  "prefixParentId": 17694,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "15245fd7-3a5a-4816-448e-08de00ff42ca",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 396549,
+                  "prefix": "BUS",
+                  "courseNumber": "475",
+                  "title": "Law and the Business Environment",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Business",
+                  "departmentParentId": 14777,
+                  "prefixDescription": "Business Administration",
+                  "prefixParentId": 17697,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "2d3f61de-a9b4-4d84-448c-08de00ff42ca",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "This course must be taken at the university after transfer",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "8385de74-c68b-4539-448d-08de00ff42ca",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [
+                  {
+                    "position": 0,
+                    "content": "Articulates only with approval from department chair or advisor"
+                  },
+                  {
+                    "position": 1,
+                    "content": "Lower division credit only"
+                  }
+                ],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "15245fd7-3a5a-4816-448e-08de00ff42ca",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 169796,
+                  "prefix": "BLAW",
+                  "courseNumber": "110",
+                  "title": "Legal Environment of Business",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Business Law",
+                  "departmentParentId": 2111,
+                  "prefixDescription": "Business Law",
+                  "prefixParentId": 12201,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 169796,
+                      "prefix": "BLAW",
+                      "courseNumber": "110",
+                      "title": "Legal Environment of Business",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Business Law",
+                      "departmentParentId": 2111,
+                      "prefixDescription": "Business Law",
+                      "prefixParentId": 12201,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 169796,
+                          "prefix": "BLAW",
+                          "courseNumber": "110",
+                          "title": "Legal Environment of Business",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Business Law",
+                          "departmentParentId": 2111,
+                          "prefixDescription": "Business Law",
+                          "prefixParentId": 12201,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "2d3f61de-a9b4-4d84-448c-08de00ff42ca",
+            "8385de74-c68b-4539-448d-08de00ff42ca",
+            "15245fd7-3a5a-4816-448e-08de00ff42ca"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        }
+      ],
+      "sourceInstruction": {
+        "type": "Following",
+        "id": "ac46561b-bd9f-4baa-db68-08de00ff6dae",
+        "selectionType": "Complete"
+      }
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "c5a8584b-e10a-4ff3-b064-01931c56e32a",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "Business Administration - Project Management Emphasis, B.A. (Degree Completion)",
+      "contentHtml": null
+    },
+    {
+      "id": "9814b4dd-afe0-4935-b96d-01931c56e32b",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "ABOUT THE MAJOR The Bachelor of Arts in Business Administration with an emphasis in Project Management is designed to provide expansive knowledge and a practical guide to leadership and management, within the field of project management. Classes such as management, organizational behavior, marketing, and accounting provide the foundation for advanced classes in project management. The key to this 24 month program is a consistent focus on participation, application of theories and concepts, and performance. With our bachelor's degree emphasis in Project Management, graduates will complete four courses designed specifically for students who want to gain knowledge in project management. Threaded throughout the major is an ethical employee and leadership perspective. The major is designed to provide a solid background for graduates to use in seeking responsible employment, promotion, or Project Management certifications (CAPM or PMP). **Agreement does not include all required courses for the major at FPU** This agreement lists courses that are prerequisites or may be completed prior to transfer to satisfy major requirements. All transfer courses must be completed with a grade of C- or better, and students must complete a minimum of 18 units in the major at FPU. Please contact an academic advisor to discuss the recommended sequence of courses, including courses that may count for both GE and major requirements. To view the full degree requirements, please refer to the Undergraduate Catalog: https://catalog.fresno.edu/index.php .",
+      "contentHtml": "<p><strong style=\"color: rgb(22, 43, 132); font-size: 14px;\">ABOUT THE MAJOR</strong></p><p><span style=\"font-size: 14px;\">The Bachelor of Arts in Business Administration with an emphasis in Project Management is designed to provide expansive knowledge and a practical guide to leadership and management, within the field of project management. Classes such as management, organizational behavior, marketing, and accounting provide the foundation for advanced classes in project management. The key to this 24 month program is a consistent focus on participation, application of theories and concepts, and performance. With our bachelor's degree emphasis in Project Management, graduates will complete four courses designed specifically for students who want to gain knowledge in project management. Threaded throughout the major is an ethical employee and leadership perspective. The major is designed to provide a solid background for graduates to use in seeking responsible employment, promotion, or Project Management certifications (CAPM or PMP).</span></p><p><br></p><p><strong style=\"color: rgb(169, 62, 58); font-size: 14px;\">﻿**Agreement does not include all required courses for the major at FPU**</strong></p><p><span style=\"font-size: 14px;\">This agreement lists courses that are prerequisites or may be completed prior to transfer to satisfy major requirements. All transfer courses must be completed with a grade of C- or better, and students must complete a minimum of 18 units in the major at FPU. Please contact an academic advisor to discuss the recommended sequence of courses, including courses that may count for both GE and major requirements.&nbsp;To view the full degree requirements, please refer to the Undergraduate Catalog: </span><a href=\"https://catalog.fresno.edu/index.php\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">https://catalog.fresno.edu/index.php</a><span style=\"font-size: 14px;\">.</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.338Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=206&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F206%2FMajor%2F296bf2fe-6e03-48e9-c0fb-08ddf49aba41&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F206%2FMajor%2F296bf2fe-6e03-48e9-c0fb-08ddf49aba41",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F206%2FMajor%2F296bf2fe-6e03-48e9-c0fb-08ddf49aba41",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/agreements/year-76/receiving-206/major/55bfb51b2c954a43.json",
+    "templateAssetCount": 6,
+    "articulationCount": 4
+  },
+  "category": "major",
+  "plannerGuide": {
+    "category": "major",
+    "organizedBy": "university",
+    "notes": [
+      {
+        "text": "Business Administration - Project Management Emphasis, B.A. (Degree Completion)",
+        "links": []
+      },
+      {
+        "text": "ABOUT THE MAJOR\nThe Bachelor of Arts in Business Administration with an emphasis in Project Management is designed to provide expansive knowledge and a practical guide to leadership and management, within the field of project management. Classes such as management, organizational behavior, marketing, and accounting provide the foundation for advanced classes in project management. The key to this 24 month program is a consistent focus on participation, application of theories and concepts, and performance. With our bachelor's degree emphasis in Project Management, graduates will complete four courses designed specifically for students who want to gain knowledge in project management. Threaded throughout the major is an ethical employee and leadership perspective. The major is designed to provide a solid background for graduates to use in seeking responsible employment, promotion, or Project Management certifications (CAPM or PMP).\n\n﻿**Agreement does not include all required courses for the major at FPU**\nThis agreement lists courses that are prerequisites or may be completed prior to transfer to satisfy major requirements. All transfer courses must be completed with a grade of C- or better, and students must complete a minimum of 18 units in the major at FPU. Please contact an academic advisor to discuss the recommended sequence of courses, including courses that may count for both GE and major requirements. To view the full degree requirements, please refer to the Undergraduate Catalog: https://catalog.fresno.edu/index.php.",
+        "links": [
+          {
+            "label": "https://catalog.fresno.edu/index.php",
+            "url": "https://catalog.fresno.edu/index.php"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "title": "LOWER DIVISION PREREQUISITES",
+        "notes": [
+          {
+            "text": "Complete the following",
+            "links": []
+          }
+        ],
+        "sections": [
+          {
+            "title": "Section A",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "0-0-0",
+                "title": "ECON 103",
+                "receivingText": "ECON 103 — Introduction to Economics (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ECON 101 — Microeconomics (3 units)\nCourse validity: F1995 through F2026\nOR\nECON 102 — Macroeconomics (3 units)\nCourse validity: F1995 through F2026",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "0-0-1",
+                "title": "MATH 205",
+                "receivingText": "MATH 205 — Introductory Statistics (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "STAT C1000 — Introduction to Statistics (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "ADDITIONAL MAJOR REQUIREMENTS",
+        "notes": [
+          {
+            "text": "Complete the following",
+            "links": []
+          }
+        ],
+        "sections": [
+          {
+            "title": "Section A",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "1-0-0",
+                "title": "BIB 114",
+                "receivingText": "BIB 114 — Jesus and the Christian Community (3 units)\nCourse validity: Su2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "This course must be taken at the university after transfer"
+              },
+              {
+                "id": "1-0-1",
+                "title": "BIB 251",
+                "receivingText": "BIB 251 — Biblical Perspectives for Leadership (3 units)\nCourse validity: Su2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "1-0-2",
+                "title": "BUS 475",
+                "receivingText": "BUS 475 — Law and the Business Environment (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Articulates only with approval from department chair or advisor",
+                    "links": []
+                  },
+                  {
+                    "text": "Lower division credit only",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "BLAW 110 — Legal Environment of Business (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

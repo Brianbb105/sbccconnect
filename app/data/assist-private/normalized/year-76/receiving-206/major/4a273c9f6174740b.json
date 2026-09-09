@@ -1,0 +1,597 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 206,
+    "name": "Fresno Pacific University",
+    "code": "FPU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/206/Major/c850418a-d64b-4474-c131-08ddf49aba41",
+    "type": "Major",
+    "name": "Communication, B.A.",
+    "publishDate": "2026-03-16T21:33:59.5521373",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "1ece6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "1ece6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 396794,
+              "prefix": "LIT",
+              "courseNumber": "180",
+              "title": "Introduction to Literature",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "English",
+              "departmentParentId": 14782,
+              "prefixDescription": "Literature",
+              "prefixParentId": 17720,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 397050,
+              "prefix": "PHIL",
+              "courseNumber": "110",
+              "title": "Introduction to Philosophical Ethics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Philosophy",
+              "departmentParentId": 14793,
+              "prefixDescription": "Philosophy",
+              "prefixParentId": 17729,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "197d3023-23e1-47bb-2ede-08ddf49aba51",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 396794,
+                  "prefix": "LIT",
+                  "courseNumber": "180",
+                  "title": "Introduction to Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 14782,
+                  "prefixDescription": "Literature",
+                  "prefixParentId": 17720,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "0a657f01-3161-4395-2edf-08ddf49aba51",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 397050,
+                  "prefix": "PHIL",
+                  "courseNumber": "110",
+                  "title": "Introduction to Philosophical Ethics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Philosophy",
+                  "departmentParentId": 14793,
+                  "prefixDescription": "Philosophy",
+                  "prefixParentId": 17729,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "197d3023-23e1-47bb-2ede-08ddf49aba51",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 235754,
+                  "prefix": "ENG",
+                  "courseNumber": "200",
+                  "title": "Introduction to Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2015",
+                  "endTerm": "F2026",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 235754,
+                      "prefix": "ENG",
+                      "courseNumber": "200",
+                      "title": "Introduction to Literature",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2015",
+                      "endTerm": "F2026",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 235754,
+                          "prefix": "ENG",
+                          "courseNumber": "200",
+                          "title": "Introduction to Literature",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2015",
+                          "endTerm": "F2026",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "0a657f01-3161-4395-2edf-08ddf49aba51",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "197d3023-23e1-47bb-2ede-08ddf49aba51",
+            "0a657f01-3161-4395-2edf-08ddf49aba51"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        }
+      ],
+      "sourceInstruction": {
+        "type": "Following",
+        "id": "5b70ffcf-f133-4191-0203-08ddf49aba4d",
+        "selectionType": "Complete"
+      }
+    },
+    {
+      "id": "21ce6f45-6887-ef11-8474-000d3a37e3b6",
+      "title": "POSSIBLE MAJOR ELECTIVES",
+      "position": 3,
+      "logic": "UNKNOWN",
+      "selection": null,
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "21ce6f45-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": null,
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 396392,
+              "prefix": "ART",
+              "courseNumber": "126",
+              "title": "Principles of Creativity and Innovation",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Art, Design & Creative Innovation",
+              "departmentParentId": 14774,
+              "prefixDescription": "Art",
+              "prefixParentId": 17692,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 396400,
+              "prefix": "ART",
+              "courseNumber": "230",
+              "title": "Basic Graphic Design",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2024",
+              "endTerm": "",
+              "department": "Art, Design & Creative Innovation",
+              "departmentParentId": 14774,
+              "prefixDescription": "Art",
+              "prefixParentId": 17692,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "161de885-86ea-4dfa-2ee0-08ddf49aba51",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 396392,
+                  "prefix": "ART",
+                  "courseNumber": "126",
+                  "title": "Principles of Creativity and Innovation",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Art, Design & Creative Innovation",
+                  "departmentParentId": 14774,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 17692,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "afe9b5ec-a020-4717-2ee1-08ddf49aba51",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 396400,
+                  "prefix": "ART",
+                  "courseNumber": "230",
+                  "title": "Basic Graphic Design",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2024",
+                  "endTerm": "",
+                  "department": "Art, Design & Creative Innovation",
+                  "departmentParentId": 14774,
+                  "prefixDescription": "Art",
+                  "prefixParentId": 17692,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "161de885-86ea-4dfa-2ee0-08ddf49aba51",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "receivingCellId": "afe9b5ec-a020-4717-2ee1-08ddf49aba51",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "161de885-86ea-4dfa-2ee0-08ddf49aba51",
+            "afe9b5ec-a020-4717-2ee1-08ddf49aba51"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        }
+      ],
+      "sourceInstruction": null
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "c9d46f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "Communication, B.A.",
+      "contentHtml": null
+    },
+    {
+      "id": "cbd46f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "ABOUT THE MAJOR The Communication major provides courses that explore models of communication theory and application of theory in specific communication contexts. The major approaches the study of communication from a broad, liberal arts perspective that includes the historical, philosophical, and theoretical roots of communication. Courses provide necessary background for successful work and service in the public, private and religious sectors, as well as future graduate studies. MAJOR REQUIREMENTS In addition to the courses listed below, students will also complete a seven major elective courses. See catalog page for details. **Agreement does not include all required courses for the major at FPU** This agreement lists courses that are prerequisites or may be completed prior to transfer to satisfy major requirements. All transfer courses must be completed with a grade of C- or better, and students must complete a minimum of 18 units in the major at FPU. Please contact an academic advisor to discuss the recommended sequence of courses, including courses that may count for both GE and major requirements. To view the full degree requirements, please refer to the Undergraduate Catalog: https://catalog.fresno.edu/index.php .",
+      "contentHtml": "<p><strong style=\"font-size: 14px; color: rgb(22, 43, 132);\">ABOUT THE MAJOR</strong></p><p><span style=\"font-size: 14px;\">The Communication major provides courses that explore models of communication theory and application of theory in specific communication contexts. The major approaches the study of communication from a broad, liberal arts perspective that includes the historical, philosophical, and theoretical roots of communication. Courses provide necessary background for successful work and service in the public, private and religious sectors, as well as future graduate studies.</span></p><p><br></p><p><strong style=\"font-size: 14px; color: rgb(22, 43, 132);\">MAJOR REQUIREMENTS</strong></p><p><span style=\"font-size: 14px;\">In addition to the courses listed below, students will also complete a seven major elective courses. See catalog page for details.</span></p><p><br></p><p><strong style=\"font-size: 14px; color: rgb(169, 62, 58);\">﻿**Agreement does not include all required courses for the major at FPU**</strong></p><p><span style=\"font-size: 14px;\">This agreement lists courses that are prerequisites or may be completed prior to transfer to satisfy major requirements. All transfer courses must be completed with a grade of C- or better, and students must complete a minimum of 18 units in the major at FPU. Please contact an academic advisor to discuss the recommended sequence of courses, including courses that may count for both GE and major requirements.&nbsp;To view the full degree requirements, please refer to the Undergraduate Catalog: </span><a href=\"https://catalog.fresno.edu/index.php\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px;\">https://catalog.fresno.edu/index.php</a><span style=\"font-size: 14px;\">.</span></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.383Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=206&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F206%2FMajor%2Fc850418a-d64b-4474-c131-08ddf49aba41&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F206%2FMajor%2Fc850418a-d64b-4474-c131-08ddf49aba41",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F206%2FMajor%2Fc850418a-d64b-4474-c131-08ddf49aba41",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/agreements/year-76/receiving-206/major/4a273c9f6174740b.json",
+    "templateAssetCount": 6,
+    "articulationCount": 1
+  },
+  "category": "major",
+  "plannerGuide": {
+    "category": "major",
+    "organizedBy": "university",
+    "notes": [
+      {
+        "text": "Communication, B.A.",
+        "links": []
+      },
+      {
+        "text": "ABOUT THE MAJOR\nThe Communication major provides courses that explore models of communication theory and application of theory in specific communication contexts. The major approaches the study of communication from a broad, liberal arts perspective that includes the historical, philosophical, and theoretical roots of communication. Courses provide necessary background for successful work and service in the public, private and religious sectors, as well as future graduate studies.\n\nMAJOR REQUIREMENTS\nIn addition to the courses listed below, students will also complete a seven major elective courses. See catalog page for details.\n\n﻿**Agreement does not include all required courses for the major at FPU**\nThis agreement lists courses that are prerequisites or may be completed prior to transfer to satisfy major requirements. All transfer courses must be completed with a grade of C- or better, and students must complete a minimum of 18 units in the major at FPU. Please contact an academic advisor to discuss the recommended sequence of courses, including courses that may count for both GE and major requirements. To view the full degree requirements, please refer to the Undergraduate Catalog: https://catalog.fresno.edu/index.php.",
+        "links": [
+          {
+            "label": "https://catalog.fresno.edu/index.php",
+            "url": "https://catalog.fresno.edu/index.php"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "title": "LOWER DIVISION MAJOR REQUIREMENTS",
+        "notes": [
+          {
+            "text": "Complete the following",
+            "links": []
+          }
+        ],
+        "sections": [
+          {
+            "title": "Section A",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "0-0-0",
+                "title": "LIT 180",
+                "receivingText": "LIT 180 — Introduction to Literature (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ENG 200 — Introduction to Literature (3 units)\nCourse validity: F2015 through F2026",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "0-0-1",
+                "title": "PHIL 110",
+                "receivingText": "PHIL 110 — Introduction to Philosophical Ethics (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "POSSIBLE MAJOR ELECTIVES",
+        "notes": [],
+        "sections": [
+          {
+            "title": "Section A",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "1-0-0",
+                "title": "ART 126",
+                "receivingText": "ART 126 — Principles of Creativity and Innovation (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "1-0-1",
+                "title": "ART 230",
+                "receivingText": "ART 230 — Basic Graphic Design (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

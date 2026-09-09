@@ -1,0 +1,354 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 220,
+    "name": "University of Redlands",
+    "code": "UOFR",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/220/Prefix/17926",
+    "type": "Prefix",
+    "name": "IR International Relations",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:47.472Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=220&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F220%2FPrefix%2F17926&viewBy=prefix&viewByKey=76%2F92%2Fto%2F220%2FPrefix%2F17926&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F220%2FAllPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-220/6e27d74e2d438d19.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399332,
+            "prefix": "IR",
+            "courseNumber": "200",
+            "title": "International Relations Theory",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "International Relations",
+            "departmentParentId": 14862,
+            "prefixDescription": "International Relations",
+            "prefixParentId": 17926,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": null,
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [],
+        "courseGroups": [],
+        "noArticulationReason": "NO_SENDING_ARTICULATION_IN_SOURCE",
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 399333,
+            "prefix": "IR",
+            "courseNumber": "201",
+            "title": "Introduction to International and Global Studies",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "International Relations",
+            "departmentParentId": 14862,
+            "prefixDescription": "International Relations",
+            "prefixParentId": 17926,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "OR",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 216326,
+            "prefix": "POLS",
+            "courseNumber": "121",
+            "title": "International Politics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Political Science",
+            "departmentParentId": 11046,
+            "prefixDescription": "Political Science",
+            "prefixParentId": 1988,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 360936,
+            "prefix": "POLS",
+            "courseNumber": "121H",
+            "title": "International Politics, Honors",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2017",
+            "endTerm": "",
+            "department": "Political Science",
+            "departmentParentId": 11046,
+            "prefixDescription": "Political Science",
+            "prefixParentId": 1988,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 216326,
+                "prefix": "POLS",
+                "courseNumber": "121",
+                "title": "International Politics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Political Science",
+                "departmentParentId": 11046,
+                "prefixDescription": "Political Science",
+                "prefixParentId": 1988,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 360936,
+                "prefix": "POLS",
+                "courseNumber": "121H",
+                "title": "International Politics, Honors",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2017",
+                "endTerm": "",
+                "department": "Political Science",
+                "departmentParentId": 11046,
+                "prefixDescription": "Political Science",
+                "prefixParentId": 1988,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 216326,
+                    "prefix": "POLS",
+                    "courseNumber": "121",
+                    "title": "International Politics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Political Science",
+                    "departmentParentId": 11046,
+                    "prefixDescription": "Political Science",
+                    "prefixParentId": 1988,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 360936,
+                    "prefix": "POLS",
+                    "courseNumber": "121H",
+                    "title": "International Politics, Honors",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2017",
+                    "endTerm": "",
+                    "department": "Political Science",
+                    "departmentParentId": 11046,
+                    "prefixDescription": "Political Science",
+                    "prefixParentId": 1988,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "IR 200",
+                "receivingText": "IR 200 — International Relations Theory (4 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              },
+              {
+                "id": "course-1",
+                "title": "IR 201",
+                "receivingText": "IR 201 — Introduction to International and Global Studies (4 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "POLS 121 — International Politics (3 units)\nCourse validity: Su2007 onward\nOR\nPOLS 121H — International Politics, Honors (4 units)\nCourse validity: F2017 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/220/AllPrefixes",
+    "groupIndex": 30,
+    "groupName": "IR International Relations",
+    "publishDate": "2026-03-10T23:34:34.8075686"
+  }
+}

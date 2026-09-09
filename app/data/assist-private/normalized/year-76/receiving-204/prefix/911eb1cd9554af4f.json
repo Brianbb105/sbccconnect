@@ -1,0 +1,378 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 204,
+    "name": "Charles R. Drew University of Medicine and Science",
+    "code": "CDU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/204/Prefix/18307",
+    "type": "Prefix",
+    "name": "POL Political Science",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:43.530Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=204&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F204%2FPrefix%2F18307&viewBy=prefix&viewByKey=76%2F92%2Fto%2F204%2FPrefix%2F18307&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F204%2FAllPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-204/7a5730b38cb42c44.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 406011,
+            "prefix": "POL",
+            "courseNumber": "141",
+            "title": "US Government",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Political Science",
+            "departmentParentId": 15100,
+            "prefixDescription": "Political Science",
+            "prefixParentId": 18307,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 135816,
+            "prefix": "POLS",
+            "courseNumber": "104",
+            "title": "American Government: Policy Issues / Process",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "Su2007",
+            "endTerm": "",
+            "department": "Political Science",
+            "departmentParentId": 11046,
+            "prefixDescription": "Political Science",
+            "prefixParentId": 1988,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 373661,
+            "prefix": "POLS",
+            "courseNumber": "108",
+            "title": "California Government and Politics",
+            "minUnits": 2,
+            "maxUnits": 2,
+            "beginTerm": "S2020",
+            "endTerm": "",
+            "department": "Political Science",
+            "departmentParentId": 11046,
+            "prefixDescription": "Political Science",
+            "prefixParentId": 1988,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 330292,
+            "prefix": "POLS",
+            "courseNumber": "C1000",
+            "title": "American Government and Politics",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Political Science",
+            "departmentParentId": 11046,
+            "prefixDescription": "Political Science",
+            "prefixParentId": 1988,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "Advisement",
+            "position": 0,
+            "logic": "UNKNOWN",
+            "courses": [],
+            "items": [],
+            "attributes": [],
+            "sourceAdvisement": {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select"
+            }
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 135816,
+                "prefix": "POLS",
+                "courseNumber": "104",
+                "title": "American Government: Policy Issues / Process",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "Su2007",
+                "endTerm": "",
+                "department": "Political Science",
+                "departmentParentId": 11046,
+                "prefixDescription": "Political Science",
+                "prefixParentId": 1988,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 373661,
+                "prefix": "POLS",
+                "courseNumber": "108",
+                "title": "California Government and Politics",
+                "minUnits": 2,
+                "maxUnits": 2,
+                "beginTerm": "S2020",
+                "endTerm": "",
+                "department": "Political Science",
+                "departmentParentId": 11046,
+                "prefixDescription": "Political Science",
+                "prefixParentId": 1988,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 330292,
+                "prefix": "POLS",
+                "courseNumber": "C1000",
+                "title": "American Government and Politics",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2025",
+                "endTerm": "",
+                "department": "Political Science",
+                "departmentParentId": 11046,
+                "prefixDescription": "Political Science",
+                "prefixParentId": 1988,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 135816,
+                    "prefix": "POLS",
+                    "courseNumber": "104",
+                    "title": "American Government: Policy Issues / Process",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "Su2007",
+                    "endTerm": "",
+                    "department": "Political Science",
+                    "departmentParentId": 11046,
+                    "prefixDescription": "Political Science",
+                    "prefixParentId": 1988,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 373661,
+                    "prefix": "POLS",
+                    "courseNumber": "108",
+                    "title": "California Government and Politics",
+                    "minUnits": 2,
+                    "maxUnits": 2,
+                    "beginTerm": "S2020",
+                    "endTerm": "",
+                    "department": "Political Science",
+                    "departmentParentId": 11046,
+                    "prefixDescription": "Political Science",
+                    "prefixParentId": 1988,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 2,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 330292,
+                    "prefix": "POLS",
+                    "courseNumber": "C1000",
+                    "title": "American Government and Politics",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2025",
+                    "endTerm": "",
+                    "department": "Political Science",
+                    "departmentParentId": 11046,
+                    "prefixDescription": "Political Science",
+                    "prefixParentId": 1988,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "POL 141",
+                "receivingText": "POL 141 — US Government (3 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "Select 1 course from the following\nPOLS 104 — American Government: Policy Issues / Process (3 units)\nCourse validity: Su2007 onward\nOR\nPOLS 108 — California Government and Politics (2 units)\nCourse validity: S2020 onward\nOR\nPOLS C1000 — American Government and Politics (3 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/204/AllPrefixes",
+    "groupIndex": 15,
+    "groupName": "POL Political Science",
+    "publishDate": "2026-06-12T19:12:51.8726177"
+  }
+}

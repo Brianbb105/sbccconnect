@@ -1,0 +1,1621 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 213,
+    "name": "National University",
+    "code": "NU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/213/GeneralEducation/0c9757c5-e01b-4738-30da-08dd97eff939",
+    "type": "GeneralEducation",
+    "name": "GE Area A - English Communication (Bachelor Degrees)",
+    "publishDate": "2026-01-07T17:31:13.9539402",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "2be57145-6887-ef11-8474-000d3a37e3b6",
+      "title": "Requirement Group",
+      "position": 0,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "NFromConjunction",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": false,
+      "showConjunctionBetweenSections": true,
+      "advisements": [],
+      "attributes": [
+        {
+          "id": null,
+          "position": 0,
+          "content": "Course will only satisfy one GE area"
+        }
+      ],
+      "sections": [
+        {
+          "id": "2be57145-6887-ef11-8474-000d3a37e3b6:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "dc83fde3-3b89-4e06-9e5c-08dd97eff948",
+              "type": "GeneralEducation",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "English Composition",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "areaCode": "AREA A1a",
+              "areaType": "GeneralEducation",
+              "generalEducationAreaAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "GeneralEducation",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "GeneralEducation",
+                "generalEducationAreaAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "dc83fde3-3b89-4e06-9e5c-08dd97eff948",
+              "logic": "UNKNOWN",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 330275,
+                  "prefix": "ENGL",
+                  "courseNumber": "C1000",
+                  "title": "Academic Reading and Writing",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 18787,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 381141,
+                  "prefix": "ENGL",
+                  "courseNumber": "C1000E",
+                  "title": "Academic Reading and Writing",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 18787,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 169572,
+                  "prefix": "ENGL",
+                  "courseNumber": "C1000H",
+                  "title": "Academic Reading and Writing - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 18787,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 330275,
+                      "prefix": "ENGL",
+                      "courseNumber": "C1000",
+                      "title": "Academic Reading and Writing",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 18787,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 330275,
+                          "prefix": "ENGL",
+                          "courseNumber": "C1000",
+                          "title": "Academic Reading and Writing",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 18787,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 381141,
+                      "prefix": "ENGL",
+                      "courseNumber": "C1000E",
+                      "title": "Academic Reading and Writing",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 18787,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 381141,
+                          "prefix": "ENGL",
+                          "courseNumber": "C1000E",
+                          "title": "Academic Reading and Writing",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 18787,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 169572,
+                      "prefix": "ENGL",
+                      "courseNumber": "C1000H",
+                      "title": "Academic Reading and Writing - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 18787,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 169572,
+                          "prefix": "ENGL",
+                          "courseNumber": "C1000H",
+                          "title": "Academic Reading and Writing - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 18787,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "dc83fde3-3b89-4e06-9e5c-08dd97eff948"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        },
+        {
+          "id": "2be57145-6887-ef11-8474-000d3a37e3b6:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [
+            {
+              "id": "a5cf2506-5199-4aa9-9e5d-08dd97eff948",
+              "type": "GeneralEducation",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "Advanced English Composition",
+              "courses": [],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "areaCode": "AREA A1b",
+              "areaType": "GeneralEducation",
+              "generalEducationAreaAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "GeneralEducation",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "GeneralEducation",
+                "generalEducationAreaAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "a5cf2506-5199-4aa9-9e5d-08dd97eff948",
+              "logic": "UNKNOWN",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 211794,
+                  "prefix": "COMM",
+                  "courseNumber": "235",
+                  "title": "Argumentation and Debate",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 209689,
+                  "prefix": "ENG",
+                  "courseNumber": "111",
+                  "title": "Critical Thinking and Composition Through Literature",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 151083,
+                  "prefix": "ENG",
+                  "courseNumber": "111H",
+                  "title": "Critical Thinking and Composition through Literature, Honors",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 2714,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 201418,
+                  "prefix": "ENGL",
+                  "courseNumber": "C1001",
+                  "title": "Critical Thinking and Writing",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "English",
+                  "departmentParentId": 4943,
+                  "prefixDescription": "English",
+                  "prefixParentId": 18787,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 342356,
+                  "prefix": "PHIL",
+                  "courseNumber": "111",
+                  "title": "Critical Thinking and Writing in Philosophy",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1998",
+                  "endTerm": "",
+                  "department": "Philosophy",
+                  "departmentParentId": 10159,
+                  "prefixDescription": "Philosophy",
+                  "prefixParentId": 5463,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 211794,
+                      "prefix": "COMM",
+                      "courseNumber": "235",
+                      "title": "Argumentation and Debate",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 211794,
+                          "prefix": "COMM",
+                          "courseNumber": "235",
+                          "title": "Argumentation and Debate",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 209689,
+                      "prefix": "ENG",
+                      "courseNumber": "111",
+                      "title": "Critical Thinking and Composition Through Literature",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 209689,
+                          "prefix": "ENG",
+                          "courseNumber": "111",
+                          "title": "Critical Thinking and Composition Through Literature",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 151083,
+                      "prefix": "ENG",
+                      "courseNumber": "111H",
+                      "title": "Critical Thinking and Composition through Literature, Honors",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 2714,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 151083,
+                          "prefix": "ENG",
+                          "courseNumber": "111H",
+                          "title": "Critical Thinking and Composition through Literature, Honors",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 2714,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 3,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 201418,
+                      "prefix": "ENGL",
+                      "courseNumber": "C1001",
+                      "title": "Critical Thinking and Writing",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "English",
+                      "departmentParentId": 4943,
+                      "prefixDescription": "English",
+                      "prefixParentId": 18787,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 201418,
+                          "prefix": "ENGL",
+                          "courseNumber": "C1001",
+                          "title": "Critical Thinking and Writing",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "English",
+                          "departmentParentId": 4943,
+                          "prefixDescription": "English",
+                          "prefixParentId": 18787,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 4,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 342356,
+                      "prefix": "PHIL",
+                      "courseNumber": "111",
+                      "title": "Critical Thinking and Writing in Philosophy",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1998",
+                      "endTerm": "",
+                      "department": "Philosophy",
+                      "departmentParentId": 10159,
+                      "prefixDescription": "Philosophy",
+                      "prefixParentId": 5463,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 342356,
+                          "prefix": "PHIL",
+                          "courseNumber": "111",
+                          "title": "Critical Thinking and Writing in Philosophy",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1998",
+                          "endTerm": "",
+                          "department": "Philosophy",
+                          "departmentParentId": 10159,
+                          "prefixDescription": "Philosophy",
+                          "prefixParentId": 5463,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "a5cf2506-5199-4aa9-9e5d-08dd97eff948"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        },
+        {
+          "id": "2be57145-6887-ef11-8474-000d3a37e3b6:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "NFromConjunction",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 399966,
+              "prefix": "COM",
+              "courseNumber": "103",
+              "title": "Public Speaking",
+              "minUnits": 4.5,
+              "maxUnits": 4.5,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Communications",
+              "departmentParentId": 15284,
+              "prefixDescription": "Communications",
+              "prefixParentId": 17972,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "20c60059-4db2-465d-9e5e-08dd97eff948",
+              "type": "GeneralEducation",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "Oral Communication",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 399966,
+                  "prefix": "COM",
+                  "courseNumber": "103",
+                  "title": "Public Speaking",
+                  "minUnits": 4.5,
+                  "maxUnits": 4.5,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Communications",
+                  "departmentParentId": 15284,
+                  "prefixDescription": "Communications",
+                  "prefixParentId": 17972,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "areaCode": "AREA A2",
+              "areaType": "GeneralEducation",
+              "generalEducationAreaAttributes": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "GeneralEducation",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "GeneralEducation",
+                "generalEducationAreaAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "20c60059-4db2-465d-9e5e-08dd97eff948",
+              "logic": "UNKNOWN",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135634,
+                  "prefix": "COMM",
+                  "courseNumber": "121",
+                  "title": "Interpersonal Communication",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1996",
+                  "endTerm": "F2026",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 210057,
+                  "prefix": "COMM",
+                  "courseNumber": "121H",
+                  "title": "Interpersonal Communication, Honors",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135796,
+                  "prefix": "COMM",
+                  "courseNumber": "141",
+                  "title": "Small Group Communication",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1999",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 211794,
+                  "prefix": "COMM",
+                  "courseNumber": "235",
+                  "title": "Argumentation and Debate",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F1995",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156520,
+                  "prefix": "COMM",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Public Speaking",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 135751,
+                  "prefix": "COMM",
+                  "courseNumber": "C1000H",
+                  "title": "Introduction to Public Speaking - Honors",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Communication",
+                  "departmentParentId": 2779,
+                  "prefixDescription": "Communication",
+                  "prefixParentId": 12246,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135634,
+                      "prefix": "COMM",
+                      "courseNumber": "121",
+                      "title": "Interpersonal Communication",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1996",
+                      "endTerm": "F2026",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135634,
+                          "prefix": "COMM",
+                          "courseNumber": "121",
+                          "title": "Interpersonal Communication",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1996",
+                          "endTerm": "F2026",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 1,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 210057,
+                      "prefix": "COMM",
+                      "courseNumber": "121H",
+                      "title": "Interpersonal Communication, Honors",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 210057,
+                          "prefix": "COMM",
+                          "courseNumber": "121H",
+                          "title": "Interpersonal Communication, Honors",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 2,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135796,
+                      "prefix": "COMM",
+                      "courseNumber": "141",
+                      "title": "Small Group Communication",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1999",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135796,
+                          "prefix": "COMM",
+                          "courseNumber": "141",
+                          "title": "Small Group Communication",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1999",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 3,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 211794,
+                      "prefix": "COMM",
+                      "courseNumber": "235",
+                      "title": "Argumentation and Debate",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F1995",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 211794,
+                          "prefix": "COMM",
+                          "courseNumber": "235",
+                          "title": "Argumentation and Debate",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F1995",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 4,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156520,
+                      "prefix": "COMM",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Public Speaking",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156520,
+                          "prefix": "COMM",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Public Speaking",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                },
+                {
+                  "type": "CourseGroup",
+                  "position": 5,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 135751,
+                      "prefix": "COMM",
+                      "courseNumber": "C1000H",
+                      "title": "Introduction to Public Speaking - Honors",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Communication",
+                      "departmentParentId": 2779,
+                      "prefixDescription": "Communication",
+                      "prefixParentId": 12246,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 135751,
+                          "prefix": "COMM",
+                          "courseNumber": "C1000H",
+                          "title": "Introduction to Public Speaking - Honors",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Communication",
+                          "departmentParentId": 2779,
+                          "prefixDescription": "Communication",
+                          "prefixParentId": 12246,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "20c60059-4db2-465d-9e5e-08dd97eff948"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        }
+      ],
+      "sourceInstruction": {
+        "type": "NFromConjunction",
+        "conjunction": "And",
+        "amountQuantifier": "None",
+        "amount": 1,
+        "amountUnitType": "Course",
+        "id": "80b48034-edd9-4377-8492-08dd97eff93d",
+        "selectionType": "Complete"
+      }
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "5ce57145-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 0,
+      "content": "General Education Program Requirements National University's General Education Program consists of a minimum of 69 quarter (46 semester) units in eight different areas. Of these, at least 4.5 quarter units (3 semester units) must be upper-division courses, and 4.5 quarter units (3 semester units) must focus on diversity-enriched coursework. Students can apply up to 13.5 quarter units (9 semester units) of upper-division coursework towards their general education requirements.",
+      "contentHtml": "<p><strong style=\"font-size: 16px;\">General Education Program Requirements</strong></p><p><span style=\"font-size: 16px;\">National University's General Education Program consists of a minimum of 69&nbsp;quarter (46 semester) units in eight different areas. Of these, at least 4.5 quarter units (3 semester units) must be upper-division courses, and 4.5 quarter units (3 semester units) must focus on diversity-enriched coursework. Students can apply up to 13.5 quarter units (9 semester units) of upper-division coursework towards their general education requirements. </span></p>"
+    },
+    {
+      "id": "53f66f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "The Eight General Education Requirement Areas for a Bachelor's Degree are: Area A – English Communication (minimum 13.5 quarter units [9 semester units] with 1 course from each category) English Composition Advanced English Composition Oral Communication Area B – Mathematical Concepts &amp; Quantitative Reasoning (minimum 4.5 quarter units [3 semester units]) Area C – Information Literacy (minimum 4.5 quarter units [3 semester units]) Area D – Arts, Humanities &amp; Languages (minimum 18 quarter units [12 semester units] in at least 2 categories) Arts Humanities Languages (Students may satisfy Area D Language requirements with 9.0 quarter units [6 semester units] of computer languages) Area E – Social &amp; Behavioral Sciences (minimum 13.5 quarter units [9 semester units]) Area F – Physical &amp; Biological Sciences (minimum 6 quarter units [4 semester units] with one science lab required ) Area G – Lifelong Learning &amp; Self Development (minimum 4.5 quarter units [3 semester units]) Area A-G – General Education (minimum 4.5 quarter units [3 semester units]). Any additional GE course may satisfy this Area.",
+      "contentHtml": "<p><span style=\"font-size: 16px;\">The Eight General Education Requirement Areas for a Bachelor's Degree are:</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area A</strong><span style=\"font-size: 16px;\"> – </span><strong style=\"font-size: 16px;\">English Communication</strong><span style=\"font-size: 16px;\"> (minimum 13.5 quarter units [9 semester units] with 1 course from each category)</span></p><p class=\"ql-indent-2\"><span style=\"font-size: 16px;\">English Composition</span></p><p class=\"ql-indent-2\"><span style=\"font-size: 16px;\">Advanced English Composition</span></p><p class=\"ql-indent-2\"><span style=\"font-size: 16px;\">Oral Communication</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area B – Mathematical Concepts &amp; Quantitative Reasoning</strong><span style=\"font-size: 16px;\"> (minimum 4.5 quarter units [3 semester units])</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area C – Information Literacy</strong><span style=\"font-size: 16px;\"> (minimum 4.5 quarter units [3 semester units])</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area D – Arts, Humanities &amp; Languages</strong><span style=\"font-size: 16px;\"> (minimum 18 quarter units [12 semester units] in at least 2 categories)</span></p><p class=\"ql-indent-2\"><span style=\"font-size: 16px;\">Arts</span></p><p class=\"ql-indent-2\"><span style=\"font-size: 16px;\">Humanities</span></p><p class=\"ql-indent-2\"><span style=\"font-size: 16px;\">Languages (Students may satisfy Area D Language requirements with 9.0 quarter units [6 semester units] of computer languages)</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area E – Social &amp; Behavioral Sciences </strong><span style=\"font-size: 16px;\">(minimum 13.5 quarter units [9 semester units])</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area F – Physical &amp; Biological Sciences</strong><span style=\"font-size: 16px;\"> (minimum 6 quarter units [4 semester units] with </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">one science lab required</strong><span style=\"font-size: 16px;\">)</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area G – Lifelong Learning &amp; Self Development</strong><span style=\"font-size: 16px;\"> (minimum 4.5 quarter units [3 semester units])</span></p><p class=\"ql-indent-1\"><strong style=\"font-size: 16px;\">Area A-G – General Education</strong><span style=\"font-size: 16px;\"> (minimum 4.5 quarter units [3 semester units]). </span><strong style=\"font-size: 16px; color: rgb(169, 62, 58);\">Any additional GE course may satisfy this Area.</strong></p>"
+    },
+    {
+      "id": "aaf46f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 2,
+      "content": "CSU General Education Breadth, IGETC and Cal-GETC National University accepts the following General Education certifications: California State University (CSU) General Education Breadth, the Inter-Segmental General Education Transfer Curriculum (IGETC), or the California General Education Transfer Curriculum (Cal-GETC). All certification requirements for CSU General Education Breadth, IGETC or Cal-GETC must be completed and certified prior to transfer to National University. Partial certifications are not accepted. Students transferring with full certifications are required to take at least one upper-division general education course at National to fulfill the unit requirements. Certain degree programs may require additional upper-division general education courses; refer to specific Major Articulation Agreements for details. Students must submit an official transcript that includes the certification, or a separate certification form from the community college attended. For more information on NU’s General Education program, please see NU’s current catalog .",
+      "contentHtml": "<p><strong style=\"font-size: 16px;\">CSU General Education Breadth, IGETC and Cal-GETC</strong></p><p><span style=\"font-size: 16px;\">National University accepts the following General Education certifications: California State University (CSU) General Education Breadth, the Inter-Segmental General Education Transfer Curriculum (IGETC), or the California General Education Transfer Curriculum (Cal-GETC). All certification requirements for CSU General Education Breadth, IGETC or Cal-GETC must be completed and certified prior to transfer to National University. Partial certifications are not accepted. </span></p><p><br></p><p><span style=\"font-size: 16px;\">Students transferring with full certifications are required to take at least one upper-division general education course at National to fulfill the unit requirements. Certain degree programs may require additional upper-division general education courses; refer to specific Major Articulation Agreements for details. Students must submit an official transcript that includes the certification, or a separate certification form from the community college attended. For more information on NU’s General Education program, please see </span><a href=\"https://www.nu.edu/catalog/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">NU’s current catalog</a><span style=\"font-size: 16px;\">.</span></p>"
+    },
+    {
+      "id": "8cf56f45-6887-ef11-8474-000d3a37e3b6",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 3,
+      "content": "Complete a minimum of 13.5 quarter (9 semester) units. Complete one course in each area. Course(s) can only satisfy one GE Area.",
+      "contentHtml": "<p><strong style=\"font-size: 16px;\">Complete a minimum of 13.5 quarter (9 semester) units. Complete one course in each area.</strong></p><p><span style=\"font-size: 16px;\">﻿</span><em style=\"font-size: 16px;\">Course(s) can only satisfy one GE Area.</em></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:44.793Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=213&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F213%2FGeneralEducation%2F0c9757c5-e01b-4738-30da-08dd97eff939&viewBy=breadth&viewByKey=76%2F92%2Fto%2F213%2FGeneralEducation%2F0c9757c5-e01b-4738-30da-08dd97eff939&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F213%2FGeneralEducation%2F0c9757c5-e01b-4738-30da-08dd97eff939",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/agreements/year-76/receiving-213/breadth/7b3e0997067ca1cb.json",
+    "templateAssetCount": 5,
+    "articulationCount": 3
+  },
+  "category": "breadth",
+  "plannerGuide": {
+    "category": "breadth",
+    "organizedBy": "university",
+    "notes": [
+      {
+        "text": "General Education Program Requirements\nNational University's General Education Program consists of a minimum of 69 quarter (46 semester) units in eight different areas. Of these, at least 4.5 quarter units (3 semester units) must be upper-division courses, and 4.5 quarter units (3 semester units) must focus on diversity-enriched coursework. Students can apply up to 13.5 quarter units (9 semester units) of upper-division coursework towards their general education requirements.",
+        "links": []
+      },
+      {
+        "text": "The Eight General Education Requirement Areas for a Bachelor's Degree are:\nArea A – English Communication (minimum 13.5 quarter units [9 semester units] with 1 course from each category)\nEnglish Composition\nAdvanced English Composition\nOral Communication\nArea B – Mathematical Concepts & Quantitative Reasoning (minimum 4.5 quarter units [3 semester units])\nArea C – Information Literacy (minimum 4.5 quarter units [3 semester units])\nArea D – Arts, Humanities & Languages (minimum 18 quarter units [12 semester units] in at least 2 categories)\nArts\nHumanities\nLanguages (Students may satisfy Area D Language requirements with 9.0 quarter units [6 semester units] of computer languages)\nArea E – Social & Behavioral Sciences (minimum 13.5 quarter units [9 semester units])\nArea F – Physical & Biological Sciences (minimum 6 quarter units [4 semester units] with one science lab required)\nArea G – Lifelong Learning & Self Development (minimum 4.5 quarter units [3 semester units])\nArea A-G – General Education (minimum 4.5 quarter units [3 semester units]). Any additional GE course may satisfy this Area.",
+        "links": []
+      },
+      {
+        "text": "CSU General Education Breadth, IGETC and Cal-GETC\nNational University accepts the following General Education certifications: California State University (CSU) General Education Breadth, the Inter-Segmental General Education Transfer Curriculum (IGETC), or the California General Education Transfer Curriculum (Cal-GETC). All certification requirements for CSU General Education Breadth, IGETC or Cal-GETC must be completed and certified prior to transfer to National University. Partial certifications are not accepted.\n\nStudents transferring with full certifications are required to take at least one upper-division general education course at National to fulfill the unit requirements. Certain degree programs may require additional upper-division general education courses; refer to specific Major Articulation Agreements for details. Students must submit an official transcript that includes the certification, or a separate certification form from the community college attended. For more information on NU’s General Education program, please see NU’s current catalog.",
+        "links": [
+          {
+            "label": "NU’s current catalog",
+            "url": "https://www.nu.edu/catalog/"
+          }
+        ]
+      },
+      {
+        "text": "Complete a minimum of 13.5 quarter (9 semester) units. Complete one course in each area.\n﻿Course(s) can only satisfy one GE Area.",
+        "links": []
+      }
+    ],
+    "groups": [
+      {
+        "title": "Requirement Group",
+        "notes": [
+          {
+            "text": "Complete 1 course from every section in this group",
+            "links": []
+          },
+          {
+            "text": "Course will only satisfy one GE area",
+            "links": []
+          }
+        ],
+        "sections": [
+          {
+            "title": "Section A",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "0-0-0",
+                "title": "AREA A1a — English Composition",
+                "receivingText": "",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ENGL C1000 — Academic Reading and Writing (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "ENGL C1000E — Academic Reading and Writing (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "ENGL C1000H — Academic Reading and Writing - Honors (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              }
+            ]
+          },
+          {
+            "title": "Section B",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "0-1-0",
+                "title": "AREA A1b — Advanced English Composition",
+                "receivingText": "",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "COMM 235 — Argumentation and Debate (3 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "ENG 111 — Critical Thinking and Composition Through Literature (3 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "ENG 111H — Critical Thinking and Composition through Literature, Honors (3 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "ENGL C1001 — Critical Thinking and Writing (3 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "PHIL 111 — Critical Thinking and Writing in Philosophy (3 units)\nCourse validity: F1998 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              }
+            ]
+          },
+          {
+            "title": "Section C",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "0-2-0",
+                "title": "AREA A2 — Oral Communication",
+                "receivingText": "COM 103 — Public Speaking (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "COMM 121 — Interpersonal Communication (3 units)\nCourse validity: F1996 through F2026",
+                    "notes": []
+                  },
+                  {
+                    "text": "COMM 121H — Interpersonal Communication, Honors (3 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "COMM 141 — Small Group Communication (3 units)\nCourse validity: F1999 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "COMM 235 — Argumentation and Debate (3 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "COMM C1000 — Introduction to Public Speaking (3 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  },
+                  {
+                    "text": "COMM C1000H — Introduction to Public Speaking - Honors (3 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

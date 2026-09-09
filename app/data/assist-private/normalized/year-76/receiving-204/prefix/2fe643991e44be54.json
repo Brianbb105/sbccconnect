@@ -1,0 +1,308 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 204,
+    "name": "Charles R. Drew University of Medicine and Science",
+    "code": "CDU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/204/Prefix/18298",
+    "type": "Prefix",
+    "name": "CPU Computer Applications",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:43.514Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=204&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F204%2FPrefix%2F18298&viewBy=prefix&viewByKey=76%2F92%2Fto%2F204%2FPrefix%2F18298&viewSendingAgreements=false",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F204%2FAllPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-204/7a5730b38cb42c44.json",
+    "templateAssetCount": 0,
+    "articulationCount": 1
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 405993,
+            "prefix": "CPU",
+            "courseNumber": "125",
+            "title": "Introduction to Computer Applications",
+            "minUnits": 2,
+            "maxUnits": 2,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Computer Applications",
+            "departmentParentId": 15092,
+            "prefixDescription": "Computer Applications",
+            "prefixParentId": 18298,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "UNKNOWN",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 192294,
+            "prefix": "CIS",
+            "courseNumber": "101",
+            "title": "Introduction to Computers and Information Systems",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2005",
+            "endTerm": "",
+            "department": "Computer Information Systems",
+            "departmentParentId": 3117,
+            "prefixDescription": "Computer Information Systems",
+            "prefixParentId": 2227,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          },
+          {
+            "id": null,
+            "courseIdentifierParentId": 175737,
+            "prefix": "CIS",
+            "courseNumber": "107",
+            "title": "Introduction to Database Systems",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F2015",
+            "endTerm": "",
+            "department": "Computer Information Systems",
+            "departmentParentId": 3117,
+            "prefixDescription": "Computer Information Systems",
+            "prefixParentId": 2227,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "Advisement",
+            "position": 0,
+            "logic": "UNKNOWN",
+            "courses": [],
+            "items": [],
+            "attributes": [],
+            "sourceAdvisement": {
+              "type": "NFollowing",
+              "amount": 1,
+              "amountUnitType": "Course",
+              "position": 0,
+              "selectionType": "Select"
+            }
+          },
+          {
+            "type": "CourseGroup",
+            "position": 1,
+            "logic": "OR",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 192294,
+                "prefix": "CIS",
+                "courseNumber": "101",
+                "title": "Introduction to Computers and Information Systems",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2005",
+                "endTerm": "",
+                "department": "Computer Information Systems",
+                "departmentParentId": 3117,
+                "prefixDescription": "Computer Information Systems",
+                "prefixParentId": 2227,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              },
+              {
+                "id": null,
+                "courseIdentifierParentId": 175737,
+                "prefix": "CIS",
+                "courseNumber": "107",
+                "title": "Introduction to Database Systems",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F2015",
+                "endTerm": "",
+                "department": "Computer Information Systems",
+                "departmentParentId": 3117,
+                "prefixDescription": "Computer Information Systems",
+                "prefixParentId": 2227,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 192294,
+                    "prefix": "CIS",
+                    "courseNumber": "101",
+                    "title": "Introduction to Computers and Information Systems",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2005",
+                    "endTerm": "",
+                    "department": "Computer Information Systems",
+                    "departmentParentId": 3117,
+                    "prefixDescription": "Computer Information Systems",
+                    "prefixParentId": 2227,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              },
+              {
+                "type": "Course",
+                "position": 1,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 175737,
+                    "prefix": "CIS",
+                    "courseNumber": "107",
+                    "title": "Introduction to Database Systems",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F2015",
+                    "endTerm": "",
+                    "department": "Computer Information Systems",
+                    "departmentParentId": 3117,
+                    "prefixDescription": "Computer Information Systems",
+                    "prefixParentId": 2227,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "university",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "CPU 125",
+                "receivingText": "CPU 125 — Introduction to Computer Applications (2 units)\nCourse validity: F2024 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "Select 1 course from the following\nCIS 101 — Introduction to Computers and Information Systems (4 units)\nCourse validity: F2005 onward\nOR\nCIS 107 — Introduction to Database Systems (4 units)\nCourse validity: F2015 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/204/AllPrefixes",
+    "groupIndex": 6,
+    "groupName": "CPU Computer Applications",
+    "publishDate": "2026-06-12T19:12:51.8726177"
+  }
+}

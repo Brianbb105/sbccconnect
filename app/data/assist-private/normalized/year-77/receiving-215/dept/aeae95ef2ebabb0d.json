@@ -1,0 +1,860 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 215,
+    "name": "Touro University Worldwide",
+    "code": "TUW",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 77,
+    "label": "2026-2027",
+    "fallYear": 2026
+  },
+  "agreement": {
+    "key": "77/92/to/215/SendingDepartment/6747",
+    "type": "SendingDepartment",
+    "name": "Health Education",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2026,
+      "receivingCatalogYearEnd": 2027,
+      "sendingCatalogYearBegin": 2026,
+      "sendingCatalogYearEnd": 2027
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.253Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=77&institution=92&agreement=215&agreementType=to&view=agreement&keyName=77%2F92%2Fto%2F215%2FSendingDepartment%2F6747&viewBy=dept&viewByKey=77%2F92%2Fto%2F215%2FSendingDepartment%2F6747&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=77%2F92%2Fto%2F215%2FAllSendingDepartments",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-77/receiving-215/f3a8bff0b3e1e856.json",
+    "templateAssetCount": 0,
+    "articulationCount": 3
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391824,
+            "prefix": "BHA",
+            "courseNumber": "313",
+            "title": "Gerontology",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Health and Human Services",
+            "departmentParentId": 14644,
+            "prefixDescription": "Healthcare Administration",
+            "prefixParentId": 17495,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 268707,
+            "prefix": "HE",
+            "courseNumber": "201",
+            "title": "Introduction to Healthy Aging",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2015",
+            "endTerm": "",
+            "department": "Health Education",
+            "departmentParentId": 6747,
+            "prefixDescription": "Health Education",
+            "prefixParentId": 9420,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 268707,
+                "prefix": "HE",
+                "courseNumber": "201",
+                "title": "Introduction to Healthy Aging",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2015",
+                "endTerm": "",
+                "department": "Health Education",
+                "departmentParentId": 6747,
+                "prefixDescription": "Health Education",
+                "prefixParentId": 9420,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 268707,
+                    "prefix": "HE",
+                    "courseNumber": "201",
+                    "title": "Introduction to Healthy Aging",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2015",
+                    "endTerm": "",
+                    "department": "Health Education",
+                    "departmentParentId": 6747,
+                    "prefixDescription": "Health Education",
+                    "prefixParentId": 9420,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391797,
+            "prefix": "BHS",
+            "courseNumber": "313",
+            "title": "Gerontology",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Health and Human Services",
+            "departmentParentId": 14644,
+            "prefixDescription": "Health Sciences",
+            "prefixParentId": 17496,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 268707,
+            "prefix": "HE",
+            "courseNumber": "201",
+            "title": "Introduction to Healthy Aging",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2015",
+            "endTerm": "",
+            "department": "Health Education",
+            "departmentParentId": 6747,
+            "prefixDescription": "Health Education",
+            "prefixParentId": 9420,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 268707,
+                "prefix": "HE",
+                "courseNumber": "201",
+                "title": "Introduction to Healthy Aging",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2015",
+                "endTerm": "",
+                "department": "Health Education",
+                "departmentParentId": 6747,
+                "prefixDescription": "Health Education",
+                "prefixParentId": 9420,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 268707,
+                    "prefix": "HE",
+                    "courseNumber": "201",
+                    "title": "Introduction to Healthy Aging",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2015",
+                    "endTerm": "",
+                    "department": "Health Education",
+                    "departmentParentId": 6747,
+                    "prefixDescription": "Health Education",
+                    "prefixParentId": 9420,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 2,
+      "receiving": {
+        "id": "source-row-2",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 391930,
+            "prefix": "PSY",
+            "courseNumber": "327",
+            "title": "Psychology of Adulthood & Aging",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2024",
+            "endTerm": "",
+            "department": "Psychology",
+            "departmentParentId": 14657,
+            "prefixDescription": "Psychology",
+            "prefixParentId": 17525,
+            "attributes": [
+              {
+                "id": null,
+                "position": 0,
+                "content": "Course will only satisfy one GE area"
+              },
+              {
+                "id": null,
+                "position": 1,
+                "content": "Course(s) cannot be dual counted"
+              },
+              {
+                "id": null,
+                "position": 2,
+                "content": "Maximum credit, one course"
+              },
+              {
+                "id": null,
+                "position": 3,
+                "content": "Minimum grade required: C or better"
+              }
+            ],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [
+          {
+            "id": null,
+            "position": 0,
+            "content": "Course will only satisfy one GE area"
+          },
+          {
+            "id": null,
+            "position": 1,
+            "content": "Course(s) cannot be dual counted"
+          },
+          {
+            "id": null,
+            "position": 2,
+            "content": "Maximum credit, one course"
+          },
+          {
+            "id": null,
+            "position": 3,
+            "content": "Minimum grade required: C or better"
+          }
+        ],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-2",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 268707,
+            "prefix": "HE",
+            "courseNumber": "201",
+            "title": "Introduction to Healthy Aging",
+            "minUnits": 3,
+            "maxUnits": 3,
+            "beginTerm": "F2015",
+            "endTerm": "",
+            "department": "Health Education",
+            "departmentParentId": 6747,
+            "prefixDescription": "Health Education",
+            "prefixParentId": 9420,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 268707,
+                "prefix": "HE",
+                "courseNumber": "201",
+                "title": "Introduction to Healthy Aging",
+                "minUnits": 3,
+                "maxUnits": 3,
+                "beginTerm": "F2015",
+                "endTerm": "",
+                "department": "Health Education",
+                "departmentParentId": 6747,
+                "prefixDescription": "Health Education",
+                "prefixParentId": 9420,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 268707,
+                    "prefix": "HE",
+                    "courseNumber": "201",
+                    "title": "Introduction to Healthy Aging",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "beginTerm": "F2015",
+                    "endTerm": "",
+                    "department": "Health Education",
+                    "departmentParentId": 6747,
+                    "prefixDescription": "Health Education",
+                    "prefixParentId": 9420,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "dept",
+  "plannerGuide": {
+    "category": "dept",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "BHA 313",
+                "receivingText": "BHA 313 — Gerontology (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "HE 201 — Introduction to Healthy Aging (3 units)\nCourse validity: F2015 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "BHS 313",
+                "receivingText": "BHS 313 — Gerontology (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "HE 201 — Introduction to Healthy Aging (3 units)\nCourse validity: F2015 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-2",
+                "title": "PSY 327",
+                "receivingText": "PSY 327 — Psychology of Adulthood & Aging (3 units)\nCourse validity: F2024 onward",
+                "notes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  },
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [
+                  {
+                    "text": "Course will only satisfy one GE area",
+                    "links": []
+                  },
+                  {
+                    "text": "Course(s) cannot be dual counted",
+                    "links": []
+                  },
+                  {
+                    "text": "Maximum credit, one course",
+                    "links": []
+                  },
+                  {
+                    "text": "Minimum grade required: C or better",
+                    "links": []
+                  }
+                ],
+                "options": [
+                  {
+                    "text": "HE 201 — Introduction to Healthy Aging (3 units)\nCourse validity: F2015 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "77/92/to/215/AllSendingDepartments",
+    "groupIndex": 17,
+    "groupName": "Health Education",
+    "publishDate": "2026-07-17T21:39:08.8402946"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 213,
+    "name": "National University",
+    "code": "NU",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/213/SendingPrefix/5756",
+    "type": "SendingPrefix",
+    "name": "ACCT Accounting",
+    "publishDate": null,
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [],
+  "unlinkedArticulations": [],
+  "notes": [],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:45.034Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=213&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F213%2FSendingPrefix%2F5756&viewBy=prefix&viewByKey=76%2F92%2Fto%2F213%2FSendingPrefix%2F5756&viewSendingAgreements=true",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F213%2FAllSendingPrefixes",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/collections/year-76/receiving-213/06ab894cf9801b28.json",
+    "templateAssetCount": 0,
+    "articulationCount": 2
+  },
+  "courseEquivalencies": [
+    {
+      "sourceIndex": 0,
+      "receiving": {
+        "id": "source-row-0",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 400133,
+            "prefix": "ACC",
+            "courseNumber": "201",
+            "title": "Financial Accounting Fundamentals",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Accounting",
+            "departmentParentId": 15274,
+            "prefixDescription": "Accounting",
+            "prefixParentId": 17950,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-0",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 275646,
+            "prefix": "ACCT",
+            "courseNumber": "230",
+            "title": "Financial Accounting",
+            "minUnits": 5,
+            "maxUnits": 5,
+            "beginTerm": "F2010",
+            "endTerm": "",
+            "department": "Accounting",
+            "departmentParentId": 43,
+            "prefixDescription": "Accounting",
+            "prefixParentId": 5756,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 275646,
+                "prefix": "ACCT",
+                "courseNumber": "230",
+                "title": "Financial Accounting",
+                "minUnits": 5,
+                "maxUnits": 5,
+                "beginTerm": "F2010",
+                "endTerm": "",
+                "department": "Accounting",
+                "departmentParentId": 43,
+                "prefixDescription": "Accounting",
+                "prefixParentId": 5756,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 275646,
+                    "prefix": "ACCT",
+                    "courseNumber": "230",
+                    "title": "Financial Accounting",
+                    "minUnits": 5,
+                    "maxUnits": 5,
+                    "beginTerm": "F2010",
+                    "endTerm": "",
+                    "department": "Accounting",
+                    "departmentParentId": 43,
+                    "prefixDescription": "Accounting",
+                    "prefixParentId": 5756,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    },
+    {
+      "sourceIndex": 1,
+      "receiving": {
+        "id": "source-row-1",
+        "type": "Course",
+        "position": null,
+        "logic": "UNKNOWN",
+        "name": "",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 400132,
+            "prefix": "ACC",
+            "courseNumber": "202",
+            "title": "Managerial Accounting Fundamentals",
+            "minUnits": 4.5,
+            "maxUnits": 4.5,
+            "beginTerm": "F2025",
+            "endTerm": "",
+            "department": "Accounting",
+            "departmentParentId": 15274,
+            "prefixDescription": "Accounting",
+            "prefixParentId": 17950,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "attributes": [],
+        "courseAttributes": [],
+        "advisements": []
+      },
+      "sending": {
+        "articulationType": "Course",
+        "articulationAttributes": [],
+        "receivingAttributes": [],
+        "receivingTemplateAttributes": [],
+        "templateOverrides": [],
+        "receivingCellId": "source-row-1",
+        "logic": "AND",
+        "courses": [
+          {
+            "id": null,
+            "courseIdentifierParentId": 282440,
+            "prefix": "ACCT",
+            "courseNumber": "240",
+            "title": "Managerial Accounting",
+            "minUnits": 4,
+            "maxUnits": 4,
+            "beginTerm": "F1995",
+            "endTerm": "",
+            "department": "Accounting",
+            "departmentParentId": 43,
+            "prefixDescription": "Accounting",
+            "prefixParentId": 5756,
+            "attributes": [],
+            "courseAttributes": [],
+            "requisites": [],
+            "visibleCrossListedCourses": [],
+            "hiddenCrossListedCourses": [],
+            "pathways": []
+          }
+        ],
+        "courseGroups": [
+          {
+            "type": "CourseGroup",
+            "position": 0,
+            "logic": "AND",
+            "courses": [
+              {
+                "id": null,
+                "courseIdentifierParentId": 282440,
+                "prefix": "ACCT",
+                "courseNumber": "240",
+                "title": "Managerial Accounting",
+                "minUnits": 4,
+                "maxUnits": 4,
+                "beginTerm": "F1995",
+                "endTerm": "",
+                "department": "Accounting",
+                "departmentParentId": 43,
+                "prefixDescription": "Accounting",
+                "prefixParentId": 5756,
+                "attributes": [],
+                "courseAttributes": [],
+                "requisites": [],
+                "visibleCrossListedCourses": [],
+                "hiddenCrossListedCourses": [],
+                "pathways": []
+              }
+            ],
+            "items": [
+              {
+                "type": "Course",
+                "position": 0,
+                "courses": [
+                  {
+                    "id": null,
+                    "courseIdentifierParentId": 282440,
+                    "prefix": "ACCT",
+                    "courseNumber": "240",
+                    "title": "Managerial Accounting",
+                    "minUnits": 4,
+                    "maxUnits": 4,
+                    "beginTerm": "F1995",
+                    "endTerm": "",
+                    "department": "Accounting",
+                    "departmentParentId": 43,
+                    "prefixDescription": "Accounting",
+                    "prefixParentId": 5756,
+                    "attributes": [],
+                    "courseAttributes": [],
+                    "requisites": [],
+                    "visibleCrossListedCourses": [],
+                    "hiddenCrossListedCourses": [],
+                    "pathways": []
+                  }
+                ],
+                "attributes": []
+              }
+            ],
+            "attributes": [],
+            "sourceAdvisement": null
+          }
+        ],
+        "noArticulationReason": null,
+        "deniedCourses": [],
+        "attributes": [],
+        "rawConjunctions": []
+      }
+    }
+  ],
+  "category": "prefix",
+  "plannerGuide": {
+    "category": "prefix",
+    "organizedBy": "SBCC",
+    "notes": [],
+    "groups": [
+      {
+        "title": "Course equivalencies",
+        "notes": [],
+        "sections": [
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "course-0",
+                "title": "ACC 201",
+                "receivingText": "ACC 201 — Financial Accounting Fundamentals (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ACCT 230 — Financial Accounting (5 units)\nCourse validity: F2010 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "course-1",
+                "title": "ACC 202",
+                "receivingText": "ACC 202 — Managerial Accounting Fundamentals (4.5 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "ACCT 240 — Managerial Accounting (4 units)\nCourse validity: F1995 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  "sourceCollection": {
+    "key": "76/92/to/213/AllSendingPrefixes",
+    "groupIndex": 0,
+    "groupName": "ACCT Accounting",
+    "publishDate": "2026-03-30T17:58:13.2261932"
+  }
+}

@@ -1,0 +1,1320 @@
+{
+  "source": "ASSIST",
+  "sendingInstitution": {
+    "id": 92,
+    "name": "Santa Barbara City College",
+    "code": "SBCC",
+    "segment": "CCC"
+  },
+  "receivingInstitution": {
+    "id": 224,
+    "name": "Whittier College",
+    "code": "WC",
+    "segment": "PRIVATE"
+  },
+  "academicYear": {
+    "id": 76,
+    "label": "2025-2026",
+    "fallYear": 2025
+  },
+  "agreement": {
+    "key": "76/92/to/224/Major/c5295c1d-4bf8-45b9-25a7-08ddfc8f0bf0",
+    "type": "Major",
+    "name": "Psychology, B.A.",
+    "publishDate": "2026-06-05T19:08:44.2699524",
+    "catalogYear": {
+      "receivingCatalogYearBegin": 2025,
+      "receivingCatalogYearEnd": 2026,
+      "sendingCatalogYearBegin": 2025,
+      "sendingCatalogYearEnd": 2026
+    }
+  },
+  "requirementGroups": [
+    {
+      "id": "ddee3a20-7086-4b4c-ac97-01930cc3fde7",
+      "title": "REQUIREMENTS FOR THE MAJOR - FOUNDATION COURSES",
+      "position": 1,
+      "logic": "UNKNOWN",
+      "selection": {
+        "type": "Following",
+        "logic": "UNKNOWN",
+        "selectionType": "Complete"
+      },
+      "hideSectionLetters": true,
+      "showConjunctionBetweenSections": false,
+      "advisements": [],
+      "attributes": [],
+      "sections": [
+        {
+          "id": "ddee3a20-7086-4b4c-ac97-01930cc3fde7:section-0",
+          "position": 0,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [],
+          "sbccArticulations": [],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [],
+          "sourceType": "SectionHeader",
+          "sourceHeading": "LOWER DIVISION CORE REQUIREMENTS OF THE MAJOR"
+        },
+        {
+          "id": "ddee3a20-7086-4b4c-ac97-01930cc3fde7:section-1",
+          "position": 1,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 408199,
+              "prefix": "PSYC",
+              "courseNumber": "100",
+              "title": "Introductory Psychology",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Psychological Sciences",
+              "departmentParentId": 15765,
+              "prefixDescription": "Psychological Sciences",
+              "prefixParentId": 18420,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 408205,
+              "prefix": "PSYC",
+              "courseNumber": "222",
+              "title": "Biological Bases of Behavior",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Psychological Sciences",
+              "departmentParentId": 15765,
+              "prefixDescription": "Psychological Sciences",
+              "prefixParentId": 18420,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [
+                {
+                  "type": "PreRequisite",
+                  "course": {
+                    "courseIdentifierParentId": 408199,
+                    "courseTitle": "Introductory Psychology",
+                    "courseNumber": "100",
+                    "prefix": "PSYC",
+                    "prefixParentId": 18420,
+                    "prefixDescription": "Psychological Sciences",
+                    "departmentParentId": 15765,
+                    "department": "Psychological Sciences",
+                    "begin": "F2025",
+                    "end": "",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "pathways": []
+                  }
+                }
+              ],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 408202,
+              "prefix": "PSYC",
+              "courseNumber": "212",
+              "title": "Research Methods",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Psychological Sciences",
+              "departmentParentId": 15765,
+              "prefixDescription": "Psychological Sciences",
+              "prefixParentId": 18420,
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Course includes lab"
+                }
+              ],
+              "requisites": [
+                {
+                  "type": "PreRequisite",
+                  "course": {
+                    "courseIdentifierParentId": 408199,
+                    "courseTitle": "Introductory Psychology",
+                    "courseNumber": "100",
+                    "prefix": "PSYC",
+                    "prefixParentId": 18420,
+                    "prefixDescription": "Psychological Sciences",
+                    "departmentParentId": 15765,
+                    "department": "Psychological Sciences",
+                    "begin": "F2025",
+                    "end": "",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "pathways": []
+                  }
+                }
+              ],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            },
+            {
+              "id": null,
+              "courseIdentifierParentId": 408203,
+              "prefix": "PSYC",
+              "courseNumber": "214",
+              "title": "Statistics",
+              "minUnits": 3,
+              "maxUnits": 3,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Psychological Sciences",
+              "departmentParentId": 15765,
+              "prefixDescription": "Psychological Sciences",
+              "prefixParentId": 18420,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [
+                {
+                  "type": "CoRequisite",
+                  "course": {
+                    "courseIdentifierParentId": 408204,
+                    "courseTitle": "Statistics - SPSS",
+                    "courseNumber": "214L",
+                    "prefix": "PSYC",
+                    "prefixParentId": 18420,
+                    "prefixDescription": "Psychological Sciences",
+                    "departmentParentId": 15765,
+                    "department": "Psychological Sciences",
+                    "begin": "F2025",
+                    "end": "",
+                    "minUnits": 1,
+                    "maxUnits": 1,
+                    "pathways": []
+                  }
+                },
+                {
+                  "type": "PreRequisite",
+                  "course": {
+                    "courseIdentifierParentId": 408069,
+                    "courseTitle": "College Algebra",
+                    "courseNumber": "76",
+                    "prefix": "MATH",
+                    "prefixParentId": 18415,
+                    "prefixDescription": "Mathematics",
+                    "departmentParentId": 15177,
+                    "department": "Mathematics & Computer Science",
+                    "begin": "F2024",
+                    "end": "",
+                    "minUnits": 3,
+                    "maxUnits": 3,
+                    "pathways": []
+                  }
+                }
+              ],
+              "visibleCrossListedCourses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": null,
+                  "prefix": "",
+                  "courseNumber": "",
+                  "title": "",
+                  "minUnits": null,
+                  "maxUnits": null,
+                  "beginTerm": "",
+                  "endTerm": "",
+                  "department": "",
+                  "departmentParentId": null,
+                  "prefixDescription": "",
+                  "prefixParentId": null,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "490c4b58-4f61-43e3-f044-08ddfc8f0c0c",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 408199,
+                  "prefix": "PSYC",
+                  "courseNumber": "100",
+                  "title": "Introductory Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychological Sciences",
+                  "departmentParentId": 15765,
+                  "prefixDescription": "Psychological Sciences",
+                  "prefixParentId": 18420,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            },
+            {
+              "id": "0bb504d7-9879-42a1-f045-08ddfc8f0c0c",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 408205,
+                  "prefix": "PSYC",
+                  "courseNumber": "222",
+                  "title": "Biological Bases of Behavior",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychological Sciences",
+                  "departmentParentId": 15765,
+                  "prefixDescription": "Psychological Sciences",
+                  "prefixParentId": 18420,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [
+                    {
+                      "type": "PreRequisite",
+                      "course": {
+                        "courseIdentifierParentId": 408199,
+                        "courseTitle": "Introductory Psychology",
+                        "courseNumber": "100",
+                        "prefix": "PSYC",
+                        "prefixParentId": 18420,
+                        "prefixDescription": "Psychological Sciences",
+                        "departmentParentId": 15765,
+                        "department": "Psychological Sciences",
+                        "begin": "F2025",
+                        "end": "",
+                        "minUnits": 3,
+                        "maxUnits": 3,
+                        "pathways": []
+                      }
+                    }
+                  ],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 1,
+              "rowAttributes": []
+            },
+            {
+              "id": "5ac0e7f8-b0a0-4708-f046-08ddfc8f0c0c",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 408202,
+                  "prefix": "PSYC",
+                  "courseNumber": "212",
+                  "title": "Research Methods",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychological Sciences",
+                  "departmentParentId": 15765,
+                  "prefixDescription": "Psychological Sciences",
+                  "prefixParentId": 18420,
+                  "attributes": [],
+                  "courseAttributes": [
+                    {
+                      "id": null,
+                      "position": 0,
+                      "content": "Course includes lab"
+                    }
+                  ],
+                  "requisites": [
+                    {
+                      "type": "PreRequisite",
+                      "course": {
+                        "courseIdentifierParentId": 408199,
+                        "courseTitle": "Introductory Psychology",
+                        "courseNumber": "100",
+                        "prefix": "PSYC",
+                        "prefixParentId": 18420,
+                        "prefixDescription": "Psychological Sciences",
+                        "departmentParentId": 15765,
+                        "department": "Psychological Sciences",
+                        "begin": "F2025",
+                        "end": "",
+                        "minUnits": 3,
+                        "maxUnits": 3,
+                        "pathways": []
+                      }
+                    }
+                  ],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [
+                {
+                  "id": null,
+                  "position": 0,
+                  "content": "Course includes lab"
+                }
+              ],
+              "advisements": [],
+              "rowPosition": 2,
+              "rowAttributes": []
+            },
+            {
+              "id": "ecfbb55e-8066-41f8-f047-08ddfc8f0c0c",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 408203,
+                  "prefix": "PSYC",
+                  "courseNumber": "214",
+                  "title": "Statistics",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychological Sciences",
+                  "departmentParentId": 15765,
+                  "prefixDescription": "Psychological Sciences",
+                  "prefixParentId": 18420,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [
+                    {
+                      "type": "CoRequisite",
+                      "course": {
+                        "courseIdentifierParentId": 408204,
+                        "courseTitle": "Statistics - SPSS",
+                        "courseNumber": "214L",
+                        "prefix": "PSYC",
+                        "prefixParentId": 18420,
+                        "prefixDescription": "Psychological Sciences",
+                        "departmentParentId": 15765,
+                        "department": "Psychological Sciences",
+                        "begin": "F2025",
+                        "end": "",
+                        "minUnits": 1,
+                        "maxUnits": 1,
+                        "pathways": []
+                      }
+                    },
+                    {
+                      "type": "PreRequisite",
+                      "course": {
+                        "courseIdentifierParentId": 408069,
+                        "courseTitle": "College Algebra",
+                        "courseNumber": "76",
+                        "prefix": "MATH",
+                        "prefixParentId": 18415,
+                        "prefixDescription": "Mathematics",
+                        "departmentParentId": 15177,
+                        "department": "Mathematics & Computer Science",
+                        "begin": "F2024",
+                        "end": "",
+                        "minUnits": 3,
+                        "maxUnits": 3,
+                        "pathways": []
+                      }
+                    }
+                  ],
+                  "visibleCrossListedCourses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": null,
+                      "prefix": "",
+                      "courseNumber": "",
+                      "title": "",
+                      "minUnits": null,
+                      "maxUnits": null,
+                      "beginTerm": "",
+                      "endTerm": "",
+                      "department": "",
+                      "departmentParentId": null,
+                      "prefixDescription": "",
+                      "prefixParentId": null,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 3,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "490c4b58-4f61-43e3-f044-08ddfc8f0c0c",
+              "logic": "OR",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 156537,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000",
+                  "title": "Introduction to Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                },
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 279543,
+                  "prefix": "PSYC",
+                  "courseNumber": "C1000H",
+                  "title": "Introduction to Psychology - Honors",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 18788,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "OR",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 156537,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000",
+                      "title": "Introduction to Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    },
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 279543,
+                      "prefix": "PSYC",
+                      "courseNumber": "C1000H",
+                      "title": "Introduction to Psychology - Honors",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "F2025",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 18788,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 156537,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000",
+                          "title": "Introduction to Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    },
+                    {
+                      "type": "Course",
+                      "position": 1,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 279543,
+                          "prefix": "PSYC",
+                          "courseNumber": "C1000H",
+                          "title": "Introduction to Psychology - Honors",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "F2025",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 18788,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "0bb504d7-9879-42a1-f045-08ddfc8f0c0c",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 214105,
+                  "prefix": "PSY",
+                  "courseNumber": "110",
+                  "title": "Introduction to Physiological Psychology",
+                  "minUnits": 3,
+                  "maxUnits": 3,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 214105,
+                      "prefix": "PSY",
+                      "courseNumber": "110",
+                      "title": "Introduction to Physiological Psychology",
+                      "minUnits": 3,
+                      "maxUnits": 3,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 214105,
+                          "prefix": "PSY",
+                          "courseNumber": "110",
+                          "title": "Introduction to Physiological Psychology",
+                          "minUnits": 3,
+                          "maxUnits": 3,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "5ac0e7f8-b0a0-4708-f046-08ddfc8f0c0c",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 283034,
+                  "prefix": "PSY",
+                  "courseNumber": "200",
+                  "title": "Research Methods and Experimental Design in Psychology",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 283034,
+                      "prefix": "PSY",
+                      "courseNumber": "200",
+                      "title": "Research Methods and Experimental Design in Psychology",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 283034,
+                          "prefix": "PSY",
+                          "courseNumber": "200",
+                          "title": "Research Methods and Experimental Design in Psychology",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            },
+            {
+              "articulationType": "Course",
+              "articulationAttributes": [],
+              "receivingAttributes": [],
+              "receivingTemplateAttributes": {
+                "type": "Course",
+                "courseAttributes": [],
+                "attributes": []
+              },
+              "templateOverrides": [],
+              "receivingCellId": "ecfbb55e-8066-41f8-f047-08ddfc8f0c0c",
+              "logic": "AND",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 138951,
+                  "prefix": "PSY",
+                  "courseNumber": "150",
+                  "title": "Statistics for the Behavioral Sciences",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "Su2007",
+                  "endTerm": "",
+                  "department": "Psychology",
+                  "departmentParentId": 11299,
+                  "prefixDescription": "Psychology",
+                  "prefixParentId": 4686,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "courseGroups": [
+                {
+                  "type": "CourseGroup",
+                  "position": 0,
+                  "logic": "AND",
+                  "courses": [
+                    {
+                      "id": null,
+                      "courseIdentifierParentId": 138951,
+                      "prefix": "PSY",
+                      "courseNumber": "150",
+                      "title": "Statistics for the Behavioral Sciences",
+                      "minUnits": 4,
+                      "maxUnits": 4,
+                      "beginTerm": "Su2007",
+                      "endTerm": "",
+                      "department": "Psychology",
+                      "departmentParentId": 11299,
+                      "prefixDescription": "Psychology",
+                      "prefixParentId": 4686,
+                      "attributes": [],
+                      "courseAttributes": [],
+                      "requisites": [],
+                      "visibleCrossListedCourses": [],
+                      "hiddenCrossListedCourses": [],
+                      "pathways": []
+                    }
+                  ],
+                  "items": [
+                    {
+                      "type": "Course",
+                      "position": 0,
+                      "courses": [
+                        {
+                          "id": null,
+                          "courseIdentifierParentId": 138951,
+                          "prefix": "PSY",
+                          "courseNumber": "150",
+                          "title": "Statistics for the Behavioral Sciences",
+                          "minUnits": 4,
+                          "maxUnits": 4,
+                          "beginTerm": "Su2007",
+                          "endTerm": "",
+                          "department": "Psychology",
+                          "departmentParentId": 11299,
+                          "prefixDescription": "Psychology",
+                          "prefixParentId": 4686,
+                          "attributes": [],
+                          "courseAttributes": [],
+                          "requisites": [],
+                          "visibleCrossListedCourses": [],
+                          "hiddenCrossListedCourses": [],
+                          "pathways": []
+                        }
+                      ],
+                      "attributes": []
+                    }
+                  ],
+                  "attributes": [],
+                  "sourceAdvisement": null
+                }
+              ],
+              "noArticulationReason": null,
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "490c4b58-4f61-43e3-f044-08ddfc8f0c0c",
+            "0bb504d7-9879-42a1-f045-08ddfc8f0c0c",
+            "5ac0e7f8-b0a0-4708-f046-08ddfc8f0c0c",
+            "ecfbb55e-8066-41f8-f047-08ddfc8f0c0c"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        },
+        {
+          "id": "ddee3a20-7086-4b4c-ac97-01930cc3fde7:section-2",
+          "position": 2,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [],
+          "receivingItems": [],
+          "sbccArticulations": [],
+          "advisements": [],
+          "attributes": [],
+          "rawTemplateCellIds": [],
+          "sourceType": "SectionHeader",
+          "sourceHeading": "PSYCHOLOGY ELECTIVES"
+        },
+        {
+          "id": "ddee3a20-7086-4b4c-ac97-01930cc3fde7:section-3",
+          "position": 3,
+          "logic": "UNKNOWN",
+          "selection": {
+            "type": "Following",
+            "logic": "UNKNOWN",
+            "selectionType": "Complete"
+          },
+          "receivingCourses": [
+            {
+              "id": null,
+              "courseIdentifierParentId": 408206,
+              "prefix": "PSYC",
+              "courseNumber": "227",
+              "title": "Stress and Disease in the 21st Century",
+              "minUnits": 4,
+              "maxUnits": 4,
+              "beginTerm": "F2025",
+              "endTerm": "",
+              "department": "Psychological Sciences",
+              "departmentParentId": 15765,
+              "prefixDescription": "Psychological Sciences",
+              "prefixParentId": 18420,
+              "attributes": [],
+              "courseAttributes": [],
+              "requisites": [],
+              "visibleCrossListedCourses": [],
+              "hiddenCrossListedCourses": [],
+              "pathways": []
+            }
+          ],
+          "receivingItems": [
+            {
+              "id": "8e8b4710-c412-4649-f048-08ddfc8f0c0c",
+              "type": "Course",
+              "position": 0,
+              "logic": "UNKNOWN",
+              "name": "",
+              "courses": [
+                {
+                  "id": null,
+                  "courseIdentifierParentId": 408206,
+                  "prefix": "PSYC",
+                  "courseNumber": "227",
+                  "title": "Stress and Disease in the 21st Century",
+                  "minUnits": 4,
+                  "maxUnits": 4,
+                  "beginTerm": "F2025",
+                  "endTerm": "",
+                  "department": "Psychological Sciences",
+                  "departmentParentId": 15765,
+                  "prefixDescription": "Psychological Sciences",
+                  "prefixParentId": 18420,
+                  "attributes": [],
+                  "courseAttributes": [],
+                  "requisites": [],
+                  "visibleCrossListedCourses": [],
+                  "hiddenCrossListedCourses": [],
+                  "pathways": []
+                }
+              ],
+              "attributes": [],
+              "courseAttributes": [],
+              "advisements": [],
+              "rowPosition": 0,
+              "rowAttributes": []
+            }
+          ],
+          "sbccArticulations": [
+            {
+              "receivingCellId": "8e8b4710-c412-4649-f048-08ddfc8f0c0c",
+              "logic": "UNKNOWN",
+              "courses": [],
+              "courseGroups": [],
+              "noArticulationReason": "NO_ARTICULATION_RECORD_FOR_TEMPLATE_CELL",
+              "deniedCourses": [],
+              "attributes": [],
+              "rawConjunctions": []
+            }
+          ],
+          "advisements": [
+            {
+              "type": "AdditionalNToReach",
+              "amount": 14,
+              "position": 0,
+              "selectionType": "Complete",
+              "id": null,
+              "content": ""
+            }
+          ],
+          "attributes": [],
+          "rawTemplateCellIds": [
+            "8e8b4710-c412-4649-f048-08ddfc8f0c0c"
+          ],
+          "sourceType": "Section",
+          "sourceHeading": ""
+        }
+      ],
+      "sourceInstruction": {
+        "type": "Following",
+        "id": "1eb419d3-0ab4-472c-b5b3-08ddfc8f0bfd",
+        "selectionType": "Complete"
+      }
+    }
+  ],
+  "unlinkedArticulations": [],
+  "notes": [
+    {
+      "id": "c065a57d-7945-42af-820a-01930ccb3df1",
+      "type": "GeneralTitle",
+      "area": "General",
+      "position": 0,
+      "content": "PSYCHOLOGY, B.A. MAJOR REQUIREMENTS",
+      "contentHtml": null
+    },
+    {
+      "id": "f275f4f6-94a9-4355-b2ac-01930ccb3e30",
+      "type": "GeneralText",
+      "area": "General",
+      "position": 1,
+      "content": "Whittier College may accept a maximum of 90 semester credits in transfer, 70 of which may be taken at the community college level. To be eligible for transfer, courses must be completed with a final grade of C- or higher. Courses accepted in transfer will be accepted with a grade of \"TR\" indicating transfer credit. Letter grades will not transfer. Whittier College does not require completion of any minimum number of units or courses before students are eligible to transfer. Students may use transfer courses from a community college to satisfy lower-division requirements. This includes the 100-level and 200-level courses listed below. All 300 and 400-level courses at Whittier College cannot be satisfied through community college transfer courses. For the full list of required courses, please visit our college catalog at Majors and Minors - Whittier College . We honor the Associate Degree for Transfer (ADT) Commitment with all accredited California Community Colleges. A California Community College student who has earned the ADT (AA-T or AS-T) will have guaranteed admission and junior standing based on the following criteria: The student must submit an application and complete all application requirements. The student will have completed all IGETC, CSU GE-Breadth, or Cal-GETC coursework with a grade of C- or better. The student will have completed at least 60 transferable units with a grade of C- or better. The student acknowledges that if a grade of D+ or below is earned in a transferable course, and they did not retake the course for a higher grade, that course will not be accepted for transfer credit, but will still be factored into the cumulative transfer grade point average. We will honor academic renewal from community college partners prior to matriculation into Whittier College. Proof of completion of the Associates Degree is required as are all IGETC, CSU GE-Breadth, or Cal-GETC Certifications and official college transcripts.",
+      "contentHtml": "<p><span style=\"font-size: 16px;\">Whittier College may accept a maximum of 90 semester credits in transfer, 70 of which may be taken at the community college level. To be eligible for transfer, courses must be completed with a final grade of C- or higher. Courses accepted in transfer will be accepted with a grade of \"TR\" indicating transfer credit. Letter grades will not transfer.</span></p><p><br></p><p><span style=\"font-size: 16px;\">﻿Whittier College </span><strong style=\"font-size: 16px;\">does not</strong><span style=\"font-size: 16px;\"> require completion of any minimum number of units or courses before students are eligible to transfer. Students may use transfer courses from a community college to satisfy lower-division requirements. This includes the 100-level and 200-level courses listed below. All 300 and 400-level courses at Whittier College cannot be satisfied through community college transfer courses. For the full list of required courses, please visit our college catalog at </span><a href=\"http://catalog.whittier.edu/content.php?catoid=15&amp;navoid=722\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 16px;\">Majors and Minors - Whittier College</a>.</p><p><br></p><p><span style=\"font-size: 16px;\">We honor the Associate Degree for Transfer (ADT) Commitment with all accredited California Community Colleges. A California Community College student who has earned the ADT (AA-T or AS-T) will have guaranteed admission and junior standing based on the following criteria:</span></p><p><br></p><ul><li><span style=\"font-size: 16px;\">The student must submit an application and complete all application requirements.</span></li><li><span style=\"font-size: 16px;\">The student will have completed all IGETC, CSU GE-Breadth, or Cal-GETC coursework with a grade of C- or better.</span></li><li><span style=\"font-size: 16px;\">The student will have completed at least 60 transferable units with a grade of C- or better.</span></li><li><span style=\"font-size: 16px;\">The student acknowledges that if a grade of D+ or below is earned in a transferable course, and they did not retake the course for a higher grade, that course will not be accepted for transfer credit, but will still be factored into the cumulative transfer grade point average.</span></li><li><span style=\"font-size: 16px;\">We will honor academic renewal from community college partners prior to matriculation into Whittier College.</span></li><li><span style=\"font-size: 16px;\">Proof of completion of the Associates Degree is required as are all IGETC, CSU GE-Breadth, or Cal-GETC Certifications and official college transcripts.</span></li></ul><p><br></p>"
+    }
+  ],
+  "parseErrors": [],
+  "lastCheckedAt": "2026-09-09T00:35:47.542Z",
+  "sourceUrl": "https://www.assist.org/transfer/results?year=76&institution=92&agreement=224&agreementType=to&view=agreement&keyName=76%2F92%2Fto%2F224%2FMajor%2Fc5295c1d-4bf8-45b9-25a7-08ddfc8f0bf0&viewBy=major&viewSendingAgreements=false&viewByKey=76%2F92%2Fto%2F224%2FMajor%2Fc5295c1d-4bf8-45b9-25a7-08ddfc8f0bf0",
+  "sourceApiUrl": "https://www.assist.org/api/articulation/Agreements?Key=76%2F92%2Fto%2F224%2FMajor%2Fc5295c1d-4bf8-45b9-25a7-08ddfc8f0bf0",
+  "rawDataReference": {
+    "rawAgreementPath": "app/data/assist-private/raw/agreements/year-76/receiving-224/major/13bb9bcef2d2fa31.json",
+    "templateAssetCount": 4,
+    "articulationCount": 4
+  },
+  "category": "major",
+  "plannerGuide": {
+    "category": "major",
+    "organizedBy": "university",
+    "notes": [
+      {
+        "text": "PSYCHOLOGY, B.A. MAJOR REQUIREMENTS",
+        "links": []
+      },
+      {
+        "text": "Whittier College may accept a maximum of 90 semester credits in transfer, 70 of which may be taken at the community college level. To be eligible for transfer, courses must be completed with a final grade of C- or higher. Courses accepted in transfer will be accepted with a grade of \"TR\" indicating transfer credit. Letter grades will not transfer.\n\n﻿Whittier College does not require completion of any minimum number of units or courses before students are eligible to transfer. Students may use transfer courses from a community college to satisfy lower-division requirements. This includes the 100-level and 200-level courses listed below. All 300 and 400-level courses at Whittier College cannot be satisfied through community college transfer courses. For the full list of required courses, please visit our college catalog at Majors and Minors - Whittier College.\n\nWe honor the Associate Degree for Transfer (ADT) Commitment with all accredited California Community Colleges. A California Community College student who has earned the ADT (AA-T or AS-T) will have guaranteed admission and junior standing based on the following criteria:\n\nThe student must submit an application and complete all application requirements.\nThe student will have completed all IGETC, CSU GE-Breadth, or Cal-GETC coursework with a grade of C- or better.\nThe student will have completed at least 60 transferable units with a grade of C- or better.\nThe student acknowledges that if a grade of D+ or below is earned in a transferable course, and they did not retake the course for a higher grade, that course will not be accepted for transfer credit, but will still be factored into the cumulative transfer grade point average.\nWe will honor academic renewal from community college partners prior to matriculation into Whittier College.\nProof of completion of the Associates Degree is required as are all IGETC, CSU GE-Breadth, or Cal-GETC Certifications and official college transcripts.",
+        "links": [
+          {
+            "label": "Majors and Minors - Whittier College",
+            "url": "http://catalog.whittier.edu/content.php?catoid=15&navoid=722"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "title": "REQUIREMENTS FOR THE MAJOR - FOUNDATION COURSES",
+        "notes": [
+          {
+            "text": "Complete the following",
+            "links": []
+          }
+        ],
+        "sections": [
+          {
+            "title": "LOWER DIVISION CORE REQUIREMENTS OF THE MAJOR",
+            "isHeading": true,
+            "notes": [],
+            "rows": []
+          },
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [],
+            "rows": [
+              {
+                "id": "0-1-0",
+                "title": "PSYC 100",
+                "receivingText": "PSYC 100 — Introductory Psychology (3 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PSYC C1000 — Introduction to Psychology (3 units)\nCourse validity: F2025 onward\nOR\nPSYC C1000H — Introduction to Psychology - Honors (4 units)\nCourse validity: F2025 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "OR",
+                "noMatch": ""
+              },
+              {
+                "id": "0-1-1",
+                "title": "PSYC 222",
+                "receivingText": "PSYC 222 — Biological Bases of Behavior (3 units)\nCourse validity: F2025 onward",
+                "notes": [
+                  {
+                    "text": "pre requisite: PSYC 100 Introductory Psychology",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PSY 110 — Introduction to Physiological Psychology (3 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "0-1-2",
+                "title": "PSYC 212",
+                "receivingText": "PSYC 212 — Research Methods (4 units)\nCourse validity: F2025 onward",
+                "notes": [
+                  {
+                    "text": "Course includes lab",
+                    "links": []
+                  },
+                  {
+                    "text": "Course includes lab",
+                    "links": []
+                  },
+                  {
+                    "text": "pre requisite: PSYC 100 Introductory Psychology",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PSY 200 — Research Methods and Experimental Design in Psychology (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              },
+              {
+                "id": "0-1-3",
+                "title": "PSYC 214",
+                "receivingText": "PSYC 214 — Statistics (3 units)\nAlso listed as:  \nCourse validity: F2025 onward",
+                "notes": [
+                  {
+                    "text": "co requisite: PSYC 214L Statistics - SPSS",
+                    "links": []
+                  },
+                  {
+                    "text": "pre requisite: MATH 76 College Algebra",
+                    "links": []
+                  }
+                ],
+                "sendingNotes": [],
+                "options": [
+                  {
+                    "text": "PSY 150 — Statistics for the Behavioral Sciences (4 units)\nCourse validity: Su2007 onward",
+                    "notes": []
+                  }
+                ],
+                "optionLogic": "AND",
+                "noMatch": ""
+              }
+            ]
+          },
+          {
+            "title": "PSYCHOLOGY ELECTIVES",
+            "isHeading": true,
+            "notes": [],
+            "rows": []
+          },
+          {
+            "title": "",
+            "isHeading": false,
+            "notes": [
+              {
+                "text": "Complete additional units to reach 14 total",
+                "links": []
+              }
+            ],
+            "rows": [
+              {
+                "id": "0-3-0",
+                "title": "PSYC 227",
+                "receivingText": "PSYC 227 — Stress and Disease in the 21st Century (4 units)\nCourse validity: F2025 onward",
+                "notes": [],
+                "sendingNotes": [],
+                "options": [],
+                "optionLogic": "",
+                "noMatch": "ASSIST lists no SBCC course match for this requirement."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -14,7 +14,7 @@ const registrationSchedule = [
                 EOPS, CalWORKs
             </>
         ),
-        summer: "Apr 7, 2026, 8:30 AM",
+        spring: "Nov 3, 2026, 8:30 AM",
         fall: "Apr 23, 2026, 8:30 AM",
     },
     {
@@ -25,7 +25,7 @@ const registrationSchedule = [
                 students, eligible Umoja students
             </>
         ),
-        summer: "Apr 8, 2026, 8:30 AM",
+        spring: "Nov 9, 2026, 8:30 AM",
         fall: "Apr 27, 2026, 8:30 AM",
     },
     {
@@ -35,7 +35,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">Associated Student Government officers</strong>
             </>
         ),
-        summer: "Apr 8, 2026, 1:00 PM",
+        spring: "Nov 10, 2026, 8:30 AM",
         fall: "Apr 28, 2026, 8:30 AM",
     },
     {
@@ -45,7 +45,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">Continuing students</strong>
             </>
         ),
-        summer: "Apr 9, 2026, 8:30 AM",
+        spring: "Nov 12, 2026, 8:30 AM",
         fall: "Apr 29, 2026, 8:30 AM",
     },
     {
@@ -55,7 +55,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">Currently enrolled first-semester students</strong>
             </>
         ),
-        summer: "Apr 13, 2026, 8:30 AM",
+        spring: "Nov 16, 2026, 8:30 AM",
         fall: "May 4, 2026, 8:30 AM",
     },
     {
@@ -65,7 +65,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">New-to-college</strong> local high school graduates
             </>
         ),
-        summer: "Apr 14, 2026, 8:30 AM",
+        spring: "Dec 1, 2026, 8:30 AM",
         fall: "May 26, 2026, 8:30 AM",
     },
     {
@@ -76,7 +76,7 @@ const registrationSchedule = [
                 placement, and class planning completed
             </>
         ),
-        summer: "Apr 15, 2026, 8:30 AM",
+        spring: "Dec 3, 2026, 8:30 AM",
         fall: "Jun 15, 2026, 8:30 AM",
     },
     {
@@ -87,7 +87,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">returning students</strong>
             </>
         ),
-        summer: "Apr 16, 2026, 8:30 AM",
+        spring: "Dec 7, 2026, 8:30 AM",
         fall: "Jun 22, 2026, 8:30 AM",
     },
     {
@@ -98,7 +98,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">CCAP dual enrollment</strong>
             </>
         ),
-        summer: "Apr 17, 2026, 8:30 AM",
+        spring: "Dec 8, 2026, 8:30 AM",
         fall: "Jun 24, 2026, 8:30 AM",
     },
     {
@@ -109,7 +109,7 @@ const registrationSchedule = [
                 lost priority enrollment
             </>
         ),
-        summer: "Apr 20, 2026, 8:30 AM",
+        spring: "Dec 9, 2026, 8:30 AM",
         fall: "Jun 29, 2026, 8:30 AM",
     },
     {
@@ -119,7 +119,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">Other dual enrollment students</strong>
             </>
         ),
-        summer: "Apr 21, 2026, 8:30 AM",
+        spring: "Dec 9, 2026, 12:00 PM",
         fall: "Jul 1, 2026, 8:30 AM",
     },
     {
@@ -129,7 +129,7 @@ const registrationSchedule = [
                 <strong className="font-semibold text-slate-900">Tuition-free noncredit education</strong>
             </>
         ),
-        summer: "Apr 22, 2026, 8:00 AM",
+        spring: "Dec 10, 2026, 8:00 AM",
         fall: "Jul 7, 2026, 8:00 AM",
     },
 ] as const;
@@ -146,17 +146,17 @@ export default function PlannerPage() {
                 <section className="mt-10 rounded-3xl border border-slate-200 bg-white px-6 py-7 shadow-sm md:px-8">
                     <h2 className="text-2xl font-bold text-[#0f172a]">Registration Dates</h2>
                     <p className="mt-3 max-w-3xl text-slate-600 leading-relaxed">
-                        Summer 2026 and Fall 2026 registration windows by student group. All times shown in Pacific Time.
+                        Spring 2027 and Fall 2026 registration windows by student group. All times shown in Pacific Time. Spring classes run January 25–May 22, 2027. Eligibility requirements apply; check your personal appointment in Pipeline → Student → Registration → Check pre-registration requirements and registration appointment.
                     </p>
                 </section>
 
                 <div className="mt-6 space-y-6">
                     <TermTable
-                        title="Summer 2026 Registration Dates"
+                        title="Spring 2027 Registration Dates"
                         entries={registrationSchedule.map((entry) => ({
-                            id: `${entry.id}-summer`,
+                            id: `${entry.id}-spring`,
                             group: entry.group,
-                            date: entry.summer,
+                            date: entry.spring,
                         }))}
                     />
                     <TermTable

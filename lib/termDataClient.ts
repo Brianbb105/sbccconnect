@@ -8,6 +8,7 @@ type JsonArrayModule<T> = { default: T[] };
 type LoaderMap = Record<TermSlug, () => Promise<JsonArrayModule<unknown>>>;
 
 const SECTION_LOADERS: LoaderMap = {
+    spring2027: () => import("@/app/data/202750/sections.json"),
     fall2024: () => import("@/app/data/202530/sections.json"),
     spring2025: () => import("@/app/data/202550/sections.json"),
     summer2025: () => import("@/app/data/202610/sections.json"),
@@ -18,6 +19,7 @@ const SECTION_LOADERS: LoaderMap = {
 };
 
 const PROFESSOR_LOADERS: LoaderMap = {
+    spring2027: () => import("@/app/data/202750/professors.json"),
     fall2024: () => import("@/app/data/202530/professors.json"),
     spring2025: () => import("@/app/data/202550/professors.json"),
     summer2025: () => import("@/app/data/202610/professors.json"),

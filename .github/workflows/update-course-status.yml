@@ -33,19 +33,19 @@ jobs:
           cache: npm
 
       - run: npm ci
-      - run: node app/scripts/extractAllSections.mjs 202710 "Summer 2026"
-      - run: node app/scripts/extractProfessors.mjs 202710
+      - run: node app/scripts/extractAllSections.mjs 202750 "Spring 2027"
+      - run: node app/scripts/extractProfessors.mjs 202750
       - run: node app/scripts/extractAllSections.mjs 202730 "Fall 2026"
       - run: node app/scripts/extractProfessors.mjs 202730
 
       - name: Validate term data output
         run: |
-          test -f app/data/202710/sections.json
-          test -f app/data/202710/professors.json
+          test -f app/data/202750/sections.json
+          test -f app/data/202750/professors.json
           test -f app/data/202730/sections.json
           test -f app/data/202730/professors.json
-          node -e 'const fs=require("fs"); const checks=[["202710",100],["202730",500]]; for (const [term,minRows] of checks) { const file=`app/data/${term}/sections.json`; const data=JSON.parse(fs.readFileSync(file,"utf8")); if(!Array.isArray(data)) throw new Error(`${file} is not an array`); if(data.length < minRows) throw new Error(`${file} has too few rows: ${data.length}`); console.log(`Validated ${file}: ${data.length}`); }'
-          node -e 'const fs=require("fs"); for (const term of ["202710","202730"]) { const file=`app/data/${term}/professors.json`; const data=JSON.parse(fs.readFileSync(file,"utf8")); if(!Array.isArray(data)) throw new Error(`${file} is not an array`); console.log(`Validated ${file}: ${data.length}`); }'
+          node -e 'const fs=require("fs"); const checks=[["202750",500],["202730",500]]; for (const [term,minRows] of checks) { const file=`app/data/${term}/sections.json`; const data=JSON.parse(fs.readFileSync(file,"utf8")); if(!Array.isArray(data)) throw new Error(`${file} is not an array`); if(data.length < minRows) throw new Error(`${file} has too few rows: ${data.length}`); console.log(`Validated ${file}: ${data.length}`); }'
+          node -e 'const fs=require("fs"); for (const term of ["202750","202730"]) { const file=`app/data/${term}/professors.json`; const data=JSON.parse(fs.readFileSync(file,"utf8")); if(!Array.isArray(data)) throw new Error(`${file} is not an array`); console.log(`Validated ${file}: ${data.length}`); }'
 
       - name: Commit and push changes if any
         run: |
@@ -53,20 +53,20 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           mkdir -p /tmp/course-status
-          cp app/data/202710/sections.json /tmp/course-status/202710-sections.json
-          cp app/data/202710/professors.json /tmp/course-status/202710-professors.json
+          cp app/data/202750/sections.json /tmp/course-status/202750-sections.json
+          cp app/data/202750/professors.json /tmp/course-status/202750-professors.json
           cp app/data/202730/sections.json /tmp/course-status/202730-sections.json
           cp app/data/202730/professors.json /tmp/course-status/202730-professors.json
 
           for attempt in 1 2 3; do
-            git add app/data/202710/sections.json app/data/202710/professors.json app/data/202730/sections.json app/data/202730/professors.json
+            git add app/data/202750/sections.json app/data/202750/professors.json app/data/202730/sections.json app/data/202730/professors.json
 
             if git diff --cached --quiet; then
               echo "No course status changes to commit."
               exit 0
             fi
 
-            git commit -m "chore: update Summer and Fall 2026 course status"
+            git commit -m "chore: update Spring 2027 and Fall 2026 course status"
 
             if git push origin "HEAD:${TARGET_BRANCH}"; then
               exit 0
@@ -75,12 +75,12 @@ jobs:
             echo "Push failed on attempt ${attempt}; refreshing ${TARGET_BRANCH} and retrying."
             git fetch origin "${TARGET_BRANCH}"
             git reset --hard "origin/${TARGET_BRANCH}"
-            cp /tmp/course-status/202710-sections.json app/data/202710/sections.json
-            cp /tmp/course-status/202710-professors.json app/data/202710/professors.json
+            cp /tmp/course-status/202750-sections.json app/data/202750/sections.json
+            cp /tmp/course-status/202750-professors.json app/data/202750/professors.json
             cp /tmp/course-status/202730-sections.json app/data/202730/sections.json
             cp /tmp/course-status/202730-professors.json app/data/202730/professors.json
           done
 
-          git add app/data/202710/sections.json app/data/202710/professors.json app/data/202730/sections.json app/data/202730/professors.json
-          git diff --cached --quiet || git commit -m "chore: update Summer and Fall 2026 course status"
+          git add app/data/202750/sections.json app/data/202750/professors.json app/data/202730/sections.json app/data/202730/professors.json
+          git diff --cached --quiet || git commit -m "chore: update Spring 2027 and Fall 2026 course status"
           git push origin "HEAD:${TARGET_BRANCH}"

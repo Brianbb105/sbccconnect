@@ -2,14 +2,14 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import { appendTermToHref, getDefaultTermSlug, getTermBySlug, type TermDefinition } from "@/lib/terms";
 
-const NEW_TERM_SLUG: TermDefinition["slug"] = "fall2026";
+const NEW_TERM_SLUG: TermDefinition["slug"] = "spring2027";
 
 export default function HomePage() {
     // Theme Colors
     const warmBg = "bg-gray-50";
     const darkBlueText = "text-[#0f172a]";
     const featuredTerm = getTermBySlug(getDefaultTermSlug());
-    const summerTerm = getTermBySlug("summer2026");
+    const fallTerm = getTermBySlug("fall2026");
 
     return (
         <div className={`min-h-screen ${warmBg} flex flex-col font-sans text-slate-800`}>
@@ -37,7 +37,7 @@ export default function HomePage() {
                     {/* RIGHT COLUMN: Stacked Cards */}
                     <div className="flex flex-col gap-6">
                         <TermBrowseCard term={featuredTerm} isNew={featuredTerm.slug === NEW_TERM_SLUG} />
-                        {summerTerm.slug !== featuredTerm.slug ? <TermBrowseCard term={summerTerm} /> : null}
+                        {fallTerm.slug !== featuredTerm.slug ? <TermBrowseCard term={fallTerm} /> : null}
                         <EasyGesCard term={featuredTerm} isNew={featuredTerm.slug === NEW_TERM_SLUG} />
                     </div>
                 </section>

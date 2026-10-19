@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const DATA_DIR = path.join(__dirname, "../data");
 const CACHE_FILE = path.join(DATA_DIR, "rmp_cache.json");
-const TERM_ORDER = ["202530", "202550", "202610", "202630", "202650", "202710", "202730"];
+const TERM_ORDER = ["202530", "202550", "202610", "202630", "202650", "202710", "202730", "202750"];
 const SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="];
 const APPLY_FIX = process.env.APPLY_FIX === "1";
 const LIMIT = Number(process.env.LIMIT || 0);

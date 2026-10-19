@@ -5,7 +5,8 @@ export type TermSlug =
     | "fall2025"
     | "spring2026"
     | "summer2026"
-    | "fall2026";
+    | "fall2026"
+    | "spring2027";
 
 export type TermCode =
     | "202530"
@@ -14,7 +15,8 @@ export type TermCode =
     | "202630"
     | "202650"
     | "202710"
-    | "202730";
+    | "202730"
+    | "202750";
 
 export type TermDefinition = {
     slug: TermSlug;
@@ -23,6 +25,7 @@ export type TermDefinition = {
 };
 
 export const SUPPORTED_TERMS: TermDefinition[] = [
+    { slug: "spring2027", code: "202750", label: "Spring 2027" },
     { slug: "fall2026", code: "202730", label: "Fall 2026" },
     { slug: "summer2026", code: "202710", label: "Summer 2026" },
     { slug: "spring2026", code: "202650", label: "Spring 2026" },
@@ -32,7 +35,7 @@ export const SUPPORTED_TERMS: TermDefinition[] = [
     { slug: "fall2024", code: "202530", label: "Fall 2024" },
 ];
 
-export const DEFAULT_TERM_SLUG: TermSlug = "fall2026";
+export const DEFAULT_TERM_SLUG: TermSlug = "spring2027";
 
 const TERMS_BY_SLUG = new Map<TermSlug, TermDefinition>(
     SUPPORTED_TERMS.map((term) => [term.slug, term]),

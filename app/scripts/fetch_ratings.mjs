@@ -10,7 +10,7 @@ const DATA_DIR = path.join(__dirname, "../data");
 const OUTPUT_FILE = path.join(__dirname, "../data/rmp_cache.json");
 
 const SCHOOL_IDS = ["U2Nob29sLTI3ODM=", "U2Nob29sLTQ2NjU="]; // School-2783 + School-4665
-const TERM_ORDER = ["202530", "202550", "202610", "202630", "202650", "202710", "202730"];
+const TERM_ORDER = ["202530", "202550", "202610", "202630", "202650", "202710", "202730", "202750"];
 const MIN_MATCH_SCORE = 50;
 const FORCE_REFRESH = process.env.FORCE_REFRESH === "1";
 const LIMIT = Number(process.env.LIMIT || 0);
